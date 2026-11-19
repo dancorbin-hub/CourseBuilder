@@ -1,0 +1,135 @@
+# Worked example workflow row (draft, waits for Dan's approval).
+# Review doc: https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp
+# Schema: shared/templates/workflow-row.yaml. Checked on 2026-11-19.
+
+id: mr-wf-01
+workflow: Synthesize buyer interview notes into a coded insight table
+topic_area: Research, buyer and market insight
+trigger_and_cadence: After each batch of market visits, win/loss calls or discovery interviews. Typically every 2 to 6 weeks (assumption, to verify)
+
+input: Raw notes or transcripts from 5 to 15 interviews
+output: One table. Each row is an insight coded by theme, problem, segment and strength, with a verbatim quote and the source interview
+pm_decision_informed: Which market problems to put forward for prioritization, and for which segment
+
+bottleneck:
+  description: Reading, tagging and grouping notes takes days. Synthesis waits, so insight reaches the roadmap late or not at all
+  pdlc_stage: Discovery, before problem prioritization
+  sources: [E1, E2]
+
+scores:
+  judgment: medium. Coding is rule-based; deciding what a pattern means needs the PM
+  repetition: high. Same steps for each interview and each batch
+  ai_candidate: yes for coding and grouping; no for the meaning
+
+split:
+  ai_does:
+    - Apply the PM's code book to each interview
+    - Pull verbatim quotes with the source interview
+    - Count mentions by segment
+    - Flag notes that fit no code
+  pm_keeps:
+    - The code book
+    - Which patterns are real problems
+    - Which segment matters
+    - What goes forward to prioritization
+  ai_error_to_catch: Invented or reworded quotes. The PM spot-checks each quote behind a top insight against the source notes
+
+contexts:
+  software: Discovery and win/loss interviews with buyers and users
+  hardware: Field visits, distributor and installer interviews, service technician notes. gap, no source yet
+  internal_pm: Interviews with employees who use an internal platform or tool. gap, no source yet
+  services_manufacturing: gap, not searched yet
+
+proposed_lab:
+  goal: Build an assistant that turns raw interview notes into a coded insight table
+  core_message: AI codes the notes. You decide what the pattern means
+  build_type: project or agent with instructions and one knowledge file (the code book)
+  core_path_no_connectors: yes. Learners paste or upload notes
+  platforms:
+    claude: Project with instructions and the code book file. Stretch, package the steps as a skill
+    chatgpt: Project with instructions and the code book file (E7 not verified)
+    copilot: Agent in Copilot agent builder with instructions and the code book as an embedded file
+  stretch: Claude skill; scheduled re-run on each new batch where the platform allows
+  planted_error: Sample data makes one quote easy to blend with another
+  success_check: Run a second sample interview. Pass if each insight has a real quote and the right segment
+  registry_check: Same topic area as CAW-AI buyer voice watch. Not a repeat; different input, build and skill. Dan to confirm
+
+evidence:
+  - id: E1
+    claim: About 65% of synthesis projects take 1 to 5 days; 60.3% cite time-consuming manual work as a frustration
+    type: statistic
+    source: Research Synthesis Report 2025, Lyssna
+    url: https://www.lyssna.com/reports/research-synthesis/
+    source_date: 2025-06-13
+    checked_on: 2026-11-19
+    age_flag: true
+    status: verified
+    note: 300 designers, PMs, researchers and marketers, May 2025. Vendor survey. Not PM-only
+  - id: E2
+    claim: Human-only interview synthesis is time intensive
+    type: claim
+    source: Customer Interview Analysis, Where AI Helps and Hurts, Teresa Torres, Product Talk
+    url: https://www.producttalk.org/customer-interview-analysis-ai/
+    source_date: 2025-10-08
+    checked_on: 2026-11-19
+    age_flag: true
+    status: verified
+    note: Updated 2026-09-27. Practitioner source, independent of E1
+  - id: E3
+    claim: 80% of senior product leaders use AI to run or synthesize user research; 34% heavily
+    type: statistic
+    source: State of Product Leadership Q2 2026, Delight Path, reported by Lyssna
+    url: https://www.lyssna.com/blog/product-leaders-ai-research-survey/
+    source_date: 2026-07-10
+    checked_on: 2026-11-19
+    age_flag: false
+    status: partly verified
+    note: 107 leaders. Primary report not yet opened. Sample leans to AI-aware leaders
+  - id: E4
+    claim: AI synthesis invents or rewords quotes
+    type: claim
+    source: Teresa Torres, Product Talk (about 30% of quotes wrong in one project)
+    url: https://www.producttalk.org/customer-interview-analysis-ai/
+    source_date: 2025-10-08
+    checked_on: 2026-11-19
+    age_flag: true
+    status: not verified
+    note: One source of 2. Anecdote, not a statistic
+  - id: E5
+    claim: Copilot agent builder takes instructions up to 8,000 characters and embedded files as knowledge
+    type: tool-feature
+    source: Build agents in Agent Builder, Microsoft Learn
+    url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+    source_date: 2026-11-16
+    checked_on: 2026-11-19
+    age_flag: false
+    status: verified
+    note: File limits and licensing are on linked pages, not yet checked
+  - id: E6
+    claim: Claude custom skills are on all plans from Free to Enterprise; code execution must be on
+    type: tool-feature
+    source: How to create custom skills, Claude Help Center
+    url: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+    source_date: 2026-11 (page shows "updated over 2 weeks ago")
+    checked_on: 2026-11-19
+    age_flag: false
+    status: verified
+    note: No exact date on the page
+  - id: E7
+    claim: ChatGPT Projects hold instructions and files
+    type: tool-feature
+    source: Projects in ChatGPT, OpenAI Help Center
+    url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+    source_date: unknown
+    checked_on: 2026-11-19
+    age_flag: false
+    status: not verified
+    note: Page did not load. Retry in the first Stage 1 run
+
+open_gaps:
+  - Hardware and internal PM sources for this workflow
+  - Second source for E4 (quote errors)
+  - Primary Delight Path report for E3
+  - A newer, PM-specific source to replace or support E1
+  - Pragmatic alignment check, after Dan names the sources
+gate_1_decision: ""   # Dan only

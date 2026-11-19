@@ -1,0 +1,11 @@
+# Rendered outputs are large and can be made again from the course model.
+# Final files go to the project files folder for Dan and Pragmatic.
+courses/*/build/*
+!courses/*/build/.gitkeep
+# Source decks stay out of git (size, Pragmatic material).
+*.pptx
+*.potx
+# Local
+.DS_Store
+__pycache__/
+.claude/settings.local.json

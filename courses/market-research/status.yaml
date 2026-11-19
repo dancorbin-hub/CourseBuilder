@@ -1,0 +1,16 @@
+# Course state. Agents read this before they start a stage.
+# Only Dan changes a gate to approved.
+course: market-research
+title: Advanced AI for Market Research
+stage: 0              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+gates:
+  worked_example_row: { status: pending, approved_on: null, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp" }
+  gate_1_research:    { status: not_started, approved_on: null, doc: null }
+  gate_2_spec:        { status: not_started, approved_on: null, doc: null, pragmatic_review: null }
+  gate_3_modules:     []   # one entry per module: { module: 1, status: ..., approved_on: ..., doc: ... }
+  gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
+blockers:
+  - Dan names the Pragmatic sources and versions for the alignment agent (blocks the first Stage 1 run).
+settings:
+  capability_map: off
+fingerprints: {}      # approved item -> content hash. A change to a fingerprinted item needs Dan's yes.
