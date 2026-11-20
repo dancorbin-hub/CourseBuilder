@@ -36,8 +36,9 @@ The PRD lists this as a risk: Claude Docs may not be reachable from Claude Code 
 
 | Date | Where | Result |
 | --- | --- | --- |
-| 2026-11-19 | Claude Code in the cloud (claude.ai project thread) | Steps 1 and 3 pass. The worked example row doc was made and read from Claude Code. Comment round trip waits for Dan's comments |
-| | Claude Code on Dan's computer | Not run yet |
+| 2026-11-19 | Claude Code in the cloud (claude.ai project thread) | Steps 1 and 3 pass. The worked example row doc was made and read from Claude Code |
+| 2026-11-20 | Claude Code in the cloud (claude.ai project thread) | Steps 2 to 4 pass. Dan commented on the row doc. Claude Code read the comment word for word and replied in its thread. Cloud test: pass |
+| | Claude Code on Dan's computer (VS Code extension) | Not run yet. Needed only if Dan works from his computer |
 
 ### If the test fails
 
