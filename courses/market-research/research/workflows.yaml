@@ -870,3 +870,98 @@
   open_gaps:
     - A 2026 primary statistic on repository use or duplicate research
   gate_1_decision: ""
+
+- id: mr-wf-10
+  workflow: Keep the alternatives map current from the team's own evaluator and deal evidence
+  topic_area: Competitive landscape
+  trigger_and_cadence: Each new batch of win/loss interviews, discovery interviews and closed deals. Assumption, monthly, after the win/loss batch in mr-wf-02
+  input: The current alternatives map, the insight log (mr-wf-01), the decision-driver log with "alternative chosen" per deal (mr-wf-02), and the CRM export of decided deals
+  output: An updated alternatives map (named competitors, substitutes, in-house workarounds and "do nothing"), each with deal count, segment, the buyer reason it was chosen and the evidence rows behind it; a "what moved" summary; and a flag report for the PM
+  pm_decision_informed: Which alternatives the team must beat in each segment, and what goes to positioning, pricing and the roadmap. The PM decides; the agent only maps evidence
+  bottleneck:
+    description: >-
+      Keeping the competitive landscape current is recurring work that no one has time for. Competitive work is one
+      task among many for most owners, and documents built by hand age quickly. Teams track named competitors and miss
+      the alternatives that buyers actually choose (workarounds, "do nothing"), which only the team's own deal evidence shows.
+      Rerun 2026-11-20: 2 sources found, one weak; neither is about an alternatives map from own evidence (gap)
+    pdlc_stage: Market
+    focus_area: Competitive Landscape
+    sources: [N13, W21]
+  scores:
+    judgment: medium. Matching each deal to an alternative follows rules; deciding which alternative matters needs the PM
+    repetition: medium to high. Same steps for each batch of deals and interviews
+    ai_candidate: yes. The agent keeps the map; the PM manages it by checks, flags and audits
+  split:
+    agent_does:
+      - Read the new rows in the insight log and the decision-driver log
+      - Match each "alternative chosen" to an entry in the map, or propose a new entry
+      - Count deals per alternative by segment and period
+      - Mark each alternative as new, growing or fading against the last map
+      - Link each map entry to its evidence rows
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, inputs, alternative types (competitor, substitute, workaround, do nothing), minimum deals per entry, output format, done criteria
+      quality_checks:
+        - Each map entry links to 1 or more evidence rows with a deal id or interview id
+        - Each entry shows its source type (buyer interview or CRM only)
+        - Each "growing" or "fading" label states the two periods compared
+      handoff_rules:
+        - An alternative that is not in the map
+        - A deal where the CRM competitor field and the buyer's answer differ
+        - A segment where "do nothing" or a workaround is the top alternative
+      audit: 3 random map entries per batch, traced back to their source interviews and deal records
+    pm_decides:
+      - The alternative types and the minimum deals per entry
+      - Which alternatives the team must beat, by segment
+      - What goes to positioning, pricing, sales and the roadmap
+  ai_error_to_catch: >-
+    A named competitor is counted where the buyer chose "do nothing". The CRM competitor field says "Competitor X", but the
+    buyer said in the interview that they kept the spreadsheet. The agent trusts the CRM field, so Competitor X looks like it
+    is growing. The link check passes, because each entry has a deal id. Only the audit against the interview finds it
+  contexts:
+    hardware: Alternatives often include keeping the installed product longer, a repair, or a distributor's own brand. gap, no source found
+    internal_pm: The alternatives to an internal platform are team-built tools, spreadsheets and vendor tools bought by a team. gap, no source found
+    industry_notes:
+      - "data safety: deal records and interview notes hold customer names, deal values and competitor prices. Use only a tool the company has approved"
+      - "health care and FinTech: Not yet researched"
+  proposed_lab:
+    goal: Extend the course agent to keep an alternatives map from the team's own evaluator and deal evidence
+    core_message: Map what buyers chose, not what competitors announce. Every entry must trace back to a buyer or a deal
+    build_type: agent (extend the module 1 agent with an alternatives-map skill or knowledge file)
+    core_path_no_connectors: yes. The learner uploads the insight log, the decision-driver log and a CRM export from the fallback case company
+    platforms:
+      claude: Skill with the brief and alternative types, added to the course agent project. File output for the map (cl-fo-06)
+      chatgpt: Project with the brief and files (cg-01). File output not confirmed (cg-08)
+      copilot: Agent in agent builder with the brief and the map as an embedded file (mb-01, mb-02). Download the map in the same session (mb-11)
+      gemini: Gemini skill with the brief and files (gm-01). File output in the Gemini app (gm-09), not confirmed for skills
+    stretch: Run on each new win/loss batch, where the platform allows (not verified)
+    registry_check: >-
+      Not a CAW-AI agent. CAW-AI builds a positioning proof check (own claims vs proof), a buyer voice watch (themes from
+      public reviews of competitors) and a weekly competitive signal watch (public competitor moves, act / watch / need
+      evidence). This row reads no public sources and watches no competitor moves. Its only inputs are the team's own
+      evaluator interviews and deal records, and its output is a map of alternatives that buyers chose, including
+      workarounds and "do nothing". Not the AI Agents course Competitive Intel Watchdog (that agent watches competitors).
+      CAW-AI module 4 ("what only your buyers can tell you") compares own buyer sources with public reviews; this lab does
+      not reteach that comparison. Inputs overlap with mr-wf-02 (alternative chosen). Dan to decide whether this is its own
+      module or a later step of the mr-wf-02 lab
+    pragmatic_fit: Pragmatic Framework 2027 says competitive intelligence comes from evaluator interviews, shared customers, trade shows and third-party research (N1). This row uses the evaluator part only
+  evidence:
+    - id: W21
+      claim: Competitive research is done by hand in many tabs, and the documents it produces age quickly; positioning now shifts each quarter, so manual tracking is hard to keep up
+      type: claim
+      source: Competitive Intelligence in 2026, Why Most Teams Still Get It Wrong, YurijL, DEV Community
+      url: https://dev.to/yl_seeto/competitive-intelligence-in-2026-why-most-teams-still-get-it-wrong-eb8
+      source_date: 2026-02-10 (page shows "Posted on Feb 10"; year inferred from 2026 references; metadata 2026-11-11)
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "not verified"
+      note: >-
+        Weak. Author promotes Seeto, an AI competitive-analysis tool (vendor-adjacent). Its figures (6 to 10 hours a week,
+        Gartner 28%, Forrester 68%) have no links and are 2024 or unsourced. Do not use any figure. Use as a claim only.
+        Independent of N13 (Wynter). Second source for the bottleneck is N13 (needs.md): PMMs own CI as one task among
+        many (52%); 21% have a dedicated CI person
+  open_gaps:
+    - A source that describes keeping an alternatives map (including workarounds and "do nothing") from own deal evidence as a burden
+    - A stronger, non-vendor second source for the bottleneck. Lead not opened (fetch budget), https://www.kompyte.com/blog/how-much-time-competitive-intelligence (vendor)
+    - Hardware and internal PM sources
+  gate_1_decision: ""   # Dan only

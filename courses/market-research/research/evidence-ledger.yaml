@@ -569,3 +569,17 @@ dropped:
     reason: Published before 2026
   - item: Lyssna Research Synthesis Report 2025
     reason: 2025 study (decision 32). Carried over from the worked example
+  # ---------- Rerun 2026-11-20, track 4 ask (CRM vs buyer loss reasons). No new E id: nothing met the bar ----------
+  - item: The Business Case for Win-Loss Analysis, Corporate Visions (tourial.corporatevisions.com), byline 2026-08-12, modified 2026-11-03
+    url: https://tourial.corporatevisions.com/answers/the-business-case-for-win-loss-analysis-prevent-losing-up-to-53-of-your-deals
+    reason: >-
+      Same publisher and same 150,000-deal analysis as W2, so not a new source. Repeats "50 to 70 percent of the time,
+      sellers and buyers cite different reasons for lost deals" with no period, sample or method. Points to the blog
+      "How to Find and Coach the Sales Competencies That Decide Your Deals"
+      (https://corporatevisions.com/blog/how-to-find-and-coach-the-sales-competencies-that-decide-your-deals/),
+      not opened (fetch budget ran out). Status not verified
+  - item: 5 Reasons Your CRM Is Costing You Revenue, Clozd (tours.clozd.com), modified 2026-10-23
+    url: https://tours.clozd.com/answers/report-your-crm-is-lying-to-you
+    reason: >-
+      Vendor (same publisher as W1). Says buyer and seller data "only matches up 15% of the time" (85% wrong). No
+      publish date, sample, period or method. Not a primary study. Status not verified

@@ -199,16 +199,22 @@ features:
     note: Stretch path only. Uses connectors
   - id: cg-08
     platform: chatgpt
-    feature: Downloadable file output (for example .xlsx or .docx from a project chat)
-    plans: unknown
-    limits: unknown
+    feature: Downloadable file output (ChatGPT-generated spreadsheets or PDFs, downloaded from the chat)
+    plans: unknown. The Academy page names no plan
+    limits: unknown. Page names "updated spreadsheets or PDFs" only. No .csv, .docx or .pptx named. Projects not mentioned
     use_in_core_lab: "no"
-    url: https://help-lb.openai.com/en/articles/8555545-file-uploads-faq
-    source_date: approx 2026-11-15
+    url: https://academy.openai.com/public/clubs/work-users-ynjqu/resources/working-with-files
+    source_date: 2026-09-04 (published 2025-08-06, "Last updated on September 4, 2026")
     checked_on: 2026-11-20
-    status: not verified, gap
-    note: None of the four ChatGPT pages loaded today describes file output. Core lab can use on-screen tables until a dated doc is found
-
+    status: not verified, partly closed
+    note: >-
+      Rerun 2026-11-20. OpenAI Academy "Working with files" says users can download "ChatGPT-generated outputs
+      (e.g., updated spreadsheets or PDFs)". Dated vendor page, but it gives no plans, formats list or Projects scope.
+      A Help Center article exists: "Creating and editing documents, spreadsheets and presentations with ChatGPT"
+      (https://help.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt).
+      It failed to load on help.openai.com (client error). The help-lb.openai.com fetch was blocked by the session
+      permission check, so it was not opened. Open it in the next run for plans and formats. Keep use_in_core_lab "no"
+      until plans and Projects scope are confirmed
   # ---------------- Microsoft Copilot agent builder ----------------
   - id: mb-01
     platform: copilot
@@ -326,6 +332,23 @@ features:
     status: not verified
     note: Stretch path. Lets the agent read a live interview folder. Counts as a connector-type source
 
+  - id: mb-11
+    platform: copilot
+    feature: Downloadable file output from code interpreter (Excel, Word, PowerPoint, PDF, images and charts)
+    plans: Microsoft 365 Copilot license, and Copilot Chat users without metered usage enabled (page text)
+    limits: >-
+      Code interpreter is always on in Agent Builder. Files are hosted for the active session only and are not kept after it ends.
+      .csv output is not named (CSV and TSV are named as inputs). No file size, row or run time limits stated
+    use_in_core_lab: "yes"
+    url: https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter
+    source_date: 2026-09-28 (page footer "Last updated on 2026-09-28"; ms.date 2026-07-06; metadata updated_at 2026-10-22)
+    checked_on: 2026-11-20
+    status: not verified
+    note: >-
+      Rerun 2026-11-20. Quote: "Code interpreter can generate and host downloadable files ... Copilot automatically presents
+      a download link in the response." Learners must download the log in the same session. The license line reads oddly
+      ("without metered usage enabled"); check it against mb-03 at the Gate 2 proof. Adds to mb-04, which said no formats
+
   # ---------------- Gemini ----------------
   - id: gm-01
     platform: gemini
@@ -421,15 +444,18 @@ features:
     note: Different from gm-07 tasks. Possible Workspace stretch path, but no proof that it can run a skill
   - id: gm-09
     platform: gemini
-    feature: Downloadable file output from a skill (for example .xlsx)
-    plans: unknown
-    limits: unknown
-    use_in_core_lab: "no"
-    url: https://support.google.com/gemini?p=pn_skills
-    source_date: unknown
+    feature: Downloadable file output in the Gemini app (Docs, Sheets, Slides, PDF, .docx, .xlsx, .csv, .tex, .txt, .rtf, .md)
+    plans: All Google Workspace customers, Workspace Individual subscribers, and personal Google accounts signed in to the Gemini app. No admin control
+    limits: One file per prompt. Page does not mention skills or Gems
+    use_in_core_lab: "yes"
+    url: https://workspaceupdates.googleblog.com/2026/04/move-from-conversation-to-creation-with-file-generation-in-Gemini.html
+    source_date: 2026-04-27
     checked_on: 2026-11-20
-    status: not verified, gap
-    note: The skills page gives examples (bank statements into spreadsheets) but no output format or download steps
+    status: not verified, partly closed
+    note: >-
+      Rerun 2026-11-20. Dated vendor doc for file output in the Gemini app. It does not say that a skill run can output a
+      file. Skills run in the Gemini app, so it is likely, but test it at the Gate 2 proof. Old note: the skills page
+      (https://support.google.com/gemini?p=pn_skills) gives no output format or download steps
 
 retries:
   - url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt

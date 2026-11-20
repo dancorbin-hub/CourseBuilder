@@ -79,7 +79,7 @@ Course implication (for the Synthesizer, not a finding): the PM keeps the questi
 | --- | --- | --- | --- |
 | Hardware (priority) | 47.6% of Product Focus respondents work on hardware or physical products; 21% are in manufacturing and engineering. Automotive teams firefight more (76% vs 57% SaaS). High-tech hardware article: customer and budget questions get skipped, and late answers cost tooling, certification and stock. Feedback comes through distributors, integrators, specifiers and OEMs, not direct | N5, N6, N20 | Partial. No source on how hardware PMs run field visits or installer interviews, or how long they take |
 | Manufacturing | 90% gather feedback, only about 30% run a structured program (secondary report, primary not found). Speed is the top obstacle to turning feedback into decisions (45%). 60% most want AI to find hidden needs in raw data | N19, N17, N18 | Partial. Samples small or not stated |
-| Internal PM, internal platforms and tools (priority) | 20% of Product Focus respondents build internal products. Internal users are easy to reach, but stakeholders often think they already know the need, and requesters are not always users. Internal PMs use check-ins, employee surveys and user tests. Value is measured by adoption, support deflection and employee NPS | N5, N21, N22, N23 | Yes. Only the 20% figure is from 2026. All practitioner sources are older than 12 months |
+| Internal PM, internal platforms and tools (priority) | 20% of Product Focus respondents build internal products. Internal users are easy to reach, but stakeholders often think they already know the need, and requesters are not always users. Internal PMs use check-ins, employee surveys and user tests. Value is measured by adoption, support deflection and employee NPS | N5, N21, N22, N23, N27, N28 | Yes. Only the 20% figure is from 2026. N21 to N23 are older than 12 months. Rerun 2026-11-20 added N27 and N28 (2026, vendor, not verified): intake forms, office hours, Slack threads, small pilots, watching use. Still no time data |
 | Software (B2B SaaS) | Most sources describe SaaS. Win/loss and CI are mostly PMM work. AI-moderated win/loss is growing (vendor) | N13, N15, N12 | No |
 | FinTech | 9% of Delight Path leaders. 42% of finance and insurance AI users shared sensitive information with AI without their employer knowing (n=308 in sector) | N7, N24 | Partial. No source on FinTech PM research tasks |
 | Health care | 13% of Delight Path leaders are in healthtech. Research tools offer PII redaction and a HIPAA add-on with a BAA, on enterprise plans only (vendor page) | N7, N25 | Partial. No source on health care PM research tasks or time |
@@ -349,6 +349,36 @@ Course implication (for the Synthesizer, not a finding): the PM keeps the questi
   age_flag: true
   status: not verified
   note: Found in search; fetch budget ran out before opening. Open in the next run
+- id: N27
+  claim: >-
+    Platform PMs take internal feedback through intake forms, office hours, design reviews and Slack, Jira or Linear
+    threads, keep it apart from external feedback at intake, then join both in one ledger by product area. Intake often
+    serves the most senior advocate or the noisiest channel first, and platform pain gets filed under the product, not the platform
+  type: claim
+  source: The 6 Ways Platform PMs Gather Feedback From Internal and External Customers, Enterpret
+  url: https://www.enterpret.com/guides/the-6-ways-platform-pms-gather-feedback-from-internal-and-external-customers
+  source_date: 2026-11-04
+  checked_on: 2026-11-20
+  age_flag: false
+  status: not verified
+  note: >-
+    Rerun 2026-11-20. Vendor of feedback analytics software. No author named; quotes a Salesforce product director.
+    No time figures. Internal users here are internal product teams (platform customers), not all employees
+- id: N28
+  claim: >-
+    Internal tool builders should ask one coworker what they do today, not "would you use this?", because coworkers are
+    polite; pilot with about three people; watch them use the tool; measure usage after a week. Building is fast, but
+    adoption is the hard part, and ad hoc feedback loops break down when a team ships a new internal tool every week
+  type: claim
+  source: Why internal tools fail, Austin Meyer, Centercode blog
+  url: https://www.centercode.com/blog/why-internal-tools-fail
+  source_date: 2026-07-15
+  checked_on: 2026-11-20
+  age_flag: false
+  status: not verified
+  note: >-
+    Rerun 2026-11-20. Vendor of beta and user testing software. Practitioner advice, no data. Independent of N27.
+    No breakdown of time per step ("one conversation, three people, and a week" is a recommendation, not a measure)
 ```
 
 ### Not opened (fetch budget ran out)
@@ -358,7 +388,7 @@ Course implication (for the Synthesizer, not a finding): the PM keeps the questi
 | Wynter, State of CI in B2B SaaS (primary for N13) | https://wynter.com/research/the-state-of-competitive-intelligence-in-b2b-saas | Verify N13 |
 | HHS de-identification guidance (N26) | https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html | Health care data note |
 | Delight Path full report PDF (N7, N8) | https://www.delightpath.com/product-leadership-report-2026 | Confirm the credibility figures |
-| Enterpret, 6 ways platform PMs gather feedback from internal and external customers | https://www.enterpret.com/guides/the-6-ways-platform-pms-gather-feedback-from-internal-and-external-customers | Possible internal PM source; date unknown |
+| Enterpret, 6 ways platform PMs gather feedback from internal and external customers | https://www.enterpret.com/guides/the-6-ways-platform-pms-gather-feedback-from-internal-and-external-customers | Opened in the rerun (2026-11-20). Now N27 |
 
 ### Dropped
 

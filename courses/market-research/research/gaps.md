@@ -80,3 +80,13 @@ Added 2026-11-20 by the PM needs researcher. Sources are in `needs.md`.
 | G3-7 | Manufacturing feedback statistics have small or unknown samples | N17 (n not stated), N18, N19 (secondary) | Find the Interact Analysis primary report |
 | G3-8 | Unverified primaries: Wynter CI (N13), Delight Path PDF (N7, N8) | Secondary reports | Open both in the next run (fetch budget ran out) |
 | G3-9 | Most surveys skew to software and to researchers, not PMs (N9, N10, N11: PMs are a minority or not stated); N5 skews to Europe (83%) | Stated in each ledger note | Say this limit in the brief |
+
+## Rerun (2026-11-20)
+
+One-time rerun on the critic's "Gaps for rerun". All new items are "not verified". About 22 web calls used (searches and fetches). The shared fetch budget ran out during ask 4.
+
+- Ask 1 (track 1): **partly closed.** New row mr-wf-10 (alternatives map from own evaluator and deal evidence) with W21. Bottleneck sources: N13 (Wynter, CI is one task among many) and W21 (DEV Community, vendor-adjacent, weak). Neither source is about an alternatives map from own deal evidence. Not opened: kompyte.com time-on-CI page (budget).
+- Ask 2 (track 2): **partly closed.** mb-11 added (Copilot code interpreter: Excel, Word, PowerPoint, PDF downloads, session only; dated 2026-09-28). gm-09 updated (Gemini app file output incl. .csv, .xlsx, .docx; Workspace blog 2026-04-27; skills not named). cg-08 updated (OpenAI Academy, 2026-09-04: spreadsheets or PDFs; no plans, no Projects). Not opened: help.openai.com article 20001278 (client error); help-lb.openai.com copy (blocked by permission check).
+- Ask 3 (track 3): **partly closed.** N27 (Enterpret, 2026-11-04) and N28 (Centercode, 2026-07-15): 2 independent vendor sources on how internal PMs gather employee feedback. Still no data on where the time goes. Rejected for date: Microsoft Learn platform engineering page (2025-10-15), Mind the Product (2024), Condens (2022).
+- Ask 4 (track 4): **open.** No 2026 primary or non-vendor source found. Corporate Visions tourial page (same study as W2, no method) and Clozd "85%" page (vendor, no method) recorded under `dropped` in evidence-ledger.yaml. Not opened: Corporate Visions sales-competencies blog (budget).
+- Note for the needs.md owner: the needs.md ledger block does not parse as YAML at N17 (`note: "Informal survey", sample size ...`). Not changed in this rerun.
