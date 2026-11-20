@@ -1,0 +1,968 @@
+# Workflow inventory, Advanced AI for Market Research (track 1, Stage 1 run 1).
+# Schema: shared/templates/workflow-row.yaml. Written 2026-11-20 by the workflow researcher.
+# Row 01 is the approved worked example (worked-example-row.yaml), copied unchanged.
+# Evidence ids W<n> are for the evidence researcher to merge. E<n> ids belong to row 01.
+# gate_1_decision is for Dan only.
+
+- id: mr-wf-01
+  workflow: Turn each new batch of buyer interviews into an updated, checked insight log
+  topic_area: Research, buyer and market insight
+  trigger_and_cadence: Each new batch of market visits, win/loss calls or discovery interviews. Assumption, every 2 to 6 weeks
+
+  input: Notes or transcripts from 5 to 15 interviews, plus the current insight log
+  output: Updated insight log (insights coded by theme, problem, segment and strength, with verbatim quotes and source interviews), a "what changed" summary, and a flag report for the PM
+  pm_decision_informed: Which market problems go forward to prioritization, and for which segment
+
+  bottleneck:
+    description: Synthesis takes days per study, so insight reaches the roadmap late. AI cuts the analysis time, but the work moves to checking AI output
+    pdlc_stage: Market
+    focus_area: Market Problems
+    sources: [E1, E3, E5]
+
+  scores:
+    judgment: medium. Coding is rule-based; deciding what a pattern means needs the PM
+    repetition: high. Same steps for each interview and each batch
+    ai_candidate: yes. The agent runs the whole workflow; the PM manages it by checks and flags
+
+  split:
+    agent_does:
+      - Code each interview against the code book
+      - Check each quote against the source text
+      - Merge new insights into the log
+      - Mark problems as new, growing or fading
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, inputs, code book, output format, done criteria
+      quality_checks:
+        - Each quote is found word for word in its source interview
+        - Each insight has a confidence level
+      handoff_rules:
+        - Notes that fit no code
+        - A new insight that contradicts the log
+      audit: 3 random insights per batch, checked against the source interviews
+    pm_decides:
+      - The code book
+      - Which patterns are real problems
+      - Which segment matters
+      - What goes forward to prioritization
+    ai_error_to_catch: One vocal buyer counted as a pattern. Three real quotes from one interview make an insight look strong. The quote check passes; only the audit finds it. The fix is a new rule in the brief (2 or more interviews per insight)
+
+  contexts:
+    hardware: Field visits, distributor, installer and service technician interviews. gap, no source yet
+    internal_pm: Interviews with employees who use an internal platform or tool. gap, no source yet
+    industry_notes:
+      - "health care: remove patient data (PHI) before the agent reads the notes. Not yet researched"
+      - "FinTech: customer quotes can hold account data (PII, PCI). Not yet researched"
+
+  proposed_lab:
+    goal: Delegate interview synthesis to an agent, and manage it by its checks and flags
+    core_message: Do not do the work between AI steps. Set the job, the checks and the hand-off rules, then review the flags
+    build_type: agent (skill or project that holds the brief, code book and output format)
+    core_path_no_connectors: yes. The learner uploads a batch and runs the agent
+    platforms:
+      claude: Skill or Project with the brief and code book
+      chatgpt: Project with the brief and code book (E9 not verified)
+      copilot: Agent in Copilot agent builder with the brief and the code book as an embedded file
+      gemini: Gemini skill with the brief and code book. Workspace business accounts get skills in March 2027
+    steps:
+      - Copy the agent brief template. Fill in the job, the code book and the output format
+      - Add two quality checks and two hand-off rules from the menu
+      - Build the agent on your platform. Run it on batch 1
+      - Read only the flag report. Decide each item
+      - Audit 3 random insights against the interviews. Fix the brief for what you find
+      - Run batch 2. Check the log and the "what changed" summary
+    stretch: Run the agent on a schedule or when files arrive, where the platform allows (not verified for 2027)
+    planted_error: Vocal buyer counted as a pattern
+    success_check: Batch 2 run. The log updates, the flag report lists the new contradiction, and no insight rests on one interview
+    registry_check: "AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by flags, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20). PDW-AI (Product Discovery with AI) already teaches one-pass AI synthesis, the quote check and frequency vs intensity. The lab starts where PDW-AI stops: no slides on coding or quote checks; time goes to running the agent on batches, the log over time, the flag report, the audit and tuning (Dan, 2026-11-20)"
+    pragmatic_fit: Good fit (Dan, 2026-11-20). Pragmatic Framework 2027 says to talk with evaluators who bought and who did not, then validate, prioritize and share the problems. It also says teams must verify AI output, protect sensitive information and stay accountable
+
+  evidence:
+    - id: E1
+      claim: Median time to synthesize themes fell from 14 days (2024) to 4 hours (Q1 2026)
+      type: statistic
+      source: 2026 Customer Discovery Velocity Report, Perspective AI
+      url: https://s.getperspective.ai/blog/2026-customer-discovery-velocity-report-ai-cut-time-to-insight-94-percent
+      source_date: 2026-05-18
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "partly verified, weak"
+      note: Vendor of an AI interview tool. Own panel of 180 teams, Jan to Apr 2026. Baseline method not stated. Do not put on a slide
+    - id: E2
+      claim: Analysis fell from 12.1 to 1.1 days per 30-interview study; a new "synthesis QA" step takes 0.6 days
+      type: statistic
+      source: 2026 AI Research Productivity Report, Perspective AI
+      url: https://s.getperspective.ai/blog/2026-ai-research-productivity-report-time-to-insight-cut-84-percent
+      source_date: 2026-05-12
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified, weak"
+      note: Same vendor as E1, so not an independent source. Uses own customer data. Some figures do not reconcile
+    - id: E3
+      claim: 80% of senior product leaders use AI to run or synthesize user research; 34% heavily
+      type: statistic
+      source: State of Product Leadership Q2 2026, Delight Path, reported by Lyssna
+      url: https://www.lyssna.com/blog/product-leaders-ai-research-survey/
+      source_date: 2026-07-10
+      checked_on: 2026-11-19
+      age_flag: false
+      status: "verified"
+      note: 107 leaders. Primary report not yet opened
+    - id: E4
+      claim: With AI synthesis, the hard work moves to checking the output
+      type: claim
+      source: Tristan Gamilis (Lyssna CPO), in the Lyssna article for E3
+      url: https://www.lyssna.com/blog/product-leaders-ai-research-survey/
+      source_date: 2026-07-10
+      checked_on: 2026-11-19
+      age_flag: false
+      status: "verified"
+      note: Opinion from a vendor. E2 (synthesis QA step) supports it but is a different vendor's data
+    - id: E5
+      claim: AI synthesis can invent or reword quotes and lose context
+      type: claim
+      source: Customer Interview Analysis, Where AI Helps and Hurts, Teresa Torres, Product Talk
+      url: https://www.producttalk.org/customer-interview-analysis-ai/
+      source_date: 2025-10-08
+      checked_on: 2026-11-19
+      age_flag: true
+      status: "verified"
+      note: Practitioner article, updated 2026-09-27. Not a study, so the 2026 rule does not drop it. Her 30% figure is one project, not a statistic
+    - id: E6
+      claim: Copilot agent builder takes instructions up to 8,000 characters and embedded files as knowledge
+      type: tool-feature
+      source: Build agents in Agent Builder, Microsoft Learn
+      url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+      source_date: 2026-11-16
+      checked_on: 2026-11-19
+      age_flag: false
+      status: "verified"
+    - id: E7
+      claim: Claude custom skills are on all plans from Free to Enterprise; code execution must be on
+      type: tool-feature
+      source: How to create custom skills, Claude Help Center
+      url: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+      source_date: 2026-11 (page shows "updated over 2 weeks ago")
+      checked_on: 2026-11-19
+      age_flag: false
+      status: "verified"
+    - id: E8
+      claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). Workspace business accounts get skills in March 2027. A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
+      type: tool-feature
+      source: About the transition from Gems to skills, Gemini Apps Help
+      url: https://support.google.com/gemini/answer/18560919?hl=en
+      source_date: unknown (page shows no date)
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "wrong"
+      note: No scheduling found for skills
+    - id: E9
+      claim: ChatGPT Projects hold instructions and files
+      type: tool-feature
+      source: Projects in ChatGPT, OpenAI Help Center
+      url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+      source_date: unknown
+      checked_on: 2026-11-19
+      age_flag: false
+      status: "verified"
+      note: Page did not load. Retry in the first Stage 1 run
+
+  dropped:
+    - Lyssna Research Synthesis Report 2025 (2025 study, decision 32)
+
+  open_gaps:
+    - A non-vendor 2026 source for the bottleneck (E1 and E2 are one vendor)
+    - Second source for E4 and E5
+    - Primary Delight Path report for E3
+    - Hardware and internal PM sources
+    - Scheduling and triggers on each platform for the stretch path
+  gate_1_decision: ""   # Dan only
+
+- id: mr-wf-02
+  workflow: Run a win/loss program that turns each batch of decided deals into a checked decision-driver report
+  topic_area: Win/loss analysis
+  trigger_and_cadence: Deals close as won or lost every week. Pragmatic says interview evaluators 2 to 4 weeks after the decision and use 10 or more deals to find patterns. Assumption, a monthly batch and a quarterly report
+  input: CRM records for decided deals (stage, amount, segment, stated loss reason), win/loss interview notes or transcripts, and the current decision-driver log
+  output: Decision-driver log per deal (primary driver, secondary drivers, alternative chosen, buyer quotes), a CRM versus buyer "truth rate" table, a quarterly pattern report by segment, and a flag report for the PM
+  pm_decision_informed: Which market problems, pricing or positioning issues and sales gaps to act on, and which to share with sales, marketing and leadership
+  bottleneck:
+    description: Manual win/loss is slow and does not scale, so quarterly reports arrive after the chance to act has passed. Sales-entered loss reasons often differ from what buyers say, so teams that skip interviews act on the wrong reason. Many teams do not run win/loss at all
+    pdlc_stage: Market
+    focus_area: Win/Loss Analysis
+    sources: [W1, W2, W3]
+  scores:
+    judgment: medium. Coding a driver from an interview follows rules; deciding what a pattern means for strategy needs the PM
+    repetition: high. Same steps for each deal and each batch
+    ai_candidate: yes. The agent codes each deal and keeps the log; the PM manages by checks, flags and audits
+  split:
+    agent_does:
+      - Match each interview to its CRM deal record
+      - Code the primary and secondary decision drivers against the driver code book
+      - Compare the CRM loss reason with the buyer's reason and update the truth rate
+      - Group drivers by segment, deal size and alternative chosen
+      - Mark drivers as new, growing or fading against the last report
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, inputs, driver code book, minimum deals per pattern, output format, done criteria
+      quality_checks:
+        - Each driver has a buyer quote found word for word in the interview
+        - Each pattern rests on the minimum number of deals set in the brief
+        - Each deal is marked "interview" or "CRM only"
+      handoff_rules:
+        - A deal where the CRM reason and the buyer reason differ
+        - A lost deal that names an alternative not in the code book
+        - A segment with too few deals to report
+      audit: 2 random deals per batch, read in full against the driver codes and the truth rate entry
+    pm_decides:
+      - The driver code book
+      - Which patterns are real and which are noise
+      - Which findings go to which team, and how to frame them for sales
+      - Which deals to add to the interview list
+  ai_error_to_catch: A CRM-only deal leaks into the buyer findings. The agent fills a missing interview with the CRM reason ("price"), so price looks like a top buyer driver. The quote check passes on the deals that have interviews; only the audit of the deal source column finds it
+  contexts:
+    hardware: Wins and losses often go through distributors and resellers, so the PM may not reach the buyer directly. gap, no source found that describes win/loss burden in hardware
+    internal_pm: Adoption wins and losses of an internal platform (teams that chose it, teams that kept their own tool). gap, no source found
+    industry_notes:
+      - "health care: some evaluators are clinicians who are hard to reach (W3). Remove patient data from notes first. Not yet researched"
+      - "data safety: interview notes and CRM exports can hold customer names and deal values. Use only a tool the company has approved"
+  proposed_lab:
+    goal: Extend the course agent to run win/loss on a batch of decided deals and report the gap between sales reasons and buyer reasons
+    core_message: The agent's report is only as true as its sources. Make the agent label where each finding comes from, then audit the labels
+    build_type: agent (extend the module 1 agent with a win/loss skill or knowledge file)
+    core_path_no_connectors: yes. The learner uploads a CRM export (CSV) and interview notes from the fallback case company
+    platforms:
+      claude: Skill with the driver code book and output format, added to the course agent project
+      chatgpt: Project with the brief, code book and CSV (E9 not verified)
+      copilot: Agent in Copilot agent builder with the code book as an embedded file (E6)
+      gemini: Gemini skill with the brief and code book (E8). Workspace business accounts get skills in March 2027
+    stretch: Run the agent on each new batch when the export file arrives, where the platform allows (not verified)
+    registry_check: "Not a CAW-AI agent. CAW-AI module 4 (\"what only your buyers can tell you\") compares own buyer sources with public reviews; this lab does not reteach that. Inputs overlap with mr-wf-01 (win/loss calls). The difference is the deal-level driver log and the CRM truth rate. Dan to decide whether this is a separate module or a lab inside mr-wf-01. Pragmatic fit is strong: the guide names win/loss, 2 to 4 weeks after the decision, at least 10 deals"
+  evidence:
+    - id: W1
+      claim: Sales-entered CRM loss reasons are often inaccurate; buyer interviews give better data
+      type: claim
+      source: Win/loss analysis, 5 common mistakes, Andrew Peterson, Clozd
+      url: https://www.clozd.com/blog/win-loss-analysis-5-common-mistakes
+      source_date: 2026-04-20
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified"
+      note: Vendor of win/loss services. Its "inaccurate 60% of the time" figure has no named source. Do not use the figure
+    - id: W2
+      claim: Manual win/loss programs are time-intensive and cannot scale; quarterly reports compiled by hand arrive too late. Sellers and buyers cite different loss reasons 50 to 70% of the time
+      type: claim
+      source: How to Conduct Win-Loss Analysis, A Practical Implementation Guide, Anton Rius, Corporate Visions
+      url: https://corporatevisions.com/blog/how-to-conduct-win-loss-analysis-implementation-guide/
+      source_date: 2026-07-30
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified (claim); 50 to 70% statistic partly verified"
+      note: Vendor of win/loss services. First published 2024-11-12, updated 2026-07-30. The 50 to 70% figure is from its own analysis of 150,000+ B2B deals; study date and method not given, so it may fail the 2026 rule. Do not put the figure on a slide until the primary is found
+    - id: W3
+      claim: Win/loss is underused; self-reported reasons often differ from the real reason; teams need a tagging method to find patterns
+      type: claim
+      source: Comprehensive Approach to Win/Loss Analysis, Diana Igua and Jen Doyle, Pragmatic Institute
+      url: https://www.pragmaticinstitute.com/resources/articles/product/comprehensive-approach-to-win-loss-analysis
+      source_date: 2022-09-06
+      checked_on: 2026-11-20
+      age_flag: true
+      status: "not verified"
+      note: Last modified date only. Older than 12 months; Dan decides. Its "35% of teams" figure is an old survey and fails the 2026 rule. Independent of W1 and W2
+  open_gaps:
+    - A 2026 primary study on win/loss time or CRM reason accuracy
+    - Hardware and internal PM win/loss sources
+  gate_1_decision: ""
+
+- id: mr-wf-03
+  workflow: Route each week's inbound customer feedback into the market problem log
+  topic_area: Research, buyer and market insight
+  trigger_and_cadence: Feedback arrives every day from support tickets, sales call notes, feature requests and survey comments. Assumption, a weekly batch
+  input: An export of the week's feedback items with channel, account and segment, plus the current market problem log and tag list
+  output: Each item tagged to a market problem or marked "no fit", a weekly "what moved" summary (by accounts, not mentions), and a flag report for the PM
+  pm_decision_informed: Which market problems gain or lose weight, and which new problems need discovery interviews
+  bottleneck:
+    description: Feedback is spread across many tools. Tagging by hand is slow, subjective and does not scale. Tags drift over time, so trends become unreliable and the signal gets lost in the noise
+    pdlc_stage: Market
+    focus_area: Market Problems
+    sources: [W4, W5]
+  scores:
+    judgment: low to medium. Tagging follows the tag list; naming a new problem needs the PM
+    repetition: high. Hundreds of items each week, same steps each time
+    ai_candidate: yes
+  split:
+    agent_does:
+      - Remove duplicates and group items from one account
+      - Tag each item to a problem in the log, or mark it "no fit"
+      - Count each problem by accounts and segments, not by mentions
+      - Compare with last week and write the "what moved" summary
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, channels in scope, tag list with definitions, counting rule (accounts, not mentions), output format
+      quality_checks:
+        - Each tag has a one-line reason that quotes the item
+        - Each item has exactly one primary tag or "no fit"
+        - Counts are by unique account
+      handoff_rules:
+        - Items marked "no fit" that repeat across 3 or more accounts
+        - A problem that moves more than the threshold in the brief
+        - Items that hold personal or health data
+      audit: 10 random tagged items per week, plus every item in the "no fit" group
+    pm_decides:
+      - The tag list and when to add or merge a problem
+      - Which moves are real and need discovery
+      - What to tell the teams that sent the feedback
+  ai_error_to_catch: Forced fit. The agent tags a new problem to the nearest old tag, so the "no fit" group stays empty and the new problem is hidden. The reason check passes because the item shares words with the tag. The audit of random items finds it
+  contexts:
+    hardware: Field service work orders, maintenance logs and technician notes hold product feedback, but they are fragmented and messy (W17). One source only
+    internal_pm: Internal customers speak through intake requests, office hours and Slack threads; the loudest channel gets served first (W18). One source only
+    industry_notes:
+      - "health care and FinTech: support tickets can hold PHI, account or card data. Remove it before the agent reads the export"
+      - "data safety: use only an approved tool for customer feedback exports"
+  proposed_lab:
+    goal: Extend the course agent to tag a week of feedback against the market problem log and report what moved
+    core_message: The hard part is not the tagging. It is the rule that makes the agent say "no fit" instead of guessing
+    build_type: agent (extend the module 1 agent)
+    core_path_no_connectors: yes. The learner uploads a CSV export of feedback
+    platforms:
+      claude: Skill with the tag list and counting rule
+      chatgpt: Project with the tag list and CSV (E9 not verified)
+      copilot: Agent with the tag list as an embedded file (E6)
+      gemini: Gemini skill with the tag list (E8)
+    stretch: Connect a feedback source (help desk, CRM) where the platform and company allow (not verified)
+    registry_check: CAW-AI buyer voice watch reads public reviews of competitors on a monthly schedule. This row reads the company's own feedback channels into its own problem log. Different source, different agent, different output. Risk, Dan may see it as close; it must not use a scheduled-task slide (CAW-AI slide 9). Feeds the same log as mr-wf-01, which suits the one-agent design
+  evidence:
+    - id: W4
+      claim: Feedback synthesis is manual; tagging and categorizing is slow, subjective and does not scale; insights live in different tools
+      type: claim
+      source: Data-Rich, Insight-Poor, Why Customer Feedback Isn't Driving Your Roadmap, Payton Christopher, ProductPlan
+      url: https://www.productplan.com/blog/data-rich-insight-poor-why-customer-feedback-isnt-driving-your-roadmap
+      source_date: 2026-06-02
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified"
+      note: Roadmap tool vendor. Cites its State of Product Management 2026 report (more than 50% of PMs want AI to synthesize customer insights). Primary report not opened; do not use the figure yet
+    - id: W5
+      claim: Tagging feedback by hand takes hours each month, labels are applied inconsistently, and label meanings drift so trends become unreliable
+      type: claim
+      source: The 6 Hidden Costs of Tagging Customer Feedback by Hand in 2026, Enterpret
+      url: https://www.enterpret.com/guides/the-6-hidden-costs-of-tagging-customer-feedback-by-hand-in-2026
+      source_date: 2026-07-27
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified"
+      note: Feedback analytics vendor. Hour figures are its own arithmetic, not data. Cites its own arXiv paper (not verified). Independent of W4
+    - id: W17
+      claim: Maintenance and field service data is product design feedback, but it is fragmented across work orders and logs and is messy
+      type: claim
+      source: Using maintenance data for better manufacturing product development, Jake Hall, MaintainX
+      url: https://www.getmaintainx.com/blog/using-maintenance-data-for-better-manufacturing-product-development
+      source_date: 2026-02-20
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "not verified"
+      note: Maintenance software vendor. About process and plant equipment, not only sold products
+    - id: W18
+      claim: Platform PMs get internal feedback through intake, office hours and Slack; proximity bias decides who gets served
+      type: claim
+      source: The 6 Ways Platform PMs Gather Feedback From Internal and External Customers, Enterpret
+      url: https://www.enterpret.com/guides/the-6-ways-platform-pms-gather-feedback-from-internal-and-external-customers
+      source_date: 2026-11-04
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified (1 of 2 sources)"
+      note: Same vendor as W5. No author named
+  open_gaps:
+    - A non-vendor source for the feedback tagging burden
+    - Second source for the hardware and internal PM contexts
+  gate_1_decision: ""
+
+- id: mr-wf-04
+  workflow: Code the open-text answers of each problem validation survey and report them by segment
+  topic_area: Problem validation
+  trigger_and_cadence: Each validation or market survey wave. Assumption, 2 to 6 waves a year, each with hundreds of open-text answers
+  input: Survey export (closed answers, segment fields, open-text answers) and the code frame from the market problem log
+  output: Coded open-text answers, counts by code and segment, a short table that sets the open-text codes next to the closed answers, and a flag report for the PM
+  pm_decision_informed: Whether a market problem is pervasive and urgent enough in a segment to go forward
+  bottleneck:
+    description: Coding open-ended answers by hand is tedious, slow and error-prone. Good practice needs two coders and a reviewer, so the open-text data is often skipped or skimmed
+    pdlc_stage: Market
+    focus_area: Market Problems
+    sources: [W7, W8]
+  scores:
+    judgment: medium. The code frame is a judgment; applying it is rule-based
+    repetition: high. Every answer and every wave
+    ai_candidate: yes
+  split:
+    agent_does:
+      - Code each answer against the code frame
+      - Mark answers that fit no code
+      - Count codes by segment
+      - Compare open-text codes with the matching closed answers
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, code frame with definitions and examples, segment fields, output format
+      quality_checks:
+        - Each code has a supporting phrase from the answer
+        - No code holds less than the minimum share set in the brief without a flag
+        - A second coding pass on a 10% sample agrees with the first
+      handoff_rules:
+        - An open-text code that disagrees with the closed answer of the same respondent
+        - More than 10% of answers in "other"
+      audit: 15 random coded answers, checked by hand
+    pm_decides:
+      - The code frame
+      - Which differences between segments are real
+      - Whether the problem passes the validation bar
+  ai_error_to_catch: Negation and sarcasm. "Setup was not hard at all" is coded as "setup is hard". The supporting phrase check passes because the words "setup" and "hard" are in the answer. The audit finds it
+  contexts:
+    hardware: Surveys of installers, distributors or field engineers. gap, no source found
+    internal_pm: Internal tool satisfaction or needs surveys of employees. gap, no source found
+    industry_notes:
+      - "data safety: remove names and emails from the export before the agent reads it"
+  proposed_lab:
+    goal: Extend the course agent to code a survey wave and set the codes next to the closed answers
+    core_message: Make the agent check itself with a second pass, then audit the cases where the checks agree for the wrong reason
+    build_type: agent (extend the module 1 agent)
+    core_path_no_connectors: yes. The learner uploads a survey CSV
+    platforms:
+      claude: Skill with the code frame
+      chatgpt: Project with the code frame and CSV (E9 not verified)
+      copilot: Agent with the code frame as an embedded file (E6). Large CSV limits not verified
+      gemini: Gemini skill with the code frame (E8)
+    stretch: Add a chart of codes by segment where the platform runs code
+    registry_check: PDW-AI teaches validation basics (urgency, pervasiveness, willingness to pay) as concepts. This lab does not reteach them; it runs survey coding on batches. No overlap with CAW-AI or BPW-AI. Risk, survey design is not taught here
+  evidence:
+    - id: W7
+      claim: Manual coding of open-ended survey text is tedious, time-consuming and error-prone; coding standards need two independent coders; AI cut manual coding labor by about 55% on one survey
+      type: claim
+      source: What Can AI Do for Survey Efficiency, Peter Einaudi, RTI International
+      url: https://www.rti.org/insights/ai-survey-data-analysis
+      source_date: 2025-06-23
+      checked_on: 2026-11-20
+      age_flag: true
+      status: "verified"
+      note: Non-vendor research institute. Older than 12 months; Dan decides. The 55% figure is one survey program before 2026 and fails the 2026 rule as a statistic
+    - id: W8
+      claim: Coding open-ended answers is one of the most tedious tasks in market research and needs human judgment
+      type: claim
+      source: Open ended survey coding, 10 steps for coding the responses, Savanta
+      url: https://savanta.com/knowledge-centre/view/open-ended-survey-coding-10-steps-for-coding-the-responses/
+      source_date: 2025-03-31
+      checked_on: 2026-11-20
+      age_flag: true
+      status: "verified"
+      note: Market research agency. First published 2015, updated 2025-03-31. Older than 12 months; Dan decides
+  open_gaps:
+    - A 2026 source for the survey coding burden
+    - Evidence that PMs (not research teams) code survey text
+  gate_1_decision: ""
+
+- id: mr-wf-05
+  workflow: Screen and shortlist each round of research participants against the study criteria
+  topic_area: Research operations
+  trigger_and_cadence: Each discovery, win/loss or validation study. Assumption, every 2 to 6 weeks
+  input: Screener responses or a customer list export, the study criteria, and the do-not-contact and recent-participant lists
+  output: A ranked shortlist with the reason for each pass, a reject list with reasons, quota fill by segment, and a flag report for the PM
+  pm_decision_informed: Who the PM talks to, so the study hears from the right segment and roles
+  bottleneck:
+    description: Recruiting is one of the most failure-prone parts of research. Finding qualified participants and the time to recruit are top challenges, and participant fraud is now common, so each screener needs careful checks
+    pdlc_stage: Market
+    focus_area: Market Problems
+    sources: [W10, W11, W12]
+  scores:
+    judgment: low to medium. Criteria checks are rules; edge cases need the PM
+    repetition: high. Every applicant, every study
+    ai_candidate: yes
+  split:
+    agent_does:
+      - Check each applicant against the criteria
+      - Check for inconsistent answers and fraud signals
+      - Remove people on the do-not-contact or recent-participant lists
+      - Rank the passes and fill quotas by segment
+      - Draft invitation emails for the PM to send
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, study criteria, quotas, fraud signals, contact rules, output format
+      quality_checks:
+        - Each pass cites the screener answer for each criterion
+        - Quotas are not over-filled
+        - No one on the exclusion lists is shortlisted
+      handoff_rules:
+        - A fraud signal (the PM decides; a flag is not a verdict)
+        - An applicant who meets most criteria but not all
+        - A quota that cannot be filled
+      audit: 5 random passes and 5 random rejects per study
+    pm_decides:
+      - The criteria and quotas
+      - Each flagged applicant
+      - Who gets an invitation
+  ai_error_to_catch: The agent reads job title as buying role. A "Manager" title passes the "decision maker" criterion, but the screener answer says the person does not take part in buying. The citation check passes because a title is cited. The audit of passes finds it
+  contexts:
+    hardware: Recruiting installers, distributors and service technicians, often through channel partners. gap, no source found
+    internal_pm: Recruiting employee users of an internal tool, often through managers or Slack. gap, no source found
+    industry_notes:
+      - "health care: recruiting clinicians or patients adds consent and privacy rules. Not yet researched"
+      - "data safety: a customer list holds PII. Check that customers opted in to research contact, and use an approved tool"
+  proposed_lab:
+    goal: Extend the course agent to screen a round of applicants and hand only the edge cases to the PM
+    core_message: Write the criteria so the agent can cite proof for each one. A flag is a question for the PM, not a verdict
+    build_type: agent (extend the module 1 agent)
+    core_path_no_connectors: yes. The learner uploads a screener export and a customer list from the fallback case
+    platforms:
+      claude: Skill with the criteria and contact rules
+      chatgpt: Project with the criteria (E9 not verified)
+      copilot: Agent with the criteria as an embedded file (E6)
+      gemini: Gemini skill with the criteria (E8)
+    stretch: Connect a recruiting panel or CRM where allowed (not verified)
+    registry_check: PDW-AI teaches AI-assisted interview prep (guides and questions), not recruiting or screening. No overlap found. Fit, a support workflow; Dan may prefer it as a lab step inside another module, not a module of its own
+  evidence:
+    - id: W10
+      claim: 95% of surveyed qualitative researchers reported participant fraud in the last 12 months
+      type: statistic
+      source: Bots, deepfakes and fake identities are sabotaging user research, Kathren Neuss, TechRadar Pro
+      url: https://www.techradar.com/pro/bots-deepfakes-and-fake-identities-are-sabotaging-user-research
+      source_date: 2026-10-02
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "partly verified"
+      note: Opinion piece by a research agency head. Primary source is the Market Research Society Global Data Quality initiative; not opened, date and sample unknown. Do not use the figure until the primary is checked
+    - id: W11
+      claim: Recruiting is one of the most failure-prone parts of research; a human must spot-check AI vetting and treat fraud flags as a starting point, not a verdict
+      type: claim
+      source: Recruiting research participants with AI, Lyssna
+      url: https://www.lyssna.com/guides/ai-in-user-research-guide/recruiting-research-participants-with-ai/
+      source_date: 2026-09-17
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified"
+      note: Research platform vendor with a participant panel. No author named
+    - id: W12
+      claim: Finding qualified participants, time to recruit and participant quality are the top recruiting challenges
+      type: claim
+      source: The Modern Guide to Research Participant Recruitment, User Interviews
+      url: https://www.userinterviews.com/participant-recruitment-guide
+      source_date: unknown (copyright 2026)
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified"
+      note: Recruiting vendor. Its figures (54% cite participant quality) come from its 2025 State of User Research report and fail the 2026 rule. Use as a claim only
+  open_gaps:
+    - A 2026 primary statistic on recruiting time
+    - Hardware and internal PM recruiting sources
+  gate_1_decision: ""
+
+- id: mr-wf-06
+  workflow: Build and refresh a sourced market size and segment evidence model
+  topic_area: Market and segment sizing
+  trigger_and_cadence: A new market or segment question, then a refresh each quarter or when new data appears
+  input: The market question, segment definitions, analyst and public data sources, and the PM's own customer data
+  output: A top-down and bottom-up size model with each number linked to its source and date, an assumptions list with risk ratings, a "what changed" note on refresh, and a flag report for the PM
+  pm_decision_informed: Which segment is large and reachable enough to pursue, and which to drop
+  bottleneck:
+    description: The number the PM needs is rarely in any report, so the PM builds it from gaps, conflicting sources and assumptions. Secondary research takes a lot of time, sources often copy one another, and the data goes stale, so the work repeats
+    pdlc_stage: Focus
+    focus_area: Market Definition
+    sources: [W9, W19]
+  scores:
+    judgment: medium to high. Which assumptions to accept is a judgment
+    repetition: medium. Each new question and each quarterly refresh
+    ai_candidate: partly. The agent does the source search, the source checks and the arithmetic; the PM owns the assumptions
+  split:
+    agent_does:
+      - Find data points for each input of the model
+      - Record each source, its date and what it is based on
+      - Build the top-down and bottom-up estimates
+      - Mark where the two estimates differ by more than the set range
+      - On refresh, find new data and report what changed
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, market question, segment definitions, approved source types, the maximum source age, output format
+      quality_checks:
+        - Each number has a source, a date and a link
+        - Each source is checked for the study it repeats
+        - Each assumption has a risk rating
+      handoff_rules:
+        - Two sources that differ by more than the set range
+        - A number that rests on one source only
+        - A source older than the maximum age
+      audit: 3 numbers per model, traced back to the original source by hand
+    pm_decides:
+      - The segment definitions
+      - Which assumptions to accept
+      - Which segment goes forward
+  ai_error_to_catch: Fake triangulation. Two articles that quote one analyst report are counted as two confirming sources, so a weak number looks strong. The "each number has a source" check passes. The trace-back audit finds it
+  contexts:
+    hardware: Sizing by installed base, units and replacement cycles instead of seats. gap, no source found
+    internal_pm: Sizing the internal market (teams, users, workflows) for an internal platform. gap, no source found
+    industry_notes:
+      - "health care and FinTech: regulatory and licensing data shape the reachable market. Not yet researched"
+  proposed_lab:
+    goal: Extend the course agent to build a sourced size model and flag weak and conflicting numbers
+    core_message: The agent can find numbers fast. The PM's job is to know which numbers to trust
+    build_type: agent (extend the module 1 agent)
+    core_path_no_connectors: partly. Web search is needed for live sources. Core path uses a source pack from the fallback case; web search is the stretch
+    platforms:
+      claude: Skill with the model template and source rules
+      chatgpt: Project with the model template (E9 not verified)
+      copilot: Agent with the model template as an embedded file (E6); web grounding not verified
+      gemini: Gemini skill with the template (E8). Deep research does not work in skills
+    stretch: Let the agent search the web for new data each quarter
+    registry_check: MKT-2026 core course teaches segmentation and the segment evaluation worksheet. This lab does not reteach segmentation; it builds and audits a sourced size model. Category is Focus, not Market; Dan to decide fit with the Market course scope. The source rules mirror this repo's own research rules, which is a useful teaching point
+  evidence:
+    - id: W9
+      claim: The needed market number rarely exists in reports; sources conflict and often quote one source; secondary research takes a lot of time
+      type: claim
+      source: Common challenges of TAM research, Joe Radwich, Product Marketing Alliance
+      url: https://www.productmarketingalliance.com/common-challenges-of-tam-research/
+      source_date: 2025-04-21
+      checked_on: 2026-11-20
+      age_flag: true
+      status: "verified"
+      note: Practitioner community. Older than 12 months; Dan decides
+    - id: W19
+      claim: Market sizing rests on unverified assumptions, needs a lot of desk research and several iterations, and data goes stale fast
+      type: claim
+      source: An innovative approach to market sizing, Bart Krawczyk, LogRocket
+      url: https://blog.logrocket.com/product-management/innovative-approach-to-market-sizing
+      source_date: 2023-12-20
+      checked_on: 2026-11-20
+      age_flag: true
+      status: "verified"
+      note: Practitioner blog. First published 2023-04-04. Older than 12 months; Dan decides. Independent of W9
+  open_gaps:
+    - A 2026 source for the market sizing burden
+    - Confirm the Market course may include a Focus category workflow
+  gate_1_decision: ""
+
+- id: mr-wf-07
+  workflow: Keep the problem and assumption evidence register current after each piece of new evidence
+  topic_area: Problem validation
+  trigger_and_cadence: Each new input (interview batch, survey wave, win/loss batch, test result). Assumption, weekly
+  input: The register of market problems and key assumptions, and the new evidence (the insight log, survey results, win/loss report)
+  output: The updated register (each assumption with evidence for, evidence against, segment, strength and last-tested date), a "status changed" list, a "stale or untested" list, and a flag report for the PM
+  pm_decision_informed: Which problems count as validated, and what to test next
+  bottleneck:
+    description: Discovery makes many artifacts, so teams get overwhelmed and lose track of what has been tested and with whom. Tracking feels like extra work, so assumptions stay untested. One source author only
+    pdlc_stage: Market
+    focus_area: Market Problems
+    sources: [W14, W15]
+  scores:
+    judgment: high for status changes; low for the linking and dating
+    repetition: high. Every new piece of evidence
+    ai_candidate: partly. The agent links evidence and proposes status; the PM decides status
+  split:
+    agent_does:
+      - Link each new finding to the problems and assumptions it touches
+      - Mark it as evidence for or against, with segment and source
+      - Propose a status change with the reason
+      - List assumptions not tested in the set number of weeks
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, register format, status levels and the evidence each needs, staleness limit
+      quality_checks:
+        - Each evidence link cites its source and date
+        - A proposed status meets the evidence rule for that level
+        - The segment of the evidence matches the segment of the assumption
+      handoff_rules:
+        - Every proposed status change
+        - New evidence against a "validated" problem
+      audit: 3 status changes per month, traced to the evidence
+    pm_decides:
+      - Each status change
+      - What to test next
+      - When to stop testing a problem
+  ai_error_to_catch: Wrong-segment evidence. The agent marks an assumption about mid-size buyers as validated using evidence from enterprise buyers. The source and date check passes. The segment check misses it because the segment field was left blank in the insight. The audit finds it
+  contexts:
+    hardware: Assumptions often need lab, pilot or field test results, which arrive slowly. gap, no source found
+    internal_pm: Assumptions about internal adoption and workarounds. gap, no source found
+    industry_notes: []
+  proposed_lab:
+    goal: Extend the course agent to update the evidence register from the other labs' outputs
+    core_message: The agent can propose a status; only the PM can call a problem validated
+    build_type: agent (extend the module 1 agent)
+    core_path_no_connectors: yes. The learner uploads the register and the outputs of earlier labs
+    platforms:
+      claude: Skill with the register format and status rules
+      chatgpt: Project with the register (E9 not verified)
+      copilot: Agent with the register as an embedded file (E6)
+      gemini: Gemini skill with the register (E8)
+    stretch: Keep the register in a shared file the agent updates in place, where allowed
+    registry_check: PDW-AI tags problem statements "NOT YET VALIDATED" and teaches validation basics. This row does not reteach those; it keeps a register current over time. Risk of overlap is medium; Dan to decide. Good capstone, because it joins the outputs of the other labs
+  evidence:
+    - id: W14
+      claim: Discovery work makes many artifacts and teams get overwhelmed by how much they generate; archiving gets neglected
+      type: claim
+      source: Keeping track of discovery, Teresa Torres, Product Talk
+      url: https://www.producttalk.org/keeping-track-of-discovery.md
+      source_date: 2026-09-29
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "not verified"
+      note: Practitioner. First published 2022-10-05, updated 2026-09-29. Same author as W15 and E5
+    - id: W15
+      claim: Teams think they lack time for assumption testing because it is important but not urgent
+      type: claim
+      source: Assumption testing, Teresa Torres, Product Talk
+      url: https://www.producttalk.org/assumption-testing.md
+      source_date: 2026-09-30
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "not verified"
+      note: Same author as W14, so W14 and W15 count as one source. It does not say tracking itself is the burden
+  open_gaps:
+    - A second independent source that describes the tracking burden
+  gate_1_decision: ""
+
+- id: mr-wf-08
+  workflow: Turn each round of concept or prototype tests into a result per hypothesis
+  topic_area: Solution validation
+  trigger_and_cadence: Each round of concept tests, unmoderated tests or pilot sessions. Assumption, every 2 to 4 weeks during validation
+  input: Session transcripts or notes, task results, the test plan with hypotheses and pass criteria
+  output: A result per hypothesis (pass, fail, unclear) with evidence, stated preference set apart from observed behavior, and a flag report for the PM
+  pm_decision_informed: Which concept goes forward, changes or stops
+  bottleneck:
+    description: Qualitative test cycles take weeks. Transcription, coding (2 to 3 hours per interview) and reporting add days, so concept reviews close before findings arrive. One vendor source with no primary data
+    pdlc_stage: Planning
+    focus_area: Ideation
+    sources: [W16]
+  scores:
+    judgment: medium to high. Pass criteria are set in advance; reading mixed results needs the PM
+    repetition: medium to high. Every session in each round
+    ai_candidate: partly
+  split:
+    agent_does:
+      - Code each session against the hypotheses
+      - Separate what people said from what they did
+      - Score each hypothesis against its pass criteria
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, hypotheses, pass criteria, output format
+      quality_checks:
+        - Each result cites sessions and quotes
+        - Stated and observed evidence are in separate columns
+      handoff_rules:
+        - Stated preference and behavior disagree
+        - A result that rests on fewer sessions than the brief allows
+      audit: 2 sessions per round, read in full
+    pm_decides:
+      - The hypotheses and pass criteria
+      - Go, change or stop for each concept
+  ai_error_to_catch: Stated preference read as a pass. "8 of 10 liked it" scores the hypothesis as passed, but only 3 completed the task or agreed to pay. The quote check passes. The audit of full sessions finds it
+  contexts:
+    hardware: Tests with physical prototypes and field pilots. gap, no source found
+    internal_pm: Pilots of an internal tool with one team. gap, no source found
+    industry_notes:
+      - "health care: tests with clinicians or patients need consent and privacy rules. Not yet researched"
+  proposed_lab:
+    goal: Extend the course agent to score a round of concept tests against the hypotheses
+    core_message: Set the pass criteria before the agent reads the sessions
+    build_type: agent (extend the module 1 agent)
+    core_path_no_connectors: yes. The learner uploads session notes from the fallback case
+    platforms:
+      claude: Skill with the hypotheses and pass criteria
+      chatgpt: Project (E9 not verified)
+      copilot: Agent with the test plan as an embedded file (E6)
+      gemini: Gemini skill (E8)
+    stretch: Read video transcripts from a testing tool where connected (not verified)
+    registry_check: Category is Planning / Ideation, not Market; Dan to decide scope. Close to the Product Discovery and Design courses; check that no other Advanced AI course plans this lab. No workshop overlap found
+  evidence:
+    - id: W16
+      claim: Qualitative research takes about 6 weeks; manual coding takes 2 to 3 hours per interview; concept reviews close before findings arrive
+      type: claim
+      source: Is Qualitative Research Time-Consuming? A Framework for Research Operations Managers, Florian Hendrickx, Conveo
+      url: https://conveo.ai/insights/is-qualitative-research-time-consuming
+      source_date: 2026-08-18
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "not verified"
+      note: AI research vendor. No primary data for any figure ("based on typical enterprise studies"). Do not use the figures
+  open_gaps:
+    - A second, non-vendor source for the concept test burden
+    - Confirm Planning / Ideation fits the Market course
+  gate_1_decision: ""
+
+- id: mr-wf-09
+  workflow: Answer stakeholder questions from past research with sourced, dated answers
+  topic_area: Research sharing and reuse
+  trigger_and_cadence: Stakeholders ask "what do we know about X?" in Slack, email and planning meetings. Assumption, several questions a week
+  input: The question, the insight log, the evidence register, past study reports
+  output: A short answer with each claim linked to a study, its date and segment, a "what we do not know" line, and a flag report for the PM
+  pm_decision_informed: Whether a question needs new research or can be answered now, and what to tell the stakeholder
+  bottleneck:
+    description: Contributing to and searching repositories is too much work, so people cannot find past insights. Stakeholders do not remember study names, answers get lost, and teams commission new studies on questions already answered
+    pdlc_stage: Market
+    focus_area: Market Problems
+    sources: [W13, W20]
+  scores:
+    judgment: medium. Finding and citing is low judgment; saying whether old research still holds needs the PM
+    repetition: high. Many questions each week
+    ai_candidate: yes
+  split:
+    agent_does:
+      - Search the log, register and reports for the question
+      - Draft a short answer with a citation for each claim
+      - State the date and segment of each source
+      - Write what the research does not cover
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, sources in scope, citation format, the maximum source age before a warning, answer length
+      quality_checks:
+        - Each claim has a citation to a study in scope
+        - Each cited study shows its date and segment
+        - The answer has a "what we do not know" line
+      handoff_rules:
+        - The only evidence is older than the age limit
+        - Sources disagree
+        - The question needs new research
+      audit: 2 answers per week, each citation opened and checked
+    pm_decides:
+      - Whether to send, change or hold each answer
+      - Whether to start new research
+  ai_error_to_catch: Old research presented as current. The agent answers from a 2-year-old study for another segment. The citation check passes and the date is shown in small print, but the answer text says "buyers want". The audit finds that the answer goes past its evidence
+  contexts:
+    hardware: Questions from engineering and field teams about installed-base needs. gap, no source found
+    internal_pm: Questions from internal teams about why the platform works the way it does. gap, no source found
+    industry_notes:
+      - "data safety: the research store can hold customer names and quotes. Share answers only inside approved tools"
+  proposed_lab:
+    goal: Extend the course agent to answer stakeholder questions from the team's own research store
+    core_message: An answer is only as good as what it admits it does not know
+    build_type: agent (extend the module 1 agent with the research store as knowledge)
+    core_path_no_connectors: yes. The learner uploads the insight log and two past reports
+    platforms:
+      claude: Project with the research files as knowledge and a skill for the answer format
+      chatgpt: Project with the files (E9 not verified)
+      copilot: Agent with the files as embedded knowledge (E6); sharing the agent with stakeholders not verified
+      gemini: Gemini skill with the files (E8); 100 MB file limit
+    stretch: Share the agent with stakeholders so they ask it directly, where the company allows
+    registry_check: No workshop teaches research reuse. AI Agents course teaches boundaries; this lab applies them to what the agent may answer. Uses the log from mr-wf-01, so it suits the one-agent design
+  evidence:
+    - id: W13
+      claim: Research repositories fail because contributing and tagging is too much work and people cannot find or reuse past insights
+      type: claim
+      source: Why Research Repositories Fail and How to Get Them Right, Maria Rosala, Nielsen Norman Group
+      url: https://www.nngroup.com/articles/why-repositories-fail/
+      source_date: 2024-07-26
+      checked_on: 2026-11-20
+      age_flag: true
+      status: "verified"
+      note: Independent research firm. Based on a 2024 survey of 400+ UX and ReOps staff, so its figures fail the 2026 rule. Use as a claim only. Older than 12 months; Dan decides
+    - id: W20
+      claim: Repositories become unvisited archives; PMs do not remember study names; teams commission new studies on questions already answered
+      type: claim
+      source: Your research repository is probably a graveyard, UserTesting
+      url: https://www.usertesting.com/blog/your-research-repository-probably-graveyard-heres-how-change-ai
+      source_date: 2026-07-08
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified"
+      note: Research platform vendor. Based on interviews with research leaders, no data. Independent of W13
+    - id: W6
+      claim: 39% of respondents say PMs conduct user research; 49% of organizations have a research library or repository; 69% use AI in some research projects
+      type: statistic
+      source: The Future of User Research Report 2026, Maze
+      url: https://maze.co/blog/future-user-research-2026/
+      source_date: 2026-03-11
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified"
+      note: Vendor survey of nearly 500 researchers, designers and product people. Method details not stated. Supports the context of rows 01 to 09, not a bottleneck by itself
+  open_gaps:
+    - A 2026 primary statistic on repository use or duplicate research
+  gate_1_decision: ""
+
+- id: mr-wf-10
+  workflow: Keep the alternatives map current from the team's own evaluator and deal evidence
+  topic_area: Competitive landscape
+  trigger_and_cadence: Each new batch of win/loss interviews, discovery interviews and closed deals. Assumption, monthly, after the win/loss batch in mr-wf-02
+  input: The current alternatives map, the insight log (mr-wf-01), the decision-driver log with "alternative chosen" per deal (mr-wf-02), and the CRM export of decided deals
+  output: An updated alternatives map (named competitors, substitutes, in-house workarounds and "do nothing"), each with deal count, segment, the buyer reason it was chosen and the evidence rows behind it; a "what moved" summary; and a flag report for the PM
+  pm_decision_informed: Which alternatives the team must beat in each segment, and what goes to positioning, pricing and the roadmap. The PM decides; the agent only maps evidence
+  bottleneck:
+    description: >-
+      Keeping the competitive landscape current is recurring work that no one has time for. Competitive work is one
+      task among many for most owners, and documents built by hand age quickly. Teams track named competitors and miss
+      the alternatives that buyers actually choose (workarounds, "do nothing"), which only the team's own deal evidence shows.
+      Rerun 2026-11-20: 2 sources found, one weak; neither is about an alternatives map from own evidence (gap)
+    pdlc_stage: Market
+    focus_area: Competitive Landscape
+    sources: [N13, W21]
+  scores:
+    judgment: medium. Matching each deal to an alternative follows rules; deciding which alternative matters needs the PM
+    repetition: medium to high. Same steps for each batch of deals and interviews
+    ai_candidate: yes. The agent keeps the map; the PM manages it by checks, flags and audits
+  split:
+    agent_does:
+      - Read the new rows in the insight log and the decision-driver log
+      - Match each "alternative chosen" to an entry in the map, or propose a new entry
+      - Count deals per alternative by segment and period
+      - Mark each alternative as new, growing or fading against the last map
+      - Link each map entry to its evidence rows
+      - Send flags to the PM
+    pm_manages:
+      brief: Job, inputs, alternative types (competitor, substitute, workaround, do nothing), minimum deals per entry, output format, done criteria
+      quality_checks:
+        - Each map entry links to 1 or more evidence rows with a deal id or interview id
+        - Each entry shows its source type (buyer interview or CRM only)
+        - Each "growing" or "fading" label states the two periods compared
+      handoff_rules:
+        - An alternative that is not in the map
+        - A deal where the CRM competitor field and the buyer's answer differ
+        - A segment where "do nothing" or a workaround is the top alternative
+      audit: 3 random map entries per batch, traced back to their source interviews and deal records
+    pm_decides:
+      - The alternative types and the minimum deals per entry
+      - Which alternatives the team must beat, by segment
+      - What goes to positioning, pricing, sales and the roadmap
+  ai_error_to_catch: >-
+    A named competitor is counted where the buyer chose "do nothing". The CRM competitor field says "Competitor X", but the
+    buyer said in the interview that they kept the spreadsheet. The agent trusts the CRM field, so Competitor X looks like it
+    is growing. The link check passes, because each entry has a deal id. Only the audit against the interview finds it
+  contexts:
+    hardware: Alternatives often include keeping the installed product longer, a repair, or a distributor's own brand. gap, no source found
+    internal_pm: The alternatives to an internal platform are team-built tools, spreadsheets and vendor tools bought by a team. gap, no source found
+    industry_notes:
+      - "data safety: deal records and interview notes hold customer names, deal values and competitor prices. Use only a tool the company has approved"
+      - "health care and FinTech: Not yet researched"
+  proposed_lab:
+    goal: Extend the course agent to keep an alternatives map from the team's own evaluator and deal evidence
+    core_message: Map what buyers chose, not what competitors announce. Every entry must trace back to a buyer or a deal
+    build_type: agent (extend the module 1 agent with an alternatives-map skill or knowledge file)
+    core_path_no_connectors: yes. The learner uploads the insight log, the decision-driver log and a CRM export from the fallback case company
+    platforms:
+      claude: Skill with the brief and alternative types, added to the course agent project. File output for the map (cl-fo-06)
+      chatgpt: Project with the brief and files (cg-01). File output not confirmed (cg-08)
+      copilot: Agent in agent builder with the brief and the map as an embedded file (mb-01, mb-02). Download the map in the same session (mb-11)
+      gemini: Gemini skill with the brief and files (gm-01). File output in the Gemini app (gm-09), not confirmed for skills
+    stretch: Run on each new win/loss batch, where the platform allows (not verified)
+    registry_check: >-
+      Not a CAW-AI agent. CAW-AI builds a positioning proof check (own claims vs proof), a buyer voice watch (themes from
+      public reviews of competitors) and a weekly competitive signal watch (public competitor moves, act / watch / need
+      evidence). This row reads no public sources and watches no competitor moves. Its only inputs are the team's own
+      evaluator interviews and deal records, and its output is a map of alternatives that buyers chose, including
+      workarounds and "do nothing". Not the AI Agents course Competitive Intel Watchdog (that agent watches competitors).
+      CAW-AI module 4 ("what only your buyers can tell you") compares own buyer sources with public reviews; this lab does
+      not reteach that comparison. Inputs overlap with mr-wf-02 (alternative chosen). Dan to decide whether this is its own
+      module or a later step of the mr-wf-02 lab
+    pragmatic_fit: Pragmatic Framework 2027 says competitive intelligence comes from evaluator interviews, shared customers, trade shows and third-party research (N1). This row uses the evaluator part only
+  evidence:
+    - id: W21
+      claim: Competitive research is done by hand in many tabs, and the documents it produces age quickly; positioning now shifts each quarter, so manual tracking is hard to keep up
+      type: claim
+      source: Competitive Intelligence in 2026, Why Most Teams Still Get It Wrong, YurijL, DEV Community
+      url: https://dev.to/yl_seeto/competitive-intelligence-in-2026-why-most-teams-still-get-it-wrong-eb8
+      source_date: 2026-02-10 (page shows "Posted on Feb 10"; year inferred from 2026 references; metadata 2026-11-11)
+      checked_on: 2026-11-20
+      age_flag: false
+      status: "verified, weak"
+      verifier_note: "Opened 2026-11-20. 'dozens of tabs', 'internal documents that age quickly' and 'positioning shifts now happen quarterly instead of yearly' confirmed. Byline 'Feb 10', no year; author joined 2026-01-30, so 2026 is sound. Author promotes Seeto. No figure has a source link. Claim only"
+      note: >-
+        Weak. Author promotes Seeto, an AI competitive-analysis tool (vendor-adjacent). Its figures (6 to 10 hours a week,
+        Gartner 28%, Forrester 68%) have no links and are 2024 or unsourced. Do not use any figure. Use as a claim only.
+        Independent of N13 (Wynter). Second source for the bottleneck is N13 (needs.md): PMMs own CI as one task among
+        many (52%); 21% have a dedicated CI person
+  open_gaps:
+    - A source that describes keeping an alternatives map (including workarounds and "do nothing") from own deal evidence as a burden
+    - A stronger, non-vendor second source for the bottleneck. Lead not opened (fetch budget), https://www.kompyte.com/blog/how-much-time-competitive-intelligence (vendor)
+    - Hardware and internal PM sources
+  gate_1_decision: ""   # Dan only

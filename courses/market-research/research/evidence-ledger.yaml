@@ -1,0 +1,590 @@
+# Evidence ledger, course market-research. Stage 1, track 4 (evidence researcher).
+# Written 2026-11-20. Schema: id, claim, type, source, url, source_date, checked_on, age_flag, status, note.
+# E1 to E9 come from worked-example-row.yaml. Their ids are kept.
+# type: statistic | study | claim | case_study | tool-feature
+# vendor: true when the publisher sells a product or service in this area, or the page is a vendor customer story.
+# age_flag: true = a non-statistic source older than 12 months (before 2025-11-20). unknown = page shows no date.
+# Statistics and studies are all published in 2026 or later. Older items are under "dropped".
+# Source details and independence notes are in sources.yaml (S ids).
+
+merge_note: >-
+  At finish (2026-11-20) platform-matrix.yaml exists with feature ids cg-01 to cg-08 (ChatGPT),
+  cl-pj-01, cl-pj-02, cl-cl-03 to cl-cl-05, cl-fo-06, cl-sc-07 (Claude), gm-01 to gm-09 (Gemini) and
+  mb-01 to mb-10 (Copilot agent builder). E6 to E9 may overlap these. workflows.yaml (W ids) and needs.md
+  (N ids) did not exist yet. No ids are merged. Full merging happens later.
+
+entries:
+
+  # ---------- From the worked example (ids kept) ----------
+
+  - id: E1
+    claim: Median time to synthesize themes fell from 14 days (2024) to 4 hours (Q1 2026)
+    type: statistic
+    source: 2026 Customer Discovery Velocity Report, Perspective AI
+    source_id: S1
+    vendor: true
+    url: https://s.getperspective.ai/blog/2026-customer-discovery-velocity-report-ai-cut-time-to-insight-94-percent
+    source_date: 2026-05-18
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "partly verified, weak"
+    verifier_note: "Opened 2026-11-20. 14 days and 4 hours confirmed, 180 teams, Jan to Apr 2026. The 4 hours is labeled '2026 median', not 'Q1 2026'. 2024 baseline method not stated. Vendor"
+    note: Vendor of an AI interview tool. Own panel of 180 teams, Jan to Apr 2026. Baseline method not stated. Do not put on a slide
+
+  - id: E2
+    claim: Analysis fell from 12.1 to 1.1 days per 30-interview study; a new "synthesis QA" step takes 0.6 days
+    type: statistic
+    source: 2026 AI Research Productivity Report, Perspective AI
+    source_id: S1
+    vendor: true
+    url: https://s.getperspective.ai/blog/2026-ai-research-productivity-report-time-to-insight-cut-84-percent
+    source_date: 2026-05-12
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified, weak"
+    verifier_note: "Opened 2026-11-20. 12.1 to 1.1 days and 0.6-day synthesis QA confirmed. 2026 data: 217 studies, Jan to Apr 2026; 2024 baseline: 412 post-mortems, 96 teams, period not stated. Vendor's own customer data"
+    note: Same vendor as E1, so not an independent source. Uses own customer data. Some figures do not reconcile
+
+  - id: E3
+    claim: 80% of senior product leaders use AI to run or synthesize user research; 34% use it heavily
+    type: statistic
+    source: The State of Product Leadership 2026 (Q2 2026), Delight Path. Research partners Lyssna, Userflow, Foldspace
+    source_id: S2
+    vendor: partly
+    url: https://www.delightpath.com/product-leadership-report-2026
+    secondary_url: https://www.lyssna.com/blog/product-leaders-ai-research-survey/
+    source_date: 2026-07-10 (Lyssna article; the Delight Path page shows no date)
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified"
+    verifier_note: "Opened Delight Path page and Lyssna article 2026-11-20. 80%, 34%, 107 leaders, Q2 2026, partners Lyssna, Userflow, Foldspace confirmed. Primary page has no date. Full report behind a download form, not opened"
+    note: >-
+      Primary report page opened 2026-11-20. It states 80% and 34%. 107 senior product leaders, Q2 2026,
+      online survey hosted on Lyssna. Regions NA 50%, Europe 24%, APAC 13%, other 13%. Sample from the Product
+      Leaders Lab community, the Delight Path newsletter and the Lyssna panel, so leaders are likely more AI-aware
+      than average. Full report is gated behind a form; the free page is a preview. Lyssna (a research-tool vendor)
+      co-produced it. Small sample: use as a direction, not a precise figure
+
+  - id: E4
+    claim: With AI synthesis, the hard work moves to checking the output
+    type: claim
+    source: >-
+      (1) Tristan Gamilis, Lyssna CPO, in the Lyssna article for E3. (2) Condens 2026 survey (E10): 71% say
+      validating AI output still takes significant time. (3) UKG engineering blog (E23): expert validation of AI
+      clusters takes meaningful time; the model shows flawed data with the same confidence as good data
+    source_id: [S3, S4, S14]
+    vendor: mixed. S3 and S4 are research-tool vendors, independent of each other. S14 is a first-party practitioner (UKG does not sell the tool)
+    url: https://www.lyssna.com/blog/product-leaders-ai-research-survey/
+    source_date: 2026-07-10
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. Gamilis quote (Lyssna), Condens 71% and UKG 'meaningful time' all confirmed. Two of three are research-tool vendors"
+    note: >-
+      Now has 3 independent sources (closes the worked-example gap). E2 (synthesis QA step) also supports it.
+      No non-vendor study measures the checking time directly
+
+  - id: E5
+    claim: AI synthesis can invent or reword quotes and lose context
+    type: claim
+    source: >-
+      (1) Teresa Torres, Product Talk. (2) JMIR 2026 study (E12): in a pilot, GPT-5 produced a quote that did not
+      match the source text. (3) Condens 2026 survey (E10): respondents report AI "hallucinates quotes that weren't
+      there"; 42% cite loss of important context
+    source_id: [S5, S6, S4]
+    vendor: mixed. S5 practitioner, S6 peer-reviewed study (not vendor), S4 vendor
+    url: https://www.producttalk.org/customer-interview-analysis-ai/
+    source_date: 2025-10-08 (Torres, updated 2026-09-27)
+    checked_on: 2026-11-20
+    age_flag: true
+    status: "verified"
+    verifier_note: "Opened JMIR and Condens 2026-11-20. JMIR pilot reworded quote confirmed. Condens 'hallucinates quotes' is the authors' summary of respondents, not a respondent quote; 42% context loss confirmed. Torres not reopened"
+    note: >-
+      Closes the worked-example gap. Torres is older than 12 months (Dan decides), but S6 and S4 are 2026.
+      Torres' 30% wrong-quote figure is one project, not a statistic. JMIR reports one reworded quote in a pilot,
+      not a rate. No 2026 source gives a quote error rate. Do not state a rate on a slide
+
+  - id: E6
+    claim: Copilot agent builder takes instructions up to 8,000 characters and embedded files as knowledge
+    type: tool-feature
+    source: Build agents in Agent Builder, Microsoft Learn
+    source_id: S7
+    vendor: true
+    url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+    source_date: 2026-11-16
+    checked_on: 2026-11-19
+    age_flag: false
+    status: "verified"
+    verifier_note: "Reopened 2026-11-20 (Learn page updated 2026-11-16). 8,000 characters confirmed. Embedded files confirmed on agent-builder-add-knowledge (see mb-02)"
+    note: Not re-checked by track 4. Platform matrix owns re-checks
+
+  - id: E7
+    claim: Claude custom skills are on all plans from Free to Enterprise; code execution must be on
+    type: tool-feature
+    source: How to create custom skills, Claude Help Center
+    source_id: S8
+    vendor: true
+    url: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+    source_date: 2026-11 (page shows "updated over 2 weeks ago")
+    checked_on: 2026-11-19
+    age_flag: false
+    status: "verified"
+    verifier_note: "Reopened 2026-11-20. Free, Pro, Max, Ultra, Team, Enterprise; code execution required. Page shows only 'updated over 3 weeks ago'"
+    note: Not re-checked by track 4. Platform matrix owns re-checks
+
+  - id: E8
+    claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). Workspace business accounts get skills in March 2027. A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
+    type: tool-feature
+    source: About the transition from Gems to skills, Gemini Apps Help
+    source_id: S9
+    vendor: true
+    url: https://support.google.com/gemini/answer/18560919?hl=en
+    source_date: unknown (page shows no date)
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "wrong"
+    verifier_note: "Opened 2026-11-20. Personal dates, 100 MB and tool list are correct. 'Workspace business accounts get skills in March 2027' is wrong: the Help page gives March 2027 as the Gem removal date for business accounts and says work accounts get skills 'soon'. The Workspace Updates blog (2026-09-30, updated 2026-11-09) says all Workspace customers get Gemini app skills, rollout done by mid-November 2026. Help page undated"
+    note: No scheduling found for skills. Not re-checked by track 4
+
+  - id: E9
+    claim: ChatGPT Projects hold instructions and files
+    type: tool-feature
+    source: Projects in ChatGPT, OpenAI Help Center
+    source_id: S10
+    vendor: true
+    url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+    source_date: unknown
+    checked_on: 2026-11-19
+    age_flag: false
+    status: "verified"
+    verifier_note: "Opened 2026-11-20 on help-lb.openai.com (OpenAI subdomain; help.openai.com did not load). Instructions and files confirmed. Page date relative only ('3 days ago')"
+    note: Page did not load. Platform matrix track owns the retry
+
+  # ---------- New, track 4 ----------
+
+  - id: E10
+    claim: >-
+      Of 332 research practitioners, 71% say AI lets them analyze data significantly faster, and 71% say
+      validating AI output still takes significant time. 65% disagree that they can trust output with minimal
+      review. 12% have no validation process
+    type: statistic
+    source: The State of AI in User Research Analysis, Condens (Halberstadt, Anusic)
+    source_id: S4
+    vendor: true
+    url: https://condens.io/blog/ai-in-user-research-analysis-report
+    source_date: 2026-05-22
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified, vendor"
+    verifier_note: "Opened 2026-11-20. 71%, 71%, 65% disagree, 12% confirmed; 332 responses. 21% and 5% are two different questions (21% agree with the trust statement; 5% name 'trust with minimal review' as their practice), not a conflict. Survey period not stated"
+    note: >-
+      Sample 332: researchers 63%, designers 15%, PMs 9%, ReOps 9%. Survey period not stated. Condens sells a
+      research repository with AI. The page gives 21% and 5% for "trust with minimal review"; the two figures
+      conflict and are not explained. Use 71% / 71% only. Supports the bottleneck shift in mr-wf-01
+
+  - id: E11
+    claim: >-
+      69% of about 500 researchers, designers and product people use AI in at least some research projects.
+      82% say interpreting nuance and emotion needs human judgment
+    type: statistic
+    source: The Future of User Research Report 2026, Maze
+    source_id: S11
+    vendor: true
+    url: https://maze.co/blog/future-user-research-2026/
+    source_date: 2026-03-11
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified, vendor"
+    verifier_note: "Opened 2026-11-20. 69%, 82%, nearly 500 respondents, 2026-03-11 confirmed. Survey period not stated"
+    note: Survey period and sampling not stated. No figures on time saved, accuracy or privacy
+
+  - id: E12
+    claim: >-
+      In a 2026 peer-reviewed comparison, GPT-5 and Gemini 2.5 Pro over-coded qualitative text (181 and 183 code
+      applications vs 138 by the human) and agreed with the human coder far less than two humans did
+      (Krippendorff alpha 0.487 and 0.507 vs 0.703). The chat-based workflow saved no time
+    type: study
+    source: van den Berkmortel et al., J Med Internet Res 2026;28:e98374 (Maastricht University)
+    source_id: S6
+    vendor: false
+    url: https://www.jmir.org/2026/1/e98374
+    source_date: 2026-08-13
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. 181/183 vs 138, alpha 0.487/0.507 vs 0.703, no time saved, 317 articles 2020 to 2023, published 2026-08-13 confirmed"
+    note: >-
+      Health care context. Corpus is 317 newspaper articles on nurses (2020 to 2023), not interviews. Phase 2
+      sample is 31 articles. Part of the gap comes from how quotes were cut, not only from disagreement.
+      Strong non-vendor counterweight to vendor speed claims: speed depends on the workflow, not only the model.
+      Also supports E5 (one reworded quote in the pilot)
+
+  - id: E13
+    claim: >-
+      In a timed test with 11 expert policy researchers, an LLM-assisted workflow (quote extraction, thematic
+      analysis, report) was roughly an order of magnitude faster than their usual methods and found about two more
+      themes per topic. It recovered 88.6% of the themes in six published reports
+    type: study
+    source: Liu et al., How can LLMs Support Policy Researchers? arXiv 2604.04479
+    source_id: S12
+    vendor: false
+    url: https://www.emergentmind.com/papers/2604.04479
+    source_date: 2026-04-06
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "wrong"
+    verifier_note: "Opened arXiv HTML 2026-11-20. 11 expert policy researchers, 'order of magnitude faster' (figure caption, 10 to 15 minute timed phases, no exact times) and about 2 more themes confirmed. 88.6% is wrong as stated: it is 31 of 35 themes across all sources that appeared in Reddit or interview outputs. Of the 22 report themes, Reddit found 16 and interviews found 16. Preprint, not peer reviewed"
+    note: >-
+      Preprint, not peer reviewed. Small user study (11). Policy research, not PM, but the workflow is the same
+      as interview synthesis. Read through an abstract page (emergentmind), not the arXiv PDF. Authors call
+      representativeness and trust open issues. Best non-vendor 2026 source found for the speed side of the bottleneck
+
+  - id: E14
+    claim: LLM-assisted rapid qualitative analysis of nurse interviews took significantly less time than fully manual analysis
+    type: study
+    source: University of Minnesota Medical School news item on a paper in the International Journal of Qualitative Methods (doi 10.1177/16094069261429593)
+    source_id: S13
+    vendor: false
+    url: https://med.umn.edu/clhss/news/llm-assisted-analysis-proves-promising-qualitative-research
+    source_date: 2026-03-30
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "partly verified"
+    verifier_note: "Paper not opened: doi.org and journals.sagepub.com both failed 2026-11-20. UMN news item opened: 'significantly less time', no figures. Do not use until the paper is opened"
+    note: >-
+      Health care. Only the university news item was opened, not the paper. No time figures and no agreement
+      metric on the page. Nurses in a blinded survey preferred the LLM codebooks. Open the paper before use
+
+  - id: E15
+    claim: >-
+      LLM coding of interviews with 21 survivors of firearm violence had low overall relevance, was highly
+      sensitive to data processing, and model guardrails caused "substantial narrative erasure"
+    type: study
+    source: Zhu et al., Findings of ACL 2026, pp. 12174 to 12192
+    source_id: S15
+    vendor: false
+    url: https://preview.aclanthology.org/ingest-acl/2026.findings-acl.591/
+    source_date: 2026-07
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified (abstract only)"
+    verifier_note: "Opened 2026-11-20. Title, authors, 21 survivors, pp. 12174 to 12192, July 2026, 'narrative erasure' confirmed"
+    note: Peer reviewed. Sensitive population, not PM. Supports "loses context" in E5 and the human audit step
+
+  - id: E16
+    claim: >-
+      AI "digital twin" survey respondents (mostly Claude Opus 4.6) collapsed the range of opinion compared with the
+      real Pew panel. 47% of synthetic questions had an answer option no one chose; human surveys had none
+    type: study
+    source: Chapekis et al., How well synthetic polls capture the diversity of public opinion, Pew Research Center Data Labs
+    source_id: S16
+    vendor: false
+    url: https://www.pewresearch.org/data-labs/2026/09/30/how-well-synthetic-polls-capture-the-diversity-of-public-opinion/markdown
+    source_date: 2026-09-30
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. Claude Opus 4.6 main model, 47% vs none, 98% and 56 points, three ATP waves H1 2026 confirmed. Respondent count not on page"
+    note: >-
+      Three ATP waves fielded in H1 2026. Example: 98% of synthetic respondents said China benefits more from trade,
+      56 points above the real share. Bias direction is inconsistent. Number of respondents not on the page.
+      Public opinion, not B2B buyers, but the risk transfers to synthetic survey and persona use. Strongest
+      non-vendor item on sampling bias
+
+  - id: E17
+    claim: >-
+      Synthetic respondents matched real consumer choices about 79% of the time, but overestimated positive
+      attitudes to well-known brands (average 1.2 points off on a 7-point scale) and were much less variable than
+      real respondents
+    type: study
+    source: Kaiser et al., Leaving Insight to Digital Twins? NIM Marketing Intelligence Review 18(1), doi 10.2478/nimmir-2026-0008
+    source_id: S17
+    vendor: false
+    url: https://www.nim.org/en/publications/detail/leaving-insight-to-digital-twins
+    source_date: 2026-03
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. 79%, 1.2 points on 7-point scale, less variable, 18(1) 48-53, DOI confirmed. Sample size not on page"
+    note: >-
+      Nonprofit institute journal, practitioner review format. Sample size not on the summary page. Authors say
+      synthetic data fits early concept tests, not decisions that need precise insight. Independent of E16, so
+      E16 + E17 give 2 sources for "synthetic respondents understate variety and skew positive"
+
+  - id: E18
+    claim: Bots and AI-assisted answers are a structural risk for online nonprobability survey panels; single defenses such as CAPTCHAs and attention checks are not enough
+    type: claim
+    source: >-
+      (1) NORC at the University of Chicago, Fraudulent respondents and bots in nonprobability surveys: a literature
+      review (April 2026). (2) Gordon et al., Prolific preprint (E19), which finds the size of the problem varies
+      strongly by panel
+    source_id: [S18, S19]
+    vendor: mixed. S18 not vendor; S19 vendor-funded
+    url: https://www.norc.org/content/dam/norc-org/pdf2026/cpss-research-brief-fraud-lit-review.pdf
+    source_date: 2026-04
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "partly verified"
+    verifier_note: "NORC PDF not opened (web budget). Prolific side confirmed only through Retraction Watch (see E19)"
+    note: >-
+      NORC is a literature review. Most statistics inside it are from 2005 to 2025, so do not quote them (2026 rule).
+      Use only its conclusion. The two sources agree there is a risk; they disagree on its size. Teach it as
+      "check your panel and your exclusion rules", not as a fraud rate
+
+  - id: E19
+    claim: >-
+      Fewer than 1% of about 4,800 survey responses from 12 panel companies were likely not written by a human;
+      about 16% of 400 MTurk responses were flagged
+    type: statistic
+    source: Gordon et al., PsyArXiv preprint (Prolific), reported by Retraction Watch 2026-04-30
+    source_id: S19
+    vendor: true
+    url: https://retractionwatch.com/?p=134766
+    source_date: 2026-04
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "partly verified, weak"
+    verifier_note: "Retraction Watch opened 2026-11-20: under 1% of about 4,800 responses from 12 companies and about 16% of 400 MTurk responses confirmed; Prolific funded, lead author is Prolific staff. Preprint at osf.io/preprints/psyarxiv/pvdjr_v2 did not render. Primary not verified"
+    note: >-
+      Primary preprint not opened. Prolific funded it and its detection tool cannot be checked by others.
+      Respondents drawn from high-approval participants. Do not put on a slide without the primary
+
+  - id: E20
+    claim: >-
+      39.7% of data movements into AI tools involve sensitive data. 32.3% of ChatGPT use and 24.9% of Gemini use is
+      through personal accounts
+    type: statistic
+    source: 2026 AI Adoption and Risk Report, Cyberhaven Labs (press release)
+    source_id: S20
+    vendor: true
+    url: https://www.cyberhaven.com/press-releases/cyberhaven-2026-ai-adoption-risk-report
+    source_date: 2026-02-05
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified, vendor"
+    verifier_note: "Press release opened 2026-11-20: 39.7%, 32.3%, 24.9% confirmed. Report page: 222 companies, data through 2025, says 'AI interactions' not 'data movements'. Full PDF not opened"
+    note: >-
+      Data-loss-prevention vendor. Based on its customers' telemetry; period and method not stated, most data
+      looks like 2025. Supports the lab data safety note (no client data, PHI or PII in unapproved tools).
+      Full PDF not opened
+
+  - id: E21
+    claim: >-
+      About 82% of 1,000+ B2B software buyers sourced software recommendations from an AI chatbot in the last 24
+      months. 61% use or plan to use AI agents in buying, mostly for evaluation
+    type: statistic
+    source: G2 2026 Buyer Behavior Report, The Evaluation Maze
+    source_id: S21
+    vendor: true
+    url: https://company.g2.com/news/buyer-behavior-2026
+    source_date: 2026-07-22
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "partly verified, vendor"
+    verifier_note: "Opened 2026-11-20. 82%, 61%, 1,000+ buyers confirmed. 'Mostly for evaluation' is not supported: top uses are TCO 51%, shortlists 51%, research 49%, evaluating vendors 46%"
+    note: >-
+      Survey period not stated. G2 sells review and buyer-intent data. Use for win/loss and market signals:
+      win/loss interviews should ask how buyers used AI to shortlist. Software buyers only
+
+  - id: E22
+    claim: >-
+      Microsoft Azure's GEM workflow uses agents to classify and cluster 10,000 to 15,000 feedback reports a month.
+      It cut manual synthesis time by over 95%, to under 60 minutes. Humans review and approve the work items
+    type: case_study
+    industry: software (cloud platform)
+    source: How Azure uses AI to turn feedback into improved customer experiences, Microsoft Tech Community
+    source_id: S22
+    vendor: true
+    url: https://techcommunity.microsoft.com/blog/appsonazureblog/how-azure-uses-ai-to-turn-feedback-into-improved-customer-experiences/4552810
+    source_date: 2026-09-08
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "verified, single source, self-reported"
+    verifier_note: "Opened 2026-11-20. 10,000 to 15,000 a month, over 95%, under 60 minutes, human approval, audit trail confirmed. Baselines 80 to 100 vs 110 to 160 hours both on page. Dates conflict (Sep 4 vs Sep 8, 2026)"
+    note: >-
+      First-party case, but Microsoft sells the AI tools. Baseline hours conflict (80 to 100 vs 110 to 160 per
+      month). No accuracy metric. The output has an audit trail with confidence indicators, which matches the
+      checks-and-flags pattern in mr-wf-01
+
+  - id: E23
+    claim: >-
+      UKG's Pro Payroll product team used an LLM to cluster 380+ customer portal ideas into product-ready reports.
+      Domain experts validate clusters before product leaders see them, and this takes meaningful time
+    type: case_study
+    industry: software (payroll and HR; FinTech-adjacent)
+    source: From Signal to Story, UKG engineering blog
+    source_id: S14
+    vendor: false
+    url: https://www.ukg.com/for-llms/company/newsroom/engineering-blog/signal-story
+    source_date: unknown (image paths suggest 2026-05)
+    checked_on: 2026-11-20
+    age_flag: unknown
+    status: "verified, single source, self-reported"
+    verifier_note: "Opened 2026-11-20. 380+ ideas, expert validation takes 'meaningful time', 'equal confidence on good data and bad' confirmed. Undated"
+    note: No time or accuracy figures. Best practitioner source for "the model shows flawed data with the same confidence as good data"
+
+  - id: E24
+    claim: >-
+      Flatiron Health uses AI agents to read each customer feedback item, name the core problem and find similar
+      feedback. Processing went from 4 people for 4 weeks to 1 person for 1 week
+    type: case_study
+    industry: health care
+    source: Flatiron Health customer story, Airtable
+    source_id: S23
+    vendor: true
+    url: https://www.airtable.com/customer-stories/flatiron-health
+    source_date: unknown
+    checked_on: 2026-11-20
+    age_flag: unknown
+    status: "verified, single source, vendor"
+    verifier_note: "Opened 2026-11-20. 4 people 4 weeks to 1 person 1 week (quarterly) confirmed. Undated"
+    note: Self-reported before-and-after. No method. Page shows no date
+
+  - id: E25
+    claim: >-
+      A global bank uses AI to theme 300+ open survey responses in one session, which replaced days of manual
+      coding. Researchers review every AI analysis. Security and compliance review took about three years, and an
+      architecture board reviewed each AI feature before it was turned on
+    type: case_study
+    industry: FinTech (banking)
+    source: Global financial institution customer story, Dovetail
+    source_id: S24
+    vendor: true
+    url: https://dovetail.com/customers/global-financial-institution/
+    source_date: unknown (page footer 2026)
+    checked_on: 2026-11-20
+    age_flag: unknown
+    status: "not verified"
+    verifier_note: "Not reopened 2026-11-20: shared web fetch budget ran out"
+    note: Bank not named. Useful for the FinTech data safety note, because approval of the tool comes before any customer data goes in
+
+  - id: E26
+    claim: >-
+      CNH (farm and construction equipment) centralized customer interviews with AI tagging: 100+ interviews gave
+      2,900+ tagged items and 500+ insights, shared with 100+ team members
+    type: case_study
+    industry: hardware / manufacturing
+    source: CNH customer story, Dovetail
+    source_id: S24
+    vendor: true
+    url: https://dovetail.com/customers/cnh/
+    source_date: unknown (page footer 2026)
+    checked_on: 2026-11-20
+    age_flag: unknown
+    status: "not verified"
+    verifier_note: "Not reopened 2026-11-20: shared web fetch budget ran out"
+    note: >-
+      Headline "50% faster" is not explained; do not use it. Notes that late design changes can delay releases
+      by two months or more. Hardware priority example for field interviews
+
+  - id: E27
+    claim: >-
+      A global power-tool maker put 11,000+ field-research videos and 40,000+ tagged highlights in one repository.
+      PMs and engineers ask AI questions across years of jobsite studies and get cited answers
+    type: case_study
+    industry: hardware
+    source: Global power tool manufacturer customer story, Dovetail
+    source_id: S24
+    vendor: true
+    url: https://dovetail.com/customers/global-power-tool-manufacturer/
+    source_date: unknown (page footer 2026)
+    checked_on: 2026-11-20
+    age_flag: unknown
+    status: "not verified"
+    verifier_note: "Not reopened 2026-11-20: shared web fetch budget ran out"
+    note: Company not named. No time figures. Same vendor as E25 and E26, so the three are one source for any shared claim
+
+  - id: E28
+    claim: >-
+      A fine-tuned voice-of-customer model reanalyzed 32 concept-test interviews for composite siding. It produced
+      3,900 candidate needs; analysts cut them to 103 validated needs, about 91% from the AI output. The work
+      finished 4 to 6 weeks faster than a new study
+    type: case_study
+    industry: manufacturing (building products)
+    source: Applied Marketing Science example, in How AI-powered customer voice is becoming manufacturing's new marketing engine, Manufacturers Alliance
+    source_id: S25
+    vendor: partly
+    url: https://www.manufacturersalliance.org/research-insights/how-ai-powered-customer-voice-becoming-manufacturings-new-marketing-engine
+    source_date: unknown (cites "Manufacturers Alliance VOC Analysis, 2026")
+    checked_on: 2026-11-20
+    age_flag: unknown
+    status: "verified, single source"
+    verifier_note: "Opened 2026-11-20. 32 interviews, 3,900 to 103, about 91% from AI, 4 to 6 weeks faster confirmed. Analysts also added about 30 needs the model missed. Page undated"
+    note: >-
+      Industry association article; the case is from a consultancy that sells the method. Good example of the
+      human filter step (3,900 to 103). The article's own survey has no sample size, so its figures are not used
+
+  - id: E29
+    claim: HP's commercial computing insights team uses an AI insights agent to summarize live and unmoderated studies; time to insight is as little as 7 days
+    type: case_study
+    industry: hardware (PCs)
+    source: HP customer story, Discuss.io
+    source_id: S26
+    vendor: true
+    url: https://www.discuss.io/customer-stories/how-hp-is-driving-customer-centric-product-innovation-with-ai-agents-and-discuss/
+    source_date: unknown
+    checked_on: 2026-11-20
+    age_flag: unknown
+    status: "not verified"
+    verifier_note: "Not reopened 2026-11-20: shared web fetch budget ran out"
+    note: No baseline. Weak. Keep only as a hardware pointer
+
+  - id: E30
+    claim: >-
+      Senior product leaders question research credibility mostly because the sample is too small (49%), findings
+      are cherry-picked (45%) or have no statistical backing (42%)
+    type: statistic
+    source: The State of Product Leadership 2026, Delight Path, reported by Lyssna
+    source_id: S2
+    vendor: partly
+    url: https://www.lyssna.com/blog/product-leaders-ai-research-survey/
+    source_date: 2026-07-10
+    checked_on: 2026-11-20
+    age_flag: false
+    status: "partly verified"
+    verifier_note: "Lyssna (2026-07-10) states 49%, 45%, 42% and attributes them to the Delight Path Q2 2026 survey. The primary preview page does not show them. Full report not opened"
+    note: >-
+      Same survey as E3 (107 leaders). Not shown on the free primary preview; the full report is gated. Fits the
+      planted error in mr-wf-01 (one vocal buyer counted as a pattern) and the "2 or more interviews per insight" rule
+
+dropped:
+  - item: The Role of the Researcher in 2026 and Beyond, QuestDIY / The Harris Poll (98% use AI, 39% see errors)
+    url: https://www.harrisquest.com/reports/the-role-of-the-researcher-in-2026-and-beyond
+    reason: Fielded August 2025, published November 2025. Fails the 2026 rule
+  - item: 2026 Market Research Trends, Qualtrics (3,000+ researchers, synthetic data, agents)
+    url: https://www.qualtrics.com/news/research-teams-not-using-ai-are-four-times-more-likely-lose-organizational-influence/
+    reason: Published 2025-11-17, Q3 2025 data. Fails the 2026 rule. Also vendor
+  - item: Checkbox report, AI is making it harder to get quality data
+    url: https://www.checkbox.com/blog/ai-making-data-quality-harder-report
+    reason: Published 2025-12-16. Fails the 2026 rule
+  - item: Designlab AI in UX and Product Design Survey Report 2026
+    url: https://hs.designlab.com/hubfs/downloads/AI%20in%20UX%20and%20Product%20Design%20Survey%20Report%202026.pdf
+    reason: Fielded late 2025, publication date not shown. Not shown to meet the 2026 rule. Also no research-synthesis figure
+  - item: Crayon 2026 State of Competitive Intelligence
+    url: https://www.crayon.co/blog/state-of-competitive-intelligence-2026
+    reason: Vendor. No sample size and no AI statistic on the page
+  - item: Manufacturers Alliance informal survey (45% say speed is the main obstacle)
+    reason: Informal survey, no sample size or period
+  - item: Westwood 2025 PNAS (LLM respondent passed 99.8% of checks), and other pre-2026 statistics cited inside NORC (E18)
+    reason: Published before 2026
+  - item: Lyssna Research Synthesis Report 2025
+    reason: 2025 study (decision 32). Carried over from the worked example
+  # ---------- Rerun 2026-11-20, track 4 ask (CRM vs buyer loss reasons). No new E id: nothing met the bar ----------
+  - item: The Business Case for Win-Loss Analysis, Corporate Visions (tourial.corporatevisions.com), byline 2026-08-12, modified 2026-11-03
+    url: https://tourial.corporatevisions.com/answers/the-business-case-for-win-loss-analysis-prevent-losing-up-to-53-of-your-deals
+    reason: >-
+      Same publisher and same 150,000-deal analysis as W2, so not a new source. Repeats "50 to 70 percent of the time,
+      sellers and buyers cite different reasons for lost deals" with no period, sample or method. Points to the blog
+      "How to Find and Coach the Sales Competencies That Decide Your Deals"
+      (https://corporatevisions.com/blog/how-to-find-and-coach-the-sales-competencies-that-decide-your-deals/),
+      not opened (fetch budget ran out). Status not verified
+    verifier_note: >-
+      Opened 2026-11-20. Byline Anton Rius 2026-08-12, modified 2026-11-03. 50 to 70% sentence confirmed, no period, sample
+      or method. Correction: the page ties the 150,000-deal analysis to its 53% "winnable" claim, not to the 50 to 70%
+      figure. Drop stands
+  - item: 5 Reasons Your CRM Is Costing You Revenue, Clozd (tours.clozd.com), modified 2026-10-23
+    url: https://tours.clozd.com/answers/report-your-crm-is-lying-to-you
+    reason: >-
+      Vendor (same publisher as W1). Says buyer and seller data "only matches up 15% of the time" (85% wrong). No
+      publish date, sample, period or method. Not a primary study. Status not verified
+    verifier_note: "Opened 2026-11-20. Modified 2026-10-23, no publish date. 'buyer and seller data only matches up 15% of the time' confirmed; no sample, period or method. Drop stands"
