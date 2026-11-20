@@ -30,6 +30,9 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 9. Never repeat a slide, or the same concept with the same agent in the same exercise, across courses. See `shared/registry/`.
 10. Do not teach the Playbook method. Playbook markdown files can be workbook handouts.
 11. Do not reuse the agents from Dan's workshops (for example CAW-AI). Course labs must be clearly stronger builds.
+12. Learners are agent managers: the agent does the workflow; the learner writes the brief, sets checks, reviews exceptions and audits.
+13. Each lab has a planted AI error. The warning fades: told in lab 1, a hint in middle labs, no hint in the last lab.
+14. Boundaries and guardrails can be taught again when learners build agents, with new slides.
 
 ## Research rules
 
@@ -39,6 +42,7 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 4. Statistics and studies must be published in 2026 or later (the courses launch in 2027). Do not use older ones.
 5. Flag any other source older than 12 months. Dan decides if it stays.
 6. Look for examples in software, FinTech, health care, manufacturing, hardware, services and internal product management. Hardware and internal product management are a priority. Record a gap when none exist. A gap is not a failure.
+7. Tag each workflow with its Pragmatic Framework 2027 category and focus area.
 
 ## Gates and approvals
 

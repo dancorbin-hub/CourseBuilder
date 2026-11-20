@@ -10,3 +10,8 @@ Two files go here. The Critic and the QA agent read both.
 A repeat is the same concept taught with the same agent in the same exercise, or a repeated slide. The same topic area and the same principle are allowed. Workshop agents are a floor: course labs must be clearly stronger builds.
 
 Status: empty. Phase 1 fills it from the AI Agents deck and the CAW-AI workshop before research starts.
+
+## Rules from Dan (2026-11-20)
+
+- Boundaries and guardrails can be taught again in any course where learners build agents, with new slides. The AI Agents course will be replaced by an agent course per platform.
+- Pragmatic runs live AI workshops "Competitive Analysis with AI" and "Buyer Personas with AI" (Pragmatic Framework 2027 guide). Add both to the registry.

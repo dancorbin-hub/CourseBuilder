@@ -58,8 +58,13 @@ The PRD draft is complete after 5 interview rounds. It waits for Dan's review. N
 
 **Decisions after approval (Dan, 2026-11-20)**
 
-- 31: Every lab also has Gemini step cards. Gemini builds use Gemini skills, because Gems are retired.
+- 31: Every lab also has Gemini step cards. Gemini builds use Gemini skills, because Gems are retired. Gemini cards get the same Gate 2 proof and Gate 3 card test as the other platforms.
 - 32: The courses launch in 2027, so statistics and studies must be published in 2026 or later. Older ones are not used.
+- 33: Boundaries and guardrails can be taught again in any course where learners build agents, with new slides. The AI Agents course will be replaced by an agent course per platform.
+- 34: Each lab has a planted AI error. The warning fades over the day: told in the first lab, a hint in the middle labs, no hint in the last lab.
+- 35: Modules climb an autonomy ladder across the day. Try it at Gate 2.
+- 36: The life cycle stages are the Pragmatic Framework 2027 categories: Market, Focus, Business, Planning, Go-to-Market, Enablement, Operations. Each workflow row names its category and focus area.
+- 37: Thin evidence is accepted for now. The monthly refresh adds new evidence as it appears.
 
 ## Problem and goals
 
@@ -177,7 +182,7 @@ Research starts from PM workflows, not from AI tools. Systems thinking is the sp
 | 3 | PM needs | What do PMs do in this topic area, and where does the time go? | Needs summary |
 | 4 | Proof | Which case studies and recent stats show the impact? | Evidence ledger |
 
-**Workflow inventory.** This is the key research output. Each row is one PM workflow in the topic area. The system scores each row on judgment (low to high) and repetition (low to high), names the bottleneck it removes in the product development life cycle, and names the decision that stays with the PM. Low judgment and high repetition means a candidate for AI. The inventory drives the module plan in the next stage.
+**Workflow inventory.** This is the key research output. Each row is one PM workflow in the topic area. The system scores each row on judgment (low to high) and repetition (low to high), names its Pragmatic Framework 2027 category and focus area (the life cycle stage, decision 36), names the bottleneck it removes, and names the decision that stays with the PM. Low judgment and high repetition means a candidate for AI. The inventory drives the module plan in the next stage.
 
 **Sources**
 
@@ -259,7 +264,7 @@ This stage turns the approved research into one locked course spec and the sylla
 
 ## Module, slide, and exercise design
 
-Every module follows one arc, and every lab has one goal with a variant per platform. Module agents build modules in parallel from the locked course spec.
+Every module follows one arc, and every lab has one goal with a variant per platform. Across the day, modules climb an autonomy ladder: an agent run by hand on a batch, then an agent on a schedule that reports exceptions, then agents that hand work to other agents (decision 35, tried at Gate 2). Module agents build modules in parallel from the locked course spec.
 
 **Module arc (example: 75-minute module, 40/60 split)**
 
@@ -274,7 +279,7 @@ Every module follows one arc, and every lab has one goal with a variant per plat
 
 **Lab design rules**
 
-1. One lab goal, stated without a platform, plus one decision the PM makes and one likely AI error the PM must catch. Example: "Build an assistant that turns raw interview notes into a coded insight table."
+1. One lab goal, stated without a platform, plus one decision the PM makes and one likely AI error the PM must catch. The warning fades over the day: the first lab says an error is planted, middle labs say "Audit before you approve", and the last lab gives no hint. The debrief reveals it (decision 34). Example: "Build an assistant that turns raw interview notes into a coded insight table."
 2. A core path that works on every platform. Stretch steps for platforms that can do more.
 3. Per-platform step cards for Claude, ChatGPT, Copilot and Gemini (decision 31). The step cards go in the workbook, not on slides. Dan demos on one platform only. Breakout rooms group learners by platform so they help each other. So each step card must be self-serve: a learner can finish the lab from the workbook alone, with no demo on their platform. The Gate 3 card test checks this. Slides show the pattern once. Each card starts with: "Build and save your own agent. Share your screen only when someone is stuck." Each fast-start card has one annotated screenshot of where to start and which field the template goes in.
 4. Two input paths: the learner's own work, or the fallback case data. A "Start here with sample data" block sits directly under each platform's steps.
@@ -357,7 +362,7 @@ Read it top down: each stage ends at a gate, and only Dan's approval opens the n
 
 **Guardrails across all stages**
 
-1. **No repeats across courses.** A cross-course registry lists the topics and slides in each Advanced course and in the AI Agents course. The Critic and the QA agent flag any repeat. Playbook teaching stays out; playbook markdown files can go in the workbook as handouts. The registry also holds a series canon: the shared themes, principles, concepts, terms and best practices. Every later course reads the canon first. The Critic and QA agent flag any contradiction with it. A course can build on or refer back to a canon item, but must not reteach it or change it. New canon items go in only after Dan approves them.
+1. **No repeats across courses.** A cross-course registry lists the topics and slides in each Advanced course and in the AI Agents course. The Critic and the QA agent flag any repeat. Playbook teaching stays out; playbook markdown files can go in the workbook as handouts. The registry also holds a series canon: the shared themes, principles, concepts, terms and best practices. Every later course reads the canon first. The Critic and QA agent flag any contradiction with it. A course can build on or refer back to a canon item, but must not reteach it or change it. Exception: boundaries and guardrails can be taught again in any course where learners build agents, with new slides (decision 33). New canon items go in only after Dan approves them.
 2. **Ask before rework.** The system records a fingerprint of each approved item. If a later change touches an approved item, the system lists what it wants to rebuild and waits for Dan.
 3. **Independent checks.** The Verifier, Critic, Consistency reviewer and QA agent do not see the drafting agent's reasoning, only its output. A checker that shares the writer's context tends to agree with it.
 4. **Gate packets as Claude Docs.** Each gate publishes a Claude Doc for Dan to read and comment on. The system applies the comments to the course model, not to the doc.

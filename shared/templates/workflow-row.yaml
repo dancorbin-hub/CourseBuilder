@@ -13,7 +13,8 @@ pm_decision_informed: ""  # the decision the output feeds
 
 bottleneck:
   description: ""         # where the time goes, and why it is a bottleneck
-  pdlc_stage: ""          # one of: market-discovery | strategy-focus | business-case | planning-prioritization | build-delivery | launch-gtm | growth-support (draft list; to be mapped to the Pragmatic Framework 2027)
+  pdlc_stage: ""          # Pragmatic Framework 2027 category: Market | Focus | Business | Planning | Go-to-Market | Enablement | Operations
+  focus_area: ""          # one of the 37 focus areas in that category, e.g. Market Problems
   sources: []             # 2 independent sources that describe the bottleneck itself (evidence ids)
 
 scores:

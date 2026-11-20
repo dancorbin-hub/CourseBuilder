@@ -1,4 +1,4 @@
-# Worked example workflow row, version 2 (draft, waits for Dan's approval).
+# Worked example workflow row, version 2. Approved by Dan on 2026-11-20.
 # Review doc: https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp
 # Schema: shared/templates/workflow-row.yaml. Checked on 2026-11-20.
 # v2: the learner manages an agent that runs the whole workflow (Dan, 2026-11-20).
@@ -14,7 +14,8 @@ pm_decision_informed: Which market problems go forward to prioritization, and fo
 
 bottleneck:
   description: Synthesis takes days per study, so insight reaches the roadmap late. AI cuts the analysis time, but the work moves to checking AI output
-  pdlc_stage: market-discovery
+  pdlc_stage: Market
+  focus_area: Market Problems (also Win/Loss Analysis)
   sources: [E1, E3, E5]
 
 scores:
@@ -73,7 +74,7 @@ proposed_lab:
   planted_error: Vocal buyer counted as a pattern
   success_check: Batch 2 run. The log updates, the exception report lists the new contradiction, and no insight rests on one interview
   registry_check: AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by exceptions, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20)
-  pragmatic_fit: Good fit (Dan, 2026-11-20). Alignment agent still checks against named sources
+  pragmatic_fit: Good fit (Dan, 2026-11-20). Pragmatic Framework 2027 says to talk with evaluators who bought and who did not, then validate, prioritize and share the problems. It also says teams must verify AI output, protect sensitive information and stay accountable
 
 evidence:
   - id: E1
