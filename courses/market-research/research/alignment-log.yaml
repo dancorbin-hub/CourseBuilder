@@ -1,0 +1,230 @@
+# Pragmatic alignment log, Advanced AI for Market Research (course id: market-research).
+# Stage 1 checker: pragmatic-alignment agent. Written 2026-11-20.
+# Role: .claude/agents/pragmatic-alignment.md. This log drops no content. Dan decides each item.
+# Files checked: research/workflows.yaml, worked-example-row.yaml, methods.md, needs.md.
+# dan_decision is for Dan only.
+
+course: market-research
+checked_on: 2026-11-20
+checker: pragmatic-alignment
+
+sources_used:
+  - name: Product Professionals' Guide to the Pragmatic Framework, refreshed for 2027
+    file: course-builder/reference/pragmatic-sources/Pragmatic-Framework-2027-Guide.pdf
+    version: "PDF created 2026-11-11, 26 pages, cover says 'Refreshed for 2027'"
+    date_read: 2026-11-20
+    used_for: Category and focus area names (pages 3, 5, 24, 25), Market Problems, Win/Loss Analysis, Market Definition, AI guidance (page 4), Core Course maps (pages 21, 22)
+  - name: PDW-AI Product Discovery with AI (Pragmatic live AI workshop)
+    file: course-builder/reference/pragmatic-sources/PDW-AI_Product_Discovery_with_AI_26.09.pptx
+    version: "26.09, 48 slides, file modified 2026-11-14, revision 17"
+    date_read: 2026-11-20
+    used_for: AI capability map, discovery vs validation, frequency vs intensity, "AI never replaces talking to a real person", PII rule
+  - name: Market core course deck (working copy)
+    file: "course-builder/reference/pragmatic-sources/working_2026_MKT Deck.pptx"
+    version: "working 2026, 100 slides, file modified 2026-11-19, revision 2"
+    date_read: 2026-11-20
+    used_for: "Framework slides (slides 7 and 8), NIHITO and buyer interviews (slides 48, 49), AI capability map, AI-made provisional personas (slide 51)"
+  - name: CAW-AI Competitive Analysis with AI (Dan's workshop)
+    file: course-builder/reference/pragmatic-sources/CAW-AI_Dan_Corbin.pptx
+    version: "23 slides, file modified 2026-10-28, revision 5"
+    date_read: 2026-11-20
+    used_for: "Messaging on buyer voice ('one review is a hint, not a pattern'), 'What AI cannot see', scheduled tasks"
+  - name: How to Overcome 8 Common Market Visit Barriers, Paul Young and Amy Graham
+    url: https://pragmaticinstitute.com/resources/articles/product/how-to-overcome-8-common-market-visit-barriers
+    version: "last modified 2025-08-27 (page metadata). Older than 12 months: age flag"
+    date_read: 2026-11-20
+    used_for: Market visits, recording consent, framing win/loss so it does not judge sales
+  - name: Harnessing AI for Market Research, A Guide to Best Practices and Pitfalls, Will Scott
+    url: https://www.pragmaticinstitute.com/resources/articles/product/ai-for-market-research-guide/
+    version: "last modified 2026-11-02 (page metadata). Publish date not shown"
+    date_read: 2026-11-20
+    used_for: Verify AI output, privacy and consent, synthetic customer profiles
+  - name: How to Use AI for Market Research, Pragmatic Editorial Team
+    url: https://www.pragmaticinstitute.com/resources/articles/product/how-to-use-ai-for-market-research/
+    version: "last modified 2026-04-16 (page metadata). Publish date not shown"
+    date_read: 2026-11-20
+    used_for: "'AI outputs should be treated as inputs, not final answers', customer conversations stay central"
+
+sources_not_read:
+  - item: BPW-AI_26.10.pptx, PRC_25.7.3 AI.pptx, PRW-AI_26.10.1.pptx
+    reason: Not in the focus list for this course. Not opened in this run. Read them in Stage 2 if the syllabus touches their topics
+  - item: pragmaticinstitute.com Framework web page and the Market, Foundations and Design course pages
+    reason: Not opened in this run. The 2027 guide PDF covers the framework terms
+  - item: Search results seen but not opened, for example "7 AI Skills Every Product Manager Needs" and "Best AI Tools for Product Managers"
+    reason: Not needed for the conflicts below. Gap, not a failure
+
+term_check:
+  categories_in_guide: [Market, Focus, Business, Planning, Go-to-Market, Enablement, Operations]
+  workflows_yaml:
+    - {id: mr-wf-01, category: Market, focus_area: Market Problems, exact_match: true}
+    - {id: mr-wf-02, category: Market, focus_area: Win/Loss Analysis, exact_match: true}
+    - {id: mr-wf-03, category: Market, focus_area: Market Problems, exact_match: true}
+    - {id: mr-wf-04, category: Market, focus_area: Market Problems, exact_match: true}
+    - {id: mr-wf-05, category: Market, focus_area: Market Problems, exact_match: true}
+    - {id: mr-wf-06, category: Focus, focus_area: Market Definition, exact_match: true}
+    - {id: mr-wf-07, category: Market, focus_area: Market Problems, exact_match: true}
+    - {id: mr-wf-08, category: Planning, focus_area: Ideation, exact_match: true}
+    - {id: mr-wf-09, category: Market, focus_area: Market Problems, exact_match: true}
+  needs_md_tags: "All tags match the guide exactly: Market Problems, Win/Loss Analysis, Competitive Landscape, Distinctive Competencies, Market Definition, Organizational Alignment (Go-to-Market)"
+  wrong_focus_area_names: none
+  focus_area_names_in_agent_wording: "None found. A search for exception and escalat finds only the rule in methods.md (M3) and the schema comment. Hand-off rules, flag report and audit are used. Good"
+  notes:
+    - "Each focus area is in the correct category for the 2027 guide."
+    - "The field name pdlc_stage holds the Pragmatic category. PDLC stage is not a Pragmatic term. See conflict PA-08."
+
+traced_example:
+  item: mr-wf-01 pragmatic_fit (also in worked-example-row.yaml, approved by Dan 2026-11-20)
+  research_says: "Pragmatic Framework 2027 says to talk with evaluators who bought and who did not, then validate, prioritize and share the problems. It also says teams must verify AI output, protect sensitive information and stay accountable"
+  pragmatic_says:
+    - quote: "Data and personas tell you who your potential customers are, but they don't explain why people buy. To learn that, talk with evaluators, both people who decided to buy and people who decided not to. Then validate, prioritize and share the problems that matter most to the market you serve."
+      source: Pragmatic-Framework-2027-Guide.pdf, page 6, Market Problems
+    - quote: "Teams need to verify its outputs, protect sensitive information and remain accountable for their decisions."
+      source: Pragmatic-Framework-2027-Guide.pdf, page 4, Where AI fits
+  method:
+    - Find the focus area the row names (Market Problems) in the guide contents (page 5).
+    - Read the focus area text on its page (page 6). Read the AI box (page 4).
+    - Compare each part of the research sentence with the quote.
+  result: "Match. The paraphrase is accurate. One small difference: the guide says 'remain accountable for their decisions'. The research says 'stay accountable'. Same meaning. No conflict."
+  extra_check: "The guide puts 'validate' inside Market Problems. PDW-AI slide 8 says validation is 'the next step, not part of discovery'. The row says 'go forward to prioritization', which fits both. See PA-06 for the validation tests."
+
+conflicts:
+  - id: PA-01
+    item: "mr-wf-01 planted error fix: 'a new rule in the brief (2 or more interviews per insight)'. Also the fixed sample '5 to 15 interviews'"
+    research_says: "One vocal buyer counted as a pattern ... The fix is a new rule in the brief (2 or more interviews per insight)"
+    pragmatic_says: "PDW-AI slide 27: AI 'buries outliers, contradictions, and the low-frequency, high-intensity signal. That signal is often the real insight.' Slide 28: 'Frequency is not everything: two of five with intense language can beat five of five mild mentions.' Slide 8 notes: on sample size, 'resist giving a number: the real rule is saturation'. CAW-AI slide 12 notes support the research: 'One review is a hint, not a pattern.'"
+    source: PDW-AI_Product_Discovery_with_AI_26.09.pptx slides 8, 27, 28; CAW-AI_Dan_Corbin.pptx slide 12
+    severity: high
+    why_it_matters: "If the agent drops or demotes every one-interview insight, it repeats the exact AI failure PDW-AI warns about. Learners who took PDW-AI will see the course contradict it."
+    options:
+      align_with_pragmatic: "Remove the 2-interview rule. Teach saturation and frequency vs intensity only."
+      update_message_ai_changed_work: "Keep the rule, but change it: an insight from 1 interview is labeled 'single source' and goes to the flag report. It is not counted as a pattern and it is not dropped. The PM decides if it is a high-intensity outlier."
+      keep_both_explain: "Keep the 2-interview rule as written. In class, explain that PDW-AI is about finding signals and this lab is about counting patterns."
+    recommendation: update_message_ai_changed_work
+    recommendation_reason: "It keeps the planted error and the audit lesson, and it agrees with PDW-AI. It is also a better agent-manager habit: a flag, not a filter. mr-wf-01 is approved, so this needs Dan's yes."
+    dan_decision: ""
+
+  - id: PA-02
+    item: "Evidence N15 (AI-moderated win/loss interviews, Perspective AI) and the needs.md line 'AI-moderated win/loss is growing'. Also future use of synthetic respondents"
+    research_says: "needs.md: 'AI-moderated win/loss is growing (vendor)'. N15: AI-moderated win/loss cut time to insight from 41 to 4 days; coverage rose from about 6% to 71%"
+    pragmatic_says: "PDW-AI slide 46: 'The one boundary that never moves: AI never replaces talking to a real person.' Slide 11 RED: 'AI personas instead of real interviews.' Slide 44 notes: 'Not once did AI talk to your customer, and it never should.' But the Pragmatic article by Will Scott (modified 2026-11-02) says AI can 'support early testing of concepts by generating synthetic customer profiles and simulating behavior', as a complement to human research. The MKT deck slide 51 uses AI to make a 'provisional' persona to validate with customers."
+    source: PDW-AI slides 11, 44, 46; pragmaticinstitute.com/resources/articles/product/ai-for-market-research-guide/ (modified 2026-11-02); working_2026_MKT Deck.pptx slide 51
+    severity: high
+    why_it_matters: "Pragmatic sources do not agree with each other. If the course shows AI-moderated interviews or synthetic buyers as good practice, it breaks the PDW-AI boundary. No workflow row does this today, but the evidence points that way."
+    options:
+      align_with_pragmatic: "Follow PDW-AI. State in module 1 that the agent works only on conversations a person held. Do not cite N15 as a model to copy."
+      update_message_ai_changed_work: "Say that AI-moderated interviews and synthetic profiles now exist. Teach them as inputs to check, never as a replacement for a market visit."
+      keep_both_explain: "Show both Pragmatic positions in class and let learners discuss."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "PDW-AI is the newest Pragmatic AI course on this topic, and the boundary is simple to teach. N15 is a weak vendor source already marked 'do not put on a slide'. Ask Pragmatic which position is current before Gate 2."
+    dan_decision: ""
+
+  - id: PA-03
+    item: "Data safety and consent notes are missing on some rows"
+    research_says: "Rows 02, 03, 04, 05 and 09 have a general data safety note. Rows 01, 06, 07 and 08 have no general note (01 and 08 have only health care or FinTech notes). No row says to get consent before recording an interview."
+    pragmatic_says: "Guide page 4: 'protect sensitive information'. PDW-AI slide 11 RED: 'Feeding customer PII into tools without a policy check.' Market visit article: you can record the screen, 'Ask for permission first.' Will Scott article: use 'consent protocols'. Win/loss checklist (needs.md N4): agree confidentiality with the buyer."
+    source: Pragmatic-Framework-2027-Guide.pdf page 4; PDW-AI slide 11; pragmaticinstitute.com market visit barriers article (modified 2025-08-27, age flag); ai-for-market-research-guide (modified 2026-11-02)
+    severity: medium
+    why_it_matters: "CLAUDE.md house rule 7 also needs a data safety note in every lab. Interview transcripts are the core input of the course agent."
+    options:
+      align_with_pragmatic: "Add one standard note to every row: approved tool only, no client data, PHI or PII in an unapproved tool, consent before you record, agree confidentiality for win/loss."
+      update_message_ai_changed_work: "Add the note and also teach that an agent that keeps a log over time stores sensitive data longer than a one-off prompt does."
+      keep_both_explain: "Leave rows as they are and put one data safety slide in module 1."
+    recommendation: update_message_ai_changed_work
+    recommendation_reason: "The running log is new compared with one-pass synthesis, so the risk is new. Row 01 is approved, so the note there needs Dan's yes."
+    dan_decision: ""
+
+  - id: PA-04
+    item: "mr-wf-02 win/loss: 'truth rate', who runs the interviews, minimum deals"
+    research_says: "Output: a CRM versus buyer 'truth rate' table. Brief: 'minimum deals per pattern' (no number). No rule on who interviews the buyer."
+    pragmatic_says: "Guide page 7: win/loss 'is best handled by someone outside sales so evaluators give honest feedback. Interview evaluators two to four weeks after a decision, and repeat the process across at least 10 deals to find patterns.' Market visit article: frame win/loss around the buyer's experience, not as a judgment of sales."
+    source: Pragmatic-Framework-2027-Guide.pdf page 7; pragmaticinstitute.com market visit barriers article (modified 2025-08-27, age flag)
+    severity: medium
+    why_it_matters: "'Truth rate' says sales is not truthful. Pragmatic says to avoid that frame, because sales resistance is a top barrier to win/loss."
+    options:
+      align_with_pragmatic: "Rename to 'match rate' (CRM reason vs buyer reason). Set the default minimum to 10 deals. Add 'interviews by someone outside sales' to the brief."
+      update_message_ai_changed_work: "Keep 'truth rate' and explain that AI now makes the gap easy to measure, so the frame matters less."
+      keep_both_explain: "Keep the term and add a talk track on how to share it with sales."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "Small wording change, strong Pragmatic source, and it helps learners get sales support."
+    dan_decision: ""
+
+  - id: PA-05
+    item: "Course scope vs the Pragmatic Core Course maps (rows 06 and 08, and the course name)"
+    research_says: "Most rows are Market category (Market Problems, Win/Loss Analysis). mr-wf-06 is Focus: Market Definition. mr-wf-08 is Planning: Ideation. Both rows say 'Dan to decide scope'."
+    pragmatic_says: "Guide pages 21 and 22: the Pragmatic Market course emphasizes Market Definition, Measurement, Buyer Journey, Buyer Personas and Marketing Plan. Foundations emphasizes Market Problems, Market Definition and Positioning. Design emphasizes Market Problems, User Personas and Ideation. The MKT deck is a product marketing course (buyers, buyer journey, marketing plan)."
+    source: Pragmatic-Framework-2027-Guide.pdf pages 21, 22; working_2026_MKT Deck.pptx slides 8 to 51
+    severity: medium
+    why_it_matters: "Pragmatic reviewers may read 'Market Research' as the advanced AI version of their Market course. This course covers different focus areas. mr-wf-08 (Ideation) overlaps the Design course."
+    options:
+      align_with_pragmatic: "Re-scope toward the Market course focus areas (Market Definition, Buyer Personas, Buyer Journey)."
+      update_message_ai_changed_work: "Keep the scope. Rename or subtitle the course so it points to Market Problems and Win/Loss, for example 'market and buyer research'."
+      keep_both_explain: "Keep scope and name. Add one line in the Gate 2 spec that maps the course to the Foundations and Design focus areas, and keep mr-wf-08 only if no other Advanced AI course claims Ideation."
+    recommendation: keep_both_explain
+    recommendation_reason: "The rows fit the course goal well. The fix is clear mapping for Pragmatic reviewers, not new content. Decide rows 06 and 08 at Gate 2."
+    dan_decision: ""
+
+  - id: PA-06
+    item: "Validation tests in mr-wf-04"
+    research_says: "pm_decision_informed: 'Whether a market problem is pervasive and urgent enough in a segment to go forward'"
+    pragmatic_says: "PDW-AI slides 8, 35, 36 and 39 name three tests: urgency, pervasiveness and willingness to pay. Slide 39 notes: only when all three pass does Pragmatic call it an opportunity. The 2027 guide page 6 says only 'validate, prioritize and share'."
+    source: PDW-AI slides 8, 35, 36, 39; Pragmatic-Framework-2027-Guide.pdf page 6
+    severity: low
+    options:
+      align_with_pragmatic: "Name all three tests: urgent, pervasive and willing to pay."
+      update_message_ai_changed_work: "Keep two tests and explain that open-text survey coding cannot measure willingness to pay."
+      keep_both_explain: "Keep as written and refer to PDW-AI in class."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "One-word fix. It keeps Pragmatic terms whole."
+    dan_decision: ""
+
+  - id: PA-07
+    item: "Old Framework names inside a Pragmatic source"
+    research_says: "Research uses only 2027 names. No problem in the research."
+    pragmatic_says: "working_2026_MKT Deck.pptx slide 7 shows a pre-2027 Framework (for example Programs, Support, Buyer Experience, Revenue Growth, Sales Tools, Use Scenarios). Slide 8 shows the 2027 Framework. The deck also writes 'Buy, Build, or Partner' with a comma; the guide writes 'Buy, Build or Partner'."
+    source: working_2026_MKT Deck.pptx slides 7, 8; Pragmatic-Framework-2027-Guide.pdf page 3
+    severity: low
+    why_it_matters: "Later stages may copy terms from the deck. Use the 2027 guide as the only term source."
+    options:
+      align_with_pragmatic: "Use the 2027 guide terms only. Do not copy names from the MKT deck."
+      update_message_ai_changed_work: "Not applicable."
+      keep_both_explain: "Tell Pragmatic that slide 7 is out of date. This is their file; do not edit it."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "The guide is newer (2026-11-11) and is the source the house rules name."
+    dan_decision: ""
+
+  - id: PA-08
+    item: "Field name pdlc_stage in the workflow row schema"
+    research_says: "bottleneck.pdlc_stage: Market (the schema comment says it holds the Pragmatic Framework 2027 category)"
+    pragmatic_says: "The guide calls these 'categories' (for example 'Category 1 of 7, Market'). It does not use 'PDLC stage'. The 2027 guide says the Framework is not a strict sequence: 'Teams revisit these activities'."
+    source: Pragmatic-Framework-2027-Guide.pdf pages 2, 4, 6
+    severity: low
+    why_it_matters: "If the field name reaches a slide or the workbook, it uses a non-Pragmatic term and suggests a linear stage."
+    options:
+      align_with_pragmatic: "Rename the field to pragmatic_category in shared/templates/workflow-row.yaml and all rows."
+      update_message_ai_changed_work: "Not applicable."
+      keep_both_explain: "Keep the field name in the repo. Always write 'category' in learner-facing text."
+    recommendation: keep_both_explain
+    recommendation_reason: "The schema and the worked example are approved. A rename touches approved files for a small gain."
+    dan_decision: ""
+
+  - id: PA-09
+    item: "Gemini Gems in a Pragmatic deck"
+    research_says: "Gems become skills from 2026-11-17 and are removed 2026-12-17 (E8). House rule: no Gems."
+    pragmatic_says: "PDW-AI slide 3 notes: 'If you don't have a paid version ... I recommend FREE: Gemini Gems, Claude Skills, Claude Projects.'"
+    source: PDW-AI_Product_Discovery_with_AI_26.09.pptx slide 3 notes; Gemini Apps Help (E8)
+    severity: low
+    why_it_matters: "Learners who took PDW-AI may expect to build a Gem. Not a research error."
+    options:
+      align_with_pragmatic: "Not applicable. Gems are retired."
+      update_message_ai_changed_work: "Add one line to the Gemini step card: Gems are now skills. Tell Pragmatic that PDW-AI slide 3 is out of date."
+      keep_both_explain: "Not needed."
+    recommendation: update_message_ai_changed_work
+    recommendation_reason: "The tool changed. A one-line note prevents confusion."
+    dan_decision: ""
+
+no_conflict_found:
+  - "Market visits and talking to buyers: research uses 'market visits' and keeps the conversation with the PM. Matches the guide (page 6) and the market visit article. The MKT deck calls this NIHITO; the 2027 guide does not use that term, so the course should say 'market visits'."
+  - "Verify AI output: every row has quality checks, an audit and a planted error. Matches guide page 4, PDW-AI 'every claim needs a source', and the Pragmatic article 'AI outputs should be treated as inputs, not final answers'."
+  - "PM keeps the decision: pm_decides in every row keeps meaning, priority and go or stop with the PM. Matches PDW-AI RED 'Letting AI decide what to build' and guide 'remain accountable'."
+  - "mr-wf-07 core message 'The agent can propose a status; only the PM can call a problem validated' matches PDW-AI RED 'Treating AI-generated problems as validated'."
+  - "Market Definition (mr-wf-06) follows the 5 steps on guide page 8."

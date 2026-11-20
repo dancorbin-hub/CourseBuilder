@@ -7,3 +7,4 @@
 - Track 3 done (12 tasks, 25 sources). Web fetch budget ran out; 4 primary pages unopened (listed in needs.md).
 - 02:41 UTC: Step 2 started, 3 checkers in parallel.
 - Critic done: 4 rerun asks (one per track).
+- Alignment done: 9 conflicts (2 high). PA-01 touches the approved row; needs Dan.
