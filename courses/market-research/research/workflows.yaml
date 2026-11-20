@@ -86,7 +86,7 @@
       source_date: 2026-05-18
       checked_on: 2026-11-20
       age_flag: false
-      status: verified, weak
+      status: "partly verified, weak"
       note: Vendor of an AI interview tool. Own panel of 180 teams, Jan to Apr 2026. Baseline method not stated. Do not put on a slide
     - id: E2
       claim: Analysis fell from 12.1 to 1.1 days per 30-interview study; a new "synthesis QA" step takes 0.6 days
@@ -96,7 +96,7 @@
       source_date: 2026-05-12
       checked_on: 2026-11-20
       age_flag: false
-      status: verified, weak
+      status: "verified, weak"
       note: Same vendor as E1, so not an independent source. Uses own customer data. Some figures do not reconcile
     - id: E3
       claim: 80% of senior product leaders use AI to run or synthesize user research; 34% heavily
@@ -106,7 +106,7 @@
       source_date: 2026-07-10
       checked_on: 2026-11-19
       age_flag: false
-      status: partly verified
+      status: "verified"
       note: 107 leaders. Primary report not yet opened
     - id: E4
       claim: With AI synthesis, the hard work moves to checking the output
@@ -116,7 +116,7 @@
       source_date: 2026-07-10
       checked_on: 2026-11-19
       age_flag: false
-      status: 1 of 2 sources
+      status: "verified"
       note: Opinion from a vendor. E2 (synthesis QA step) supports it but is a different vendor's data
     - id: E5
       claim: AI synthesis can invent or reword quotes and lose context
@@ -126,7 +126,7 @@
       source_date: 2025-10-08
       checked_on: 2026-11-19
       age_flag: true
-      status: 1 of 2 sources
+      status: "verified"
       note: Practitioner article, updated 2026-09-27. Not a study, so the 2026 rule does not drop it. Her 30% figure is one project, not a statistic
     - id: E6
       claim: Copilot agent builder takes instructions up to 8,000 characters and embedded files as knowledge
@@ -136,7 +136,7 @@
       source_date: 2026-11-16
       checked_on: 2026-11-19
       age_flag: false
-      status: verified
+      status: "verified"
     - id: E7
       claim: Claude custom skills are on all plans from Free to Enterprise; code execution must be on
       type: tool-feature
@@ -145,7 +145,7 @@
       source_date: 2026-11 (page shows "updated over 2 weeks ago")
       checked_on: 2026-11-19
       age_flag: false
-      status: verified
+      status: "verified"
     - id: E8
       claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). Workspace business accounts get skills in March 2027. A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
       type: tool-feature
@@ -154,7 +154,7 @@
       source_date: unknown (page shows no date)
       checked_on: 2026-11-20
       age_flag: false
-      status: verified
+      status: "wrong"
       note: No scheduling found for skills
     - id: E9
       claim: ChatGPT Projects hold instructions and files
@@ -164,7 +164,7 @@
       source_date: unknown
       checked_on: 2026-11-19
       age_flag: false
-      status: not verified
+      status: "verified"
       note: Page did not load. Retry in the first Stage 1 run
 
   dropped:
@@ -246,7 +246,7 @@
       source_date: 2026-04-20
       checked_on: 2026-11-20
       age_flag: false
-      status: verified
+      status: "verified"
       note: Vendor of win/loss services. Its "inaccurate 60% of the time" figure has no named source. Do not use the figure
     - id: W2
       claim: Manual win/loss programs are time-intensive and cannot scale; quarterly reports compiled by hand arrive too late. Sellers and buyers cite different loss reasons 50 to 70% of the time
@@ -256,7 +256,7 @@
       source_date: 2026-07-30
       checked_on: 2026-11-20
       age_flag: false
-      status: verified (claim); 50 to 70% statistic partly verified
+      status: "verified (claim); 50 to 70% statistic partly verified"
       note: Vendor of win/loss services. First published 2024-11-12, updated 2026-07-30. The 50 to 70% figure is from its own analysis of 150,000+ B2B deals; study date and method not given, so it may fail the 2026 rule. Do not put the figure on a slide until the primary is found
     - id: W3
       claim: Win/loss is underused; self-reported reasons often differ from the real reason; teams need a tagging method to find patterns
@@ -266,7 +266,7 @@
       source_date: 2022-09-06
       checked_on: 2026-11-20
       age_flag: true
-      status: verified
+      status: "not verified"
       note: Last modified date only. Older than 12 months; Dan decides. Its "35% of teams" figure is an old survey and fails the 2026 rule. Independent of W1 and W2
   open_gaps:
     - A 2026 primary study on win/loss time or CRM reason accuracy
@@ -339,7 +339,7 @@
       source_date: 2026-06-02
       checked_on: 2026-11-20
       age_flag: false
-      status: verified
+      status: "verified"
       note: Roadmap tool vendor. Cites its State of Product Management 2026 report (more than 50% of PMs want AI to synthesize customer insights). Primary report not opened; do not use the figure yet
     - id: W5
       claim: Tagging feedback by hand takes hours each month, labels are applied inconsistently, and label meanings drift so trends become unreliable
@@ -349,7 +349,7 @@
       source_date: 2026-07-27
       checked_on: 2026-11-20
       age_flag: false
-      status: verified
+      status: "verified"
       note: Feedback analytics vendor. Hour figures are its own arithmetic, not data. Cites its own arXiv paper (not verified). Independent of W4
     - id: W17
       claim: Maintenance and field service data is product design feedback, but it is fragmented across work orders and logs and is messy
@@ -359,7 +359,7 @@
       source_date: 2026-02-20
       checked_on: 2026-11-20
       age_flag: false
-      status: 1 of 2 sources
+      status: "not verified"
       note: Maintenance software vendor. About process and plant equipment, not only sold products
     - id: W18
       claim: Platform PMs get internal feedback through intake, office hours and Slack; proximity bias decides who gets served
@@ -369,7 +369,7 @@
       source_date: 2026-11-04
       checked_on: 2026-11-20
       age_flag: false
-      status: 1 of 2 sources
+      status: "verified (1 of 2 sources)"
       note: Same vendor as W5. No author named
   open_gaps:
     - A non-vendor source for the feedback tagging burden
@@ -440,7 +440,7 @@
       source_date: 2025-06-23
       checked_on: 2026-11-20
       age_flag: true
-      status: verified
+      status: "verified"
       note: Non-vendor research institute. Older than 12 months; Dan decides. The 55% figure is one survey program before 2026 and fails the 2026 rule as a statistic
     - id: W8
       claim: Coding open-ended answers is one of the most tedious tasks in market research and needs human judgment
@@ -450,7 +450,7 @@
       source_date: 2025-03-31
       checked_on: 2026-11-20
       age_flag: true
-      status: verified
+      status: "verified"
       note: Market research agency. First published 2015, updated 2025-03-31. Older than 12 months; Dan decides
   open_gaps:
     - A 2026 source for the survey coding burden
@@ -524,7 +524,7 @@
       source_date: 2026-10-02
       checked_on: 2026-11-20
       age_flag: false
-      status: partly verified
+      status: "partly verified"
       note: Opinion piece by a research agency head. Primary source is the Market Research Society Global Data Quality initiative; not opened, date and sample unknown. Do not use the figure until the primary is checked
     - id: W11
       claim: Recruiting is one of the most failure-prone parts of research; a human must spot-check AI vetting and treat fraud flags as a starting point, not a verdict
@@ -534,7 +534,7 @@
       source_date: 2026-09-17
       checked_on: 2026-11-20
       age_flag: false
-      status: verified
+      status: "verified"
       note: Research platform vendor with a participant panel. No author named
     - id: W12
       claim: Finding qualified participants, time to recruit and participant quality are the top recruiting challenges
@@ -544,7 +544,7 @@
       source_date: unknown (copyright 2026)
       checked_on: 2026-11-20
       age_flag: false
-      status: verified
+      status: "verified"
       note: Recruiting vendor. Its figures (54% cite participant quality) come from its 2025 State of User Research report and fail the 2026 rule. Use as a claim only
   open_gaps:
     - A 2026 primary statistic on recruiting time
@@ -617,7 +617,7 @@
       source_date: 2025-04-21
       checked_on: 2026-11-20
       age_flag: true
-      status: verified
+      status: "verified"
       note: Practitioner community. Older than 12 months; Dan decides
     - id: W19
       claim: Market sizing rests on unverified assumptions, needs a lot of desk research and several iterations, and data goes stale fast
@@ -627,7 +627,7 @@
       source_date: 2023-12-20
       checked_on: 2026-11-20
       age_flag: true
-      status: verified
+      status: "verified"
       note: Practitioner blog. First published 2023-04-04. Older than 12 months; Dan decides. Independent of W9
   open_gaps:
     - A 2026 source for the market sizing burden
@@ -697,7 +697,7 @@
       source_date: 2026-09-29
       checked_on: 2026-11-20
       age_flag: false
-      status: 1 of 2 sources
+      status: "not verified"
       note: Practitioner. First published 2022-10-05, updated 2026-09-29. Same author as W15 and E5
     - id: W15
       claim: Teams think they lack time for assumption testing because it is important but not urgent
@@ -707,7 +707,7 @@
       source_date: 2026-09-30
       checked_on: 2026-11-20
       age_flag: false
-      status: 1 of 2 sources
+      status: "not verified"
       note: Same author as W14, so W14 and W15 count as one source. It does not say tracking itself is the burden
   open_gaps:
     - A second independent source that describes the tracking burden
@@ -774,7 +774,7 @@
       source_date: 2026-08-18
       checked_on: 2026-11-20
       age_flag: false
-      status: 1 of 2 sources
+      status: "not verified"
       note: AI research vendor. No primary data for any figure ("based on typical enterprise studies"). Do not use the figures
   open_gaps:
     - A second, non-vendor source for the concept test burden
@@ -845,7 +845,7 @@
       source_date: 2024-07-26
       checked_on: 2026-11-20
       age_flag: true
-      status: verified
+      status: "verified"
       note: Independent research firm. Based on a 2024 survey of 400+ UX and ReOps staff, so its figures fail the 2026 rule. Use as a claim only. Older than 12 months; Dan decides
     - id: W20
       claim: Repositories become unvisited archives; PMs do not remember study names; teams commission new studies on questions already answered
@@ -855,7 +855,7 @@
       source_date: 2026-07-08
       checked_on: 2026-11-20
       age_flag: false
-      status: verified
+      status: "verified"
       note: Research platform vendor. Based on interviews with research leaders, no data. Independent of W13
     - id: W6
       claim: 39% of respondents say PMs conduct user research; 49% of organizations have a research library or repository; 69% use AI in some research projects
@@ -865,7 +865,7 @@
       source_date: 2026-03-11
       checked_on: 2026-11-20
       age_flag: false
-      status: verified
+      status: "verified"
       note: Vendor survey of nearly 500 researchers, designers and product people. Method details not stated. Supports the context of rows 01 to 09, not a bottleneck by itself
   open_gaps:
     - A 2026 primary statistic on repository use or duplicate research

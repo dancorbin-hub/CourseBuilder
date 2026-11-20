@@ -27,7 +27,8 @@ entries:
     source_date: 2026-05-18
     checked_on: 2026-11-20
     age_flag: false
-    status: verified, weak
+    status: "partly verified, weak"
+    verifier_note: "Opened 2026-11-20. 14 days and 4 hours confirmed, 180 teams, Jan to Apr 2026. The 4 hours is labeled '2026 median', not 'Q1 2026'. 2024 baseline method not stated. Vendor"
     note: Vendor of an AI interview tool. Own panel of 180 teams, Jan to Apr 2026. Baseline method not stated. Do not put on a slide
 
   - id: E2
@@ -40,7 +41,8 @@ entries:
     source_date: 2026-05-12
     checked_on: 2026-11-20
     age_flag: false
-    status: verified, weak
+    status: "verified, weak"
+    verifier_note: "Opened 2026-11-20. 12.1 to 1.1 days and 0.6-day synthesis QA confirmed. 2026 data: 217 studies, Jan to Apr 2026; 2024 baseline: 412 post-mortems, 96 teams, period not stated. Vendor's own customer data"
     note: Same vendor as E1, so not an independent source. Uses own customer data. Some figures do not reconcile
 
   - id: E3
@@ -54,7 +56,8 @@ entries:
     source_date: 2026-07-10 (Lyssna article; the Delight Path page shows no date)
     checked_on: 2026-11-20
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Opened Delight Path page and Lyssna article 2026-11-20. 80%, 34%, 107 leaders, Q2 2026, partners Lyssna, Userflow, Foldspace confirmed. Primary page has no date. Full report behind a download form, not opened"
     note: >-
       Primary report page opened 2026-11-20. It states 80% and 34%. 107 senior product leaders, Q2 2026,
       online survey hosted on Lyssna. Regions NA 50%, Europe 24%, APAC 13%, other 13%. Sample from the Product
@@ -75,7 +78,8 @@ entries:
     source_date: 2026-07-10
     checked_on: 2026-11-20
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. Gamilis quote (Lyssna), Condens 71% and UKG 'meaningful time' all confirmed. Two of three are research-tool vendors"
     note: >-
       Now has 3 independent sources (closes the worked-example gap). E2 (synthesis QA step) also supports it.
       No non-vendor study measures the checking time directly
@@ -93,7 +97,8 @@ entries:
     source_date: 2025-10-08 (Torres, updated 2026-09-27)
     checked_on: 2026-11-20
     age_flag: true
-    status: verified
+    status: "verified"
+    verifier_note: "Opened JMIR and Condens 2026-11-20. JMIR pilot reworded quote confirmed. Condens 'hallucinates quotes' is the authors' summary of respondents, not a respondent quote; 42% context loss confirmed. Torres not reopened"
     note: >-
       Closes the worked-example gap. Torres is older than 12 months (Dan decides), but S6 and S4 are 2026.
       Torres' 30% wrong-quote figure is one project, not a statistic. JMIR reports one reworded quote in a pilot,
@@ -109,7 +114,8 @@ entries:
     source_date: 2026-11-16
     checked_on: 2026-11-19
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Reopened 2026-11-20 (Learn page updated 2026-11-16). 8,000 characters confirmed. Embedded files confirmed on agent-builder-add-knowledge (see mb-02)"
     note: Not re-checked by track 4. Platform matrix owns re-checks
 
   - id: E7
@@ -122,7 +128,8 @@ entries:
     source_date: 2026-11 (page shows "updated over 2 weeks ago")
     checked_on: 2026-11-19
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Reopened 2026-11-20. Free, Pro, Max, Ultra, Team, Enterprise; code execution required. Page shows only 'updated over 3 weeks ago'"
     note: Not re-checked by track 4. Platform matrix owns re-checks
 
   - id: E8
@@ -135,7 +142,8 @@ entries:
     source_date: unknown (page shows no date)
     checked_on: 2026-11-20
     age_flag: false
-    status: verified
+    status: "wrong"
+    verifier_note: "Opened 2026-11-20. Personal dates, 100 MB and tool list are correct. 'Workspace business accounts get skills in March 2027' is wrong: the Help page gives March 2027 as the Gem removal date for business accounts and says work accounts get skills 'soon'. The Workspace Updates blog (2026-09-30, updated 2026-11-09) says all Workspace customers get Gemini app skills, rollout done by mid-November 2026. Help page undated"
     note: No scheduling found for skills. Not re-checked by track 4
 
   - id: E9
@@ -148,7 +156,8 @@ entries:
     source_date: unknown
     checked_on: 2026-11-19
     age_flag: false
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20 on help-lb.openai.com (OpenAI subdomain; help.openai.com did not load). Instructions and files confirmed. Page date relative only ('3 days ago')"
     note: Page did not load. Platform matrix track owns the retry
 
   # ---------- New, track 4 ----------
@@ -166,7 +175,8 @@ entries:
     source_date: 2026-05-22
     checked_on: 2026-11-20
     age_flag: false
-    status: verified, vendor
+    status: "verified, vendor"
+    verifier_note: "Opened 2026-11-20. 71%, 71%, 65% disagree, 12% confirmed; 332 responses. 21% and 5% are two different questions (21% agree with the trust statement; 5% name 'trust with minimal review' as their practice), not a conflict. Survey period not stated"
     note: >-
       Sample 332: researchers 63%, designers 15%, PMs 9%, ReOps 9%. Survey period not stated. Condens sells a
       research repository with AI. The page gives 21% and 5% for "trust with minimal review"; the two figures
@@ -184,7 +194,8 @@ entries:
     source_date: 2026-03-11
     checked_on: 2026-11-20
     age_flag: false
-    status: verified, vendor
+    status: "verified, vendor"
+    verifier_note: "Opened 2026-11-20. 69%, 82%, nearly 500 respondents, 2026-03-11 confirmed. Survey period not stated"
     note: Survey period and sampling not stated. No figures on time saved, accuracy or privacy
 
   - id: E12
@@ -200,7 +211,8 @@ entries:
     source_date: 2026-08-13
     checked_on: 2026-11-20
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. 181/183 vs 138, alpha 0.487/0.507 vs 0.703, no time saved, 317 articles 2020 to 2023, published 2026-08-13 confirmed"
     note: >-
       Health care context. Corpus is 317 newspaper articles on nurses (2020 to 2023), not interviews. Phase 2
       sample is 31 articles. Part of the gap comes from how quotes were cut, not only from disagreement.
@@ -220,7 +232,8 @@ entries:
     source_date: 2026-04-06
     checked_on: 2026-11-20
     age_flag: false
-    status: verified, weak
+    status: "wrong"
+    verifier_note: "Opened arXiv HTML 2026-11-20. 11 expert policy researchers, 'order of magnitude faster' (figure caption, 10 to 15 minute timed phases, no exact times) and about 2 more themes confirmed. 88.6% is wrong as stated: it is 31 of 35 themes across all sources that appeared in Reddit or interview outputs. Of the 22 report themes, Reddit found 16 and interviews found 16. Preprint, not peer reviewed"
     note: >-
       Preprint, not peer reviewed. Small user study (11). Policy research, not PM, but the workflow is the same
       as interview synthesis. Read through an abstract page (emergentmind), not the arXiv PDF. Authors call
@@ -236,7 +249,8 @@ entries:
     source_date: 2026-03-30
     checked_on: 2026-11-20
     age_flag: false
-    status: partly verified
+    status: "partly verified"
+    verifier_note: "Paper not opened: doi.org and journals.sagepub.com both failed 2026-11-20. UMN news item opened: 'significantly less time', no figures. Do not use until the paper is opened"
     note: >-
       Health care. Only the university news item was opened, not the paper. No time figures and no agreement
       metric on the page. Nurses in a blinded survey preferred the LLM codebooks. Open the paper before use
@@ -253,7 +267,8 @@ entries:
     source_date: 2026-07
     checked_on: 2026-11-20
     age_flag: false
-    status: verified (abstract only)
+    status: "verified (abstract only)"
+    verifier_note: "Opened 2026-11-20. Title, authors, 21 survivors, pp. 12174 to 12192, July 2026, 'narrative erasure' confirmed"
     note: Peer reviewed. Sensitive population, not PM. Supports "loses context" in E5 and the human audit step
 
   - id: E16
@@ -268,7 +283,8 @@ entries:
     source_date: 2026-09-30
     checked_on: 2026-11-20
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. Claude Opus 4.6 main model, 47% vs none, 98% and 56 points, three ATP waves H1 2026 confirmed. Respondent count not on page"
     note: >-
       Three ATP waves fielded in H1 2026. Example: 98% of synthetic respondents said China benefits more from trade,
       56 points above the real share. Bias direction is inconsistent. Number of respondents not on the page.
@@ -288,7 +304,8 @@ entries:
     source_date: 2026-03
     checked_on: 2026-11-20
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. 79%, 1.2 points on 7-point scale, less variable, 18(1) 48-53, DOI confirmed. Sample size not on page"
     note: >-
       Nonprofit institute journal, practitioner review format. Sample size not on the summary page. Authors say
       synthetic data fits early concept tests, not decisions that need precise insight. Independent of E16, so
@@ -307,7 +324,8 @@ entries:
     source_date: 2026-04
     checked_on: 2026-11-20
     age_flag: false
-    status: verified
+    status: "partly verified"
+    verifier_note: "NORC PDF not opened (web budget). Prolific side confirmed only through Retraction Watch (see E19)"
     note: >-
       NORC is a literature review. Most statistics inside it are from 2005 to 2025, so do not quote them (2026 rule).
       Use only its conclusion. The two sources agree there is a risk; they disagree on its size. Teach it as
@@ -325,7 +343,8 @@ entries:
     source_date: 2026-04
     checked_on: 2026-11-20
     age_flag: false
-    status: partly verified, weak
+    status: "partly verified, weak"
+    verifier_note: "Retraction Watch opened 2026-11-20: under 1% of about 4,800 responses from 12 companies and about 16% of 400 MTurk responses confirmed; Prolific funded, lead author is Prolific staff. Preprint at osf.io/preprints/psyarxiv/pvdjr_v2 did not render. Primary not verified"
     note: >-
       Primary preprint not opened. Prolific funded it and its detection tool cannot be checked by others.
       Respondents drawn from high-approval participants. Do not put on a slide without the primary
@@ -342,7 +361,8 @@ entries:
     source_date: 2026-02-05
     checked_on: 2026-11-20
     age_flag: false
-    status: verified, vendor
+    status: "verified, vendor"
+    verifier_note: "Press release opened 2026-11-20: 39.7%, 32.3%, 24.9% confirmed. Report page: 222 companies, data through 2025, says 'AI interactions' not 'data movements'. Full PDF not opened"
     note: >-
       Data-loss-prevention vendor. Based on its customers' telemetry; period and method not stated, most data
       looks like 2025. Supports the lab data safety note (no client data, PHI or PII in unapproved tools).
@@ -360,7 +380,8 @@ entries:
     source_date: 2026-07-22
     checked_on: 2026-11-20
     age_flag: false
-    status: verified, vendor
+    status: "partly verified, vendor"
+    verifier_note: "Opened 2026-11-20. 82%, 61%, 1,000+ buyers confirmed. 'Mostly for evaluation' is not supported: top uses are TCO 51%, shortlists 51%, research 49%, evaluating vendors 46%"
     note: >-
       Survey period not stated. G2 sells review and buyer-intent data. Use for win/loss and market signals:
       win/loss interviews should ask how buyers used AI to shortlist. Software buyers only
@@ -378,7 +399,8 @@ entries:
     source_date: 2026-09-08
     checked_on: 2026-11-20
     age_flag: false
-    status: single source, self-reported
+    status: "verified, single source, self-reported"
+    verifier_note: "Opened 2026-11-20. 10,000 to 15,000 a month, over 95%, under 60 minutes, human approval, audit trail confirmed. Baselines 80 to 100 vs 110 to 160 hours both on page. Dates conflict (Sep 4 vs Sep 8, 2026)"
     note: >-
       First-party case, but Microsoft sells the AI tools. Baseline hours conflict (80 to 100 vs 110 to 160 per
       month). No accuracy metric. The output has an audit trail with confidence indicators, which matches the
@@ -397,7 +419,8 @@ entries:
     source_date: unknown (image paths suggest 2026-05)
     checked_on: 2026-11-20
     age_flag: unknown
-    status: single source, self-reported
+    status: "verified, single source, self-reported"
+    verifier_note: "Opened 2026-11-20. 380+ ideas, expert validation takes 'meaningful time', 'equal confidence on good data and bad' confirmed. Undated"
     note: No time or accuracy figures. Best practitioner source for "the model shows flawed data with the same confidence as good data"
 
   - id: E24
@@ -413,7 +436,8 @@ entries:
     source_date: unknown
     checked_on: 2026-11-20
     age_flag: unknown
-    status: single source, vendor
+    status: "verified, single source, vendor"
+    verifier_note: "Opened 2026-11-20. 4 people 4 weeks to 1 person 1 week (quarterly) confirmed. Undated"
     note: Self-reported before-and-after. No method. Page shows no date
 
   - id: E25
@@ -430,7 +454,8 @@ entries:
     source_date: unknown (page footer 2026)
     checked_on: 2026-11-20
     age_flag: unknown
-    status: single source, vendor
+    status: "not verified"
+    verifier_note: "Not reopened 2026-11-20: shared web fetch budget ran out"
     note: Bank not named. Useful for the FinTech data safety note, because approval of the tool comes before any customer data goes in
 
   - id: E26
@@ -446,7 +471,8 @@ entries:
     source_date: unknown (page footer 2026)
     checked_on: 2026-11-20
     age_flag: unknown
-    status: single source, vendor
+    status: "not verified"
+    verifier_note: "Not reopened 2026-11-20: shared web fetch budget ran out"
     note: >-
       Headline "50% faster" is not explained; do not use it. Notes that late design changes can delay releases
       by two months or more. Hardware priority example for field interviews
@@ -464,7 +490,8 @@ entries:
     source_date: unknown (page footer 2026)
     checked_on: 2026-11-20
     age_flag: unknown
-    status: single source, vendor
+    status: "not verified"
+    verifier_note: "Not reopened 2026-11-20: shared web fetch budget ran out"
     note: Company not named. No time figures. Same vendor as E25 and E26, so the three are one source for any shared claim
 
   - id: E28
@@ -481,7 +508,8 @@ entries:
     source_date: unknown (cites "Manufacturers Alliance VOC Analysis, 2026")
     checked_on: 2026-11-20
     age_flag: unknown
-    status: single source
+    status: "verified, single source"
+    verifier_note: "Opened 2026-11-20. 32 interviews, 3,900 to 103, about 91% from AI, 4 to 6 weeks faster confirmed. Analysts also added about 30 needs the model missed. Page undated"
     note: >-
       Industry association article; the case is from a consultancy that sells the method. Good example of the
       human filter step (3,900 to 103). The article's own survey has no sample size, so its figures are not used
@@ -497,7 +525,8 @@ entries:
     source_date: unknown
     checked_on: 2026-11-20
     age_flag: unknown
-    status: single source, vendor
+    status: "not verified"
+    verifier_note: "Not reopened 2026-11-20: shared web fetch budget ran out"
     note: No baseline. Weak. Keep only as a hardware pointer
 
   - id: E30
@@ -512,7 +541,8 @@ entries:
     source_date: 2026-07-10
     checked_on: 2026-11-20
     age_flag: false
-    status: partly verified
+    status: "partly verified"
+    verifier_note: "Lyssna (2026-07-10) states 49%, 45%, 42% and attributes them to the Delight Path Q2 2026 survey. The primary preview page does not show them. Full report not opened"
     note: >-
       Same survey as E3 (107 leaders). Not shown on the free primary preview; the full report is gated. Fits the
       planted error in mr-wf-01 (one vocal buyer counted as a pattern) and the "2 or more interviews per insight" rule

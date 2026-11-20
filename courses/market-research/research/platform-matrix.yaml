@@ -46,7 +46,8 @@ features:
     url: https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
     source_date: approx 2026-11-05 (page says "updated over 2 weeks ago")
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20 (curl). All users; Free max 5 projects; RAG on paid plans. Relative date only"
   - id: cl-pj-02
     platform: claude
     feature: Share a project (Can view, Can edit)
@@ -67,7 +68,8 @@ features:
     url: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
     source_date: approx 2026-10-28 (page says "updated over 3 weeks ago")
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. Plans, code execution, 64/200 character limits, zip structure confirmed. Relative date only"
     note: Recheck of E7. Still true. The plan list now also names Ultra. The page changed date since 2026-11-19 ("over 2 weeks" then, "over 3 weeks" now, so no new edit). A catch-up skill can be a zip that the learner uploads, on all plans
   - id: cl-cl-04
     platform: claude
@@ -100,7 +102,8 @@ features:
     url: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
     source_date: approx 2026-11-05 (page says "updated over 2 weeks ago")
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. All plans, 30 MB per file, formats confirmed; owners can disable on Team and Enterprise. Relative date only"
     note: Files in a project are available to the code environment. An org owner can turn code execution off. Check this with company learners before class
   - id: cl-sc-07
     platform: claude
@@ -124,7 +127,8 @@ features:
     url: https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt
     source_date: approx 2026-11-17 (page says "updated 3 days ago")
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened on help-lb.openai.com 2026-11-20. Files 5 / 25 / 40 and 10 per upload confirmed. help-lb is an openai.com subdomain, so OpenAI controls it. Cite help.openai.com in learner materials"
     note: Recheck of E9. The main URL (help.openai.com/en/...) failed again on 2026-11-20, and the sr-rs language URL failed too. The help-lb.openai.com host loaded the same article. The Verifier must confirm that help-lb is an official OpenAI host. Conflict with cg-03, which says Plus has 20 files per project. Use the lower number (20 on Plus) in step cards until resolved
   - id: cg-02
     platform: chatgpt
@@ -146,7 +150,8 @@ features:
     url: https://help-lb.openai.com/en/articles/8555545-file-uploads-faq
     source_date: approx 2026-11-15 (page says "updated 5 days ago")
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened on help-lb.openai.com 2026-11-20. Limits confirmed. Conflict with cg-01 is real (Plus 20 here, 25 there). Also: Free users get 3 uploads per day. No file-output content"
     note: Project file counts conflict with cg-01 (Plus 20 here, 25 there; Go and Free not listed here)
   - id: cg-04
     platform: chatgpt
@@ -214,7 +219,8 @@ features:
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
     source_date: 2026-11-16
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20 (updated 2026-11-16). 8,000 / 30 / 1,000 characters and 3 response modes confirmed"
     note: Recheck of E6. Still 8,000 characters. Same page date
   - id: mb-02
     platform: copilot
@@ -225,7 +231,8 @@ features:
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge
     source_date: 2026-11-16 (ms.date 2026-09-30)
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20 (updated 2026-11-16). 20 files, 512 MB / 30 MB, no GCC, password and label failures confirmed. License condition is on the prerequisites page (mb-03), not this page"
     note: A course agent with a code book, log, brief template and case files must stay at 20 files or fewer. Merge files where possible. Spreadsheet limit is 30 MB. Labelled company files can fail
   - id: mb-03
     platform: copilot
@@ -236,7 +243,8 @@ features:
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites
     source_date: 2026-11-06
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20 (ms.date 2026-11-06). Embedded files and SharePoint need license or usage billing; code interpreter, instructions, web search work for all. Self-conflict on unlicensed authoring confirmed"
     note: Key risk. A learner with Copilot Chat only and no billing cannot ground the agent in embedded files. The page also conflicts with itself on whether unlicensed users can author agents. Ask Microsoft or a second Copilot tester (PRD open item)
   - id: mb-04
     platform: copilot
@@ -247,7 +255,8 @@ features:
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
     source_date: 2026-11-16
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. Toggle and math, data analysis, visualizations confirmed. No formats or downloads stated"
     note: Downloadable .xlsx or .docx output is not stated. Test at Gate 2 proof
   - id: mb-05
     platform: copilot
@@ -291,7 +300,8 @@ features:
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
     source_date: 2026-11-16
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20. Copy to Copilot Studio for actions confirmed"
     note: PRD decision 26 says Copilot Studio is not required. Stretch only
   - id: mb-09
     platform: copilot
@@ -326,7 +336,8 @@ features:
     url: https://support.google.com/gemini?p=pn_skills
     source_date: unknown (page shows no date)
     checked_on: 2026-11-20
-    status: not verified
+    status: "partly verified"
+    verifier_note: "Opened 2026-11-20. Upload methods, 100 MB, unsupported types, no internet in scripts confirmed. 'Unlimited skills, 100 active' not found. Page undated, so no dated vendor doc for this row"
     note: Recheck of E8 with a second Google page. 100 MB confirmed. Connected Apps need Keep Activity on, but a core lab does not need them
   - id: gm-02
     platform: gemini
@@ -337,7 +348,8 @@ features:
     url: https://support.google.com/gemini/answer/18560919?hl=en
     source_date: unknown (page shows no date)
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened Help page and Workspace blog 2026-11-20. Personal 2026-11-17 / 2026-12-17; business Gems stop no sooner than 2027-03-01; education no sooner than 2027-06-01. Dated by the blog"
     note: Recheck of E8. Still true. Second source with dates, Workspace Updates blog (2026-09-30, updated 2026-11-09)
   - id: gm-03
     platform: gemini
@@ -348,7 +360,8 @@ features:
     url: https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html
     source_date: 2026-09-30 (updated 2026-11-09)
     checked_on: 2026-11-20
-    status: not verified
+    status: "verified"
+    verifier_note: "Opened 2026-11-20 (posted 2026-09-30, updated 2026-11-09). Gemini app skills for all Workspace customers, rollout done by mid-November 2026. The Help page says work accounts 'soon'. Blog says Gemini app skills have no age limit; Help page says 18+. Test on a Workspace account at Gate 2"
     note: CONFLICT. This page says Workspace accounts have Gemini app skills now. The Gemini Apps Help pages (gm-01, gm-02) say work and school accounts are "coming soon" and the CLAUDE.md context says March 2027. The blog's March 2027 date is when Gems stop for business accounts, not when skills start. Dan must decide which to trust. Test on a Workspace business account at Gate 2
   - id: gm-04
     platform: gemini
@@ -381,7 +394,8 @@ features:
     url: https://support.google.com/gemini/answer/18560919?hl=en
     source_date: unknown (page shows no date)
     checked_on: 2026-11-20
-    status: not verified
+    status: "partly verified"
+    verifier_note: "Opened 2026-11-20. Canvas, Deep research, video, music, guided learning confirmed. Page undated"
     note: Labs must not ask the Gemini agent to use Canvas or Deep Research
   - id: gm-07
     platform: gemini
