@@ -38,6 +38,8 @@ contexts:
   software: Discovery and win/loss interviews with buyers and users
   hardware: Field visits, distributor and installer interviews, service technician notes. gap, no source yet
   internal_pm: Interviews with employees who use an internal platform or tool. gap, no source yet
+  fintech: gap, not searched yet
+  health_care: gap, not searched yet
   services_manufacturing: gap, not searched yet
 
 proposed_lab:

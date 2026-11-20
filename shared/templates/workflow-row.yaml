@@ -27,9 +27,11 @@ split:
   ai_error_to_catch: ""   # one specific, likely AI error the PM must catch
 
 contexts:                 # how the workflow works in each client context. "gap" if research found nothing
+  hardware: ""            # priority
+  internal_pm: ""         # priority
   software: ""
-  hardware: ""
-  internal_pm: ""
+  fintech: ""
+  health_care: ""
   services_manufacturing: ""
 
 proposed_lab:

@@ -36,7 +36,7 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 2. Any other factual claim needs 2 independent sources. Two articles that repeat one study count as one source.
 3. A tool feature claim needs one dated vendor doc.
 4. Flag any source older than 12 months. Dan decides if it stays.
-5. Look for hardware and internal product management examples. Record a gap when none exist. A gap is not a failure.
+5. Look for examples in software, FinTech, health care, manufacturing, hardware, services and internal product management. Hardware and internal product management are a priority. Record a gap when none exist. A gap is not a failure.
 
 ## Gates and approvals
 
