@@ -273,7 +273,7 @@ Every module follows one arc, and every lab has one goal with a variant per plat
 2. A core path that works on every platform. Stretch steps for platforms that can do more.
 3. Per-platform step cards for Claude, ChatGPT and Copilot (Gemini if time allows). The step cards go in the workbook, not on slides. Dan demos on one platform only. Breakout rooms group learners by platform so they help each other. So each step card must be self-serve: a learner can finish the lab from the workbook alone, with no demo on their platform. The Gate 3 card test checks this. Slides show the pattern once. Each card starts with: "Build and save your own agent. Share your screen only when someone is stuck." Each fast-start card has one annotated screenshot of where to start and which field the template goes in.
 4. Two input paths: the learner's own work, or the fallback case data. A "Start here with sample data" block sits directly under each platform's steps.
-5. A data safety note: what learners must not paste into a tool their company has not approved.
+5. A data safety note: what learners must not paste into a tool their company has not approved, for example client data, health data protected by HIPAA, and personal data (PII).
 6. Setup for Zoom breakout rooms and for in-person tables.
 7. Success criteria on the slide before the lab and at the end of each card: a second sample input and a concrete pass condition, so learners can check their own output in the breakout room. The debrief names what AI did poorly.
 

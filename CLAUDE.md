@@ -25,10 +25,11 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 4. Learners use their own work first. One fallback case company serves the whole course.
 5. 40% instructor-led, 60% hands-on per module.
 6. Slide notes: `POINT:` then `Talk Track:`. No `[AI USE CASE TT]` block.
-7. Clarity first: 6 steps or fewer per step card, 1 action per step, 20 words or fewer per sentence.
-8. Never repeat a slide, or the same concept with the same agent in the same exercise, across courses. See `shared/registry/`.
-9. Do not teach the Playbook method. Playbook markdown files can be workbook handouts.
-10. Do not reuse the agents from Dan's workshops (for example CAW-AI). Course labs must be clearly stronger builds.
+7. Every lab has a data safety note: no client data, HIPAA health data or PII in a tool the company has not approved.
+8. Clarity first: 6 steps or fewer per step card, 1 action per step, 20 words or fewer per sentence.
+9. Never repeat a slide, or the same concept with the same agent in the same exercise, across courses. See `shared/registry/`.
+10. Do not teach the Playbook method. Playbook markdown files can be workbook handouts.
+11. Do not reuse the agents from Dan's workshops (for example CAW-AI). Course labs must be clearly stronger builds.
 
 ## Research rules
 
