@@ -1,4 +1,4 @@
-# Cross-course registry (first pass, 2026-11-20).
+# Cross-course registry (first pass, 2026-11-20; PDW-AI and PRW-AI added same day).
 # Lists what other Pragmatic courses and Dan's workshops already teach, so the Advanced AI courses do not repeat it.
 # A repeat = the same concept taught with the same agent in the same exercise, or a repeated slide.
 # Same topic area and same principle are allowed. Source decks: project files, course-builder/reference/.
@@ -32,6 +32,36 @@ courses:
     concepts: [AI draft is 60 to 70% accurate, do not stop at the draft, AI audits its own output]
     notes: Our fallback case company must not be BadgeWorks or a close copy.
 
+  - id: PDW-AI
+    title: Product Discovery with AI (Pragmatic live AI workshop, 2 hours)
+    source: pragmatic-sources/PDW-AI_Product_Discovery_with_AI_26.09.pptx (48 slides)
+    framework_areas: [Market / Market Problems (discovery and validation)]
+    modules:
+      - AI-assisted interview prep
+      - AI-assisted synthesis (code and theme interviews, confirm every code against a real quote, second pass for contradictions and outliers, frequency vs intensity)
+      - Market problem statements tagged NOT YET VALIDATED
+      - AI as skeptic, then bridge to validation (urgency, pervasiveness, willingness to pay, stop sign)
+    case_company: FieldPro (HVAC field-service work-order app; buyer Dale Whitfield, user Marcus Webb)
+    concepts: [AI is the bookends, AI never replaces talking to a real person, quote check per code, planted contradiction and outlier, frequency vs intensity]
+    level: Level 1 to 2 users. Points to an advanced portfolio
+    notes: Strong overlap with worked example row mr-wf-01 (interview synthesis). The Market Research course must not reteach one-pass synthesis, the quote check as a concept, or frequency vs intensity. Our fallback case company must not be FieldPro or a close copy.
+
+  - id: PRW-AI
+    title: Product Requirements with AI (Pragmatic live AI workshop, 2 hours)
+    source: pragmatic-sources/PRW-AI_26.10.1.pptx (37 slides)
+    framework_areas: [Planning / Requirements]
+    modules:
+      - Loop Ground, Question, Write, Review, Decide, Consume
+      - Problem framing with WHO, WHAT, FREQUENCY, WHY
+      - Prompt structure JOB AND CONTEXT, RULES, OUTPUT
+      - AI reviewer and downstream consumer test, Repair and Rerun
+    case_company: FieldPro (same as PDW-AI)
+    concepts: [AI reviewer, downstream consumer test, Repair and Rerun]
+    take_home: Product Requirements Playbook
+    level: Level 1 to 2 users. Points to an advanced portfolio
+    notes: Relevant to course 2 (Product Strategy and Planning). Our agent brief template (job, inputs, rules, output) is close to JOB AND CONTEXT, RULES, OUTPUT. Refer to it as known; do not reteach it with new slides that say the same thing.
+
+  # PRC-AI and MKT-2026 were attached by mistake (Dan, 2026-11-20). They are core courses, kept as reference.
   - id: PRC-AI
     title: Price (Pragmatic core course, AI version 25.7.3)
     source: pragmatic-sources/PRC_25.7.3 AI.pptx (149 slides)
@@ -56,5 +86,7 @@ courses:
     notes: Boundaries and guardrails can be taught again with new slides (decision 33). Do not reuse the Competitive Intel Watchdog.
 
 open_questions:
+  - PDW-AI teaches one-pass interview synthesis with AI. Is mr-wf-01 different enough? Its new parts are the running agent over many batches, the insight log over time, the flag report, the audit and tuning the brief. Dan decides.
+  - Fallback case company must not be BadgeWorks, Entrilo or FieldPro.
   - BPW-AI and the Market core course both teach buyer personas. The Market Research course must not reteach persona creation.
   - CAW-AI already teaches scheduled tasks. The autonomy ladder's scheduled step must use a different agent and new slides.
