@@ -73,7 +73,7 @@ proposed_lab:
   stretch: Run the agent on a schedule or when files arrive, where the platform allows (not verified for 2027)
   planted_error: Vocal buyer counted as a pattern
   success_check: Batch 2 run. The log updates, the flag report lists the new contradiction, and no insight rests on one interview
-  registry_check: AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by flags, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20)
+  registry_check: AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by flags, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20). PDW-AI (Product Discovery with AI) already teaches one-pass AI synthesis, the quote check and frequency vs intensity. The lab starts where PDW-AI stops: no slides on coding or quote checks; time goes to running the agent on batches, the log over time, the flag report, the audit and tuning (Dan, 2026-11-20)
   pragmatic_fit: Good fit (Dan, 2026-11-20). Pragmatic Framework 2027 says to talk with evaluators who bought and who did not, then validate, prioritize and share the problems. It also says teams must verify AI output, protect sensitive information and stay accountable
 
 evidence:
