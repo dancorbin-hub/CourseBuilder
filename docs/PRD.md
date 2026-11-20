@@ -65,6 +65,7 @@ The PRD draft is complete after 5 interview rounds. It waits for Dan's review. N
 - 35: Modules climb an autonomy ladder across the day. Try it at Gate 2.
 - 36: The life cycle stages are the Pragmatic Framework 2027 categories: Market, Focus, Business, Planning, Go-to-Market, Enablement, Operations. Each workflow row names its category and focus area.
 - 37: Thin evidence is accepted for now. The monthly refresh adds new evidence as it appears.
+- 38: Learners are agent managers. Each course has one agent that learners build in module 1 from a template and extend in each later lab. The agent does the workflow. The learner writes the brief, sets checks, reviews exceptions and audits. A catch-up template is ready for each module.
 
 ## Problem and goals
 
@@ -154,7 +155,7 @@ Round 3 set the house rules for the Advanced AI courses. Some rules come from Da
 **House rules**
 
 1. Every module is built on a real PM workflow and the bottleneck it removes.
-2. Learners build, not only prompt. Labs build Claude Projects and skills, ChatGPT projects and skills, Gemini skills, and Copilot agents. Labs also use the newest PM-relevant features, for example ChatGPT folders, plugins, scheduled tasks and agents that run on a schedule, and Claude Design for prototyping. No custom GPTs or Google Gems: they are being deprecated. Research always scans for the latest features on each major platform.
+2. Learners build, not only prompt. Learners are agent managers: one course agent grows module by module, and the learner manages it (decision 38). Labs build Claude Projects and skills, ChatGPT projects and skills, Gemini skills, and Copilot agents. Labs also use the newest PM-relevant features, for example ChatGPT folders, plugins, scheduled tasks and agents that run on a schedule, and Claude Design for prototyping. No custom GPTs or Google Gems: they are being deprecated. Research always scans for the latest features on each major platform.
 3. Learners use their own work when they can. Every lab also has a fallback case study.
 4. Time split per module: 40% instructor-led, 60% hands-on.
 5. Every slide has notes in this format: `POINT:` (one sentence), then `TALK TRACK:`. Activity talk tracks start with "The goal of this activity is".
