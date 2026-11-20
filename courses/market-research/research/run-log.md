@@ -14,3 +14,4 @@
 - Rerun items verified. 02:58 UTC: Step 4, Synthesizer.
 - Synthesizer done. 03:03 UTC: Step 5, trace check.
 - Trace check done: ~110 claims, 17 fixes, 3 flags for Dan.
+- Gate 1 doc published: https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW. Status in_review.
