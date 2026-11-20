@@ -206,7 +206,8 @@ features:
     url: https://academy.openai.com/public/clubs/work-users-ynjqu/resources/working-with-files
     source_date: 2026-09-04 (published 2025-08-06, "Last updated on September 4, 2026")
     checked_on: 2026-11-20
-    status: not verified, partly closed
+    status: partly verified
+    verifier_note: "Opened Academy page 2026-11-20. Published 2025-08-06, last updated 2026-09-04. 'downloading ChatGPT-generated outputs (e.g., updated spreadsheets or PDFs)' confirmed. CSV, XLSX, PDF, DOCX are named as upload formats only, not outputs. No plans, no Projects. help.openai.com article 20001278 failed again (client error). Plans, formats and Projects scope not verified"
     note: >-
       Rerun 2026-11-20. OpenAI Academy "Working with files" says users can download "ChatGPT-generated outputs
       (e.g., updated spreadsheets or PDFs)". Dated vendor page, but it gives no plans, formats list or Projects scope.
@@ -343,7 +344,8 @@ features:
     url: https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter
     source_date: 2026-09-28 (page footer "Last updated on 2026-09-28"; ms.date 2026-07-06; metadata updated_at 2026-10-22)
     checked_on: 2026-11-20
-    status: not verified
+    status: verified
+    verifier_note: "Opened 2026-11-20. 'Last updated on 2026-09-28' (metadata 2026-10-22). Confirmed: output files 'such as images, charts, spreadsheets, or documents'; Word, Excel, PowerPoint or PDF named in the synthetic data example; session-only hosting; always enabled in Agent Builder; license sentence verbatim. CSV/TSV named as input only. No size or row limits"
     note: >-
       Rerun 2026-11-20. Quote: "Code interpreter can generate and host downloadable files ... Copilot automatically presents
       a download link in the response." Learners must download the log in the same session. The license line reads oddly
@@ -451,7 +453,8 @@ features:
     url: https://workspaceupdates.googleblog.com/2026/04/move-from-conversation-to-creation-with-file-generation-in-Gemini.html
     source_date: 2026-04-27
     checked_on: 2026-11-20
-    status: not verified, partly closed
+    status: verified (Gemini app); not verified for skills
+    verifier_note: "Opened 2026-11-20. Post dated 2026-04-27. All 11 formats, the three user groups, 'no admin control' and 'one file per prompt' confirmed. Gems and skills not mentioned, so file output from a skill run is still unproven"
     note: >-
       Rerun 2026-11-20. Dated vendor doc for file output in the Gemini app. It does not say that a skill run can output a
       file. Skills run in the Gemini app, so it is likely, but test it at the Gate 2 proof. Old note: the skills page

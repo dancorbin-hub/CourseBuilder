@@ -954,7 +954,8 @@
       source_date: 2026-02-10 (page shows "Posted on Feb 10"; year inferred from 2026 references; metadata 2026-11-11)
       checked_on: 2026-11-20
       age_flag: false
-      status: "not verified"
+      status: "verified, weak"
+      verifier_note: "Opened 2026-11-20. 'dozens of tabs', 'internal documents that age quickly' and 'positioning shifts now happen quarterly instead of yearly' confirmed. Byline 'Feb 10', no year; author joined 2026-01-30, so 2026 is sound. Author promotes Seeto. No figure has a source link. Claim only"
       note: >-
         Weak. Author promotes Seeto, an AI competitive-analysis tool (vendor-adjacent). Its figures (6 to 10 hours a week,
         Gartner 28%, Forrester 68%) have no links and are 2024 or unsourced. Do not use any figure. Use as a claim only.

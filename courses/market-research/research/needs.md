@@ -227,7 +227,8 @@ Course implication (for the Synthesizer, not a finding): the PM keeps the questi
   source_date: 2026 (survey April 2026)
   checked_on: 2026-11-20
   age_flag: false
-  status: partly verified
+  status: verified
+  verifier_note: "Rerun check 2026-11-20. Opened MarketingProfs and the Wynter primary (https://wynter.com/research/the-state-of-competitive-intelligence-in-b2b-saas). Primary published May 2026, survey 2026-04-27 to 2026-04-28, 101 B2B SaaS PMMs (60 mid-market, 41 enterprise). 52%, 21%, sales calls (44%), 21% LLMs, 14% CI tools confirmed. Figures are shares of respondents. Primary also says 24% find CI 'goes stale fast' and 28% say the market moves faster than the CI cycle. No time data"
   note: 101 PMMs at B2B SaaS firms. Primary Wynter page found but not opened (fetch budget)
 - id: N15
   claim: AI-moderated win/loss cut time to insight from 41 to 4 days; coverage rose from about 6% to 71% of closed deals; interviews about 24 minutes
@@ -258,7 +259,7 @@ Course implication (for the Synthesizer, not a finding): the PM keeps the questi
   checked_on: 2026-11-20
   age_flag: false
   status: verified, weak
-  note: "Informal survey", sample size not disclosed. Industry association. Do not put on a slide
+  note: '"Informal survey", sample size not disclosed. Industry association. Do not put on a slide'
 - id: N18
   claim: About one third of companies spend over $25k a year on customer feedback; top challenges are data quality and internal bandwidth
   type: statistic
@@ -360,7 +361,8 @@ Course implication (for the Synthesizer, not a finding): the PM keeps the questi
   source_date: 2026-11-04
   checked_on: 2026-11-20
   age_flag: false
-  status: not verified
+  status: verified, vendor
+  verifier_note: "Opened 2026-11-20. Date 2026-11-04, no author. Intake channels, separate streams joined in one ledger by product area, 'the most senior advocate or the noisiest channel gets served first' and 'Pain gets filed under the product, never the platform' confirmed. Salesforce quote (Deepak Mukunthu, via Sharebird AMA) is about direct and indirect platform customers, not intake. No time figures. Advice, not a study"
   note: >-
     Rerun 2026-11-20. Vendor of feedback analytics software. No author named; quotes a Salesforce product director.
     No time figures. Internal users here are internal product teams (platform customers), not all employees
@@ -375,7 +377,8 @@ Course implication (for the Synthesizer, not a finding): the PM keeps the questi
   source_date: 2026-07-15
   checked_on: 2026-11-20
   age_flag: false
-  status: not verified
+  status: partly verified
+  verifier_note: "Opened 2026-11-20. Date 2026-07-15, author Austin Meyer. Confirmed: do not ask 'Would you use this?' (polite yes), three-person pilot, watch them use it, check usage a week later, built 'in an afternoon'. Goes past the source: the post does not call adoption 'the hard part' (it says the fix is 'smaller than you think'), and it says ad hoc loops 'strain', not 'break down', when a team ships a new tool every week. No data"
   note: >-
     Rerun 2026-11-20. Vendor of beta and user testing software. Practitioner advice, no data. Independent of N27.
     No breakdown of time per step ("one conversation, three people, and a week" is a recommendation, not a measure)

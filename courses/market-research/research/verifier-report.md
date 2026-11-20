@@ -146,3 +146,39 @@ E25, E26, E27, E29 (Dovetail and Discuss.io stories), W3, W14, W15, W16, W17, NO
 | N24 | Finance workers 42% | Partly verified | No primary |
 | N26 | HHS de-identification | Verified | |
 | N2 to N4, N6, N12, N16, N18 to N23, N25 | Various | Not verified | Not opened |
+
+## Rerun items
+
+Mode 1 check of the items added in the rerun (gaps.md, "Rerun (2026-11-20)"). Checked 2026-11-20. I opened each source myself. 14 web fetches. One fetch failed (help.openai.com, client error).
+
+| Id | Claim | Result | Note |
+| --- | --- | --- | --- |
+| W21 | CI done by hand in many tabs; documents age quickly; positioning shifts quarterly | Verified, weak | Wording confirmed. Byline "Feb 10", no year (2026 is sound). Author promotes Seeto. No figure has a source link. Claim only |
+| N13 | Wynter CI: 52%, 21%, sales calls top, 21% LLMs, 14% CI tools | Verified | Primary opened. May 2026, survey 2026-04-27 to 28, 101 PMMs. Sales calls 44%. No time data |
+| N27 | Platform PM intake channels, two streams, loudest served first | Verified, vendor | Enterpret, 2026-11-04. Salesforce quote is not about intake. No time figures |
+| N28 | Internal tool feedback: ask what they do today, 3-person pilot, usage after a week | Partly verified | Centercode, 2026-07-15. Two parts go past the source (see failures) |
+| mb-11 | Copilot code interpreter downloadable files, session only | Verified | Learn page 2026-09-28. CSV is input only. License line is verbatim |
+| gm-09 | Gemini app file output, 11 formats, one file per prompt | Verified (app only) | Blog 2026-04-27. No mention of skills or Gems |
+| cg-08 | ChatGPT downloadable outputs | Partly verified | Academy 2026-09-04: "spreadsheets or PDFs" only. No plans, no Projects. Help article 20001278 failed again |
+| Dropped: Corporate Visions tourial | 50 to 70% different loss reasons | Drop confirmed | No method. Correction below |
+| Dropped: Clozd | Buyer and CRM data match 15% | Drop confirmed | Vendor, no date, sample or method |
+
+### Failures and items Dan must see
+
+1. N28 wording goes past the source. The post does not call adoption "the hard part". It says the fix is "smaller than you think". It says ad hoc loops "strain", not "break down". Fix the claim before the brief uses it.
+2. cg-08 stays unproven for the core lab. The only dated doc names spreadsheets and PDFs. It names no plans and no Projects. The ChatGPT step card cannot rely on .csv or .docx output yet.
+3. gm-09 proves file output in the Gemini app only. File output from a skill run is not proven. Test it at the Gate 2 proof.
+4. Corporate Visions correction: the page ties its 150,000-deal analysis to the 53% "winnable" claim, not to the 50 to 70% figure. The ledger note says "same 150,000-deal analysis". The drop stands.
+
+### Bottleneck check: mr-wf-10
+
+| Source | Independent | Describes the burden | Result |
+| --- | --- | --- | --- |
+| N13 (Wynter primary) | Yes | CI is a side task for 52%; 24% say CI "goes stale fast"; 28% say the market moves faster than the CI cycle | Supports a generic CI upkeep burden |
+| W21 (DEV Community) | Yes, from Wynter | Manual work in many tabs; documents age quickly | Weak, vendor-adjacent |
+
+Result: 2 independent sources for a generic "keeping CI current" burden. Neither source describes an alternatives map built from own deal evidence, or workarounds and "do nothing". That part stays a gap.
+
+### Format fix
+
+needs.md N17 `note` did not parse as YAML. I put the value in single quotes. The text is unchanged. The needs.md YAML block now parses.

@@ -11,3 +11,4 @@
 - Verifier done: 54 verified, 11 partly, 22 not verified, 2 wrong (E8 Gemini date, E13 figure). Rows 07, 08 fail 2-source rule.
 - 02:51 UTC: Step 3 started, one rerun per track on critic asks.
 - Rerun done: track 1 partly (mr-wf-10), track 2 partly, track 3 partly, track 4 open. Fetch budget ran out.
+- Rerun items verified. 02:58 UTC: Step 4, Synthesizer.
