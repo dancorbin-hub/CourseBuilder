@@ -2,7 +2,7 @@
 # Only Dan changes a gate to approved.
 course: market-research
 title: Advanced AI for Market Research
-stage: 0              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+stage: 1              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp" }
   gate_1_research:    { status: not_started, approved_on: null, doc: null }
