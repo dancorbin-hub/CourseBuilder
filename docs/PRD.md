@@ -56,6 +56,11 @@ The PRD draft is complete after 5 interview rounds. It waits for Dan's review. N
 - 29: The ID team scores learners in beta and live classes.
 - 30: The checker agents stay separate, and each has one job.
 
+**Decisions after approval (Dan, 2026-11-20)**
+
+- 31: Every lab also has Gemini step cards. Gemini builds use Gemini skills, because Gems are retired.
+- 32: The courses launch in 2027, so statistics and studies must be published in 2026 or later. Older ones are not used.
+
 ## Problem and goals
 
 The course builder cuts the time to make a Pragmatic Institute AI course, from research to a deck with talk track. Dan stays the SME and owns the final content decisions. Instructional designers add some content, and one or two other instructors may review it. The system researches, drafts and checks. Dan approves at each gate.
@@ -150,7 +155,7 @@ Round 3 set the house rules for the Advanced AI courses. Some rules come from Da
 5. Every slide has notes in this format: `POINT:` (one sentence), then `TALK TRACK:`. Activity talk tracks start with "The goal of this activity is".
 6. The Green, Yellow, Red Capability Map is a course setting that Dan turns on or off.
 7. No single required challenge point and no single core agent demo. The course favors agentic workflows over a series of prompts. Prompts, projects, folders and plugins still have a place where they fit.
-8. Mixed platforms in every class: Claude, ChatGPT and Copilot (Gemini secondary). Every lab works on each platform.
+8. Mixed platforms in every class: Claude, ChatGPT, Copilot and Gemini. Every lab works on each platform and has a step card for each (decision 31).
 9. File names: `<COURSE>_<version>_DRAFT_vN.pptx`. The system edits copies only.
 
 **Resolved questions**
@@ -188,7 +193,7 @@ Research starts from PM workflows, not from AI tools. Systems thinking is the sp
 1. A statistic needs a primary source.
 2. Any other factual claim needs 2 independent sources.
 3. A tool feature claim needs one dated vendor doc. It does not need a second source.
-4. A source older than 12 months gets a flag. Dan decides if it stays.
+4. Statistics and studies must be published in 2026 or later, because the courses launch in 2027 (decision 32). Other sources older than 12 months get a flag. Dan decides if they stay.
 5. Use stats only where they make a point. Do not fill slides with stats.
 6. Name tools where it helps. Focus on Claude, ChatGPT and Microsoft Copilot. Gemini is secondary.
 
@@ -222,7 +227,7 @@ If the Research critic finds a gap, the researcher for that track runs again on 
 | 2 | Are the bottlenecks real? (2 workflows) | Two independent sources describe the bottleneck itself. Two articles that repeat one vendor study count as one source. A feature page that shows AI can do a task does not prove that the task is a burden for PMs |
 | 3 | Does each workflow teach PM judgment? (same 2 workflows) | Dan can point to the work AI does, the decision the PM keeps, and one specific AI error the PM must catch |
 | 4 | Did the final brief keep the evidence? (1 statistic, 1 other claim, 1 tool claim) | Each claim links to a ledger entry. The statistic matches its primary source, including population and time period. The other claim has 2 independent sources. The tool claim has a dated vendor doc. The brief keeps the sources' limits |
-| 5 | Is a lab possible on all three platforms? | Each selected workflow maps to a core build with no connectors on Claude, ChatGPT and Copilot agent builder, with dated vendor evidence. An unknown permission is recorded as open. Hands-on proof comes at Gate 2 |
+| 5 | Is a lab possible on all four platforms? | Each selected workflow maps to a core build with no connectors on Claude, ChatGPT, Copilot agent builder and Gemini skills, with dated vendor evidence. An unknown permission is recorded as open. Hands-on proof comes at Gate 2 |
 | 6 | Did the alignment check use the right Pragmatic material? | Dan knows the sources and versions used, one traced comparison is accurate, and each conflict has a decision or a named Gate 2 follow-up |
 | 7 | Can Dan make the decision from the packet? | At least 4 workflows earn retain. None depends on an open question that could break its bottleneck, its PM decision or its three-platform path |
 
@@ -271,7 +276,7 @@ Every module follows one arc, and every lab has one goal with a variant per plat
 
 1. One lab goal, stated without a platform, plus one decision the PM makes and one likely AI error the PM must catch. Example: "Build an assistant that turns raw interview notes into a coded insight table."
 2. A core path that works on every platform. Stretch steps for platforms that can do more.
-3. Per-platform step cards for Claude, ChatGPT and Copilot (Gemini if time allows). The step cards go in the workbook, not on slides. Dan demos on one platform only. Breakout rooms group learners by platform so they help each other. So each step card must be self-serve: a learner can finish the lab from the workbook alone, with no demo on their platform. The Gate 3 card test checks this. Slides show the pattern once. Each card starts with: "Build and save your own agent. Share your screen only when someone is stuck." Each fast-start card has one annotated screenshot of where to start and which field the template goes in.
+3. Per-platform step cards for Claude, ChatGPT, Copilot and Gemini (decision 31). The step cards go in the workbook, not on slides. Dan demos on one platform only. Breakout rooms group learners by platform so they help each other. So each step card must be self-serve: a learner can finish the lab from the workbook alone, with no demo on their platform. The Gate 3 card test checks this. Slides show the pattern once. Each card starts with: "Build and save your own agent. Share your screen only when someone is stuck." Each fast-start card has one annotated screenshot of where to start and which field the template goes in.
 4. Two input paths: the learner's own work, or the fallback case data. A "Start here with sample data" block sits directly under each platform's steps.
 5. A data safety note: what learners must not paste into a tool their company has not approved, for example client data, health data protected by HIPAA, and personal data (PII).
 6. Setup for Zoom breakout rooms and for in-person tables.
@@ -362,7 +367,7 @@ Read it top down: each stage ends at a gate, and only Dan's approval opens the n
 | Gate | Proof Dan sees | Checkers and their one job |
 | --- | --- | --- |
 | 1 Research brief | Documents: sources, the workflow rows, and dated vendor docs that show a lab is possible on each platform. Dan's acceptance test is a spot check; the agents verify the whole packet | Verifier: sources, before and after the Synthesizer. Research critic: coverage and depth. Alignment agent: Pragmatic conflicts |
-| 2 Course spec and syllabus | A working proof: Dan builds, saves and reruns each distinct build pattern on Claude, ChatGPT and Copilot agent builder. This is usually 2 to 3 patterns per course, not every lab | Critic: course design (objectives to labs, timing, planned builds, overlap with the registry). It does not check the Gate 1 evidence again |
+| 2 Course spec and syllabus | A working proof: Dan builds, saves and reruns each distinct build pattern on Claude, ChatGPT, Copilot agent builder and Gemini. This is usually 2 to 3 patterns per course, not every lab | Critic: course design (objectives to labs, timing, planned builds, overlap with the registry). It does not check the Gate 1 evidence again |
 | 3 Each module | A card test: Dan tests each complete lab card on each platform, from the card alone (see the card test below) | Consistency reviewer: the demo, case data, cards, expected output and debrief agree. Verifier: only claims that are new since Gate 1 |
 | 4 Final production | Checks on the delivered .pptx, Word and PDF files | QA agent: rendered files only (layouts, notes, text size at Zoom size, timing, templates that copy correctly). It does not judge content again. If production changed a learner action, Dan tests that path again |
 

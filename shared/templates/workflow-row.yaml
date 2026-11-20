@@ -13,7 +13,7 @@ pm_decision_informed: ""  # the decision the output feeds
 
 bottleneck:
   description: ""         # where the time goes, and why it is a bottleneck
-  pdlc_stage: ""          # where in the product development life cycle it slows work
+  pdlc_stage: ""          # one of: market-discovery | strategy-focus | business-case | planning-prioritization | build-delivery | launch-gtm | growth-support (draft list; to be mapped to the Pragmatic Framework 2027)
   sources: []             # 2 independent sources that describe the bottleneck itself (evidence ids)
 
 scores:
@@ -22,17 +22,19 @@ scores:
   ai_candidate: ""        # yes | partly | no. Low judgment + high repetition = yes
 
 split:
-  ai_does: []             # the low-judgment, high-repetition steps
-  pm_keeps: []            # the decisions that stay with the PM
-  ai_error_to_catch: ""   # one specific, likely AI error the PM must catch
+  agent_does: []          # the workflow end to end: the low-judgment, high-repetition steps
+  pm_manages:             # the learner is the agent manager, not the middleman
+    brief: ""             # what the PM writes: job, inputs, output, rules
+    quality_checks: []    # checks the agent runs on its own output
+    escalation_rules: []  # what the agent sends to the PM instead of deciding
+    audit: ""             # what the PM samples and checks by hand
+  pm_decides: []          # the decisions that stay with the PM
+  ai_error_to_catch: ""   # one likely error that the agent's own checks miss and the audit finds
 
-contexts:                 # how the workflow works in each client context. "gap" if research found nothing
+contexts:                 # "gap" if research found nothing
   hardware: ""            # priority
   internal_pm: ""         # priority
-  software: ""
-  fintech: ""
-  health_care: ""
-  services_manufacturing: ""
+  industry_notes: []      # only where the workflow differs in an industry, e.g. "health care: remove PHI first"
 
 proposed_lab:
   goal: ""                # one goal, no platform named
@@ -43,7 +45,8 @@ proposed_lab:
     claude: ""
     chatgpt: ""
     copilot: ""           # Copilot agent builder
-  stretch: ""             # optional steps for platforms that can do more
+    gemini: ""            # Gemini skill (Gems are retired)
+  stretch: ""             # optional steps for platforms that can do more, e.g. run on a schedule
   registry_check: ""      # overlap with AI Agents course, workshops, other courses
 
 evidence:                 # ledger entries this row uses

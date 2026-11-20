@@ -21,7 +21,7 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 
 1. Every module is built on one real PM workflow and the bottleneck it removes.
 2. Learners build skills, projects and agents. Not only prompts. No custom GPTs or Google Gems.
-3. Every lab has a core path that works on Claude, ChatGPT and Microsoft Copilot agent builder. Gemini is secondary.
+3. Every lab has a core path and a step card for Claude, ChatGPT, Microsoft Copilot agent builder and Gemini (skills, not Gems).
 4. Learners use their own work first. One fallback case company serves the whole course.
 5. 40% instructor-led, 60% hands-on per module.
 6. Slide notes: `POINT:` then `Talk Track:`. No `[AI USE CASE TT]` block.
@@ -36,8 +36,9 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 1. A statistic needs a primary source.
 2. Any other factual claim needs 2 independent sources. Two articles that repeat one study count as one source.
 3. A tool feature claim needs one dated vendor doc.
-4. Flag any source older than 12 months. Dan decides if it stays.
-5. Look for examples in software, FinTech, health care, manufacturing, hardware, services and internal product management. Hardware and internal product management are a priority. Record a gap when none exist. A gap is not a failure.
+4. Statistics and studies must be published in 2026 or later (the courses launch in 2027). Do not use older ones.
+5. Flag any other source older than 12 months. Dan decides if it stays.
+6. Look for examples in software, FinTech, health care, manufacturing, hardware, services and internal product management. Hardware and internal product management are a priority. Record a gap when none exist. A gap is not a failure.
 
 ## Gates and approvals
 
