@@ -21,7 +21,7 @@ The "Critic" column is the research critic's view. The "Synthesizer" column is t
 | mr-wf-07 | Keep the evidence register current | Fails: W14 and W15 are one author, both NV | Market / Market Problems | W14 NV, W15 NV | Which problems count as validated | Wrong-segment evidence (blank segment field) | Fold status proposals into row 09 | Second source | Fold into 09 | Fold into 09 | |
 | mr-wf-08 | Score concept tests per hypothesis | Fails: 1 vendor source, NV, no data | Planning / Ideation | W16 NV | Which concept goes forward, changes or stops | Stated preference read as a pass | Session notes from the case | Out of Market category. Design course overlap | Defer | Defer | |
 | mr-wf-09 | Answer stakeholder questions from past research | Passes (W13, W20). W13 is from 2024: if you drop it, the row has 1 source | Market / Market Problems | W13 V (2024, age flag, non-vendor), W20 V vendor | Answer now or start new research; what to tell the stakeholder | Old research for another segment presented as current (data-based) | Extend the agent: answer from the research store; hand-off rules limit what it may say | 2026 statistic. Hardware example E27 NV. Sharing the agent NV (stretch) | Retain, with 07 folded in | Retain, with 07 folded in | |
-| mr-wf-10 | Keep the alternatives map current from own evaluator and deal evidence | Generic "keeping CI current" passes (N13, W21). The specific burden (map from own deal evidence) has no source | Market / Competitive Landscape | N13 V (Wynter, April 2026, 101 PMMs), W21 V weak, vendor-adjacent | Which alternatives to beat, by segment; what goes to positioning, pricing, roadmap | CRM competitor field trusted where the buyer chose "do nothing" (data-based) | Extend the agent: read the logs from modules 1 and 2; map competitors, substitutes, workarounds, "do nothing" | Specific bottleneck. Hardware, internal PM. Own check may catch the error (fix at Gate 2) | Retain (new row) | Retain with condition (decision f) | |
+| mr-wf-10 | Keep the alternatives map current from own evaluator and deal evidence | Generic "keeping CI current" passes (N13, W21). The specific burden (map from own deal evidence) has no source | Market / Competitive Landscape | N13 V (Wynter, survey April 2026, published May 2026, 101 PMMs), W21 V weak, vendor-adjacent | Which alternatives to beat, by segment; what goes to positioning, pricing, roadmap | CRM competitor field trusted where the buyer chose "do nothing" (data-based) | Extend the agent: read the logs from modules 1 and 2; map competitors, substitutes, workarounds, "do nothing" | Specific bottleneck. Hardware, internal PM. Own check may catch the error (fix at Gate 2) | Retain (new row) | Retain with condition (decision f) | |
 
 Result if you accept the Synthesizer column: 5 retained rows (01, 02, 03, 09, 10), 3 folded or merged (04, 05, 07), 2 deferred (06, 08). Without row 10: 4 rows, which still meets check 7.
 
@@ -45,7 +45,7 @@ Why option 2: the planted error and the audit lesson stay. It agrees with PDW-AI
 ### b) E8 Gemini date, YAML fix and sources list (approved row)
 
 1. **E8 is wrong.** The approved row says "Workspace business accounts get skills in March 2027". The source says March 2027 is when business Gems are removed. The Workspace Updates blog (2026-09-30, updated 2026-11-09) says Gemini app skills are available to all Workspace customers now (gm-03, V). The Gemini Help page still says work accounts get skills "soon".
-   - Recommended: replace the Gemini line with "Gemini skill with the brief and code book. Workspace: skills available per the Workspace blog (gm-03); test on a Workspace account at Gate 2." Apply the same fix to rows 02 to 10, the ledger entry E8 and note gm-03.
+   - Recommended: replace the Gemini line with "Gemini skill with the brief and code book. Workspace: skills available per the Workspace blog (gm-03); test on a Workspace account at Gate 2." Apply the same fix to row 02 (same wrong date), to the E8 cite in rows 03 to 09, to the ledger entry E8 and to note gm-03. Row 10 already cites gm-01.
    - Other options: keep the line and add a note; or remove the date with no new claim.
 2. **`worked-example-row.yaml` does not parse as YAML.** The run log reports 2 unquoted values. My parse test (no file change) finds one line that breaks the parse: line 76, `registry_check`, which holds ": " inside the text. With quotes on that line, the file parses. The fix adds quotes only. No text changes.
    - Recommended: yes, quote-only fix.
@@ -81,18 +81,18 @@ Row 01 is approved, so adding the note there needs your yes. Recommended: no sta
 | mr-wf-06 Market size model | Focus / Market Definition | Defer to a later Focus or Strategy course | Retain as a stretch lab; reject |
 | mr-wf-08 Concept test results | Planning / Ideation | Defer. It also fails the 2-source rule | Retain if no other course claims Ideation; reject |
 
-Related (PA-05): Pragmatic's Market course covers Market Definition, Buyer Personas and Buyer Journey. This course covers Market Problems, Win/Loss and Competitive Landscape. Recommended: keep the scope, and map the course to its focus areas in the Gate 2 spec. Consider a subtitle such as "market and buyer research".
+Related (PA-05): Pragmatic's Market course emphasizes Market Definition, Measurement, Buyer Journey, Buyer Personas and Marketing Plan (guide pages 21, 22). This course covers Market Problems, Win/Loss and Competitive Landscape. Recommended: keep the scope, and map the course to its focus areas in the Gate 2 spec. Consider a subtitle such as "market and buyer research".
 
 ### e) Platform risks
 
 | # | Risk | Evidence | Recommendation | Other options |
 | --- | --- | --- | --- | --- |
-| 1 | ChatGPT skills only on Business, Enterprise, Healthcare and Edu. Plus and Pro learners can build a Project only | cg-04 (NV). cg-01 (V): Projects on all plans | ChatGPT core build is a Project. A skill is an option for business plans. Verify cg-04 before Gate 2 | Require a business plan |
-| 2 | ChatGPT Free: 5 project files, 3 uploads per day | cg-01 (V), cg-03 (V) | State a minimum of Go or Plus for ChatGPT learners. A full day of batches will pass 3 uploads | Design each lab to fit 3 uploads; pair Free learners |
+| 1 | The skills page says ChatGPT skills are only on Business, Enterprise, Healthcare and Edu (not verified). If true, Plus and Pro learners can build a Project only | cg-04 (NV). cg-01 (V): Projects on all plans | ChatGPT core build is a Project. A skill is an option for business plans. Verify cg-04 before Gate 2 | Require a business plan |
+| 2 | ChatGPT Free: 5 project files, 3 uploads per day | cg-01 (V), cg-03 (V) | State a minimum of Go or Plus for ChatGPT learners. A full day of batches is likely to pass 3 uploads | Design each lab to fit 3 uploads; pair Free learners |
 | 3 | Plus file count conflicts: 25 (cg-01) against 20 (cg-03) | cg-01, cg-03 (V) | Use 20 in step cards | None |
 | 4 | Copilot embedded files need a Microsoft 365 Copilot license or pay-as-you-go billing. The page conflicts with itself on unlicensed authoring | mb-02, mb-03 (V) | Make a license or billing a stated prerequisite. Test the fallback at Gate 2: code book in the instructions, batch uploaded in chat | Fallback as the default Copilot path |
 | 5 | Catch-up kit: no copy feature is verified on any platform | cl-pj-02, cl-cl-05, cg-05, mb-05, gm-04 (all NV) | A text kit per module on all four platforms: brief as text plus knowledge files. It also carries the log where file output is not proven | Gemini "save a copy" as an extra, after it is verified |
-| 6 | Moving the log between modules: file output proven on Claude only (cl-fo-06). Copilot session only (mb-11). Gemini app only (gm-09). ChatGPT partly (cg-08) | As listed | Same text kit. Gate 2 proof tests file output on each platform | On-screen tables only |
+| 6 | Moving the log between modules: file output fully proven on Claude only (cl-fo-06). Copilot proven for the session only (mb-11). Gemini app only (gm-09). ChatGPT partly (cg-08) | As listed | Same text kit. Gate 2 proof tests file output on each platform | On-screen tables only |
 | 7 | Gemini Workspace status: two Google pages disagree | gm-03 (V), Help page | Test on a Workspace business account at Gate 2 | None |
 
 ### f) Row 10: retain on a generic bottleneck?
@@ -132,8 +132,8 @@ Two limits: all schedule features are NV, so the schedule rung is a stretch step
 ## 4. Evidence strength in plain words
 
 - The speed claim rests on vendor data: E1 (PV, weak) and E2 (V, weak) are one vendor; E10 (V) is a vendor survey; E22 (V) is self-reported. Do not put E1 or E2 on a slide.
-- One peer-reviewed 2026 study found no time saved in a chat workflow (E12, V).
-- The strongest non-vendor 2026 items are on AI risks: E12 (over-coding, low agreement with humans), E16 and E17 (synthetic respondents flatten opinion and skew positive).
+- One peer-reviewed 2026 study found no time saved in a chat workflow (E12, V). Its corpus is newspaper articles, not interviews.
+- The strongest non-vendor 2026 items are on AI risks: E12 (over-coding, low agreement with humans), E16 and E17 (synthetic respondents flatten opinion). E17 also found a positive skew on well-known brands. E16 found no consistent direction.
 - Bottlenecks for rows 02 to 10 rest on claims from vendors, vendor-adjacent sources or sources older than 12 months. PRD decision 37 accepts this for now.
 - E13 (status "wrong") and E8 (status "wrong") are not used for claims.
 

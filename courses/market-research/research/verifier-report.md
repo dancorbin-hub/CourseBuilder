@@ -182,3 +182,45 @@ Result: 2 independent sources for a generic "keeping CI current" burden. Neither
 ### Format fix
 
 needs.md N17 `note` did not parse as YAML. I put the value in single quotes. The text is unchanged. The needs.md YAML block now parses.
+
+## Trace check (Mode 2)
+
+- Run: 2026-11-20, after the Synthesizer. No web use. Trace against `evidence-ledger.yaml`, `workflows.yaml`, `needs.md`, `platform-matrix.yaml`, `alignment-log.yaml`, `methods.md`, `gaps.md` and this report.
+- Files checked: `research-brief.md`, `gate-1-packet.md`.
+- Claims checked: about 110 (brief about 60, packet about 50). Each cited id was found. No claim cites a "wrong" or "not verified" entry as support. "Wrong" and "not verified" ids appear only as exclusions, gaps or labelled NV risks.
+- Dashes: none in the brief or the packet (checked for U+2012 to U+2015).
+- YAML parse claim (packet b2): confirmed on a scratch copy. Quotes on line 76 only make `worked-example-row.yaml` parse. The file was not changed.
+- Fixes: 17 wording fixes (9 brief, 8 packet). No recommendation or decision was changed.
+
+### Fixes made
+
+| Location | Claim | Problem | Fix |
+| --- | --- | --- | --- |
+| Brief 1.2 | "no bottleneck source is both recent and non-vendor" for rows 02 to 09 | True only for verified sources. W14 and W15 (Torres, 2026, practitioner) are not verified | Added "verified" |
+| Brief 1.5 | "Three items touch the approved worked example row" | Packet b3 (sources list) and PA-03 (data safety note, "Yes (row 01)" in brief section 6) also touch row 01 | Changed to five items and named them |
+| Brief 2, row 09 | W13, W20 as two sources | W13 age flag (2024) not stated in this row | Added the age flag |
+| Brief 4, quotes row | E5 "3 sources" | Limits missing: JMIR is one reworded quote; Condens line is the authors' summary; Torres is 2025, not reopened | Added the limits |
+| Brief 4, E12 row | "Strongest non-vendor item" | One study, newspaper corpus, not interviews | Added the limit |
+| Brief 4, E3 row | Leaders use AI | Ledger marks vendor "partly" (Lyssna co-produced) | Added the limit |
+| Brief 4, internal PM | "No second 2026 source" | N28 is a second 2026 source, partly verified | Changed to "no second verified 2026 source (N28 is partly verified)" |
+| Brief 4, excluded | Partly verified list | E21 and N24 are partly verified and were not listed | Added E21 and N24 |
+| Brief 5, catch-up | Text kit "works the same way on all four platforms (M10)" | M10 is a method, not a tested result | Softened to "should work", "not tested yet" |
+| Packet 1, row 10 | "N13 V (Wynter, April 2026)" | April is the survey date. Primary published May 2026 | Added both dates |
+| Packet 2b1 | "Apply the same fix to rows 02 to 10" | Only row 02 has the wrong date. Rows 03 to 09 cite E8. Row 10 cites gm-01 | Named the scope per row |
+| Packet 2d | Market course "covers Market Definition, Buyer Personas and Buyer Journey" | Guide pages 21, 22 also name Measurement and Marketing Plan | Gave the full list and pages |
+| Packet 2e1 | ChatGPT skills only on business plans, stated as fact | cg-04 is not verified | Said "the skills page says ... (not verified). If true ..." |
+| Packet 2e2 | "A full day of batches will pass 3 uploads" | Inference, not a source | Changed "will" to "is likely to" |
+| Packet 2e6 | "file output proven on Claude only" | mb-11 (Copilot, verified) proves output for the session | "Fully proven on Claude only. Copilot proven for the session only" |
+| Packet 4 | E12 "no time saved" | Corpus limit missing | Added "newspaper articles, not interviews" |
+| Packet 4 | E16 and E17 "flatten opinion and skew positive" | Positive skew is E17 only. E16 says bias direction is inconsistent | Split the claim by source |
+
+### Flags for Dan (not changed)
+
+| Location | Claim or recommendation | Problem | Flag |
+| --- | --- | --- | --- |
+| Brief 2, packet 1f, row 10 | Retain with condition | The specific bottleneck (map from own deal evidence) has no source. Packet check 7 says no retained row may depend on an open question that could break its bottleneck. The recommendation conflicts with that check | Dan decides (decision f). Option 2 or 3 avoids the conflict |
+| Brief 5, packet 2e | Gemini skill as core build (instructions plus 100 MB of files) | gm-01 is partly verified (undated). E8 is "wrong". No dated vendor doc supports the 100 MB and file features. Research rule 3 is not met | Find a dated Google doc before Gate 2, or record the risk |
+| Brief 5 | Claude and ChatGPT core features | cl-pj-01, cl-cl-03, cg-01, cg-03 show relative dates only. Verifier accepted them, but no fixed date is on record | Record the access date (2026-11-20) as the date at Gate 2 proof |
+| Packet 1, row 01 (approved) | Bottleneck "synthesis takes days" | Only one vendor (E1, E2). Half of the approved row's bottleneck fails the 2-source rule | Dan decides if the row keeps "takes days" or rests on "work moves to checking" only |
+| Packet 1, row 09 | Retain | If Dan drops W13 (2024, age flag), the row has 1 bottleneck source and fails the 2-source rule | Already in open question 7. Dan decides |
+| workflows.yaml rows 03 to 09 | Gemini platform lines cite E8 | E8 status is "wrong". The lines do not repeat the wrong date, but cite a wrong entry | Re-cite to gm-01 and gm-03 with the decision b fix |

@@ -10,10 +10,10 @@
 ## 1. Summary
 
 1. The research supports 4 strong workflow rows and 1 conditional row: 01 interviews, 02 win/loss, 03 weekly feedback, 09 stakeholder answers, and 10 alternatives map (conditional). Together they feed one market evidence agent that keeps one problem log.
-2. Bottleneck evidence is thin and leans on vendors. Rows 02, 03, 09 and 10 each have 2 independent sources. For rows 02 to 09, no bottleneck source is both recent and non-vendor. Row 10 has one 2026 survey (N13), but it covers CI work in general. Rows 07 and 08 fail the 2-source rule.
+2. Bottleneck evidence is thin and leans on vendors. Rows 02, 03, 09 and 10 each have 2 independent sources. For rows 02 to 09, no verified bottleneck source is both recent and non-vendor. Row 10 has one 2026 survey (N13), but it covers CI work in general. Rows 07 and 08 fail the 2-source rule.
 3. The speed claim ("AI makes synthesis faster") rests on vendor data (E1, E2, E10, E22). The strongest non-vendor 2026 evidence is about AI risks: over-coding and low agreement (E12), and synthetic respondents that flatten opinion (E16, E17).
 4. A no-connector core lab is possible on all four platforms on paper. Four platform conditions need Dan's decision: ChatGPT plan level, Copilot license, Gemini Workspace status, and how the log moves between modules.
-5. Three items touch the approved worked example row (mr-wf-01) and need Dan's yes: the "2 or more interviews per insight" rule (PA-01), the wrong Gemini date (E8), and a YAML quote fix. The Pragmatic alignment log has 2 high conflicts (PA-01, PA-02).
+5. Five items touch the approved worked example row (mr-wf-01) and need Dan's yes: the "2 or more interviews per insight" rule (PA-01), the wrong Gemini date (E8), a YAML quote fix, the row's sources list, and the data safety note (PA-03). The Pragmatic alignment log has 2 high conflicts (PA-01, PA-02).
 
 ## 2. Recommended workflows and why
 
@@ -24,7 +24,7 @@ The critic's view and this brief agree on the set. Dan decides each row.
 | mr-wf-01 Interview batches to insight log | Retain (approved worked example). Fold row 05 in as a lab step | The burden shifts to checking AI output (E4, E10). Strong PM decision. Base of the course agent |
 | mr-wf-02 Win/loss decision-driver log | Retain as its own module | Two independent vendor sources say sales-entered loss reasons differ from buyer reasons (W1, W2). Own Pragmatic focus area (N1). New input type (CRM export) and a new error |
 | mr-wf-03 Weekly feedback into the problem log | Retain. Merge row 04 as an optional second input (a survey wave) | Two independent vendor sources on slow, inconsistent hand tagging (W4, W5). High volume moves the PM from reading each item to reading flags |
-| mr-wf-09 Answer stakeholder questions | Retain. Fold row 07 status proposals in | Two independent sources on lost and unused past research (W13, W20). Different trigger and decision. The agent faces other people |
+| mr-wf-09 Answer stakeholder questions | Retain. Fold row 07 status proposals in | Two independent sources on lost and unused past research (W13, W20). W13 is from 2024 (age flag). Different trigger and decision. The agent faces other people |
 | mr-wf-10 Alternatives map from own evidence | Retain with a condition (decision f in the packet) | Gives the course the "where can we win" half of the Market question. Generic CI upkeep burden has 2 sources (N13, W21). The specific workflow (map built from own deal evidence) has no source |
 | mr-wf-04 Survey open-text coding | Merge into 03 | Same mechanic and output as 03. No source shows PMs do this task. Both sources are older than 12 months (W7, W8) |
 | mr-wf-05 Participant screening | Fold into 01 as a lab step | Real burden (W11, W12). Weak PM decision. Fits as a step, not a module |
@@ -65,15 +65,15 @@ Limits of this ladder:
 | AI makes synthesis faster | Weak. Vendor data only | E1 (partly verified, weak), E2 (verified, weak), E10 (verified, vendor), E22 (verified, single source, self-reported) | E1 and E2 are one vendor (Perspective AI). E1 baseline method not stated; "4 hours" is a 2026 median (Jan to Apr 2026), not Q1. Do not put E1 or E2 on a slide. E22 baseline hours conflict on the page |
 | Counterweight on speed | Moderate, non-vendor | E12 (verified) | Peer reviewed, 2026. A chat-based workflow saved no time. Corpus is 317 newspaper articles on nurses (2020 to 2023), not interviews |
 | Work moves to checking AI output | Moderate. 3 sources, 2 are vendors | E4 (verified), E10 (verified, vendor) | 71% of 332 practitioners say validating AI output still takes significant time (E10). Survey period not stated. PMs are 9% of that sample |
-| AI rewords quotes and loses context | Moderate. 3 sources | E5 (verified) | No 2026 source gives an error rate. Do not state a rate |
-| AI over-codes and agrees less than humans | Strongest non-vendor item | E12 (verified) | GPT-5 and Gemini 2.5 Pro: Krippendorff alpha 0.487 and 0.507, against 0.703 for two humans |
+| AI rewords quotes and loses context | Moderate. 3 sources | E5 (verified) | No 2026 source gives an error rate. Do not state a rate. JMIR shows one reworded quote in a pilot. The Condens line is the authors' summary. Torres is 2025 (age flag) and was not reopened |
+| AI over-codes and agrees less than humans | Strongest non-vendor item | E12 (verified) | GPT-5 and Gemini 2.5 Pro: Krippendorff alpha 0.487 and 0.507, against 0.703 for two humans. One study. Newspaper articles on nurses, not interviews |
 | Synthetic respondents flatten opinion | Strong, 2 independent non-vendor sources | E16 (verified), E17 (verified) | E16: public opinion, not B2B buyers; respondent count not on page. E17: sample size not on page; authors say synthetic data fits early concept tests, not decisions that need precise insight |
 | LLM coding can erase sensitive narratives | Moderate, abstract only | E15 (verified, abstract only) | 21 survivors of firearm violence. Not PM |
 | PMs lack time with customers | Moderate, non-vendor | N5 (verified) | n = 677, 83% Europe. 71% do not spend enough time with customers or the market. Shows the lack of time, not which workflow causes it |
-| Leaders use AI for research | Moderate | E3 (verified) | 107 senior product leaders, Q2 2026. Sample is likely more AI-aware than average. Full report gated |
+| Leaders use AI for research | Moderate | E3 (verified) | 107 senior product leaders, Q2 2026. Sample is likely more AI-aware than average. Full report gated. Co-produced by Lyssna, a research-tool vendor |
 | Bottlenecks for rows 02 to 10 | Thin. Mostly claims, not statistics | W1, W2, W4, W5, W11, W12, W13, W20, N13, W21 | Vendor or vendor-adjacent sources, or older than 12 months (W13). N13 is a 2026 survey of 101 PMMs with figures on CI work in general, not on an alternatives map |
 | Hardware examples | Example only | E28 (verified, single source), N5 (verified) | E28 is a consultancy case (composite siding concept tests). E26, E27 and E29 fit rows 01 and 09 but are not verified, so they are not used |
-| Internal PM | Gap | N27 (verified, vendor) | One vendor on how platform PMs take in feedback. No time data. No second 2026 source |
+| Internal PM | Gap | N27 (verified, vendor) | One vendor on how platform PMs take in feedback. No time data. No second verified 2026 source (N28 is partly verified) |
 
 ### Excluded from claims
 
@@ -83,7 +83,7 @@ Limits of this ladder:
 | E8 | Status "wrong" on the Workspace date. See decision b in the packet |
 | W2 figure "50 to 70%" | No method. Drop confirmed by the Verifier |
 | W10 figure "95%" | Primary not found |
-| E14, E18, E19, E30 | Partly verified. Use only with the limits in the ledger. No figure from E14 or E19 goes on a slide |
+| E14, E18, E19, E21, E30, N24 | Partly verified. Use only with the limits in the ledger. No figure from E14 or E19 goes on a slide |
 | E25, E26, E27, E29, W3, W14 to W17, N2 to N4, N6, N12, N16, N18 to N23, N25 | Not verified. Not used for claims |
 
 ## 5. Platform readiness
@@ -106,7 +106,7 @@ Moving the log from module to module (file output):
 | Copilot | Code interpreter files (Word, Excel, PowerPoint, PDF), session only | Verified (mb-11) |
 | Gemini | 11 formats in the Gemini app. Skills not named | Verified for the app only (gm-09) |
 
-Catch-up kit: no copy feature is verified on any platform. All sharing features are "not verified" (cl-pj-02, cl-cl-05, cg-05, mb-05, gm-04). A text kit (brief as text plus knowledge files) works the same way on all four platforms (methods.md M10). It can also carry the log forward on platforms where file output is not proven.
+Catch-up kit: no copy feature is verified on any platform. All sharing features are "not verified" (cl-pj-02, cl-cl-05, cg-05, mb-05, gm-04). A text kit (brief as text plus knowledge files) needs no sharing feature, so it should work on all four platforms (methods.md M10). It is not tested yet. It can also carry the log forward on platforms where file output is not proven.
 
 ## 6. Pragmatic conflicts
 
