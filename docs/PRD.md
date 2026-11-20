@@ -65,7 +65,7 @@ The PRD draft is complete after 5 interview rounds. It waits for Dan's review. N
 - 35: Modules climb an autonomy ladder across the day. Try it at Gate 2.
 - 36: The life cycle stages are the Pragmatic Framework 2027 categories: Market, Focus, Business, Planning, Go-to-Market, Enablement, Operations. Each workflow row names its category and focus area.
 - 37: Thin evidence is accepted for now. The monthly refresh adds new evidence as it appears.
-- 38: Learners are agent managers. Each course has one agent that learners build in module 1 from a template and extend in each later lab. The agent does the workflow. The learner writes the brief, sets checks, reviews exceptions and audits. A catch-up template is ready for each module.
+- 38: Learners are agent managers. Each course has one agent that learners build in module 1 from a template and extend in each later lab. The agent does the workflow. The learner writes the brief, sets checks and hand-off rules, reviews the flag report and audits. Agent terms avoid the Pragmatic focus area names Exceptions and Escalations. A catch-up template is ready for each module.
 
 ## Problem and goals
 
@@ -265,7 +265,7 @@ This stage turns the approved research into one locked course spec and the sylla
 
 ## Module, slide, and exercise design
 
-Every module follows one arc, and every lab has one goal with a variant per platform. Across the day, modules climb an autonomy ladder: an agent run by hand on a batch, then an agent on a schedule that reports exceptions, then agents that hand work to other agents (decision 35, tried at Gate 2). Module agents build modules in parallel from the locked course spec.
+Every module follows one arc, and every lab has one goal with a variant per platform. Across the day, modules climb an autonomy ladder: an agent run by hand on a batch, then an agent on a schedule that sends a flag report, then agents that hand work to other agents (decision 35, tried at Gate 2). Module agents build modules in parallel from the locked course spec.
 
 **Module arc (example: 75-minute module, 40/60 split)**
 

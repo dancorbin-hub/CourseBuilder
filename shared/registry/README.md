@@ -9,7 +9,7 @@ Two files go here. The Critic and the QA agent read both.
 
 A repeat is the same concept taught with the same agent in the same exercise, or a repeated slide. The same topic area and the same principle are allowed. Workshop agents are a floor: course labs must be clearly stronger builds.
 
-Status: empty. Phase 1 fills it from the AI Agents deck and the CAW-AI workshop before research starts.
+Status: first pass in `registry.yaml` (2026-11-20), from slide text of CAW-AI, BPW-AI, Price AI, Market 2026 and AI Agents. Phase 1 adds notes and workbook detail. `canon.md` is not started.
 
 ## Rules from Dan (2026-11-20)
 

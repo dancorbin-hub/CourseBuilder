@@ -27,7 +27,7 @@ split:
   pm_manages:             # the learner is the agent manager, not the middleman
     brief: ""             # what the PM writes: job, inputs, output, rules
     quality_checks: []    # checks the agent runs on its own output
-    escalation_rules: []  # what the agent sends to the PM instead of deciding
+    handoff_rules: []     # what the agent flags to the PM instead of deciding (not "escalation": a Pragmatic focus area name)
     audit: ""             # what the PM samples and checks by hand
   pm_decides: []          # the decisions that stay with the PM
   ai_error_to_catch: ""   # one likely error that the agent's own checks miss and the audit finds

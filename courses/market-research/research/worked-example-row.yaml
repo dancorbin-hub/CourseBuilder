@@ -9,19 +9,19 @@ topic_area: Research, buyer and market insight
 trigger_and_cadence: Each new batch of market visits, win/loss calls or discovery interviews. Assumption, every 2 to 6 weeks
 
 input: Notes or transcripts from 5 to 15 interviews, plus the current insight log
-output: Updated insight log (insights coded by theme, problem, segment and strength, with verbatim quotes and source interviews), a "what changed" summary, and an exception report for the PM
+output: Updated insight log (insights coded by theme, problem, segment and strength, with verbatim quotes and source interviews), a "what changed" summary, and a flag report for the PM
 pm_decision_informed: Which market problems go forward to prioritization, and for which segment
 
 bottleneck:
   description: Synthesis takes days per study, so insight reaches the roadmap late. AI cuts the analysis time, but the work moves to checking AI output
   pdlc_stage: Market
-  focus_area: Market Problems (also Win/Loss Analysis)
+  focus_area: Market Problems
   sources: [E1, E3, E5]
 
 scores:
   judgment: medium. Coding is rule-based; deciding what a pattern means needs the PM
   repetition: high. Same steps for each interview and each batch
-  ai_candidate: yes. The agent runs the whole workflow; the PM manages it by checks and exceptions
+  ai_candidate: yes. The agent runs the whole workflow; the PM manages it by checks and flags
 
 split:
   agent_does:
@@ -29,13 +29,13 @@ split:
     - Check each quote against the source text
     - Merge new insights into the log
     - Mark problems as new, growing or fading
-    - Send exceptions to the PM
+    - Send flags to the PM
   pm_manages:
     brief: Job, inputs, code book, output format, done criteria
     quality_checks:
       - Each quote is found word for word in its source interview
       - Each insight has a confidence level
-    escalation_rules:
+    handoff_rules:
       - Notes that fit no code
       - A new insight that contradicts the log
     audit: 3 random insights per batch, checked against the source interviews
@@ -54,8 +54,8 @@ contexts:
     - "FinTech: customer quotes can hold account data (PII, PCI). Not yet researched"
 
 proposed_lab:
-  goal: Delegate interview synthesis to an agent, and manage it by its checks and exceptions
-  core_message: Do not do the work between AI steps. Set the job, the checks and the escalation rules, then review exceptions
+  goal: Delegate interview synthesis to an agent, and manage it by its checks and flags
+  core_message: Do not do the work between AI steps. Set the job, the checks and the hand-off rules, then review the flags
   build_type: agent (skill or project that holds the brief, code book and output format)
   core_path_no_connectors: yes. The learner uploads a batch and runs the agent
   platforms:
@@ -65,15 +65,15 @@ proposed_lab:
     gemini: Gemini skill with the brief and code book. Workspace business accounts get skills in March 2027
   steps:
     - Copy the agent brief template. Fill in the job, the code book and the output format
-    - Add two quality checks and two escalation rules from the menu
+    - Add two quality checks and two hand-off rules from the menu
     - Build the agent on your platform. Run it on batch 1
-    - Read only the exception report. Decide each item
+    - Read only the flag report. Decide each item
     - Audit 3 random insights against the interviews. Fix the brief for what you find
     - Run batch 2. Check the log and the "what changed" summary
   stretch: Run the agent on a schedule or when files arrive, where the platform allows (not verified for 2027)
   planted_error: Vocal buyer counted as a pattern
-  success_check: Batch 2 run. The log updates, the exception report lists the new contradiction, and no insight rests on one interview
-  registry_check: AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by exceptions, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20)
+  success_check: Batch 2 run. The log updates, the flag report lists the new contradiction, and no insight rests on one interview
+  registry_check: AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by flags, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20)
   pragmatic_fit: Good fit (Dan, 2026-11-20). Pragmatic Framework 2027 says to talk with evaluators who bought and who did not, then validate, prioritize and share the problems. It also says teams must verify AI output, protect sensitive information and stay accountable
 
 evidence:

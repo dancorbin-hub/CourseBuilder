@@ -30,7 +30,7 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 9. Never repeat a slide, or the same concept with the same agent in the same exercise, across courses. See `shared/registry/`.
 10. Do not teach the Playbook method. Playbook markdown files can be workbook handouts.
 11. Do not reuse the agents from Dan's workshops (for example CAW-AI). Course labs must be clearly stronger builds.
-12. Learners are agent managers. Each course has one agent: built in module 1 from a template, extended in each later lab, with a catch-up template per module. The agent does the workflow; the learner writes the brief, sets checks, reviews exceptions and audits.
+12. Learners are agent managers. Each course has one agent: built in module 1 from a template, extended in each later lab, with a catch-up template per module. The agent does the workflow; the learner writes the brief, sets checks and hand-off rules, reviews the flag report and audits. Do not call these "exceptions" or "escalations": those are Pragmatic focus area names.
 13. Each lab has a planted AI error. The warning fades: told in lab 1, a hint in middle labs, no hint in the last lab.
 14. Boundaries and guardrails can be taught again when learners build agents, with new slides.
 
