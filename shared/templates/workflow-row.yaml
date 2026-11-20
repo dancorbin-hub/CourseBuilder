@@ -1,0 +1,66 @@
+# Workflow inventory row: the schema every Stage 1 researcher fills.
+# One row = one PM workflow. Two variations of one task count as one row.
+# The approved worked example is in courses/market-research/research/worked-example-row.yaml.
+
+id: ""                    # <course>-wf-NN
+workflow: ""              # verb + object, in PM words
+topic_area: ""            # course topic area it belongs to
+trigger_and_cadence: ""   # what starts it and how often it happens
+
+input: ""                 # what the PM starts with
+output: ""                # what the workflow makes
+pm_decision_informed: ""  # the decision the output feeds
+
+bottleneck:
+  description: ""         # where the time goes, and why it is a bottleneck
+  pdlc_stage: ""          # Pragmatic Framework 2027 category: Market | Focus | Business | Planning | Go-to-Market | Enablement | Operations
+  focus_area: ""          # one of the 37 focus areas in that category, e.g. Market Problems
+  sources: []             # 2 independent sources that describe the bottleneck itself (evidence ids)
+
+scores:
+  judgment: ""            # low | medium | high, with one line of reason
+  repetition: ""          # low | medium | high, with one line of reason
+  ai_candidate: ""        # yes | partly | no. Low judgment + high repetition = yes
+
+split:
+  agent_does: []          # the workflow end to end: the low-judgment, high-repetition steps
+  pm_manages:             # the learner is the agent manager, not the middleman
+    brief: ""             # what the PM writes: job, inputs, output, rules
+    quality_checks: []    # checks the agent runs on its own output
+    handoff_rules: []     # what the agent flags to the PM instead of deciding (not "escalation": a Pragmatic focus area name)
+    audit: ""             # what the PM samples and checks by hand
+  pm_decides: []          # the decisions that stay with the PM
+  ai_error_to_catch: ""   # one likely error that the agent's own checks miss and the audit finds
+
+contexts:                 # "gap" if research found nothing
+  hardware: ""            # priority
+  internal_pm: ""         # priority
+  industry_notes: []      # only where the workflow differs in an industry, e.g. "health care: remove PHI first"
+
+proposed_lab:
+  goal: ""                # one goal, no platform named
+  core_message: ""        # the 1 thing learners must take away
+  build_type: ""          # skill | project | agent
+  core_path_no_connectors: ""   # yes, and how
+  platforms:
+    claude: ""
+    chatgpt: ""
+    copilot: ""           # Copilot agent builder
+    gemini: ""            # Gemini skill (Gems are retired)
+  stretch: ""             # optional steps for platforms that can do more, e.g. run on a schedule
+  registry_check: ""      # overlap with AI Agents course, workshops, other courses
+
+evidence:                 # ledger entries this row uses
+  - id: ""
+    claim: ""
+    type: ""              # statistic | claim | tool-feature
+    source: ""            # title, publisher
+    url: ""
+    source_date: ""       # YYYY-MM-DD
+    checked_on: ""        # YYYY-MM-DD
+    age_flag: false       # true when the source is older than 12 months
+    status: ""            # verified | partly verified | not verified
+    note: ""              # population, sample, limits
+
+open_gaps: []
+gate_1_decision: ""       # retain | defer | reject (Dan only)

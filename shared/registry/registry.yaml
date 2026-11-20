@@ -1,0 +1,92 @@
+# Cross-course registry (first pass, 2026-11-20; PDW-AI and PRW-AI added same day).
+# Lists what other Pragmatic courses and Dan's workshops already teach, so the Advanced AI courses do not repeat it.
+# A repeat = the same concept taught with the same agent in the same exercise, or a repeated slide.
+# Same topic area and same principle are allowed. Source decks: project files, course-builder/reference/.
+# Status: built from slide titles and on-slide text only. Phase 1 reads the notes and workbooks for detail.
+
+courses:
+  - id: CAW-AI
+    title: Competitive Analysis with AI (Pragmatic live AI workshop, 2 hours)
+    source: pragmatic-sources/CAW-AI_Dan_Corbin.pptx (23 slides)
+    framework_areas: [Market / Competitive Landscape, Planning / Positioning]
+    modules:
+      - What we say about ourselves (positioning claims checked for proof)
+      - Buyer voice watch (themes from public reviews of competitors, monthly scheduled task)
+      - Competitive signal watch and what to act on (weekly scheduled task, act / watch / need evidence)
+      - What only your buyers can tell you (own buyer sources vs public reviews)
+    agents_and_builds: [positioning proof check, buyer voice watch, competitive signal watch]
+    patterns_to_avoid_repeating:
+      - Slide on setting up a scheduled task per platform (slide 9)
+      - Exit packet with two scheduled tasks
+    notes: Dan rates these agents as weak. Course labs must be clearly stronger, not variants.
+
+  - id: BPW-AI
+    title: Buyer Personas with AI (Pragmatic live AI workshop, 2 hours)
+    source: pragmatic-sources/BPW-AI_26.10.pptx (18 slides)
+    framework_areas: [Planning / Buyer Personas]
+    modules:
+      - Provisional persona (AI drafts a buyer persona)
+      - Critique and assumptions (AI audits its own draft and lists assumptions)
+      - Validation (internal resources validate and refine the persona)
+    case_company: BadgeWorks (keycard and badge-reader hardware with security management software and a mobile app)
+    concepts: [AI draft is 60 to 70% accurate, do not stop at the draft, AI audits its own output]
+    notes: Our fallback case company must not be BadgeWorks or a close copy.
+
+  - id: PDW-AI
+    title: Product Discovery with AI (Pragmatic live AI workshop, 2 hours)
+    source: pragmatic-sources/PDW-AI_Product_Discovery_with_AI_26.09.pptx (48 slides)
+    framework_areas: [Market / Market Problems (discovery and validation)]
+    modules:
+      - AI-assisted interview prep
+      - AI-assisted synthesis (code and theme interviews, confirm every code against a real quote, second pass for contradictions and outliers, frequency vs intensity)
+      - Market problem statements tagged NOT YET VALIDATED
+      - AI as skeptic, then bridge to validation (urgency, pervasiveness, willingness to pay, stop sign)
+    case_company: FieldPro (HVAC field-service work-order app; buyer Dale Whitfield, user Marcus Webb)
+    concepts: [AI is the bookends, AI never replaces talking to a real person, quote check per code, planted contradiction and outlier, frequency vs intensity]
+    level: Level 1 to 2 users. Points to an advanced portfolio
+    notes: Strong overlap with worked example row mr-wf-01 (interview synthesis). The Market Research course must not reteach one-pass synthesis, the quote check as a concept, or frequency vs intensity. Our fallback case company must not be FieldPro or a close copy.
+
+  - id: PRW-AI
+    title: Product Requirements with AI (Pragmatic live AI workshop, 2 hours)
+    source: pragmatic-sources/PRW-AI_26.10.1.pptx (37 slides)
+    framework_areas: [Planning / Requirements]
+    modules:
+      - Loop Ground, Question, Write, Review, Decide, Consume
+      - Problem framing with WHO, WHAT, FREQUENCY, WHY
+      - Prompt structure JOB AND CONTEXT, RULES, OUTPUT
+      - AI reviewer and downstream consumer test, Repair and Rerun
+    case_company: FieldPro (same as PDW-AI)
+    concepts: [AI reviewer, downstream consumer test, Repair and Rerun]
+    take_home: Product Requirements Playbook
+    level: Level 1 to 2 users. Points to an advanced portfolio
+    notes: Relevant to course 2 (Product Strategy and Planning). Our agent brief template (job, inputs, rules, output) is close to JOB AND CONTEXT, RULES, OUTPUT. Refer to it as known; do not reteach it with new slides that say the same thing.
+
+  # PRC-AI and MKT-2026 were attached by mistake (Dan, 2026-11-20). They are core courses, kept as reference.
+  - id: PRC-AI
+    title: Price (Pragmatic core course, AI version 25.7.3)
+    source: pragmatic-sources/PRC_25.7.3 AI.pptx (149 slides)
+    framework_areas: [Business / Pricing, Business / Business Outcomes]
+    topics: [value-based buying, will I vs which one, 5 Cs of pricing, willingness to pay, price segmentation, good better best, isoprofit tables, value matrix]
+    ai_use: AI collaborator prompts inside activities (personas Becky and Al); AI Capability Map slides
+
+  - id: MKT-2026
+    title: Market (Pragmatic core course, 2026 working deck)
+    source: pragmatic-sources/working_2026_MKT Deck.pptx (100 slides, draft with review notes)
+    framework_areas: [Focus / Market Definition, Business / Measurement, Planning / Buyer Journey, Planning / Buyer Personas, Go-to-Market / Marketing Plan]
+    topics: [marketing goals, segmentation and segment evaluation worksheet, buyer landscape (influence vs urgency), buyer persona template, buyer journey, messaging by persona, marketing metrics and CAC]
+    case_company: Entrilo (smart building access company, London)
+    ai_use: AI Capability Map slides; AI challenges segment weighting
+    notes: Our fallback case company must not be Entrilo or a close copy.
+
+  - id: AI-AGENTS
+    title: AI Agents for Product Professionals (Dan's course, to be replaced by one agent course per platform)
+    source: reference/AI_Agents.26.07.02.pptx (74 slides)
+    concepts: [human-persona balance, AI as a spectrum, workflow and reasoning, boundaries, exit conditions, evaluate and iterate, guardrails]
+    running_example: Competitive Intel Watchdog
+    notes: Boundaries and guardrails can be taught again with new slides (decision 33). Do not reuse the Competitive Intel Watchdog.
+
+open_questions:
+  - RESOLVED 2026-11-20 (Dan): mr-wf-01 stays. The lab starts where PDW-AI stops. No slides on coding interviews or quote checks.
+  - Fallback case company must not be BadgeWorks, Entrilo or FieldPro.
+  - BPW-AI and the Market core course both teach buyer personas. The Market Research course must not reteach persona creation.
+  - CAW-AI already teaches scheduled tasks. The autonomy ladder's scheduled step must use a different agent and new slides.
