@@ -15,3 +15,4 @@
 - Synthesizer done. 03:03 UTC: Step 5, trace check.
 - Trace check done: ~110 claims, 17 fixes, 3 flags for Dan.
 - Gate 1 doc published: https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW. Status in_review.
+- 2026-11-21: Bond story candidates added (bond-stories.md) and inserted in the Gate 1 doc.
