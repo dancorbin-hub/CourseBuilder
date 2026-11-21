@@ -14,6 +14,7 @@ pragmatic_sources:   # complete list, Dan 2026-11-20
   - Pragmatic Framework 2027 guide (project files, reference/pragmatic-sources/)
   - Workshop and core course decks in reference/pragmatic-sources/ (see shared/registry/registry.yaml)
   - Pragmatic Institute website (pragmaticinstitute.com)
+  - What makes a Pragmatic course (instructors) and How the Capability Standards drive learning development (instructional design), added 2026-11-21
 settings:
   capability_map: off
 fingerprints: {}      # approved item -> content hash. A change to a fingerprinted item needs Dan's yes.
