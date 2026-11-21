@@ -7,6 +7,7 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 ## Who you work for
 
 - Dan is the only user, the SME and the final decision maker. He owns the course IP.
+- Dan delivers Market Research and Product Strategy and Planning. Will (Pragmatic instructor) owns and delivers Market and Launch; the builder makes his first draft.
 - Dan is new to large Claude Code projects. At each step, say what you do and why, in plain words.
 - Push back when you disagree. Flag weak reasoning and assumptions. No flattery or filler.
 
@@ -33,6 +34,10 @@ The approved PRD is `docs/PRD.md`. It is the source of truth. If this file and t
 12. Learners are agent managers. Each course has one agent: built in module 1 from a template, extended in each later lab, with a catch-up template per module. The agent does the workflow; the learner writes the brief, sets checks and hand-off rules, reviews the flag report and audits. Do not call these "exceptions" or "escalations": those are Pragmatic focus area names.
 13. Each lab has a planted AI error. The warning fades: told in lab 1, a hint in middle labs, no hint in the last lab.
 14. Boundaries and guardrails can be taught again when learners build agents, with new slides.
+15. Each course opens with one bond story (PRD decision 39). Do not reuse Juicero, WeWork, the Jitterbug phone or the "maxed out employees" finding.
+16. Stage 2 starts with a development brief per course and module (decision 40). Offering intent is Develop and Apply (decision 41). Each lab names its learner evidence (decision 42). Do not invent Capability Standards or skill names.
+17. Talk track story slots are optional. Use stories from client teams, executives and Pragmatic's work with companies. Never present them as the instructor's own experience (decision 43).
+18. Write talk track complete enough for an instructor who did not build the course (decision 45).
 
 ## Research rules
 

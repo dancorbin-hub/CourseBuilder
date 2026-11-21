@@ -15,11 +15,12 @@ Say what you do and why at each step, in one or two plain sentences. Dan is lear
 1. Read `courses/<course>/status.yaml`. `blockers` must be empty. `worked_example_row` must be `approved`.
 2. Read `CLAUDE.md`, `shared/templates/workflow-row.yaml`, the worked example row, and `shared/registry/registry.yaml`.
 3. If `research/` already holds Stage 1 output, ask Dan before you overwrite it. Fingerprinted items need Dan's yes.
-4. Set `stage: 1` in `status.yaml`. Add a line to `research/run-log.md`: date, what runs.
+4. Web fetches are shared, about 100 per hour. Tell each researcher its share, and tell checkers to mark unopened sources "not verified".
+5. Set `stage: 1` in `status.yaml`. Add a line to `research/run-log.md`: date, what runs.
 
-## Step 1: 4 researchers in parallel
+## Step 1: 5 researchers in parallel
 
-Start all 4 subagents in one message, so they run at the same time. Give each one the course id, the course title and the path of the worked example row. Each agent file holds its full job.
+Start all 5 subagents in one message, so they run at the same time. Give each one the course id, the course title and the path of the worked example row. Each agent file holds its full job.
 
 | Agent | Writes |
 | --- | --- |
@@ -27,6 +28,7 @@ Start all 4 subagents in one message, so they run at the same time. Give each on
 | `research-methods-platforms` | `research/methods.md`, `research/platform-matrix.yaml` |
 | `research-pm-needs` | `research/needs.md` |
 | `research-evidence` | `research/evidence-ledger.yaml`, `research/sources.yaml` |
+| `research-bond-story` | `research/bond-stories.md` (3 to 4 recommended candidates, PRD decision 39) |
 
 Each researcher appends its gaps to `research/gaps.md` under its own heading.
 
@@ -46,7 +48,7 @@ If the critic report lists a gap for a track, run that track's researcher again,
 
 ## Step 4: Synthesizer
 
-Run `research-synthesizer`. It writes `research/research-brief.md` and the Gate 1 packet `research/gate-1-packet.md`.
+Run `research-synthesizer`. It includes the bond story candidates. It writes `research/research-brief.md` and the Gate 1 packet `research/gate-1-packet.md`.
 
 ## Step 5: trace check
 
