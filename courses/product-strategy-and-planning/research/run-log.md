@@ -4,3 +4,4 @@
 - Bond story researcher done (6 candidates, 4 recommended, 14 fetches).
 - Track 3 PM needs done (12 tasks, N1 to N20, 20 fetches).
 - Track 4 evidence done (E1 to E14, 16 sources, 20 fetches).
+- Track 2 methods and platforms done (35 carried, 16 new features, methods S1 to S10, 15 fetches).

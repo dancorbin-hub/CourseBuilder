@@ -1,0 +1,667 @@
+# Platform matrix, course product-strategy-and-planning. Stage 1, track 2 (methods and platforms).
+# Written 2026-11-22 by the methods and platforms researcher.
+# Carried entries come from courses/market-research/research/platform-matrix.yaml (checked 2026-11-20,
+# Gate 1 approved 2026-11-22). They keep their id, status and dates and add carried_from: market-research.
+# A carried entry that this run rechecked has a recheck_2026_11_22 field. Its status is not changed.
+# New entries (checked_on 2026-11-22) are "not verified" until the Verifier checks them.
+# Field notes: use_in_core_lab yes = a core lab can use it with no connectors.
+# source_date: Help Center pages show only a relative date; we record the date it gives, with "approx".
+# Learner build per platform: Claude Project or skill. ChatGPT Project. Copilot agent builder agent. Gemini skill.
+# No custom GPTs. No Gems. Web fetch budget used: 15 of 15.
+
+checked_on: '2026-11-22'
+course: product-strategy-and-planning
+carried_from_course: market-research
+summary:
+- platform: claude
+  core_lab_feasible: 'yes'
+  core_build: Project or custom skill (carried)
+  new_for_this_course: Code execution and file creation give real formulas and .xlsx output on all plans (cl-fo-06). Web search on all plans (cl-ws-08). Research on paid plans only (cl-rs-09)
+  key_limit: 'XLSX upload and file output need code execution on. An org owner can turn it off. Web search on Team and Enterprise needs owner opt-in. Upload size conflict: 30 MB or 500 MB (cl-up-10)'
+- platform: chatgpt
+  core_lab_feasible: 'yes'
+  core_build: Project (carried)
+  new_for_this_course: Data analysis runs Python on uploaded CSV and XLSX (cg-11). Web search on all plans (cg-13). Spreadsheet output with formulas through ChatGPT Work (cg-09, cg-10)
+  key_limit: ChatGPT Work is not on Free or Go, and not in a project with project-only memory. Skills still only Business, Enterprise, Healthcare, Edu (cg-04 retry)
+- platform: copilot
+  core_lab_feasible: yes, with a condition
+  core_build: Agent in agent builder (carried)
+  new_for_this_course: Code interpreter reads CSV and Excel uploaded in chat (mb-13). Web search with 4 URLs or 'Search all websites' (mb-12), all license states
+  key_limit: Code interpreter use of knowledge files not documented. Output files last for the session only. CSV not allowed as embedded knowledge (mb-14)
+- platform: gemini
+  core_lab_feasible: yes, with a condition
+  core_build: Gemini skill in the Gemini app (carried)
+  new_for_this_course: Skill can be named in a scheduled action (gm-12). Gemini app skills have no admin controls (gm-13)
+  key_limit: No doc says a skill runs code for math (gm-11) or can use Google Search. Deep Research does not work in skills (gm-06). File output from a skill unproven (gm-09)
+features:
+- id: cl-pj-01
+  platform: claude
+  feature: Projects with project instructions and project knowledge (uploaded files)
+  plans: All plans, Free included. Free has a maximum of 5 projects
+  limits: No file size or count limit on the page. On paid plans, RAG mode turns on when knowledge nears the context window limit. Chats in a project do not share context, except through project knowledge
+  use_in_core_lab: 'yes'
+  url: https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
+  source_date: approx 2026-11-05 (page says "updated over 2 weeks ago")
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20 (curl). All users; Free max 5 projects; RAG on paid plans. Relative date only
+  carried_from: market-research
+- id: cl-pj-02
+  platform: claude
+  feature: Share a project (Can view, Can edit)
+  plans: Team and Enterprise. An admin can turn sharing off
+  limits: Can view members can chat but not edit. Can edit members change instructions and knowledge. No copy or duplicate feature on the page
+  use_in_core_lab: 'no'
+  url: https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
+  source_date: approx 2026-11-05 (page says "updated over 2 weeks ago")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Catch-up template. Not usable on Free, Pro, Max or Ultra. A shared Can edit project lets one learner change the template for all, so do not use it for catch-up. Use a catch-up kit (text brief + files) instead
+  carried_from: market-research
+- id: cl-cl-03
+  platform: claude
+  feature: Custom skills (SKILL.md folder, uploaded as a zip, then turned on in Customize > Skills)
+  plans: Free, Pro, Max, Ultra, Team, Enterprise
+  limits: Code execution must be on. Name 64 characters, description 200 characters. Folder name must match the skill name and sit at the zip root. No file size limit on the page
+  use_in_core_lab: 'yes'
+  url: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+  source_date: approx 2026-10-28 (page says "updated over 3 weeks ago")
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20. Plans, code execution, 64/200 character limits, zip structure confirmed. Relative date only
+  note: Recheck of E7. Still true. The plan list now also names Ultra. The page changed date since 2026-11-19 ("over 2 weeks" then, "over 3 weeks" now, so no new edit). A catch-up skill can be a zip that the learner uploads, on all plans
+  carried_from: market-research
+- id: cl-cl-04
+  platform: claude
+  feature: Record a skill (screen recording, Claude proposes a skill)
+  plans: Pro, Max, Ultra, Team. Cowork in Claude for Mac only
+  limits: Recording of about 10 minutes
+  use_in_core_lab: 'no'
+  url: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+  source_date: approx 2026-10-28 (page says "updated over 3 weeks ago")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Mac only, so not a core path. Possible demo
+  carried_from: market-research
+- id: cl-cl-05
+  platform: claude
+  feature: Share a skill with people, or publish it to the organization
+  plans: Team and Enterprise. Group targeting and skill scanning are Enterprise only
+  limits: Skill sharing toggle is on by default for Team. Recipients can use a shared skill but cannot edit it. Owner can revoke. Share with groups is off by default. Publish to org can need owner review
+  use_in_core_lab: 'no'
+  url: https://support.claude.com/en/articles/13119606-provision-and-manage-skills-for-your-organization
+  source_date: approx 2026-11-12 (page says "updated over a week ago")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Good for a company-run class (instructor shares a read-only catch-up skill). Recipients cannot edit, so the learner must download or rebuild to extend it. No copy feature documented
+  carried_from: market-research
+- id: cl-fo-06
+  platform: claude
+  feature: Create and edit files (.xlsx, .pptx, .docx, .pdf, .csv, .md, .html, PNG charts)
+  plans: Free, Pro, Max, Ultra, Team, Enterprise. Web, desktop and mobile
+  limits: 30 MB per file for upload and download. Code execution and file creation must be on (user setting, or org owner on Team and Enterprise)
+  use_in_core_lab: 'yes'
+  url: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
+  source_date: approx 2026-11-05 (page says "updated over 2 weeks ago")
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20. All plans, 30 MB per file, formats confirmed; owners can disable on Team and Enterprise. Relative date only
+  note: Files in a project are available to the code environment. An org owner can turn code execution off. Check this with company learners before class
+  carried_from: market-research
+  recheck_2026_11_22: 'Recheck 2026-11-22 (not reopened). Conflict: the upload page (cl-up-10, updated 2026-07-23) says 500 MB per chat file and 30 MB per project file. This page says 30 MB per file. Use 30 MB in step cards'
+- id: cl-sc-07
+  platform: claude
+  feature: Scheduled tasks in Cowork (hourly, daily, weekly, weekdays, manual)
+  plans: Pro, Max, Ultra, Team, Enterprise (all paid plans). Not Free
+  limits: Runs remotely in the cloud. If the learner picks a local folder, "Require this computer" turns on and the computer must be awake with Claude Desktop open. Tasks can use skills, plugins and connectors. A connector set to "Always ask" can stop the task
+  use_in_core_lab: 'no'
+  url: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork
+  source_date: approx 2026-11-19 (page says "updated yesterday")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Stretch path. The input (new interviews) must reach the task without a connector, for example files saved to the Claude account. Not tested
+  carried_from: market-research
+- id: cg-01
+  platform: chatgpt
+  feature: Projects with project instructions and project files
+  plans: Signed-in users, subject to plan and workspace settings
+  limits: Files per project are 5 (Free), 25 (Go, Plus), 40 (Edu, Pro, Business, Enterprise). Up to 10 files per upload. Project instructions override global custom instructions in that project
+  use_in_core_lab: 'yes'
+  url: https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt
+  source_date: approx 2026-11-17 (page says "updated 3 days ago")
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened on help-lb.openai.com 2026-11-20. Files 5 / 25 / 40 and 10 per upload confirmed. help-lb is an openai.com subdomain, so OpenAI controls it. Cite help.openai.com in learner materials
+  note: Recheck of E9. The main URL (help.openai.com/en/...) failed again on 2026-11-20, and the sr-rs language URL failed too. The help-lb.openai.com host loaded the same article. The Verifier must confirm that help-lb is an official OpenAI host. Conflict with cg-03, which says Plus has 20 files per project. Use the lower number (20 on Plus) in step cards until resolved
+  carried_from: market-research
+  recheck_2026_11_22: 'Reopened 2026-11-22 (help-lb, ''updated 3 days ago''). Free 5, Go and Plus 25, Pro and business plans 40, 10 per upload: unchanged. Still conflicts with cg-03 (Plus 20). Catch-up retry: still no copy, duplicate, export or template feature. Only ''Copy ...'' of chats when a member leaves a shared project. New: see cg-14 for project memory and tools'
+- id: cg-02
+  platform: chatgpt
+  feature: Share a project with collaborators
+  plans: Free, Go, Plus, Pro, Business, Enterprise, Edu. Web and mobile
+  limits: Collaborators 5 (Free), 10 (Go, Plus), 100 (Pro, Business, Enterprise, Edu). Owner and edit members can invite. A member who leaves can copy their chats into a new project named "Copy ..."
+  use_in_core_lab: 'no'
+  url: https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt
+  source_date: approx 2026-11-17 (page says "updated 3 days ago")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Catch-up template. No documented way to copy the project instructions and files into the learner's own project. "Copy" on leave copies chats only, as the page describes it. Use a catch-up kit (text brief + files) instead
+  carried_from: market-research
+- id: cg-03
+  platform: chatgpt
+  feature: File upload limits
+  plans: All plans
+  limits: 512 MB per file. 2M tokens per text or document file. About 50 MB per spreadsheet or CSV. 20 MB per image. 25 GB per user, 100 GB per organization. 80 files every 3 hours. Projects 20 files (Plus) or 40 (Pro, Team, Education, Business)
+  use_in_core_lab: 'yes'
+  url: https://help-lb.openai.com/en/articles/8555545-file-uploads-faq
+  source_date: approx 2026-11-15 (page says "updated 5 days ago")
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: 'Opened on help-lb.openai.com 2026-11-20. Limits confirmed. Conflict with cg-01 is real (Plus 20 here, 25 there). Also: Free users get 3 uploads per day. No file-output content'
+  note: Project file counts conflict with cg-01 (Plus 20 here, 25 there; Go and Free not listed here)
+  carried_from: market-research
+- id: cg-04
+  platform: chatgpt
+  feature: Skills (create with chat, create in editor, or upload; use with @-mention or automatic)
+  plans: Business, Enterprise, Healthcare and Edu only, subject to workspace settings. Off by default in the beta until a workspace owner turns it on
+  limits: Admins set which roles can create, upload, share or install. Uploads are scanned and can be marked "Needs Review" or "Blocked". One default skill (skill-creator). No usage limits listed
+  use_in_core_lab: 'no'
+  url: https://help-lb.openai.com/en/articles/20001066-skills-in-chatgpt
+  source_date: approx 2026-11-07 (page says "updated 13 days ago")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Not on Free, Go, Plus or Pro, so a Project is the core ChatGPT build. A skill is an option for learners on Business or Enterprise with skills on. Second source, OpenAI Academy "Skills" (published 2026-02-25, updated 2026-09-17, https://academy.openai.com/public/resources/skills), confirms skills are off by default and controlled by the workspace owner
+  carried_from: market-research
+  recheck_2026_11_22: 'Reopened 2026-11-22 (retry). Plan sentence unchanged: ''Skills are available to eligible ChatGPT Business, Enterprise, Healthcare, and Edu users.'' Page still says ''updated 13 days ago'', the same text as on 2026-11-20, so the page date is uncertain. Release notes (cg-09 url, 2026-11-19) say skills are generally available for Enterprise and Edu, and plugins that package skills work in Work and Codex. Plus and Pro still have no skills. Not on Plus or Pro is confirmed a second time'
+- id: cg-05
+  platform: chatgpt
+  feature: Share a skill (people, groups or link) and export it in Agent Skills format
+  plans: Same as cg-04. Workspace sharing and publishing need admin permission
+  limits: Owner sets access to only me or to named people. Export and import to other tools that read Agent Skills (for example Codex)
+  use_in_core_lab: 'no'
+  url: https://help-lb.openai.com/en/articles/20001066-skills-in-chatgpt
+  source_date: approx 2026-11-07 (page says "updated 13 days ago")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Export uses the same Agent Skills format (SKILL.md) as Claude and Gemini. One catch-up skill folder could serve three platforms. Not tested
+  carried_from: market-research
+- id: cg-06
+  platform: chatgpt
+  feature: Scheduled tasks (one-time or recurring)
+  plans: Free, Go, Plus, Pro, Business, Enterprise, Edu, eligible Healthcare workspaces
+  limits: Active tasks 3 (Free, Go), 5 (Plus), 10 (Business, Edu), 15 (Pro, Enterprise). Free runs at most once a day in a time window. Paid plans can run hourly and at exact times. A task created in a project cannot read the files uploaded to that project
+  use_in_core_lab: 'no'
+  url: https://help-lb.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt
+  source_date: approx 2026-11-02 (page says "updated 18 days ago")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Stretch path limit. A scheduled run cannot read the code book in project files. The brief and code book must be in the task prompt or a skill. Page does not say if tasks can use skills
+  carried_from: market-research
+- id: cg-07
+  platform: chatgpt
+  feature: Event-triggered tasks (new Gmail message, Slack channel message, GitHub pull request)
+  plans: Plus, Pro, Business, Enterprise, Edu, eligible Healthcare. Not Free, Go or FedRAMP
+  limits: Up to 30 runs per hour and 720 per day across all tasks. Needs a connected Gmail, Slack or GitHub account
+  use_in_core_lab: 'no'
+  url: https://help-lb.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt
+  source_date: approx 2026-11-02 (page says "updated 18 days ago")
+  checked_on: 2026-11-20
+  status: not verified
+  note: Stretch path only. Uses connectors
+  carried_from: market-research
+- id: cg-08
+  platform: chatgpt
+  feature: Downloadable file output (ChatGPT-generated spreadsheets or PDFs, downloaded from the chat)
+  plans: unknown. The Academy page names no plan
+  limits: unknown. Page names "updated spreadsheets or PDFs" only. No .csv, .docx or .pptx named. Projects not mentioned
+  use_in_core_lab: 'no'
+  url: https://academy.openai.com/public/clubs/work-users-ynjqu/resources/working-with-files
+  source_date: 2026-09-04 (published 2025-08-06, "Last updated on September 4, 2026")
+  checked_on: 2026-11-20
+  status: partly verified
+  verifier_note: Opened Academy page 2026-11-20. Published 2025-08-06, last updated 2026-09-04. 'downloading ChatGPT-generated outputs (e.g., updated spreadsheets or PDFs)' confirmed. CSV, XLSX, PDF, DOCX are named as upload formats only, not outputs. No plans, no Projects. help.openai.com article 20001278 failed again (client error). Plans, formats and Projects scope not verified
+  note: 'Rerun 2026-11-20. OpenAI Academy "Working with files" says users can download "ChatGPT-generated outputs (e.g., updated spreadsheets or PDFs)". Dated vendor page, but it gives no plans, formats list or Projects scope. A Help Center article exists: "Creating and editing documents, spreadsheets and presentations with ChatGPT" (https://help.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt). It failed to load on help.openai.com (client error). The help-lb.openai.com fetch was blocked by the session permission check, so it was not opened. Open it in the next run for plans and formats. Keep use_in_core_lab "no" until plans and Projects scope are confirmed'
+  carried_from: market-research
+  recheck_2026_11_22: Partly superseded 2026-11-22 by cg-09 and cg-10. ChatGPT Work creates documents, spreadsheets and presentations on paid plans except Free and Go
+- id: mb-01
+  platform: copilot
+  feature: Agent builder instructions, name and description
+  plans: See mb-03 for licenses
+  limits: Instructions 8,000 characters. Name 30 characters. Description 1,000 characters. Response mode Auto, Quick response or Think deeper. Natural language authoring only in some languages
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+  source_date: 2026-11-16
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20 (updated 2026-11-16). 8,000 / 30 / 1,000 characters and 3 response modes confirmed
+  note: Recheck of E6. Still 8,000 characters. Same page date
+  carried_from: market-research
+- id: mb-02
+  platform: copilot
+  feature: Embedded files as knowledge (upload from device)
+  plans: Needs a Microsoft 365 Copilot license or pay-as-you-go billing (see mb-03). Not in Microsoft 365 GCC
+  limits: Up to 20 files per agent, no folders. .doc, .docx, .pdf, .ppt, .pptx, .txt up to 512 MB. .xls, .xlsx up to 30 MB. Password-protected files fail. Some sensitivity labels make agent creation fail
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge
+  source_date: 2026-11-16 (ms.date 2026-09-30)
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20 (updated 2026-11-16). 20 files, 512 MB / 30 MB, no GCC, password and label failures confirmed. License condition is on the prerequisites page (mb-03), not this page
+  note: A course agent with a code book, log, brief template and case files must stay at 20 files or fewer. Merge files where possible. Spreadsheet limit is 30 MB. Labelled company files can fail
+  carried_from: market-research
+- id: mb-03
+  platform: copilot
+  feature: Agent capabilities by license
+  plans: Microsoft 365 Copilot license; Copilot Chat with pay-as-you-go billing; Copilot Chat with no billing
+  limits: Code interpreter, custom instructions, web search work for all three. Embedded file content, SharePoint and Copilot connectors need a license or billing. Email, People and Teams knowledge need a license. Pay-as-you-go bills only agents grounded in tenant data
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites
+  source_date: 2026-11-06
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20 (ms.date 2026-11-06). Embedded files and SharePoint need license or usage billing; code interpreter, instructions, web search work for all. Self-conflict on unlicensed authoring confirmed
+  note: Key risk. A learner with Copilot Chat only and no billing cannot ground the agent in embedded files. The page also conflicts with itself on whether unlicensed users can author agents. Ask Microsoft or a second Copilot tester (PRD open item)
+  carried_from: market-research
+- id: mb-04
+  platform: copilot
+  feature: Code interpreter ("Create documents, charts, and code" toggle)
+  plans: All three license states in mb-03
+  limits: Page names math, data analysis and charts. No file formats or size limits on the page
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+  source_date: 2026-11-16
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20. Toggle and math, data analysis, visualizations confirmed. No formats or downloads stated
+  note: Downloadable .xlsx or .docx output is not stated. Test at Gate 2 proof
+  carried_from: market-research
+  recheck_2026_11_22: 'See mb-13 (2026-11-22): input formats now known (Word, Excel, PowerPoint, PDF, CSV/TSV, TXT)'
+- id: mb-05
+  platform: copilot
+  feature: Share an agent (Can edit, Can chat, org-wide, copy chat link, edit link)
+  plans: Recipients need the license that the agent's capabilities require. Admin can limit org-wide sharing
+  limits: Groups only get Can chat. Can edit gives full owner rights. Embedded files are answered from by anyone who can use the agent. No copy or duplicate feature on the page
+  use_in_core_lab: 'no'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents
+  source_date: 2026-11-16 (ms.date 2026-11-12)
+  checked_on: 2026-11-20
+  status: not verified
+  note: Catch-up template. Can chat lets a learner run the template but not extend it. Can edit lets every learner change one shared agent. Neither fits. Use a catch-up kit (text brief + files). Also, learners are often in different tenants from the instructor, so sharing does not work across companies
+  carried_from: market-research
+- id: mb-06
+  platform: copilot
+  feature: Scheduled workflows in agent builder (run a prompt hourly, daily, weekly, monthly or yearly)
+  plans: Users who build agents in agent builder in Microsoft 365 Copilot (Premium)
+  limits: Runs only for the user who created it. Not shared with the agent. Does not run for draft or unpublished agents. Rollout mid-November to mid-December 2026
+  use_in_core_lab: 'no'
+  url: https://mc.merill.net/message/MC1302906
+  source_date: 2026-10-30 (Message Center MC1302906, version 3, first posted 2026-05-06)
+  checked_on: 2026-11-20
+  status: not verified
+  note: Source is a third-party mirror of the Microsoft 365 Message Center. Not a Microsoft Learn page. The Verifier needs a Microsoft-hosted copy. Stretch path once rolled out
+  carried_from: market-research
+  recheck_2026_11_22: 'Retry 2026-11-22 for a Microsoft-hosted copy: the Microsoft 365 roadmap API (https://www.microsoft.com/releasecommunications/api/v2/m365/531759, item RM531759 ''Scheduled prompts for Agents'') returned binary data. Still third-party only'
+- id: mb-07
+  platform: copilot
+  feature: Scheduled tasks in Microsoft 365 Copilot (was Scheduled prompts)
+  plans: Microsoft 365 Copilot license
+  limits: 10 active and 50 total schedules per user. Moves to native Copilot scheduling and Tasks > Scheduled. Power Platform scheduled prompts retire 2026-12-31. Worldwide rollout 2026-11-30 to 2026-12-31
+  use_in_core_lab: 'no'
+  url: https://learn.microsoft.com/copilot/microsoft-365/scheduled-prompts
+  source_date: 2026-11-11 (ms.date 2026-11-03)
+  checked_on: 2026-11-20
+  status: not verified
+  note: Rollout detail from Message Center MC1550533 (2026-11-12, via https://mc.merill.net/message/MC1550533). The Learn page does not say if a schedule can call an agent builder agent
+  carried_from: market-research
+- id: mb-08
+  platform: copilot
+  feature: Copy an agent to Copilot Studio (to add actions, connectors or workflows)
+  plans: Copilot Studio access
+  limits: Agent builder cannot author actions that call external services
+  use_in_core_lab: 'no'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+  source_date: 2026-11-16
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20. Copy to Copilot Studio for actions confirmed
+  note: PRD decision 26 says Copilot Studio is not required. Stretch only
+  carried_from: market-research
+- id: mb-09
+  platform: copilot
+  feature: Copilot Studio event triggers (Recurrence, file created in OneDrive, SharePoint item created, Planner, Dataverse)
+  plans: Copilot Studio. Each trigger run uses Copilot Credits
+  limits: Runs with the maker's credentials. Admins can block triggers with data policies. Needs generative orchestration
+  use_in_core_lab: 'no'
+  url: https://learn.microsoft.com/microsoft-copilot-studio/authoring-triggers-about
+  source_date: 2026-11-04 (ms.date 2026-11-03)
+  checked_on: 2026-11-20
+  status: not verified
+  note: Stretch only, outside agent builder. Maker credentials are a data safety point for the lab
+  carried_from: market-research
+- id: mb-10
+  platform: copilot
+  feature: SharePoint and OneDrive files as knowledge
+  plans: License or pay-as-you-go billing (mb-03)
+  limits: 100 SharePoint files, 50 OneDrive files, 1 SharePoint list (20,000 items, 50 MB text) per agent. Restricted SharePoint Search blocks it
+  use_in_core_lab: 'no'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge
+  source_date: 2026-11-16
+  checked_on: 2026-11-20
+  status: not verified
+  note: Stretch path. Lets the agent read a live interview folder. Counts as a connector-type source
+  carried_from: market-research
+- id: mb-11
+  platform: copilot
+  feature: Downloadable file output from code interpreter (Excel, Word, PowerPoint, PDF, images and charts)
+  plans: Microsoft 365 Copilot license, and Copilot Chat users without metered usage enabled (page text)
+  limits: Code interpreter is always on in Agent Builder. Files are hosted for the active session only and are not kept after it ends. .csv output is not named (CSV and TSV are named as inputs). No file size, row or run time limits stated
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter
+  source_date: 2026-09-28 (page footer "Last updated on 2026-09-28"; ms.date 2026-07-06; metadata updated_at 2026-10-22)
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: 'Opened 2026-11-20. ''Last updated on 2026-09-28'' (metadata 2026-10-22). Confirmed: output files ''such as images, charts, spreadsheets, or documents''; Word, Excel, PowerPoint or PDF named in the synthetic data example; session-only hosting; always enabled in Agent Builder; license sentence verbatim. CSV/TSV named as input only. No size or row limits'
+  note: 'Rerun 2026-11-20. Quote: "Code interpreter can generate and host downloadable files ... Copilot automatically presents a download link in the response." Learners must download the log in the same session. The license line reads oddly ("without metered usage enabled"); check it against mb-03 at the Gate 2 proof. Adds to mb-04, which said no formats'
+  carried_from: market-research
+  recheck_2026_11_22: 'Reopened 2026-11-22. Same dates and text. The page also says code interpreter is ''always enabled in Agent Builder'' and has a Settings toggle for in-context agents. These two lines do not fully agree. Not documented: if code interpreter can read the agent''s knowledge files. See mb-13'
+- id: gm-01
+  platform: gemini
+  feature: Gemini skills (create with Gemini, from a template, or by uploading SKILL.md, a folder or a zip)
+  plans: 18 or older, signed in to the Gemini app. Mobile, Mac and web apps. No subscription tier named
+  limits: 100 MB total per skill. Name lowercase with hyphens. Not supported are legacy .doc, .xls, .ppt, audio, video, archives inside the skill, some code types. To update files, re-upload the whole skill. Scripts cannot use the internet. Unlimited skills, 100 active
+  use_in_core_lab: 'yes'
+  url: https://support.google.com/gemini?p=pn_skills
+  source_date: unknown (page shows no date)
+  checked_on: 2026-11-20
+  status: partly verified
+  verifier_note: Opened 2026-11-20. Upload methods, 100 MB, unsupported types, no internet in scripts confirmed. 'Unlimited skills, 100 active' not found. Page undated, so no dated vendor doc for this row
+  note: Recheck of E8 with a second Google page. 100 MB confirmed. Connected Apps need Keep Activity on, but a core lab does not need them
+  carried_from: market-research
+  recheck_2026_11_22: 'Reopened 2026-11-22. New on the page: ''You can specify the skill Gemini should use for a task or a schedule''s action'' (see gm-12). Scripts that need the internet are not supported. The page does not say where scripts run, or if a skill can use Google Search or create files'
+- id: gm-02
+  platform: gemini
+  feature: Gems retired and moved to skills
+  plans: Personal accounts 18+; Workspace business, enterprise, non-profit; education
+  limits: Personal Gems read-only and moved 2026-11-17, removed 2026-12-17. Workspace business, enterprise, non-profit March 2027 (no sooner than 2027-03-01). Education June 2027. Under 18 later
+  use_in_core_lab: 'no'
+  url: https://support.google.com/gemini/answer/18560919?hl=en
+  source_date: unknown (page shows no date)
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened Help page and Workspace blog 2026-11-20. Personal 2026-11-17 / 2026-12-17; business Gems stop no sooner than 2027-03-01; education no sooner than 2027-06-01. Dated by the blog
+  note: Recheck of E8. Still true. Second source with dates, Workspace Updates blog (2026-09-30, updated 2026-11-09)
+  carried_from: market-research
+- id: gm-03
+  platform: gemini
+  feature: Skills for Workspace (work) accounts in the Gemini app
+  plans: Workspace Updates blog says Gemini app skills are for all Google Workspace customers and personal accounts. Skills in Workspace apps and Workspace Studio are for Business Starter to Plus, Enterprise Starter to Plus, and two add-ons
+  limits: Gemini app rollout started 2026-10-13, done by mid-November 2026. Skills do not sync between the Gemini app and Workspace apps. Skills in Workspace apps are 18+ only
+  use_in_core_lab: 'yes'
+  url: https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html
+  source_date: 2026-09-30 (updated 2026-11-09)
+  checked_on: 2026-11-20
+  status: verified
+  verifier_note: Opened 2026-11-20 (posted 2026-09-30, updated 2026-11-09). Gemini app skills for all Workspace customers, rollout done by mid-November 2026. The Help page says work accounts 'soon'. Blog says Gemini app skills have no age limit; Help page says 18+. Test on a Workspace account at Gate 2
+  note: CONFLICT. This page says Workspace accounts have Gemini app skills now. The Gemini Apps Help pages (gm-01, gm-02) say work and school accounts are "coming soon" and the CLAUDE.md context says March 2027. The blog's March 2027 date is when Gems stop for business accounts, not when skills start. Dan must decide which to trust. Test on a Workspace business account at Gate 2
+  carried_from: market-research
+  recheck_2026_11_22: 'Second Google page 2026-11-22: Workspace Updates post 2026-10-13 (updated 2026-11-09) says Gemini app skills are for all Workspace customers and personal accounts, all ages, with no admin controls. Skills in Workspace apps (Docs, Sheets) were ''delayed until further notice''; the 2026-11-09 update says they started rolling out. See gm-13'
+- id: gm-04
+  platform: gemini
+  feature: Share a skill (Viewer or Editor), save a copy, download as zip
+  plans: All Workspace customers and personal accounts. On by default for Workspace; admins can turn it off. Follows Drive external sharing settings
+  limits: Web app only. Sharing makes a copy in Google Drive. Files in the skill must be shared separately. Recipients get the skill as inactive. A recipient can save a copy, which does not sync with the original. Rollout from 2026-11-12, up to 15 days
+  use_in_core_lab: 'no'
+  url: https://workspaceupdates.googleblog.com/2026/11/share-skills-add-files-from-Drive-Notebook-Photos-to-skills-Gemini-app.html
+  source_date: 2026-11-16
+  checked_on: 2026-11-20
+  status: not verified
+  note: Best documented catch-up path of the four platforms. A recipient can save an editable copy. Second source, Gemini Apps Help skills page (gm-01) says the same. Cross-company Drive sharing may be blocked by the learner's admin
+  carried_from: market-research
+- id: gm-05
+  platform: gemini
+  feature: Add skill files from Google Drive, Gemini Notebook or Google Photos (Drive files and Notebooks update live)
+  plans: Workspace customers and personal accounts
+  limits: Included in the 100 MB cap. Recipients need access to the Drive files
+  use_in_core_lab: 'no'
+  url: https://workspaceupdates.googleblog.com/2026/11/share-skills-add-files-from-Drive-Notebook-Photos-to-skills-Gemini-app.html
+  source_date: 2026-11-16
+  checked_on: 2026-11-20
+  status: not verified
+  note: Stretch path. A live Drive file could hold the insight log so each run sees the latest version. Not tested
+  carried_from: market-research
+- id: gm-06
+  platform: gemini
+  feature: Tools that do not work in skills
+  plans: All
+  limits: Canvas, Deep Research, Create video, Create music and Guided learning do not work with skills
+  use_in_core_lab: 'no'
+  url: https://support.google.com/gemini/answer/18560919?hl=en
+  source_date: unknown (page shows no date)
+  checked_on: 2026-11-20
+  status: partly verified
+  verifier_note: Opened 2026-11-20. Canvas, Deep research, video, music, guided learning confirmed. Page undated
+  note: Labs must not ask the Gemini agent to use Canvas or Deep Research
+  carried_from: market-research
+  recheck_2026_11_22: 'Applies to this course: a Gemini skill cannot use Deep Research for a market sizing refresh'
+- id: gm-07
+  platform: gemini
+  feature: Tasks with schedules and monitors (Gemini Spark); a schedule can call a skill with "/"
+  plans: Personal accounts only, 18+. No subscription in US, Canada, India, Japan, South Korea, Australia. Google AI Pro or Ultra elsewhere, not EEA, UK, Switzerland, Nigeria. Work and school accounts not supported
+  limits: Active schedules 50 (Pro, Ultra) or 10 (Plus, no subscription). Free and Plus run at most once a day in a window. 15 tasks run at the same time. Gmail and topic monitors need Pro or Ultra
+  use_in_core_lab: 'no'
+  url: https://support.google.com/gemini/answer/17094710?hl=en
+  source_date: unknown (page shows no date)
+  checked_on: 2026-11-20
+  status: not verified
+  note: Stretch path for personal accounts only. Not for Workspace learners
+  carried_from: market-research
+- id: gm-08
+  platform: gemini
+  feature: Scheduled actions in Gemini chat
+  plans: Personal accounts (gradual rollout) and work or school accounts on a qualifying Workspace edition
+  limits: 10 active schedules. Page does not mention skills or files
+  use_in_core_lab: 'no'
+  url: https://support.google.com/gemini/answer/16316416?hl=en-GB
+  source_date: unknown (page shows no date)
+  checked_on: 2026-11-20
+  status: not verified
+  note: Different from gm-07 tasks. Possible Workspace stretch path, but no proof that it can run a skill
+  carried_from: market-research
+- id: gm-09
+  platform: gemini
+  feature: Downloadable file output in the Gemini app (Docs, Sheets, Slides, PDF, .docx, .xlsx, .csv, .tex, .txt, .rtf, .md)
+  plans: All Google Workspace customers, Workspace Individual subscribers, and personal Google accounts signed in to the Gemini app. No admin control
+  limits: One file per prompt. Page does not mention skills or Gems
+  use_in_core_lab: 'yes'
+  url: https://workspaceupdates.googleblog.com/2026/04/move-from-conversation-to-creation-with-file-generation-in-Gemini.html
+  source_date: 2026-04-27
+  checked_on: 2026-11-20
+  status: verified (Gemini app); not verified for skills
+  verifier_note: Opened 2026-11-20. Post dated 2026-04-27. All 11 formats, the three user groups, 'no admin control' and 'one file per prompt' confirmed. Gems and skills not mentioned, so file output from a skill run is still unproven
+  note: 'Rerun 2026-11-20. Dated vendor doc for file output in the Gemini app. It does not say that a skill run can output a file. Skills run in the Gemini app, so it is likely, but test it at the Gate 2 proof. Old note: the skills page (https://support.google.com/gemini?p=pn_skills) gives no output format or download steps'
+  carried_from: market-research
+- id: cl-ws-08
+  platform: claude
+  feature: Web search and web fetch in chat (with citations)
+  plans: 'All plans. The page describes Free usage limits for web search. Team and Enterprise: an Owner or Primary Owner turns it on under Capabilities, then members turn it on per chat'
+  limits: Counts toward plan usage limits. Long fetched articles use a large share on Free. Every response includes citations. In the new Claude experience there is no toggle and Claude searches when it judges it useful. The page does not mention Projects, skills or scheduled tasks
+  use_in_core_lab: 'yes'
+  url: https://support.claude.com/en/articles/10684626-enable-and-use-web-search
+  source_date: approx 2026-11-14 (page says 'updated over a week ago')
+  note: 'Core path for a market sizing refresh. Pre-class check for company learners: the org owner must turn web search on'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: cl-rs-09
+  platform: claude
+  feature: Research (multi-source research mode)
+  plans: 'Paid plans only: Pro, Max, Ultra, Team, Enterprise. Web, Desktop, Mobile'
+  limits: Web search must be on. Same usage limits as chats, but uses them faster. Runs on Opus 5.5 (fallback Opus 4.8) whatever model the chat uses; fails on Team and Enterprise if an admin turned off both models for the role. Mobile searches only the web. Can use connectors without asking each time. Projects and skills not mentioned
+  use_in_core_lab: 'no'
+  url: https://support.claude.com/en/articles/11088861-use-research-on-claude
+  source_date: approx 2026-10-31 (page says 'updated over 3 weeks ago')
+  note: 'Not on Free, so stretch or demo only. Connectors can run without approval in Research: a data safety point'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: cl-up-10
+  platform: claude
+  feature: Upload files to chat and project (CSV and XLSX)
+  plans: All plans. No plan differences stated
+  limits: 'Chat: 500 MB per file, up to 20 files per chat. Project files: 30 MB each, number unlimited but total content must fit the context window; text is extracted. XLSX upload needs code execution and file creation turned on. CSV is a supported type. No row limits stated'
+  use_in_core_lab: 'yes'
+  url: https://support.claude.com/en/articles/8241126-upload-files-to-claude
+  source_date: '2026-07-23'
+  note: 'CONFLICT with cl-fo-06 (30 MB per file). Use 30 MB in step cards. If an admin turns code execution off, learners cannot upload the scoring sheet as XLSX: give a CSV copy in the case pack. Source is 4 months old (inside 12 months)'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: cg-09
+  platform: chatgpt
+  feature: 'ChatGPT Work (agent for longer tasks: research, analysis, finished documents, spreadsheets, presentations, reports and Sites)'
+  plans: 'Paid plans except Free and Go: Pro, Pro Lite, Enterprise and Edu first, then Plus and Business. Business needs the Work experience in the seat and workspace permissions. Enterprise and Edu had a preview with admin control'
+  limits: No numeric limits. Remaining Work usage shows in the sidebar; Business Premium seats get 5x Standard usage. Web, mobile, macOS and Windows desktop. Supports scheduled tasks (once, repeat, trigger, monitor), plugins and skills. Work entry dated 2026-07-09
+  use_in_core_lab: 'no'
+  url: https://help.openai.com/en/articles/11391654-work-and-codex-in-chatgpt
+  source_date: 2026-11-19 (latest release note entry; the URL loads 'ChatGPT Business release notes'; page says 'updated yesterday')
+  note: Major change since Market Research. This is the first dated OpenAI doc for spreadsheet output, but it excludes Go. The Market Research decision 'Go or Plus minimum' (gate-1-decisions e) does not cover file output for Go learners. Not available in a project that uses project-only memory (cg-14). Test at Gate 2 before core use
+  checked_on: '2026-11-22'
+  status: not verified
+- id: cg-10
+  platform: chatgpt
+  feature: Create and edit documents, spreadsheets and presentations with ChatGPT Work (templates, formulas)
+  plans: Not named. 'Availability depends on your plan, workspace settings, file type, and surface.' See cg-09 for plans
+  limits: Starts from .docx, .xlsx, .pptx templates or source files. Native Google Docs, Sheets, Slides need the Google Workspace app connected. Excel through the ChatGPT for Excel add-in via Codex on desktop. PowerPoint not in the Work desktop flow at launch. CSV and PDF output not listed. The page tells users to name formulas that must stay unchanged and to review formulas before sharing. Workspace templates are shared as admin-published plugins. 'File size and storage limits still apply'
+  use_in_core_lab: 'no'
+  url: https://help-lb.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt-work
+  source_date: approx 2026-11-22 (page says 'updated 8 hours ago')
+  note: 'Retry of the cg-08 open item: loaded on help-lb. Page changed title to ''with ChatGPT Work''. Formula guidance fits the ''calculations stay auditable'' rule (workbook 2.3). Projects and skills not mentioned'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: cg-11
+  platform: chatgpt
+  feature: Data analysis (Python in a stateful Jupyter environment on uploaded files)
+  plans: Not named. 'can vary by model, plan, workspace settings, and account capabilities'
+  limits: 'Inputs .xls, .xlsx, .csv, PDF, .json, .xml, .yaml, .txt, .md. No numeric limits (see cg-03: about 50 MB per spreadsheet). The code environment cannot make web requests or API calls. Charts are static images; some bar, line, pie and scatter charts are interactive. Download of .xlsx or .csv output is not stated. Projects named only for separate knowledge-file limits'
+  use_in_core_lab: 'yes'
+  url: https://help-lb.openai.com/en/articles/8437071-data-analysis-with-chatgpt
+  source_date: approx 2026-11-19 (page says 'updated 3 days ago')
+  note: 'Core path for scoring and sensitivity math on ChatGPT: the learner uploads the scoring sheet in chat and asks for the code. Show the result as an on-screen table until file download is proven for Go and Plus in a Project'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: cg-12
+  platform: chatgpt
+  feature: Deep research (cited multi-source report)
+  plans: Varies by plan; not listed on the page. Fixed allowances reset every 30 days from first use. Enterprise and Edu admins control access by role (RBAC)
+  limits: Can use uploaded files. Reports download as Markdown, Word or PDF with citations, contents and a sources section. Projects and scheduling not mentioned
+  use_in_core_lab: 'no'
+  url: https://help-lb.openai.com/en/articles/10500283-deep-research-in-chatgpt
+  source_date: approx 2026-11-10 (page says 'updated 12 days ago')
+  note: 'Not core: allowance differs by plan. Possible demo for a market sizing refresh'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: cg-13
+  platform: chatgpt
+  feature: Web search in chat (with citations)
+  plans: '''Web search is available on ChatGPT Free, Go, Plus, Pro, Business, Enterprise, and Edu.'' Managed workspaces: admin can control it by role'
+  limits: Subject to plan usage limits. Citations 'may' be included. The page warns results can be incomplete, outdated or wrong. Projects and scheduled tasks not mentioned
+  use_in_core_lab: 'yes'
+  url: https://help-lb.openai.com/en/articles/9237897-searching-the-web-with-chatgpt
+  source_date: approx 2026-11-20 (page says 'updated 2 days ago')
+  note: Core path for the market sizing refresh. Citations are optional on this platform, so the brief must require a source link per number (trace-to-source method)
+  checked_on: '2026-11-22'
+  status: not verified
+- id: cg-14
+  platform: chatgpt
+  feature: Project memory modes and tools in projects
+  plans: All plans with Projects (cg-01). Apps in projects on Free, Go, Plus, Pro, Business, Teachers, Enterprise, Edu
+  limits: Default memory or project-only memory, set per project. Shared projects are always project-only. 'ChatGPT Work is not available in the project' under project-only memory. 'Paid plans may include additional tools, such as agent mode and deep research.' The list of tools inside projects did not load on the page
+  use_in_core_lab: 'yes'
+  url: https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt
+  source_date: approx 2026-11-19 (page says 'updated 3 days ago')
+  note: 'Lab design: a ChatGPT course agent in a Project with project-only memory cannot use Work for file output. Default memory lets the agent see the learner''s other chats in that project, which helps runs over time but can leak earlier scores into a ''blind'' second scorer run. Use a new chat outside the project for the consistency check'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: mb-12
+  platform: copilot
+  feature: Public websites and 'Search all websites' as agent knowledge
+  plans: Web search works in all three license states (mb-03)
+  limits: Up to 4 URLs, at most two path levels, no query parameters. A 'Search all websites' toggle under Knowledge. No limit given for the toggle
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge
+  source_date: 2026-11-16 (ms.date 2026-09-30)
+  note: Core path for the market sizing refresh, also for Copilot Chat users without a license. An admin can still turn web grounding off for the tenant (not on this page; check before class)
+  checked_on: '2026-11-22'
+  status: not verified
+- id: mb-13
+  platform: copilot
+  feature: Code interpreter input files
+  plans: Microsoft 365 Copilot license, and Copilot Chat users 'without metered usage enabled' (page text)
+  limits: 'Inputs: Word, Excel, PowerPoint, PDF, CSV/TSV, TXT. No size, row or time limits. Output files are session-only. Examples only use files that the user uploads in chat. Reading the agent''s embedded or SharePoint knowledge with code interpreter is not documented'
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter
+  source_date: 2026-09-28 (footer; ms.date 2026-07-06; metadata updated_at 2026-10-22)
+  note: 'Lab design: the learner uploads the scoring sheet in chat for each scoring or sensitivity run. Do not rely on the knowledge copy for math. Download the output before the session ends'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: mb-14
+  platform: copilot
+  feature: Excel files as embedded knowledge (format rules)
+  plans: License or pay-as-you-go billing (mb-03)
+  limits: '.xls and .xlsx up to 30 MB. CSV is not in the embedded file type table. ''Agents respond best to queries based on data in Excel when the data is in one sheet within a workbook.'' SharePoint list: 20,000 rows and 50 MB text, then the agent truncates and says so'
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge
+  source_date: 2026-11-16 (ms.date 2026-09-30)
+  note: 'Case data for Copilot: give .xlsx with one sheet per file, not CSV. Counts toward the 20-file limit (mb-02)'
+  checked_on: '2026-11-22'
+  status: not verified
+- id: gm-10
+  platform: gemini
+  feature: Upload and analyze files in the Gemini app (spreadsheets, charts from spreadsheets)
+  plans: 'All accounts. Google AI Pro and Ultra: 1 million token context, more files and longer audio and video. Workspace: Drive files need admin to enable apps in Gemini'
+  limits: Up to 10 files per prompt, 100 MB per file (video 2 GB). Gemini can make a chart from an attached spreadsheet. No spreadsheet row limits. The page does not say Gemini runs code on spreadsheets, or that it exports spreadsheets
+  use_in_core_lab: 'yes'
+  url: https://support.google.com/gemini/answer/14903178?hl=en
+  source_date: unknown (page shows no date)
+  note: Undated, so this does not meet the dated vendor doc rule. Uploads in a chat that uses a skill are not covered
+  checked_on: '2026-11-22'
+  status: not verified
+- id: gm-11
+  platform: gemini
+  feature: Code files and scripts inside a skill
+  plans: Same as gm-01
+  limits: Code files (.py, .sh, .js, .ipynb) can be uploaded. 'Scripts that require access to the internet are not supported.' The page does not say where scripts run, which languages run, or if Gemini runs them for math
+  use_in_core_lab: 'no'
+  url: https://support.google.com/gemini?p=pn_skills
+  source_date: unknown (page shows no date)
+  note: Key risk for scoring and sensitivity labs. Until a Gate 2 test shows a skill script runs and returns numbers, the Gemini step card must not depend on it
+  checked_on: '2026-11-22'
+  status: not verified
+- id: gm-12
+  platform: gemini
+  feature: Name a skill in a task or a scheduled action
+  plans: Schedules follow gm-07 (personal accounts) and gm-08 (scheduled actions, some Workspace editions)
+  limits: '''You can specify the skill Gemini should use for a task or a schedule''s action.'' A skill cannot be turned on, off or deleted from a task thread'
+  use_in_core_lab: 'no'
+  url: https://support.google.com/gemini?p=pn_skills
+  source_date: unknown (page shows no date)
+  note: Closes part of the gm-08 open item (no proof that a schedule can run a skill). Stretch only. CAW-AI already teaches scheduled tasks
+  checked_on: '2026-11-22'
+  status: not verified
+- id: gm-13
+  platform: gemini
+  feature: Skills in Workspace apps (Docs, Sheets and others) versus skills in the Gemini app
+  plans: 'Workspace apps: Business Starter, Standard, Plus; Enterprise Starter, Standard, Plus; Google AI Pro for Education; AI Expanded Access. 18+. Gemini app: all Workspace customers and personal accounts, all ages'
+  limits: 'Workspace apps rollout ''Delayed until further notice''; the 2026-11-09 update says it has started. Gemini app skills: ''There are no admin controls for skills in the Gemini app.'' Workspace app skills have admin controls. Skills do not sync between the two (gm-03)'
+  use_in_core_lab: 'no'
+  url: https://workspaceupdates.googleblog.com/2026/10/an-update-on-launch-of-skills-in-gemini-app-and-workspace.html
+  source_date: 2026-10-13 (updated 2026-11-09)
+  note: A skill in Sheets could run a scoring model inside a live sheet, but rollout status conflicts on the page. Core path stays in the Gemini app
+  checked_on: '2026-11-22'
+  status: not verified
+not_opened:
+- url: https://www.microsoft.com/releasecommunications/api/v2/m365/531759
+  reason: Opened (fetch 15) but returned binary data. Microsoft-hosted copy of the agent builder scheduled prompts item (mb-06) still missing
+- url: https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt
+  reason: 'Not reopened. Budget. Open item: can a scheduled task use a skill or Work'
+- url: https://workspaceupdates.googleblog.com/2026/04/build-and-edit-complex-spreadsheets-with-Gemini-in-Google-Sheets.html
+  reason: Not opened. Budget. Gemini in Sheets is not the skill core path
+- url: https://help.openai.com/en/articles/11391654-work-and-codex-in-chatgpt
+  reason: Last 17,256 characters of the release notes not read
