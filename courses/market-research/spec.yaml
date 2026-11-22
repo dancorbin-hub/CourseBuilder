@@ -3,22 +3,26 @@
 # Inputs: docs/PRD.md, research/gate-1-decisions.md, research/worked-example-row.yaml (v3),
 #   research/workflows.yaml (retained rows 01, 02, 03, 09, 10), research/research-brief.md,
 #   research/platform-matrix.yaml, research/methods.md, research/bond-stories.md, shared/registry/registry.yaml.
-# Companion file: outline/development-brief.md (decision 40).
+# Companion files: outline/development-brief.md (decision 40), outline/syllabus.md (Pragmatic-facing).
 # Where workflows.yaml row 01 and the approved worked example row (v3) differ, this spec follows v3.
 #   See open_items, item OI-06.
-# v0.2 (2026-11-22): one revision after outline/critic-report.md. See the revision log at the end of
-#   outline/development-brief.md.
+# v0.2 (2026-11-22): one revision after outline/critic-report.md.
+# v0.3 (2026-11-22): rework brief 2 (Gate 2 comments). Problem backlog replaces the PM's bar. Half-day agenda
+#   from Gate 2 decision 12. Decisions 6, 8, 9 and 10 applied. Proposed capability mapping (decision 7).
+#   See "Revision log 2" at the end of outline/development-brief.md.
 
 course:
   id: market-research
   title: Advanced AI for Market Research
   status: draft
-  version: 0.2
+  version: 0.3
   drafted_on: 2026-11-22
   revised_on: 2026-11-22
   instructor: Dan Corbin (delivers). Written so an instructor who did not build the course can deliver it (decision 45)
   offering_intent: Develop and Apply (decision 41)
-  length: One day, 7.5 hours with lunch and breaks. Also runs as two half days split after module 2 (decision 6)
+  length: >-
+    One day, 7.5 hours with lunch and breaks (360 teaching minutes). Also runs as two half days of 3.5 hours each,
+    split after module 2 (195 teaching minutes each, 390 in total; Gate 2 decision 12)
   modules: 5
   category: Market (Pragmatic Framework 2027). Say "category" to learners (PA-08)
   focus_areas: [Market Problems, Win/Loss Analysis, Competitive Landscape]
@@ -28,14 +32,22 @@ course:
     not the Market core course (Market Definition, Buyer Personas, Buyer Journey). The course does not teach
     persona creation, market definition or market sizing. Market sizing (row 06) and concept tests (row 08)
     moved to the Product Strategy and Planning course.
+  capability_standards:   # Gate 2 decision 7. Source: outline/capability-mapping.md (Capability Standards Workbook 2027)
+    status: proposed, Dan to confirm
+    capability: 1 Market Intelligence
+    primary_skills: [1.1 Market Problem Identification, 1.3 Market Discovery]
+    secondary_skills: [8.1 Market Data Context and Pattern Recognition, 8.4 Data Narrative and Stakeholder Communication]
+    secondary_capability: 8 Data-Driven Insight (secondary only)
+    rule: Workbook ids and names are copied exactly. No skill or competency is invented
   themes:
-    - There is no magic number. The agent reports evidence. The PM's judgment sets the bar.
+    - There is no magic number. The agent reports the evidence and proposes a ranking. The PM decides the order.
     - Be great at product management before you are great at AI.
     - Win/loss is the big aha. Most teams do not get this data.
 
 promise: >-
   After this course, you can build and manage one AI agent that turns your interviews, win/loss deals,
-  weekly feedback and past research into a checked market evidence log, and you decide what the evidence means.
+  weekly feedback and past research into a checked problem backlog, and you decide what the evidence means
+  and which problems come first.
 
 course_objectives:
   - id: CO1
@@ -47,7 +59,9 @@ course_objectives:
   - id: CO4
     text: Connect agent jobs so that one job's output feeds the next, with hand-off rules that control what passes and what stops
   - id: CO5
-    text: Set the evidence bar for your team and defend each decision with sourced evidence, not a count alone
+    text: >-
+      Rank market problems against each other from their evidence profiles, by segment, and defend each priority
+      decision with sourced evidence, not a count alone
 
 learner_profile:
   audience: Experienced product managers, product marketers and product leaders who run or use market research
@@ -81,11 +95,11 @@ learner_profile:
         vendor number): core brief 3,500 characters or fewer, job card 1,500 or fewer, knowledge file 2,800 or fewer.
         Total 7,800 or fewer
       per_module:
-        - { module: 1, instructions: "Core brief + insight log job card + code book", paste_or_upload_in_chat: "Batch 1, then batch 2. The insight log from the last run" }
+        - { module: 1, instructions: "Core brief + problem backlog job card + code book", paste_or_upload_in_chat: "Batch 1, then batch 2. The problem backlog from the last run" }
         - { module: 2, instructions: "Core brief + win/loss job card + driver code book (replaces the module 1 job)", paste_or_upload_in_chat: "CRM export (pasted as text) and win/loss notes" }
-        - { module: 3, instructions: "Core brief + weekly feedback job card + tag list (replaces the module 2 job)", paste_or_upload_in_chat: "Week 1, then week 2 feedback. The insight log from module 1" }
-        - { module: 4, instructions: "Core brief + alternatives map job card + current map (replaces the module 3 job)", paste_or_upload_in_chat: "Evidence pack (driver log, insight log, CRM extract)" }
-        - { module: 5, instructions: "Core brief + stakeholder answer job card + past reports (replaces the module 4 job)", paste_or_upload_in_chat: "Insight log, driver log, alternatives map, stakeholder questions" }
+        - { module: 3, instructions: "Core brief + weekly feedback job card + tag list (replaces the module 2 job)", paste_or_upload_in_chat: "Week 1, then week 2 feedback. The problem backlog from module 1" }
+        - { module: 4, instructions: "Core brief + alternatives map job card + current map (replaces the module 3 job)", paste_or_upload_in_chat: "Evidence pack (driver log, problem backlog, CRM extract)" }
+        - { module: 5, instructions: "Core brief + stakeholder answer job card + past reports (replaces the module 4 job)", paste_or_upload_in_chat: "Problem backlog, driver log, alternatives map, stakeholder questions" }
       logs: The learner keeps each log as a file on their own computer and pastes or uploads it in chat at the next run
       kit: Each catch-up kit includes a fallback instructions text per module, already under 8,000 characters
       backup_if_swap_fails: Keep only the core brief in the instructions. Paste the job card and the knowledge file in chat at the start of each run
@@ -95,13 +109,24 @@ learner_profile:
       gate_2_risk: >-
         Not verified: chat file upload for an unlicensed agent user, and the longest message Copilot accepts in chat.
         Gate 2 proof items G2-PF-02 and G2-PF-03 test both. The longest case run file is m4-evidence-pack.md (about
-        12,400 characters). If paste fails for it, the kit splits it into 2 parts. If upload and paste both fail, the
-        plan is: the learner pairs with a learner on another platform for the lab and runs the job on their own work
-        after class with a licensed account. Gate 2 proof P1, P2 and P3 run this fallback for every module
+        12,400 characters before the case rework). If paste fails for it, the kit splits it into 2 parts. If upload
+        and paste both fail, the plan is: the learner pairs with a learner on another platform for the lab and runs
+        the job on their own work after class with a licensed account. Gate 2 proof P1, P2 and P3 run this fallback
+        for every module
     gemini:
       build: Gemini skill with instructions and up to 100 MB of files (gm-01). Gems are now skills; the step card says so (PA-09)
       minimum: Gemini app, personal or Workspace account. Test on a Workspace account at Gate 2 (gm-03). Do not use Canvas or Deep Research in a skill (gm-06)
       file_update: To update a file in a skill, re-upload the whole skill (gm-01). So logs stay in chat during a lab, and the learner re-uploads the skill once at the end of the lab with the log save card
+  stretch_scope:   # Gate 2 decision 10 (final)
+    core_path: The same on all 4 platforms in every lab
+    schedule_and_second_agent_stretch: >-
+      Only on the step cards of platforms where Stage 3 verifies the feature with a dated vendor doc and a test.
+      Likely Claude and ChatGPT. Not verified yet
+    copilot_and_gemini_cards: >-
+      Stay on the core path. The card says: "The schedule and second-agent stretch steps are not available on this
+      platform in this course."
+    out_of_scope_at_launch: [Copilot Studio, Power Automate, Google Antigravity]
+    slides: Module 3 (schedule) and module 4 (second agent) each name the platform gap once, on one slide
   data_access_limits:
     - The core path of every lab needs no connectors. Learners upload files
     - Learners do not paste client data, health data protected by HIPAA or personal data (PII) into a tool their company has not approved
@@ -112,7 +137,7 @@ data_safety_note:   # Gate 1 PA-03, every lab, every step card (lab design rule 
   standard_text: >-
     Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a
     tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.
-  teaching_point: An agent that keeps a log stores sensitive data longer than a one-off prompt. Decide what the log may keep and for how long
+  teaching_point: An agent that keeps a backlog stores sensitive data longer than a one-off prompt. Decide what the backlog may keep and for how long
   placement: Lab brief slide and the top of each step card, in every lab
 
 course_agent:   # house rule 12, decision 38
@@ -121,35 +146,56 @@ course_agent:   # house rule 12, decision 38
     One agent for the whole course. Learners build it in module 1 from a template and add one job per module.
     The agent does the workflow. The learner is the agent manager: writes the brief, sets quality checks and
     hand-off rules, reviews the flag report and audits.
-  manager_loop: [write the brief, set quality checks, set hand-off rules, run, review the flag report, audit a sample, tune the brief, run again]
+  manager_loop: [write the brief, set quality checks, set hand-off rules, run, review the flag report and the proposed ranking, audit a sample, tune the brief, run again]
   structure:
-    instructions: Core brief (role, shared rules, output format, flag report format). Must stay under 8,000 characters for Copilot (mb-01)
-    job_cards: One file per job (insight log, win/loss, weekly feedback, alternatives map, stakeholder answers). Uploaded as knowledge, so the core instructions stay short
-    knowledge_file_budget: 13 files or fewer across the whole course, under the Copilot and ChatGPT Plus limit of 20 (methods.md risk 2). The case agent ends with 12 (5 job cards, 5 case knowledge files, 2 logs; case/company.md). The .txt copies for Copilot replace the .md file on Copilot. They do not add to the count
+    instructions: Core brief (role, shared rules, evidence profile format, output format, flag report format). Must stay under 8,000 characters for Copilot (mb-01)
+    job_cards: One file per job (problem backlog, win/loss, weekly feedback, alternatives map, stakeholder answers). Uploaded as knowledge, so the core instructions stay short
+    knowledge_file_budget: 13 files or fewer across the whole course, under the Copilot and ChatGPT Plus limit of 20 (methods.md risk 2). The case agent ends with 12 (5 job cards, 5 case knowledge files, 2 logs, the problem backlog and the driver log). The .txt copies for Copilot replace the .md file on Copilot. They do not add to the count
     file_formats: Knowledge files ship as .md, with a .txt copy for Copilot (mb-02; case/README.md). CSV run files go in chat. Gate 2 proof G2-PF-01 and G2-PF-02 (critic M5)
-  status_labels:   # Gate 1 PA-01: the agent never labels a pattern (critic M4)
-    agent_may_write: ["meets the PM's bar", emerging, single source]
-    pm_only: [pattern, validated]
-    rule: >-
-      The agent compares each insight with the bar the PM wrote in the brief. It writes "meets the PM's bar",
-      "emerging" or "single source". Only the PM promotes an insight to "pattern". Only the PM calls a problem
-      "validated" (module 5). The agent never writes "pattern" or "validated" as a status. See OI-13
+    file_names: Short names, for example problem-backlog, driver-log, job-card-problem-backlog
+  problem_backlog:   # rework brief 2, item 1 (Gate 2 decision 4 proposal). Replaces the v0.2 "insight log" and the PM's bar
+    what: >-
+      The agent's running list of market problems. Each problem has an evidence profile. Priority is relative: each
+      problem is judged against the other problems in the backlog, not against a fixed bar. Supports workbook skill
+      1.1D and the "prioritized problem backlog" in skill 3.3
+    evidence_profile:   # facts only, no verdict
+      - "Interviews: count interviews, not quotes. Also accounts, segments and personas"
+      - "Source type for each source: PM-held, AI-moderated, win/loss, feedback item or past report"
+      - "Urgency, with one quote"
+      - "Pervasiveness: how many accounts and how many segments"
+      - "Willingness to pay clues"
+      - "Source dates"
+    learner_facing_terms: Urgency, pervasiveness and willingness to pay clues (workbook skill 1.1D). Do not use "intensity", "frequency" or "impact" in learner-facing text
+    fact_labels:
+      - "single source: 1 interview, however many quotes"
+      - "AI-moderated only: no PM-held interview supports the problem"
+      - "one segment only: all evidence comes from one segment"
+    fact_label_rule: >-
+      Fact labels state facts. They are not verdicts. A problem with a fact label stays in the backlog for trend
+      tracking. The agent does not drop it
+    no_threshold: >-
+      No number in the brief, the template or the case decides that a problem is real. No "meets the PM's bar".
+      No "emerging" status
+    ranking:
+      agent: Proposes a ranking with a reason for each problem. Each reason cites the evidence profile
+      pm: Decides the order, decides what is a pattern and decides what goes to validation
+      agent_never_writes: [pattern, validated]
   segment_rule: >-
-    A claim about one segment (for example "food service buyers want") needs the PM's bar met inside that segment.
-    The agent checks this. A segment claim below the bar goes to the flag report. Status proposals in module 5 are
-    given by segment for the same reason. The case shows this as the Larkspan Head of Product's choice
-    (case/company.md). Dan confirms if it is a course rule or a PM choice (OI-15)
+    Gate 2 decision 3 (provisional A, course rule until Dan runs the exercises). The agent ranks problems within a
+    segment before it makes any claim about that segment. It never writes "<segment> buyers want" from one
+    interview in that segment. Lab 5 tests it: the agent must not say "food service buyers want" from the one Food
+    service interview I-105
   uploads_per_lab:   # critic S3. Case path counts from case/company.md ("Files this lab"); own work is similar
     rule: >-
-      Each lab adds the job card and 1 case knowledge file to the agent (lab 1 also adds the empty insight log).
+      Each lab adds the job card and 1 case knowledge file to the agent (lab 1 also adds the empty problem backlog).
       Run files and the check file go in chat, as uploads or pasted text. Logs made by a run are saved back to the
       agent with the log save card
     per_lab:
       - { module: 1, to_agent: 3, in_chat: 3, files_this_lab: 6, note: "2 run files, 1 check file" }
       - { module: 2, to_agent: 2, in_chat: 3, files_this_lab: 5, note: "CSV export, win/loss notes, check file. New driver log" }
-      - { module: 3, to_agent: 2, in_chat: 3, files_this_lab: 5, note: "2 CSV exports, check file. Writes to the insight log" }
+      - { module: 3, to_agent: 2, in_chat: 3, files_this_lab: 5, note: "2 CSV exports, check file. Writes to the problem backlog" }
       - { module: 4, to_agent: 2, in_chat: 2, files_this_lab: 4, note: "Evidence pack, check file" }
-      - { module: 5, to_agent: 2, in_chat: 1, files_this_lab: 3, note: "Questions file (Q4 is the check). Logs already in the agent" }
+      - { module: 5, to_agent: 2, in_chat: 1, files_this_lab: 3, note: "Questions file (the check question is in it). Logs already in the agent" }
     peak_need: 3 files added to the agent and 3 files in chat in one lab. 12 knowledge files in the agent at the end
     platform_fit: >-
       Claude and ChatGPT Go or Plus: fits (10 files per upload, 80 every 3 hours, cg-01, cg-03). Copilot and
@@ -169,35 +215,37 @@ course_agent:   # house rule 12, decision 38
   growth:
     - module: 1
       adds: >-
-        Insight log job. Brief v1 from the template, code book, output format, flag report. The template already has
-        "count interviews, not quotes" (v3). The PM's bar is blank. Learner writes the bar and one new rule after the
-        audit (brief v2)
-      files_after: [core instructions, job-card-insight-log, code-book, insight-log]
+        Problem backlog job. Brief v1 from the template: code book, evidence profile, fact labels, proposed ranking
+        with reasons, flag report. The template has "count interviews, not quotes" (v3, decision 2). It has no
+        ranking rule. The learner adds one ranking rule after the audit (brief v2)
+      files_after: [core instructions, job-card-problem-backlog, code-book, problem-backlog]
     - module: 2
       adds: Win/loss job. Driver code book, deal source label, match rate table
       files_after: [job-card-win-loss, driver-code-book, driver-log]
     - module: 3
-      adds: Weekly feedback job. Tag list with definitions, count by unique account, the "no fit" rule. Writes into the module 1 insight log
+      adds: Weekly feedback job. Tag list with definitions, count by unique account, the "no fit" rule. Writes into the module 1 problem backlog (feedback items add to pervasiveness)
       files_after: [job-card-weekly-feedback, tag-list]
     - module: 4
-      adds: Alternatives map job. First hand-off between jobs. Reads the driver log and the insight log. Hand-off rule says what passes and what stops
+      adds: Alternatives map job. First hand-off between jobs. Reads the driver log and the problem backlog. Hand-off rule says what passes and what stops
       files_after: [job-card-alternatives-map, alternatives-map]
     - module: 5
-      adds: Stakeholder answer job, with status proposals (row 07 fold). Reads all logs and past reports. Hand-off rules say what the agent may tell other people
+      adds: >-
+        Stakeholder answer job, with ranking and validation proposals by segment (row 07 fold). Reads all logs and
+        past reports. Hand-off rules say what the agent may tell other people. The PM decides
       files_after: [job-card-stakeholder-answers, past-reports]
   catch_up_kits:   # methods.md M10. Text kit, no sharing feature needed. Rebuild in about 5 minutes. Not tested yet (Gate 2 proof)
     rule: One kit per module. Each kit holds the brief text and the knowledge files as they are at the start of that module, plus a one-page rebuild card per platform
     kits:
-      - kit-m1-template: The starter template. Brief v1 (v3 quality checks and hand-off rules, the PM's bar blank), code book, empty insight log
-      - kit-m2: State after module 1. Brief v2, code book, insight log after batch 2
+      - kit-m1-template: The starter template. Brief v1 (v3 quality checks, evidence profile, fact labels and hand-off rules; no ranking rule), code book, empty problem backlog
+      - kit-m2: State after module 1. Brief v2 (with a ranking rule), code book, problem backlog after batch 2
       - kit-m3: State after module 2. Adds win/loss job card, driver code book, driver log
-      - kit-m4: State after module 3. Adds weekly feedback job card, tag list, updated insight log
+      - kit-m4: State after module 3. Adds weekly feedback job card, tag list, updated problem backlog
       - kit-m5: State after module 4. Adds alternatives map job card and map
       - kit-final: The complete agent with all five jobs. Learners take it home to rebuild on their own work
     gemini_note: Gemini can also share a skill as an editable copy where Drive sharing is allowed (gm-04, not verified). The text kit stays the core path
-    copilot_note: Each kit holds .txt and .docx copies of the knowledge files and a fallback instructions text under 8,000 characters for learners with no Copilot license
+    copilot_note: Each kit holds .txt copies of the knowledge files and a fallback instructions text under 8,000 characters for learners with no Copilot license
 
-autonomy_ladder:   # decision 35. Dan tries it at Gate 2
+autonomy_ladder:   # decision 35. Rung 2 and rung 3 scope accepted (Gate 2 decision 10, final)
   rungs:
     - rung: 1
       name: Hand-run batch
@@ -207,16 +255,16 @@ autonomy_ladder:   # decision 35. Dan tries it at Gate 2
       name: Recurring run with a flag report
       meaning: >-
         The agent runs on each new week of input. The PM reads only the flag report and a sample, not each item.
-        Core path is a hand-started run on week 2 (schedules are not verified on any platform; a schedule with no new
-        input does nothing in a no-connector lab, methods.md M8). Schedule or trigger is a stretch step where the
-        platform allows. No scheduled-task setup slide (CAW-AI slide 9)
+        Core path is a hand-started run on week 2 on all 4 platforms (a schedule with no new input does nothing in a
+        no-connector lab, methods.md M8). Schedule or trigger is a stretch step only on step cards where verified
+        (stretch_scope). No scheduled-task setup slide (CAW-AI slide 9)
       modules: [3]
     - rung: 3
       name: Hand-off between jobs
       meaning: >-
         One job's output is the next job's input, with a hand-off rule that says what passes and what stops. In this
         course "agents that hand work to other agents" means jobs inside the one course agent (research brief limit 2).
-        Stretch: a second agent on platforms that allow it
+        Stretch: a second agent, only on step cards where verified (stretch_scope)
       modules: [4, 5]
     - rung: 3 plus
       name: Agent that faces other people
@@ -235,6 +283,9 @@ planted_error_fade:   # house rule 13, decision 34
     Critic S2. The success check on the lab brief slide is general (PRD rule 7). It names the outputs and the
     manager actions, never the error. The error-specific pass condition is shown only in the debrief
     (debrief_check in each module). Step card steps also stay general
+  case_counts: >-
+    Debrief checks name case record ids. The counts for each check are in case/expected-results.md, recounted by the
+    case builder under the problem backlog model (rework brief 2, item 10)
 
 module_arc:   # PRD module arc, 40/60 split per module
   steps:
@@ -243,11 +294,13 @@ module_arc:   # PRD module arc, 40/60 split per module
     - { step: Build pattern and lab brief (goal, data safety, success criteria, planted error warning), mode: instructor-led }
     - { step: Hands-on lab in platform breakout rooms, mode: hands-on }
     - { step: Debrief, error reveal and "what you do Monday" close (optional). Ends with the 2-step log save card, mode: hands-on }
+  arc_minutes_order: [why this matters, live demo, build pattern and lab brief, lab, debrief]
   card_rules: >-
     Critic S5. 6 steps or fewer. One action per step. A step that sends files with a prompt is one action ("Send ...
     with the prompt ..."). Saving is not a step: the card header says how each platform saves (Claude and ChatGPT
     save as you go; Copilot: select Update; Gemini: select Save). The rerun after the fix is in the debrief where the
-    card has no room. Card text in this spec is the outline; Stage 3 writes the platform cards from it
+    card has no room. Card text in this spec is the outline; Stage 3 writes the platform cards from it.
+    Core steps are the same on all 4 platform cards (decision 10)
   capability_map: Off (settings). If Dan turns it on, it goes in the debrief
   breakout_setup: >-
     Zoom: breakout rooms by platform, 3 to 5 learners each. In person: tables by platform. Each step card starts:
@@ -265,14 +318,16 @@ course_open:
     Create a Project (Claude, ChatGPT), an agent (Copilot) or a skill (Gemini) named "Market Evidence Agent".
     Paste a 3-line starter instruction. Upload one sample file. Ask it to list the file and its first heading.
     Save, close and reopen it. Pass: the agent answers after reopen.
+  half_days: Same 25 minutes at the start of day 1
 
 course_close:
   minutes: 15
   instructor_led: 5
   hands_on: 10
   segments:
-    - { minutes: 5, mode: instructor-led, item: "Recap of the manager loop. Theme: there is no magic number" }
+    - { minutes: 5, mode: instructor-led, item: "Recap of the manager loop. Theme: there is no magic number. The agent proposes, you decide" }
     - { minutes: 10, mode: hands-on, item: "Monday plan. Each learner picks the first job to run on their own work, sets an audit date and saves kit-final" }
+  half_days: { minutes: 10, instructor_led: 4, hands_on: 6, note: "Same content. Recap 4 minutes, Monday plan 6 minutes" }
 
 modules:
   - id: m1
@@ -280,65 +335,73 @@ modules:
     title: Run your first batch and manage it by flags
     workflow_row: mr-wf-01
     folded_rows: [mr-wf-05]
-    workflow: Turn each new batch of buyer interviews into an updated, checked insight log
+    workflow: Turn each new batch of buyer interviews into an updated, checked problem backlog
     category: Market
     focus_area: Market Problems
+    capability_standards: { status: "proposed, Dan to confirm", skills: [1.1 Market Problem Identification, 1.3 Market Discovery], competencies: [1.1A, 1.1B, 1.3D] }
     bottleneck: Synthesis takes days per study, so insight reaches the roadmap late. AI cuts the analysis time, but the work moves to checking AI output (E4, E10, E5)
-    minutes: 70   # v0.2: was 80 (critic M7, 60-minute lunch)
+    minutes: 70   # full day
     split: { instructor_led: 28, hands_on: 42, percent_instructor_led: 40 }
     arc:
       - { minutes: 8, mode: instructor-led, step: "Why this matters. Workflow and bottleneck. Start where PDW-AI stops: no slides on coding or quote checks" }
-      - { minutes: 11, mode: instructor-led, step: "Live demo. Build the agent from the template, run batch 1, read the flag report" }
-      - { minutes: 9, mode: instructor-led, step: "Build pattern and lab brief. The manager loop. Data safety. Planted error is told" }
+      - { minutes: 11, mode: instructor-led, step: "Live demo. Build the agent from the template, run batch 1, read the evidence profiles, the proposed ranking and the flag report" }
+      - { minutes: 9, mode: instructor-led, step: "Build pattern and lab brief. The manager loop. The evidence profile and fact labels. Data safety. Planted error is told" }
       - { minutes: 33, mode: hands-on, step: "Lab 1 (fast-start card per platform for learners new to the builder)" }
-      - { minutes: 9, mode: hands-on, step: "Debrief. Reveal the error. No magic number: who sets the bar. Dan's test: can you predict that the next buyer of this persona will raise it? Only the PM promotes to pattern. What you do Monday. Log save card" }
+      - { minutes: 9, mode: hands-on, step: "Debrief. Reveal the error. No magic number: priority is relative across the backlog. Decide the order of your top problems by segment. Dan's test: can you predict that the next buyer of this persona will raise it? Only the PM calls a pattern. What you do Monday. Log save card" }
+    half_day:   # Gate 2 decision 12
+      minutes: 80
+      split: { instructor_led: 32, hands_on: 48, percent_instructor_led: 40 }
+      arc_minutes: [9, 12, 11, 38, 10]
+      note: The extra time goes to the evidence profile in the lab brief and to the lab
     rung: 1
     rung_name: Hand-run batch
     objectives:
       - id: m1-o1
-        text: Build the Market Evidence Agent from the template on your platform, with a brief, a code book and an output format
+        text: Build the Market Evidence Agent from the template on your platform, with a brief, a code book, an evidence profile and an output format
         practiced_in: lab step 1 to 2
       - id: m1-o2
         text: Decide each item in the flag report (keep, fix, send to discovery)
         practiced_in: lab step 3
       - id: m1-o3
-        text: Audit 3 random insights against the source interviews and record what you find
+        text: Audit 3 random problems in the backlog against the source interviews and record what you find
         practiced_in: lab step 4
       - id: m1-o4
-        text: Write your evidence bar and a new rule into the brief, then rerun and compare
+        text: Add a ranking rule to the brief, rerun, and decide the order of your top problems by segment
         practiced_in: lab step 5, step 6 and debrief
     lab:
-      goal: Delegate interview synthesis to an agent, and manage it by its checks and flags
-      core_message: Do not do the work between AI steps. Set the job, the checks and the hand-off rules, then review the flags
-      pm_decision: Which market problems go forward to prioritization, and for which segment. The PM sets the bar, and only the PM promotes an insight to "pattern"
+      goal: Delegate interview synthesis to an agent that keeps a problem backlog, and manage it by its checks and flags
+      core_message: Do not do the work between AI steps. Set the job, the checks and the hand-off rules. Read the evidence, then decide the order
+      pm_decision: >-
+        The order of the market problems in each segment, which problems go forward to prioritization, and which
+        need more discovery. The agent proposes a ranking. Only the PM decides the order and calls a pattern
       build: Agent from the template (kit-m1-template)
-      template_contents:   # matches the approved worked example row v3 (critic S7), plus the PA-02 rules
+      template_contents:   # matches the approved worked example row v3 (critic S7), plus the PA-02 rules and the backlog model
         quality_checks:
           - Each quote is found word for word in its source interview
-          - Each insight counts interviews, not quotes, by persona and segment
-          - Each insight shows frequency, intensity (with a quote) and impact clues
+          - Each problem counts interviews, not quotes, by persona and segment (decision 2, provisional C)
+          - Each problem has an evidence profile, reported as facts (urgency with a quote, pervasiveness, willingness to pay clues, source dates)
           - Each source is labeled PM-held or AI-moderated (PA-02)
+          - Each problem in the proposed ranking has a reason that cites its evidence profile
         handoff_rules:
           - Notes that fit no code
-          - A new insight that contradicts the log
-          - >-
-            An insight below the PM's bar: label "emerging" or "single source". Keep it in the log for trend tracking.
-            Do not drop it. Do not call it a pattern
+          - A new problem that contradicts the backlog
           - A segment with no PM-held interview (PA-02)
-          - A claim about one segment that does not meet the PM's bar inside that segment (segment_rule, OI-15)
-        status_labels: The agent writes "meets the PM's bar", "emerging" or "single source". Never "pattern" (PA-01, OI-13)
+          - A claim about one segment before the problems in that segment are ranked (segment_rule)
+        fact_labels: single source, AI-moderated only, one segment only. A labeled problem stays in the backlog for trend tracking
+        agent_never_writes: The agent never writes "pattern" or "validated" (PA-01)
         left_out_on_purpose: >-
-          The PM's bar. The template has a blank line: "My bar for this study: ___ (interviews, accounts, PM-held,
-          segment)". With no bar, the agent ranks by quotes and intensity, so the vocal buyer looks strong even though
-          the count check shows 1 interview. The learner writes the bar and one rule for what the audit found. That
-          edit is the tuned brief (learner evidence). OI-14 records this change from v0.1 for Dan
-      card_steps:   # 6 or fewer, 1 action each (critic S5)
+          A ranking rule. The template asks the agent to propose a ranking with reasons, but it does not say how to
+          weigh the evidence. With no rule, the agent weighs quotes and urgency, so the vocal buyer ranks near the
+          top even though the evidence profile shows 1 interview. The learner adds one ranking rule for what the
+          audit found. That edit is the tuned brief (learner evidence). If proof P1 fails on 2 or more platforms,
+          Dan reviews option B (decision 2)
+      card_steps:   # 6 or fewer, 1 action each (critic S5). Same core steps on all 4 platforms
         - Add the template brief and the code book to your agent
-        - Send batch 1 with the prompt "Run the insight log job"
+        - Send batch 1 with the prompt "Run the problem backlog job"
         - Decide each item in the flag report
-        - Audit 3 random insights against the source interviews
-        - Write your bar and one rule for what you found into the brief
-        - Send batch 2 with the prompt "Run the insight log job"
+        - Audit 3 random problems against the source interviews
+        - Add one ranking rule for what you found to the brief
+        - Send batch 2 with the prompt "Run the problem backlog job"
       core_path_no_connectors: yes. Upload batch files and run
       inputs:
         own_work: 5 to 15 of your own interview notes or transcripts, from an approved tool, with consent
@@ -348,33 +411,36 @@ modules:
         - Turn the job into a custom skill (Claude all plans, ChatGPT business plans, Gemini)
       planted_error:
         error: >-
-          One vocal buyer looks like strong evidence. Three real quotes from one interview make an insight rank near
-          the top, and with no bar in the brief the agent can mark it "meets the PM's bar". The quote check passes.
-          Only the audit finds it
+          One vocal buyer ranks near the top. Interview I-104 (persona P05) gives 3 real quotes in 1 interview, and
+          the agent ranks that problem near the top of the proposed ranking. The quote check passes. The learner
+          finds it by reading the evidence profile (1 interview, single source) and in the audit. Workbook
+          competency 1.1B: the noisy 20% versus the quiet 80%
         warning: told
         fix: >-
-          The learner writes the PM's bar into the brief and adds a rule, for example "rank insights by interviews,
-          not quotes". Below the bar goes to the flag report as "emerging" or "single source" and stays in the log
+          The learner adds a ranking rule, for example "Rank by interviews, accounts and segments. Quote count is not
+          evidence of pervasiveness. State the interview count in each reason." The problem stays in the backlog
+          with its single source label
       success_check: >-
-        Batch 2 run. The log updates. Each insight has an agent status: "meets the PM's bar", "emerging" or
-        "single source". The agent writes "pattern" for no insight; only you promote an insight to "pattern". Each
-        flag report item has your decision. You recorded 3 audit findings and wrote your bar into the brief
+        Batch 2 run. The backlog updates. Each problem has an evidence profile and any fact labels that apply. The
+        agent proposes a ranking with a reason for each problem. The agent writes "pattern" and "validated" nowhere.
+        Each flag report item has your decision. You recorded 3 audit findings and added a ranking rule to the brief
       debrief_check: >-
-        Shown in the debrief only. The vocal buyer insight (1 interview, 3 quotes) is labeled "single source", not
-        "meets the PM's bar". The flag report lists the batch 2 contradiction. The agent wrote "pattern" nowhere
-      learner_evidence: [tuned brief (v1 to v2 with the PM's bar and one new rule), flag report decisions for batch 1, audit findings for 3 insights]
+        Shown in the debrief only. After the fix, the I-104 problem is not ranked near the top on quotes. Its reason
+        states its interview count. It stays in the backlog. The flag report lists the batch 2 contradiction. The
+        agent wrote "pattern" nowhere. Counts: case/expected-results.md
+      learner_evidence: [tuned brief (v1 to v2 with one ranking rule), flag report decisions for batch 1, audit findings for 3 problems, the PM's order of the top problems by segment]
       data_safety: standard (see data_safety_note)
-    agent_growth: Builds the agent. Adds the insight log job
+    agent_growth: Builds the agent. Adds the problem backlog job
     catch_up_kit: kit-m1-template (start); kit-m2 (end state)
     registry_guard: >-
-      PDW-AI teaches one-pass synthesis, the quote check and frequency vs intensity. Refer to them as known. No slides on
-      them. Time goes to batches, the log over time, the flag report, the audit and tuning. AI Agents course boundaries
-      and guardrails are referred to, with new slides only (decision 33). Not CAW-AI buyer voice watch. Brief template
-      is close to PRW-AI JOB AND CONTEXT, RULES, OUTPUT: refer to it as known
+      PDW-AI teaches one-pass synthesis and the quote check. Refer to them as known. No slides on them. Time goes to
+      batches, the backlog over time, the evidence profile, the flag report, the audit and tuning. AI Agents course
+      boundaries and guardrails are referred to, with new slides only (decision 33). Not CAW-AI buyer voice watch.
+      Brief template is close to PRW-AI JOB AND CONTEXT, RULES, OUTPUT: refer to it as known
     talk_track_slots:
       why_this_matters: PMs lack time with customers (N5, n = 677, 2026). Synthesis moved from doing to checking (E4, E10 vendor; E12 counterweight). No speed figure on slides
       story_slot: Optional. A client team that shipped a reworded quote into a roadmap deck. Told as a story heard from a client team, not as the instructor's own experience
-      monday_close: Run your agent on your last interview batch. Audit 3 insights before you share anything
+      monday_close: Run your agent on your last interview batch. Audit 3 problems before you share anything
       cautions:
         - Synthetic respondents flatten opinion (E16, E17). Use once in the course. If Dan picks bond story candidate 2, do not repeat it here
         - AI-moderated interviews (PA-02). AI may run some interviews. PMs still talk to every segment. AI personas only from data the team collected. The therapy preference study needs a 2026 primary source before any slide use
@@ -387,15 +453,21 @@ modules:
     workflow: Run a win/loss program that turns each batch of decided deals into a checked decision-driver report
     category: Market
     focus_area: Win/Loss Analysis
+    capability_standards: { status: "proposed, Dan to confirm", skills: [1.3 Market Discovery, 8.1 Market Data Context and Pattern Recognition], competencies: [1.3A, 1.3C, 8.1B], gap: "Win/Loss Analysis box has no primary skill (capability-mapping.md gap 2)" }
     bottleneck: Manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all (W1, W2; claims only, no figure on slides)
-    minutes: 70
+    minutes: 70   # full day
     split: { instructor_led: 28, hands_on: 42, percent_instructor_led: 40 }
     arc:
       - { minutes: 8, mode: instructor-led, step: "Why this matters. Most teams do not get this data. Pragmatic program rules: interview 2 to 4 weeks after the decision, 10 or more deals, interviews by someone outside sales" }
       - { minutes: 10, mode: instructor-led, step: "Live demo. Add the win/loss job. Join the CRM export and the interview notes" }
-      - { minutes: 10, mode: instructor-led, step: "Build pattern and lab brief. Source labels. Match rate, not truth rate. Hint: audit before you approve" }
+      - { minutes: 10, mode: instructor-led, step: "Build pattern and lab brief. Source labels. Match rate, not truth rate. Report counts, not verdicts. Hint: audit before you approve" }
       - { minutes: 32, mode: hands-on, step: "Lab 2" }
       - { minutes: 10, mode: hands-on, step: "Debrief. The aha: each learner writes one sentence on what the match rate table shows. Reveal the error. The PA-04 minimum of 10 counts decided deals, not interviewed deals. How to share findings with sales. What you do Monday. Log save card" }
+    half_day:   # Gate 2 decision 12
+      minutes: 75
+      split: { instructor_led: 30, hands_on: 45, percent_instructor_led: 40 }
+      arc_minutes: [8, 11, 11, 34, 11]
+      note: The extra time goes to the match rate read in the debrief and to the lab
     rung: 1
     rung_name: Hand-run batch, two sources joined
     objectives:
@@ -418,16 +490,19 @@ modules:
       build: Extend the agent with the win/loss job card, the driver code book and a driver log
       quality_checks:
         - Each driver has a buyer quote found word for word in the interview
-        - Each pattern rests on the minimum number of deals the PM set in the brief
+        - Each driver shows its count of interviewed deals, its accounts and its segments (counts, not a verdict)
         - Each deal is marked "interview" or "CRM only"
       handoff_rules:
         - A deal where the CRM reason and the buyer reason differ
         - A lost deal that names an alternative not in the code book
-        - A segment with too few deals to report
+        - A driver that rests on deals from one segment only (fact label, reported with the count)
+      no_threshold: >-
+        Rework brief 2, item 9. The agent reports deal counts and changes per driver and flags them. It does not
+        apply a pass or fail number to a driver. The v0.2 case "3 deals" bar is removed
       program_rules: >-
-        Minimum 10 decided deals per batch. The minimum counts decided deals, not interviewed deals (critic N2: the
-        case has 14 decided and 9 interviewed). Someone outside sales runs the interviews (PA-04)
-      card_steps:   # 6 or fewer, 1 action each (critic S5)
+        Pragmatic program rule from Gate 1 (PA-04), not a truth bar: minimum 10 decided deals per batch. The minimum
+        counts decided deals, not interviewed deals (critic N2). Someone outside sales runs the interviews
+      card_steps:   # 6 or fewer, 1 action each (critic S5). Same core steps on all 4 platforms
         - Add the win/loss job card and the driver code book to your agent
         - Send the CRM export and the interview notes with the prompt "Run the win/loss job"
         - Decide each flag in the flag report
@@ -439,17 +514,18 @@ modules:
         own_work: An export of 10 or more decided deals and any win/loss notes, from an approved tool, with confidentiality agreed
         fallback_case: "Larkspan: m2-driver-code-book.md (knowledge), m2-crm-export-q2.csv and m2-winloss-notes-q2.md (run), m2-check-sample.md (check)"
       stretch:
-        - Run the job on each new batch when the export file arrives, where the platform allows (not verified)
+        - Run the job on each new batch when the export file arrives. Schedule stretch, only on step cards where verified (stretch_scope)
       planted_error:
         error: >-
           A CRM-only deal leaks into the buyer findings. The agent fills a missing interview with the CRM reason
           ("price"), so price looks like a top buyer driver. The quote check passes on deals with interviews.
           Only the audit of the deal source column finds it
         warning: hint
-      success_check: The match rate table is complete. Each deal has a source label. Each flag has your decision. You audited 2 deals and added a rule to the brief
+      success_check: The match rate table is complete. Each deal has a source label. Each driver shows its counts. Each flag has your decision. You audited 2 deals and added a rule to the brief
       debrief_check: >-
         Shown in the debrief only. The match rate table counts only deals with interviews. No "CRM only" deal appears
-        in the buyer driver findings. The flag report lists each deal where the CRM reason and the buyer reason differ
+        in the buyer driver findings. The flag report lists each deal where the CRM reason and the buyer reason
+        differ. Counts: case/expected-results.md
       learner_evidence: [match rate table with the learner's read of it, flag report decisions, audit findings for 2 deals, brief change]
       data_safety: standard (see data_safety_note). Interview notes and CRM exports hold customer names and deal values
     agent_growth: Adds the win/loss job, driver code book and driver log
@@ -466,44 +542,48 @@ modules:
     title: "The weekly run: read flags, not every item"
     workflow_row: mr-wf-03
     folded_rows: [mr-wf-04]
-    workflow: Route each week's inbound customer feedback into the market problem log
+    workflow: Route each week's inbound customer feedback into the problem backlog
     category: Market
     focus_area: Market Problems
+    capability_standards: { status: "proposed, Dan to confirm", skills: [1.1 Market Problem Identification, 8.1 Market Data Context and Pattern Recognition], competencies: [1.1B, 1.1C, 8.1B, 8.1D] }
     bottleneck: Feedback is spread across many tools. Tagging by hand is slow, subjective and does not scale. Tags drift, so trends become unreliable (W4, W5)
-    minutes: 60
+    minutes: 60   # full day and half days
     split: { instructor_led: 24, hands_on: 36, percent_instructor_led: 40 }
     arc:
-      - { minutes: 8, mode: instructor-led, step: "Why this matters. Workflow and bottleneck. Count accounts, not mentions" }
+      - { minutes: 8, mode: instructor-led, step: "Why this matters. Workflow and bottleneck. Count accounts, not mentions. Internal platform example (decision 9): the Fleet Data Platform team at the case company gets requests from other teams; the loudest channel is not the most pervasive problem" }
       - { minutes: 8, mode: instructor-led, step: "Live demo. Add the weekly feedback job. Run week 1, then week 2" }
-      - { minutes: 8, mode: instructor-led, step: "Build pattern and lab brief. Rung 2: read only the flag report and a sample. Hint: audit before you approve" }
+      - { minutes: 8, mode: instructor-led, step: "Build pattern and lab brief. Rung 2: read only the flag report and a sample. One slide names the platform gap: schedule stretch only where verified (decision 10). Hint: audit before you approve" }
       - { minutes: 28, mode: hands-on, step: "Lab 3" }
-      - { minutes: 8, mode: hands-on, step: "Debrief. Rerun week 2 with the new rule. Reveal the error. What makes an agent say no fit. What you do Monday. Log save card" }
+      - { minutes: 8, mode: hands-on, step: "Debrief. Rerun week 2 with the new rule. Reveal the error. What makes an agent say no fit. Which problems move in the backlog. What you do Monday. Log save card" }
     rung: 2
     rung_name: Recurring run with a flag report
     objectives:
       - id: m3-o1
-        text: Extend the agent to tag a week of feedback against the insight log, counted by unique account
+        text: Extend the agent to tag a week of feedback against the problem backlog, counted by unique account
         practiced_in: lab step 1 to 3
       - id: m3-o2
         text: Write a "no fit" rule that makes the agent say "no fit" instead of guessing
         practiced_in: lab step 6 and the debrief rerun
       - id: m3-o3
-        text: Audit a sample of 10 tagged items and the whole "no fit" group, and decide which moves need discovery
+        text: Audit a sample of 10 tagged items and the whole "no fit" group, and decide which changes need discovery
         practiced_in: lab step 4 and 5
     lab:
-      goal: Extend the course agent to tag a week of feedback against the market problem log and report what moved
+      goal: Extend the course agent to tag a week of feedback against the problem backlog and report what changed
       core_message: The hard part is not the tagging. It is the rule that makes the agent say "no fit" instead of guessing
-      pm_decision: Which market problems gain or lose weight, and which new problems need discovery interviews
-      build: Extend the agent with the weekly feedback job card and the tag list. It writes into the module 1 insight log
+      pm_decision: Which problems move up or down the backlog, and which new problems need discovery interviews
+      build: Extend the agent with the weekly feedback job card and the tag list. It writes into the module 1 problem backlog. Feedback items add to pervasiveness (accounts and segments) with source type "feedback item"
       quality_checks:
         - Each tag has a one-line reason that quotes the item
         - Each item has exactly one primary tag or "no fit"
         - Counts are by unique account
       handoff_rules:
-        - Items marked "no fit" that repeat across 3 or more accounts
-        - A problem that moves more than the threshold in the brief
+        - Items marked "no fit" that repeat across accounts. The PM writes how many accounts in the brief (case PM's choice; see case/company.md)
+        - A problem whose account count changes by more than the number the PM writes in the brief (case PM's choice; see case/company.md)
         - Items that hold personal or health data
-      card_steps:   # 6 or fewer, 1 action each (critic S5). Rerun of week 2 is in the debrief
+      hand_off_numbers_note: >-
+        Rework brief 2, item 9. These numbers are hand-off rules the PM writes: they decide what the PM reads first.
+        They do not decide that a problem is real. The case shows one PM's choice
+      card_steps:   # 6 or fewer, 1 action each (critic S5). Rerun of week 2 is in the debrief. Same core steps on all 4 platforms
         - Add the weekly feedback job card and the tag list to your agent
         - Send the week 1 export with the prompt "Run the weekly feedback job"
         - Send the week 2 export with the prompt "Run the weekly feedback job"
@@ -515,11 +595,11 @@ modules:
         own_work: One or two weeks of feedback items (tickets, call notes, requests) with personal data removed, from an approved tool
         fallback_case: "Larkspan: m3-tag-list.md (knowledge; .txt copy for Copilot), m3-feedback-week-1.csv and m3-feedback-week-2.csv (run), m3-check-sample.md (check)"
       stretch:
-        - Set a schedule or a file trigger where the platform allows and the input can reach the agent (not verified; no CAW-AI setup slide)
+        - Set a schedule or a file trigger. Only on step cards where verified (stretch_scope). Copilot and Gemini cards say it is not available in this course. No CAW-AI setup slide
         - >-
           Add a survey wave as a second input (case: m3-stretch-survey-wave.csv). Code the open-text answers and set
-          them next to the closed answers. Apply urgent, pervasive and willing to pay (row 04 fold, PA-06). PDW-AI
-          teaches these three tests: refer to them as known, no new slide (critic N3)
+          them next to the closed answers. Add urgency, pervasiveness and willingness to pay clues to the evidence
+          profile (row 04 fold, PA-06). PDW-AI teaches these three tests: refer to them as known, no new slide (critic N3)
       planted_error:
         error: >-
           Forced fit. The agent tags a new problem to the nearest old tag, so the "no fit" group stays empty and the
@@ -527,21 +607,25 @@ modules:
           random items finds it
         warning: hint
       success_check: >-
-        The week 2 "what moved" summary is complete and counted by unique account. Each flag has your decision. You
+        The week 2 "what changed" summary is complete and counted by unique account. Each flag has your decision. You
         audited 10 items and the "no fit" group and added a "no fit" rule to the brief
       debrief_check: >-
-        Shown in the debrief only, after the rerun of week 2. The new problem (case: remote inspector access, 4
-        accounts) is in the "no fit" group and the flag report names it. No tag gets a false "big move" flag (case:
-        P02 stays at 3 accounts). Counts are by account, not mention (case: P01 shows 7, not 11). The item with
-        personal data is flagged (case: F-1221)
+        Shown in the debrief only, after the rerun of week 2. The new problem (case: remote inspector access) is in
+        the "no fit" group and the flag report names it. No problem gets a false change flag under the case PM's
+        change rule (case: P02). Counts are by account, not mention (case: P01). The item with personal data is
+        flagged (case: F-1221). Counts: case/expected-results.md
       learner_evidence: [flag report decisions for week 2, audit findings for 10 items and the no-fit group, the "no fit" rule added to the brief]
       data_safety: standard (see data_safety_note). Support tickets can hold PHI, account or card data. Remove it before upload
-    agent_growth: Adds the weekly feedback job and tag list. Same insight log as module 1
+    agent_growth: Adds the weekly feedback job and tag list. Same problem backlog as module 1
     catch_up_kit: kit-m3
-    registry_guard: CAW-AI buyer voice watch reads public reviews of competitors monthly. This job reads the company's own feedback into its own log. No scheduled-task setup slide (CAW-AI slide 9). New slides only
+    registry_guard: CAW-AI buyer voice watch reads public reviews of competitors monthly. This job reads the company's own feedback into its own backlog. No scheduled-task setup slide (CAW-AI slide 9). New slides only
     talk_track_slots:
       why_this_matters: Teams with hundreds of items a week stop reading. The manager reads flags and a sample instead
-      story_slot: Optional. An internal platform team where the loudest Slack channel got served first (W18, one source; example only)
+      internal_platform_example: >-
+        Required (Gate 2 decision 9, final). Use the case Fleet Data Platform (internal PM) as the example: internal
+        teams send requests in many channels, and the loudest channel gets served first. Count accounts (here,
+        internal teams), not mentions. The case builder adds one lab 5 question from the same PM
+      story_slot: Optional. An internal platform team where the loudest Slack channel got served first (W18, one source; example only). Told as a story from Pragmatic's work with companies
       monday_close: Export last week's feedback. Run the job. Read only the flag report
       hardware_and_internal_examples: Field service work orders and technician notes (W17, one source). Internal intake requests and office hours (W18, one source)
 
@@ -553,16 +637,17 @@ modules:
     workflow: Keep the alternatives map current from the team's own evaluator and deal evidence
     category: Market
     focus_area: Competitive Landscape
+    capability_standards: { status: "proposed, Dan to confirm", skills: [1.3 Market Discovery], competencies: [1.3A], gap: "Competitive Landscape box has primary skill 2.2 (capability 2). Do not claim 2.2 (capability-mapping.md gap 1)" }
     bottleneck: >-
       Keeping the competitive landscape current is recurring work that no one has time for, and hand-built documents
       age quickly (N13, W21 weak). Gap: no source on an alternatives map built from own deal evidence. Dan supplies one
-      real example (Gate 1 decision f)
-    minutes: 55
+      real example (Gate 1 decision f), told as a Pragmatic or unnamed client story (Gate 2 decision 6)
+    minutes: 55   # full day and half days. Gate 2 decision 8 (final)
     split: { instructor_led: 22, hands_on: 33, percent_instructor_led: 40 }
     arc:
-      - { minutes: 7, mode: instructor-led, step: "Why this matters. Buyers choose workarounds and do nothing more often than teams track. Example slot (Dan's example, decision f)" }
+      - { minutes: 7, mode: instructor-led, step: "Why this matters. Buyers choose workarounds and do nothing more often than teams track. Example slot (decision 6)" }
       - { minutes: 8, mode: instructor-led, step: "Live demo. Add the map job. The win/loss job hands its driver log to the map job" }
-      - { minutes: 7, mode: instructor-led, step: "Build pattern and lab brief. What a hand-off rule is. Hint: audit before you approve" }
+      - { minutes: 7, mode: instructor-led, step: "Build pattern and lab brief. What a hand-off rule is. One slide names the platform gap: second-agent stretch only where verified (decision 10). Hint: audit before you approve" }
       - { minutes: 25, mode: hands-on, step: "Lab 4" }
       - { minutes: 8, mode: hands-on, step: "Debrief. Rerun with the fixed hand-off rule. Reveal the error. Which alternative to beat in each segment. What you do Monday. Log save card" }
     rung: 3
@@ -583,30 +668,30 @@ modules:
     lab:
       goal: Extend the course agent to keep an alternatives map from the team's own evaluator and deal evidence
       core_message: Map what buyers chose, not what competitors announce. Every entry must trace back to a buyer or a deal
-      pm_decision: Which alternatives the team must beat in each segment, and what goes to positioning, pricing and the roadmap
-      build: Extend the agent with the alternatives map job card and the map file. The map job reads the driver log (module 2) and the insight log (modules 1 and 3)
+      pm_decision: Which alternatives the team must beat in each segment, and what goes to positioning, pricing and the roadmap. Scoring and weighting stay with the Product Strategy and Planning course
+      build: Extend the agent with the alternatives map job card and the map file. The map job reads the driver log (module 2) and the problem backlog (modules 1 and 3)
       quality_checks:
         - Each map entry links to 1 or more evidence rows with a deal id or interview id
         - Each entry shows its source type (buyer interview or CRM only)
-        - Each "growing" or "fading" label states the two periods compared
+        - Each "growing" or "fading" label states the two periods compared and the counts in each
       handoff_rules:
         - An alternative that is not in the map
         - A deal where the CRM competitor field and the buyer's answer differ
         - A segment where "do nothing" or a workaround is the top alternative
-      card_steps:   # 6 or fewer, 1 action each (critic S5). Rerun is in the debrief
+      card_steps:   # 6 or fewer, 1 action each (critic S5). Rerun is in the debrief. Same core steps on all 4 platforms
         - Add the alternatives map job card and the current map to your agent
         - Write one hand-off rule from the win/loss job to the map job
         - Send the evidence pack with the prompt "Run the alternatives map job"
         - Decide each flag in the flag report
         - Audit 3 random map entries against the interviews and deal records
         - Fix the hand-off rule for what you found
-      core_path_no_connectors: yes. Own work uses the driver log and insight log in the agent plus the CRM export. The case sends one evidence pack
+      core_path_no_connectors: yes. Own work uses the driver log and problem backlog in the agent plus the CRM export. The case sends one evidence pack
       inputs:
         own_work: Your module 2 driver log, or your CRM export of decided deals with a competitor field, plus any interview notes
-        fallback_case: "Larkspan: m4-alternatives-map.md (knowledge; .txt copy for Copilot), m4-evidence-pack.md (run; holds the driver log, CRM export, interviews and insight log), m4-check-sample.md (check)"
+        fallback_case: "Larkspan: m4-alternatives-map.md (knowledge; .txt copy for Copilot), m4-evidence-pack.md (run; holds the driver log, CRM export, interviews and problem backlog), m4-check-sample.md (check)"
       stretch:
-        - Run the map job on each new win/loss batch, where the platform allows (not verified)
-        - Build the map job as a second agent that reads the first agent's output file, on platforms that allow it
+        - Run the map job on each new win/loss batch. Schedule stretch, only on step cards where verified (stretch_scope)
+        - Build the map job as a second agent that reads the first agent's output file. Only on step cards where verified (stretch_scope). Copilot and Gemini cards say it is not available in this course
       planted_error:
         error: >-
           A named competitor is counted where the buyer chose "do nothing". The CRM competitor field says
@@ -616,11 +701,12 @@ modules:
         warning: hint
       success_check: >-
         Every map entry shows its source type and links to a deal id or interview id. Each "growing" or "fading"
-        label names the two periods. Each flag has your decision. You audited 3 entries and fixed the hand-off rule
+        label names the two periods and the counts. Each flag has your decision. You audited 3 entries and fixed the
+        hand-off rule
       debrief_check: >-
         Shown in the debrief only, after the rerun. The mismatched deal moves to "do nothing" (case: D-3108). Rimecore
         shows no change (case: 2 in Q2, 2 in Q3). The flag report lists the CRM and buyer mismatch. Do nothing is the
-        top alternative in Food service
+        top alternative in Food service. Counts: case/expected-results.md
       learner_evidence: [hand-off rule as written and as fixed, audit findings for 3 traced entries, the alternative to beat in one segment with its evidence]
       data_safety: standard (see data_safety_note). Deal records hold customer names, deal values and competitor prices
     agent_growth: Adds the alternatives map job. First hand-off between jobs
@@ -630,7 +716,10 @@ modules:
       Competitive Intel Watchdog. No public sources, no competitor moves. Only the team's own interviews and deals
     talk_track_slots:
       why_this_matters: Teams track named competitors and miss the workarounds and "do nothing" that buyers choose
-      story_slot: Required example slot (decision f). Dan supplies one real example. Script it as Pragmatic's or an unnamed client's story so any instructor can tell it (see OI-05)
+      story_slot: >-
+        Required example slot (Gate 1 decision f, Gate 2 decision 6, final). Dan sends one real example before module
+        4 is built. Script it as Pragmatic's or an unnamed client's story, with identifying details removed, so any
+        instructor can tell it (decision 43)
       monday_close: List the top 3 alternatives your last 10 lost deals chose. Check how many are named competitors
       hardware_and_internal_examples: Hardware buyers keep the installed product longer, repair it or buy a distributor brand. Internal platform alternatives are team-built tools and spreadsheets. Gaps recorded
 
@@ -639,18 +728,24 @@ modules:
     title: The agent answers stakeholders, and you stay accountable
     workflow_row: mr-wf-09
     folded_rows: [mr-wf-07]
-    workflow: Answer stakeholder questions from past research with sourced, dated answers
+    workflow: Answer stakeholder questions from past research and the problem backlog with sourced, dated answers
     category: Market
     focus_area: Market Problems
+    capability_standards: { status: "proposed, Dan to confirm", skills: [1.1 Market Problem Identification, 8.4 Data Narrative and Stakeholder Communication], competencies: [1.1C, 1.1D] }
     bottleneck: People cannot find past insights, stakeholders do not remember study names, and teams commission new studies on questions already answered (W13 age flag kept by Dan, W20)
-    minutes: 65   # v0.2: was 70 (critic M7, 60-minute lunch)
+    minutes: 65   # full day
     split: { instructor_led: 26, hands_on: 39, percent_instructor_led: 40 }
     arc:
       - { minutes: 8, mode: instructor-led, step: "Why this matters. Workflow and bottleneck. Theme: be great at product management before you are great at AI" }
-      - { minutes: 9, mode: instructor-led, step: "Live demo. Add the answer job. Ask it a stakeholder question. Show the status proposals by segment" }
+      - { minutes: 9, mode: instructor-led, step: "Live demo. Add the answer job. Ask it a stakeholder question. Show the ranking and validation proposals by segment" }
       - { minutes: 9, mode: instructor-led, step: "Build pattern and lab brief. Boundaries for an agent that faces other people (new slides, decision 33). No error warning" }
       - { minutes: 30, mode: hands-on, step: "Lab 5" }
-      - { minutes: 9, mode: hands-on, step: "Debrief. Reveal the error. Fix the brief for what the citation audit found. Segment claims need the bar inside the segment. Which status the PM, not the agent, calls validated. What you do Monday" }
+      - { minutes: 9, mode: hands-on, step: "Debrief. Reveal the error. Fix the brief for what the citation audit found. Rank within a segment before you claim anything about it. The PM, not the agent, decides the order and what goes to validation. What you do Monday" }
+    half_day:   # Gate 2 decision 12
+      minutes: 60
+      split: { instructor_led: 24, hands_on: 36, percent_instructor_led: 40 }
+      arc_minutes: [7, 8, 9, 28, 8]
+      note: 5 minutes shorter than the full day. Times can flex in delivery (decision 8). The lab keeps all 6 card steps
     rung: 3 plus
     rung_name: Agent that faces other people
     objectives:
@@ -664,34 +759,41 @@ modules:
         text: Decide to send, change or hold each answer after you open each citation
         practiced_in: lab step 4 and 5
       - id: m5-o4
-        text: Judge the agent's status proposals and decide which problems you call validated
+        text: Judge the agent's ranking and validation proposals by segment, and decide the order and what goes to validation
         practiced_in: lab step 6 and debrief
     lab:
-      goal: Extend the course agent to answer stakeholder questions from the team's own research store
+      goal: Extend the course agent to answer stakeholder questions from the team's own research store and problem backlog
       core_message: An answer is only as good as what it admits it does not know
-      pm_decision: Whether a question needs new research or can be answered now, what to tell the stakeholder, and which problems count as validated
-      build: Extend the agent with the stakeholder answer job card and past reports. The job reads the insight log, driver log and alternatives map. It proposes a status per problem and per segment (segment_rule); the PM decides (row 07 fold)
+      pm_decision: Whether a question needs new research or can be answered now, what to tell the stakeholder, the order of the problems in each segment, and which problems go to validation
+      build: >-
+        Extend the agent with the stakeholder answer job card and past reports. The job reads the problem backlog,
+        driver log and alternatives map. It gives ranking and validation proposals by segment, with reasons from the
+        evidence profiles (segment_rule; row 07 fold). The PM decides. The agent never writes "validated"
       quality_checks:
-        - Each claim has a citation to a study in scope
-        - Each cited study shows its date and segment
+        - Each claim has a citation to a study or backlog entry in scope
+        - Each cited source shows its date and segment
         - The answer has a "what we do not know" line
       handoff_rules:
-        - The only evidence is older than the age limit in the brief
+        - The only evidence is older than the age limit the PM writes in the brief. It goes to the flag report (case PM's choice; see case/company.md)
         - Sources disagree
         - The question needs new research
-        - The evidence is below the PM's bar. The answer may not say "buyers want"
-        - A claim about one segment that does not meet the PM's bar inside that segment
-      card_steps:   # 6 or fewer, 1 action each (critic S5). Brief fix after the audit is in the debrief
+        - The evidence for a claim has a fact label (single source, AI-moderated only, one segment only). The answer states the label and may not say "buyers want"
+        - A claim about one segment before the problems in that segment are ranked. Never "<segment> buyers want" from one interview in that segment
+      card_steps:   # 6 or fewer, 1 action each (critic S5). Brief fix after the audit is in the debrief. Same core steps on all 4 platforms
         - Add the answer job card and the past reports to your agent
         - Write your age limit and hand-off rules into the brief
         - Send the stakeholder questions with the prompt "Run the stakeholder answer job"
         - Decide to send, change or hold each answer
         - Open each citation in one answer
-        - Decide which proposed statuses you accept as validated
+        - Decide the order and what goes to validation in each segment
       core_path_no_connectors: yes. The logs are already in the agent. Upload past reports and the questions
       inputs:
         own_work: Your logs from this course plus one or two past study reports, from an approved tool
-        fallback_case: "Larkspan: m5-past-reports.md (knowledge; .txt copy for Copilot), m5-stakeholder-questions.md (run: Q1 to Q3; Q4 is the check)"
+        fallback_case: >-
+          Larkspan: m5-past-reports.md (knowledge; .txt copy for Copilot), m5-stakeholder-questions.md (run, with
+          one check question). Includes one question from the Fleet Data Platform (internal) PM, answered from the
+          problem backlog (Gate 2 decision 9; the case builder adds it, with no change to any planted error or lab
+          1 to 4 count)
       stretch:
         - Share the agent with a stakeholder to ask it directly, where the company allows (not verified)
       planted_error:
@@ -701,15 +803,17 @@ modules:
           audit finds that the answer goes past its evidence
         warning: none
       success_check: >-   # fade level none: no error-specific condition before the lab (critic S2)
-        Each answer has your send, change or hold decision. You opened every citation in one answer. Each status
-        proposal has your decision
+        Each answer has your send, change or hold decision. You opened every citation in one answer. Each segment
+        has your decided order and your validation decisions
       debrief_check: >-
-        Shown in the debrief only. The fixed answer names the study date and segment of every source. The flag
-        report lists the old evidence for another segment (case: R-2024-07). The answer does not say "buyers want".
-        Status proposals are given by segment and stay labeled as proposals until the PM decides
-      learner_evidence: [send, change or hold decisions for 3 answers, audit findings for the cited answer, the hand-off rules for what the agent may say, validated-status decisions]
+        Shown in the debrief only. The fixed answer names the date and segment of every source. The flag report
+        lists the old evidence for another segment (case: R-2024-07). The answer does not say "buyers want".
+        Proposals are by segment and stay proposals until the PM decides. The agent does not write "food service
+        buyers want" from the one Food service interview (case: I-105; decision 3 test). Counts:
+        case/expected-results.md
+      learner_evidence: [send, change or hold decisions for the answers, audit findings for the cited answer, the hand-off rules for what the agent may say, the PM's order and validation decisions by segment]
       data_safety: standard (see data_safety_note). The research store holds customer names and quotes. Share answers only inside approved tools
-    agent_growth: Adds the stakeholder answer job and status proposals. The agent now has five jobs
+    agent_growth: Adds the stakeholder answer job and the ranking and validation proposals. The agent now has five jobs
     catch_up_kit: kit-m5 (start); kit-final (complete agent, take home)
     registry_guard: No workshop teaches research reuse. AI Agents course boundaries are referred to and taught again with new slides only (decision 33)
     talk_track_slots:
@@ -718,7 +822,7 @@ modules:
       monday_close: Ask your agent the last stakeholder question you got. Open every citation before you send it
 
 agenda:
-  full_day:
+  full_day:   # unchanged (Gate 2 decision 12)
     start: "09:00"
     end: "16:30"
     total_minutes: 450
@@ -733,7 +837,7 @@ agenda:
       - { time: "14:55", minutes: 15, item: Break }
       - { time: "15:10", minutes: 65, item: "Module 5: The agent answers stakeholders" }
       - { time: "16:15", minutes: 15, item: "Course close: Monday plan" }
-    totals:   # critic M7. PRD: plan 60 minutes for lunch. 45 minutes is the buffer if class runs long
+    totals:
       modules_minutes: 320   # 70 + 70 + 60 + 55 + 65
       open_and_close_minutes: 40   # 25 + 15
       teaching_minutes: 360   # 320 + 40
@@ -742,36 +846,45 @@ agenda:
       instructor_led_minutes: 148   # open 15 + 28 + 28 + 24 + 22 + 26 + close 5
       hands_on_minutes: 212   # open 10 + 42 + 42 + 36 + 33 + 39 + close 10
       percent_instructor_led_of_teaching: 41   # 148 / 360
-      cuts_from_v0_1: Module 1 from 80 to 70 minutes. Module 5 from 70 to 65 minutes. Lunch from 45 to 60 minutes
-      buffer: If class runs long, the instructor may cut lunch to 45 minutes (PRD)
-  half_days:
+      lunch_note: Lunch is 60 minutes. A shorter lunch is a case-by-case delivery choice, not a standard (decision 12)
+  half_days:   # Gate 2 decision 12. Each day 3.5 hours, one 15-minute break, 195 teaching minutes
     split_after: module 2
     split_reason: Modules 1 and 2 are rung 1 (hand-run). Day 2 climbs rungs 2 and 3
+    module_minutes_differ: Modules 1, 2 and 5 run 80, 75 and 60 minutes in the half days (full day 70, 70, 65). See half_day in each module
     day_1:
       start: "09:00"
-      end: "12:10"
-      total_minutes: 190   # 25 + 70 + 15 + 70 + 10
+      end: "12:30"
+      total_minutes: 210   # 25 + 80 + 15 + 75 + 15
+      teaching_minutes: 195   # 25 + 80 + 75 + 15
       rows:
         - { time: "09:00", minutes: 25, item: "Course open: bond story, opening build check, course frame" }
-        - { time: "09:25", minutes: 70, item: "Module 1" }
-        - { time: "10:35", minutes: 15, item: Break }
-        - { time: "10:50", minutes: 70, item: "Module 2" }
-        - { time: "12:00", minutes: 10, item: "Day 1 close: save your agent, download kit-m3, note one audit finding" }
+        - { time: "09:25", minutes: 80, item: "Module 1: Run your first batch and manage it by flags" }
+        - { time: "10:45", minutes: 15, item: Break }
+        - { time: "11:00", minutes: 75, item: "Module 2: Win/loss and the match rate" }
+        - { time: "12:15", minutes: 15, item: "Day 1 close: recap of rung 1, save your agent, download kit-m3, note one audit finding" }
+      day_close_split: { instructor_led: 5, hands_on: 10 }
     day_2:
       start: "09:00"
-      end: "12:45"
-      total_minutes: 225   # 15 + 60 + 55 + 15 + 65 + 15
+      end: "12:30"
+      total_minutes: 210   # 10 + 60 + 55 + 15 + 60 + 10
+      teaching_minutes: 195   # 10 + 60 + 55 + 60 + 10
       rows:
-        - { time: "09:00", minutes: 15, item: "Day 2 open: recap, reopen check (agent answers after reopen; rebuild from kit-m3 if not)" }
-        - { time: "09:15", minutes: 60, item: "Module 3" }
-        - { time: "10:15", minutes: 55, item: "Module 4" }
-        - { time: "11:10", minutes: 15, item: Break }
-        - { time: "11:25", minutes: 65, item: "Module 5" }
-        - { time: "12:30", minutes: 15, item: "Course close: Monday plan" }
-    note: Day 2 is 35 minutes longer than day 1. Dan may move the module 5 debrief or the close to balance them (OI-07)
+        - { time: "09:00", minutes: 10, item: "Day 2 open: recap, reopen check (agent answers after reopen; rebuild from kit-m3 if not)" }
+        - { time: "09:10", minutes: 60, item: "Module 3: The weekly run" }
+        - { time: "10:10", minutes: 55, item: "Module 4: First hand-off, the alternatives map" }
+        - { time: "11:05", minutes: 15, item: Break }
+        - { time: "11:20", minutes: 60, item: "Module 5: The agent answers stakeholders" }
+        - { time: "12:20", minutes: 10, item: "Course close: Monday plan" }
+      day_open_split: { instructor_led: 5, hands_on: 5 }
+    totals:
+      teaching_minutes: 390   # 195 + 195
+      instructor_led_minutes: 161   # day 1: open 15 + 32 + 30 + close 5 = 82. Day 2: open 5 + 24 + 22 + 24 + close 4 = 79
+      hands_on_minutes: 229   # day 1: 10 + 48 + 45 + 10 = 113. Day 2: 5 + 36 + 33 + 36 + 6 = 116
+      percent_instructor_led_of_teaching: 41   # 161 / 390
 
 platform_matrix_summary:   # research/platform-matrix.yaml, checked 2026-11-20. Recheck within 30 days of release (quality bar 9)
   checked_on: 2026-11-20
+  recheck_by: Within 30 days of release
   core_features:
     - { id: cl-pj-01, platform: claude, feature: "Projects with instructions and knowledge, all plans", status: verified, source_date: "approx 2026-11-05" }
     - { id: cl-cl-03, platform: claude, feature: "Custom skills, all plans, code execution on", status: verified, source_date: "approx 2026-10-28" }
@@ -788,32 +901,42 @@ platform_matrix_summary:   # research/platform-matrix.yaml, checked 2026-11-20. 
     - { id: gm-06, platform: gemini, feature: "Canvas and Deep Research do not work in skills", status: partly verified, source_date: unknown }
     - { id: gm-09, platform: gemini, feature: "File output in the Gemini app (not proven for skills)", status: "verified (app only)", source_date: "2026-04-27" }
   stretch_only: [cl-sc-07, cg-04, cg-06, cg-07, mb-06, mb-07, mb-08, mb-09, gm-04, gm-05, gm-07, gm-08]
+  stretch_verification:   # Gate 2 decision 10
+    rule: Schedule and second-agent stretch steps go only on step cards where Stage 3 verifies them with a dated vendor doc and a test
+    likely: [claude, chatgpt]
+    core_path_only: [copilot, gemini]
+    out_of_scope_at_launch: [Copilot Studio, Power Automate, Google Antigravity]
+    check_by: Stage 3, before module 3 is built
   gate_2_proof_patterns:   # decision 27. Dan builds, saves and reruns each pattern on all four platforms
     - id: P1
       name: Build from template and run a batch with file output
       used_in: [m1, m2]
       test: >-
-        Build the agent from kit-m1-template. Save, close and reopen. Run batch 1. Pass: the agent returns the insight
-        log as a downloadable file and a flag report; the planted vocal-buyer error appears; the rerun after reopen
-        gives the same structure. Also run the Copilot no-license fallback for modules 1 and 2 (instructions under
-        8,000 characters, run files pasted or uploaded in chat) and Gemini on a Workspace account
+        Build the agent from kit-m1-template. Save, close and reopen. Run batch 1. Pass: the agent returns the problem
+        backlog as a downloadable file, with an evidence profile per problem, fact labels, a proposed ranking with
+        reasons and a flag report; the planted vocal-buyer error appears (I-104 ranked near the top); the rerun after
+        reopen gives the same structure. Also run the Copilot no-license fallback for modules 1 and 2 (instructions
+        under 8,000 characters, run files pasted or uploaded in chat) and Gemini on a Workspace account. Decision 2:
+        if P1 fails on 2 or more platforms, bring option B back to Dan with the results
     - id: P2
       name: Extend the agent and rerun with the prior log
       used_in: [m3]
       test: >-
-        Add the weekly feedback job card and tag list to the saved agent. Run week 1, then week 2 with the week 1 log.
-        Pass: the "what moved" summary compares the two weeks; counts are by unique account; the forced-fit error
-        appears before the fix and the new problem appears after it. Check that the core instructions stay under 8,000 characters.
-        Use the log save card and check that the next run reads the saved log on each platform (Gemini: whole skill
-        re-uploaded). Run the Copilot no-license fallback for module 3 with the insight log pasted in chat
+        Add the weekly feedback job card and tag list to the saved agent. Run week 1, then week 2 with the week 1
+        backlog. Pass: the "what changed" summary compares the two weeks; counts are by unique account; the
+        forced-fit error appears before the fix and the new problem appears after it. Check that the core
+        instructions stay under 8,000 characters. Use the log save card and check that the next run reads the saved
+        backlog on each platform (Gemini: whole skill re-uploaded). Run the Copilot no-license fallback for module 3
+        with the problem backlog pasted in chat
     - id: P3
       name: Hand-off between jobs and a cited answer
       used_in: [m4, m5]
       test: >-
         Run the win/loss job, then the map job on its output file, then the answer job on all logs. Pass: each map entry
-        links to a deal id or interview id; the answer cites date and segment and has a "what we do not know" line; the
-        CRM-versus-buyer error and the old-research error both appear on the case data. Also rebuild from kit-m5 in about 5 minutes.
-        Run the Copilot no-license fallback for modules 4 and 5 (one job at a time, logs pasted in chat)
+        links to a deal id or interview id; the answer cites date and segment and has a "what we do not know" line;
+        proposals are by segment; the CRM-versus-buyer error and the old-research error both appear on the case data.
+        Also rebuild from kit-m5 in about 5 minutes. Run the Copilot no-license fallback for modules 4 and 5 (one job
+        at a time, logs pasted in chat). No separate timing check for module 4 (decision 8)
   gate_2_proof_items:   # critic M5, M6, S3. Find each fact with a dated vendor doc or a test. Do not invent numbers
     - id: G2-PF-01
       platform: copilot
@@ -829,7 +952,7 @@ platform_matrix_summary:   # research/platform-matrix.yaml, checked 2026-11-20. 
       platform: copilot
       check: >-
         Longest message accepted in chat, for the paste fallback. Need to pass: the longest case run file,
-        m4-evidence-pack.md (about 12,400 characters), or the kit splits it
+        m4-evidence-pack.md (measure again after the case rework), or the kit splits it
     - id: G2-PF-04
       platform: gemini
       check: >-
@@ -842,14 +965,16 @@ platform_matrix_summary:   # research/platform-matrix.yaml, checked 2026-11-20. 
         No-license fallback per module: core brief plus one job card plus one knowledge file stays under 8,000
         characters (mb-01). Measure the real text in each kit
 
-fallback_case:   # critic S4. Built by the case builder in Stage 2, fixed after the critic. Gate 2 locks the records and results
-  status: drafted, revised after critic (case files in case/)
+fallback_case:   # critic S4. Built by the case builder in Stage 2. Reworked in parallel for rework brief 2. Gate 2 locks the records and results
+  status: in rework for the problem backlog model (rework brief 2, items 1 and 10; decision 9 question)
   company: >-
     Larkspan Systems (fictional). Makes wireless temperature sensors (hardware) and the cloud software that watches
     them. About 420 employees. Segments: Distribution, Food service, Pharmacy and lab. External PMs own Probe, Hub,
     Tag and Cloud. An internal PM owns the Fleet Data Platform. Learner file: case/company.md
   folder: courses/market-research/case/
-  learner_files: case/README.md, case/company.md and the m1 to m5 files. The Larkspan Head of Product's bar for this study is in company.md (learner visible)
+  learner_files: >-
+    case/README.md, case/company.md and the m1 to m5 files. company.md shows the case PM's hand-off rule choices
+    (feedback change rule, no-fit repeat rule, age limit). It has no evidence bar (rework brief 2, item 4)
   instructor_files: case/planted-errors.md and case/expected-results.md. Do not give them to learners
   rules:
     - One company for the whole course. Every module and exercise uses it
@@ -857,36 +982,43 @@ fallback_case:   # critic S4. Built by the case builder in Stage 2, fixed after 
     - Not BadgeWorks, Entrilo or FieldPro, or a close copy. Not a real company
     - All data fictional and marked "Fictional data for training"
     - Each input file fits a free plan upload. Knowledge files stay within the course budget of 13
+    - No number in the case decides that a problem is real. Hand-off numbers are framed as the case PM's choice for that rule
   records_per_lab:
-    m1: [m1-code-book.md (.txt copy), m1-interviews-batch-1.md (planted vocal buyer), m1-interviews-batch-2.md (one contradiction), m1-check-sample.md, m1-stretch-applicants.md (stretch)]
-    m2: [m2-driver-code-book.md (.txt copy), m2-crm-export-q2.csv (14 decided deals), m2-winloss-notes-q2.md (planted CRM-only deal with "price"), m2-check-sample.md]
-    m3: [m3-tag-list.md (.txt copy), m3-feedback-week-1.csv, m3-feedback-week-2.csv (planted new problem, 4 accounts), m3-check-sample.md, m3-stretch-survey-wave.csv (stretch)]
+    m1: [m1-code-book.md (.txt copy), m1-interviews-batch-1.md (planted vocal buyer I-104, 3 quotes, 1 interview), m1-interviews-batch-2.md (one contradiction), m1-check-sample.md, m1-stretch-applicants.md (stretch)]
+    m2: [m2-driver-code-book.md (.txt copy), m2-crm-export-q2.csv (decided deals), m2-winloss-notes-q2.md (planted CRM-only deal with "price"), m2-check-sample.md]
+    m3: [m3-tag-list.md (.txt copy), m3-feedback-week-1.csv, m3-feedback-week-2.csv (planted new problem), m3-check-sample.md, m3-stretch-survey-wave.csv (stretch)]
     m4: [m4-alternatives-map.md (.txt copy), m4-evidence-pack.md (planted D-3108, CRM says Rimecore, buyer kept the spreadsheet), m4-check-sample.md]
-    m5: [m5-past-reports.md (.txt copy; R-2024-07 is 2024 food service, over the age limit), m5-stakeholder-questions.md (Q2 tempts the old study; Q4 is the check)]
-  expected_results: case/expected-results.md (instructor only). Each lab has a second sample input and a pass condition. Catch-up kit state files are listed at its end
+    m5: [m5-past-reports.md (.txt copy; R-2024-07 is 2024 food service, over the case age limit), m5-stakeholder-questions.md (one question tempts the old study; one question from the Fleet Data Platform PM; one check question)]
+  expected_results: case/expected-results.md (instructor only). Recounted under the problem backlog model. Each lab has a second sample input and a pass condition. Catch-up kit state files are listed at its end
 
 glossary:
-  - { term: agent manager, meaning: "The learner's role. Writes the brief, sets checks and hand-off rules, reviews the flag report, audits" }
+  - { term: agent manager, meaning: "The learner's role. Writes the brief, sets checks and hand-off rules, reviews the flag report, audits, decides" }
   - { term: Market Evidence Agent, meaning: "The one course agent. Built in module 1, one new job per module" }
-  - { term: job, meaning: "One workflow the agent runs (insight log, win/loss, weekly feedback, alternatives map, stakeholder answers). One job card per job" }
+  - { term: job, meaning: "One workflow the agent runs (problem backlog, win/loss, weekly feedback, alternatives map, stakeholder answers). One job card per job" }
   - { term: brief, meaning: "The agent's instructions: job, inputs, code book, quality checks, hand-off rules, output format, done criteria" }
   - { term: code book, meaning: "The list of codes and definitions the agent applies (problems, drivers, tags)" }
   - { term: quality check, meaning: "A test the agent runs on its own output before it reports, for example each quote found word for word" }
-  - { term: hand-off rule, meaning: "A rule that says when the agent stops and gives an item to the PM, or what passes from one job to the next" }
+  - { term: hand-off rule, meaning: "A rule that says when the agent stops and gives an item to the PM, or what passes from one job to the next. Any number in it is the PM's choice for that rule" }
   - { term: flag report, meaning: "The short list of items the agent hands to the PM to decide" }
   - { term: audit, meaning: "The PM checks a random sample of agent output against the sources" }
   - { term: tuned brief, meaning: "The brief after the PM adds a rule for what the audit found" }
-  - { term: insight log, meaning: "The agent's running record of market problems and insights. Modules 1 and 3 write to it" }
-  - { term: driver log, meaning: "The win/loss record per deal: primary and secondary drivers, alternative chosen, buyer quotes" }
+  - { term: problem backlog, meaning: "The agent's running list of market problems, each with an evidence profile. Priority is relative: each problem is judged against the others. Modules 1 and 3 write to it" }
+  - { term: evidence profile, meaning: "The facts for one problem: interviews (not quotes), accounts, segments, personas, source types, urgency with a quote, pervasiveness, willingness to pay clues and source dates" }
+  - { term: urgency, meaning: "How pressing the problem is for the buyer. Shown with one quote (workbook skill 1.1D)" }
+  - { term: pervasiveness, meaning: "How many accounts and segments have the problem (workbook skill 1.1D)" }
+  - { term: willingness to pay clues, meaning: "Signs that buyers spend, or would spend, money or effort to solve the problem (workbook skill 1.1D)" }
+  - { term: fact label, meaning: "A fact the agent states about a problem's evidence: single source, AI-moderated only or one segment only. Not a verdict. The problem stays in the backlog" }
+  - { term: single source, meaning: "A fact label: the problem rests on 1 interview, however many quotes" }
+  - { term: proposed ranking, meaning: "The agent's suggested order of problems, with a reason from the evidence profile for each. The PM decides the order" }
+  - { term: pattern, meaning: "A call only the PM makes, after reading the evidence. The agent never writes it" }
+  - { term: validated, meaning: "A call only the PM makes, after validation research. The agent never writes it" }
+  - { term: segment claim, meaning: "A claim about one segment, for example 'food service buyers want'. The agent ranks within the segment first, and never makes the claim from one interview in that segment" }
+  - { term: PM-held and AI-moderated, meaning: "Source labels for interviews. A segment with no PM-held interview goes to the flag report (PA-02)" }
+  - { term: driver log, meaning: "The win/loss record per deal: primary and secondary drivers, alternative chosen, buyer quotes, source label" }
   - { term: match rate, meaning: "How often the CRM loss reason matches the buyer's reason. Never 'truth rate' (PA-04)" }
   - { term: alternatives map, meaning: "What buyers chose instead: named competitors, substitutes, workarounds and do nothing, each traced to evidence" }
-  - { term: meets the PM's bar, meaning: "The agent's status for an insight whose evidence meets the bar the PM wrote in the brief. It is not a pattern until the PM says so (PA-01)" }
-  - { term: single source and emerging, meaning: "The agent's status for an insight below the PM's bar. Single source is 1 interview, however many quotes. Kept in the log for trend tracking. The agent never writes 'pattern'; only the PM promotes an insight to 'pattern'" }
-  - { term: pattern, meaning: "A status only the PM gives, after reading the evidence. The agent writes 'meets the PM's bar' at most" }
-  - { term: segment claim, meaning: "A claim about one segment, for example 'food service buyers want'. It needs the PM's bar met inside that segment (OI-15)" }
-  - { term: PM-held and AI-moderated, meaning: "Source labels for interviews. A segment with no PM-held interview goes to the flag report (PA-02)" }
   - { term: no fit, meaning: "The agent's answer when an item fits no code or tag. Better than a guess" }
-  - { term: status proposal, meaning: "The agent proposes, per segment, whether a problem has enough evidence. Only the PM calls a problem validated" }
+  - { term: ranking and validation proposal, meaning: "Module 5. The agent proposes, per segment, an order of problems and which could go to validation, with reasons. The PM decides" }
   - { term: catch-up kit, meaning: "The brief text and knowledge files at the start of a module. Rebuild the agent in about 5 minutes" }
   - { term: planted error, meaning: "One AI error placed in each lab's case data. Learners find it in the audit" }
   - { term: rung, meaning: "A step on the autonomy ladder: hand-run batch, recurring run, hand-off between jobs" }
@@ -900,7 +1032,9 @@ voice:
   talk_track: Complete enough for an instructor who did not build the course (decision 45). Slide notes are POINT then Talk Track. Activity talk tracks start "The goal of this activity is"
   terms_never_used:
     - exceptions, escalations (Pragmatic focus area names; say flags, flag report, hand-off rules)
-    - magic number as a rule (say "the PM sets the bar")
+    - magic number as a rule, "the PM's bar", "meets the bar", "emerging" as a status (say "the agent proposes a ranking, the PM decides")
+    - insight log (say problem backlog)
+    - intensity, frequency, impact in learner-facing text (say urgency, pervasiveness, willingness to pay clues)
     - truth rate (say match rate)
     - Gems, custom GPTs (say Gemini skills, ChatGPT Projects)
     - Playbook method (not taught; markdown files may be workbook handouts)
@@ -914,87 +1048,102 @@ settings:
 monday_value:   # quality bar 3: 3 or more working builds per learner
   builds_taken_home:
     - The Market Evidence Agent with five jobs, saved on the learner's platform
-    - Insight log job run on the learner's own interviews (module 1)
+    - Problem backlog job run on the learner's own interviews (module 1)
     - Win/loss job with the learner's deal export (module 2)
     - Weekly feedback job (module 3)
     - Stakeholder answer job with the learner's past reports (module 5)
-  templates: kit-final plus each module kit, the brief template, the job cards and the audit checklist
+  templates: kit-final plus each module kit, the brief template, the job cards, the evidence profile format and the audit checklist
 
 open_items:
   - id: OI-01
     item: Bond story. Slot is open in the course open (5 minutes). Candidates are in research/bond-stories.md (recommendation is candidate 1, JAMIA)
     owner: Dan
     due: Before module 1 is built (Stage 3)
+    status: open (Gate 2 decision 5)
   - id: OI-02
-    item: >-
-      Rung 2 is a hand-started weekly run, not a true schedule, because no schedule feature is verified and a schedule
-      without new input does nothing in a no-connector lab. Schedule is a stretch step. Confirm this meets decision 35
+    item: Rung 2 is a hand-started weekly run on the core path. Schedule is stretch only where verified
     owner: Dan
     due: Gate 2
+    status: closed. Gate 2 decision 10 (final)
   - id: OI-03
-    item: Rung 3 means a hand-off between jobs of the one course agent, not between separate agents. A second agent is stretch. Confirm this meets decision 35 and rule 12
+    item: Rung 3 is a hand-off between jobs of the one course agent. A second agent is stretch only where verified
     owner: Dan
     due: Gate 2
+    status: closed. Gate 2 decision 10 (final)
   - id: OI-04
     item: Row 05 (screening) is a stretch step in lab 1, not a core step, to keep the step card at 6 steps. Confirm this is an acceptable fold
     owner: Dan
     due: Gate 2
+    status: open (Gate 2 decision 11, no answer recorded in gate-2-decisions.md)
   - id: OI-05
-    item: >-
-      Row 10 example (decision f) may be Dan's own experience. Decision 43 says story slots are never told as the
-      instructor's own experience. Proposal: script it as Pragmatic's or an unnamed client's story so any instructor can tell it
+    item: Module 4 example is told as a Pragmatic or unnamed client story, with identifying details removed. Dan sends the example
     owner: Dan
     due: Before module 4 is built
+    status: decided (Gate 2 decision 6, final). Open action, Dan sends the example
   - id: OI-06
     item: >-
       research/workflows.yaml row 01 still has the old rule ("2 or more interviews per insight") and lacks the PA-02 hand-off
-      rule. The approved worked example row v3 has the new rules. This spec follows v3. The file is fingerprinted, so a fix needs Dan's yes
+      rule. The approved worked example row v3 has the new rules. This spec follows v3 and the problem backlog model. The
+      old rule is now also a threshold, against rework brief 2 item 4. The file is fingerprinted, so a fix needs Dan's yes
     owner: Dan
     due: Gate 2
+    status: open
   - id: OI-07
-    item: Half days are 3 hours 10 minutes and 3 hours 45 minutes (v0.2, 60-minute lunch math). Accept, or move time to balance
+    item: Half days are 3.5 hours each, 195 teaching minutes, split after module 2
     owner: Dan
     due: Gate 2
+    status: closed. Gate 2 decision 12, applied in v0.3
   - id: OI-08
     item: The therapy preference study (PA-02) needs a 2026 primary source before any slide use
     owner: research rerun
     due: Before module 1 is built
+    status: open
   - id: OI-09
     item: PA-02 follow-up. Tell the PDW-AI owner so messaging on AI-moderated interviews matches
     owner: Dan
     due: Before Pragmatic review
+    status: open
   - id: OI-10
     item: PA-07. Tell Pragmatic that MKT slide 7 uses old Framework names
     owner: Dan
     due: Before Pragmatic review
+    status: open
   - id: OI-11
-    item: Capability and skill names for the development brief. The Capability Standards Workbook is not available
+    item: >-
+      Capability and skills. v0.3 uses the proposal in outline/capability-mapping.md: capability 1 Market
+      Intelligence; skills 1.1 and 1.3 (primary), 8.1 and 8.4 (secondary). Confirm, and confirm the 4 gaps in that file
+      (no Market Intelligence skill anchors Competitive Landscape; Win/Loss Analysis has no primary skill; PDW-AI maps
+      to the same skills; capability 8 core course is Insight)
     owner: Dan
     due: Gate 2
+    status: proposed, Dan to confirm (Gate 2 decision 7)
   - id: OI-12
-    item: Copilot instructions limit (8,000 characters). The core brief must stay short and the job cards go in as files. Gate 2 proof P2 checks it
+    item: Copilot instructions limit (8,000 characters). The core brief must stay short and the job cards go in as files. The evidence profile format adds text to the core brief. Gate 2 proof P2 and G2-PF-05 check it
     owner: Gate 2 proof
     due: Gate 2
+    status: open
   - id: OI-13
     item: >-
-      PA-01 wording (critic M4). The agent writes "meets the PM's bar", "emerging" or "single source". It never
-      writes "pattern". Only the PM promotes an insight to "pattern". The case files use this wording. Confirm
+      Pattern wording (Gate 2 decision 1). Superseded by the problem backlog model: the agent writes fact labels only
+      and never writes "pattern" or "validated". "Meets the PM's bar" and "emerging" are removed
     owner: Dan
     due: Gate 2
+    status: superseded by OI-20
   - id: OI-14
     item: >-
-      Template content vs the approved worked example v3 (critic S7). v0.1 left "count interviews, not quotes" out of
-      the template. v0.2 puts it back, to match v3. The PM's bar stays blank in the template, and the learner writes
-      it after the audit. Confirm this keeps the lab 1 planted error findable
+      Template content and the lab 1 planted error (Gate 2 decision 2). Template keeps "count interviews, not quotes".
+      The template has no ranking rule, so the vocal buyer (I-104) ranks near the top. P1 tests that the error appears.
+      If P1 fails on 2 or more platforms, bring option B back with the results. Demo run is the fallback
     owner: Dan
-    due: Gate 2
+    due: After proof P1
+    status: provisional C
   - id: OI-15
     item: >-
-      Segment rule (case fix for critic M3). A claim about one segment needs the PM's bar met inside that segment.
-      The spec uses it in the lab 1 template, the lab 5 hand-off rules and the lab 5 status proposals. Confirm it is
-      a course rule, or keep it as the case Head of Product's choice only (no magic number)
+      Segment rule (Gate 2 decision 3). Course rule: rank within a segment before any claim about that segment; never
+      "<segment> buyers want" from one interview in that segment. Dan tests it in lab 5 (I-105, Food service)
     owner: Dan
-    due: Gate 2
+    due: When Dan runs the exercises
+    status: provisional A
   - id: OI-16
     item: >-
       Copilot and Gemini upload limits, Copilot file types and the Copilot no-license fallback are not verified
@@ -1002,20 +1151,48 @@ open_items:
       as text; split the evidence pack; pair with a learner on another platform
     owner: Gate 2 proof
     due: Gate 2
+    status: open
   - id: OI-17
-    item: Module 4 is 55 minutes. The PRD says about 60 to 90 minutes per module. Accept, or move 5 minutes from another module (critic N1)
+    item: Module 4 is 55 minutes. P3 timing check dropped
     owner: Dan
     due: Gate 2
+    status: closed. Gate 2 decision 8 (final)
   - id: OI-18
     item: >-
-      Internal PM (Fleet Data Platform) is in case/company.md, but no lab uses it (critic N4). Internal PM is a priority
-      context. Option: one FDP item in a later case revision, or an internal PM example in the module 3 talk track
-    owner: Dan, then case builder
-    due: Before module 3 is built
+      Internal PM (Fleet Data Platform). Module 3 talk track uses the internal platform example. Case builder adds one
+      lab 5 question from the FDP PM, answered from the problem backlog. It changes no planted error and no lab 1 to 4
+      count. Critic rechecks
+    owner: Case builder, then critic
+    due: Next rework pass
+    status: decided (Gate 2 decision 9, final). Case action in progress
   - id: OI-19
     item: >-
-      Case notes for the instructor guide (critic N5, N6). I-201 quote 2 can also code as P02; the P07 result still
-      holds. Lab 5 Q2: feedback items F-1108 and F-1214 support the report pack answer but are not lab 5 inputs.
-      Add both to the instructor notes in Stage 3
+      Case notes for the instructor guide (critic N5, N6). I-201 quote 2 can also code as P02. Lab 5: feedback items
+      F-1108 and F-1214 support the report pack answer but are not lab 5 inputs. Recheck both after the case rework,
+      then add them to the instructor notes in Stage 3
     owner: Module builder
     due: Stage 3
+    status: open
+  - id: OI-20
+    item: >-
+      Problem backlog model (Gate 2 decision 4). v0.3 applies the proposal from rework brief 2: problem backlog,
+      evidence profile, fact labels, agent proposes a ranking with reasons, PM decides. gate-2-decisions.md still
+      shows decision 4 as "waiting for Dan yes". Confirm, or v0.3 rolls back
+    owner: Dan
+    due: Gate 2
+    status: applied, waiting for Dan yes
+  - id: OI-21
+    item: >-
+      Half-day module lengths differ from the full day: module 1 80 (70), module 2 75 (70), module 5 60 (65). Day 2
+      open is 10 minutes and the half-day course close is 10 minutes (full day 15). Confirm module 5 may be 5 minutes
+      shorter in the half days, with the same lab
+    owner: Dan
+    due: Gate 2
+    status: open (from Gate 2 decision 12 proposal)
+  - id: OI-22
+    item: >-
+      Pragmatic program rule PA-04 (minimum 10 decided deals per batch) stays as a program design rule. It is not a
+      threshold for calling a driver real. Confirm it does not conflict with rework brief 2 item 4
+    owner: Dan
+    due: Gate 2
+    status: open
