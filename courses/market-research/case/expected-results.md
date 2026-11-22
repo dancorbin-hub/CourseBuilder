@@ -6,16 +6,21 @@ For each lab: the result the case records support, the second sample input and a
 
 ## The case PM's bar (example only)
 
-There is no magic number. The PM sets the bar. To make the case results checkable, the case Head of Product uses this bar:
+Learners see this bar in `company.md`, as the Larkspan Head of Product's bar for this study. It is that PM's choice, not a rule. There is no magic number.
 
-- **Pattern**: 3 or more interviews (not quotes), from 2 or more accounts, with 1 or more PM-held interview. Show the segment split.
-- **Emerging**: 2 interviews, or a pattern with no PM-held interview.
-- **Single source**: 1 interview, however many quotes.
+- **Meets the PM's bar**: 3 or more interviews (not quotes), from 2 or more accounts, with 1 or more PM-held interview. Show the segment split.
+- **Segment claims**: a claim about one segment needs the bar met inside that segment.
+- **Emerging**: 2 interviews, or 3 or more with no PM-held interview.
+- **Single source**: 1 interview, however many quotes. In this case, a single interview is labeled single source.
 - **Win/loss**: a driver pattern needs 3 or more interviewed deals in a segment.
 - **Weekly feedback**: a "what moved" flag needs a change of 3 or more accounts.
 - **Stakeholder answers**: age limit 18 months.
 
-A learner may set a different bar. The pass condition then uses the learner's bar. One rule holds for any bar: nothing from 1 interview is called a pattern.
+**Who labels a pattern (Gate 1 PA-01).** The agent writes "Meets the PM's bar". It never writes "Pattern". Only the PM promotes an insight to "Pattern". In the tables below, "Status" is the agent's label.
+
+A learner may set a different bar. The pass condition then uses the learner's bar.
+
+**Debrief prompt (lab 1).** Use Dan's test for any bar: can you predict that the next buyer of this persona will raise it? If not, the evidence is not yet a pattern.
 
 ---
 
@@ -25,12 +30,12 @@ A learner may set a different bar. The pass condition then uses the learner's ba
 
 | Code | Interviews | IDs (PM-held in bold) | Segments | Status |
 | --- | --- | --- | --- | --- |
-| P01 Alert fatigue | 4 | **I-101**, I-102, I-105, I-107 | Distribution 2, Food service 1, Pharmacy and lab 1 | Pattern |
-| P02 Compliance report effort | 4 | I-102, **I-103**, **I-106**, I-108 | Distribution 2, Food service 1, Pharmacy and lab 1 | Pattern |
+| P01 Alert fatigue | 4 | **I-101**, I-102, I-105, I-107 | Distribution 2, Food service 1, Pharmacy and lab 1 | Meets the PM's bar. No segment meets it alone |
+| P02 Compliance report effort | 4 | I-102, **I-103**, **I-106**, I-108 | Distribution 2, Food service 1, Pharmacy and lab 1 | Meets the PM's bar. No segment meets it alone |
 | P03 Install and connectivity | 2 | **I-103**, I-105 | Food service 2 | Emerging |
 | P05 Multi-site visibility | 1 (3 quotes) | **I-104** | Food service | Single source (planted error) |
 | P06 After-hours response | 2 | **I-101**, **I-106** | Distribution 2. Both say own managers own night alarms | Emerging |
-| P08 Calibration records | 2 | I-107, I-108 | Pharmacy and lab 2 | Emerging. No PM-held interview |
+| P08 Calibration records | 2 | I-107, I-108 | Pharmacy and lab 2 | Emerging (2 interviews, no PM-held interview) |
 
 Batch 1 flag report:
 
@@ -40,22 +45,26 @@ Batch 1 flag report:
 
 Before the fix (template brief v1), expect P05 to look like a strong or top Food service insight. That is the planted error.
 
+The PM then reviews P01 and P02. The PM may promote them to "Pattern" across segments. No single segment meets the bar yet, so the PM makes no segment claim. The agent promotes nothing.
+
 ### Batch 2 (`m1-interviews-batch-2.md`)
 
 | Code | Interviews after batch 2 | New IDs | Status | What changed |
 | --- | --- | --- | --- | --- |
-| P01 | 7 | **I-109**, I-110, **I-113** | Pattern | Growing |
-| P02 | 6 | **I-109**, I-114 | Pattern | Growing |
-| P03 | 3 (2 accounts: Saltgrass Kitchens, Bramblefield Bistro) | **I-111** | Pattern (Food service) | Now meets the bar |
+| P01 | 7 (Distribution 4, Pharmacy and lab 2, Food service 1) | **I-109**, I-110, **I-113** | Meets the PM's bar. Inside a segment: Distribution | Growing |
+| P02 | 6 (Distribution 3, Food service 2, Pharmacy and lab 1) | **I-109**, I-114 | Meets the PM's bar. Inside a segment: Distribution | Growing |
+| P03 | 3 (Food service 3; 2 accounts: Saltgrass Kitchens, Bramblefield Bistro) | **I-111** | Meets the PM's bar (Food service) | Now meets the bar |
 | P04 Sensor upkeep | 1 | **I-112** | Single source | New |
 | P05 | 2 | **I-111** (low intensity: "not my top problem") | Emerging | Still below the bar |
 | P06 | 4 | I-110, **I-112** | Contradiction | I-110 and I-112 want a service to take night calls. I-101 and I-106 want own managers. I-106 and I-112 are the same account (Pellham Distribution) |
 | P07 Product loss cost | 1 | I-114 | Single source | New |
-| P08 | 3 | **I-113** | Pattern (Pharmacy and lab) | Now has a PM-held interview |
+| P08 | 3 (Pharmacy and lab 3; 3 accounts) | **I-113** | Meets the PM's bar (Pharmacy and lab) | Now has a PM-held interview |
 
 Batch 2 flag report: (1) P06 contradiction, (2) single source P04 and P07, (3) emerging P05. The Pharmacy and lab flag clears.
 
-**Success check (spec).** The log updates. The flag report lists the P06 contradiction. No insight below the bar is called a pattern.
+The PM decides which insights become "Pattern". The case PM promotes P01 and P02 for Distribution, P03 for Food service and P08 for Pharmacy and lab. This is the PM decision column in Part 4 of `m4-evidence-pack.md`.
+
+**Success check (spec).** The log updates. The flag report lists the P06 contradiction. No insight below the bar is marked "Meets the PM's bar". The agent writes "Pattern" for no insight.
 
 ### Second sample: `m1-check-sample.md`
 
@@ -70,14 +79,28 @@ Run on an empty log.
 **Pass condition.**
 
 1. P07 shows a frequency of 1 interview, not 3, and is labeled "single source".
-2. No insight is called a pattern.
+2. No insight is marked "Meets the PM's bar", and the agent writes "Pattern" for none.
 3. The flag report lists P07 and says Pharmacy and lab has no PM-held interview (I-204).
 4. Every quote is word for word in the sample.
 
 ### Stretch: `m1-stretch-applicants.md`
 
-| Result | Applicants | Reason |
+Criteria are in `m1-stretch-applicants.md`. The study starts in December 2026.
+
+| Result | Applicant | Reason |
 | --- | --- | --- |
+| Pass | AP-01, AP-04, AP-06 | Meet all 5 criteria |
+| Pass | AP-11 | Meets all 5 criteria. Uses a competitor (Rimecore), which is allowed |
+| Fail | AP-02 | Criterion 2 and 3: uses only, 1 site |
+| Fail | AP-03 | Criterion 5: interviewed 2026-09, inside 6 months |
+| Fail | AP-05 | Criterion 4: works for a reseller |
+| Fail | AP-09 | Criterion 1: segment out of scope (hardware retail) |
+| Edge case to the PM | AP-07 | Criterion 2: "Influences" only. Is that "strongly influences"? Criterion 3 passes (11 walk-ins) |
+| Edge case to the PM | AP-08 | Criterion 3: 2 warehouses and no cold-room count. Criterion 5 passes (last interview 2026-05, 7 months before) |
+| Edge case to the PM | AP-10 | Criterion 2: runs the purchase but does not choose |
+| Edge case to the PM | AP-12 | Criterion 2: "Influences" only |
+
+--- | --- | --- |
 | Pass | AP-01, AP-04, AP-06, AP-11 | Meet all 5 criteria. AP-11 uses a competitor, which is allowed |
 | Fail | AP-02, AP-03, AP-05, AP-09 | 1 site and user only; interviewed 2026-09; works for a reseller; segment out of scope |
 | Edge case to the PM | AP-07, AP-08, AP-10, AP-12 | 2 sites but 11 walk-ins; last interview 2026-05 is close to the 6-month line; runs the purchase but does not choose; "influences" only |
@@ -186,7 +209,7 @@ The correct driver log is Part 1 (Q2 rows) of `m4-evidence-pack.md`.
 
 **Pass condition.**
 
-1. F-1305, F-1306 and F-1307 are "no fit", not P06.
+1. F-1305, F-1306 and F-1307 are "no fit", not P06. P06 covers who responds at night or on a weekend. These items ask for a repair job with the contractor, with no time of day.
 2. The flag report names the contractor dispatch request across 3 accounts.
 3. P01 counts 2 accounts, not 4.
 
@@ -257,24 +280,31 @@ Age limit: 18 months. R-2024-07 (2024-09-12) is over the limit. R-2026-03 (2026-
 | Question | What the answer says | Flags | Expected PM decision |
 | --- | --- | --- | --- |
 | Q1 VP Sales: pharmacy and lab losses on price? | Interviewed buyers do not name price. D-2211 and D-3107: budget or grant timing. D-3105: Rimecore's on-site calibration. Only D-2210 says price, and it is CRM only. What we do not know: price sensitivity in this segment. 3 interviewed losses in 2 quarters | Evidence below the bar | Change, then send. Soften to "the interviews we have do not point to price". Add the next pharmacy losses to the interview list |
-| Q2 Head of Hardware: pharmacy and lab report pack? (planted) | Evidence points to calibration certificates with probe serial numbers (INS-08: I-107, I-108, I-113, Sep to Oct 2026; won D-2206; lost D-3105) and audit exports in the accreditor's or state board's format (I-108, Sep 2026). R-2024-07 is food service and over the age limit, so it is not used. What we do not know: which formats the boards and accreditors require, and whether a report pack changes deals | Old evidence, other segment, below the bar, needs new research | Hold the roadmap commitment. Change the answer and start research |
+| Q2 Head of Hardware: pharmacy and lab report pack? (planted) | Evidence points to calibration certificates with probe serial numbers (INS-08: I-107, I-108, I-113, Sep to Oct 2026; won D-2206; lost D-3105) and audit exports in the accreditor's or state board's format (I-108, Sep 2026). R-2024-07 is food service and over the age limit, so it is not used. What we do not know: which formats the boards and accreditors require, and whether a report pack changes deals | Old evidence, other segment. Report effort in Pharmacy and lab is below the bar (INS-02: 1 interview, I-108). Calibration certificates meet the bar (INS-08). Needs new research | Hold the roadmap commitment. Change the answer and start research |
 | Q3 Support lead: night monitoring service for distribution? | Buyers disagree. INS-06: 2 interviews want own managers, 2 want a service (Sep to Oct 2026). R-2026-03 (May 2026, Distribution): 5 of 9 want a service option, 4 of 9 want own managers. No price tested | Sources disagree, needs new research | Change, then send as "split; test a priced offer before Support plans staff" |
 
 **Status proposals.** Every status is labeled "proposal" until the PM decides.
 
-| Problem | Expected proposal |
-| --- | --- |
-| P01, P02 | Enough evidence to validate (all three segments) |
-| P03 | Enough evidence for Food service only |
-| P08 | Enough evidence for Pharmacy and lab only |
-| P05 | Emerging. Not enough |
-| P06 | Contradiction. Not enough |
-| P04, P07, P09 | Single source. Not enough |
-| P10 | No interviews. Discovery |
+Proposals are by segment, from the interview counts in Part 4 of `m4-evidence-pack.md`. A segment proposal needs the bar met inside that segment (same rule as Q4).
+
+| Problem | Distribution | Food service | Pharmacy and lab |
+| --- | --- | --- | --- |
+| P01 Alert fatigue | Enough evidence to validate (4 interviews, 3 accounts, 2 PM-held) | Below the bar. Single source (I-105) | Below the bar. Emerging (I-107, I-113) |
+| P02 Compliance report effort | Enough evidence to validate (3 interviews, 3 accounts, 2 PM-held) | Below the bar. Emerging (I-103, I-114) | Below the bar. Single source (I-108) |
+| P03 Install and connectivity | No interviews | Enough evidence to validate (3 interviews, 2 accounts) | No interviews |
+| P04 Sensor upkeep | Single source (I-112). Not enough | No interviews | No interviews |
+| P05 Multi-site visibility | No interviews | Emerging (I-104, I-111). Not enough | No interviews |
+| P06 After-hours response | Contradiction (2 against 2). Not enough | No interviews | No interviews |
+| P07 Product loss cost | No interviews | Single source (I-114). Not enough | No interviews |
+| P08 Calibration records | No interviews | No interviews | Enough evidence to validate (3 interviews, 3 accounts, 1 PM-held) |
+| P09 Proof for the buyer's own customers | Single source (I-102). Not enough | No interviews | No interviews |
+| P10 Inspector remote access | No interviews | No interviews. Discovery (feedback from 4 accounts) | No interviews |
+
+Feedback counts do not change a proposal. They can add a "watch" note (for example P09: 3 accounts in week 2).
 
 **Planted error.** The Q2 answer says "Buyers want a one-click inspection binder" and cites R-2024-07.
 
-**Pass condition (spec success check).** The fixed Q2 answer names the study date and segment of every source. The flag report lists R-2024-07 as old evidence for another segment. The answer does not say "buyers want". Status proposals stay labeled as proposals until the PM decides.
+**Pass condition (spec success check).** The fixed Q2 answer names the study date and segment of every source. The flag report lists R-2024-07 as old evidence for another segment. The answer does not say "buyers want". Status proposals are given by segment and stay labeled as proposals until the PM decides.
 
 ### Second sample: Q4 in `m5-stakeholder-questions.md`
 

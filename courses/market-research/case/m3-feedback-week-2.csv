@@ -1,4 +1,3 @@
-# Fictional data for training. Larkspan Systems case. All companies, people and numbers are invented. Phone numbers use the 555-01xx fiction range.
 item_id,date,channel,account_id,account_name,segment,text
 F-1201,2026-11-09,Support ticket,A-05,Pellham Distribution,Distribution,Dock freezer 2 sent 18 alerts on Monday night. All door openings.
 F-1202,2026-11-09,Support ticket,A-05,Pellham Distribution,Distribution,Same issue on dock freezer 4. Please help us cut the door-open alerts.

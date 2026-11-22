@@ -1,4 +1,3 @@
-# Fictional data for training. Larkspan Systems case. All companies and numbers are invented. Owner is a code not a person.
 deal_id,account,segment,channel,product,sites,amount_usd,stage,close_date,crm_reason,crm_competitor,owner
 D-2201,Harlow Bay Foods,Distribution,Direct,Probe + Cloud,2,48200,Closed Won,2026-04-08,Compliance reports,None,REP-03
 D-2202,Copperleaf Kitchens,Food service,Reseller,Probe + Cloud,6,22800,Closed Won,2026-04-15,Price,Vantafrost,REP-07

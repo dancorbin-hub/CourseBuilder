@@ -12,7 +12,7 @@ F-1303,2026-11-17,Feature request portal,A-01,Oxbend Cold Storage,Distribution,P
 F-1304,2026-11-17,Sales call note,A-03,Ridgeway Cold Logistics,Distribution,Too many false alarms is still the top complaint.
 F-1305,2026-11-16,Support ticket,A-04,Saltgrass Kitchens,Food service,When a walk-in alarm fires we want the alert to go straight to our refrigeration contractor's dispatch desk so they can send a tech.
 F-1306,2026-11-17,Internal intake (Customer Success),A-09,Bramblefield Bistro,Food service,Customer asks if alarms can open a service job with their refrigeration contractor automatically.
-F-1307,2026-11-18,Sales call note,A-15,Gullhaven Cold Storage,Distribution,Buyer wants compressor alarms routed to the contractor who services the units. Today the night lead calls them by phone.
+F-1307,2026-11-18,Sales call note,A-15,Gullhaven Cold Storage,Distribution,Buyer wants each compressor alarm to open a repair job with the contractor who services the units. Today the site team emails the contractor.
 F-1308,2026-11-18,Support ticket,A-06,Harlow Bay Foods,Distribution,Battery low on 9 sensors.
 F-1309,2026-11-19,Feature request portal,A-14,Northfold Diagnostics,Pharmacy and lab,Audit export still needs rework for the accreditation template.
 F-1310,2026-11-19,Support ticket,A-23,Ashcombe Lab Services,Pharmacy and lab,Calibration certificate for probe 0057 is missing.

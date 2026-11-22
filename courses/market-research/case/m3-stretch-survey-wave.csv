@@ -1,4 +1,3 @@
-# Fictional data for training. Larkspan Systems case. Stretch only. All respondents and answers are invented. No personal data.
 resp_id,segment,sites,q1_how_urgent_is_inspector_remote_access_1to5,q2_share_of_your_sites_with_remote_inspections,q3_would_pay_more_for_inspector_view_access,q4_open_text
 R-01,Food service,6,5,All,Yes,Our county started remote checks in September. We email PDFs every week now.
 R-02,Food service,12,4,Some,Maybe,Two of our counties ask for it. The others still visit.

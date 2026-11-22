@@ -22,9 +22,11 @@ Important: the data makes each error likely and findable. It cannot force a mode
 
 **Where.** Interview I-104 (Marrowby Grocers, Food service, PM-held, 52 minutes). It has 3 strong quotes on P05 Multi-site visibility, including a renewal threat. No other batch 1 interview mentions P05. I-104 is the longest interview, and the buyer says alerts and reports are "fine". This makes P05 stand out.
 
-**What the agent does with the template brief (v1).** The template has no "count interviews, not quotes" rule. The agent is likely to show P05 as a strong or top insight for Food service, with 3 quotes and high intensity. It may call it a pattern.
+**What the agent does with the template brief (v1).** The template has no "count interviews, not quotes" rule. The agent is likely to show P05 as a strong or top insight for Food service, with 3 quotes and high intensity. It may mark it as meeting the bar, or call it a pattern. Both are wrong: the agent never writes "Pattern" (Gate 1 PA-01), and P05 has 1 interview.
 
 **Why the quote check passes.** All 3 quotes are word for word in I-104.
+
+The case bar is in `company.md` (the Larkspan Head of Product's bar). Learners on the case path use it.
 
 **How the audit finds it.** The learner picks 3 insights and opens the source interviews. For P05, all 3 quotes come from I-104. Frequency is 1 interview, not 3.
 
@@ -34,7 +36,7 @@ Important: the data makes each error likely and findable. It cannot force a mode
 | --- | --- | --- | --- | --- |
 | example | P05 Multi-site visibility | Below the PM's bar. 1 interview (3 quotes). Labeled "single source". Kept in the log for trend tracking | I-104 | Keep in log. Watch in batch 2 |
 
-**Fix the learner adds.** "Count interviews, not quotes, by persona and segment. An insight below my bar is labeled emerging or single source, kept in the log, and never called a pattern."
+**Fix the learner adds.** "Count interviews, not quotes, by persona and segment. Mark an insight 'Meets the PM's bar' only when it meets my bar. Label an insight below my bar emerging or single source, and keep it in the log. Never write 'Pattern'. I decide what is a pattern."
 
 **Batch 2 follow-up.** I-111 mentions P05 once, with low intensity ("it's not my top problem"). P05 becomes 2 interviews: still below the case bar, labeled "emerging".
 
@@ -70,6 +72,8 @@ Important: the data makes each error likely and findable. It cannot force a mode
 **What the agent does.** It tags these items to P02 Compliance report effort, the nearest tag. The "no fit" group stays empty or holds only F-1232 (Spanish app). P02 jumps from 3 to 7 accounts and may be flagged as a big move. The real new problem is hidden.
 
 **Why the reason check passes.** Each tag reason quotes the item, and the quote contains "inspection report" or "audit". The words match the tag.
+
+**Check sample note.** In `m3-check-sample.md`, F-1305 to F-1307 ask for a contractor repair job. None names a night or weekend, so none fits P06.
 
 **How the audit finds it.** The learner reads 10 random items and the "no fit" group. Any of F-1215 to F-1219 in the sample shows that the buyer does not want a report. They want live, read-only access for the inspector. An empty "no fit" group in a week with new channel content is also a clue.
 
@@ -128,6 +132,6 @@ D-3102 is a decoy. Its alternative is also blank, but the CRM and the interview 
 
 | Flag ID | Question | Why the agent stopped | Evidence | PM decision |
 | --- | --- | --- | --- | --- |
-| example | Q2 | Only evidence for a "report pack" is older than the age limit and covers another segment. Pharmacy and lab evidence is below the PM's bar. Question needs new research | R-2024-07 (2024-09-12, Food service); INS-08; INS-02 (I-108); D-2206; D-3105 | Hold the roadmap commitment. Start 4 to 6 PM-held pharmacy and lab interviews on report needs |
+| example | Q2 | Only evidence for a "report pack" is older than the age limit and covers another segment. Report effort in Pharmacy and lab is 1 interview (INS-02, I-108), below the PM's bar. Calibration certificates (INS-08) meet the bar, but they are not a report pack. Question needs new research | R-2024-07 (2024-09-12, Food service); INS-08; INS-02 (I-108); D-2206; D-3105 | Hold the roadmap commitment. Start 4 to 6 PM-held pharmacy and lab interviews on report needs |
 
 **Fix the learner adds (hand-off rules).** "Do not use a source for a segment it did not study. Flag any source older than the age limit. If the evidence is below my bar, do not write 'buyers want'. Write what we know, with dates and segments, and what we do not know."
