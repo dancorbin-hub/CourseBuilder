@@ -1009,7 +1009,7 @@ platform_matrix_summary:   # research/platform-matrix.yaml, checked 2026-11-20. 
         to 2,791 characters, under the 2,800 course budget per knowledge file
 
 fallback_case:   # critic S4. Built by the case builder in Stage 2. Reworked in parallel for rework brief 2. Gate 2 locks the records and results
-  status: in rework for the problem backlog model (rework brief 2, items 1 and 10; decision 9 question)
+  status: reworked for the problem backlog model (rework brief 2) and checked by the critic, 2026-11-22
   company: >-
     Larkspan Systems (fictional). Makes wireless temperature sensors (hardware) and the cloud software that watches
     them. About 420 employees. Segments: Distribution, Food service, Pharmacy and lab. External PMs own Probe, Hub,
@@ -1211,7 +1211,7 @@ open_items:
       count. Critic rechecks
     owner: Case builder, then critic
     due: Next rework pass
-    status: decided (Gate 2 decision 9, final). Case action in progress
+    status: done. Gate 2 decision 9 (final). Q5 added to the case; critic checked it
   - id: OI-19
     item: >-
       Case notes for the instructor guide (critic N5, N6). I-201 quote 2 can also code as P02. Lab 5: feedback items
@@ -1259,4 +1259,4 @@ open_items:
       planner does not edit case files. The case builder makes the change, then the critic rechecks
     owner: Case builder, then critic
     due: Before Gate 2 lock
-    status: open
+    status: done 2026-11-22 (case files say Q3 optional)
