@@ -131,7 +131,7 @@ features:
   source_date: approx 2026-11-17 (page says "updated 3 days ago")
   checked_on: 2026-11-20
   status: verified
-  verifier_note: Opened on help-lb.openai.com 2026-11-20. Files 5 / 25 / 40 and 10 per upload confirmed. help-lb is an openai.com subdomain, so OpenAI controls it. Cite help.openai.com in learner materials
+  verifier_note: "Verifier 2026-11-22 (E9 recheck): reopened on help-lb (updated 3 days ago). 5 / 25 / 40 files and 10 per upload unchanged. 2026-11-20: Opened on help-lb.openai.com 2026-11-20. Files 5 / 25 / 40 and 10 per upload confirmed. help-lb is an openai.com subdomain, so OpenAI controls it. Cite help.openai.com in learner materials"
   note: Recheck of E9. The main URL (help.openai.com/en/...) failed again on 2026-11-20, and the sr-rs language URL failed too. The help-lb.openai.com host loaded the same article. The Verifier must confirm that help-lb is an official OpenAI host. Conflict with cg-03, which says Plus has 20 files per project. Use the lower number (20 on Plus) in step cards until resolved
   carried_from: market-research
   recheck_2026_11_22: 'Reopened 2026-11-22 (help-lb, ''updated 3 days ago''). Free 5, Go and Plus 25, Pro and business plans 40, 10 per upload: unchanged. Still conflicts with cg-03 (Plus 20). Catch-up retry: still no copy, duplicate, export or template feature. Only ''Copy ...'' of chats when a member leaves a shared project. New: see cg-14 for project memory and tools'
@@ -233,7 +233,7 @@ features:
   source_date: 2026-11-16
   checked_on: 2026-11-20
   status: verified
-  verifier_note: Opened 2026-11-20 (updated 2026-11-16). 8,000 / 30 / 1,000 characters and 3 response modes confirmed
+  verifier_note: "Verifier 2026-11-22 (E6 recheck): reopened, updated 2026-11-16. 8,000 / 30 / 1,000 characters and code interpreter toggle unchanged. 2026-11-20: Opened 2026-11-20 (updated 2026-11-16). 8,000 / 30 / 1,000 characters and 3 response modes confirmed"
   note: Recheck of E6. Still 8,000 characters. Same page date
   carried_from: market-research
 - id: mb-02
@@ -246,7 +246,7 @@ features:
   source_date: 2026-11-16 (ms.date 2026-09-30)
   checked_on: 2026-11-20
   status: verified
-  verifier_note: Opened 2026-11-20 (updated 2026-11-16). 20 files, 512 MB / 30 MB, no GCC, password and label failures confirmed. License condition is on the prerequisites page (mb-03), not this page
+  verifier_note: "Verifier 2026-11-22: reopened, updated 2026-11-16. 20 files and 512 MB / 30 MB unchanged. 2026-11-20: Opened 2026-11-20 (updated 2026-11-16). 20 files, 512 MB / 30 MB, no GCC, password and label failures confirmed. License condition is on the prerequisites page (mb-03), not this page"
   note: A course agent with a code book, log, brief template and case files must stay at 20 files or fewer. Merge files where possible. Spreadsheet limit is 30 MB. Labelled company files can fail
   carried_from: market-research
 - id: mb-03
@@ -272,7 +272,7 @@ features:
   source_date: 2026-11-16
   checked_on: 2026-11-20
   status: verified
-  verifier_note: Opened 2026-11-20. Toggle and math, data analysis, visualizations confirmed. No formats or downloads stated
+  verifier_note: "Verifier 2026-11-22: reopened. Toggle does math, data analysis, visualizations; unchanged. 2026-11-20: Opened 2026-11-20. Toggle and math, data analysis, visualizations confirmed. No formats or downloads stated"
   note: Downloadable .xlsx or .docx output is not stated. Test at Gate 2 proof
   carried_from: market-research
   recheck_2026_11_22: 'See mb-13 (2026-11-22): input formats now known (Word, Excel, PowerPoint, PDF, CSV/TSV, TXT)'
@@ -360,7 +360,7 @@ features:
   source_date: 2026-09-28 (page footer "Last updated on 2026-09-28"; ms.date 2026-07-06; metadata updated_at 2026-10-22)
   checked_on: 2026-11-20
   status: verified
-  verifier_note: 'Opened 2026-11-20. ''Last updated on 2026-09-28'' (metadata 2026-10-22). Confirmed: output files ''such as images, charts, spreadsheets, or documents''; Word, Excel, PowerPoint or PDF named in the synthetic data example; session-only hosting; always enabled in Agent Builder; license sentence verbatim. CSV/TSV named as input only. No size or row limits'
+  verifier_note: "Verifier 2026-11-22: reopened. Page now says last updated 2026-11-16. Session-only download and always enabled unchanged. 2026-11-20: Opened 2026-11-20. 'Last updated on 2026-09-28' (metadata 2026-10-22). Confirmed: output files 'such as images, charts, spreadsheets, or documents'; Word, Excel, PowerPoint or PDF named in the synthetic data example; session-only hosting; always enabled in Agent Builder; license sentence verbatim. CSV/TSV named as input only. No size or row limits"
   note: 'Rerun 2026-11-20. Quote: "Code interpreter can generate and host downloadable files ... Copilot automatically presents a download link in the response." Learners must download the log in the same session. The license line reads oddly ("without metered usage enabled"); check it against mb-03 at the Gate 2 proof. Adds to mb-04, which said no formats'
   carried_from: market-research
   recheck_2026_11_22: 'Reopened 2026-11-22. Same dates and text. The page also says code interpreter is ''always enabled in Agent Builder'' and has a Settings toggle for in-context agents. These two lines do not fully agree. Not documented: if code interpreter can read the agent''s knowledge files. See mb-13'
@@ -374,7 +374,7 @@ features:
   source_date: unknown (page shows no date)
   checked_on: 2026-11-20
   status: partly verified
-  verifier_note: Opened 2026-11-20. Upload methods, 100 MB, unsupported types, no internet in scripts confirmed. 'Unlimited skills, 100 active' not found. Page undated, so no dated vendor doc for this row
+  verifier_note: "Verifier 2026-11-22: reopened. Methods, 100 MB, no internet scripts unchanged; still undated; 100 active not found. 2026-11-20: Opened 2026-11-20. Upload methods, 100 MB, unsupported types, no internet in scripts confirmed. 'Unlimited skills, 100 active' not found. Page undated, so no dated vendor doc for this row"
   note: Recheck of E8 with a second Google page. 100 MB confirmed. Connected Apps need Keep Activity on, but a core lab does not need them
   carried_from: market-research
   recheck_2026_11_22: 'Reopened 2026-11-22. New on the page: ''You can specify the skill Gemini should use for a task or a schedule''s action'' (see gm-12). Scripts that need the internet are not supported. The page does not say where scripts run, or if a skill can use Google Search or create files'
@@ -401,7 +401,7 @@ features:
   source_date: 2026-09-30 (updated 2026-11-09)
   checked_on: 2026-11-20
   status: verified
-  verifier_note: Opened 2026-11-20 (posted 2026-09-30, updated 2026-11-09). Gemini app skills for all Workspace customers, rollout done by mid-November 2026. The Help page says work accounts 'soon'. Blog says Gemini app skills have no age limit; Help page says 18+. Test on a Workspace account at Gate 2
+  verifier_note: "Verifier 2026-11-22 (E8 recheck): 2026-10-13 post (updated 2026-11-09) also says Gemini app skills for all Workspace customers, all ages. 2026-11-20: Opened 2026-11-20 (posted 2026-09-30, updated 2026-11-09). Gemini app skills for all Workspace customers, rollout done by mid-November 2026. The Help page says work accounts 'soon'. Blog says Gemini app skills have no age limit; Help page says 18+. Test on a Workspace account at Gate 2"
   note: CONFLICT. This page says Workspace accounts have Gemini app skills now. The Gemini Apps Help pages (gm-01, gm-02) say work and school accounts are "coming soon" and the CLAUDE.md context says March 2027. The blog's March 2027 date is when Gems stop for business accounts, not when skills start. Dan must decide which to trust. Test on a Workspace business account at Gate 2
   carried_from: market-research
   recheck_2026_11_22: 'Second Google page 2026-11-22: Workspace Updates post 2026-10-13 (updated 2026-11-09) says Gemini app skills are for all Workspace customers and personal accounts, all ages, with no admin controls. Skills in Workspace apps (Docs, Sheets) were ''delayed until further notice''; the 2026-11-09 update says they started rolling out. See gm-13'
@@ -490,7 +490,8 @@ features:
   source_date: approx 2026-11-14 (page says 'updated over a week ago')
   note: 'Core path for a market sizing refresh. Pre-class check for company learners: the org owner must turn web search on'
   checked_on: '2026-11-22'
-  status: not verified
+  status: "partly verified"
+  verifier_note: "Verifier 2026-11-22: opened (updated over a week ago). Free limits, owner turn-on for Team and Enterprise, web fetch, citations in every response and no toggle in the new experience confirmed. Page does not list plans, so All plans is an inference. No Projects or skills"
 - id: cl-rs-09
   platform: claude
   feature: Research (multi-source research mode)
@@ -512,7 +513,8 @@ features:
   source_date: '2026-07-23'
   note: 'CONFLICT with cl-fo-06 (30 MB per file). Use 30 MB in step cards. If an admin turns code execution off, learners cannot upload the scoring sheet as XLSX: give a CSV copy in the case pack. Source is 4 months old (inside 12 months)'
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened. Updated 2026-07-23. 500 MB and 20 files per chat, 30 MB per project file, XLSX needs code execution, CSV supported. No plan differences stated"
 - id: cg-09
   platform: chatgpt
   feature: 'ChatGPT Work (agent for longer tasks: research, analysis, finished documents, spreadsheets, presentations, reports and Sites)'
@@ -523,7 +525,8 @@ features:
   source_date: 2026-11-19 (latest release note entry; the URL loads 'ChatGPT Business release notes'; page says 'updated yesterday')
   note: Major change since Market Research. This is the first dated OpenAI doc for spreadsheet output, but it excludes Go. The Market Research decision 'Go or Plus minimum' (gate-1-decisions e) does not cover file output for Go learners. Not available in a project that uses project-only memory (cg-14). Test at Gate 2 before core use
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: release notes opened. 2026-07-09 entry: Work on paid plans except Free and Go; Pro, Pro Lite, Enterprise, Edu first, then Plus and Business. Documents, spreadsheets, presentations, scheduled tasks, skills GA for Enterprise and Edu confirmed. Latest entry seen was 2026-10-01, not 2026-11-19"
 - id: cg-10
   platform: chatgpt
   feature: Create and edit documents, spreadsheets and presentations with ChatGPT Work (templates, formulas)
@@ -534,7 +537,8 @@ features:
   source_date: approx 2026-11-22 (page says 'updated 8 hours ago')
   note: 'Retry of the cg-08 open item: loaded on help-lb. Page changed title to ''with ChatGPT Work''. Formula guidance fits the ''calculations stay auditable'' rule (workbook 2.3). Projects and skills not mentioned'
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened on help-lb (updated 8 hours ago). Title with ChatGPT Work, xlsx with formulas, review formulas, Excel add-in via Codex, Google connector needed confirmed. Plans not named. CSV and PDF output not mentioned"
 - id: cg-11
   platform: chatgpt
   feature: Data analysis (Python in a stateful Jupyter environment on uploaded files)
@@ -545,7 +549,8 @@ features:
   source_date: approx 2026-11-19 (page says 'updated 3 days ago')
   note: 'Core path for scoring and sensitivity math on ChatGPT: the learner uploads the scoring sheet in chat and asks for the code. Show the result as an on-screen table until file download is proven for Go and Plus in a Project'
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened on help-lb (updated 3 days ago). Stateful Jupyter, input types, no web requests, plan sentence confirmed. Download of output files not stated"
 - id: cg-12
   platform: chatgpt
   feature: Deep research (cited multi-source report)
@@ -567,7 +572,8 @@ features:
   source_date: approx 2026-11-20 (page says 'updated 2 days ago')
   note: Core path for the market sizing refresh. Citations are optional on this platform, so the brief must require a source link per number (trace-to-source method)
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened on help-lb (updated 2 days ago). Plan sentence, admin control by role, citations may be included, results can be wrong confirmed"
 - id: cg-14
   platform: chatgpt
   feature: Project memory modes and tools in projects
@@ -578,7 +584,8 @@ features:
   source_date: approx 2026-11-19 (page says 'updated 3 days ago')
   note: 'Lab design: a ChatGPT course agent in a Project with project-only memory cannot use Work for file output. Default memory lets the agent see the learner''s other chats in that project, which helps runs over time but can leak earlier scores into a ''blind'' second scorer run. Use a new chat outside the project for the consistency check'
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened on help-lb (updated 3 days ago). Two memory modes, shared projects project-only, ChatGPT Work not available in the project, paid tools sentence confirmed"
 - id: mb-12
   platform: copilot
   feature: Public websites and 'Search all websites' as agent knowledge
@@ -589,7 +596,8 @@ features:
   source_date: 2026-11-16 (ms.date 2026-09-30)
   note: Core path for the market sizing refresh, also for Copilot Chat users without a license. An admin can still turn web grounding off for the tenant (not on this page; check before class)
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened. Updated 2026-11-16. 4 URLs, two levels, no query parameters, Search all websites toggle confirmed"
 - id: mb-13
   platform: copilot
   feature: Code interpreter input files
@@ -600,7 +608,8 @@ features:
   source_date: 2026-09-28 (footer; ms.date 2026-07-06; metadata updated_at 2026-10-22)
   note: 'Lab design: the learner uploads the scoring sheet in chat for each scoring or sensitivity run. Do not rely on the knowledge copy for math. Download the output before the session ends'
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened. Page now says last updated 2026-11-16 (not 2026-09-28). Input types, session-only output, license sentence confirmed. Reading knowledge files not documented"
 - id: mb-14
   platform: copilot
   feature: Excel files as embedded knowledge (format rules)
@@ -611,7 +620,8 @@ features:
   source_date: 2026-11-16 (ms.date 2026-09-30)
   note: 'Case data for Copilot: give .xlsx with one sheet per file, not CSV. Counts toward the 20-file limit (mb-02)'
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened. Updated 2026-11-16. xls and xlsx 30 MB, CSV not in the table, one sheet guidance, 20,000 rows and 50 MB confirmed"
 - id: gm-10
   platform: gemini
   feature: Upload and analyze files in the Gemini app (spreadsheets, charts from spreadsheets)
@@ -622,7 +632,8 @@ features:
   source_date: unknown (page shows no date)
   note: Undated, so this does not meet the dated vendor doc rule. Uploads in a chat that uses a skill are not covered
   checked_on: '2026-11-22'
-  status: not verified
+  status: "partly verified"
+  verifier_note: "Verifier 2026-11-22: opened. 10 files, 100 MB, charts from spreadsheets, AI Pro and Ultra 1M tokens, Drive admin rule confirmed. Code execution and export not stated. Page undated, so no dated vendor doc"
 - id: gm-11
   platform: gemini
   feature: Code files and scripts inside a skill
@@ -633,7 +644,8 @@ features:
   source_date: unknown (page shows no date)
   note: Key risk for scoring and sensitivity labs. Until a Gate 2 test shows a skill script runs and returns numbers, the Gemini step card must not depend on it
   checked_on: '2026-11-22'
-  status: not verified
+  status: "partly verified"
+  verifier_note: "Verifier 2026-11-22: opened. .py, .sh, .ipynb, .js allowed and no internet scripts confirmed. Page does not say where or if scripts run. Page undated. Key risk stands"
 - id: gm-12
   platform: gemini
   feature: Name a skill in a task or a scheduled action
@@ -644,7 +656,8 @@ features:
   source_date: unknown (page shows no date)
   note: Closes part of the gm-08 open item (no proof that a schedule can run a skill). Stretch only. CAW-AI already teaches scheduled tasks
   checked_on: '2026-11-22'
-  status: not verified
+  status: "partly verified"
+  verifier_note: "Verifier 2026-11-22: opened. Sentence confirmed. Page undated"
 - id: gm-13
   platform: gemini
   feature: Skills in Workspace apps (Docs, Sheets and others) versus skills in the Gemini app
@@ -655,7 +668,8 @@ features:
   source_date: 2026-10-13 (updated 2026-11-09)
   note: A skill in Sheets could run a scoring model inside a live sheet, but rollout status conflicts on the page. Core path stays in the Gemini app
   checked_on: '2026-11-22'
-  status: not verified
+  status: "verified"
+  verifier_note: "Verifier 2026-11-22: opened. Posted 2026-10-13, updated 2026-11-09. Gemini app skills for all Workspace customers and personal accounts, all ages, no admin controls; Workspace editions list, 18+, delayed then started rolling out confirmed. Sync not described on this page"
 not_opened:
 - url: https://www.microsoft.com/releasecommunications/api/v2/m365/531759
   reason: Opened (fetch 15) but returned binary data. Microsoft-hosted copy of the agent builder scheduled prompts item (mb-06) still missing

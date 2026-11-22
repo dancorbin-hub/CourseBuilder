@@ -29,7 +29,8 @@ entries:
     source_date: 2026-10-27
     checked_on: 2026-11-22
     age_flag: false
-    status: verified (research page opened; full PDF not opened)
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: research page opened (2026-10-27; Herdagdelen, Joren, Tamkin). 86%, 54% vs 36%, 77%, 15%, 61/50/11, 60% vs 6% (38 cases), 6% vs 55%, 65 minutes, Claude Opus 4.8 confirmed. Raw gap is 18 points; the chart says 17. Study period not stated. Vendor. PDF not opened"
     note: >-
       Population: professional analysts from a pre-screened pool with causal-inference skills. Sample: 61
       recruited, 50 analyzed with the agent, 11 chose no agent. Period not stated. Method: RCT. A coin flip set
@@ -56,7 +57,8 @@ entries:
     source_date: 2026-03-26
     checked_on: 2026-11-22
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: Science PDF opened (copy on a MediaPost server). Science 391, eaec8352, 2026-03-26. 11 models, 49%, 3 studies, N 2,405 (804, 801, 800), 13% return, US participants confirmed. The arXiv preprint has different figures (50%, 2 studies, N 1,604). Cite the Science version only"
     note: >-
       Peer reviewed (Science). Preprint was posted 2025-10; the journal version is 2026, so it passes the 2026
       rule. Population: US online participants. Sample: 804, 801 and 800 in studies 2a, 2b and 3; study 3 was a
@@ -81,7 +83,8 @@ entries:
     source_date: 2026-03-16
     checked_on: 2026-11-22
     age_flag: false
-    status: partly verified (primary HBR article not opened)
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: HBR page opened (2026-03-16, body paywalled). Numbers found in a full-text snapshot of the HBR article (zby.github.io), not on hbr.org. Under 2% applies to the 2 strongest tensions only (others moved about 22%). The 11% context shift and recommending both were ChatGPT-only results; the claim says models. 15,000 plus trials were per GPT-5 experiment. Fortune (2026-04-10) confirms 7 models, no percentages"
     note: >-
       NYU Stern page (author's school) confirms the finding and the HBR date but gives no numbers. The numbers
       come from a third-party summary page (zby.github.io), not the HBR article. Models: ChatGPT, Claude,
@@ -104,7 +107,8 @@ entries:
     source_date: 2026-07
     checked_on: 2026-11-22
     age_flag: false
-    status: verified (abstract only)
+    status: "verified (abstract only)"
+    verifier_note: "Verifier 2026-11-22: ACL Anthology page opened. ACL 2026 short papers, pp. 174 to 180, July 2026. All 3 findings and Llama and Qwen variants confirmed"
     note: >-
       Peer-reviewed conference paper. Models: base, instruction-tuned and distilled Llama and Qwen (open weight,
       not the chat products learners use). Effect sizes not in the abstract. Course use: a number the PM puts in
@@ -125,7 +129,8 @@ entries:
     source_date: 2026-04-03 (as shown on the page; the arXiv number suggests May 2026)
     checked_on: 2026-11-22
     age_flag: false
-    status: verified (abstract only), weak
+    status: "verified (abstract only), weak"
+    verifier_note: "Verifier 2026-11-22: arXiv abstract opened. v1 submitted 2026-04-03. Preregistered confirmed. Findings confirmed. No numbers, no model names"
     note: >-
       Preprint, not peer reviewed. Don Moore is a leading researcher on human overprecision. The abstract gives
       no numbers and does not name the models. Date on the page does not match the arXiv number. Supports the
@@ -147,7 +152,8 @@ entries:
     source_date: 2026-04-03
     checked_on: 2026-11-22
     age_flag: false
-    status: verified (abstract only)
+    status: "verified (abstract only)"
+    verifier_note: "Verifier 2026-11-22: arXiv abstract opened. 2026-04-03. 3 to 13%, 5 to 18%, 6 to 79 times to under 1%, 53,090 and 168,021 URLs, business 5.4% confirmed"
     note: >-
       Preprint (University of Pennsylvania authors). Population: citation URLs, not people. Sample: 53,090 URLs
       from 10 models and agents on DRBench and 168,021 URLs from 3 models on ExpertQA across 32 fields. Method:
@@ -172,7 +178,8 @@ entries:
     source_date: 2026-06-12
     checked_on: 2026-11-22
     age_flag: false
-    status: verified for the error counts (single source, vendor); KPMG removal confirmed by a second source
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: GPTZero (2026-06-12) and The Register (2026-06-12, Carly Page) opened. 5 of 45, 12/7/14 of 33, 55% vs 71% confirmed (GPTZero only, vendor). 16 and 28 are different categories, not a mismatch. Removal confirmed only by KPMG quote in The Register; FT says some sites. GPTZero page does not say removed"
     note: >-
       Services industry. GPTZero sells AI detection and citation-checking tools, so it gains from the story.
       The Register repeats GPTZero's findings without its own check, so for the counts S8 and S9 are one source.
@@ -195,7 +202,8 @@ entries:
     source_date: 2025-11-25
     checked_on: 2026-11-22
     age_flag: "partly. Canada item is 362 days old (inside 12 months). The Australia item (October 2025) is older than 12 months. Dan decides"
-    status: partly verified, single source opened
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened (fetch budget). Researcher opened one secondary source only. Needs a second independent source"
     note: >-
       Health care and services. Fortune is a secondary source; The Independent investigation was not opened.
       Deloitte Canada said AI was used only to support "a small number of citations" and that findings stand.
@@ -217,7 +225,8 @@ entries:
     source_date: 2026-02-03
     checked_on: 2026-11-22
     age_flag: false
-    status: verified (PDF opened; last 5% not read)
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: PDF opened (first 100,000 of 105,618 characters). 30 projects, 870 pairs, 19 LLMs, 0.74, about 4 of 5 pairs, 0.45, 0.19, 0.67 confirmed. WARNING: the draft says do not circulate or cite without the authors permission. Dan must get permission or wait for a published version before a slide"
     note: >-
       Preprint marked draft (University of Michigan, NYU Stern, Indiana University). Population: 19 LLMs, 346
       Prolific managers, 3 experts. Sample: 30 US tech Kickstarter projects launched after the models' training
@@ -239,7 +248,8 @@ entries:
     source_date: 2026-06-24 (updated 2026-10-16)
     checked_on: 2026-11-22
     age_flag: false
-    status: verified (report page opened; full report not opened)
+    status: "verified (report page opened; full report not opened)"
+    verifier_note: "Verifier 2026-11-22: report page opened. Published 2026-06-24, updated 2026-10-16. 309, 40 countries, 52% director+, April to May 2026, 85%, 17%, 62% vs 19%, self-selected and directional confirmed. Pragmatic competitor"
     note: >-
       Population: product professionals in 40 countries; 52% director level or above; about half software or
       SaaS; 26% regulated sectors. Sample: 309 (about 270 answered extended questions). Method: online survey of
@@ -263,7 +273,8 @@ entries:
     source_date: 2024-05-14
     checked_on: 2026-11-22
     age_flag: true
-    status: verified, single source, vendor, self-reported
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened. Researcher opened it; vendor, 2024, older than 12 months"
     note: >-
       Internal product management (a priority industry). IBM has 500+ PMs and over 30,000 ideas a year. No
       measured results (no time saved or accuracy). No formal review step described. Older than 12 months: Dan
@@ -282,7 +293,8 @@ entries:
     source_date: 2026-06-23 (last modified; no publish date shown)
     checked_on: 2026-11-22
     age_flag: false
-    status: verified, single source, vendor, self-reported
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened. Researcher opened it; vendor, no measured results"
     note: >-
       FinTech. Company not named. No measured results: the goal "3x faster" is not reported as met. No approval
       gates for agent actions described. Shows the "agent watches the plan and flags; humans decide" pattern for
@@ -300,7 +312,8 @@ entries:
     source_date: unknown
     checked_on: 2026-11-22
     age_flag: unknown
-    status: not verified, weak
+    status: "not verified, weak"
+    verifier_note: "Verifier 2026-11-22: not reopened. Do not use"
     note: >-
       Software. Personal article on an aggregator; no date, no original publisher, no method or baseline for any
       figure. Other numbers (30% faster decision cycles, 40% fewer escalations) have the same problem. Author
@@ -323,7 +336,8 @@ entries:
     source_date: 2026-02-05
     checked_on: 2026-11-20 (Market Research run; not opened again)
     age_flag: false
-    status: verified, vendor (Market Research verifier)
+    status: "verified, vendor (Market Research verifier)"
+    verifier_note: "Verifier 2026-11-22: not reopened. Carried status from the 2026-11-20 verifier"
     note: >-
       Carried because every lab needs a data safety note. Strategy work uses sensitive inputs (pricing, financial
       plans, unannounced roadmaps). Market Research verifier: 222 companies, data through 2025, report says "AI

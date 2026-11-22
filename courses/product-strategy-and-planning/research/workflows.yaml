@@ -82,7 +82,8 @@
     source_date: '2026-09-28'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified (secondary report of W2)
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Published 2026-09-28 (Sapphire Reels). 308 senior enterprise leaders; 80%, 11% (three quarters of portfolio work linked), 83%, 72% confirmed. Survey period not stated. Expedia quote confirmed (Team 26, 2026-05-06). Same study as W2"
     note: Vendor of portfolio software reports its own study. Primary study is W2; W1 and W2 count as one source. Expedia item is a conference anecdote (Team 26, 2026-05-06), not study data
   - id: W2
     claim: Only 11% have execution work connected to strategy in a system; 80% say their strategy is clear; only 8% use dynamic, outcome-based funding; nearly two thirds take a month or more to decide after a performance signal
@@ -92,7 +93,8 @@
     source_date: unknown (reported 2026-09-28 in W1)
     checked_on: '2026-11-22'
     age_flag: false
-    status: partly verified
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: opened. 308 leaders, 11%, 8%, nearly two thirds, 80% confirmed. No publish date (copyright 2026), no survey dates, no method, no base per figure. Whitepaper not opened. Not slide-ready"
     note: 308 senior enterprise leaders. Publish date, method and field dates not stated on the page; whitepaper not opened. The 11% wording differs from W1. Vendor study. Confirm it is a 2026 study before any slide use
   - id: W3
     claim: 'Roadmap to strategy alignment averages 3.6 of 5 and outcome to company goal connection 3.5 of 5. Top causes of misalignment: resource and capacity limits (49.2%), short-term priority shifts (47.5%), leadership direction changes (43.9%). 72.2% spend 25% or less of their time on product strategy'
@@ -102,7 +104,8 @@
     source_date: '2026-03-11'
     checked_on: '2026-11-22'
     age_flag: false
-    status: partly verified
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: opened. Rebecca Stewart, 2026-03-11 (modified 2026-05-01). All 6 figures confirmed. Source is the PLA 2026 State of Product Management report, almost 250 product leaders. Method and field dates not stated. Primary report not opened"
     note: Cites the 2026 State of Product Management report, about 250 product leaders, method not given. Primary report not opened. Practitioner community that sells reports. Independent of W1 and W2
   - id: W22
     claim: Portfolio and roadmap reviews run on decks and spreadsheets that are already stale; meetings become data reconciliation, not decisions; one person becomes the 'human integration layer' who stitches engineering and procurement updates; hardware runs on stage gates of months while software ships in weeks, so dependencies stay hidden
@@ -112,7 +115,8 @@
     source_date: '2026-05-05'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. 2026-05-05, Maziar Adl. All points confirmed, including the first 30 minutes spent reconciling data. Vendor"
     note: Hardware product management software vendor. No data
   open_gaps:
   - Primary reports for W2 (date, method) and W3
@@ -195,7 +199,8 @@
     source_date: '2026-01-19'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Dated 2026-01-19, no author. All 4 points confirmed in the page text. No data"
     note: No author named. Software comparison site. Weak source; no data
   - id: W5
     claim: Without systematic analysis the loudest stakeholder wins; features get built because a sales rep pushed a deal or an executive had a bad customer call; reasoning behind priorities is often undocumented
@@ -205,7 +210,8 @@
     source_date: '2026-02-24'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: opened. 2026-02-24, staff writer. Loudest stakeholder and sales or executive push confirmed (page says a sales rep escalated a deal). Undocumented reasoning is not stated, only implied by advice. Page figures unsourced or 2025"
     note: 'No author named. Cloud consultancy blog. Its survey figures come from Mind the Product 2025 and an unsourced 61% figure: do not use them. Independent of W4'
   - id: W6
     claim: 'Hardware stage gates: each stage raises the cost of being wrong about 10 times; most kills happen late, after 1M USD or more per program; kill triggers should come from each program''s original business case assumptions; screening criteria calibrated against 20 past ideas'
@@ -215,7 +221,8 @@
     source_date: '2026-06-01'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened (fetch budget). Context lead only, not a bottleneck source"
     note: 'Innovation software vendor. Case figures are anonymized ''observed practice'' with no named source: do not use the numbers. Useful as a hardware context lead only'
   open_gaps:
   - A dated, signed source with data on scoring inconsistency
@@ -298,7 +305,8 @@
     source_date: '2026-09-15'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Published 2026-09-15, updated 2026-09-30. 4B to more than 20B, 3 layers, never add the two confirmed. Publisher sells a 2,999 USD dataset"
     note: Updated 2026-09-30. Publisher sells the dataset it cites. One market only (quantum), used as a worked example of the reconciliation burden
   - id: W8
     claim: Market size numbers differ between research firms by definition, base year, regional coverage, unit and currency, method, source depth and update timing. The buyer must align definitions, years and coverage before comparing; an estimate is a model, not a measured fact
@@ -308,7 +316,8 @@
     source_date: 2026-10 (month only)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. October 2026, Likhil Gajbhiye. All 7 causes and model not fact confirmed. Align before compare is implied (compare like for like)"
     note: Market research vendor that sells reports. Independent of W7
   - id: W9
     claim: The needed market number rarely exists in reports; sources conflict and often quote one source; secondary research takes a lot of time
@@ -318,7 +327,8 @@
     source_date: '2025-04-21'
     checked_on: '2026-11-20'
     age_flag: true
-    status: verified (2026-11-20, not reopened)
+    status: "verified (Market Research verifier 2026-11-20; not reopened)"
+    verifier_note: "Verifier 2026-11-22: not reopened. Older than 12 months"
     note: Was W9 in mr-wf-06. Older than 12 months; Dan decides
   - id: W10
     claim: Market sizing is a lot of desk research, rests on written assumptions, needs several iterations, and data goes stale fast
@@ -328,7 +338,8 @@
     source_date: '2023-04-04'
     checked_on: '2026-11-22'
     age_flag: true
-    status: verified
+    status: "verified (Market Research verifier 2026-11-20; not reopened)"
+    verifier_note: "Verifier 2026-11-22: not reopened. Older than 12 months"
     note: Was W19 in mr-wf-06. Last modified 2023-12-20. Older than 12 months; Dan decides. Its own worked example has arithmetic errors (10% of 23 million stated as 230,000), which is a usable teaching example
   open_gaps:
   - Hardware and internal PM sizing sources
@@ -407,7 +418,8 @@
     source_date: '2026-05-01'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. 2026-05-01, William Cimarosa (Egg Strategy). All 4 points confirmed. No data"
     note: Research agency practitioner. No measured data. Consumer goods focus
   - id: W12
     claim: 'Research demand rose: 66% of respondents report more demand in 2026 vs 55% in 2025; ''the infrastructure has not kept up''; researchers end up wrangling transcripts under tight timelines; 69% use AI in some research projects'
@@ -417,7 +429,8 @@
     source_date: unknown (survey fielded 2025-12-23 to 2026-01-13)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Nearly 500 responses, online survey, fielded 2025-12-23 to 2026-01-13. 66% vs 55%, 69% AI use and transcript wrangling quote confirmed. Exact quote is infrastructure has not kept up with the demand. Publish date not shown. Vendor"
     note: About 500 responses, online survey by a research tool vendor. General research, not concept tests only. Publish date not shown; field dates end in 2026
   - id: W13
     claim: Qualitative research takes about 6 weeks; manual coding takes 2 to 3 hours per interview; concept reviews close before findings arrive
@@ -427,7 +440,8 @@
     source_date: '2026-08-18'
     checked_on: '2026-11-20'
     age_flag: false
-    status: not verified
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened. Not counted toward the 2-source rule"
     note: Was W16 in mr-wf-08. AI research vendor, no primary data. Not reopened. Not counted toward the 2-source rule
   open_gaps:
   - A concept test specific 2026 source
@@ -508,7 +522,8 @@
     source_date: 2026-06 (from URL path; page shows 2026 copyright only)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified, weak
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: opened. All 4 poll figures confirmed. No sample size, no poll date, no publish date on the page (copyright 2026, URL path 2026/06). Webinar poll of valuation practitioners. A statistic with no sample: do not put on a slide"
     note: KPMG webinar poll, sample size not stated. Population is deal and valuation practitioners, not PMs. Use as a business plan forecast burden only, not as a PM statistic
   - id: W15
     claim: New product business cases go stale during execution; teams rarely recheck the original hypotheses; few organizations revisit them often enough; critical assumptions should be reviewed at least quarterly; one client ran 25 or more projects but launched 2 to 3 a year
@@ -518,7 +533,8 @@
     source_date: '2024-02-12'
     checked_on: '2026-11-22'
     age_flag: true
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. 2024-02-12, no author. All claims confirmed; quarterly review is advice, not a finding. Older than 12 months: Dan decides"
     note: Planning consultancy with manufacturing clients. Older than 12 months; Dan decides. Mentions supply chain and production uncertainty
   - id: W6
     claim: 'Hardware stage gates: each stage raises the cost of being wrong about 10 times; most kills happen late, after 1M USD or more per program; kill triggers should come from each program''s original business case assumptions; screening criteria calibrated against 20 past ideas'
@@ -528,7 +544,8 @@
     source_date: '2026-06-01'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened (fetch budget). Context lead only, not a bottleneck source"
     note: 'Innovation software vendor. Case figures are anonymized ''observed practice'' with no named source: do not use the numbers. Useful as a hardware context lead only'
   - id: W23
     claim: 'After an investment goes live, reviewers check if business case benefits are realized: warning signs are output measures that only show delivery, weak or outdated evidence, reporting without action, unclear attribution, double counting, and no comparison to the business case baseline and forecast. Guidance suggests annual tracking for up to 3 years'
@@ -538,7 +555,8 @@
     source_date: 2026-10 (month only)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. NZ Treasury, October 2026. 6 warning signs, annual tracking up to 3 years and scope (digital, equipment, change) confirmed"
     note: Government assurance workbook for digital, equipment and change investments. No statistics. Public sector internal investment context
   open_gaps:
   - A 2026 source on business case burden from product teams
@@ -617,7 +635,8 @@
     source_date: '2026-08-05'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. 2026-08-05 (modified 2026-09-17), Dan Morgese. All 4 points confirmed. Retool figure is roughly a third; primary not opened"
     note: Software vendor blog with quoted practitioners (HubSpot, G2). Cites a Retool 2026 report (about a third replaced a tool with a custom AI build); primary not opened
   - id: W17
     claim: Teams treat build vs buy as a cost question, not a strategy question; buyers must look past the first invoice to total cost of flexibility; building AI carries heavy fixed costs (talent, data pipelines, evaluation tooling); bought AI changes models, behavior and price on the vendor's schedule
@@ -627,7 +646,8 @@
     source_date: '2026-01-04'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. 2026-01-04, Carlos Gonzalez de Villaumbrosia. All 4 points confirmed"
     note: Training company blog. No original data. Independent of W16
   - id: W18
     claim: 56.0% of 830 enterprise decision makers prefer to build most applications in-house and buy only where necessary (1H 2026), vs 56.6% in 2H 2025
@@ -637,7 +657,8 @@
     source_date: '2026-06-17'
     checked_on: '2026-11-22'
     age_flag: false
-    status: partly verified
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened. Context only"
     note: Press release opened; full report and method not opened. IT decision makers, not PMs. Context, not a bottleneck source
   open_gaps:
   - Hardware source
@@ -715,7 +736,8 @@
     source_date: 2026-09-20 (last modified; no original date)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Last modified 2026-09-20, no author. Governance, change control, decision log, versioning, reset rules and hardware points confirmed"
     note: Consultancy playbook, no byline, no data. Strong hardware detail
   - id: W3
     claim: 'Roadmap to strategy alignment averages 3.6 of 5 and outcome to company goal connection 3.5 of 5. Top causes of misalignment: resource and capacity limits (49.2%), short-term priority shifts (47.5%), leadership direction changes (43.9%). 72.2% spend 25% or less of their time on product strategy'
@@ -725,7 +747,8 @@
     source_date: '2026-03-11'
     checked_on: '2026-11-22'
     age_flag: false
-    status: partly verified
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: opened. Rebecca Stewart, 2026-03-11 (modified 2026-05-01). All 6 figures confirmed. Source is the PLA 2026 State of Product Management report, almost 250 product leaders. Method and field dates not stated. Primary report not opened"
     note: Cites the 2026 State of Product Management report, about 250 product leaders, method not given. Primary report not opened. Practitioner community that sells reports. Independent of W1 and W2
   - id: W24
     claim: Internal platforms need a product manager who owns the roadmap and measures value with usage metrics; teams without internal customers build 'in the void' on unverified assumptions
@@ -735,7 +758,8 @@
     source_date: '2023-04-26'
     checked_on: '2026-11-22'
     age_flag: true
-    status: verified
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened. 2023, older than 12 months"
     note: Older than 12 months; no longer on the current radar. Internal PM context lead only
   open_gaps:
   - Second 2026 source on roadmap traceability burden
@@ -814,7 +838,8 @@
     source_date: '2026-04-23'
     checked_on: '2026-11-22'
     age_flag: false
-    status: partly verified
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: opened. 2026-04-23, Janna Bastow. Claims confirmed (de facto commitments is attributed to Marty Cagan). 41% and 27% cite a 2026 State of B2B Product Management survey with no link or sample. Do not use the figures"
     note: Roadmap software vendor. Claims verified on the page; figures come from a '2026 State of B2B Product Management survey' that was not opened. Do not use the figures yet
   - id: W19
     claim: 'A roadmap that is not actively governed quickly becomes a historical record. Material changes need a controlled change process, a versioned roadmap and a decision log; a revised roadmap must say what changed, why and which commitments no longer hold; one version must feed plans, budgets and customer messages. Hardware: manufacturing readiness, design freeze, shared components, test facilities and suppliers spread delays across programs'
@@ -824,7 +849,8 @@
     source_date: 2026-09-20 (last modified; no original date)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Last modified 2026-09-20, no author. Governance, change control, decision log, versioning, reset rules and hardware points confirmed"
     note: Consultancy playbook, no byline, no data. Strong hardware detail
   - id: W21
     claim: Roadmap changes shake confidence in the roadmap; each stakeholder group needs different framing; vague hedges force the PM to deliver the same bad news again; roadmaps get mistaken for committed schedules
@@ -834,7 +860,8 @@
     source_date: '2019-07-01'
     checked_on: '2026-11-22'
     age_flag: true
-    status: verified
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened. 2019, older than 12 months"
     note: Older than 12 months; Dan decides. Author co-founded ProductPlan (roadmap vendor)
   open_gaps:
   - Primary survey behind W20 figures
@@ -912,7 +939,8 @@
     source_date: '2026-09-28'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified (secondary report of W2)
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Published 2026-09-28 (Sapphire Reels). 308 senior enterprise leaders; 80%, 11% (three quarters of portfolio work linked), 83%, 72% confirmed. Survey period not stated. Expedia quote confirmed (Team 26, 2026-05-06). Same study as W2"
     note: Vendor of portfolio software reports its own study. Primary study is W2; W1 and W2 count as one source. Expedia item is a conference anecdote (Team 26, 2026-05-06), not study data
   - id: W22
     claim: Portfolio and roadmap reviews run on decks and spreadsheets that are already stale; meetings become data reconciliation, not decisions; one person becomes the 'human integration layer' who stitches engineering and procurement updates; hardware runs on stage gates of months while software ships in weeks, so dependencies stay hidden
@@ -922,7 +950,8 @@
     source_date: '2026-05-05'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. 2026-05-05, Maziar Adl. All points confirmed, including the first 30 minutes spent reconciling data. Vendor"
     note: Hardware product management software vendor. No data
   - id: W19
     claim: 'A roadmap that is not actively governed quickly becomes a historical record. Material changes need a controlled change process, a versioned roadmap and a decision log; a revised roadmap must say what changed, why and which commitments no longer hold; one version must feed plans, budgets and customer messages. Hardware: manufacturing readiness, design freeze, shared components, test facilities and suppliers spread delays across programs'
@@ -932,7 +961,8 @@
     source_date: 2026-09-20 (last modified; no original date)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Last modified 2026-09-20, no author. Governance, change control, decision log, versioning, reset rules and hardware points confirmed"
     note: Consultancy playbook, no byline, no data. Strong hardware detail
   open_gaps:
   - Second source with data on portfolio review effort
@@ -1011,7 +1041,8 @@
     source_date: 2026-10 (month only)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. NZ Treasury, October 2026. 6 warning signs, annual tracking up to 3 years and scope (digital, equipment, change) confirmed"
     note: Government assurance workbook for digital, equipment and change investments. No statistics. Public sector internal investment context
   - id: W1
     claim: 80% of 308 senior leaders say their strategic priorities are clear, but only 11% can show that at least three quarters of portfolio work is explicitly linked to them. 83% rely on manual status updates and personal judgment. 72% say competing priorities chronically overstretch key teams. Expedia quarterly priority reviews took weeks of preparation and outreach to 50 or more PMs
@@ -1021,7 +1052,8 @@
     source_date: '2026-09-28'
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified (secondary report of W2)
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: opened. Published 2026-09-28 (Sapphire Reels). 308 senior enterprise leaders; 80%, 11% (three quarters of portfolio work linked), 83%, 72% confirmed. Survey period not stated. Expedia quote confirmed (Team 26, 2026-05-06). Same study as W2"
     note: Vendor of portfolio software reports its own study. Primary study is W2; W1 and W2 count as one source. Expedia item is a conference anecdote (Team 26, 2026-05-06), not study data
   - id: W2
     claim: Only 11% have execution work connected to strategy in a system; 80% say their strategy is clear; only 8% use dynamic, outcome-based funding; nearly two thirds take a month or more to decide after a performance signal
@@ -1031,7 +1063,8 @@
     source_date: unknown (reported 2026-09-28 in W1)
     checked_on: '2026-11-22'
     age_flag: false
-    status: partly verified
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: opened. 308 leaders, 11%, 8%, nearly two thirds, 80% confirmed. No publish date (copyright 2026), no survey dates, no method, no base per figure. Whitepaper not opened. Not slide-ready"
     note: 308 senior enterprise leaders. Publish date, method and field dates not stated on the page; whitepaper not opened. The 11% wording differs from W1. Vendor study. Confirm it is a 2026 study before any slide use
   open_gaps:
   - Product-team source (W23 is public sector)
