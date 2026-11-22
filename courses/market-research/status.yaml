@@ -6,7 +6,7 @@ stage: 2              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = p
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp" }
   gate_1_research:    { status: approved, approved_on: 2026-11-22, doc: "https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW" }
-  gate_2_spec:        { status: not_started, approved_on: null, doc: null, pragmatic_review: null }
+  gate_2_spec:        { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: null }
   gate_3_modules:     []   # one entry per module: { module: 1, status: ..., approved_on: ..., doc: ... }
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
