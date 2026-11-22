@@ -11,3 +11,4 @@
 - 06:59 UTC: Verifier (mode 1, 50 fetches) and Step 3 reruns (tracks 1 to 4, 10 fetches each, separate rerun-track-N files) started together after the fetch budget reset.
 - Rerun track 2 done (7 entries; Gemini code or file output not documented; Copilot embedded xlsx not documented; MR-E9 page blocked).
 - Rerun track 4 done (E15 to E19; no named-company measured case; anchoring evidence from non-PM tasks only; E13 untraceable).
+- Rerun track 1 done (W25 to W28 for sp-wf-02; new row sp-wf-11 hardware gate commit check, overlaps sp-wf-05).
