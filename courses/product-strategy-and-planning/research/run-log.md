@@ -12,3 +12,4 @@
 - Rerun track 2 done (7 entries; Gemini code or file output not documented; Copilot embedded xlsx not documented; MR-E9 page blocked).
 - Rerun track 4 done (E15 to E19; no named-company measured case; anchoring evidence from non-PM tasks only; E13 untraceable).
 - Rerun track 1 done (W25 to W28 for sp-wf-02; new row sp-wf-11 hardware gate commit check, overlaps sp-wf-05).
+- Rerun track 3 done (N21 to N24; N5 and W3 are one survey, Q4 2025 fieldwork; 60.2% override figure corrected; hardware gate time still a gap).
