@@ -187,3 +187,45 @@ Platform risks for the labs:
 
 - W6, W13, W18, W21, W24; E8, E11, E12, E13; N2 to N11 and N14 to N20 (except as noted).
 - Atlassian SPM whitepaper (W2), PLA 2026 State of Product Management report (W3), AppleInsider (bond 2), Stanford GSB case (bond 4), Anthropic full PDF (E1).
+
+## Rerun entries (second pass)
+
+Checked 2026-11-22. Fetch budget: 15 pages, 15 used. Statuses are set in the rerun files. The Synthesizer merges them.
+
+| Id | Claim | Result | Note |
+| --- | --- | --- | --- |
+| W25 | PLA: inconsistent weighing, decisions easy to reopen, escalations reset roadmap | Verified | Text confirmed. Figures are N21. Page promo "250 product leaders" is wrong. Author is on the N21 team |
+| W26 | ITONICS: averages hide gaps, unrecorded overrides, rescoring fatigue | Verified | Text confirmed. All numbers illustrative, unsourced. Vendor |
+| W27 | ProductPlan: escalations are the top override force | Verified | Text confirmed. Figures are N21, not independent. Satav paraphrase only |
+| W28 | Product Coalition: frameworks launder opinion | Not verified | Not opened (budget) |
+| N10 | Hardware commits in stages; cost near vertical after steel tooling | Verified | Reopened. Also: advance on evidence, "not because the calendar demands it" |
+| N11 | Hardware: skipped customer and budget questions; late misalignment costs | Verified | Reopened. AI quote is from Xaviera Reynhout, quoted in the article |
+| N21 | State of Product Management 2026: 60.2% override, 3.3 of 5, 49.2%, 47.5%, 72.2% | Verified | Primary PDF opened. Nearly 250 professionals (43.3% leaders), fieldwork Q4 2025. 60.2% is a multi-select answer share, not a share of frameworks. PLA wrote it, ProductPlan sponsored it, p. 6 calls it ProductPlan's report. No method or response rate. Rule 4: Dan decides |
+| N22 | airfocus: platform value illegible, budget reviews hard | Verified | No statistics. Vendor blog |
+| N23 | Microsoft: platform work not costed or planned at stage 1 | Verified | en-us page opened. ms.date 2025-10-21: age flag, Dan decides |
+| N24 | Cooper and Zhao: gate preparation consumed time without value | Verified | No durations. 30% figure too old. Single source |
+| E15 | Deference to AI predictions (Newcomb) | Not verified | Not opened (budget) |
+| E16 | Pathologists anchor on AI estimate, more under time pressure | Verified (abstract) | n = 28. Correct the 7%: automation bias rate. Time pressure made errors worse, not more frequent. Preprint |
+| E17 | Credit ratings drift toward AI advice over time | Verified (abstract) | JMS 63(2), DOI 10.1111/joms.70009. 6 studies, 3 sessions each. No sample or effect sizes in the abstract |
+| E18, E19 | Dragonboat bank story; trendslop replication | Not verified | Not opened (budget). Not for slides in any case |
+| E3, E12, E13 updates | Researcher findings | Not verified | Not reopened |
+| gm-14 | Gemini app creates files (Sheets, decks, PDF) | Verified | 2026-10-29. No .xlsx, no skills, no code execution |
+| gm-15 | Gemini skill runs code | Not verified | Gap stands (not found) |
+| mb-15 | Copilot code interpreter inputs | Verified | 2026-11-16. Uploads only; knowledge files not named. Page says code interpreter is "always enabled" in Agent Builder: conflicts with the toggle in mb-04 and MR-E6. Test at Gate 2 |
+| mb-16 | Copilot Studio code interpreter on structured knowledge (preview) | Verified | 2026-08-04. SharePoint knowledge, not embedded files. Not core |
+| MR-E6, MR-E8, MR-E9 | Carried platform entries | Not verified | Not reopened. First pass covers mb-01, gm-02, cg-01 |
+
+### Two-source check for the bottlenecks
+
+| Row | Sources | Result | Reason |
+| --- | --- | --- | --- |
+| sp-wf-02 | W25, W26 | Pass | Independent publishers and authors, both signed, both 2026. Both describe the burden: inconsistent weighing, reopened decisions, unrecorded overrides, rescoring fatigue. No usable time or cost data. Both are vendor or vendor-run. Dan decides if that is strong enough |
+| sp-wf-11 | N10, N11 | Partly pass | Independent, signed, 2026. They support staged commits, steep cost after tooling, advancing on the calendar, and late misalignment costs. Neither says the gate package check is manual cross-document work done late or not at all. Reword that sentence as an assumption or find a source. N24 adds one source on gate preparation burden |
+
+### Failures and actions
+
+1. N5 and W3 are one survey (N21). Any claim that uses both as 2 sources needs a new second source.
+2. The N5 claim "over 60% of frameworks are overridden" is wrong. Use: 60.2% of respondents name leadership escalations or new directives as a factor that most often overrides their framework.
+3. sp-wf-11 bottleneck text goes past its sources (see above).
+4. E16 "7% of cases" wording needs the automation bias definition.
+5. Copilot code interpreter toggle: docs conflict (mb-15 vs mb-04). Test at the Gate 2 proof.

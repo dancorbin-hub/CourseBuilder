@@ -19,7 +19,8 @@ new_entries:
     source_date: 2026-03-30 (v2 revised 2026-07-03)
     checked_on: 2026-11-22
     age_flag: false
-    status: not verified (abstract only)
+    status: not verified
+    verifier_note: 'Not opened in this pass (budget). Weak fit for anchoring in any case'
     note: >-
       Preprint, not peer reviewed. Population not stated in the abstract. Sample: 1,305 participants. Method:
       behavioral experiment; the study varied how AI predictions were shown and the decision context, and had a
@@ -42,7 +43,8 @@ new_entries:
     source_date: 2026-03-12 (v3 dated 2026-09-28)
     checked_on: 2026-11-22
     age_flag: false
-    status: not verified (abstract only)
+    status: verified (abstract only)
+    verifier_note: 'Opened 2026-11-22. Authors, dates (2026-03-12, v3 2026-09-28) and n = 28 confirmed. Moderate anchoring, larger under time pressure, confirmed. Correct the 7%: it is the automation bias rate, defined as accepted negative consultations where an incorrect AI advice overturned a correct independent judgment. Time pressure did not raise how often automation bias happened, but made the errors worse. arXiv preprint; a DOI prefix hints at the MELBA journal, not confirmed. No coefficient in the abstract'
     note: >-
       Preprint, not peer reviewed. Health care industry. Population: pathology experts. Sample: n = 28. Method:
       online within-subject experiment; each expert estimated tumor-cell percentages alone and again with AI
@@ -69,7 +71,8 @@ new_entries:
     source_date: 2026 (issue 63(2); month not shown)
     checked_on: 2026-11-22
     age_flag: false
-    status: not verified (abstract only, via EconPapers)
+    status: verified (abstract only)
+    verifier_note: 'Opened 2026-11-22 (EconPapers). Authors Kyootai Lee, Wooje Cho, Han-Gyun Woo, Simon de Jong. JMS 63(2) 399 to 437, 2026, DOI 10.1111/joms.70009. Six studies (2 main longitudinal, 4 supplementary), 3 sessions each. All claim points confirmed. Also: extra information closer to the AI advice made people adjust toward it more. Sample and effect sizes not in the abstract'
     note: >-
       Peer reviewed. FinTech and services context (corporate credit rating, a scoring task). Population and
       sample not given in the abstract. Method: 2 main longitudinal studies and 4 supplementary studies, each
@@ -89,7 +92,8 @@ new_entries:
     source_date: 2026-05-15 (last modified; no publish date shown)
     checked_on: 2026-11-22
     age_flag: false
-    status: not verified (single source, vendor, self-reported)
+    status: not verified
+    verifier_note: 'Not opened in this pass (budget). Researcher note already says do not use as evidence'
     note: >-
       Confirmed vendor story: published on Dragonboat's own site, promotes the product, ends with demo calls to
       action. Company not named. FinTech. The "weeks to days" result is one VP Product quote, with no numbers,
@@ -112,7 +116,8 @@ new_entries:
     source_date: 2026-04-29
     checked_on: 2026-11-22
     age_flag: false
-    status: not verified (record page only)
+    status: not verified
+    verifier_note: 'Not opened in this pass (budget). Lead only'
     note: >-
       Independent researcher, not peer reviewed, pre-registered on GitHub (as stated). Population: model
       outputs, not people. Not by the HBR authors, so it is an independent second source for the existence of
@@ -132,6 +137,8 @@ updates_to_existing:
       Verifier should confirm the wording before a slide uses "seven". The figures (under 2%, about 11%,
       about 19%) still come only from the third-party summary. Keep status partly verified
     url: https://www.ebsco.com/articles/business-and-management/2b719c91-ae1b-588d-9ad1-2be2f30e67ec/researchers-asked-llms-for-strategic-advice-they-got-trendslop-in-return
+    status: not verified
+    verifier_note: 'Not reopened in this pass (budget). Researcher finding recorded only'
 
   - id: E12
     found: >-
@@ -139,6 +146,8 @@ updates_to_existing:
       story with no measured AI result. Both Dragonboat items are vendor true. Together they count as one
       vendor source, not two
     url: https://dragonboat.io/customer-stories/outcome-driven-transformation-fortune-500-bank/
+    status: not verified
+    verifier_note: 'Not reopened in this pass (budget). Researcher finding recorded only'
 
   - id: E13
     found: >-
@@ -150,6 +159,8 @@ updates_to_existing:
       workload, 40% fewer escalations) have the same problem. Keep status not verified. Recommend moving E13 to
       "dropped" for slide use
     url: https://www.inkl.com/news/roadmaps-risk-and-results-how-ai-changed-our-product-planning-at-sap
+    status: not verified
+    verifier_note: 'Not reopened in this pass (budget). Researcher finding recorded only'
 
 gaps:
 

@@ -16,7 +16,8 @@ features:
   url: https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html
   source_date: '2026-10-29'
   checked_on: '2026-11-22'
-  status: not verified
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Post 2026-10-29. Confirmed: plans, PDF on web and mobile, other formats web only, Sheets open in Google Sheets, decks as PPTX or PDF, no .xlsx. Post also lists Docs, Markdown, TXT, LaTeX and code as file types on web, but says nothing on code execution, skills or Gems'
   note: Adds to gm-09 (file generation, 2026-04-27). Both posts are about chat in the Gemini app. Neither says a skill run can create a file. Use only as support for the Gate 2 fallback below, not as proof that a skill makes files
 - id: gm-15
   platform: gemini
@@ -28,6 +29,7 @@ features:
   source_date: '2026-09-30'
   checked_on: '2026-11-22'
   status: not verified
+  verifier_note: 'Blog post not reopened (budget). The gap is a "not found" result. gm-14 check confirms the 2026-10-29 post says nothing on skills or code execution. Gap stands'
   note: Gap confirmed, see gaps. Gate 2 fallback for scoring and sensitivity labs on Gemini is a Google Sheet with formulas (see gaps)
 - id: mb-15
   platform: copilot
@@ -38,7 +40,8 @@ features:
   url: https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter
   source_date: 2026-11-16 (page "Last updated"; the matrix had 2026-09-28 on 2026-11-20)
   checked_on: '2026-11-22'
-  status: not verified
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Last updated 2026-11-16, ms.date 2026-11-09. Plans and the upload quote confirmed. Page does not name knowledge, embedded files, SharePoint or OneDrive as inputs. Output session-only confirmed. New: the page says "In Agent Builder, code interpreter is always enabled". MR-E6 and mb-04 describe a toggle. Check the toggle at the Gate 2 proof'
   note: 'Answer: not documented for agent builder. Keep the mb-13 lab design: the learner uploads the scoring .xlsx in chat for each run. Test at the Gate 2 proof whether code interpreter reads the embedded copy. The page date moved from 2026-09-28 to 2026-11-16; the Verifier should note this on mb-11 and mb-13'
 - id: mb-16
   platform: copilot
@@ -49,7 +52,8 @@ features:
   url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-code-interpreter-structured-data
   source_date: '2026-08-04'
   checked_on: '2026-11-22'
-  status: not verified
+  status: verified
+  verifier_note: 'Opened 2026-11-22. ms.date 2026-08-04. Preview, chat uploads and SharePoint knowledge (Work IQ on), 16 MB and 10 files, premium billing, public clouds only: all confirmed. No mention of agent builder or embedded files. Indirect evidence only, as the note says'
   note: Indirect evidence only. In full Copilot Studio, code interpreter reads SharePoint knowledge, not device-uploaded knowledge files. Do not carry this to agent builder without a test. Copilot Studio is not a course platform, and SharePoint knowledge needs a connector-like setup, so not core
 - id: MR-E6
   platform: copilot
@@ -61,6 +65,7 @@ features:
   source_date: 2026-11-16 (Last updated, ms.date and updated_at)
   checked_on: '2026-11-22'
   status: not verified
+  verifier_note: 'Not reopened in this pass (budget). Same page was verified in the first pass as mb-01 (unchanged)'
   note: Unchanged from mb-01 (verified 2026-11-20). Same page date. Embedded file limits (20 files, 512 MB and 30 MB) not rechecked this run; budget spent on ask 3
 - id: MR-E8
   platform: gemini
@@ -72,6 +77,7 @@ features:
   source_date: unknown (page shows no date)
   checked_on: '2026-11-22'
   status: not verified
+  verifier_note: 'Not reopened in this pass (budget). Same page as gm-02. Undated, so it cannot be the dated feature source'
   note: Unchanged from gm-02. Still undated, so the dated source stays the Workspace Updates post 2026-09-30 (updated 2026-11-09) in gm-03. Page says nothing on code or file output in skills
 - id: MR-E9
   platform: chatgpt
@@ -83,6 +89,7 @@ features:
   source_date: not retrieved
   checked_on: '2026-11-22'
   status: not verified
+  verifier_note: 'Not reopened in this pass (budget). First pass verifier report lists cg-01 as reopened and unchanged. The file count conflict (cg-01 vs cg-03) stays open'
   note: help.openai.com failed again (client error). The help-lb.openai.com copy used on 2026-11-20 was blocked by this session's permission check, so it was not retried. Last good reading is cg-01 (help-lb, approx 2026-11-17, rechecked 2026-11-22 by the first run of track 2). The cg-01 vs cg-03 file count conflict (Plus 25 or 20) stays open
 gaps:
 - id: gap-t2-r1

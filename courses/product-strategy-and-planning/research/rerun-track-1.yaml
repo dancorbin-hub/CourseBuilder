@@ -23,7 +23,8 @@ sp_wf_02_new_evidence:
   source_date: '2026-03-26'
   checked_on: '2026-11-22'
   age_flag: false
-  status: not verified
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Author Rebecca Stewart, published 2026-03-26, modified 2026-05-01. All text claims confirmed word for word: weigh consistently, unformalized criteria easier to reopen, escalations reset the roadmap, "revisiting trade-offs under shifting scope". Figures come from N21 (opened). The page promo says "250 product leaders": wrong, N21 says nearly 250 professionals, 43.3% leaders. 38.1% is also used on the page for a success metric; check in N21 before use. The author is on the N21 report team, so W25 is the survey publisher writing about its own data. Independent of W26'
   note: 'Signed. Page modified 2026-05-01. Its figures come from the Product-Led Alliance State of Product Management 2026 survey, almost 250 product leaders: 60.2% say leadership escalations or new directives override priorities; 38.5% sales or customer escalations; 38.1% revenue pressure; priorities change after agreement, mean 3.3 of 5; 5.7% use structured frameworks; 19.2% spend over 26% of their time on prioritization. Do not use these figures until the primary survey is opened (track 3 ask, N5). Publisher runs the survey it reports'
 - id: W26
   claim: 'Averaging scores hides disagreement between scorers: an 8.4 average can hide a 5.2-point gap between divisions. Self-scored confidence reflects optimism, not evidence; whoever sets the weights controls the output. Overrides go unrecorded (example: a VP moves an item from 14th to 3rd, and no record says which criteria were set aside), and within 2 cycles teams stop investing effort in scoring. Full-portfolio rescoring at every market signal causes fatigue; use trigger-based reviews instead'
@@ -33,7 +34,8 @@ sp_wf_02_new_evidence:
   source_date: '2026-04-23'
   checked_on: '2026-11-22'
   age_flag: false
-  status: not verified
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Dr. Tassilo Henike, 2026-04-23. Confirmed: 8.4 average hides a 5.2-point gap, confidence reflects optimism, weights control output, VP moves item 14th to 3rd with no record, teams stop scoring within 2 cycles, rescoring fatigue, trigger-based reviews. All figures are illustrative and unsourced: use the text, not the numbers. Vendor with a product pitch'
   note: 'Signed. Innovation software vendor (same publisher as W6, different author and topic). Examples are illustrative, for example a hydraulics company, not named cases. All figures are unsourced (20% capacity lost to misalignment, 2.5-point flag threshold, 20% review trigger): do not use them. Strongest text match for the row: scorer gaps, override log, rescoring fatigue. Independent of W25'
 - id: W27
   claim: 'Leadership escalations are the largest force that overrides prioritization. Escalations arrive without the reasoning behind current priorities, so an override is the only lever leaders hold. Scores based on one person''s assumptions look the same on the page as scores based on research (Itamar Gilad: a score without evidence is "a guess dressed as rigor"). Documented priorities get overridden until the plan no longer matches the work'
@@ -43,7 +45,8 @@ sp_wf_02_new_evidence:
   source_date: '2026-08-10'
   checked_on: '2026-11-22'
   age_flag: false
-  status: not verified
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Jennifer Haley, 2026-08-10. All quoted text confirmed. Figures cited as ProductPlan 2026 State of Product Management: same survey as N21 (PDF p. 6 calls it ProductPlan report; PLA team wrote it). Satav is paraphrase only, no direct quote. Text is independent of W25 and W26; figures are not'
   note: 'Signed. Roadmap software vendor. It cites 60.2%, 38.5% and 38.1% as the ProductPlan 2026 State of Product Management report; W25 cites the same figures as the Product-Led Alliance survey. Treat the figures as one study and confirm the true primary (track 3, N5). The text claims are independent of W25 and W26. Quotes Ashay Satav (eBay) and Itamar Gilad as paraphrase'
 - id: W28
   claim: 'Prioritization frameworks often launder an opinion: if the CEO still picks what gets built, no RICE score changes the result'
@@ -54,10 +57,12 @@ sp_wf_02_new_evidence:
   checked_on: '2026-11-22'
   age_flag: false
   status: not verified
+  verifier_note: 'Not opened (fetch budget). Weak fit in any case. Do not use without a check'
   note: 'Signed opinion piece. Weak: it is about overrides at the decision level, not scoring inconsistency. Its data is a 2017 survey of 50 PMs (Kate Bennet) and a 2021 review: research rule 4, do not use the figures. Use only as a talk track lead if Dan wants one'
 sp_wf_02_summary:
   sources_check_proposal: 'pass. W25 (Product-Led Alliance, signed, 2026-03-26) and W26 (ITONICS, signed, 2026-04-23) are independent and dated 2026, and both describe the burden itself: inconsistent weighing, overrides that reopen decisions, and rescoring effort. W27 is a third signed 2026 source; its figures are not independent of W25. Both W25 and W26 are vendor or vendor-run publishers. Dan decides if that is strong enough'
   proposed_sources: [W25, W26]
+  verifier_note: 'Verifier 2026-11-22: pass. W25 and W26 opened. Different publishers and authors, both signed, both 2026. Both describe the burden: inconsistent weighing, overrides that reopen decisions, unrecorded overrides, rescoring fatigue. Neither gives usable time or cost data (W26 numbers are illustrative). Vendor caution stands. Dan decides if vendor sources are strong enough'
   internal_pm_context: 'N12 (SiriusXM, Prioritization as Code, DX Annual 2026, 2026-04-16) is the internal PM source for this row: platform teams used different assumptions, which caused roadmap conflicts; the framework scores developer pain, reliability risk and executive cost concerns; AI synthesizes signals; leaders keep governance. Proposed contexts.internal_pm text: "Partial. N12: SiriusXM platform PMs score internal requests on developer pain, reliability risk and executive cost, and keep validated assumptions in a living artifact. No time data"'
   hardware_context_note: 'W26 uses an industrial hydraulics example and says gates become rubber stamps for politically backed projects. Illustrative only. With W6 this is still one vendor publisher: hardware stays Partial'
   rejected_leads:
@@ -82,6 +87,7 @@ new_rows:
     - N10
     - N11
     sources_check: 'pass, weak. N10 (Mind the Product, signed practitioner, 2026-10-08) and N11 (Bits&Chips, signed, 2026-10-23) are independent and from 2026. Neither has data on hours or cost. needs.md T10 also tags Focus / Product Roadmap; Dan decides the tag'
+    verifier_note: 'Verifier 2026-11-22: partly pass. N10 and N11 reopened and confirmed. They are independent (different publishers and authors, both signed, 2026-10). They support: staged commits, cost of error rising steeply after steel tooling, teams advancing on the calendar not on evidence (N10 quote), skipped customer and budget questions and late misalignment costs (N11). Neither source says the check of a gate package against the business case is manual cross-document work, or that it is done late or not at all: that sentence goes past the sources. Reword it as an assumption, or add a source. N24 (opened, 2026-08-05) says gate preparation consumed time and energy without adding value: one more source on gate burden, still single for that point'
   scores:
     judgment: high. Go, hold or stop on a tooling commit is a high-cost judgment
     repetition: medium. Each gate, each program, with many documents to cross-check each time
@@ -145,6 +151,7 @@ new_rows:
     checked_on: '2026-11-22'
     age_flag: false
     status: verified
+    verifier_note: 'Reopened 2026-11-22. Author, date and all claim text confirmed. Also says progress "only when the evidence justifies it, not because the calendar demands it". Does not discuss checking gate evidence against the business case'
     note: Copied from needs.md, not reopened. Practitioner (product strategist, 35+ years in industrial design and engineering). No data. Independent of N11
   - id: N11
     claim: In high-tech hardware, customer and budget questions get skipped; late misalignment costs tooling, certification and unsold stock; "AI can produce work; it can't carry the outcome"
@@ -154,7 +161,8 @@ new_rows:
     source_date: '2026-10-23'
     checked_on: 2026-11-20 (Market Research run, ledger N6 there). Not reopened 2026-11-22
     age_flag: false
-    status: verified (2026-11-20)
+    status: verified
+    verifier_note: 'Reopened 2026-11-22. Author, title, date (Bits&Chips 2026-07, 2026-10-23) and all claim text confirmed. The AI quote is from Xaviera Reynhout, quoted in the article, not the author'
     note: Copied from needs.md. Trade magazine (Netherlands). Do not use its statistics (they seem to come from N3)
   - id: W6
     claim: 'Hardware stage gates: each stage raises the cost of being wrong about 10 times; most kills happen late, after 1M USD or more per program; kill triggers should come from each program''s original business case assumptions; screening criteria calibrated against 20 past ideas'

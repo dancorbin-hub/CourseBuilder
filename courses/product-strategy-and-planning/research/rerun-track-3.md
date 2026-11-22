@@ -10,7 +10,7 @@ This file does not change `needs.md`. The Verifier reads `needs.md` now. New sou
 
 1. Each ask has its findings, then what changes for existing ledger rows.
 2. Page numbers for N21 come from a text extract of the PDF. The Verifier should confirm them in the PDF.
-3. All new rows have status "not verified".
+3. All new rows had status "not verified". The Verifier second pass (2026-11-22) set N21 to N24 to verified.
 
 ## Ask 1: ProductPlan and Product-Led Alliance State of Product Management 2026
 
@@ -118,7 +118,9 @@ Result: gap stays open. One 2026 qualitative source. No duration data that meets
   source_date: 2026 (no exact date; cited by a PLA article dated 2026-03-11)
   checked_on: 2026-11-22
   age_flag: false
-  status: not verified
+  status: verified
+  verifier_note: >-
+    Opened 2026-11-22 (full PDF text). Confirmed: nearly 250 product professionals, Q4 2025 fieldwork (p. 6), 56.7% individual contributors and 43.3% leaders (p. 22), industries (p. 28), 20.1% under 50 people (p. 23), 60.2% multi-select override answer (p. 52), 3.3 of 5 (p. 51), 49.2% and 47.5% (p. 35), 72.2% (p. 39), three time sinks (pp. 44 to 45). Correction on who made it: PLA team wrote it and ProductPlan is the sponsor (p. 106), but p. 6 calls it "ProductPlan eleventh annual State of Product Management report". Cite as Product-Led Alliance and ProductPlan. No publish date, method, response rate or weighting found. p. 55 has a separate set of three prioritization time sinks; do not mix them up. Rule 4: published 2026, fieldwork Q4 2025, Dan decides
   note: >-
     Primary for N5 and W3; they are one source, not two. Population: product professionals, 56.7% individual contributors and
     43.3% leaders; industries IT and services 23.8%, software 17.6%, financial services 10.3%, manufacturing 9%; hardware not a
@@ -138,7 +140,9 @@ Result: gap stays open. One 2026 qualitative source. No duration data that meets
   source_date: 2026-10-14
   checked_on: 2026-11-22
   age_flag: false
-  status: not verified
+  status: verified
+  verifier_note: >-
+    Opened 2026-11-22. Author, date and all quotes confirmed. No statistics. Vendor blog with demo calls to action
   note: >-
     Population: internal platform teams and platform PMs, no industry named. Sample: none. Period: not stated. Method:
     practitioner essay by a product coach on a vendor blog (airfocus by Lucid); ends with a pitch for its portfolio software. No
@@ -155,7 +159,9 @@ Result: gap stays open. One 2026 qualitative source. No duration data that meets
   source_date: 2025-10-21 (ms.date; footer says last updated 2025-10-27; page metadata updated_at 2026-08-03)
   checked_on: 2026-11-22
   age_flag: true
-  status: not verified
+  status: verified
+  verifier_note: >-
+    Opened 2026-11-22 (en-us page). Dates confirmed: ms.date 2025-10-21, footer 2025-10-27, updated_at 2026-08-03. All quotes confirmed. Investment area covers budget and staffing, scope management and ROI. Age flag stays: Dan decides
   note: >-
     Population: organizations building internal developer platforms. Sample: none. Period: not stated. Method: vendor maturity
     model guidance, 5 stages; only the first stage had body text in the copy read. Copy read was the Greek-locale URL with English
@@ -170,7 +176,9 @@ Result: gap stays open. One 2026 qualitative source. No duration data that meets
   source_date: 2026-08-05
   checked_on: 2026-11-22
   age_flag: false
-  status: not verified
+  status: verified
+  verifier_note: >-
+    Opened 2026-11-22. Authors, date and quotes confirmed. No gate durations. 30% figure traced to PDMA 2021 survey (JPIM 2023): do not use. Single source for the gate preparation burden
   note: >-
     Population: new product development teams, examples from physical products and a petrochemical complex in China. Sample:
     none. Period: not stated. Method: expert essay by the Stage-Gate author and a former ExxonMobil project lead. Its 30% market
