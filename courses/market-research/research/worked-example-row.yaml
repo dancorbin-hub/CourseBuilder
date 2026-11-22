@@ -3,14 +3,15 @@
 # Schema: shared/templates/workflow-row.yaml. Checked on 2026-11-20.
 # v2: the learner manages an agent that runs the whole workflow (Dan, 2026-11-20).
 # v3: no magic number. Agent reports frequency, intensity and impact; PM sets the bar (Dan, Gate 1 comments, 2026-11-21).
+# v4: problem backlog replaces the PM's bar. Evidence profile in Pragmatic terms, fact labels, proposed ranking; PM decides the order (Dan, Gate 2 decisions 1 and 9, 2026-11-22).
 
 id: mr-wf-01
-workflow: Turn each new batch of buyer interviews into an updated, checked insight log
+workflow: Turn each new batch of buyer interviews into an updated, checked problem backlog
 topic_area: Research, buyer and market insight
 trigger_and_cadence: Each new batch of market visits, win/loss calls or discovery interviews. Assumption, every 2 to 6 weeks
 
-input: Notes or transcripts from 5 to 15 interviews, plus the current insight log
-output: Updated insight log (insights coded by theme, problem, persona and segment; for each, frequency in interviews, intensity with the quote that shows it, and impact clues; verbatim quotes and source interviews), a "what changed" summary, and a flag report for the PM
+input: Notes or transcripts from 5 to 15 interviews, plus the current problem backlog
+output: 'Updated problem backlog (problems coded by theme, persona and segment; for each, an evidence profile: interviews (not quotes), accounts, segments, source type, urgency with one quote, pervasiveness, willingness to pay clues and source dates; fact labels such as "single source"), a proposed ranking with a reason for each problem, a "what changed" summary, and a flag report for the PM'
 pm_decision_informed: Which market problems go forward to prioritization, and for which segment
 
 bottleneck:
@@ -28,26 +29,27 @@ split:
   agent_does:
     - Code each interview against the code book
     - Check each quote against the source text
-    - Merge new insights into the log
+    - Merge new problems into the backlog
+    - Propose a ranking with a reason for each problem
     - Mark problems as new, growing or fading
     - Send flags to the PM
   pm_manages:
     brief: Job, inputs, code book, output format, done criteria
     quality_checks:
       - Each quote is found word for word in its source interview
-      - Each insight counts interviews, not quotes, by persona and segment
-      - Each insight shows frequency, intensity (with quote) and impact clues
+      - Each problem counts interviews, not quotes, by persona and segment
+      - Each problem shows urgency (with one quote), pervasiveness and willingness to pay clues
     handoff_rules:
       - Notes that fit no code
       - A new insight that contradicts the log
-      - An insight below the PM's bar: label "emerging" or "single source". Keep it in the log for trend tracking. Do not drop it or call it a pattern
-    audit: 3 random insights per batch, checked against the source interviews
+      - If all quotes for a problem come from 1 interview, send it to the flag report. Label it "single source" and keep it in the backlog for trend tracking. Do not drop it or call it a pattern
+    audit: 3 random problems per batch, checked against the source interviews
   pm_decides:
     - The code book
-    - Which patterns are real problems
+    - The order of problems, what is a pattern and what goes to validation
     - Which segment matters
     - What goes forward to prioritization
-  ai_error_to_catch: One vocal buyer counted as a pattern. Three real quotes from one interview make an insight look strong. The quote check passes; only the audit finds it. The fix is a new rule in the brief, count interviews, not quotes, and the PM sets the bar for a pattern. There is no magic number; product judgment decides (Dan, 2026-11-21)
+  ai_error_to_catch: One vocal buyer ranked near the top. Three real quotes from one interview make a problem look strong. The quote check passes; the evidence profile and the audit find it. The fix is a new hand-off rule in the brief, if all quotes for a problem come from 1 interview, send it to the flag report. Priority is relative; there is no magic number (Dan, 2026-11-21 and Gate 2, 2026-11-22)
 
 contexts:
   hardware: Field visits, distributor, installer and service technician interviews. gap, no source yet
@@ -72,11 +74,11 @@ proposed_lab:
     - Add two quality checks and two hand-off rules from the menu
     - Build the agent on your platform. Run it on batch 1
     - Read only the flag report. Decide each item
-    - Audit 3 random insights against the interviews. Fix the brief for what you find
-    - Run batch 2. Check the log and the "what changed" summary
+    - Audit 3 random problems against the interviews. Fix the brief for what you find
+    - Run batch 2. Check the backlog and the "what changed" summary
   stretch: Run the agent on a schedule or when files arrive, where the platform allows (not verified for 2027)
-  planted_error: Vocal buyer counted as a pattern
-  success_check: Batch 2 run. The log updates, the flag report lists the new contradiction, and no insight below the PM's bar is called a pattern
+  planted_error: Vocal buyer ranked near the top
+  success_check: Batch 2 run. The backlog updates, the flag report lists the new contradiction, and the single-source problem is flagged, not ranked as a pattern
   registry_check: "AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by flags, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20). PDW-AI (Product Discovery with AI) already teaches one-pass AI synthesis, the quote check and frequency vs intensity. The lab starts where PDW-AI stops: no slides on coding or quote checks; time goes to running the agent on batches, the log over time, the flag report, the audit and tuning (Dan, 2026-11-20)"
   pragmatic_fit: Good fit (Dan, 2026-11-20). Pragmatic Framework 2027 says to talk with evaluators who bought and who did not, then validate, prioritize and share the problems. It also says teams must verify AI output, protect sensitive information and stay accountable
 

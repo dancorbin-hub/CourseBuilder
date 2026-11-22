@@ -116,7 +116,7 @@ Minutes show the one-day format first, then the two-half-day format where it dif
 
 **Promise:** Find out how often your sales loss reasons match what buyers say.
 
-- **Workflow:** Run a win/loss program that turns each batch of decided deals into a checked decision-driver report.
+- **Workflow:** Run a win/loss program that turns each decided deal into an updated, checked decision-driver report.
 - **Bottleneck it removes:** Manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all.
 - **Objectives:**
   1. Extend the agent with a win/loss job that labels each deal "interview" or "CRM only".
@@ -124,7 +124,7 @@ Minutes show the one-day format first, then the two-half-day format where it dif
   3. Audit the deal source labels on 2 random deals and correct the brief.
   4. Decide which findings go to sales, marketing or leadership, and frame them so that sales does not read them as blame.
 - **Lab:** Add the win/loss job. Join a CRM export and win/loss interview notes. Read the match rate table and the deal counts for each driver. Audit and tune.
-- **Your input:** An export of 10 or more decided deals and any win/loss notes, or the case deals.
+- **Your input:** An export of recent decided deals and any win/loss notes, or the case deals.
 - **Learner evidence:** The match rate table with your one-sentence read of it, your flag report decisions, your audit findings for 2 deals and your brief change.
 
 ### Module 3. The weekly run: read flags, not every item (60 minutes)

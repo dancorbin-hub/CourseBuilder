@@ -6,6 +6,13 @@ Dan answers in the Gate 2 doc. Status is final or provisional.
 | --- | --- | --- | --- | --- | --- |
 | 1 | Problem backlog model (packet v2, items 1 to 3) | A: confirm | Final | 2026-11-22 | Replaces the PM's bar. Spec v0.3 and case already use it |
 | 2b | Capability and skills (packet v2, section 3) | A: confirm as proposed. Module 4 uses 1.2 | Final for Dan. Pragmatic ID team confirms in its review | 2026-11-22 | capability-mapping.md |
+| 3 | Offering intent Develop and Apply, ID team confirms learner evidence | A: yes | Final | 2026-11-22 | In the Pragmatic review doc |
+| 4 | Lab 1 fix rule | A: flag rule ("if all quotes for a problem come from 1 interview, send it to the flag report") | Provisional until proof P1 | 2026-11-22 | Ranking rule is an optional second rule |
+| 5 | Lab 5 questions | A: Q1, Q2, Q5 core; Q3 optional; Q4 is the debrief check | Final | 2026-11-22 | |
+| 6 | Half-day module lengths | A: M1 80, M2 75, M5 60 | Final | 2026-11-22 | |
+| 7 | Win/loss minimum of 10 deals per batch (PA-04) | B: remove. Dan: win/loss covers the whole buyer journey and is rarer than discovery interviews; do not wait for 10 before acting | Final | 2026-11-22 | Reverses the Gate 1 PA-04 minimum only. "Match rate" and "someone outside sales" stay. Applied to spec, case code book, syllabus, brief, workflows.yaml row 02 |
+| 8 | Screening as a lab 1 stretch step | A: keep for now | Final, can revisit | 2026-11-22 | |
+| 9 | Update fingerprinted Gate 1 files to the backlog model | A: yes | Final | 2026-11-22 | workflows.yaml rows 01 and 02, worked-example-row.yaml v4. New fingerprints in status.yaml |
 | 2 | Template content and lab 1 planted error (OI-14) | C: keep v3 count rule, P1 tests the error, demo run fallback | Provisional until proof P1 | 2026-11-22 | Dan: cannot decide finally until he tests. If P1 fails on 2 or more platforms, bring B back with results |
 | 3 | Segment rule: course rule or case choice (OI-15) | A: course rule | Provisional until Dan runs the exercises | 2026-11-22 | Test in lab 5: the agent must not say "food service buyers want" from 1 Food service interview (I-105) |
 | 4 | Example case PM bar | Open. Dan does not like a bar: priority is relative across the problem backlog | Proposal sent 2026-11-22: replace bar with backlog plus evidence profile, agent proposes ranking, PM decides. Affects decisions 1, 3, 4. Waiting for Dan yes | 2026-11-22 | Decisions 1 and 3 may change with this |
