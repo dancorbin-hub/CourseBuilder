@@ -59,6 +59,7 @@
     core_message: Do not do the work between AI steps. Set the job, the checks and the hand-off rules, then review the flags
     build_type: agent (skill or project that holds the brief, code book and output format)
     core_path_no_connectors: yes. The learner uploads a batch and runs the agent
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill or Project with the brief and code book
       chatgpt: Project with the brief and code book (E9 not verified)
@@ -230,6 +231,7 @@
     core_message: The agent's report is only as true as its sources. Make the agent label where each finding comes from, then audit the labels
     build_type: agent (extend the module 1 agent with a win/loss skill or knowledge file)
     core_path_no_connectors: yes. The learner uploads a CRM export (CSV) and interview notes from the fallback case company
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill with the driver code book and output format, added to the course agent project
       chatgpt: Project with the brief, code book and CSV (E9 not verified)
@@ -323,6 +325,7 @@
     core_message: The hard part is not the tagging. It is the rule that makes the agent say "no fit" instead of guessing
     build_type: agent (extend the module 1 agent)
     core_path_no_connectors: yes. The learner uploads a CSV export of feedback
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill with the tag list and counting rule
       chatgpt: Project with the tag list and CSV (E9 not verified)
@@ -424,6 +427,7 @@
     core_message: Make the agent check itself with a second pass, then audit the cases where the checks agree for the wrong reason
     build_type: agent (extend the module 1 agent)
     core_path_no_connectors: yes. The learner uploads a survey CSV
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill with the code frame
       chatgpt: Project with the code frame and CSV (E9 not verified)
@@ -508,6 +512,7 @@
     core_message: Write the criteria so the agent can cite proof for each one. A flag is a question for the PM, not a verdict
     build_type: agent (extend the module 1 agent)
     core_path_no_connectors: yes. The learner uploads a screener export and a customer list from the fallback case
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill with the criteria and contact rules
       chatgpt: Project with the criteria (E9 not verified)
@@ -601,6 +606,7 @@
     core_message: The agent can find numbers fast. The PM's job is to know which numbers to trust
     build_type: agent (extend the module 1 agent)
     core_path_no_connectors: partly. Web search is needed for live sources. Core path uses a source pack from the fallback case; web search is the stretch
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill with the model template and source rules
       chatgpt: Project with the model template (E9 not verified)
@@ -681,6 +687,7 @@
     core_message: The agent can propose a status; only the PM can call a problem validated
     build_type: agent (extend the module 1 agent)
     core_path_no_connectors: yes. The learner uploads the register and the outputs of earlier labs
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill with the register format and status rules
       chatgpt: Project with the register (E9 not verified)
@@ -758,6 +765,7 @@
     core_message: Set the pass criteria before the agent reads the sessions
     build_type: agent (extend the module 1 agent)
     core_path_no_connectors: yes. The learner uploads session notes from the fallback case
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill with the hypotheses and pass criteria
       chatgpt: Project (E9 not verified)
@@ -829,6 +837,7 @@
     core_message: An answer is only as good as what it admits it does not know
     build_type: agent (extend the module 1 agent with the research store as knowledge)
     core_path_no_connectors: yes. The learner uploads the insight log and two past reports
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Project with the research files as knowledge and a skill for the answer format
       chatgpt: Project with the files (E9 not verified)
@@ -929,6 +938,7 @@
     core_message: Map what buyers chose, not what competitors announce. Every entry must trace back to a buyer or a deal
     build_type: agent (extend the module 1 agent with an alternatives-map skill or knowledge file)
     core_path_no_connectors: yes. The learner uploads the insight log, the decision-driver log and a CRM export from the fallback case company
+    data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
     platforms:
       claude: Skill with the brief and alternative types, added to the course agent project. File output for the map (cl-fo-06)
       chatgpt: Project with the brief and files (cg-01). File output not confirmed (cg-08)

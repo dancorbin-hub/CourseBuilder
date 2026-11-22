@@ -61,6 +61,7 @@ proposed_lab:
   core_message: Do not do the work between AI steps. Set the job, the checks and the hand-off rules, then review the flags
   build_type: agent (skill or project that holds the brief, code book and output format)
   core_path_no_connectors: yes. The learner uploads a batch and runs the agent
+  data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)"
   platforms:
     claude: Skill or Project with the brief and code book
     chatgpt: Project with the brief and code book (E9 not verified)
