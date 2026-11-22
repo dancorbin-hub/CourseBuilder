@@ -6,7 +6,7 @@ stage: 1              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = p
 delivered_by: Dan (decision 45). Talk track must work for a part-time instructor later
 gates:
   worked_example_row: { status: borrowed, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp", note: "No course-specific row. Stage 1 uses the approved Market Research row mr-wf-01 (v3) as the depth and format model. Dan to confirm at Gate 1" }
-  gate_1_research:    { status: not_started, approved_on: null, doc: null }
+  gate_1_research:    { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk" }
   gate_2_spec:        { status: not_started, approved_on: null, doc: null, pragmatic_review: null }
   gate_3_modules:     []
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }

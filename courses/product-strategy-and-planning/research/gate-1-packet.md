@@ -7,6 +7,14 @@
 - Evidence labels: V = verified, PV = partly verified, NV = not verified. "Vendor" = the publisher sells a product or service in this area.
 - Stage 2 is on hold until Pragmatic reviews the Market Research syllabus, also after you approve Gate 1.
 
+## Read this first (Claude Code, run lead)
+
+1. Overlap with Focus 28.01 is the biggest risk. The Focus draft demos three agents (Strategy Alignment, Roadmap Translator, Market Sizing) "built and maintained by the SME". If Dan built them, house rule 11 applies to rows 01, 03 and 08. Answer decisions b and c first.
+2. Evidence is thin. Every retained bottleneck rests on vendor or vendor-run sources with no time or cost data. The strongest 2026 evidence is about AI risk (E1, E2). No "AI saves X hours" slide.
+3. Disagreement with the Synthesizer on decision f, row 1: "Go or Plus" makes Go learners copy numbers from an on-screen table into the sheet, so the learner becomes the middleman between AI steps. Recommendation: Plus minimum for this course; Go learners pair with a Plus learner.
+
+Gate 1 doc: https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk
+
 ## 1. Workflow rows: your decision per row
 
 The "Critic" column is the research critic's view. The "Synthesizer" column is this packet's recommendation. You decide.
@@ -305,7 +313,7 @@ Limits:
 1. You mark each row and answer a to k in the doc.
 2. Claude Code applies your answers to the repo files, not to the doc. It records them in `research/gate-1-decisions.md`.
 3. Changes to an approved item (decision e, the PA-03 note) happen only after your yes.
-4. The Verifier runs its trace check on the brief (PRD, research stage). Wording that goes past a source comes back to you.
+4. If your answers change the brief, the Verifier runs its trace check again on the changed parts.
 5. You say "Gate 1 approved". Claude Code updates `status.yaml`.
 6. Stage 2 still waits. It starts only after Pragmatic's feedback on the Market Research syllabus, even with Gate 1 approved.
 7. Before Gate 2, these items need an owner: your comparison of the Focus and Build demo agents with rows 01 and 08; the Mastering the Product Roadmap syllabus; a licensed HBR copy for E3; the E9 authors' permission; the W2 and E1 primary reports.
