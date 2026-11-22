@@ -16,7 +16,7 @@ There is no fixed bar. Priority is relative across the problem backlog.
 
 **How to read the pass conditions.** A ranking is a proposal, so the pass conditions do not ask for one exact order. They check the facts in each profile, the place of the planted item and the words the agent must not write. Where two problems have the same profile strength, any order with a stated reason passes. A learner who writes different hand-off rules is checked against their own rules.
 
-**Debrief prompt (lab 1).** Use Dan's test: can you predict that the next buyer of this persona will raise it? If not, it is not yet a pattern. The PM, not the agent, makes that call.
+**Debrief prompt (lab 1).** Use the Pragmatic test: can you predict that the next buyer of this persona will raise it? If the PM cannot, the PM may treat it as not yet a pattern. The PM, not the agent, makes that call.
 
 ---
 
@@ -49,7 +49,7 @@ There is no fixed bar. Priority is relative across the problem backlog.
 2. The 3 quotes are one voice. Count interviews, not quotes.
 3. Urgency is real but comes from one buyer. High urgency with no reach is the "noisy 20%" risk (workbook skill 1.1B).
 4. The willingness to pay clue is one account's renewal threat. The PM may treat it as an account issue for Customer Success, not a market problem.
-5. Inside Food service, 3 other interviews do not raise P05. I-104 also says alerts and reports are "fine", so this buyer is an outlier on P01 and P02.
+5. Inside Food service, 2 other interviews (I-103, I-105) do not raise P05. I-104 also says alerts and reports are "fine", so this buyer is an outlier on P01 and P02.
 6. Batch 2 confirms it: I-111 says multi-site view is "not my top problem".
 
 **By segment (segment rule).** If the agent says anything about Food service, it ranks within Food service first. P03 comes first (2 interviews). P01, P02 and P05 have 1 Food service interview each. The agent must not write "food service buyers want one view across stores".
@@ -97,7 +97,7 @@ There is no fixed bar. Priority is relative across the problem backlog.
 
 **Case PM decision after batch 2.** The PM orders the backlog: P01, P02, P08, P03, P06, P05, P04, P07. The PM moves P06 below P08 and P03 because the buyers disagree, so it is a research question first. The PM names P01 and P02 the top problems in Distribution, P03 in Food service and P08 in Pharmacy and lab. This is the PM decision column in Part 4 of `m4-evidence-pack.md`.
 
-**Success check (spec).** The backlog updates. Every problem shows its evidence profile and fact labels. The flag report lists the P06 disagreement. The agent proposes a ranking with a reason for each rank. P05 ranks below P01, P02, P03, P06 and P08. The agent writes "pattern" or "validated" for no problem.
+**Debrief check, instructor only.** The backlog updates. Every problem shows its evidence profile and fact labels. The flag report lists the P06 disagreement. The agent proposes a ranking with a reason for each rank. P05 ranks below P01, P02, P03, P06 and P08. The agent writes "pattern" or "validated" for no problem.
 
 ### Second sample: `m1-check-sample.md`
 
@@ -333,24 +333,27 @@ The agent ranks within each segment first (segment rule). Then it proposes which
 
 Inside a segment, problems with the same evidence strength can come in any order if the agent gives a reason.
 
+Each table lists every problem with evidence in that segment: interviews, feedback or deals. A problem with no interview in the segment shows "Not ranked".
+
 **Distribution** (6 interviews, 4 accounts)
 
 | Proposed rank | Problem | Evidence in this segment | Proposal |
 | --- | --- | --- | --- |
 | 1 | P01 Alert fatigue | 4 interviews, 3 accounts, 2 PM-held. Feedback 4 accounts. Lost D-2207, D-3101 on alert accuracy; won D-3104 | Propose for validation |
 | 2 | P02 Compliance report effort | 3 interviews, 3 accounts, 2 PM-held. Feedback 1 account. Won D-2201; lost D-2212, D-3102 on report fit | Propose for validation |
-| 3 | P06 After-hours response | 4 interviews, 3 accounts. Buyers disagree 2 to 2. R-2026-03 split 5 to 4 | Propose research (priced offer test), not validation |
+| 3 | P06 After-hours response | 4 interviews, 3 accounts. Feedback 1 account. Buyers disagree 2 to 2. R-2026-03 split 5 to 4 | Propose research (priced offer test), not validation |
 | 4 to 5 | P04 Sensor upkeep, P09 Proof for own customers | 1 interview each. Feedback: P04 3 accounts, P09 1 account. P09 is AI-moderated only | Keep in backlog, watch |
-| None | P03 | No interviews. 1 lost deal (D-2203) | Note only. Ask about hubs in the next Distribution interviews |
+| Not ranked | P03 Install and connectivity | 0 interviews. No feedback. 1 lost deal (D-2203) | Note only. Ask about hubs in the next Distribution interviews |
+| Not ranked | P05 Multi-site visibility | 0 interviews. Feedback 1 account (A-33) | Keep in backlog, watch |
 
 **Food service** (5 interviews, 4 accounts)
 
 | Proposed rank | Problem | Evidence in this segment | Proposal |
 | --- | --- | --- | --- |
 | 1 | P03 Install and connectivity | 3 interviews, 2 accounts, 2 PM-held. Feedback 2 accounts | Propose for validation |
-| 2 to 4 | P02, P05, P01 (any order with reasons) | P02: 2 interviews, 2 accounts. P05: 2 interviews, 2 accounts, the second buyer ranks it low. P01: 1 interview (AI-moderated), feedback 2 accounts, lost D-3108 on alert accuracy | Keep in backlog, watch. Add P01 and P02 to the next Food service interview guide |
+| 2 to 4 | P02, P05, P01 (any order with reasons) | P02: 2 interviews, 2 accounts, no feedback. P05: 2 interviews, 2 accounts, the second buyer ranks it low, feedback 1 account. P01: 1 interview (AI-moderated), feedback 2 accounts, lost D-3108 on alert accuracy | Keep in backlog, watch. Add P01 and P02 to the next Food service interview guide |
 | 5 | P07 Product loss cost | 1 interview, AI-moderated only. No feedback this week | Keep in backlog |
-| Not ranked | P10 Inspector remote access | No interviews. Feedback 4 accounts | Discovery (PM decided in lab 3) |
+| Not ranked | P10 Inspector remote access | 0 interviews. Feedback 4 accounts | Discovery (PM decided in lab 3) |
 
 **Pharmacy and lab** (3 interviews, 3 accounts)
 
@@ -359,8 +362,9 @@ Inside a segment, problems with the same evidence strength can come in any order
 | 1 | P08 Calibration records | 3 interviews, 3 accounts, 1 PM-held. Feedback 1 account. Won D-2206; lost D-3105 | Propose for validation |
 | 2 | P01 Alert fatigue | 2 interviews, 2 accounts, 1 PM-held. Feedback 1 account | Keep in backlog, watch |
 | 3 | P02 Compliance report effort | 1 interview (AI-moderated). Feedback 2 accounts | Keep in backlog. Research question (see Q2) |
+| Not ranked | P09 Proof for own customers | 0 interviews. Feedback 2 accounts (A-34, A-35) | Keep in backlog, watch |
 
-**Expected PM decision.** Send to validation: P01 and P02 (Distribution), P03 (Food service), P08 (Pharmacy and lab). Research: P06. Discovery: P10. Keep and watch: the rest. Feedback counts alone do not move a problem to validation. They can add a "watch" note (for example P04 and P09: 3 accounts each in week 2).
+**Expected PM decision.** Send to validation: P01 and P02 (Distribution), P03 (Food service), P08 (Pharmacy and lab). Research: P06. Discovery: P10. Keep and watch: the rest. The case PM chose not to send a problem to validation on feedback counts alone. The PM added a "watch" note instead (for example P04 and P09: 3 accounts each in week 2).
 
 **Planted error.** The Q2 answer says "Buyers want a one-click inspection binder" and cites R-2024-07.
 

@@ -22,7 +22,7 @@ Important: the data makes each error likely and findable. It cannot force a mode
 
 **Where.** Interview I-104 (Marrowby Grocers, Food service, PM-held, 52 minutes). It has 3 strong quotes on P05 Multi-site visibility, including a renewal threat. No other batch 1 interview mentions P05. I-104 is the longest interview, and the buyer says alerts and reports are "fine". This makes P05 stand out.
 
-**Template rule (decision 2, provisional C).** The template keeps "count interviews, not quotes". Proof P1 tests whether this error still shows with that rule. If P1 fails on 2 or more platforms, bring option B back to Dan with the results. If a platform does not make the error, the debrief uses the instructor's demo run. Update this section after P1.
+**Template rule (decision 2, provisional C).** The template keeps "count interviews, not quotes". Proof P1 tests whether this error still shows with that rule. If P1 fails on 2 or more platforms, bring option B back to the course owner with the results. If a platform does not make the error, the debrief uses the instructor's demo run. Update this section after P1.
 
 **What the agent does with the template brief (v1).** It proposes P05 in the top 3 of the backlog, or first in Food service. The reason it gives is the 3 quotes, the renewal threat or "high urgency". It may also write "food service buyers want one view across stores". That breaks the segment rule: P05 has 1 Food service interview.
 
