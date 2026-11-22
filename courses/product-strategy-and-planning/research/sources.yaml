@@ -1,0 +1,130 @@
+# Source register, course product-strategy-and-planning. Stage 1, track 4. Written 2026-11-22.
+# type: vendor | practitioner | study | analyst | Pragmatic
+# independence: which sources count as one source (same study, same publisher or same data).
+
+sources:
+  - id: S1
+    publisher: Anthropic (Alignment team)
+    type: vendor
+    items: [E1]
+    url: https://www.anthropic.com/research/agents-judgment-calls
+    independence: >-
+      Model vendor studying its own model (Claude Opus 4.8). RCT design and stated limits lower the bias risk.
+      News reports (Al Jazeera, Unite.AI, GovInfoSecurity) repeat this study and count as the same source
+
+  - id: S2
+    publisher: Science (AAAS); authors at Stanford University (Cheng, Jurafsky and others)
+    type: study
+    items: [E2]
+    url: https://s3.amazonaws.com/media.mediapost.com/uploads/science.aec8352.pdf
+    independence: Peer reviewed, academic. The arXiv preprint 2510.01395 is the same study, not a second source
+
+  - id: S3
+    publisher: Harvard Business Review (Romasanta, Thomas, Levina); NYU Stern research highlight
+    type: study
+    items: [E3]
+    url: https://www.stern.nyu.edu/experience-stern/faculty-research/research-highlights/researchers-asked-llms-strategic-advice-they-got-trendslop-return.md
+    independence: >-
+      Academic authors, no vendor tie found. The Stern page republishes the HBR article (same source). Fortune,
+      IBTimes and others that report "trendslop" repeat the same study. HBR primary not opened
+
+  - id: S4
+    publisher: zby.github.io "commonplace" notes (individual, third-party summary)
+    type: practitioner
+    items: [E3]
+    url: https://zby.github.io/commonplace/sources/researchers-asked-llms-strategic-advice-trendslop/
+    independence: Summary of the S3 article. Not independent of S3. Used only to read numbers until HBR is opened
+
+  - id: S5
+    publisher: Association for Computational Linguistics (Owusu, Feldman, University of Maryland)
+    type: study
+    items: [E4]
+    url: https://aclanthology.org/2026.acl-short.16/
+    independence: Peer-reviewed conference paper. No vendor tie found
+
+  - id: S6
+    publisher: arXiv (Michael, BenShushan, Bien, Moore)
+    type: study
+    items: [E5]
+    url: https://arxiv.org/abs/2605.23909
+    independence: Academic preprint, not peer reviewed. No vendor tie found
+
+  - id: S7
+    publisher: arXiv (Rao, Wong, Callison-Burch, University of Pennsylvania)
+    type: study
+    items: [E6]
+    url: https://arxiv.org/abs/2604.03173
+    independence: Academic preprint. Authors release an open-source tool (urlhealth); no commercial tie found
+
+  - id: S8
+    publisher: GPTZero
+    type: vendor
+    items: [E7]
+    url: https://gptzero.me/news/investigations-kpmg/
+    independence: >-
+      Sells AI detection and citation checking, so it gains from finding errors. Only source for the error counts.
+      Independent of KPMG
+
+  - id: S9
+    publisher: The Register
+    type: practitioner
+    items: [E7]
+    url: https://www.theregister.com/ai-and-ml/2026/06/12/kpmgs-ai-report-turns-into-a-demo-of-ai-hallucinations/5255029
+    independence: >-
+      Tech news. Repeats GPTZero's findings without its own check, so it is the same source as S8 for the counts.
+      It is an independent source for KPMG's statement that the report was removed
+
+  - id: S10
+    publisher: Fortune (reporting The Independent, Newfoundland and Labrador)
+    type: practitioner
+    items: [E8]
+    url: https://fortune.com/2025/11/25/deloitte-caught-fabricated-ai-generated-research-million-dollar-report-canada-government/
+    independence: >-
+      News, secondary. The Independent investigation is the primary and was not opened. The Australia case in the
+      same article is also secondary. Needs a second independent source
+
+  - id: S11
+    publisher: arXiv (Csaszar, Peterson, Wilde; University of Michigan, NYU Stern, Indiana University)
+    type: study
+    items: [E9]
+    url: https://www.arxiv.org/pdf/2602.01684
+    independence: Academic preprint, marked draft. No vendor tie found. Peterson is at NYU Stern, but the study is separate from S3
+
+  - id: S12
+    publisher: Product Institute with Product Circle
+    type: practitioner
+    items: [E10]
+    url: https://productinstitute.com/resources/reports/state-of-ai-in-product-2026
+    independence: >-
+      PM training company, a Pragmatic competitor. Self-selected community survey. productcircle.co State of AI in
+      Product 2026 is the same survey, not a second source
+
+  - id: S13
+    publisher: IBM
+    type: vendor
+    items: [E11]
+    url: https://www.ibm.com/case-studies/assisted-idea-prioritization
+    independence: Vendor case study about its own internal team using its own product (watsonx). Dated 2024-05-14, age-flagged
+
+  - id: S14
+    publisher: Dragonboat
+    type: vendor
+    items: [E12]
+    url: https://dragonboat.io/customer-stories/fortune-500-fintech-pdlc-transformation-with-dragonboat/
+    independence: Vendor customer story. Customer not named. No independent source
+
+  - id: S15
+    publisher: inkl (aggregator); author Akhil Kumar Pandey, Principal PM at SAP
+    type: practitioner
+    items: [E13]
+    url: https://www.inkl.com/news/roadmaps-risk-and-results-how-ai-changed-our-product-planning-at-sap
+    independence: Personal article; original publisher not named; no date. Not an SAP corporate source. Single source
+
+  - id: S16
+    publisher: Cyberhaven Labs
+    type: vendor
+    items: [E14]
+    url: https://www.cyberhaven.com/press-releases/cyberhaven-2026-ai-adoption-risk-report
+    carried_from: market-research
+    original_id: MR-S20
+    independence: Data-loss-prevention vendor. Customer telemetry

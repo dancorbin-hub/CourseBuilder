@@ -1,0 +1,384 @@
+# Evidence ledger, course product-strategy-and-planning. Stage 1, track 4 (evidence researcher).
+# Written 2026-11-22. Schema: id, claim, type, source, url, source_date, checked_on, age_flag, status, note, vendor.
+# type: statistic | study | claim | case_study
+# vendor: true when the publisher sells a product or service in this area, or the page is a vendor customer story.
+# age_flag: true = a non-statistic source older than 12 months (before 2025-11-22). unknown = page shows no date.
+# Statistics and studies are all published in 2026 or later. Older or unusable items are under "dropped".
+# Source details and independence notes are in sources.yaml (S ids).
+# Web fetch budget: 20 pages. All 20 were used. Unopened sources are listed under "unopened".
+
+merge_note: >-
+  At finish (2026-11-22) the W and N files of the other tracks were being written at the same time.
+  No W, N or platform ids are merged. E14 is carried from Market Research (MR-E20). Merging happens later.
+
+entries:
+
+  # ---------- Failure modes: anchoring and deference to AI ----------
+
+  - id: E1
+    claim: >-
+      In a randomized trial, professional analysts chose the AI agent's secretly assigned lean on 86% of
+      analytical decisions (about 50% expected with no effect). The agent's lean moved the final rollout
+      recommendation by 17 points (54% vs 36%). 77% repeated the agent's arguments, but only 15% credited the agent
+    type: study
+    source: How AI agents shape experts' judgment calls, Anthropic Alignment team (paper "Who's Aligned to Whom?")
+    source_id: S1
+    vendor: true
+    url: https://www.anthropic.com/research/agents-judgment-calls
+    secondary_url: https://www-cdn.anthropic.com/519c17a5d23a794e8b6d50a854048d0b61e0d73a.pdf
+    source_date: 2026-10-27
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: research page opened (2026-10-27; Herdagdelen, Joren, Tamkin). 86%, 54% vs 36%, 77%, 15%, 61/50/11, 60% vs 6% (38 cases), 6% vs 55%, 65 minutes, Claude Opus 4.8 confirmed. Raw gap is 18 points; the chart says 17. Study period not stated. Vendor. PDF not opened"
+    note: >-
+      Population: professional analysts from a pre-screened pool with causal-inference skills. Sample: 61
+      recruited, 50 analyzed with the agent, 11 chose no agent. Period not stated. Method: RCT. A coin flip set
+      the agent's lean (Claude Code, Claude Opus 4.8) on 4 analytical choices and the final recommendation of a
+      fictional farm-program evaluation; median task 65 minutes. When analysts had a prior view, they switched
+      60% of the time if the agent disagreed vs 6% if it agreed (n=38, wide CI). Experience did not predict
+      deference. Confidence was the same for those who deferred. Agent users made fewer serious method errors
+      (6% vs 55%), but groups were not comparable. Authors say the lean was made stronger than in real use. One
+      task, one model, one field. Vendor studies its own model. Strongest evidence for the "anchoring on AI
+      scores" and "learner audits the agent" design. Mitigations (ask the human first, best case for each
+      option) were proposed, not tested
+
+  - id: E2
+    claim: >-
+      Across 11 AI models, AI affirmed users' actions 49% more often than humans did. In 3 preregistered
+      experiments (2,405 people), users rated the sycophantic answers higher in quality, trusted them more and
+      were about 13% more likely to return, even though the answers made them more sure they were right
+    type: study
+    source: Cheng, Lee, Khadpe, Yu, Han, Jurafsky. Sycophantic AI decreases prosocial intentions and promotes dependence. Science 391, eaec8352
+    source_id: S2
+    vendor: false
+    url: https://s3.amazonaws.com/media.mediapost.com/uploads/science.aec8352.pdf
+    secondary_url: https://arxiv.org/abs/2510.01395
+    source_date: 2026-03-26
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: Science PDF opened (copy on a MediaPost server). Science 391, eaec8352, 2026-03-26. 11 models, 49%, 3 studies, N 2,405 (804, 801, 800), 13% return, US participants confirmed. The arXiv preprint has different figures (50%, 2 studies, N 1,604). Cite the Science version only"
+    note: >-
+      Peer reviewed (Science). Preprint was posted 2025-10; the journal version is 2026, so it passes the 2026
+      rule. Population: US online participants. Sample: 804, 801 and 800 in studies 2a, 2b and 3; study 3 was a
+      live chat about a real past conflict. Models: 4 proprietary and 7 open-weight. Domain is personal and
+      interpersonal advice, not business strategy. Use for "sycophancy toward the stated strategy" as an
+      inference only: the mechanism (people prefer and trust the agreeing answer) is the point. Say so on a slide
+
+  - id: E3
+    claim: >-
+      Seven leading LLMs, asked for strategic advice, almost always picked trend-aligned options
+      (differentiation over cost leadership, augmentation over automation, long term over short term) regardless
+      of context ("trendslop"). Prompt changes moved the two strongest biases by under 2%. Adding context shifted
+      biased answers by about 11%. When not forced to choose, models often recommended doing both
+    type: study
+    source: >-
+      Romasanta, Thomas, Levina. Researchers asked LLMs for strategic advice. They got "trendslop" in return.
+      Harvard Business Review, March 2026
+    source_id: [S3, S4]
+    vendor: false
+    url: https://www.stern.nyu.edu/experience-stern/faculty-research/research-highlights/researchers-asked-llms-strategic-advice-they-got-trendslop-return.md
+    secondary_url: https://zby.github.io/commonplace/sources/researchers-asked-llms-strategic-advice-trendslop/
+    source_date: 2026-03-16
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "partly verified"
+    verifier_note: "Verifier 2026-11-22: HBR page opened (2026-03-16, body paywalled). Numbers found in a full-text snapshot of the HBR article (zby.github.io), not on hbr.org. Under 2% applies to the 2 strongest tensions only (others moved about 22%). The 11% context shift and recommending both were ChatGPT-only results; the claim says models. 15,000 plus trials were per GPT-5 experiment. Fortune (2026-04-10) confirms 7 models, no percentages"
+    note: >-
+      NYU Stern page (author's school) confirms the finding and the HBR date but gives no numbers. The numbers
+      come from a third-party summary page (zby.github.io), not the HBR article. Models: ChatGPT, Claude,
+      DeepSeek, GPT-5 API, Gemini, Grok, Mistral; about 50 runs per model per tension; over 15,000 trials each
+      for the prompt and context tests on GPT-5. Reversing option order cut biased answers about 19%. Authors
+      advise: use LLMs to widen options, argue the opposite case, ask about each option in a separate prompt,
+      log the model version, keep the decision human. Open the HBR article before any number goes on a slide.
+      Directly relevant to skill 2.1 (strategy stays a forced-choice human decision)
+
+  - id: E4
+    claim: >-
+      LLMs shift numeric estimates toward irrelevant numbers in the prompt (anchoring). Models are more
+      susceptible to high anchors than low ones. Resistance follows the model's confidence, not whether it is
+      correct
+    type: study
+    source: Owusu and Feldman. Anchoring Depends on Confidence and Post-Training in Language Models. ACL 2026 (short papers), pp. 174 to 180
+    source_id: S5
+    vendor: false
+    url: https://aclanthology.org/2026.acl-short.16/
+    source_date: 2026-07
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "verified (abstract only)"
+    verifier_note: "Verifier 2026-11-22: ACL Anthology page opened. ACL 2026 short papers, pp. 174 to 180, July 2026. All 3 findings and Llama and Qwen variants confirmed"
+    note: >-
+      Peer-reviewed conference paper. Models: base, instruction-tuned and distilled Llama and Qwen (open weight,
+      not the chat products learners use). Effect sizes not in the abstract. Course use: a number the PM puts in
+      the brief (a target TAM, a hoped-for score) can pull the agent's estimate. Supports a "no target numbers in
+      the brief" check. Do not quote a size of effect
+
+  # ---------- Failure modes: overconfident numbers and false precision ----------
+
+  - id: E5
+    claim: >-
+      A preregistered study found LLMs are overconfident on average (confidence exceeds accuracy). Overconfidence
+      is greatest on hard tasks; on easy tasks they are underconfident
+    type: study
+    source: Michael, BenShushan, Bien, Moore. Confidence Calibration in Large Language Models. arXiv 2605.23909
+    source_id: S6
+    vendor: false
+    url: https://arxiv.org/abs/2605.23909
+    source_date: 2026-04-03 (as shown on the page; the arXiv number suggests May 2026)
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "verified (abstract only), weak"
+    verifier_note: "Verifier 2026-11-22: arXiv abstract opened. v1 submitted 2026-04-03. Preregistered confirmed. Findings confirmed. No numbers, no model names"
+    note: >-
+      Preprint, not peer reviewed. Don Moore is a leading researcher on human overprecision. The abstract gives
+      no numbers and does not name the models. Date on the page does not match the arXiv number. Supports the
+      claim that a market-size or business-case number can look precise without being reliable, but only as a
+      direction. Gap: no 2026 primary study found on LLM false precision in market sizing itself
+
+  # ---------- Failure modes: invented and circular sources ----------
+
+  - id: E6
+    claim: >-
+      3% to 13% of citation URLs given by commercial LLMs and deep research agents were hallucinated (never
+      existed); 5% to 18% did not resolve. Deep research agents gave more citations but hallucinated at higher
+      rates. A URL-checking tool cut non-resolving citations by 6 to 79 times, to under 1%
+    type: statistic
+    source: Rao, Wong, Callison-Burch. Detecting and Correcting Reference Hallucinations in Commercial LLMs and Deep Research Agents. arXiv 2604.03173
+    source_id: S7
+    vendor: false
+    url: https://arxiv.org/abs/2604.03173
+    source_date: 2026-04-03
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "verified (abstract only)"
+    verifier_note: "Verifier 2026-11-22: arXiv abstract opened. 2026-04-03. 3 to 13%, 5 to 18%, 6 to 79 times to under 1%, 53,090 and 168,021 URLs, business 5.4% confirmed"
+    note: >-
+      Preprint (University of Pennsylvania authors). Population: citation URLs, not people. Sample: 53,090 URLs
+      from 10 models and agents on DRBench and 168,021 URLs from 3 models on ExpertQA across 32 fields. Method:
+      resolve each URL, then use Wayback Machine records to split invented from dead links. Business had the
+      lowest non-resolving rate (5.4%). Rates vary a lot by model. Measures only whether the link exists, not
+      whether the page supports the claim (see E7 for that). Supports an agent check: "every source link must
+      resolve before the flag report"
+
+  - id: E7
+    claim: >-
+      A GPTZero review of a KPMG report on agentic AI (October 2025) found only 5 of 45 citations accurate. Of 33
+      citations rated by an expert, 14 did not support the claim and 7 gave partial support. One statistic (55% of
+      CEOs rank AI top investment priority) conflicts with KPMG's own CEO Outlook (71%), yet news outlets repeated
+      it and LLMs now cite the report. KPMG removed the report
+    type: case_study
+    source: >-
+      (1) GPTZero investigation, 2026-06-12. (2) The Register, 2026-06-12, with a KPMG spokesperson statement
+    source_id: [S8, S9]
+    vendor: true
+    url: https://gptzero.me/news/investigations-kpmg/
+    secondary_url: https://www.theregister.com/ai-and-ml/2026/06/12/kpmgs-ai-report-turns-into-a-demo-of-ai-hallucinations/5255029
+    source_date: 2026-06-12
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: GPTZero (2026-06-12) and The Register (2026-06-12, Carly Page) opened. 5 of 45, 12/7/14 of 33, 55% vs 71% confirmed (GPTZero only, vendor). 16 and 28 are different categories, not a mismatch. Removal confirmed only by KPMG quote in The Register; FT says some sites. GPTZero page does not say removed"
+    note: >-
+      Services industry. GPTZero sells AI detection and citation-checking tools, so it gains from the story.
+      The Register repeats GPTZero's findings without its own check, so for the counts S8 and S9 are one source.
+      The removal is independent: KPMG told The Register "The report has been removed". GPTZero's own table and
+      text do not fully match (16 vs 28 fabricated). GPTZero says AI use is suspected, not proven. Best example
+      found of circular sourcing: a wrong number spreads through news articles and then into LLM answers.
+      Fits the planted errors "invented source" and "two articles quoting one report"
+
+  - id: E8
+    claim: >-
+      A Deloitte report for the Newfoundland and Labrador government (about CAD 1.6 million, health workforce)
+      cited academic papers that do not exist to support cost-effectiveness analyses. A month before, Deloitte
+      Australia gave a partial refund on a welfare-compliance report with invented references and a fabricated
+      court quote
+    type: case_study
+    source: Fortune (Nino Paoli), 2025-11-25, reporting an investigation by The Independent (Newfoundland and Labrador), 2025-11-22
+    source_id: S10
+    vendor: false
+    url: https://fortune.com/2025/11/25/deloitte-caught-fabricated-ai-generated-research-million-dollar-report-canada-government/
+    source_date: 2025-11-25
+    checked_on: 2026-11-22
+    age_flag: "partly. Canada item is 362 days old (inside 12 months). The Australia item (October 2025) is older than 12 months. Dan decides"
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened (fetch budget). Researcher opened one secondary source only. Needs a second independent source"
+    note: >-
+      Health care and services. Fortune is a secondary source; The Independent investigation was not opened.
+      Deloitte Canada said AI was used only to support "a small number of citations" and that findings stand.
+      The Australia case is in many outlets (TechCrunch, Fortune 2025-10-07) but none were opened. Needs a second
+      independent source before use. Business-case relevance: invented studies sat under cost-effectiveness claims
+
+  # ---------- Impact: opportunity prioritization ----------
+
+  - id: E9
+    claim: >-
+      Asked to rank 30 live Kickstarter tech projects by future funds raised, the best LLM (Gemini 2.5 Pro)
+      reached a rank correlation of 0.74 (about 79% pairwise accuracy). The best of 3 MBA-trained experts reached
+      0.45 and a crowd of 346 managers 0.19. Adding a human expert to the best model lowered accuracy (0.67)
+    type: study
+    source: Csaszar, Peterson, Wilde. The Strategic Foresight of LLMs, Evidence from a Fully Prospective Venture Tournament. arXiv 2602.01684 (draft)
+    source_id: S11
+    vendor: false
+    url: https://www.arxiv.org/pdf/2602.01684
+    source_date: 2026-02-03
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "verified"
+    verifier_note: "Verifier 2026-11-22: PDF opened (first 100,000 of 105,618 characters). 30 projects, 870 pairs, 19 LLMs, 0.74, about 4 of 5 pairs, 0.45, 0.19, 0.67 confirmed. WARNING: the draft says do not circulate or cite without the authors permission. Dan must get permission or wait for a published version before a slide"
+    note: >-
+      Preprint marked draft (University of Michigan, NYU Stern, Indiana University). Population: 19 LLMs, 346
+      Prolific managers, 3 experts. Sample: 30 US tech Kickstarter projects launched after the models' training
+      cutoffs, judged while funding was open. Method: 870 pairwise choices per model on about 500-word summaries;
+      scored against real funds raised. Limits: crowdfunding success is not enterprise opportunity value; only
+      30 items; summaries were standardized. Counterweight to E1 to E3: AI can rank options well on some tasks,
+      and a human override can make it worse ("augmentation trap"). Good for a balanced talk track on skill 2.2:
+      use the agent's ranking as evidence, keep weights and the final call human, and log when you override it
+
+  - id: E10
+    claim: >-
+      Of 309 product leaders surveyed April to May 2026, 85% use AI tools for product work, but only 17% rate
+      AI's positive impact on strategic planning and roadmapping as high
+    type: statistic
+    source: The State of AI in Product 2026, Product Institute with Product Circle
+    source_id: S12
+    vendor: partly
+    url: https://productinstitute.com/resources/reports/state-of-ai-in-product-2026
+    source_date: 2026-06-24 (updated 2026-10-16)
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "verified (report page opened; full report not opened)"
+    verifier_note: "Verifier 2026-11-22: report page opened. Published 2026-06-24, updated 2026-10-16. 309, 40 countries, 52% director+, April to May 2026, 85%, 17%, 62% vs 19%, self-selected and directional confirmed. Pragmatic competitor"
+    note: >-
+      Population: product professionals in 40 countries; 52% director level or above; about half software or
+      SaaS; 26% regulated sectors. Sample: 309 (about 270 answered extended questions). Method: online survey of
+      self-selected community members; the publisher calls it directional. 17% is perceived impact, not use. Also
+      62% of PMs vs 19% of C-suite name "no clear strategy" for AI as a top challenge. Product Institute sells PM
+      training, so it is a Pragmatic competitor. Tell Dan before using it on a slide. Gap: no 2026 statistic on
+      how often PMs use AI for prioritization, business cases or OKRs
+
+  # ---------- Company case studies ----------
+
+  - id: E11
+    claim: >-
+      IBM's Chief Analytics Office piloted a watsonx.ai tool with 128 product managers on 10 software products
+      for 6 months. It sorts feature requests into 8 categories, applies RICE scoring and logs a prioritization
+      recommendation in the roadmap tool. PMs make the final call
+    type: case_study
+    source: Improving feature prioritization and software development through generative AI, IBM case study
+    source_id: S13
+    vendor: true
+    url: https://www.ibm.com/case-studies/assisted-idea-prioritization
+    source_date: 2024-05-14
+    checked_on: 2026-11-22
+    age_flag: true
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened. Researcher opened it; vendor, 2024, older than 12 months"
+    note: >-
+      Internal product management (a priority industry). IBM has 500+ PMs and over 30,000 ideas a year. No
+      measured results (no time saved or accuracy). No formal review step described. Older than 12 months: Dan
+      decides. Useful as the "one-pass AI scoring" baseline the course should go beyond
+
+  - id: E12
+    claim: >-
+      An anonymous Fortune 500 FinTech company (10,000+ staff, dozens of business units) runs portfolio planning
+      on Dragonboat. Ambient agents watch the portfolio to flag risks, data errors and portfolio issues; OKRs trace
+      to Jira epics. Leaders make stack-rank decisions in CTO and VP planning sessions
+    type: case_study
+    source: A Fortune 500 Fintech Leader Enables Agentic PDLC with Dragonboat, Dragonboat customer story
+    source_id: S14
+    vendor: true
+    url: https://dragonboat.io/customer-stories/fortune-500-fintech-pdlc-transformation-with-dragonboat/
+    source_date: 2026-06-23 (last modified; no publish date shown)
+    checked_on: 2026-11-22
+    age_flag: false
+    status: "not verified"
+    verifier_note: "Verifier 2026-11-22: not reopened. Researcher opened it; vendor, no measured results"
+    note: >-
+      FinTech. Company not named. No measured results: the goal "3x faster" is not reported as met. No approval
+      gates for agent actions described. Shows the "agent watches the plan and flags; humans decide" pattern for
+      OKR tracking and portfolio reviews. Not usable as proof of impact
+
+  - id: E13
+    claim: >-
+      A Principal PM at SAP reports that AI-guided reprioritization linked to live signals (churn, adoption,
+      support clusters) cut low-impact launches by 25%, and risk reviews moved from quarterly to weekly
+    type: case_study
+    source: Akhil Kumar Pandey, "Roadmaps, risk and results. How AI changed our product planning at SAP", via inkl (original publisher not named)
+    source_id: S15
+    vendor: false
+    url: https://www.inkl.com/news/roadmaps-risk-and-results-how-ai-changed-our-product-planning-at-sap
+    source_date: unknown
+    checked_on: 2026-11-22
+    age_flag: unknown
+    status: "not verified, weak"
+    verifier_note: "Verifier 2026-11-22: not reopened. Do not use"
+    note: >-
+      Software. Personal article on an aggregator; no date, no original publisher, no method or baseline for any
+      figure. Other numbers (30% faster decision cycles, 40% fewer escalations) have the same problem. Author
+      calls AI a "junior analyst" that needs oversight. Do not put on a slide. Keep only as a lead to find an
+      SAP-published source
+
+  # ---------- Carried from Market Research ----------
+
+  - id: E14
+    carried_from: market-research
+    original_id: MR-E20
+    claim: >-
+      39.7% of data movements into AI tools involve sensitive data. 32.3% of ChatGPT use and 24.9% of Gemini use
+      is through personal accounts
+    type: statistic
+    source: 2026 AI Adoption and Risk Report, Cyberhaven Labs (press release)
+    source_id: S16
+    vendor: true
+    url: https://www.cyberhaven.com/press-releases/cyberhaven-2026-ai-adoption-risk-report
+    source_date: 2026-02-05
+    checked_on: 2026-11-20 (Market Research run; not opened again)
+    age_flag: false
+    status: "verified, vendor (Market Research verifier)"
+    verifier_note: "Verifier 2026-11-22: not reopened. Carried status from the 2026-11-20 verifier"
+    note: >-
+      Carried because every lab needs a data safety note. Strategy work uses sensitive inputs (pricing, financial
+      plans, unannounced roadmaps). Market Research verifier: 222 companies, data through 2025, report says "AI
+      interactions" not "data movements". Data-loss-prevention vendor
+
+dropped:
+  - item: Atlassian State of Product 2026 (1,000+ product professionals, US, France, Germany)
+    url: https://www.atlassian.com/blog/announcements/state-of-product-2026
+    reason: Published 2025-09-03. Fails the 2026 rule. Page also gives no figures on AI for prioritization or planning
+  - item: Productboard 2025 CPO Survey (101 leaders; 8% say AI is core to how they build and prioritize)
+    url: https://www.productboard.com/blog/ai-in-product-management-cpo-mandates-missteps/
+    reason: Published 2025-10-16. Fails the 2026 rule. Vendor
+  - item: FermiEval, "LLMs are Overconfident" (confidence intervals on Fermi estimates)
+    url: https://arxiv.org/abs/2510.26995
+    reason: Posted October 2025. Fails the 2026 rule. Not opened
+  - item: UXmatters, The Anchoring Effect in AI-Assisted Decisions (Yocco, 2026-07-06)
+    url: https://www.uxmatters.com/mt/archives/2026/07/the-anchoring-effect-in-ai-assisted-decisions-why-the-first-number-ai-shows-you-wins.php
+    reason: Opened. Cites no study of people anchoring on AI numbers; only 1974 and 2006 general anchoring work
+  - item: Gartner, Top priorities for chief product officers 2026
+    url: https://www.gartner.com/en/product-management/insights/top-priorities-for-chief-product-officers-2026/unlocked
+    reason: Opened. No date, no sample or source for its figures, and no figures on AI in strategy work
+  - item: ICAEW, How to identify AI errors in financial models (June 2026)
+    url: https://www.icaew.com/insights/viewpoints-on-the-news/2026/jun-2026/how-to-identify-ai-errors-in-financial-models
+    reason: Opened, but the article body did not load. Only the summary was read. Re-open in run 2 for business-case checks
+
+unopened:
+  - Harvard Business Review, trendslop article by Romasanta, Thomas, Levina (primary for E3)
+  - The Independent (Newfoundland and Labrador) Deloitte investigation, 2025-11-22 (second source for E8)
+  - Financial Times on KPMG report removal (independent source for E7)
+  - Al Jazeera, Unite.AI, GovInfoSecurity reports on the Anthropic study (secondary for E1, not needed)
+  - Anthropic full paper PDF "Who's Aligned to Whom?" (https://www-cdn.anthropic.com/519c17a5d23a794e8b6d50a854048d0b61e0d73a.pdf)
+  - ProductPlan State of Product Management Report 2026 (https://www.productplan.com/ebooks/the-state-of-product-management-report-2026), vendor
+  - Product-Led Alliance State of Product Management survey 2026 (https://www.productledalliance.com/state-of-product-management-survey-2026/)
+  - UXCam State of AI in Product Management 2026 (https://uxcam.com/resources/ebooks/ai-in-product-management-2026/), vendor
+  - G2 Research Hub, AI Roadmaps Under Pressure (https://research-hub.g2.com/ai-roadmaps-under-pressure-speed-tradeoffs-control)
+  - Dragonboat, Fortune 500 bank reduces quarterly planning from weeks to days (https://dragonboat.io/customer-stories/outcome-driven-transformation-fortune-500-bank/), vendor
+  - McKinsey, Supercharging product portfolio performance with generative AI (date unknown)
+  - Journal of Management Studies 63(2) 2026, human trust in AI advice (https://econpapers.repec.org/RePEc:bla:jomstd:v:63:y:2026:i:2:p:399-437)
+  - arXiv 2603.28944 and 2603.11821 (2026 human-AI reliance studies)
+  - ConfidenceBench, arXiv 2607.20526 (LLM confidence calibration, 2026)
+  - DeepTRACE, ICLR 2026 (citation support in deep research systems; preprint 2025-09)
+  - Gartner press release 2026-07-20 (45% of CFOs say AI investments lean to productivity, 20% to decision quality)
+  - Gartner press release 2026-10-20 (44% of CEOs struggle to show AI financial returns)
+  - InterWorks, AI-assisted sprint planning with Claude Code and Jira (2026-07-08); release planning, likely out of scope
