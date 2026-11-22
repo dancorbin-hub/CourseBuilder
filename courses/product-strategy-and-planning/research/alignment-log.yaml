@@ -1,0 +1,377 @@
+# Pragmatic alignment log, Advanced AI for Product Strategy and Planning (course id: product-strategy-and-planning).
+# Stage 1 checker: pragmatic-alignment agent. Written 2026-11-22.
+# Role: .claude/agents/pragmatic-alignment.md. This log drops no content. Dan decides each item.
+# Files checked: research/workflows.yaml (sp-wf-01 to sp-wf-10), needs.md, methods.md, bond-stories.md, evidence-ledger.yaml.
+# Format model: courses/market-research/research/alignment-log.yaml.
+# Not re-raised (Dan decided in Market Research, 2026-11-22): PA-01 no magic number, PA-02 AI-moderated interviews and
+#   personas only from collected data, PA-03 standard data safety note, PA-07 2027 terms only, PA-08 pdlc_stage field name,
+#   PA-09 Gems are skills, and the move of mr-wf-06 and mr-wf-08 to this course. PS-08 and PS-12 raise only what is new here.
+# dan_decision is for Dan only.
+
+course: product-strategy-and-planning
+checked_on: 2026-11-22
+checker: pragmatic-alignment
+
+sources_used:
+  - name: Product Professionals' Guide to the Pragmatic Framework, refreshed for 2027
+    file: course-builder/reference/pragmatic-sources/Pragmatic-Framework-2027-Guide.pdf (read from extracted text fw.txt)
+    version: "PDF created 2026-11-11, 26 pages, cover says 'Refreshed for 2027'"
+    date_read: 2026-11-22
+    used_for: "Category and box names (pages 3, 5), Where AI fits (page 4), Product Strategy (page 6), Focus category (pages 8, 9), Business category (pages 10, 11), Planning category (pages 12, 13), Exceptions and Escalations (pages 19, 20), Core Course maps (pages 21, 22)"
+  - name: Pragmatic Capability Standards Workbook 2027
+    file: course-builder/reference/pragmatic-sources/Pragmatic_Capability_Standards_Workbook_2027.xlsx (read from extracted text wb.txt)
+    version: "File modified 2026-11-22 04:55. Framework Reference sheet says Framework 2027 (Version 5)"
+    date_read: 2026-11-22
+    used_for: "Capability 2 and skills 2.1 to 2.4 (text, AI-embedded text, competencies, levels), skills 1.3, 3.1, 3.4, 6.4 and 8.4 for overlap and tags, box to skill anchors"
+  - name: Focus core course draft FCS 28.01
+    file: FCS_28.01_DRAFT_v6_Full.pptx (project files root; read from extracted text fcs.txt, slide text and notes)
+    version: "28.01 DRAFT v6, file dated 2026-11-19. Instructor named in the deck: Dan Corbin"
+    date_read: 2026-11-22
+    used_for: "Strategy Matrix, explicit and implicit strategy, drift and the Strategy Alignment agent demo (slides 24 to 28), AI Capability Maps (Strategy, Score, Propose, Communicate), 4 scoring attributes and 1 to 5 scale, bubble diagram and Market Sizing agent demo, roadmap criteria, roadmap vs release plan, Roadmap Translator demo, One Roadmap Two Audiences activity"
+  - name: Build core course draft BLD 28.01
+    file: BLD_28.01_DRAFT_v1.pptx (project files root; read from extracted text bld.txt)
+    version: "28.01 DRAFT v1, file dated 2026-11-19. Instructor named in the deck: Dan Corbin"
+    date_read: 2026-11-22
+    used_for: "Stakeholder Update Agent demo and its approval rules, Market Evidence Agent demo, Market Problems Table and strategy filters, 'Workflows Teams Automate Today' slide (backlog, roadmap, status agents)"
+  - name: How the Capability Standards Drive Learning Development
+    file: course-builder/reference/pragmatic-sources/Capability_Standards_Drive_Learning_Development.docx
+    version: "File dated 2026-11-21"
+    date_read: 2026-11-22
+    used_for: "Introduce, Develop, Apply, Validate. Confirms that Standards set the target, not the teaching method"
+  - name: What makes a pragmatic course
+    file: course-builder/reference/pragmatic-sources/What_makes_a_pragmatic_course.docx
+    version: "Last modified 2026-09-26 (file metadata)"
+    date_read: 2026-11-22
+    used_for: "Context only. No conflict found"
+  - name: Focus Product Course page
+    url: https://www.pragmaticinstitute.com/product/course/focus/
+    version: "last modified 2026-10-29 (page metadata)"
+    date_read: 2026-11-22
+    used_for: "Public Focus promise: 'Differentiate roadmaps from release plans', 'Use AI to estimate market size while recognizing its limitations'"
+  - name: Mastering the Product Roadmap course page (Bruce McCarthy)
+    url: https://www.pragmaticinstitute.com/product/course/mastering-the-product-roadmap/
+    version: "last modified 2026-10-21 (page metadata)"
+    date_read: 2026-11-22
+    used_for: "Overlap check for sp-wf-07 and sp-wf-08. Page names a 'unique prioritization formula' and 'five essential elements' but does not list them. No AI. Syllabus PDF not opened"
+
+sources_not_read:
+  - item: Mastering the Product Roadmap syllabus PDF
+    reason: "Not opened (fetch budget: 2 of 5 used, kept the rest for Stage 2). Open it before Gate 2 to check its prioritization formula against sp-wf-02 and its roadmap elements against sp-wf-07"
+  - item: Focus Implementation Playbook, Strategic Transformation and Implementation, Action Planning Workshop
+    reason: "Mapped to capability 2 in the workbook. No file in the project folder. Gap, not a failure. Dan to say if they hold agent labs"
+  - item: PRC_25.7.3 AI.pptx, PDW-AI, PRW-AI, BPW-AI, CAW-AI, MKT 2026
+    reason: "Read in the Market Research run (2026-11-20). Not opened again. Registry entries used for the no-repeat check"
+
+term_check:
+  categories_in_guide: [Market, Focus, Business, Planning, Go-to-Market, Enablement, Operations]
+  workflows_yaml:
+    - {id: sp-wf-01, category: Market, focus_area: Product Strategy, exact_match: true, skill: "2.1 (primary box Product Strategy)"}
+    - {id: sp-wf-02, category: Focus, focus_area: Product Portfolio, exact_match: true, skill: "2.2 (primary box is Competitive Landscape, see PS-13)"}
+    - {id: sp-wf-03, category: Focus, focus_area: Market Definition, exact_match: true, skill: "2.3 (Market Definition is not a 2.3 box; it is secondary for 2.1)"}
+    - {id: sp-wf-04, category: Planning, focus_area: Ideation, exact_match: true, skill: "6.4, outside capability 2 (see PS-08)"}
+    - {id: sp-wf-05, category: Business, focus_area: Business Plan, exact_match: true, skill: "2.3 (primary box)"}
+    - {id: sp-wf-06, category: Business, focus_area: "Buy, Build or Partner", exact_match: true, skill: "2.3 (secondary box)"}
+    - {id: sp-wf-07, category: Focus, focus_area: Product Roadmap, exact_match: true, skill: "2.4 (primary box)"}
+    - {id: sp-wf-08, category: Planning, focus_area: Stakeholder Management, exact_match: true, skill: "2.4 (secondary box). Box primary skill is 3.1, see PS-10"}
+    - {id: sp-wf-09, category: Focus, focus_area: Product Portfolio, exact_match: true, skill: "2.1 (secondary box)"}
+    - {id: sp-wf-10, category: Business, focus_area: Business Outcomes, exact_match: true, skill: "2.3 (secondary box)"}
+  skill_names: "All workbook skill names are exact: 2.1 Strategy Alignment, 2.2 Opportunity Prioritization, 2.3 Business Case Development, 2.4 Product Vision and Roadmap, 6.4 Ideation, Evaluation, and Prototyping. Competency ids 2.1B, 2.2C, 2.2D, 2.3B, 2.3C, 2.3E, 2.3F, 2.4B, 2.4C, 2.4D, 2.4E match the workbook"
+  needs_md_tags: "All tags use 2027 names. needs.md line 6 states the Planning name collision correctly"
+  ai_embedded_rules_in_research: "Quoted correctly in stage-1-inputs.md, methods.md (S1, S5, S8, S9) and the rows. One small paraphrase: methods.md S8 writes 'must not turn uncertain direction'; the workbook says 'must not convert uncertain direction into false delivery commitments'. Same meaning"
+  focus_area_names_in_agent_wording: "None. 'Escalations' appears only in needs.md lines 22, 36, 41 and evidence E13, as quotes from sources about leadership escalations. It is not agent wording. Rows use hand-off rules, flag report and audit. Good"
+  wrong_terms:
+    - "sp-wf-02 ai_error_to_catch says 'Impact to buyers'. Focus name is 'Impact to Buyers and Users'. See PS-03"
+    - "sp-wf-03 uses 'layer' for value-chain layer. Focus uses 'layers' for the 4 bubbles of market size. See PS-06"
+    - "sp-wf-07 says 'validated problem backlog'. Build calls it the 'Market Problems Table'. See PS-09"
+    - "sp-wf-08 uses 'Now, Next, Later'. Not a Focus or Framework term. See PS-05"
+
+traced_example:
+  item: sp-wf-08 pragmatic_fit
+  research_says: "Good fit. The 2.4 AI text says the AI 'must not convert uncertain direction into false delivery commitments'. This row's planted error tests exactly that"
+  pragmatic_says:
+    - quote: "Uses AI to cluster validated problems into outcome themes, simulate sequencing and dependency scenarios, and tailor roadmap narratives. It must not convert uncertain direction into false delivery commitments."
+      source: "Pragmatic_Capability_Standards_Workbook_2027.xlsx, sheet Skill Standards, SKILL 2.4 Product Vision and Roadmap, AI-embedded application column (wb.txt line 998)"
+    - quote: "A roadmap is a prediction. It's not a promise. It's not a commitment. That's for the release plan."
+      source: "FCS_28.01_DRAFT_v6_Full.pptx, slide 112 notes (fcs.txt line 4634 onward)"
+    - quote: "Choose a format that allows flexibility, such as dated, undated or hybrid timelines."
+      source: "Pragmatic-Framework-2027-Guide.pdf, page 9, Product Roadmap"
+  method:
+    - "Find the skill the row names (2.4) in the workbook sheet Skill Standards."
+    - "Copy the AI-embedded text word for word. Compare it with the quote inside the research sentence."
+    - "Read the Focus slides the row's registry_check names (roadmap vs release plan, One Roadmap Two Audiences)."
+    - "Read the Framework box for the row's own tag and the primary box (Product Roadmap, Stakeholder Management)."
+    - "Check that the planted error is a false delivery commitment by the Pragmatic definition."
+  result: "Match on the quote. The words in the research are exact. The fit claim holds: Focus and the workbook both say a roadmap is direction and the release plan is the commitment."
+  extra_check: "The planted error needs care. The row treats 'Q2' as a false commitment because it is not a horizon word. But Focus says only 'Timeframe, not delivery date' and does not define timeframes, and the Framework guide allows 'dated' roadmaps. A Focus graduate can read 'Q2' as a valid timeframe. The error that Pragmatic clearly names is a date or promise that is not on the release plan. See PS-05. The row also repeats a Build demo agent, see PS-02."
+
+conflicts:
+  - id: PS-01
+    item: "sp-wf-01 quarterly strategy drift check repeats a Focus 28.01 AI use case and a Focus demo agent"
+    research_says: "registry_check: 'It also has a tip to use AI to check roadmap updates against the Strategy Matrix and OKRs. This row starts where Focus stops ... Risk: the Focus tip is close; Dan to confirm.' agent_does: 'Map each epic or project to one strategic choice ... Total effort and spend per choice ... Compare with last quarter'"
+    pragmatic_says: "Focus slide 25 notes: 'Give it your roadmap, your backlog, or your headcount by team. Ask it to show you where your investment is actually going.' Slide 28 notes: 'This is a perfect job for a strategy alignment agent. Give it your Strategy Matrix and your OKRs once. Then it checks every new PRD, plan, or roadmap update and flags work that doesn't align.' Slide 28 note: 'the Strategy Alignment agent is built and maintained by the SME. Instructors run it; it is not shared with learners.' Strategy AI Capability Map, YELLOW: 'Map current work to show where investment goes / List gaps between implicit and explicit strategy / Check PRDs and roadmaps for strategic drift'"
+    source: "FCS_28.01_DRAFT_v6_Full.pptx slides 25, 26, 28 and the Strategy AI Capability Map (fcs.txt lines 1066 to 1232, 1390 to 1430)"
+    severity: high
+    why_it_matters: "The research says Focus has only a 'tip'. In fact Focus has the same job (map work to show where investment goes), the same drift flag, and an agent demo. Dan is the named Focus instructor, so the demo agent is likely his. House rule 11 says course labs must be clearly stronger builds than Dan's existing agents. Focus graduates will see the module 1 lab as a repeat."
+    options:
+      align_with_pragmatic: "Drop sp-wf-01 as a lab. Refer to the Focus drift check in one sentence and move the course agent's module 1 job to sp-wf-09 (portfolio pack), which Focus does not cover."
+      update_message_ai_changed_work: "Keep the row but make the new part the lesson: quarterly trend, effort and spend totals that must reconcile, a 'must do' category, tag-only mapping flags and the label laundering audit. State in class: 'In Focus you saw an agent flag drift. Here you manage one: you set its checks and audit it.' Dan confirms how it differs from his Strategy Alignment agent."
+      keep_both_explain: "Keep the row as written. Tell Focus graduates the concept is the same and the data is different."
+    recommendation: update_message_ai_changed_work
+    recommendation_reason: "The workbook 2.1B competency fits this row exactly, and the 'Apply' level asks to compare explicit and implicit strategy 'systematically'. The agent-manager parts are new. Option 2 needs Dan to compare his Focus demo agent with the row before Gate 2. Consider merging with sp-wf-09 (same data), which also lowers the repeat."
+    dan_decision: ""
+
+  - id: PS-02
+    item: "sp-wf-08 per-audience change notes repeat the Build Stakeholder Update Agent demo and the Focus Roadmap Translator demo"
+    research_says: "agent_does: 'Draft one note per audience from the master change record ... Check each note against the master record'. registry_check: 'Build 28.01 has AI-drafted stakeholder updates and release planning. This row starts after: change-triggered impact analysis, a decision log and consistency across audiences'"
+    pragmatic_says: "Build slide 'Demo: The Stakeholder Update Agent': 'Every Friday, the agent drafts one update for each stakeholder. Each one is in that stakeholder's channel and at their depth.' Rules on the slide: 'Key stakeholders and important updates: you approve before send / Routine updates: send, then spot-check / Risky, unsure or needs guidance: the agent stops and alerts you'. Build 'Workflows Teams Automate Today': 'Roadmap: when a group is done, the agent moves it to the release plan and drafts the roadmap update. You check the dates and the commitments before anyone sees them.' Focus slide 110 notes: 'run the Roadmap Translator agent'. Focus slide 111: 'One Roadmap, Two Audiences'"
+    source: "BLD_28.01_DRAFT_v1.pptx Stakeholder Update Agent slide (bld.txt lines 872 to 909) and slide 117 (bld.txt lines 3040 to 3060); FCS_28.01_DRAFT_v6_Full.pptx slides 110, 111 (fcs.txt lines 4520 to 4631)"
+    severity: high
+    why_it_matters: "Two core courses already show an agent that drafts per-audience updates, with approval and stop rules that look like our hand-off rules. Build also shows an agent that drafts the roadmap update and a person who checks dates and commitments. That is close to the sp-wf-08 audit. Learners who took Build and Focus will see a third version."
+    options:
+      align_with_pragmatic: "Remove per-audience drafting from the row. Keep only the impact note and decision log. Point to Build for stakeholder updates."
+      update_message_ai_changed_work: "Make the change assessment the core: what the change displaces, dependency hits, capacity, and a decision log, with the commitment guard (S8) against the release plan. Per-audience notes become one short step that reuses the Build idea by name, with no new slides on tailoring or approval tiers."
+      keep_both_explain: "Keep the row as written and add a talk track line on how it differs from the Build and Focus demos."
+    recommendation: update_message_ai_changed_work
+    recommendation_reason: "The impact analysis and decision log are not in Build or Focus, and the workbook 2.4 AI text ('simulate sequencing and dependency scenarios') supports them. Keep hand-off rules, but teach them with new slides only (house rule 14). Dan should confirm whether he built the Build and Focus demo agents; if yes, house rule 11 applies."
+    dan_decision: ""
+
+  - id: PS-03
+    item: "Scoring criteria: methods.md S1 says to use different criteria than Focus"
+    research_says: "methods.md S1 No-repeat note: 'Focus 28.01 teaches the 4-attribute scoring table as a one-pass activity. Here the PM manages an agent that rescores over time. Use different criteria and a different case.' S1 also uses '1 to 5 scales' (matches Focus). sp-wf-02 error text uses 'Impact to buyers' and 'Competitive landscape'"
+    pragmatic_says: "Focus slide notes: 'Focus uses four default attributes: Distinctive Competencies, Competitive Landscape, Impact to Buyers and Users, and Investment Level.' 'The method we'll explore is a simple 1-5 scoring.' Focus also says: 'There are many possible scoring attributes. Pick the ones that matter most to your organization.' Workbook 2.2: 'using attributes such as distinctive competencies, competitive landscape, impact to buyers and users, and investment level'"
+    source: "FCS_28.01_DRAFT_v6_Full.pptx Opportunity Scoring slides (fcs.txt lines 1543, 1568 to 1570, 1634 to 1645); Workbook SKILL 2.2"
+    severity: high
+    why_it_matters: "House rule 9 forbids the same exercise, not the same method. A different default set of attributes would teach Focus graduates a second scoring method for the same job and confuse them. The rows and methods.md also disagree with each other."
+    options:
+      align_with_pragmatic: "The course template and fallback case use the 4 Focus attributes with their exact names and the 1 to 5 scale. Learners who have their own model use it, as Focus allows. Change S1's note to 'Same model, different job and different case'. Fix 'Impact to buyers' to 'Impact to Buyers and Users'."
+      update_message_ai_changed_work: "Use new attributes that fit agent rescoring (for example evidence freshness) and explain why in class."
+      keep_both_explain: "Use different attributes in the case and add a slide that maps them to the Focus 4."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "The no-repeat rule is met by the agent job (rescoring over time, sensitivity, consistency, override log), not by new criteria. One method across courses is easier for learners and Pragmatic reviewers."
+    dan_decision: ""
+
+  - id: PS-04
+    item: "Who sets the final scores, and agent runs used as 'scorers' for calibration (sp-wf-02, methods.md S4)"
+    research_says: "sp-wf-02 agent_does: 'Score new items and rescore items with new evidence'. pm_decides: 'The attributes, scales and weights ... What advances, pauses or stops' (final scores not named). methods.md S4: 'Gets 2 independent score sets for the same items. Options: the agent and the PM; 2 stakeholders; or 2 fresh agent runs.'"
+    pragmatic_says: "Focus Score AI Capability Map, YELLOW: 'Draft first-pass scores with reasoning'. RED: 'Set the attribute weights / Agree on the final opportunity scores'. Workbook 2.2 AI text: 'Weights and final priorities remain transparent, calibrated, and human-owned.' Competency 2.2D: 'Improves scoring consistency across team members by reviewing examples, discussing differences, and aligning on how scores should be assigned.'"
+    source: "FCS_28.01_DRAFT_v6_Full.pptx Score AI Capability Map (fcs.txt lines 2605 to 2642); Workbook SKILL 2.2 and 2.2D"
+    severity: medium
+    why_it_matters: "If the agent writes the scores that go to the decision, the row moves a Focus RED item to the agent. Calibration in Pragmatic is a team conversation; two agent runs are a model consistency test, not calibration."
+    options:
+      align_with_pragmatic: "Label all agent scores 'draft scores'. Add 'Agree on the final scores' to pm_decides. In S4, use 'the agent and the PM' or '2 stakeholders' as the core path. Two agent runs is an extra test, not calibration."
+      update_message_ai_changed_work: "Keep agent-set scores and use the override log as the human control. Explain that AI changed who drafts the score."
+      keep_both_explain: "Keep the row and explain the Focus RED line in class."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "Small wording change. It keeps the workbook rule whole, and the override log still works on draft scores."
+    dan_decision: ""
+
+  - id: PS-05
+    item: "sp-wf-08 horizon words 'Now, Next, Later' and the planted error that treats 'Q2' as a false commitment"
+    research_says: "quality_checks: 'Each note uses the roadmap horizon words (Now, Next, Later), not new dates'. ai_error_to_catch: 'the agent turns Next into Q2 ... Q2 is not a horizon word but is accepted as a time frame'"
+    pragmatic_says: "Focus slide 108: 'Criteria for a Pragmatic Roadmap / Outcome, not output / Timeframe, not delivery date / Problems, not features'. Notes: 'It should also use timeframes and not specific delivery dates. Those dates live on the release plan.' Focus slide 106: a release plan covers 'often a few weeks to a couple of months'; a roadmap 'might span 3 to 5 years'. Framework guide page 9: 'Choose a format that allows flexibility, such as dated, undated or hybrid timelines.' Page 13: 'customers want clear timelines for features or upgrades.' Neither source uses Now, Next, Later."
+    source: "FCS_28.01_DRAFT_v6_Full.pptx slides 106, 108; Pragmatic-Framework-2027-Guide.pdf pages 9, 13"
+    severity: medium
+    why_it_matters: "Pragmatic does not ban quarters on a roadmap; a quarter can be a timeframe. The Pragmatic test is whether a date or promise is on the release plan. A Focus graduate may say the planted error is not an error. Now, Next, Later is a non-Pragmatic term."
+    options:
+      align_with_pragmatic: "The brief names the timeframes the PM uses (any format). The check is the S8 commitment guard: flag any date, 'will ship' or 'committed' that is not on the approved release plan. New planted error: the sales note says 'ships in Q2' for an item that is on the roadmap but not on the release plan."
+      update_message_ai_changed_work: "Keep Now, Next, Later and explain that AI drafts pull dates from past notes, so undated horizons are safer."
+      keep_both_explain: "Keep the row. In class, say Now, Next, Later is one undated format among those the guide allows."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "It keeps the same lesson and the same audit, and uses Focus's own rule: 'the roadmap is the vision, the release plan is the promise'."
+    dan_decision: ""
+
+  - id: PS-06
+    item: "sp-wf-03 market size model: method and the word 'layer' differ from the Focus bubble diagram; Focus Market Sizing agent demo"
+    research_says: "output: 'A top-down and bottom-up size model'. agent_does: 'Build top-down and bottom-up estimates'. ai_error_to_catch: 'Layer mixing ... a second estimate that measures a different layer (end-use value, not vendor revenue)'. registry_check: 'Focus 28.01 teaches TAM, segment and projected share as a one-pass exercise'"
+    pragmatic_says: "Focus slide 73 notes: 'The bubble diagram sizes the market in four layers and documents every assumption.' Bubbles: Market, Market Segment, adoption of category (also called 'Evaluator Adoption'), Your Projected Share. 'The first three bubbles are top-down. Projected Share is bottoms-up', from sales capacity and history. Slide 74 notes: 'see the Market Sizing agent do the research.' Propose AI Capability Map RED: 'Set Projected Share without internal data'. YELLOW: 'Estimate market layers and revenue ramps'."
+    source: "FCS_28.01_DRAFT_v6_Full.pptx slides 70, 73, 74 and the Propose AI Capability Map (fcs.txt lines 2780 to 3035, 4181 to 4200)"
+    severity: medium
+    why_it_matters: "Focus graduates know 'layers' as the 4 bubbles and 'bottoms-up' as projected share from internal data. The row uses both words with other meanings, and the planted error is named after the clashing word. Focus also has a Market Sizing agent demo."
+    options:
+      align_with_pragmatic: "Build the model on the 4 Focus bubbles. Top-down sources feed the first 3 bubbles; projected share comes only from the PM's internal data (hand-off rule). Rename the error 'scope mismatch' or 'value-chain mix'."
+      update_message_ai_changed_work: "Keep top-down and bottom-up as two whole-market estimates and explain that agents make triangulation cheap."
+      keep_both_explain: "Keep the row and add one slide that maps the two methods."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "The new parts (source basis checks, refresh, what-changed note, audit) still fit inside the bubble method. Dan should confirm how the row differs from his Market Sizing demo agent (house rule 11)."
+    dan_decision: ""
+
+  - id: PS-07
+    item: "Course title word 'planning' vs the Framework category 'Planning'"
+    research_says: "stage-1-inputs.md and needs.md flag the collision. Only 2 of 10 rows are in the Planning category: sp-wf-04 (Ideation) and sp-wf-08 (Stakeholder Management). The other 8 rows are Market, Focus and Business. Annual and quarterly planning rows sit in Focus / Product Portfolio and Product Roadmap"
+    pragmatic_says: "Guide page 12: 'Planning: What are we building, for whom, and why? Planning turns strategy into direction teams can act on. Positioning, personas and the buyer journey ... Requirements and ideation ... stakeholder management.' Core Course maps (pages 21, 22): Planning boxes belong to Foundations (Positioning), Build (User Personas, Requirements, Stakeholder Management), Market (Buyer Journey, Buyer Personas) and Design (Ideation). Workbook capability 2 is named 'Strategic Direction'."
+    source: "Pragmatic-Framework-2027-Guide.pdf pages 12, 21, 22; Workbook CAPABILITY 2"
+    severity: medium
+    why_it_matters: "Pragmatic reviewers and Focus graduates may expect the course to cover the Planning category (positioning, personas, requirements). It does not, and should not, because other core courses own those boxes."
+    options:
+      align_with_pragmatic: "Rename the course to avoid the word, for example 'Advanced AI for Product Strategy and Roadmaps' or 'Advanced AI for Strategic Direction'. This changes the PRD topic name, so it needs Dan's PRD change."
+      update_message_ai_changed_work: "Not applicable. AI did not change the term."
+      keep_both_explain: "Keep the title. Add one line to the spec and the course description: 'Planning here means annual and quarterly product planning. The course maps to capability 2, Strategic Direction.' In learner text, tag rows by box, not by the word Planning."
+    recommendation: keep_both_explain
+    recommendation_reason: "The PRD uses the title, and the meaning is common in industry. Ask Pragmatic at Gate 2 if they prefer a rename. If Pragmatic says yes, option 1 is cheap before Stage 3."
+    dan_decision: ""
+
+  - id: PS-08
+    item: "sp-wf-04 concept test results map outside capability 2 (new information on a row Dan moved here)"
+    research_says: "capability_skill: '6.4 Ideation, Evaluation, and Prototyping (no Capability 2 skill fits better; results feed 2.3 Business Case Development)'. pragmatic_fit: 'Partial fit. Fits skill 6.4, not Capability 2'"
+    pragmatic_says: "Workbook 6.4 (capability 6, Design): 'Uses AI to ... pre-test assumptions with synthetic feedback. Real users and observable behavior validate desirability and usability.' Primary box: Ideation. Guide page 22: the Design core course emphasizes Ideation. Workbook capability 2 lists only skills 2.1 to 2.4."
+    source: "Workbook SKILL 6.4; Pragmatic-Framework-2027-Guide.pdf pages 13, 22"
+    severity: medium
+    why_it_matters: "Dan moved the row here at Market Research Gate 1. This log does not reopen the move. New: in this course the row has no capability 2 home, so Pragmatic reviewers may see Design course scope. The row's method (observed behavior over stated preference) matches 6.4, so there is no message conflict."
+    options:
+      align_with_pragmatic: "Do not build a lab for sp-wf-04. Keep it as a candidate for a future Design-aligned Advanced AI course."
+      update_message_ai_changed_work: "Fold the row into sp-wf-05: concept test results become one evidence input to the assumption register (2.3), with the denominator check as a quality check. Not its own lab."
+      keep_both_explain: "Keep it as its own row tagged 6.4 and explain in the spec why a strategy course uses it."
+    recommendation: update_message_ai_changed_work
+    recommendation_reason: "It keeps Dan's decision (the work stays in this course) and keeps every lab inside capability 2. The row also fails the 2-source rule, so a full lab is the weakest choice."
+    dan_decision: ""
+
+  - id: PS-09
+    item: "sp-wf-07 roadmap trace table repeats a Focus AI use case, and uses non-Pragmatic names for the problem backlog"
+    research_says: "agent_does: 'Trace each roadmap item to a theme, a problem and a strategy choice ... List items with no trace'. input: 'the validated problem backlog with evidence'. registry_check: 'This row starts after: quarterly refresh with traceability and an audit'"
+    pragmatic_says: "Focus slide 109 notes: 'This is the same drift check we talked about in the Strategy module. Give AI your roadmap, your Strategy Matrix, and your OKRs. Ask it which roadmap items don't clearly tie to a strategic goal. AI flags it. You decide what stays. And every item should trace back to market evidence.' Communicate AI Capability Map YELLOW: 'Check roadmap items against strategy and OKRs'. RED: 'Decide what goes on the roadmap'. Build: 'The Market Problems Table is your problem backlog'; 'Strategy filters tie your priorities to company goals'."
+    source: "FCS_28.01_DRAFT_v6_Full.pptx slide 109 and Communicate AI Capability Map (fcs.txt lines 4496 to 4518, 4672 to 4678); BLD_28.01_DRAFT_v1.pptx Market Problems Table slides (bld.txt lines 2280 to 2443)"
+    severity: medium
+    why_it_matters: "The trace to strategy and evidence is a Focus one-pass activity. Only the per-item evidence audit and the quarterly refresh are new. Learners from Build know the 'Market Problems Table' and 'strategy filters', not a 'validated problem backlog'."
+    options:
+      align_with_pragmatic: "Use 'Market Problems Table' and 'strategy filters' as input names. Name the Focus check in one line, and make the lesson the per-item evidence audit (validation by association) and the refresh."
+      update_message_ai_changed_work: "Keep the row and explain that an agent makes a full trace each quarter possible, where Focus did one pass."
+      keep_both_explain: "Keep the row and terms as written."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "Term change only, and it links Build and Focus learning. sp-wf-01, sp-wf-07 and Focus slides 28 and 109 are all drift checks; Dan may merge sp-wf-01 and sp-wf-07 so the course teaches drift once."
+    dan_decision: ""
+
+  - id: PS-10
+    item: "sp-wf-08 skill tag: change handling is skill 3.4 (Build) as much as 2.4"
+    research_says: "capability_skill: '2.4 Product Vision and Roadmap (competencies 2.4C ... and 2.4E ...)'. bottleneck focus_area: Stakeholder Management"
+    pragmatic_says: "Workbook 3.4 Release Planning and Delivery Management: 'managing scope, schedule, and resource tradeoffs transparently when change occurs'. AI text: 'Uses AI to analyze capacity, dependencies, scope options, and delivery risk. Estimates and commitments are verified with delivery teams.' Stakeholder Management box primary skill is 3.1 Stakeholder Alignment and Communication (Build). Workbook 2.4 WHY: 'making tradeoffs visible when new work is added'."
+    source: "Workbook SKILL 3.1, SKILL 3.4, SKILL 2.4"
+    severity: medium
+    why_it_matters: "If the lab works at release level (capacity, scope, schedule), it is a Build skill. If it works at roadmap level (direction, sequencing, outcome themes), it is 2.4."
+    options:
+      align_with_pragmatic: "Keep the 2.4 tag and scope the row to roadmap changes only: sequencing, displaced outcomes and dependencies. Release-plan changes go to a hand-off rule: 'a change to the release plan goes to the PM and the delivery team'."
+      update_message_ai_changed_work: "Tag the row 2.4 and 3.4, and say the agent spans both because one change hits both documents."
+      keep_both_explain: "Keep the tag and note the overlap in the spec."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "It keeps the course inside capability 2 and fits the Pragmatic split of roadmap and release plan."
+    dan_decision: ""
+
+  - id: PS-11
+    item: "Evidence E9 'augmentation trap' message vs human-owned priorities"
+    research_says: "E9: 'the best LLM (Gemini 2.5 Pro) reached a rank correlation of 0.74 ... Adding a human expert to the best model lowered accuracy (0.67)'. Note: 'a human override can make it worse (augmentation trap). Good for a balanced talk track on skill 2.2'"
+    pragmatic_says: "Workbook 2.2 AI text: 'Weights and final priorities remain transparent, calibrated, and human-owned.' Capability 2: 'keeping trade-offs and final investment decisions human-owned.' Focus Strategy Capability Map RED: 'Make any final decision on strategy or the roadmap'. Guide page 4: teams 'remain accountable for their decisions'."
+    source: "Workbook CAPABILITY 2 and SKILL 2.2; FCS_28.01_DRAFT_v6_Full.pptx Strategy AI Capability Map; Pragmatic-Framework-2027-Guide.pdf page 4"
+    severity: medium
+    why_it_matters: "On a slide, 'humans made the AI worse' can read as 'let the AI rank'. That works against the Pragmatic rule the course teaches. The study is a draft preprint on Kickstarter projects, not enterprise opportunities."
+    options:
+      align_with_pragmatic: "Do not use E9 on a slide. Keep it in the ledger as background."
+      update_message_ai_changed_work: "Use E9 to teach the override log: the agent's ranking is evidence, the PM owns the call, and every override has a written reason that the PM reviews later."
+      keep_both_explain: "Show E9 with E1 to E3 (deference, sycophancy, trendslop) and let learners discuss."
+    recommendation: update_message_ai_changed_work
+    recommendation_reason: "It is an honest 2026 finding and it supports the override log in sp-wf-02 without changing the human-owned rule. Say plainly that it is a draft study on a narrow task."
+    dan_decision: ""
+
+  - id: PS-12
+    item: "Data safety note in all 10 rows is the Market Research text, not a strategy text"
+    research_says: "Every row: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer'. needs.md lists strategy data risks: unreleased roadmaps, revenue forecasts, pricing, cost models, buy, build or partner targets, material non-public information. methods.md S7: 'Web search sends the query outside the company.'"
+    pragmatic_says: "Guide page 4: 'protect sensitive information'. Focus: AI 'won't stop you from pasting confidential company data into a public tool'; One Roadmap Two Audiences criterion: 'nothing confidential is in the customer version'. Workbook level 1 for 2.1 to 2.4: AI output 'without verified sources, approved data handling ...' is a weakness. Workbook 3.1: 'Confidential data is protected'."
+    source: "Pragmatic-Framework-2027-Guide.pdf page 4; FCS_28.01_DRAFT_v6_Full.pptx (fcs.txt lines 2019, 4537, 4631); Workbook skills 2.1 to 2.4 levels, SKILL 3.1"
+    severity: medium
+    why_it_matters: "Dan approved the standard note (PA-03). It does not cover the main risk in this course: confidential company plans and financials, and leaks into external audience versions or web search queries. Interview and win/loss lines fit only sp-wf-04."
+    options:
+      align_with_pragmatic: "Keep the PA-03 core lines. Replace the interview and win/loss lines in rows 01 to 03 and 05 to 10 with: 'No unreleased roadmaps, forecasts, pricing or deal targets in an unapproved tool. Check every external version for confidential content. Do not put confidential names in web search queries.'"
+      update_message_ai_changed_work: "Option 1, plus a teaching point: a per-audience agent can move confidential content from an internal note to an external one, so the commitment guard also checks for confidential terms."
+      keep_both_explain: "Keep the Market Research note as it is."
+    recommendation: update_message_ai_changed_work
+    recommendation_reason: "It keeps Dan's PA-03 rule and adds the risks Pragmatic names in Focus. Ask before rework: the PA-03 note is approved, so this needs Dan's yes."
+    dan_decision: ""
+
+  - id: PS-13
+    item: "sp-wf-02 box tag: Focus / Product Portfolio vs workbook primary box for 2.2"
+    research_says: "pragmatic_fit: 'Tag note: the workbook primary box for 2.2 is Market / Competitive Landscape; this workflow fits the secondary box Focus / Product Portfolio better. Dan decides'"
+    pragmatic_says: "Workbook 2.2: 'Primary: Competitive Landscape. Secondary: Distinctive Competencies, Business Outcomes, Market Problems, Product Portfolio'. Guide page 21: the Focus course map emphasizes Competitive Landscape, not Product Portfolio."
+    source: "Workbook SKILL 2.2; Pragmatic-Framework-2027-Guide.pdf page 21"
+    severity: low
+    why_it_matters: "Tag only. Pragmatic reviewers check rows against the workbook anchors."
+    options:
+      align_with_pragmatic: "Tag sp-wf-02 Market / Competitive Landscape."
+      update_message_ai_changed_work: "Not applicable."
+      keep_both_explain: "Keep Product Portfolio as the box. Record 'skill 2.2, primary box Competitive Landscape' in the spec."
+    recommendation: keep_both_explain
+    recommendation_reason: "The workflow manages a set of investments, which is the Product Portfolio box. Product Portfolio is a listed 2.2 secondary box, so the tag is valid."
+    dan_decision: ""
+
+  - id: PS-14
+    item: "sp-wf-10 title says the agent flags 'where investment should change'"
+    research_says: "workflow: 'Track realized outcomes against the business case and OKRs each month, and flag where investment should change'. pm_decides: 'Whether to keep, change or stop investment'"
+    pragmatic_says: "Focus Propose AI Capability Map RED: 'Make the final investment recommendation'. GREEN: 'Monitor metrics after launch'. Workbook capability 2: 'final investment decisions human-owned'."
+    source: "FCS_28.01_DRAFT_v6_Full.pptx Propose AI Capability Map (fcs.txt lines 4181 to 4200); Workbook CAPABILITY 2"
+    severity: low
+    why_it_matters: "The split is correct, but the title reads as if the agent recommends investment changes."
+    options:
+      align_with_pragmatic: "Retitle: 'Track realized outcomes against the business case and OKRs each month, and flag measures that are off track for the PM's investment review'."
+      update_message_ai_changed_work: "Not applicable."
+      keep_both_explain: "Keep the title and state the RED line in class."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "One-line fix."
+    dan_decision: ""
+
+  - id: PS-15
+    item: "Other prioritization methods and a competitor source in the evidence"
+    research_says: "E11 IBM case: 'applies RICE scoring' (2024-05-14, age flag). N2 Pragmatic article lists 'MoSCoW, Kano, RICE, cost of delay' (2024-07-30, age flag). E10 note: 'Product Institute sells PM training, so it is a Pragmatic competitor. Tell Dan before using it on a slide'"
+    pragmatic_says: "Focus teaches the 4 attributes and says 'Other methods could include T-shirt sizing, Fibonacci scoring, or any other scoring system that works for your team.' The Pragmatic roadmap article (N2) is older and lists other methods. The Mastering the Product Roadmap page names its own 'unique prioritization formula' (not listed on the page)."
+    source: "FCS_28.01_DRAFT_v6_Full.pptx (fcs.txt line 1643); pragmaticinstitute.com how-to-build-a-product-roadmap (modified 2024-07-30, age flag); mastering-the-product-roadmap page (modified 2026-10-21)"
+    severity: low
+    why_it_matters: "RICE on a slide would teach a second method (see PS-03). A competitor's report on a Pragmatic slide is a business risk. Pragmatic's own sources list several methods, so the risk is low if the course names Focus as the default."
+    options:
+      align_with_pragmatic: "Use E11 only as the 'one-pass AI scoring' baseline in the talk track, without naming RICE on a slide. Do not put E10 on a slide."
+      update_message_ai_changed_work: "Not applicable."
+      keep_both_explain: "Allow E10 and E11 on slides with a line that the course uses the Focus model."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "Keeps one scoring method in front of learners and avoids a competitor citation. Both sources also have age or weight issues."
+    dan_decision: ""
+
+  - id: PS-16
+    item: "sp-wf-01 maps work to 'strategic choices', not to Strategy Matrix boxes and OKRs"
+    research_says: "agent_does: 'Map each epic or project to one strategic choice, with the reason'. brief: 'the strategy choices with a plain definition of each'"
+    pragmatic_says: "Focus slide 23 notes: 'The strategy matrix demonstrates how we define strategy by who we are pursuing and what we are going to build.' Slide 27: 'The Strategy Matrix shows where we invest. OKRs show what we expect that investment to achieve. You need both.' Slide 30: 'Focus on four boxes or fewer.' Workbook 2.1C: 'Uses the Strategy Matrix to document strategic choices'."
+    source: "FCS_28.01_DRAFT_v6_Full.pptx slides 23, 27, 30 (fcs.txt lines 874 to 1273); Workbook competency 2.1C"
+    severity: low
+    why_it_matters: "Focus graduates have a Strategy Matrix and OKRs. A generic 'strategic choice' list is a third format."
+    options:
+      align_with_pragmatic: "The brief takes the Strategy Matrix boxes (or the learner's equivalent) and the OKRs as the strategy choices. The drift report shows effort by matrix box and flags more than 4 funded boxes as 'peanut butter' risk for the PM."
+      update_message_ai_changed_work: "Not applicable."
+      keep_both_explain: "Keep generic choices and accept a matrix as one input."
+    recommendation: align_with_pragmatic
+    recommendation_reason: "Uses Focus tools as inputs, which is what 'start where Focus stops' means."
+    dan_decision: ""
+
+  - id: PS-17
+    item: "Issues inside Pragmatic sources (not research errors)"
+    research_says: "Not a research error. Research uses 2027 terms."
+    pragmatic_says: "Focus 28.01 calls the third bubble both 'adoption of category' and 'Evaluator Adoption'. Focus and Build notes use '[AI USE CASE TT]' blocks, which our house rule 6 does not allow in our slides. The Framework guide allows 'dated' roadmaps while Focus says 'Timeframe, not delivery date' (see PS-05). The Pragmatic roadmap article (2024) lists MoSCoW, Kano and RICE, which Focus does not teach."
+    source: "FCS_28.01_DRAFT_v6_Full.pptx (fcs.txt lines 2937 to 3024, 1074); BLD_28.01_DRAFT_v1.pptx; Pragmatic-Framework-2027-Guide.pdf page 9; pragmaticinstitute.com roadmap article (2024-07-30)"
+    severity: low
+    why_it_matters: "Later stages may copy terms or formats from these decks."
+    options:
+      align_with_pragmatic: "Use the 2027 guide and the workbook as the term source. Use 'Evaluator Adoption' only if Dan confirms it is the Focus 28.01 name."
+      update_message_ai_changed_work: "Not applicable."
+      keep_both_explain: "Tell the Focus owner about the two bubble names and the guide and Focus timeframe wording. These are Pragmatic files; do not edit them."
+    recommendation: keep_both_explain
+    recommendation_reason: "Dan is the named Focus instructor, so he can pass these to the Focus owner."
+    dan_decision: ""
+
+gaps_noted:
+  - "No row covers 'AI unit economics', which the workbook 2.3 AI text names. sp-wf-06 is closest (3-year cost of a build). Gap, not a failure. Dan decides if a row or a talk track line is needed."
+  - "No row covers 'pressure-test moats', which the 2.1 and capability 2 AI text names. Distinctive Competencies appear only as a scoring attribute."
+  - "Pricing is in the capability 2 AI text. No row covers it. The Price core course owns Pricing, so this is likely correct."
+
+no_conflict_found:
+  - "Strategy stays human: every row lists pm_decides, and methods.md S9 copies the workbook list (strategy choices, weights and final priorities, case approval, delivery commitments). Matches workbook 2.1 'Strategy remains a forced-choice human decision' and Focus RED 'Set the strategy or decide where to invest'."
+  - "Auditable numbers: methods.md S2 (math in code) and S5 (trace every number) match workbook 2.3 'Source data and calculations remain auditable'."
+  - "Sensitivity and inconsistency: sp-wf-02 and S2, S4 match workbook 2.2 'run sensitivity tests, and surface scoring inconsistencies'."
+  - "Red-team: sp-wf-05 and S6 match workbook 2.3 'red-team the business case' and Focus YELLOW 'Red-team the canvas'."
+  - "Buy, build or partner: sp-wf-06 keeps 'The choice' with the PM. Matches Focus RED 'Make the buy, build, or partner decision'. Box name 'Buy, Build or Partner' is exact."
+  - "Roadmap vs release plan: methods.md S8 and sp-wf-08 match Focus 'A roadmap is the vision, the release plan is the promise' (but see PS-05 on the check)."
+  - "AI personas and synthetic data: no row uses AI personas or synthetic respondents. sp-wf-04 uses real sessions only. Matches Focus RED 'Use AI personas instead of real customers', workbook 1.3 and 6.4, and Dan's PA-02 decision."
+  - "Bond story candidate 1 (trendslop, E3): the authors' finding 'when not forced to choose, models often recommended doing both' supports the Focus Strategy Matrix as a forced-choice tool. No conflict. Focus opens with WeWork; no candidate repeats a Focus or Build story (bond-stories.md checks)."
+  - "Fallback case names: no research file uses DeepView AI, PulseVision, FieldAssist, BadgeWorks, Entrilo or FieldPro as the case."

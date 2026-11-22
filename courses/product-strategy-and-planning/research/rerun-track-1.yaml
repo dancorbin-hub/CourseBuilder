@@ -1,0 +1,191 @@
+# Stage 1, track 1 rerun (gaps only): Advanced AI for Product Strategy and Planning
+# Written 2026-11-22 by the workflow researcher. Asks from research/critic-report.md section 4, track 1.
+# workflows.yaml was read only. The Verifier merges these items.
+# Fetch budget: 7 of 10 used. Pages opened:
+#   1 Mind the Product, Product People on Prioritisation (rejected: published 2020-11-13, survey of 55, research rule 4)
+#   2 Product-Led Alliance, The reprioritization trap (W25)
+#   3 Pragmatic Institute, Managing Internal Feature Requests (rejected: no publish date, modified 2025-01-09;
+#     does not describe scoring inconsistency, overrides or rescoring; Mike Savory, "constant flood of feature requests" only)
+#   4 Product Coalition, Prioritization frameworks are just opinion laundering (W28, weak)
+#   5 Grafana Labs, CERB scoring method (rejected: 2026-01-09, Dave Thompson; says top RICE scores were often
+#     de-prioritized, but no inconsistency, override or rescoring burden; one team's method)
+#   6 ProductPlan, How to Handle Escalations When They Break Your Prioritization Model (W27)
+#   7 ITONICS, Product prioritization frameworks fall to politics (W26)
+# Not reopened: N10, N11, N12 (needs.md), W6 and W23 (workflows.yaml). Entries copied from those files.
+# New evidence status is "not verified" until the Verifier checks it.
+
+sp_wf_02_new_evidence:
+- id: W25
+  claim: 'Teams do not disagree on what they value but on how consistently they weigh it. When criteria are not formalized, decisions feel subjective and are easier to reopen. When every escalation can reset the roadmap, roadmaps become provisional and strategy becomes elastic. "Revisiting trade-offs under shifting scope" is one of the themes that take the most prioritization time'
+  type: claim
+  source: 'The reprioritization trap: 4 prioritization challenges facing product leaders, Rebecca Stewart, Product-Led Alliance'
+  url: https://www.productledalliance.com/4-prioritization-challenges-facing-product-leaders/
+  source_date: '2026-03-26'
+  checked_on: '2026-11-22'
+  age_flag: false
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Author Rebecca Stewart, published 2026-03-26, modified 2026-05-01. All text claims confirmed word for word: weigh consistently, unformalized criteria easier to reopen, escalations reset the roadmap, "revisiting trade-offs under shifting scope". Figures come from N21 (opened). The page promo says "250 product leaders": wrong, N21 says nearly 250 professionals, 43.3% leaders. 38.1% is also used on the page for a success metric; check in N21 before use. The author is on the N21 report team, so W25 is the survey publisher writing about its own data. Independent of W26'
+  note: 'Signed. Page modified 2026-05-01. Its figures come from the Product-Led Alliance State of Product Management 2026 survey, almost 250 product leaders: 60.2% say leadership escalations or new directives override priorities; 38.5% sales or customer escalations; 38.1% revenue pressure; priorities change after agreement, mean 3.3 of 5; 5.7% use structured frameworks; 19.2% spend over 26% of their time on prioritization. Do not use these figures until the primary survey is opened (track 3 ask, N5). Publisher runs the survey it reports'
+- id: W26
+  claim: 'Averaging scores hides disagreement between scorers: an 8.4 average can hide a 5.2-point gap between divisions. Self-scored confidence reflects optimism, not evidence; whoever sets the weights controls the output. Overrides go unrecorded (example: a VP moves an item from 14th to 3rd, and no record says which criteria were set aside), and within 2 cycles teams stop investing effort in scoring. Full-portfolio rescoring at every market signal causes fatigue; use trigger-based reviews instead'
+  type: claim
+  source: 'Product prioritization frameworks fall to politics: The antidote, Dr. Tassilo Henike, ITONICS'
+  url: https://www.itonics-innovation.com/blog/product-prioritization-frameworks
+  source_date: '2026-04-23'
+  checked_on: '2026-11-22'
+  age_flag: false
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Dr. Tassilo Henike, 2026-04-23. Confirmed: 8.4 average hides a 5.2-point gap, confidence reflects optimism, weights control output, VP moves item 14th to 3rd with no record, teams stop scoring within 2 cycles, rescoring fatigue, trigger-based reviews. All figures are illustrative and unsourced: use the text, not the numbers. Vendor with a product pitch'
+  note: 'Signed. Innovation software vendor (same publisher as W6, different author and topic). Examples are illustrative, for example a hydraulics company, not named cases. All figures are unsourced (20% capacity lost to misalignment, 2.5-point flag threshold, 20% review trigger): do not use them. Strongest text match for the row: scorer gaps, override log, rescoring fatigue. Independent of W25'
+- id: W27
+  claim: 'Leadership escalations are the largest force that overrides prioritization. Escalations arrive without the reasoning behind current priorities, so an override is the only lever leaders hold. Scores based on one person''s assumptions look the same on the page as scores based on research (Itamar Gilad: a score without evidence is "a guess dressed as rigor"). Documented priorities get overridden until the plan no longer matches the work'
+  type: claim
+  source: How to Handle Escalations When They Break Your Prioritization Model, Jennifer Haley, ProductPlan blog
+  url: https://www.productplan.com/blog/how-to-handle-escalations-when-they-break-your-prioritization-model
+  source_date: '2026-08-10'
+  checked_on: '2026-11-22'
+  age_flag: false
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Jennifer Haley, 2026-08-10. All quoted text confirmed. Figures cited as ProductPlan 2026 State of Product Management: same survey as N21 (PDF p. 6 calls it ProductPlan report; PLA team wrote it). Satav is paraphrase only, no direct quote. Text is independent of W25 and W26; figures are not'
+  note: 'Signed. Roadmap software vendor. It cites 60.2%, 38.5% and 38.1% as the ProductPlan 2026 State of Product Management report; W25 cites the same figures as the Product-Led Alliance survey. Treat the figures as one study and confirm the true primary (track 3, N5). The text claims are independent of W25 and W26. Quotes Ashay Satav (eBay) and Itamar Gilad as paraphrase'
+- id: W28
+  claim: 'Prioritization frameworks often launder an opinion: if the CEO still picks what gets built, no RICE score changes the result'
+  type: claim
+  source: Prioritization frameworks are just opinion laundering, Jay Stansell, Product Coalition
+  url: https://www.productcoalition.com/p/100-frameworks-and-youre-still-building
+  source_date: '2026-04-23'
+  checked_on: '2026-11-22'
+  age_flag: false
+  status: not verified
+  verifier_note: 'Not opened (fetch budget). Weak fit in any case. Do not use without a check'
+  note: 'Signed opinion piece. Weak: it is about overrides at the decision level, not scoring inconsistency. Its data is a 2017 survey of 50 PMs (Kate Bennet) and a 2021 review: research rule 4, do not use the figures. Use only as a talk track lead if Dan wants one'
+sp_wf_02_summary:
+  sources_check_proposal: 'pass. W25 (Product-Led Alliance, signed, 2026-03-26) and W26 (ITONICS, signed, 2026-04-23) are independent and dated 2026, and both describe the burden itself: inconsistent weighing, overrides that reopen decisions, and rescoring effort. W27 is a third signed 2026 source; its figures are not independent of W25. Both W25 and W26 are vendor or vendor-run publishers. Dan decides if that is strong enough'
+  proposed_sources: [W25, W26]
+  verifier_note: 'Verifier 2026-11-22: pass. W25 and W26 opened. Different publishers and authors, both signed, both 2026. Both describe the burden: inconsistent weighing, overrides that reopen decisions, unrecorded overrides, rescoring fatigue. Neither gives usable time or cost data (W26 numbers are illustrative). Vendor caution stands. Dan decides if vendor sources are strong enough'
+  internal_pm_context: 'N12 (SiriusXM, Prioritization as Code, DX Annual 2026, 2026-04-16) is the internal PM source for this row: platform teams used different assumptions, which caused roadmap conflicts; the framework scores developer pain, reliability risk and executive cost concerns; AI synthesizes signals; leaders keep governance. Proposed contexts.internal_pm text: "Partial. N12: SiriusXM platform PMs score internal requests on developer pain, reliability risk and executive cost, and keep validated assumptions in a living artifact. No time data"'
+  hardware_context_note: 'W26 uses an industrial hydraulics example and says gates become rubber stamps for politically backed projects. Illustrative only. With W6 this is still one vendor publisher: hardware stays Partial'
+  rejected_leads:
+  - 'Mind the Product, Product People on Prioritisation: 2020, research rule 4'
+  - 'Pragmatic Institute, Managing Internal Feature Requests: no publish date (modified 2025-01-09) and no text on scoring inconsistency or overrides'
+  - 'Grafana Labs, CERB scoring method: 2026 and signed, but about estimation accuracy, not inconsistency or overrides'
+
+new_rows:
+- id: sp-wf-11
+  workflow: Check a hardware program's gate package against the business case before each commit point
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: '2.3 Business Case Development (competency 2.3C Cost, Profit, and Resource Logic). Secondary 2.4 Product Vision and Roadmap: the workbook AI text says AI must not turn uncertain direction into false delivery commitments'
+  trigger_and_cadence: Before each hardware commit point (prototype build, soft tooling, hard tooling, production release), and when a supplier quote or lead time changes. Assumption, 3 to 5 gates per program per year
+  input: The gate package (test results, design revision, open risks and assumptions), supplier quotes and tooling commitments with terms and lead times, the approved business case (volumes, unit cost, price, margin, launch date), and the flag report from the last gate
+  output: 'A gate check: each business case number traced to its source in the gate package; each open assumption with its evidence and the test that would close it; each supplier and tooling commitment with cost, cancellation terms, lead time and the business case line it affects; what changed since the last gate; and a flag report'
+  pm_decision_informed: Whether to recommend go, hold or stop at the commit point, and which open assumption to test before money is committed
+  bottleneck:
+    description: 'Hardware commits in stages, and the cost of a wrong decision rises steeply at each one: after steel tooling is cut it is "nearly vertical". Teams advance on the calendar, not on evidence. Customer and budget questions get skipped, and late misalignment costs tooling, certification and unsold stock. Checking the gate package against the business case is manual cross-document work, so it is done late or not at all'
+    pdlc_stage: Business
+    focus_area: Business Plan
+    sources:
+    - N10
+    - N11
+    sources_check: 'pass, weak. N10 (Mind the Product, signed practitioner, 2026-10-08) and N11 (Bits&Chips, signed, 2026-10-23) are independent and from 2026. Neither has data on hours or cost. needs.md T10 also tags Focus / Product Roadmap; Dan decides the tag'
+    verifier_note: 'Verifier 2026-11-22: partly pass. N10 and N11 reopened and confirmed. They are independent (different publishers and authors, both signed, 2026-10). They support: staged commits, cost of error rising steeply after steel tooling, teams advancing on the calendar not on evidence (N10 quote), skipped customer and budget questions and late misalignment costs (N11). Neither source says the check of a gate package against the business case is manual cross-document work, or that it is done late or not at all: that sentence goes past the sources. Reword it as an assumption, or add a source. N24 (opened, 2026-08-05) says gate preparation consumed time and energy without adding value: one more source on gate burden, still single for that point'
+  scores:
+    judgment: high. Go, hold or stop on a tooling commit is a high-cost judgment
+    repetition: medium. Each gate, each program, with many documents to cross-check each time
+    ai_candidate: partly. The agent does the cross-check and the arithmetic; the PM owns the recommendation
+  split:
+    agent_does:
+    - Trace each business case number to its source in the gate package
+    - List open assumptions with their evidence and the test that would close each one
+    - List each supplier and tooling commitment with cost, cancellation terms and lead time
+    - Recompute unit cost and margin from the current quotes
+    - Report what changed since the last gate
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the gate criteria for this commit point, the business case file, the document list for the gate package, the tolerance per number, output format
+      quality_checks:
+      - Each business case number has a source document and a date
+      - Each open assumption has an owner and a closing test
+      - Each commitment has cost, cancellation terms and lead time
+      - Recomputed unit cost and margin are shown next to the business case values
+      handoff_rules:
+      - Recomputed margin or unit cost outside the set tolerance
+      - An open assumption that the gate criteria say must be closed at this gate
+      - A non-cancellable commitment above the set amount
+      - A supplier lead time that moves the launch date in the business case
+      audit: 'The 2 largest commitments: read the quote and its terms in full and compare each condition with the business case'
+    pm_decides:
+    - The gate criteria and the tolerances
+    - Go, hold or stop to recommend at the commit point
+    - Which assumption to test before the commit, and at what cost
+    - What to tell the gate board
+    ai_error_to_catch: 'Quote condition does not match the plan. The hard tooling quote gives the unit price at 50,000 units a year. The business case plans 18,000 units in year 1 and uses that price. Each number has a source and a date, and the recomputed unit cost matches the case, so the checks pass. The audit reads the quote terms and finds the volume tier does not match the plan'
+  contexts:
+    hardware: 'Core context. N10: commit in stages (paper, prototype, soft tooling, hard tooling, production) and advance only when evidence supports it. N11: in high-tech hardware, late misalignment costs tooling, certification and unsold stock. W6 (vendor, figures not usable): kill triggers should come from the original business case assumptions. No 2026 data on how long a gate package review takes (track 3 ask)'
+    internal_pm: 'Partial. W23 (New Zealand Treasury, 2026-10) covers review points for internal digital and equipment investments against the business case baseline. Public sector, not product management. Possible fit: internal platform or equipment programs with vendor contracts. No product team source'
+    industry_notes:
+    - 'health care devices and other regulated hardware: certification and regulatory submissions are gate items with long lead times. Not yet researched'
+    - 'software and services: no tooling, but the same check fits large vendor or cloud commitments. Not yet researched'
+  proposed_lab:
+    goal: Extend the course agent to check a gate package against the business case before a commit
+    core_message: The calendar does not approve a gate. The agent checks the evidence; the PM decides what to commit
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads a gate package and business case, or the fallback case files
+    data_safety: 'Use an approved tool only. Do not put confidential plans, supplier terms and prices, or non-public financial data in a tool the company has not approved. No client data, PHI or PII. If the tool is not approved, use the fallback case or remove supplier names and prices first. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the gate criteria, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8). The unit cost recompute needs code or a sheet with formulas; see track 2 gap on Gemini file output
+    stretch: Rerun the check when a supplier quote file changes, where the platform allows (not verified)
+    planted_error: Tooling quote volume tier does not match the business case volume
+    success_check: The gate check lists every commitment with its terms, the flag report names the lead time or margin issues, and the audit finds the volume tier mismatch
+    registry_check: 'Focus 28.01 uses stage gates for the Product Canvas (strategy fit, scoring, business case, measurement) and teaches the business case "if we invest X, we expect Y" with a one-pass AI Value and Cost Snapshot. Build 28.01 keeps "go or no-go" and "scope and release commitments" as team decisions and has AI draft estimates. This row does not reteach the canvas gates or the business case: it starts after an approved case exists and checks a hardware gate package, supplier and tooling commitments against it, with checks, hand-off rules and an audit. Overlap risk inside this course: sp-wf-05 (assumption register and red-team before each decision point). Propose sp-wf-11 as the hardware commit lab that reuses the sp-wf-05 register, or merge them; Dan decides. No workshop overlap found; do not use a CAW-AI agent'
+    pragmatic_fit: 'Fair to good. The 2.3 AI text says "assemble evidence, model costs, find assumptions and risks"; data and calculations stay auditable. Framework box Business / Business Plan; secondary Focus / Product Roadmap (needs.md T10). Hardware is a priority context'
+  evidence:
+  - id: N10
+    claim: Hardware decisions commit in stages (paper, prototype, soft tooling, hard tooling, production). Advance only when evidence supports it. Cost of error is nearly vertical after steel tooling. Better Place, Humane AI Pin and Rabbit R1 committed too early
+    type: claim
+    source: Learn early, commit late, de-risking hardware in a software world, Yoel Frischoff, Mind the Product
+    url: https://www.mindtheproduct.com/learn-early-commit-late-de-risking-hardware-in-a-software-world/
+    source_date: '2026-10-08'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    verifier_note: 'Reopened 2026-11-22. Author, date and all claim text confirmed. Also says progress "only when the evidence justifies it, not because the calendar demands it". Does not discuss checking gate evidence against the business case'
+    note: Copied from needs.md, not reopened. Practitioner (product strategist, 35+ years in industrial design and engineering). No data. Independent of N11
+  - id: N11
+    claim: In high-tech hardware, customer and budget questions get skipped; late misalignment costs tooling, certification and unsold stock; "AI can produce work; it can't carry the outcome"
+    type: claim
+    source: Here's why systems architects love product managers with no blah blah, Howard Lettinga, Bits&Chips
+    url: https://bits-chips.com/magazine/bc202607/?pagenr=15
+    source_date: '2026-10-23'
+    checked_on: 2026-11-20 (Market Research run, ledger N6 there). Not reopened 2026-11-22
+    age_flag: false
+    status: verified
+    verifier_note: 'Reopened 2026-11-22. Author, title, date (Bits&Chips 2026-07, 2026-10-23) and all claim text confirmed. The AI quote is from Xaviera Reynhout, quoted in the article, not the author'
+    note: Copied from needs.md. Trade magazine (Netherlands). Do not use its statistics (they seem to come from N3)
+  - id: W6
+    claim: 'Hardware stage gates: each stage raises the cost of being wrong about 10 times; most kills happen late, after 1M USD or more per program; kill triggers should come from each program''s original business case assumptions; screening criteria calibrated against 20 past ideas'
+    type: claim
+    source: Building Kill Discipline Into Hardware Product Portfolios, Christina Woelfel, ITONICS
+    url: https://www.itonics-innovation.com/blog/hardware-product-portfolios
+    source_date: '2026-06-01'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: 'Copied from workflows.yaml. Innovation software vendor. Case figures are anonymized ''observed practice'' with no named source: do not use the numbers. Hardware context lead only'
+  - id: W23
+    claim: 'After an investment goes live, reviewers check if business case benefits are realized: warning signs are output measures that only show delivery, weak or outdated evidence, reporting without action, unclear attribution, double counting, and no comparison to the business case baseline and forecast. Guidance suggests annual tracking for up to 3 years'
+    type: claim
+    source: 'IDA Review Point 6: Operational Benefits Realisation (workbook), Investment Management and Strategy Team, New Zealand Treasury'
+    url: https://www.treasury.govt.nz/sites/default/files/2026-10/decaf-review-point-6-operational-benefits-realisation-oct26.pdf
+    source_date: 2026-10 (month only)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Copied from workflows.yaml. Government assurance workbook for digital, equipment and change investments. Public sector internal investment context only
+  open_gaps:
+  - No 2026 data on how long a hardware gate package review takes, or how often commits go ahead on open assumptions
+  - No product team source for internal PM (only public sector W23)
+  - Overlap with sp-wf-05 needs a Dan decision (separate row, hardware variant, or merge)
+  gate_1_decision: ''
