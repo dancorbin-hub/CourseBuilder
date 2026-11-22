@@ -1,6 +1,6 @@
 # Capability mapping: Advanced AI for Market Research
 
-Source: Pragmatic Capability Standards Workbook 2027 (Dan, 2026-11-22). Copy in project files `course-builder/reference/pragmatic-sources/`. Proposal for Gate 2 decision 7. Dan confirms.
+Source: Pragmatic Capability Standards Workbook 2027 (Dan, 2026-11-22). Copy in project files `course-builder/reference/pragmatic-sources/`. Confirmed by Dan 2026-11-22 (packet v2 decision 2). The Pragmatic ID team confirms in its review.
 
 ## Hierarchy used
 
