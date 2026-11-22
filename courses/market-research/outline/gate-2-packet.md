@@ -13,7 +13,7 @@
 4. **The case.** Larkspan Systems: hardware sensors plus SaaS, with an internal platform PM. One planted error per lab. The warning fades: told, hint, hint, hint, none.
 5. **The critic** found 7 must-fix items. The planner and the case builder fixed all 7. Two of the fixes need your yes (decisions 1 and 3).
 6. **What blocks the lock.** 11 decisions below, and the platform proof. Copilot file types, Copilot and Gemini chat limits and the Copilot no-license path are not verified yet.
-7. **I found 3 small case file problems** while I wrote this packet (section 8, items 1 to 3). The case builder fixes them after your decisions.
+7. **3 small case file problems** were found while writing this packet. Items 1 and 3 are fixed. Item 2 waits for decision 2 (section 8).
 
 ## 2. Decisions for Dan
 
@@ -142,7 +142,7 @@ The PRD ladder says "an agent on a schedule" and "agents that hand work to other
 
 Row 05 (screen study applicants) folds into module 1. It is a stretch step, not a core step, so the step card stays at 6 steps.
 
-**Recommendation: accept.** The case has the stretch file (`m1-stretch-applicants.md`). Its expected results need one cleanup (section 8, item 1).
+**Recommendation: accept.** The case has the stretch file (`m1-stretch-applicants.md`). Its expected results are cleaned up (section 8, item 1).
 
 ### Quick yes or no
 
@@ -262,7 +262,7 @@ The critic checked v0.1. The planner made one revision (v0.2). The case builder 
 | S5 | Card steps with 2 actions | Fixed. 6 steps, 1 action each. Rerun moved to the debrief |
 | S6 | One ambiguous lab 3 check item | Fixed in case |
 | S7 | Template differs from approved v3 | Fixed. Count rule back in. Needs your yes (decision 2) |
-| S8 | Wrong edge reasons in the lab 1 stretch | Fixed in the main table. A stale copy is still in the file (section 8, item 1) |
+| S8 | Wrong edge reasons in the lab 1 stretch | Fixed. The stale copy is removed (section 8, item 1) |
 | N1 | Module 4 is 55 minutes | Not changed. More time breaks the day. Decision 8 |
 | N2 | Minimum of 10 deals: decided or interviewed? | Fixed. Counts decided deals |
 | N3 | Three tests taught in PDW-AI | Fixed. Referred to as known. No new slide |
@@ -274,9 +274,9 @@ The critic checked v0.1. The planner made one revision (v0.2). The case builder 
 
 | # | Item | Owner | Due |
 | --- | --- | --- | --- |
-| 1 | `case/expected-results.md` lines 103 to 107 hold a stale copy of the stretch table with the old wrong reasons (S8). Remove it | Case builder | Before the lock |
-| 2 | `case/planted-errors.md` lab 1 says "the template has no count rule". This does not match spec v0.2. Update it after decision 2 | Case builder | Before the lock |
-| 3 | `case/expected-results.md` labels its pass conditions "spec success check". The spec now splits success check and debrief check. Relabel them "debrief check" | Case builder | Before the lock |
+| 1 | `case/expected-results.md` lines 103 to 107 held a stale copy of the stretch table (S8). Done: removed 2026-11-22 | Claude | Done |
+| 2 | `case/planted-errors.md` lab 1 says "the template has no count rule". A note now flags this. Update the section after decision 2 and proof P1 | Case builder | Before the lock |
+| 3 | `case/expected-results.md` labels its pass conditions "spec success check". The spec now splits success check and debrief check. Done: relabeled "debrief check, instructor only" 2026-11-22 | Claude | Done |
 | 4 | Bond story pick (decision 5) | Dan | Before module 1 is built |
 | 5 | Your module 4 example (decision 6) | Dan | Before module 4 is built |
 | 6 | Therapy preference study needs a 2026 primary source before any slide use (OI-08) | Research rerun | Before module 1 is built |
