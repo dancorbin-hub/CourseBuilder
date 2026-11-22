@@ -1,0 +1,16 @@
+# Fictional data for training. Larkspan Systems case. All companies and numbers are invented. Owner is a code not a person.
+deal_id,account,segment,channel,product,sites,amount_usd,stage,close_date,crm_reason,crm_competitor,owner
+D-2201,Harlow Bay Foods,Distribution,Direct,Probe + Cloud,2,48200,Closed Won,2026-04-08,Compliance reports,None,REP-03
+D-2202,Copperleaf Kitchens,Food service,Reseller,Probe + Cloud,6,22800,Closed Won,2026-04-15,Price,Vantafrost,REP-07
+D-2203,Stonemere Cold Storage,Distribution,Direct,Probe + Hub + Cloud,1,61500,Closed Lost,2026-04-22,Price,Rimecore,REP-03
+D-2204,Lantern Row Bakeries,Food service,Reseller,Probe + Cloud,5,18400,Closed Lost,2026-04-29,Price,Rimecore,REP-07
+D-2205,Juniper Yard Cafes,Food service,Reseller,Probe + Cloud,4,14600,Closed Lost,2026-05-06,Price,None,REP-11
+D-2206,Ashcombe Lab Services,Pharmacy and lab,Direct,Probe + Cloud + Calibration,1,27900,Closed Won,2026-05-13,Calibration certificates,Vantafrost,REP-05
+D-2207,Breckwood Distribution,Distribution,Direct,Probe + Hub + Cloud,3,88300,Closed Lost,2026-05-20,Feature gap: multi-site dashboard,Rimecore,REP-03
+D-2208,Tamsin Valley Produce,Distribution,Direct,Probe + Cloud,2,39600,Closed Won,2026-05-27,Relationship,None,REP-03
+D-2209,Ferrow Street Grill Group,Food service,Reseller,Probe + Cloud,8,31200,Closed Lost,2026-06-03,Price,Unknown,REP-11
+D-2210,Wexley Pharmacy Group,Pharmacy and lab,Direct,Probe + Cloud + Calibration,6,33400,Closed Lost,2026-06-10,Price,Vantafrost,REP-05
+D-2211,Orrin Clinical Labs,Pharmacy and lab,Direct,Probe + Cloud + Calibration,2,41800,Closed Lost,2026-06-17,Timing,None,REP-05
+D-2212,Calder Point Logistics,Distribution,Direct,Probe + Hub + Cloud,2,57300,Closed Lost,2026-06-22,Price,Vantafrost,REP-09
+D-2213,Pippin Lane Markets,Food service,Reseller,Probe + Cloud,3,12900,Closed Won,2026-06-24,Price,None,REP-07
+D-2214,Highcastle Foods,Distribution,Direct,Probe + Hub + Cloud,4,72600,Closed Lost,2026-06-29,Price,Rimecore,REP-09

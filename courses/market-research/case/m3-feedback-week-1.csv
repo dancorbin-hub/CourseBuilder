@@ -1,0 +1,26 @@
+# Fictional data for training. Larkspan Systems case. All companies, people and numbers are invented. Phone numbers use the 555-01xx fiction range.
+item_id,date,channel,account_id,account_name,segment,text
+F-1101,2026-11-02,Support ticket,A-01,Oxbend Cold Storage,Distribution,Freezer 3 sent 22 alerts last night. All were door-open blips during loading. Shift leads now ignore them.
+F-1102,2026-11-02,Sales call note,A-03,Ridgeway Cold Logistics,Distribution,Buyer says the team gets too many alerts and has started to mute the app on the dock.
+F-1103,2026-11-03,Support ticket,A-05,Pellham Distribution,Distribution,Can we stop alerts for short door openings? We get dozens per shift and staff swipe them away.
+F-1104,2026-11-03,Internal intake (Customer Success),A-09,Bramblefield Bistro,Food service,Customer says lunch rush triggers alerts every day and cooks no longer look at them.
+F-1105,2026-11-04,Support ticket,A-12,Fennick Health outpatient pharmacy,Pharmacy and lab,Fridge alerts go off every restock. Techs have stopped calling the pharmacist.
+F-1106,2026-11-05,Feature request portal,A-20,Fallowmere Storage,Distribution,Please add a delay before an alert fires. Too many false alarms on the dock freezers.
+F-1107,2026-11-02,Sales call note,A-02,Teller Creek Foods,Distribution,Quality team spends two days per audit pulling records into the auditor's format.
+F-1108,2026-11-04,Feature request portal,A-07,Quarry Lane Pharmacies,Pharmacy and lab,Need a one-page monthly report per fridge for the state board. Today we build it by hand.
+F-1109,2026-11-05,Support ticket,A-14,Northfold Diagnostics,Pharmacy and lab,The audit export needs a lot of rework before our accreditation audit. Can it match their template?
+F-1110,2026-11-02,Install note,A-04,Saltgrass Kitchens,Food service,Hub lost two walk-in freezers again. Moved hub closer to the freezer wall. Customer frustrated.
+F-1111,2026-11-03,Install note,A-10,Copperleaf Kitchens,Food service,Second visit to fix Wi-Fi drop at the back of the kitchen. Hub would not hold the connection.
+F-1112,2026-11-04,Support ticket,A-18,Pippin Lane Markets,Food service,Two sensors in the produce cooler show offline most mornings.
+F-1113,2026-11-06,Install note,A-21,Hearthstone Bakehouse,Food service,Bakery freezer is a steel box. Signal drops. Recommended a repeater.
+F-1114,2026-11-03,Support ticket,A-06,Harlow Bay Foods,Distribution,Battery low warnings on 40 sensors in the same week. Who swaps them?
+F-1115,2026-11-05,Sales call note,A-11,Tamsin Valley Produce,Distribution,Buyer asked if we offer a battery swap service. Staff time is the issue.
+F-1116,2026-11-04,Sales call note,A-13,Marrowby Grocers,Food service,Director wants one screen that ranks all nine stores by risk. Still calling each store manager.
+F-1117,2026-11-03,Support ticket,A-15,Gullhaven Cold Storage,Distribution,Night alarm at 2 a.m. was not answered for 50 minutes. Who should be on the call list?
+F-1118,2026-11-06,Sales call note,A-16,Dunmore Freight Cold,Distribution,Customer asks if Larkspan offers a service to take night alarm calls.
+F-1119,2026-11-05,Internal intake (Customer Success),A-19,Hollin Market,Food service,Customer lost a full dairy cooler last weekend. Asks for a report of product value at risk.
+F-1120,2026-11-02,Support ticket,A-23,Ashcombe Lab Services,Pharmacy and lab,Please send calibration certificates with the probe serial number. Auditor rejected the old format.
+F-1121,2026-11-06,Feature request portal,A-24,Pennick Labs,Pharmacy and lab,Can calibration certificates be downloaded from the app instead of by email?
+F-1122,2026-11-03,Feature request portal,A-02,Teller Creek Foods,Distribution,"Want a share link that proves a load stayed cold, for our grocery customers."
+F-1123,2026-11-05,Sales call note,A-25,Cobble Quay Provisions,Distribution,Buyer wants to show their restaurant customers the temperature history of each delivery.
+F-1124,2026-11-04,Support ticket,A-26,Northwick Cold Haul,Distribution,Can you invoice us in Canadian dollars?

@@ -1,0 +1,22 @@
+# Fictional data for training. Larkspan Systems case. Stretch only. All respondents and answers are invented. No personal data.
+resp_id,segment,sites,q1_how_urgent_is_inspector_remote_access_1to5,q2_share_of_your_sites_with_remote_inspections,q3_would_pay_more_for_inspector_view_access,q4_open_text
+R-01,Food service,6,5,All,Yes,Our county started remote checks in September. We email PDFs every week now.
+R-02,Food service,12,4,Some,Maybe,Two of our counties ask for it. The others still visit.
+R-03,Food service,3,2,None,No,Inspector still comes in person. Not an issue yet.
+R-04,Distribution,2,1,None,No,Our auditors are customers not inspectors. They want reports.
+R-05,Food service,9,5,Most,Yes,The inspector wants to see records before she drives out. We lose an afternoon per store.
+R-06,Pharmacy and lab,4,3,Some,Maybe,State board asked once. Not sure it will stick.
+R-07,Food service,5,4,Most,Maybe,Would pay if it saves the PDF work.
+R-08,Distribution,3,2,None,No,Not relevant for warehouses today.
+R-09,Food service,7,5,All,Yes,Remote inspection is now the default in our county.
+R-10,Pharmacy and lab,1,1,None,No,Nothing like this from our inspectors.
+R-11,Food service,4,3,Some,No,Should be part of what we already pay.
+R-12,Food service,8,4,Most,Yes,Give the inspector a login that expires after the audit.
+R-13,Distribution,5,2,Some,Maybe,One customer auditor asked for live access.
+R-14,Food service,2,3,Some,No,Nice to have.
+R-15,Pharmacy and lab,6,2,None,No,Calibration certificates matter more to us.
+R-16,Food service,11,5,Most,Yes,Our biggest county moved to remote inspections in October.
+R-17,Food service,3,4,All,Maybe,The inspector asked for a view-only link.
+R-18,Distribution,1,1,None,No,No.
+R-19,Food service,6,3,Some,Maybe,Depends on the price.
+R-20,Pharmacy and lab,2,2,None,No,Not seen yet.
