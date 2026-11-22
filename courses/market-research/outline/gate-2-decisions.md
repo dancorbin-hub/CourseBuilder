@@ -8,3 +8,4 @@ Dan answers in the Gate 2 doc. Status is final or provisional.
 | 3 | Segment rule: course rule or case choice (OI-15) | A: course rule | Provisional until Dan runs the exercises | 2026-11-22 | Test in lab 5: the agent must not say "food service buyers want" from 1 Food service interview (I-105) |
 | 4 | Example case PM bar | Open. Dan does not like a bar: priority is relative across the problem backlog | Proposal sent 2026-11-22: replace bar with backlog plus evidence profile, agent proposes ranking, PM decides. Affects decisions 1, 3, 4. Waiting for Dan yes | 2026-11-22 | Decisions 1 and 3 may change with this |
 | 6 | Dan own module 4 example vs decision 43 (OI-05) | A: Pragmatic or unnamed client story, identifying details removed | Final | 2026-11-22 | Dan sends the example before module 4 build |
+| 8 | Module 4 is 55 minutes (OI-17) | A: accept 55 minutes; times can flex in delivery | Final | 2026-11-22 | P3 timing check dropped |
