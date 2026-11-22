@@ -15,3 +15,4 @@
 - Rerun track 3 done (N21 to N24; N5 and W3 are one survey, Q4 2025 fieldwork; 60.2% override figure corrected; hardware gate time still a gap).
 - Verifier done: 44 verified, 13 partly, 26 not verified, 0 wrong. Rows 04, 05, 10 partly pass the 2-source rule. E9 draft may not be cited. 07:07 UTC: Verifier on rerun entries (15 fetches).
 - Rerun entries verified (sp-wf-02 passes on W25, W26; sp-wf-11 partly passes; N21 verified). 07:10 UTC: Step 4, Synthesizer.
+- Synthesizer done: 6 rows retained, 3 folded, 1 out of scope, 1 deferred, 5 modules; decisions a to k. 07:18 UTC: Step 5, trace check.
