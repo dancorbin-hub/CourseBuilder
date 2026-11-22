@@ -100,10 +100,6 @@ Criteria are in `m1-stretch-applicants.md`. The study starts in December 2026.
 | Edge case to the PM | AP-10 | Criterion 2: runs the purchase but does not choose |
 | Edge case to the PM | AP-12 | Criterion 2: "Influences" only |
 
---- | --- | --- |
-| Pass | AP-01, AP-04, AP-06, AP-11 | Meet all 5 criteria. AP-11 uses a competitor, which is allowed |
-| Fail | AP-02, AP-03, AP-05, AP-09 | 1 site and user only; interviewed 2026-09; works for a reseller; segment out of scope |
-| Edge case to the PM | AP-07, AP-08, AP-10, AP-12 | 2 sites but 11 walk-ins; last interview 2026-05 is close to the 6-month line; runs the purchase but does not choose; "influences" only |
 
 ---
 
@@ -136,7 +132,7 @@ The correct driver log is Part 1 (Q2 rows) of `m4-evidence-pack.md`.
 
 **Planted error.** With the leak, price shows 2 to 4 buyer deals and looks like the top driver.
 
-**Pass condition (spec success check).** The match rate table counts only the 9 interviewed deals. No CRM-only deal (including D-2214) is in the buyer driver findings. The flag report lists the 5 mismatched deals.
+**Pass condition (debrief check, instructor only).** The match rate table counts only the 9 interviewed deals. No CRM-only deal (including D-2214) is in the buyer driver findings. The flag report lists the 5 mismatched deals.
 
 ### Second sample: `m2-check-sample.md`
 
@@ -197,7 +193,7 @@ The correct driver log is Part 1 (Q2 rows) of `m4-evidence-pack.md`.
 
 **Planted error.** With forced fit, P02 shows 7 accounts (+4) and gets a false "big move" flag. The "no fit" group holds 1 item or none. If counted by mentions, P01 shows +5.
 
-**Pass condition (spec success check).** After the fix, the week 2 rerun shows the new problem in the "no fit" group with 4 accounts, and the flag report names it. P02 stays at 3 accounts. P01 shows 7 accounts, not 11. F-1221 is flagged.
+**Pass condition (debrief check, instructor only).** After the fix, the week 2 rerun shows the new problem in the "no fit" group with 4 accounts, and the flag report names it. P02 stays at 3 accounts. P01 shows 7 accounts, not 11. F-1221 is flagged.
 
 ### Second sample: `m3-check-sample.md` (week of 2026-11-16)
 
@@ -249,7 +245,7 @@ Counts are lost deals with a buyer interview. Periods compared: Q2 2026 vs Q3 20
 
 **Planted error.** Before the fix, D-3108 counts for Rimecore. Rimecore shows Q2 2, Q3 3, "growing". Do nothing shows 3.
 
-**Pass condition (spec success check).** D-3108 is under ALT-04 do nothing. Rimecore shows 2 in Q3 and "no change". The flag report lists the D-3108 mismatch. Every entry shows its source type. Each "growing" or "fading" label names Q2 2026 vs Q3 2026.
+**Pass condition (debrief check, instructor only).** D-3108 is under ALT-04 do nothing. Rimecore shows 2 in Q3 and "no change". The flag report lists the D-3108 mismatch. Every entry shows its source type. Each "growing" or "fading" label names Q2 2026 vs Q3 2026.
 
 **Alternative to beat (debrief, Food service).** Do nothing: paper logs and spreadsheets (D-3103, D-3106, D-3108; Q2 D-2205). Next is the substitute, controller alarms (D-2209).
 
@@ -304,7 +300,7 @@ Feedback counts do not change a proposal. They can add a "watch" note (for examp
 
 **Planted error.** The Q2 answer says "Buyers want a one-click inspection binder" and cites R-2024-07.
 
-**Pass condition (spec success check).** The fixed Q2 answer names the study date and segment of every source. The flag report lists R-2024-07 as old evidence for another segment. The answer does not say "buyers want". Status proposals are given by segment and stay labeled as proposals until the PM decides.
+**Pass condition (debrief check, instructor only).** The fixed Q2 answer names the study date and segment of every source. The flag report lists R-2024-07 as old evidence for another segment. The answer does not say "buyers want". Status proposals are given by segment and stay labeled as proposals until the PM decides.
 
 ### Second sample: Q4 in `m5-stakeholder-questions.md`
 

@@ -22,7 +22,9 @@ Important: the data makes each error likely and findable. It cannot force a mode
 
 **Where.** Interview I-104 (Marrowby Grocers, Food service, PM-held, 52 minutes). It has 3 strong quotes on P05 Multi-site visibility, including a renewal threat. No other batch 1 interview mentions P05. I-104 is the longest interview, and the buyer says alerts and reports are "fine". This makes P05 stand out.
 
-**What the agent does with the template brief (v1).** The template has no "count interviews, not quotes" rule. The agent is likely to show P05 as a strong or top insight for Food service, with 3 quotes and high intensity. It may mark it as meeting the bar, or call it a pattern. Both are wrong: the agent never writes "Pattern" (Gate 1 PA-01), and P05 has 1 interview.
+**Open at Gate 2 (OI-14).** Spec v0.2 puts "count interviews, not quotes" back into the template. Proof P1 tests whether this error still shows. Update this section after P1.
+
+**What the agent does with the template brief (v1), if the template has no "count interviews, not quotes" rule.** The agent is likely to show P05 as a strong or top insight for Food service, with 3 quotes and high intensity. It may mark it as meeting the bar, or call it a pattern. Both are wrong: the agent never writes "Pattern" (Gate 1 PA-01), and P05 has 1 interview.
 
 **Why the quote check passes.** All 3 quotes are word for word in I-104.
 

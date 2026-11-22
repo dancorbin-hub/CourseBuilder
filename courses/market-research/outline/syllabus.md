@@ -1,0 +1,233 @@
+# Advanced AI for Market Research
+
+Syllabus and course outline. Draft for Pragmatic review, 2026-11-22.
+
+## Course promise
+
+After this course, you can build and manage one AI agent that turns your interviews, win/loss deals, weekly feedback and past research into a checked market evidence log. You decide what the evidence means.
+
+## At a glance
+
+| Item | Detail |
+| --- | --- |
+| Length | One day, 7.5 hours with lunch and breaks. Also runs as two half days |
+| Delivery | Live on Zoom or in person. Labs run in breakout rooms or at tables, grouped by platform |
+| Format | 5 modules. Each module is 40% instructor-led and 60% hands-on |
+| Offering intent | Develop and Apply |
+| Pragmatic Framework 2027 | Category: Market. Focus areas: Market Problems, Win/Loss Analysis, Competitive Landscape |
+| Capability and skills | Dan to name (from the Capability Standards) |
+| Platforms | Claude, ChatGPT, Microsoft Copilot agent builder and Gemini. Every lab has a step card for each |
+
+## Who this course is for
+
+- Experienced product managers who run or use market research.
+- Product marketers and product leaders who act on buyer, deal and feedback evidence.
+- PMs in software, hardware, services and internal platform teams.
+
+This course is not an introduction to AI prompts. It does not teach persona creation, market definition or market sizing.
+
+## What you learn to do
+
+You become the **agent manager**. The agent does the routine research work. You do the work that needs product judgment:
+
+1. Write the agent's brief: its job, inputs, code book and output.
+2. Set quality checks that the agent runs on its own output.
+3. Set hand-off rules: when the agent stops and gives an item to you.
+4. Read the flag report and decide each item.
+5. Audit a sample of the agent's output against the sources.
+6. Tune the brief for what the audit found, and run again.
+
+Three ideas run through the day:
+
+1. **There is no magic number.** The agent reports evidence. Your judgment sets the bar.
+2. **Be great at product management before you are great at AI.**
+3. **Win/loss is the big aha.** Most teams do not get this data.
+
+## Course objectives
+
+By the end of the course, you can:
+
+1. Build a market evidence agent from a template on your platform and run it on your own research inputs.
+2. Write and tune the agent brief (job, inputs, code book, quality checks, hand-off rules, output) after each audit.
+3. Decide each flag report item and audit a sample of agent output against its sources.
+4. Connect agent jobs so that one job's output feeds the next, with hand-off rules that control what passes and what stops.
+5. Set the evidence bar for your team and defend each decision with sourced evidence, not a count alone.
+
+## How the course works
+
+**One agent, five jobs.** You build the Market Evidence Agent in module 1 from a template. Each later module adds one job. You leave with one agent that does five jobs.
+
+**The agent climbs a ladder.** Each module gives the agent more room, and you check it in a different way.
+
+| Step | What the agent does | What you check | Modules |
+| --- | --- | --- | --- |
+| 1. Hand-run batch | Runs on a batch you give it | Every flag and a sample | 1, 2 |
+| 2. Recurring run | Runs on each new week of input | Only the flag report and a sample | 3 |
+| 3. Hand-off between jobs | One job's output feeds the next job | The hand-off rule and traced entries | 4, 5 |
+| 3 plus. Faces other people | Answers stakeholder questions | Each answer before it goes out | 5 |
+
+**Each lab has a planted AI error.** In module 1 we tell you that it is there. In modules 2 to 4 you get a hint. In module 5 you get no hint. The debrief shows where it was and which check or audit found it.
+
+**Your own work first.** Use your own interviews, deals, feedback and reports when your company allows it. If you cannot, use the case company: Larkspan Systems, a fictional maker of wireless temperature sensors and the cloud software that watches them. One case serves the whole course.
+
+**You do not fall behind.** Each module has a catch-up kit. You can rebuild the agent at the start of any module in about 5 minutes.
+
+## Modules
+
+### Module 1. Run your first batch and manage it by flags (70 minutes)
+
+**Promise:** Hand interview synthesis to an agent, and manage it by its checks and flags.
+
+- **Workflow:** Turn each new batch of buyer interviews into an updated, checked insight log.
+- **Bottleneck it removes:** Synthesis takes days per study, so insight reaches the roadmap late.
+- **Objectives:**
+  1. Build the Market Evidence Agent from the template, with a brief, a code book and an output format.
+  2. Decide each item in the flag report (keep, fix or send to discovery).
+  3. Audit 3 random insights against the source interviews and record what you find.
+  4. Write your evidence bar and a new rule into the brief, then rerun and compare.
+- **Lab:** Build the agent. Run two batches of interviews. Audit, tune and rerun. A fast-start card per platform helps learners who are new to the builders.
+- **Your input:** 5 to 15 of your own interview notes or transcripts, or the case interviews.
+- **Learner evidence:** Your tuned brief (with your bar and one new rule), your flag report decisions and your audit findings for 3 insights.
+- **Stretch:** Screen the next round of study applicants and hand only edge cases to the PM. Turn the job into a custom skill.
+
+### Module 2. Win/loss and the match rate (70 minutes)
+
+**Promise:** Find out how often your sales loss reasons match what buyers say.
+
+- **Workflow:** Run a win/loss program that turns each batch of decided deals into a checked decision-driver report.
+- **Bottleneck it removes:** Manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all.
+- **Objectives:**
+  1. Extend the agent with a win/loss job that labels each deal "interview" or "CRM only".
+  2. Compare CRM loss reasons with buyer reasons in a match rate table.
+  3. Audit the deal source labels on 2 random deals and correct the brief.
+  4. Decide which findings go to sales, marketing or leadership, and frame them so that sales does not read them as blame.
+- **Lab:** Add the win/loss job. Join a CRM export and win/loss interview notes. Read the match rate table. Audit and tune.
+- **Your input:** An export of 10 or more decided deals and any win/loss notes, or the case deals.
+- **Learner evidence:** The match rate table with your one-sentence read of it, your flag report decisions, your audit findings for 2 deals and your brief change.
+
+### Module 3. The weekly run: read flags, not every item (60 minutes)
+
+**Promise:** Let the agent read every piece of feedback, so you read only what moved.
+
+- **Workflow:** Route each week's inbound customer feedback into the market problem log.
+- **Bottleneck it removes:** Feedback is spread across many tools. Tagging by hand is slow and subjective, and tags drift.
+- **Objectives:**
+  1. Extend the agent to tag a week of feedback against the insight log, counted by unique account.
+  2. Write a "no fit" rule that makes the agent say "no fit" instead of guessing.
+  3. Audit a sample of 10 tagged items and the whole "no fit" group, and decide which moves need discovery.
+- **Lab:** Add the weekly feedback job. Run week 1, then week 2. Read only the flag report and a sample.
+- **Your input:** One or two weeks of feedback items with personal data removed, or the case feedback exports.
+- **Learner evidence:** Your flag report decisions for week 2, your audit findings and the "no fit" rule in your brief.
+- **Stretch:** Set a schedule or a file trigger where your platform allows it. Add a survey wave as a second input.
+
+### Module 4. First hand-off: the alternatives map from your own deals (55 minutes)
+
+**Promise:** Map what buyers chose instead of you, from your own deals, not from competitor news.
+
+- **Workflow:** Keep the alternatives map current from the team's own evaluator and deal evidence.
+- **Bottleneck it removes:** Keeping the competitive landscape current is recurring work that no one has time for. Hand-built documents age quickly.
+- **Objectives:**
+  1. Connect the win/loss job to a new alternatives map job, so that the driver log feeds the map.
+  2. Write a hand-off rule that says which evidence passes to the map and which goes to the flag report.
+  3. Trace 3 map entries back to their interviews and deal records.
+  4. Choose the alternative your team must beat in one segment, and state the evidence for it.
+- **Lab:** Add the map job. Write the hand-off rule from the win/loss job. Run, audit and fix the rule.
+- **Your input:** Your module 2 driver log or a deal export with a competitor field, or the case evidence pack.
+- **Learner evidence:** Your hand-off rule as written and as fixed, your audit findings for 3 traced entries, and the alternative to beat in one segment with its evidence.
+- **Stretch:** Build the map job as a second agent that reads the first agent's output, where your platform allows it.
+
+### Module 5. The agent answers stakeholders, and you stay accountable (65 minutes)
+
+**Promise:** Answer "what do we know about X?" in minutes, with sources, dates and limits.
+
+- **Workflow:** Answer stakeholder questions from past research with sourced, dated answers.
+- **Bottleneck it removes:** People cannot find past insights. Teams commission new studies on questions they already answered.
+- **Objectives:**
+  1. Extend the agent to answer stakeholder questions with a citation, date and segment for each claim, and a "what we do not know" line.
+  2. Write hand-off rules that limit what the agent may tell stakeholders.
+  3. Decide to send, change or hold each answer after you open each citation.
+  4. Judge the agent's status proposals and decide which problems you call validated.
+- **Lab:** Add the answer job. Set an age limit and hand-off rules. Ask it real stakeholder questions. Open the citations before anything goes out.
+- **Your input:** Your logs from this course plus one or two past study reports, or the case reports.
+- **Learner evidence:** Your send, change or hold decisions for 3 answers, your audit findings for one cited answer, your hand-off rules and your validated-status decisions.
+
+## Agendas
+
+### Full day
+
+| Time | Minutes | Item |
+| --- | --- | --- |
+| 09:00 | 25 | Course open: opening story, build check (create, save and reopen a starter agent), course frame |
+| 09:25 | 70 | Module 1. Run your first batch and manage it by flags |
+| 10:35 | 15 | Break |
+| 10:50 | 70 | Module 2. Win/loss and the match rate |
+| 12:00 | 60 | Lunch |
+| 13:00 | 60 | Module 3. The weekly run: read flags, not every item |
+| 14:00 | 55 | Module 4. First hand-off: the alternatives map from your own deals |
+| 14:55 | 15 | Break |
+| 15:10 | 65 | Module 5. The agent answers stakeholders, and you stay accountable |
+| 16:15 | 15 | Course close: your Monday plan |
+| 16:30 | | End |
+
+Teaching time is 360 minutes. If class runs long, the instructor can cut lunch to 45 minutes.
+
+### Two half days
+
+The split falls after module 2. Day 1 builds the agent and runs it by hand. Day 2 gives it more room.
+
+**Day 1**
+
+| Time | Minutes | Item |
+| --- | --- | --- |
+| 09:00 | 25 | Course open: opening story, build check, course frame |
+| 09:25 | 70 | Module 1. Run your first batch and manage it by flags |
+| 10:35 | 15 | Break |
+| 10:50 | 70 | Module 2. Win/loss and the match rate |
+| 12:00 | 10 | Day 1 close: save your agent, download the module 3 catch-up kit, note one audit finding |
+| 12:10 | | End |
+
+**Day 2**
+
+| Time | Minutes | Item |
+| --- | --- | --- |
+| 09:00 | 15 | Day 2 open: recap, reopen check (rebuild from the catch-up kit if needed) |
+| 09:15 | 60 | Module 3. The weekly run: read flags, not every item |
+| 10:15 | 55 | Module 4. First hand-off: the alternatives map from your own deals |
+| 11:10 | 15 | Break |
+| 11:25 | 65 | Module 5. The agent answers stakeholders, and you stay accountable |
+| 12:30 | 15 | Course close: your Monday plan |
+| 12:45 | | End |
+
+## What you need before class
+
+You get a platform readiness checklist before class. Run it. It takes a few minutes and finds access problems before the class starts.
+
+| Platform | What you build | What you need |
+| --- | --- | --- |
+| Claude | A Project with instructions and knowledge files | Any plan. Code execution and file creation must be on. Your org owner can turn them off |
+| ChatGPT | A Project with instructions and files | Go or Plus, or a business plan |
+| Microsoft Copilot | An agent in Copilot agent builder | Permission to create agents in agent builder. A Microsoft 365 Copilot license or pay-as-you-go billing for knowledge files. Not GCC. Learners with Copilot Chat only use a reduced path that runs one job at a time |
+| Gemini | A Gemini skill with instructions and files | The Gemini app on a personal or Workspace account |
+
+Also bring:
+
+1. Your company's rules on approved AI tools, connectors and sharing. The course open has a "know before you design" check.
+2. Your own inputs if your company allows it: interview notes, a deal export, a week of feedback and one or two past study reports. If you cannot use them, the case data is ready for you.
+
+No connectors are needed. You upload or paste files.
+
+## Data safety
+
+Every lab has this note:
+
+> Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.
+
+An agent that keeps a log keeps sensitive data longer than a one-off prompt. In each lab you decide what the log may keep, and for how long.
+
+## What you take home
+
+1. **The Market Evidence Agent with five jobs**, saved on your platform: insight log, win/loss, weekly feedback, alternatives map and stakeholder answers.
+2. **Jobs already run on your own work**, where you used your own inputs in class.
+3. **The final catch-up kit**: the complete brief and knowledge files, to rebuild the agent on any of the four platforms.
+4. **Templates**: the brief template, the five job cards and the audit checklist.
+5. **A Monday plan**: the first job you run on your own work, and the date of your first audit.
