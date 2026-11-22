@@ -2,11 +2,13 @@
 
 # Stakeholder questions for lab 5
 
-Ask the agent each question as written. The agent answers from the insight log, the driver log, the alternatives map and the past reports.
+Ask the agent each question as written. The agent answers from the problem backlog, the driver log, the alternatives map and the past reports.
 
-Age limit for the case: evidence older than 18 months goes to the flag report.
+The case PM's hand-off rule: evidence older than 18 months goes to the flag report. This is one PM's choice. On your own work, use your own rule.
 
-## The 3 questions
+## The 4 run questions
+
+Ask Q1, Q2, Q3 and Q5 in this order. Q4 is the check question below.
 
 **Q1. From the VP Sales**
 
@@ -19,6 +21,10 @@ Age limit for the case: evidence older than 18 months goes to the flag report.
 **Q3. From the Support lead (internal team)**
 
 > Should Support plan for a night monitoring service for distribution customers? What do they say about after-hours alarms?
+
+**Q5. From the PM, Fleet Data Platform (internal PM)**
+
+> Install and Support ask me to add a hub signal history view to the Fleet Data Platform. They say hubs lose signal at many customer sites. What do customers say about this, and in which segments? I need to place this request in the FDP backlog for Q1 2027.
 
 ## Check question (second sample input)
 

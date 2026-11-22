@@ -2,7 +2,7 @@
 
 # Check sample for lab 1 (second sample input)
 
-Use this after you tune your brief. Start a new chat with an empty insight log. Paste or upload this file. Then compare the result with the pass condition on your step card.
+Use this after you tune your brief. Start a new chat with an empty problem backlog. Paste or upload this file. Then compare the result with the pass condition on your step card.
 
 ---
 

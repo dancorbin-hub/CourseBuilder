@@ -2,7 +2,7 @@
 
 # Code book: market problems (Larkspan Systems)
 
-Knowledge file for the Market Evidence Agent, insight log job. Version 1, September 2026.
+Knowledge file for the Market Evidence Agent, problem backlog job. Version 1, September 2026.
 
 ## Codes
 
@@ -25,16 +25,23 @@ Distribution, Food service, Pharmacy and lab.
 
 Operations manager, quality manager, facilities lead, director of operations, kitchen or store manager, pharmacy manager, lab manager.
 
-## Insight log format (empty)
+## Problem backlog format (empty)
 
-The agent writes the log in this format. One row per insight.
+The agent writes the backlog in this format. One row per market problem. The row is the evidence profile. Facts only.
 
-| Insight ID | Code | Insight (one sentence) | Segment | Persona | Frequency | Intensity (quote) | Impact clues | Quotes and source interview IDs | Source labels (PM-held or AI-moderated) | Change (new, growing, fading, no change) | First seen | Last updated |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Problem (code) | Problem (one sentence) | Interviews (IDs, PM-held or AI-moderated) | Accounts | Segments (interviews per segment) | Personas | Quotes (word for word, interview ID) | Other sources (win/loss, feedback, past report) | Urgency (one quote, interview ID) | Pervasiveness (accounts and segments) | Willingness to pay clues | Fact labels (single source, AI-moderated only, one segment only) | Source dates | Change (new, growing, fading, no change) | First seen | Last updated |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+## Proposed ranking format
+
+The agent proposes. The PM decides the order.
+
+| Proposed rank | Problem (code) | Scope (all segments or one segment) | Reason (from the evidence profile) |
+| --- | --- | --- | --- |
 
 ## "What changed" summary format
 
-3 to 6 bullets. Each bullet names the insight ID and what changed since the last batch.
+3 to 6 bullets. Each bullet names the problem code and what changed since the last batch.
 
 ## Flag report format
 

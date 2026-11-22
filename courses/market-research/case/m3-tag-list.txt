@@ -2,7 +2,7 @@
 
 # Tag list: weekly feedback (Larkspan Systems)
 
-Knowledge file for the Market Evidence Agent, weekly feedback job. Version 1, November 2026. Tags match the market problem codes in the insight log.
+Knowledge file for the Market Evidence Agent, weekly feedback job. Version 1, November 2026. Tags match the market problem codes in the problem backlog.
 
 | Tag | Problem | Definition |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ Knowledge file for the Market Evidence Agent, weekly feedback job. Version 1, No
 | P06 | After-hours response | Who responds to an alarm at night or on a weekend, and how fast |
 | P07 | Product loss cost | Money lost when stock spoils because of a temperature problem |
 | P08 | Calibration records | Proof that sensors are calibrated, with certificates an auditor accepts |
-| P09 | Proof for the buyer's own customers | The buyer wants to show temperature proof to their own customers without full account access. Added from the lab 1 flag report, status emerging |
+| P09 | Proof for the buyer's own customers | The buyer wants to show temperature proof to their own customers without full account access. Added from the lab 1 flag report. Single source (I-102) |
 
 ## Feedback channels in scope
 
