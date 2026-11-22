@@ -29,11 +29,15 @@
 | Skill 3.3: "a prioritized problem backlog" | The agent keeps a problem backlog. Priority is relative across the backlog, not a fixed bar |
 | Skill 1.3 AI text: synthetic respondents never replace research with real people | Gate 1 rule on AI personas and AI-moderated interviews (PA-02) |
 
-### Course themes (from Dan)
+### Big idea and themes (from Dan)
+
+**Big idea:** AI can gather far more market signal than you can read. All of it is noise until you put it in context: what matters to your customers and what your business is trying to do. The agent gathers and organizes. You bring the context and make the call. Workbook skill 8.1 supports it: collected data has no value until value is extracted.
+
+Ideas that run through the day:
 
 1. There is no magic number. The agent reports the evidence and proposes a ranking. The PM decides the order.
 2. Be great at product management before you are great at AI.
-3. Win/loss is the big aha. Most teams do not get this data.
+3. Win/loss is the data most teams do not get. Module 2 highlight, not a course theme.
 
 ### Where the course starts and stops
 

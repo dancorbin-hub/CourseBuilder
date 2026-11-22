@@ -38,11 +38,13 @@ You become the **agent manager**. The agent does the routine research work. You 
 6. Read the agent's proposed ranking and decide the order of problems yourself.
 7. Tune the brief for what the audit found, and run again.
 
-Three ideas run through the day:
+**The big idea.** AI can gather far more market signal than you can read: online sources, customer feedback, deals and any data you give it. All of it is noise until you put it in context: what matters to your customers and what your business is trying to do. The agent gathers and organizes. You bring the context and make the call.
 
-1. **There is no magic number.** The agent reports the evidence and proposes a ranking. You decide the order.
-2. **Be great at product management before you are great at AI.**
-3. **Win/loss is the big aha.** Most teams do not get this data.
+**Ideas that run through the day:**
+
+- **There is no magic number.** The agent reports the evidence and proposes a ranking. You decide the order.
+- **Be great at product management before you are great at AI.**
+- **Win/loss is the data most teams do not get.** Module 2 shows what it reveals.
 
 ## Course objectives
 

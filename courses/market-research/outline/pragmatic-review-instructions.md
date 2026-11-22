@@ -1,6 +1,6 @@
 # Advanced AI for Market Research: Pragmatic review
 
-From Dan Corbin. Draft syllabus for review, 2026-11-22. Review due: \[Dan to set date\].
+From Dan Corbin. Draft syllabus for review, 2026-11-22. Pragmatic sets the review schedule.
 
 This doc has two tabs. This tab tells you what we need from you. The **Syllabus** tab is the course outline to review.
 

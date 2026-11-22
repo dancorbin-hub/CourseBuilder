@@ -41,10 +41,15 @@ course:
     secondary_skills: [8.1 Market Data Context and Pattern Recognition, 8.4 Data Narrative and Stakeholder Communication]
     secondary_capability: 8 Data-Driven Insight (secondary only)
     rule: Workbook ids and names are copied exactly. No skill or competency is invented
+  big_idea: >-
+    AI can gather far more market signal than you can read: online sources, customer feedback, deals and any data
+    you give it. All of it is noise until you put it in context: what matters to your customers and what your
+    business is trying to do. The agent gathers and organizes. You bring the context and make the call.
+    (Dan, Gate 2 comment, 2026-11-22.)
   themes:
     - There is no magic number. The agent reports the evidence and proposes a ranking. The PM decides the order.
     - Be great at product management before you are great at AI.
-    - Win/loss is the big aha. Most teams do not get this data.
+    - Win/loss is the data most teams do not get. Module 2 shows what it reveals (module 2 highlight, not a course theme).
 
 promise: >-
   After this course, you can build and manage one AI agent that turns your interviews, win/loss deals,
@@ -316,7 +321,7 @@ course_open:
   segments:
     - { minutes: 5, mode: instructor-led, item: "Bond story (slot open, Dan picks before module 1 is built; see open_items OI-01)" }
     - { minutes: 10, mode: hands-on, item: "Opening build check (ends by minute 15). Each learner creates, saves and runs a minimal agent on their platform. A blocked learner changes platform or pairs with another learner" }
-    - { minutes: 10, mode: instructor-led, item: "Course frame. You are the agent manager. The one course agent and its five jobs. Know before you design (company limits). Data safety note. Theme: be great at product management before you are great at AI" }
+    - { minutes: 10, mode: instructor-led, item: "Course frame. You are the agent manager. The one course agent and its five jobs. Know before you design (company limits). Data safety note. The big idea: AI gathers the signal, you bring the context. Theme: be great at product management before you are great at AI" }
   build_check: >-
     Create a Project (Claude, ChatGPT), an agent (Copilot) or a skill (Gemini) named "Market Evidence Agent".
     Paste a 3-line starter instruction. Upload one sample file. Ask it to list the file and its first heading.
