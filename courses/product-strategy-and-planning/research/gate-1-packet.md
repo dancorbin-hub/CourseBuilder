@@ -112,7 +112,7 @@ Facts:
 - Every row now carries the PA-03 note you approved for Market Research. Its interview consent and win/loss lines do not fit strategy labs.
 - Strategy inputs are confidential plans, unreleased roadmaps, forecasts, pricing, cost models and supplier terms (needs.md data risks; N1 V: "protect sensitive information").
 - New risks in this course: external versions of a roadmap or change note can carry confidential content, and web search sends the query outside the company (methods S7).
-- MNPI advice (N18 V) is written for financial firms. Using it for other public companies is an inference. Do not state it on a slide without legal review.
+- MNPI advice (N18, not opened by the verifier) is written for financial firms. Using it for other public companies is an inference. Do not state it on a slide without legal review.
 
 | Option | What changes |
 | --- | --- |
@@ -126,9 +126,9 @@ Recommendation: option 2. Reason: it keeps your PA-03 rule and adds the risks Fo
 
 | # | Risk | Evidence | Recommendation | Other options |
 | --- | --- | --- | --- | --- |
-| 1 | ChatGPT spreadsheet output with formulas needs ChatGPT Work. Work is not on Free or Go, and not in a project with project-only memory. Your Market Research minimum was "Go or Plus" | cg-09 V, cg-10 V, cg-14 V. Data analysis download not documented, plans not named (cg-11 V) | Keep "Go or Plus" for the core path. Math runs in data analysis and shows as an on-screen table; the learner pastes values into the course sheet with formulas. Work file output is a stretch for Plus and up. Test data analysis on Go at Gate 2 | Plus minimum with Work as core; business plan minimum |
+| 1 | ChatGPT spreadsheet output with formulas is documented only through ChatGPT Work. Work is not on Free or Go, and not in a project with project-only memory. Your Market Research minimum was "Go or Plus" | cg-09 V, cg-10 V, cg-14 V. Data analysis download not documented, plans not named (cg-11 V) | Keep "Go or Plus" for the core path. Math runs in data analysis and shows as an on-screen table; the learner pastes values into the course sheet with formulas. Work file output is a stretch for Plus and up. Test data analysis on Go at Gate 2 | Plus minimum with Work as core; business plan minimum |
 | 2 | Gemini: no dated Google doc says a skill runs code, outputs a file or uses Google Search | gm-11 PV, gm-15 NV (gap), gm-14 V (app only, no .xlsx), gm-10 PV (undated), gm-06 PV | Gemini numeric steps use a Google Sheet template with formulas. The skill writes the inputs as a table and reads back the results. Gate 2 tests one skill run that asks for a Sheet; if it works, it becomes a stretch step | Leave numeric steps out of the Gemini card |
-| 3 | Copilot: code interpreter reads files uploaded in chat only; output lasts for the session. One page says code interpreter is "always enabled" in Agent Builder; another shows a toggle | mb-13 V, mb-15 V, mb-11 V, mb-04 V. CSV not allowed as embedded knowledge; one sheet per workbook (mb-14 V) | Learner uploads the sheet in chat for each run and downloads the output in the same session. Case files for Copilot are .xlsx, one sheet each. Gate 2 tests the toggle and the embedded copy. License or billing stays a prerequisite (your Market Research decision) | Fallback as the default Copilot path |
+| 3 | Copilot: the docs name only files uploaded in chat as code interpreter input; output lasts for the session. One page says code interpreter is "always enabled" in Agent Builder; another shows a toggle | mb-13 V, mb-15 V, mb-11 V, mb-04 V. CSV not allowed as embedded knowledge; one sheet per workbook (mb-14 V) | Learner uploads the sheet in chat for each run and downloads the output in the same session. Case files for Copilot are .xlsx, one sheet each. Gate 2 tests the toggle and the embedded copy. License or billing stays a prerequisite (your Market Research decision) | Fallback as the default Copilot path |
 | 4 | Web search for the market size refresh differs by platform | Claude cl-ws-08 PV (owner turns it on for Team and Enterprise). ChatGPT cg-13 V (all plans; citations "may" be included). Copilot mb-12 V (4 URLs or Search all websites). Gemini skill: not documented | Core path uses a source pack from the case. Live search is stretch on Claude, ChatGPT and Copilot. The brief requires a link per number. Gemini learners upload the new source | Live search as core on 3 platforms |
 | 5 | ChatGPT default project memory can leak run 1 into a "blind" second scorer run | cg-14 V | Second scorer run in a new chat outside the project | Use project-only memory (then no Work) |
 | 6 | Claude: XLSX upload needs code execution, which an org owner can turn off. Upload size pages disagree | cl-up-10 V, cl-fo-06 V | Ship a CSV copy in the case pack. Use 30 MB in step cards. Add code execution and web search to the pre-class checklist (decision 44) | None |
@@ -253,11 +253,11 @@ Limits:
 
 ## 4. Evidence strength in plain words
 
-- PMs give little time to strategy. N21 (V; nearly 250 product professionals, fieldwork Q4 2025, vendor-sponsored): 72.2% spend 25% or less of their time on product strategy. N3 (V; 677, mostly Europe): 25% spend most of their time on strategy.
+- PMs give little time to strategy. N21 (V; nearly 250 product professionals, fieldwork Q4 2025, vendor-sponsored): 72.2% spend 25% or less of their time on product strategy. N3 (V by the Market Research verifier, not reopened; 677, mostly Europe): 25% spend most of their time on strategy.
 - Priorities get overridden. N21: 60.2% name leadership escalations or new directives as a factor that most often overrides their prioritization framework. That is a share of respondents, not of frameworks. W25, W26, W27 (V) describe the burden in words; their numbers are not independent or are illustrative.
 - Bottlenecks rest on vendor or vendor-run sources with little data. No retained row has a non-vendor 2026 bottleneck source with data. PRD decision 37 accepts this for now.
 - The strongest 2026 evidence is about AI risks. E1 (V, vendor RCT, one task): analysts chose the agent's lean on 86% of analytical decisions; final recommendation 54% vs 36%. E2 (V, Science, personal advice domain): AI affirmed users 49% more often than humans, and users trusted the agreeing answers more. E16 and E17 (V, abstracts, not PM tasks): people pull their own numbers toward an AI number.
-- Trendslop (E3, PV) is a strong idea with weak numbers. In tests on ChatGPT, adding context shifted answers by about 11%. No number goes on a slide until a licensed copy of the HBR article is read.
+- Trendslop (E3, PV) is a strong idea with weak numbers. In tests on ChatGPT, adding context shifted biased answers by about 11% (from a third-party copy of the article). No number goes on a slide until a licensed copy of the HBR article is read.
 - No named company shows a measured AI gain in strategy work. E13 cannot be traced. E9 is a draft that may not be cited.
 - Hardware has real but qualitative evidence (N10, N11 V). Internal platform funding has 3 sources (N12, N22, N23 V). Health care, services and manufacturing have no PM task data.
 
@@ -310,3 +310,17 @@ Limits:
 6. Stage 2 still waits. It starts only after Pragmatic's feedback on the Market Research syllabus, even with Gate 1 approved.
 7. Before Gate 2, these items need an owner: your comparison of the Focus and Build demo agents with rows 01 and 08; the Mastering the Product Roadmap syllabus; a licensed HBR copy for E3; the E9 authors' permission; the W2 and E1 primary reports.
 8. Add a row to `logs/hours-log.csv` for this session.
+
+## 8. Trace check flags (Verifier, after the Synthesizer)
+
+The Verifier checked about 140 claims in this packet and the brief. It made 8 wording fixes. No recommendation changed. These 7 items need your eye:
+
+| # | Flag | What it means for you |
+| --- | --- | --- |
+| 1 | Row 05 rests on W15 (2024) for "cases go stale" | If you drop W15 in decision i, the row 05 bottleneck fails check 7 |
+| 2 | Row 10: "few teams compare results with the baseline" has no source | Retain only with the reworded bottleneck ("warning signs include ...") |
+| 3 | Gemini skill limits come from an undated page (gm-01) | The dated vendor doc rule is met only in part. Gate 2 proof covers it |
+| 4 | Claude help pages show only relative dates | Record the access date at Gate 2 |
+| 5 | rerun-track-1.yaml marks W6 "verified", but the Verifier did not open it | The packet and brief treat W6 as not verified |
+| 6 | All 4 bottleneck sources for rows 02 and 09 are vendor or vendor-run, with no time or cost data | You decide if this is enough (PRD decision 37 accepts thin evidence) |
+| 7 | The brief calls E1 the strongest design evidence, but only the summary page was opened | Open the full paper before any slide uses E1 |

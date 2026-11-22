@@ -229,3 +229,37 @@ Checked 2026-11-22. Fetch budget: 15 pages, 15 used. Statuses are set in the rer
 3. sp-wf-11 bottleneck text goes past its sources (see above).
 4. E16 "7% of cases" wording needs the automation bias definition.
 5. Copilot code interpreter toggle: docs conflict (mb-15 vs mb-04). Test at the Gate 2 proof.
+
+## Trace check
+
+- Run: 2026-11-22, after the Synthesizer. No web use. Trace against `evidence-ledger.yaml`, `workflows.yaml`, `rerun-track-1.yaml` to `rerun-track-4.yaml`, `needs.md`, `platform-matrix.yaml`, `alignment-log.yaml` and both sections of this report.
+- Files checked: `research-brief.md`, `gate-1-packet.md`.
+- Claims checked: about 140 (brief about 75, packet about 65). Each cited id was found. No recommendation rests only on a "not verified" entry. "Not verified" ids appear only as exclusions, gaps or labelled risks, except N18 (fixed below).
+- Pragmatic text: 12 quotes and names checked against the local extracts of the workbook, Focus 28.01, Build 28.01 and the Framework guide. All match. This includes the Capability 2 text, the skill and competency names, "transparent, calibrated, and human-owned", the 2.4 AI text, the Focus slide 28 note, the Focus RED items, "Nothing confidential is in the customer version" and the guide page 12 Planning boxes.
+- Dashes: none in the brief or the packet (checked for U+2012 to U+2015).
+- Fixes: 8 wording fixes (3 brief, 5 packet). No recommendation, option or decision was changed.
+
+### Fixes made
+
+| Location | Claim | Problem | Fix |
+| --- | --- | --- | --- |
+| Brief 1, point 4 | "ChatGPT spreadsheet output needs ChatGPT Work" | cg-10 and cg-11 do not say other paths cannot output a file. Download is only "not stated" | "is documented only for ChatGPT Work" |
+| Brief 4, Claude row | ".xlsx with formulas" (cl-fo-06 V) | The cl-fo-06 entry lists .xlsx output. It does not state formulas | ".xlsx, 30 MB. The page does not state formulas" |
+| Brief 4, ChatGPT row | "Only through ChatGPT Work" | Same as point 4 | "Documented only through ChatGPT Work" |
+| Packet 2e | "MNPI advice (N18 V)" | This verifier did not open N18 (N14 to N19 not opened). Its "verified" status in `needs.md` is the researcher's | "(N18, not opened by the verifier)" |
+| Packet 2f, risk 1 | Spreadsheet output with formulas "needs ChatGPT Work" | Same as brief point 4 | "is documented only through ChatGPT Work" |
+| Packet 2f, risk 3 | Copilot code interpreter "reads files uploaded in chat only" | mb-13 and mb-15 name uploads as input and do not mention knowledge files. They do not say "only" | "the docs name only files uploaded in chat as code interpreter input" |
+| Packet 4, E3 | "adding context shifted answers by about 11%" | E3 says "biased answers". The number is from a third-party copy | "shifted biased answers by about 11% (from a third-party copy of the article)" |
+| Packet 4, N3 | "N3 (V; ...)" | This run did not reopen N3. "V" is the Market Research verifier's status (2026-11-20) | "V by the Market Research verifier, not reopened" |
+
+### Flags for Dan (not changed)
+
+| Location | Claim or recommendation | Problem | Flag |
+| --- | --- | --- | --- |
+| Packet 5, check 7; brief 2, row 05 | "No retained row depends on an open question that breaks its bottleneck" | Row 05 (retain with condition) rests on W15 (2024, age flag). If you drop W15 under decision i, the row 05 bottleneck fails. The packet calls 05 conditional, but check 7 does not say this | Dan decides (decisions a and i). Without 05 and 10, 4 rows still pass |
+| Brief 2 and packet 1, row 10 | Retain with condition | "Few teams compare results with the baseline" has no source. W23 is public sector and gives no rate | The rewording ("warning signs include ...") is required, not optional |
+| Brief 4, packet 2f | Gemini skill as the core build | gm-13 (V, dated 2026-10-13) proves skills exist. The skill limits (100 MB, files) come from gm-01, which is undated (PV). Research rule 3 is met only in part | Find a dated Google doc for the limits before Gate 2, or record the risk |
+| Brief 4 | Claude core features (cl-pj-01, cl-cl-03, cl-fo-06) | Pages show relative dates only. Accepted as dated with the access date | Record the access date at the Gate 2 proof |
+| `rerun-track-1.yaml`, W6 | W6 status "verified" | This report marks W6 "not verified" (not reopened). The rerun file copied a researcher status with no verifier note. The brief and packet use "NV", which is correct | Set W6 to "not verified" in the rerun file when the Synthesizer merges, or reopen it |
+| Brief 3, packet 5 check 2 | Bottleneck rows 02 and 09 pass | All 4 sources (W1, W22, W25, W26) are vendor or vendor-run, with no time or cost data. The packet states this | Dan decides if this is strong enough (PRD decision 37) |
+| Brief 3, E1 row | "Strongest design evidence" | Only the research page was opened. The full paper (PDF) was not opened. Vendor studies its own model | Open the PDF before any slide (packet gap 21) |

@@ -16,3 +16,4 @@
 - Verifier done: 44 verified, 13 partly, 26 not verified, 0 wrong. Rows 04, 05, 10 partly pass the 2-source rule. E9 draft may not be cited. 07:07 UTC: Verifier on rerun entries (15 fetches).
 - Rerun entries verified (sp-wf-02 passes on W25, W26; sp-wf-11 partly passes; N21 verified). 07:10 UTC: Step 4, Synthesizer.
 - Synthesizer done: 6 rows retained, 3 folded, 1 out of scope, 1 deferred, 5 modules; decisions a to k. 07:18 UTC: Step 5, trace check.
+- Trace check done (about 140 claims, 8 wording fixes, 7 flags added to packet section 8). Paused 07:19 to 09:35 UTC by a usage limit.
