@@ -67,3 +67,52 @@ Written 2026-11-22. Ids refer to `platform-matrix.yaml`. Web fetch budget used: 
 | G2-12 | Memory isolation for a "blind" second scorer run not checked for Copilot and Gemini | cg-14 | Check vendor memory pages next run |
 | G2-13 | No 2026 study found that compares agent-manager methods (sensitivity tests, scorer consistency checks, trace-to-source) for AI-assisted prioritization. Methods are design choices, not findings | methods.md | Evidence track may search. Not a blocker |
 | G2-14 | Not opened (budget): ChatGPT scheduled tasks page (can a task use a skill or Work), Gemini in Sheets spreadsheet post, last part of ChatGPT release notes | not_opened list | Next run |
+
+## Track 1: workflows
+
+Written 2026-11-22 by the workflow researcher. File: `research/workflows.yaml` (10 rows). Fetch budget: 25 of 25 used.
+
+### Context gaps (hardware and internal PM)
+
+| Row | Hardware | Internal PM |
+| --- | --- | --- |
+| sp-wf-01 strategy drift check | Partial (W22, vendor) | gap |
+| sp-wf-02 opportunity re-scoring | Partial (W6, vendor, figures not usable) | gap |
+| sp-wf-03 market size model | gap | gap |
+| sp-wf-04 concept test results | gap | gap |
+| sp-wf-05 assumption register | Partial (W15 aged, W6 vendor) | Partial (W23, public sector) |
+| sp-wf-06 buy, build or partner pack | gap | Partial (W16, W18, context only) |
+| sp-wf-07 roadmap theme refresh | Partial (W19) | Partial (W24, 2023, aged) |
+| sp-wf-08 roadmap change notes | Partial (W19) | gap |
+| sp-wf-09 portfolio review pack | Partial (W22, W19) | Partial (W1, Expedia anecdote) |
+| sp-wf-10 outcome tracking | gap | Partial (W23, public sector) |
+
+### Source gaps
+
+1. Most bottleneck sources are vendor or consultancy blogs with no data. Only W2, W3, W12, W14 and W18 hold survey data, and none is fully verified.
+2. W2 (Atlassian strategic portfolio study, 308 leaders): publish date and method not stated. Confirm it is a 2026 study.
+3. W3 (Product-Led Alliance State of PM 2026): primary report not opened.
+4. W20 (ProdPad): figures come from a "2026 State of B2B Product Management survey". Not opened.
+5. sp-wf-04 concept tests: no 2026 source specific to concept test analysis. W12 is about research in general. Weak pass.
+6. sp-wf-05 business case: W14 polls valuation practitioners, not PMs. W15 is from 2024 (age flag). No 2026 product-team source.
+7. sp-wf-02 scoring: both sources (W4, W5) are unsigned and have no data.
+8. Age-flagged sources for Dan to decide: W9 (2025-04-21), W10 (2023), W15 (2024), W21 (2019), W24 (2023).
+
+### Scope questions for Dan
+
+1. sp-wf-04 maps to skill 6.4 (Design course), not Capability 2. Keep, move or drop.
+2. sp-wf-01 and sp-wf-09 use the same data for different jobs. Merge or keep both.
+3. sp-wf-01 is close to the Focus 28.01 tip "use AI to check roadmap updates against the Strategy Matrix and OKRs".
+4. sp-wf-02 tag: the workbook primary box for 2.2 is Market / Competitive Landscape. The row uses Focus / Product Portfolio.
+5. sp-wf-07 may overlap the partner course Mastering the Product Roadmap. Not checked.
+
+### Not opened (budget reached)
+
+- Pragmatic Institute, Managing Internal Feature Requests (internal PM lead)
+- ideaplan, How to prioritize internal tool requests (internal PM lead)
+- Atlassian whitepaper behind W2; Product-Led Alliance State of PM 2026 report behind W3
+- Retool 2026 AI build vs buy report (cited in W16)
+- TechTarget, Build vs. buy AI: a CIO's decision matrix
+- Deloitte, semiconductor product management solutions; Built In, AI hardware product management guide (hardware leads)
+- New Zealand Treasury Investment Realisation guidance (cited in W23)
+- Market Research ledger E6 to E9 (platform features): not re-verified in this run

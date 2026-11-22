@@ -1,0 +1,1039 @@
+# Workflow inventory: Advanced AI for Product Strategy and Planning (Stage 1, track 1, run 1)
+# Written 2026-11-22 by the workflow researcher. Schema: shared/templates/workflow-row.yaml.
+# Model row for depth: courses/market-research/research/worked-example-row.yaml (not copied).
+# Added fields: origin (carried-over rows), capability_skill (workbook skill id and name),
+# bottleneck.sources_check (pass or fail for the 2-source rule), proposed_lab.planted_error, success_check, pragmatic_fit.
+# Evidence ids W1 to W24 are unique in this file. A row repeats the full entry when it reuses an id.
+# Competency names 2.1B and 2.4D are split across cells in the workbook extract; read as 'Explicit vs. Implicit Strategy Analysis' and 'Alignment to Market Problems and Strategy'.
+# Platform notes cite the Market Research ledger (E6 to E9); not re-verified in this run.
+# Fetch budget: 25 of 25 used. Unopened sources are listed in research/gaps.md under Track 1.
+# Dropped: Atlassian State of Product 2026 (published 2025-09-03, a 2025 study, research rule 4);
+#   airfocus stakeholder survey (2025, sponsored); Mind the Product 2025 survey (cited in W5).
+- id: sp-wf-01
+  workflow: Check where work and money actually go against the stated strategy, each quarter
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 2.1 Strategy Alignment (competency 2.1B Explicit vs. Implicit Strategy Analysis)
+  trigger_and_cadence: Each quarter before planning, and when leadership changes a priority. Assumption, 4 times a year plus ad hoc
+  input: The stated strategy (Strategy Matrix or strategy memo), the roadmap, a work export (epics or projects with team and effort), and headcount or budget by team
+  output: 'A drift report: share of effort and spend per strategic choice, work that maps to no choice, choices with no work, the trend over quarters, and a flag report for the PM'
+  pm_decision_informed: Where the implicit strategy differs from the explicit one, and whether to change the work or change the stated strategy
+  bottleneck:
+    description: Leaders believe the strategy is clear, but few can show that the work is linked to it. Showing the link means pulling data from many tools and status updates by hand, so drift is found late or not at all. Strategy work also gets little of the PM's time
+    pdlc_stage: Market
+    focus_area: Product Strategy
+    sources:
+    - W1
+    - W3
+    sources_check: 'pass. W1 (with its primary W2, one source) and W3 are independent and from 2026. Both statistics are partly verified: primary reports not opened'
+  scores:
+    judgment: medium. Mapping work to strategy choices is rule-based; deciding what the drift means needs the PM and leaders
+    repetition: medium to high. Every quarter, across every team and epic
+    ai_candidate: yes. The agent gathers, maps and totals; the PM interprets
+  split:
+    agent_does:
+    - Map each epic or project to one strategic choice, with the reason
+    - Total effort and spend per choice
+    - List work that maps to no choice and choices with no work
+    - Compare with last quarter and mark what grew or shrank
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the strategy choices with a plain definition of each, the data sources, the mapping rules, output format
+      quality_checks:
+      - Each work item has one mapping and a written reason
+      - Totals per choice add up to the total effort in the export
+      - Each number shows its source file and date
+      handoff_rules:
+      - Work that maps to no choice and is larger than the set size
+      - A choice that gets less than the share the PM set in the brief
+      - A mapping that rests only on a label or tag, with no description to support it
+      audit: 5 random work items per quarter, read in full and mapped by hand. Compare with the agent's mapping
+    pm_decides:
+    - The strategy choices and their definitions
+    - Whether drift is a problem or a new implicit strategy to make explicit
+    - What to raise with leaders
+    ai_error_to_catch: 'Label laundering. Teams tag maintenance or pet projects with the name of a strategic theme, so the agent maps them as aligned. Each item has a mapping and a reason (the reason repeats the tag), so the checks pass. The audit reads what the work does and finds the gap. Fix: the brief tells the agent to map from the work description, not the tag'
+  contexts:
+    hardware: Partial. W22 says hardware programs run on stage gates of months while software ships in weeks, so a quarterly view hides drift. Drift in hardware shows in engineering hours, tooling and test spend. No source for a drift check itself
+    internal_pm: gap. Internal platform teams fit well (stated platform strategy vs ticket mix), but no source found
+    industry_notes:
+    - 'health care and FinTech: compliance work is often large and maps to no choice. The brief needs a ''must do'' category. Not yet researched'
+  proposed_lab:
+    goal: Delegate the quarterly strategy drift check to the agent, and manage it by its checks, flags and an audit
+    core_message: The stated strategy is what leaders say. The implicit strategy is where the work goes. The agent counts; the PM decides what the gap means
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads a strategy page and a work export from their own work or the fallback case
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Read the work export from a connected work tracker on a schedule, where the platform allows (not verified)
+    planted_error: 'Label laundering: 3 epics tagged with a strategic theme that are maintenance work'
+    success_check: The drift report lists work with no strategy choice, flags tag-only mappings, and the audit finds the planted epics
+    registry_check: 'Focus 28.01 teaches explicit vs implicit strategy, strategic drift and the Strategy Matrix, and has a one-pass activity where AI drafts the Alignment to Strategy box. It also has a tip to use AI to check roadmap updates against the Strategy Matrix and OKRs. This row starts where Focus stops: no slides that reteach the concepts; the agent measures drift from real work data each quarter, with checks, flags, trend and audit. Risk: the Focus tip is close; Dan to confirm. No workshop overlap (CAW-AI and AI-AGENTS are about competitors)'
+    pragmatic_fit: Good fit. Workbook 2.1B is exactly this comparison, and the 2.1 AI text says 'expose implicit strategy'
+  evidence:
+  - id: W1
+    claim: 80% of 308 senior leaders say their strategic priorities are clear, but only 11% can show that at least three quarters of portfolio work is explicitly linked to them. 83% rely on manual status updates and personal judgment. 72% say competing priorities chronically overstretch key teams. Expedia quarterly priority reviews took weeks of preparation and outreach to 50 or more PMs
+    type: statistic
+    source: 'Shift happens: Finding and fixing the gap between strategic intent and actual work, Sapphire Reels, Atlassian blog'
+    url: https://www.atlassian.com/blog/leadership/gap-between-intent-and-work
+    source_date: '2026-09-28'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified (secondary report of W2)
+    note: Vendor of portfolio software reports its own study. Primary study is W2; W1 and W2 count as one source. Expedia item is a conference anecdote (Team 26, 2026-05-06), not study data
+  - id: W2
+    claim: Only 11% have execution work connected to strategy in a system; 80% say their strategy is clear; only 8% use dynamic, outcome-based funding; nearly two thirds take a month or more to decide after a performance signal
+    type: statistic
+    source: 'Leading the Human + AI Enterprise: A New Playbook for Strategic Portfolio Management, Atlassian (report landing page)'
+    url: https://www.atlassian.com/collections/strategy/strategic-portfolio-management-evolution
+    source_date: unknown (reported 2026-09-28 in W1)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: partly verified
+    note: 308 senior enterprise leaders. Publish date, method and field dates not stated on the page; whitepaper not opened. The 11% wording differs from W1. Vendor study. Confirm it is a 2026 study before any slide use
+  - id: W3
+    claim: 'Roadmap to strategy alignment averages 3.6 of 5 and outcome to company goal connection 3.5 of 5. Top causes of misalignment: resource and capacity limits (49.2%), short-term priority shifts (47.5%), leadership direction changes (43.9%). 72.2% spend 25% or less of their time on product strategy'
+    type: statistic
+    source: The strategy-execution gap in product teams, Rebecca Stewart, Product-Led Alliance
+    url: https://www.productledalliance.com/the-strategy-execution-gap-in-product-teams/
+    source_date: '2026-03-11'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: partly verified
+    note: Cites the 2026 State of Product Management report, about 250 product leaders, method not given. Primary report not opened. Practitioner community that sells reports. Independent of W1 and W2
+  - id: W22
+    claim: Portfolio and roadmap reviews run on decks and spreadsheets that are already stale; meetings become data reconciliation, not decisions; one person becomes the 'human integration layer' who stitches engineering and procurement updates; hardware runs on stage gates of months while software ships in weeks, so dependencies stay hidden
+    type: claim
+    source: Why product portfolio reviews keep tracking sideways, Maziar Adl, Gocious
+    url: https://gocious.com/blog/why-product-portfolio-reviews-keep-tracking-sideways
+    source_date: '2026-05-05'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Hardware product management software vendor. No data
+  open_gaps:
+  - Primary reports for W2 (date, method) and W3
+  - Internal PM source
+  - Hardware source for drift checks
+  gate_1_decision: ''
+- id: sp-wf-02
+  workflow: Re-score the opportunity backlog each intake cycle, with sensitivity and consistency checks
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 2.2 Opportunity Prioritization (competencies 2.2C Weighting and Priority Logic, 2.2D Calibration and Consistency)
+  trigger_and_cadence: Each intake or planning cycle, and when new evidence arrives for a scored item. Assumption, monthly or quarterly
+  input: The scoring model (attributes, scales, weights), the opportunity list, new evidence per opportunity, and scores from each scorer
+  output: An updated scored list with the evidence for each score, a sensitivity table (which weight changes flip the top items), a consistency table (where scorers disagree), an override log, and a flag report
+  pm_decision_informed: Which opportunities advance, pause or stop this cycle
+  bottleneck:
+    description: 'Scores look objective but behave like opinions: scorers read the same criteria differently, weights change each cycle, and the loudest stakeholder wins. Teams re-litigate priorities every cycle instead of rescoring with evidence'
+    pdlc_stage: Focus
+    focus_area: Product Portfolio
+    sources:
+    - W4
+    - W5
+    sources_check: pass, weak. W4 and W5 are independent and from 2026, but both are unsigned content from vendor sites with no data
+  scores:
+    judgment: medium. Applying the scales is rule-based; weights and the final call are the PM's
+    repetition: high. Every item, every cycle
+    ai_candidate: 'yes'
+  split:
+    agent_does:
+    - Score new items and rescore items with new evidence
+    - Link each score to its evidence
+    - Run the sensitivity test the brief sets
+    - Compare scores between scorers and list gaps larger than the set range
+    - Log every manual override with who and why
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the scoring model, the evidence rules per attribute, the sensitivity range, the consistency range, output format
+      quality_checks:
+      - Each score has evidence and a date
+      - Each score is inside the scale
+      - The sensitivity test is run for each weight
+      - Each override has a name and a reason
+      handoff_rules:
+      - Top items that change when one weight moves inside the set range
+      - Scorers more than the set range apart on one attribute
+      - An item that moved more than 2 places since last cycle
+      - Any override of the model's ranking
+      audit: '3 items per cycle: trace each attribute score to its evidence by hand'
+    pm_decides:
+    - The attributes, scales and weights
+    - How to resolve scorer disagreement (calibration)
+    - What advances, pauses or stops
+    ai_error_to_catch: One piece of evidence counted twice. A single large customer request is cited as evidence for both 'Impact to buyers' and 'Competitive landscape', so one sales push lifts the score twice. Each score has evidence, and the ranking is stable in the sensitivity test, so the checks pass. The audit traces evidence per attribute and finds the reuse
+  contexts:
+    hardware: Partial. W6 (vendor, figures not usable) says hardware screening criteria should be calibrated against past ideas and kill triggers set before a gate, because each later stage costs about 10 times more. No independent source
+    internal_pm: 'gap. Leads not opened: Pragmatic Institute ''Managing Internal Feature Requests'' and an ideaplan guide on internal tool requests'
+    industry_notes:
+    - 'regulated industries: some items are mandatory and must sit outside the scored list. Not yet researched'
+  proposed_lab:
+    goal: Delegate the scoring cycle to the agent, and manage it by sensitivity and consistency flags
+    core_message: The model does not decide. It shows where the decision is fragile and where people disagree
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads their scoring model and backlog, or the fallback case set
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Rescore when new evidence lands in a shared folder, where the platform allows (not verified)
+    planted_error: One customer request cited under two attributes
+    success_check: The sensitivity table names the fragile items, the consistency flag lists the scorer gap, and the audit finds the double-counted evidence
+    registry_check: 'Focus 28.01 teaches the 4 attributes, 1 to 5 scoring, weights and the scoring table, and a one-pass AI competitive landscape. This row does not reteach the model: it starts with a model and runs it each cycle with sensitivity, consistency and an override log. AI-AGENTS (Dan''s course) maps to 2.2; check its labs do not score opportunities. Must not use a competitive watch agent (CAW-AI, Competitive Intel Watchdog)'
+    pragmatic_fit: 'Good fit. The 2.2 AI text says ''run sensitivity tests, surface scoring inconsistencies''. Tag note: the workbook primary box for 2.2 is Market / Competitive Landscape; this workflow fits the secondary box Focus / Product Portfolio better. Dan decides'
+  evidence:
+  - id: W4
+    claim: Two groups read the same criteria (impact, effort) differently, so scores look objective but behave like opinions. Changing weights each cycle makes the rubric negotiable and teams re-litigate decisions each planning cycle. If small weight changes flip the top 10, the rubric is fragile
+    type: claim
+    source: Building a repeatable prioritization rubric that survives leadership changes, fitgap
+    url: https://us.fitgap.com/stack-guides/building-a-repeatable-prioritization-rubric-that-survives-leadership-changes
+    source_date: '2026-01-19'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: No author named. Software comparison site. Weak source; no data
+  - id: W5
+    claim: Without systematic analysis the loudest stakeholder wins; features get built because a sales rep pushed a deal or an executive had a bad customer call; reasoning behind priorities is often undocumented
+    type: claim
+    source: How AI Product Management Ends the Loudest-Voice-Wins Problem, staff writer, Virtasant Enterprise AI Today
+    url: https://virtasant.com/ai-today/how-ai-product-management-ends-the-loudest-voice-wins-problem
+    source_date: '2026-02-24'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: 'No author named. Cloud consultancy blog. Its survey figures come from Mind the Product 2025 and an unsourced 61% figure: do not use them. Independent of W4'
+  - id: W6
+    claim: 'Hardware stage gates: each stage raises the cost of being wrong about 10 times; most kills happen late, after 1M USD or more per program; kill triggers should come from each program''s original business case assumptions; screening criteria calibrated against 20 past ideas'
+    type: claim
+    source: Building Kill Discipline Into Hardware Product Portfolios, Christina Woelfel, ITONICS
+    url: https://www.itonics-innovation.com/blog/hardware-product-portfolios
+    source_date: '2026-06-01'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: 'Innovation software vendor. Case figures are anonymized ''observed practice'' with no named source: do not use the numbers. Useful as a hardware context lead only'
+  open_gaps:
+  - A dated, signed source with data on scoring inconsistency
+  - Hardware and internal PM sources
+  gate_1_decision: ''
+- id: sp-wf-03
+  origin: mr-wf-06
+  workflow: Build and refresh a sourced market size and segment evidence model
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 2.3 Business Case Development (competency 2.3B Market Value and Sizing)
+  trigger_and_cadence: A new opportunity or segment question, then a refresh each quarter or when a new source appears
+  input: The market question, segment definitions, analyst and public sources, and the PM's own customer data
+  output: A top-down and bottom-up size model, each number linked to source, date, unit, scope and base year; an assumptions list with risk ratings; a 'what changed' note on refresh; and a flag report
+  pm_decision_informed: Which segment is large and reachable enough to put into the business case
+  bottleneck:
+    description: Published estimates for one market can differ by 5 times or more because they measure different layers, scopes, units and base years. The PM must align each source before any comparison, and data goes stale, so the work repeats
+    pdlc_stage: Focus
+    focus_area: Market Definition
+    sources:
+    - W7
+    - W8
+    sources_check: pass. W7 and W8 are independent and from 2026 (both are data vendors). Old W9 and W10 kept with age flags; Dan decides
+  scores:
+    judgment: medium to high. Which assumptions to accept is a judgment
+    repetition: medium. Each new question and each refresh
+    ai_candidate: partly. The agent finds, normalizes and computes; the PM owns the assumptions
+  split:
+    agent_does:
+    - Find data points for each model input
+    - Record source, date, unit, scope, region and base year for each
+    - Convert numbers to one basis before any comparison
+    - Build top-down and bottom-up estimates
+    - On refresh, find new data and report what changed
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, market question, segment definitions, approved source types, maximum source age, the common basis (unit, scope, region, year), output format
+      quality_checks:
+      - Each number has a source, date and link
+      - Each number shows its unit, scope and base year
+      - Each source is checked for the study it repeats
+      - Each assumption has a risk rating
+      handoff_rules:
+      - Top-down and bottom-up differ by more than the set range
+      - A number that rests on one source only
+      - A source older than the maximum age
+      - A number that could not be converted to the common basis
+      audit: 3 numbers per model, traced to the original source by hand, with the scope read in the source
+    pm_decides:
+    - Segment definitions
+    - Which assumptions to accept
+    - Which segment goes into the business case
+    ai_error_to_catch: Layer mixing. The agent 'confirms' a top-down figure with a second estimate that measures a different layer (end-use value, not vendor revenue) or a wider scope, and reports the two as agreeing. Each number has a source, unit and date filled in, so the checks pass. The audit reads the scope in the source and finds the mismatch. Market Research used 'fake triangulation' for this row; it can stay as a second error if Dan prefers
+  contexts:
+    hardware: Sizing by installed base, units and replacement cycles instead of seats. gap, no source found
+    internal_pm: Sizing the internal market (teams, users, workflows) for an internal platform. gap, no source found
+    industry_notes:
+    - 'health care and FinTech: regulatory and licensing data shape the reachable market. Not yet researched'
+  proposed_lab:
+    goal: Extend the course agent to build a sourced size model and flag weak, stale and mismatched numbers
+    core_message: The agent finds numbers fast. The PM decides which numbers to trust
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: partly. Core path uses a source pack from the fallback case; live web search is the stretch
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill with the model template and source rules
+      chatgpt: Project with the model template (Market Research ledger E9, not verified)
+      copilot: Agent with the model template as an embedded file (Market Research ledger E6); web grounding not verified
+      gemini: Gemini skill with the template (Market Research ledger E8). Deep research does not work in skills
+    stretch: Let the agent search for new data each quarter
+    planted_error: Two estimates from different layers reported as agreeing
+    success_check: The model shows one basis for every number and the flag report names the planted mismatch
+    registry_check: 'Carried over from Market Research (Dan, Gate 1, 2026-11-22). Focus 28.01 teaches TAM, segment and projected share as a one-pass exercise. This row starts there: a living model with source and basis checks, refreshes and an audit. MKT-2026 teaches segmentation; not retaught. Check the Market Research course no longer includes this row'
+    pragmatic_fit: Good fit. The 2.3 AI text says 'model market size' and 'source data and calculations remain auditable'
+  evidence:
+  - id: W7
+    claim: Published 2030 estimates for one market range from about 4B to more than 20B USD because they measure different layers (vendor revenue, economic impact, end-use value), base years and scopes. Never add the two layers
+    type: claim
+    source: Why do quantum market size estimates differ so much?, TQI Market Intelligence team, The Quantum Insider
+    url: https://thequantuminsider.com/why-do-quantum-market-size-estimates-differ/
+    source_date: '2026-09-15'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Updated 2026-09-30. Publisher sells the dataset it cites. One market only (quantum), used as a worked example of the reconciliation burden
+  - id: W8
+    claim: Market size numbers differ between research firms by definition, base year, regional coverage, unit and currency, method, source depth and update timing. The buyer must align definitions, years and coverage before comparing; an estimate is a model, not a measured fact
+    type: claim
+    source: Why Do Market Size Numbers Differ Between Research Firms? A Buyer's Guide to Reading Forecasts, Likhil Gajbhiye, Polaris Market Research
+    url: https://www.polarismarketresearch.com/blog/why-market-size-numbers-differ-between-research-firms
+    source_date: 2026-10 (month only)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Market research vendor that sells reports. Independent of W7
+  - id: W9
+    claim: The needed market number rarely exists in reports; sources conflict and often quote one source; secondary research takes a lot of time
+    type: claim
+    source: Common challenges of TAM research, Joe Radwich, Product Marketing Alliance
+    url: https://www.productmarketingalliance.com/common-challenges-of-tam-research/
+    source_date: '2025-04-21'
+    checked_on: '2026-11-20'
+    age_flag: true
+    status: verified (2026-11-20, not reopened)
+    note: Was W9 in mr-wf-06. Older than 12 months; Dan decides
+  - id: W10
+    claim: Market sizing is a lot of desk research, rests on written assumptions, needs several iterations, and data goes stale fast
+    type: claim
+    source: A modern approach to market sizing, Bart Krawczyk, LogRocket
+    url: https://blog.logrocket.com/product-management/innovative-approach-to-market-sizing
+    source_date: '2023-04-04'
+    checked_on: '2026-11-22'
+    age_flag: true
+    status: verified
+    note: Was W19 in mr-wf-06. Last modified 2023-12-20. Older than 12 months; Dan decides. Its own worked example has arithmetic errors (10% of 23 million stated as 230,000), which is a usable teaching example
+  open_gaps:
+  - Hardware and internal PM sizing sources
+  - A non-vendor 2026 source
+  gate_1_decision: ''
+- id: sp-wf-04
+  origin: mr-wf-08
+  workflow: Turn each round of concept or prototype tests into a result per hypothesis
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 6.4 Ideation, Evaluation, and Prototyping (no Capability 2 skill fits better; results feed 2.3 Business Case Development)
+  trigger_and_cadence: Each round of concept tests, unmoderated tests or pilots. Assumption, every 2 to 4 weeks during validation
+  input: Session notes or transcripts, task results, and the test plan with hypotheses and pass criteria set before the test
+  output: A result per hypothesis (pass, fail, unclear) with evidence, stated preference set apart from observed behavior, the counts used for each result, and a flag report
+  pm_decision_informed: Which concept goes forward into the business case, changes or stops
+  bottleneck:
+    description: Research demand grows faster than research capacity, so analysis is squeezed into tight timelines. Concepts that test well on stated intent often fail after launch, because what people say differs from what they do. The cost shows up only in a slow postmortem
+    pdlc_stage: Planning
+    focus_area: Ideation
+    sources:
+    - W11
+    - W12
+    sources_check: weak pass. W11 and W12 are independent and from 2026, but W12 is about research in general, not concept tests. W13 (old W16) not verified and not counted. Dan decides
+  scores:
+    judgment: medium to high. Pass criteria are set in advance; mixed results need the PM
+    repetition: medium to high. Every session in each round
+    ai_candidate: partly
+  split:
+    agent_does:
+    - Code each session against the hypotheses
+    - Separate what people said from what they did
+    - Count results against the full sample in the test plan
+    - Score each hypothesis against its pass criteria
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, hypotheses, pass criteria with the sample size, output format
+      quality_checks:
+      - Each result cites sessions and quotes
+      - Stated and observed evidence are in separate columns
+      - Each result shows its numerator and denominator
+      handoff_rules:
+      - Stated preference and behavior disagree
+      - A result that rests on fewer sessions than the brief allows
+      - A session that the agent left out of a count, with the reason
+      audit: 2 sessions per round read in full, and each result recounted from the test plan
+    pm_decides:
+    - Hypotheses and pass criteria
+    - Go, change or stop for each concept
+    ai_error_to_catch: Denominator drift. The agent counts task success only among participants who reached the task (6 of 7) instead of all participants in the plan (6 of 12), so the hypothesis passes. Each result shows a numerator and denominator, so the check passes. The audit recounts against the test plan and finds it
+  contexts:
+    hardware: Tests with physical prototypes and field pilots. gap, no source found
+    internal_pm: Pilots of an internal tool with one team. gap, no source found
+    industry_notes:
+    - 'health care: tests with clinicians or patients need consent and privacy rules. Not yet researched'
+  proposed_lab:
+    goal: Extend the course agent to score a round of concept tests against the hypotheses
+    core_message: Set the pass criteria and the sample before the agent reads the sessions
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads session notes from the fallback case
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Read transcripts from a testing tool where connected (not verified)
+    planted_error: Task success counted on the wrong denominator
+    success_check: Each result shows counts against the full plan, and the flag report lists the said vs did conflict
+    registry_check: 'Carried over from Market Research (Dan, Gate 1, 2026-11-22). Focus 28.01 has a one-pass activity where learners interview an AI persona; this row uses real test sessions only (theme: AI personas only from collected data). No workshop overlap. Scope question: Planning / Ideation and skill 6.4 belong to the Design course; Dan decides if it stays here as business case evidence'
+    pragmatic_fit: Partial fit. Fits skill 6.4, not Capability 2. Keep only if the course needs an evidence step before the business case
+  evidence:
+  - id: W11
+    claim: Concepts that test well on appeal and stated intent often underperform after launch; postmortems find people said one thing and did another; stated importance differs from what predicts behavior; postmortem research is slow and arrives after budgets are spent
+    type: claim
+    source: Why what consumers say rarely explains what they do, William Cimarosa (Egg Strategy), Quirk's
+    url: https://www.quirks.com/articles/why-what-consumers-say-rarely-explains-what-they-do
+    source_date: '2026-05-01'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Research agency practitioner. No measured data. Consumer goods focus
+  - id: W12
+    claim: 'Research demand rose: 66% of respondents report more demand in 2026 vs 55% in 2025; ''the infrastructure has not kept up''; researchers end up wrangling transcripts under tight timelines; 69% use AI in some research projects'
+    type: statistic
+    source: The Future of User Research Report 2026, Maze
+    url: https://maze.co/resources/user-research-report/
+    source_date: unknown (survey fielded 2025-12-23 to 2026-01-13)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: About 500 responses, online survey by a research tool vendor. General research, not concept tests only. Publish date not shown; field dates end in 2026
+  - id: W13
+    claim: Qualitative research takes about 6 weeks; manual coding takes 2 to 3 hours per interview; concept reviews close before findings arrive
+    type: claim
+    source: Is Qualitative Research Time-Consuming?, Florian Hendrickx, Conveo
+    url: https://conveo.ai/insights/is-qualitative-research-time-consuming
+    source_date: '2026-08-18'
+    checked_on: '2026-11-20'
+    age_flag: false
+    status: not verified
+    note: Was W16 in mr-wf-08. AI research vendor, no primary data. Not reopened. Not counted toward the 2-source rule
+  open_gaps:
+  - A concept test specific 2026 source
+  - Hardware and internal PM sources
+  - Scope decision (Design course vs this course)
+  gate_1_decision: ''
+- id: sp-wf-05
+  workflow: Keep the business case assumption register current and red-team it before each decision point
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 2.3 Business Case Development (competencies 2.3C Cost, Profit, and Resource Logic and 2.3F Stakeholder Argumentation)
+  trigger_and_cadence: Before each funding or stage gate decision, and when evidence for a key assumption changes. Assumption, quarterly
+  input: The current business case or Product Canvas, the assumptions behind revenue, cost and adoption, new evidence since the last version
+  output: An assumption register (each assumption, its evidence, date, owner, and its effect on the result), a red-team note on the assumptions that move the result most, a 'what changed' note, and a flag report
+  pm_decision_informed: Whether the case still holds at the next decision point, and which assumptions to test next
+  bottleneck:
+    description: Business cases go stale during execution, and teams rarely recheck the original assumptions. Forecasts lean optimistic, most of all on revenue growth, and few organizations back-test them in a structured way
+    pdlc_stage: Business
+    focus_area: Business Plan
+    sources:
+    - W14
+    - W15
+    sources_check: pass, weak. W14 (2026) and W15 are independent. W14 polls valuation practitioners, not PMs, sample not stated. W15 is older than 12 months; Dan decides
+  scores:
+    judgment: high. Accepting an assumption is a judgment
+    repetition: medium. Each decision point and each evidence change
+    ai_candidate: partly. The agent keeps the register and runs the arithmetic; the PM owns the case
+  split:
+    agent_does:
+    - List every assumption in the case
+    - Link each to its evidence and date
+    - Compute how much each assumption moves the result (low, base, high)
+    - Red-team the assumptions that move the result most
+    - Report what changed since the last version
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the case file, the model, the ranges to test, the evidence rules, output format
+      quality_checks:
+      - Each assumption has evidence, a date and an owner
+      - Each assumption has a low, base and high value
+      - The red-team note covers the assumptions ranked highest by effect
+      handoff_rules:
+      - An assumption with no evidence, or evidence older than the set age
+      - An assumption whose evidence changed since the last version
+      - Any result that flips sign (profit to loss) inside the tested range
+      audit: 'The 2 assumptions with the largest effect: read their evidence in full'
+    pm_decides:
+    - Which assumptions to accept
+    - What goes to stakeholders
+    - Whether to continue, change or stop
+    ai_error_to_catch: Evidence that supports a different claim. The adoption assumption links to a survey of stated interest, not a pilot with real use, so the evidence field is filled and dated. The checks pass. The audit reads the evidence for the top assumption and finds it does not support the number
+  contexts:
+    hardware: Partial. W15 lists production and supply chain uncertainty as business case assumptions to recheck; W6 says hardware kill triggers should come from the program's original business case assumptions. Both weak (W15 aged, W6 vendor)
+    internal_pm: Partial. W23 (New Zealand Treasury) covers business cases for internal digital and equipment investments. Public sector, not product management
+    industry_notes:
+    - 'FinTech and health care: regulatory approval timing is often the largest assumption. Not yet researched'
+  proposed_lab:
+    goal: Extend the course agent to keep the assumption register and red-team the case before each decision
+    core_message: A business case is a living list of bets. The agent keeps the list; the PM decides which bets to keep
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads their case or the fallback case canvas
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Rerun when a linked evidence file changes, where the platform allows (not verified)
+    planted_error: Adoption assumption backed by stated-interest evidence
+    success_check: The register ranks assumptions by effect and the audit finds the planted evidence mismatch
+    registry_check: 'Focus 28.01 teaches value types, the Product Canvas and a one-pass AI Value and Cost Snapshot, plus risks stakeholders raise. This row starts after the canvas exists: a register over time, sensitivity and red-team at each decision point. Intro to AI and AI in Your Product map to 2.3; check they do not run an assumption register. No workshop overlap'
+    pragmatic_fit: Good fit. The 2.3 AI text says 'identify assumptions and risks, and red-team the business case'
+  evidence:
+  - id: W14
+    claim: 'Poll of valuation practitioners: 86% say projections hold only occasionally (62%) or rarely (24%) after a deal; 67% see the most aggressive optimism in revenue growth; only 37% have a structured, documented back-testing process; 46% say the biggest obstacle is pushback from management'
+    type: statistic
+    source: 'From projections to price: managing bias in corporate forecasts, KPMG (West Africa, Deal Advisory)'
+    url: https://assets.kpmg.com/content/dam/kpmgsites/ng/pdf/2026/06/From%20projections%20to%20price-Managing%20bias%20in%20corporate%20forecasts.pdf.coredownload.inline.pdf
+    source_date: 2026-06 (from URL path; page shows 2026 copyright only)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified, weak
+    note: KPMG webinar poll, sample size not stated. Population is deal and valuation practitioners, not PMs. Use as a business plan forecast burden only, not as a PM statistic
+  - id: W15
+    claim: New product business cases go stale during execution; teams rarely recheck the original hypotheses; few organizations revisit them often enough; critical assumptions should be reviewed at least quarterly; one client ran 25 or more projects but launched 2 to 3 a year
+    type: claim
+    source: 'Business cases in flux: why frequent re-evaluation fuels successful launches, Oliver Wight EAME (author not named)'
+    url: https://oliverwight-eame.com/news/business-cases-in-flux-why-frequent-re-evaluation-fuels-successful-launches
+    source_date: '2024-02-12'
+    checked_on: '2026-11-22'
+    age_flag: true
+    status: verified
+    note: Planning consultancy with manufacturing clients. Older than 12 months; Dan decides. Mentions supply chain and production uncertainty
+  - id: W6
+    claim: 'Hardware stage gates: each stage raises the cost of being wrong about 10 times; most kills happen late, after 1M USD or more per program; kill triggers should come from each program''s original business case assumptions; screening criteria calibrated against 20 past ideas'
+    type: claim
+    source: Building Kill Discipline Into Hardware Product Portfolios, Christina Woelfel, ITONICS
+    url: https://www.itonics-innovation.com/blog/hardware-product-portfolios
+    source_date: '2026-06-01'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: 'Innovation software vendor. Case figures are anonymized ''observed practice'' with no named source: do not use the numbers. Useful as a hardware context lead only'
+  - id: W23
+    claim: 'After an investment goes live, reviewers check if business case benefits are realized: warning signs are output measures that only show delivery, weak or outdated evidence, reporting without action, unclear attribution, double counting, and no comparison to the business case baseline and forecast. Guidance suggests annual tracking for up to 3 years'
+    type: claim
+    source: 'IDA Review Point 6: Operational Benefits Realisation (workbook), Investment Management and Strategy Team, New Zealand Treasury'
+    url: https://www.treasury.govt.nz/sites/default/files/2026-10/decaf-review-point-6-operational-benefits-realisation-oct26.pdf
+    source_date: 2026-10 (month only)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Government assurance workbook for digital, equipment and change investments. No statistics. Public sector internal investment context
+  open_gaps:
+  - A 2026 source on business case burden from product teams
+  - Hardware source with data
+  gate_1_decision: ''
+- id: sp-wf-06
+  workflow: Keep a buy, build or partner option pack current for each open capability decision
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 2.3 Business Case Development (secondary box Buy, Build or Partner; the 2.1 AI text also names build and buy choices)
+  trigger_and_cadence: Each new capability question, then a refresh when a vendor changes price, model or terms. Assumption, a few times a year per product
+  input: The capability need, the evaluation criteria, vendor and partner documents, internal cost rates and team capacity
+  output: 'An option pack: each option with dated vendor facts, 3-year total cost (build, buy, run), lock-in and data risks, and a flag report'
+  pm_decision_informed: Whether to build, buy, partner or combine, and when to revisit
+  bottleneck:
+    description: Teams treat build or buy as a first-invoice cost question. The real cost is running, governing and securing the system over time, and with AI a fast prototype looks like a finished capability. Vendor models and prices change on the vendor's schedule, so the pack goes stale
+    pdlc_stage: Business
+    focus_area: Buy, Build or Partner
+    sources:
+    - W16
+    - W17
+    sources_check: pass. W16 and W17 are independent and from 2026. W18 is context only (preference, not burden)
+  scores:
+    judgment: high. The choice is strategic
+    repetition: low to medium. Each decision plus refreshes
+    ai_candidate: partly. The agent assembles and costs; the PM decides
+  split:
+    agent_does:
+    - Collect dated facts for each option from vendor documents
+    - Build a 3-year cost for each option, with build, run and exit cost lines
+    - List lock-in and data handling risks per option
+    - On refresh, report what changed in each vendor's terms
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the capability need, criteria, cost rates, required cost lines, the data handling rules, output format
+      quality_checks:
+      - Each vendor fact has a dated vendor source
+      - Each option has every required cost line for each year
+      - Each option states where the data goes
+      handoff_rules:
+      - A vendor fact with no dated source
+      - Options within the set range of each other on total cost
+      - Any option that sends restricted data to a third party
+      audit: 'The build option: check year 2 and year 3 run costs line by line against the team''s own rates'
+    pm_decides:
+    - The criteria and their weights
+    - The choice
+    - When to revisit
+    ai_error_to_catch: Prototype cost as build cost. The agent costs the build option from the effort of a quick AI prototype and fills the run cost lines with small placeholder values. Every cost line has a value, so the check passes. The audit finds that maintenance, evaluation and governance costs are missing
+  contexts:
+    hardware: gap. Hardware make, buy or partner (components, contract manufacturing) is a strong fit, but no source found
+    internal_pm: Partial. W16 describes internal 'shadow builds' of AI tools; W18 says many non-IT staff build with low-code tools. Both are context, not burden sources for an internal PM
+    industry_notes:
+    - 'health care and FinTech: vendor data handling and certification rules can remove options. Not yet researched'
+  proposed_lab:
+    goal: Extend the course agent to keep a costed option pack and flag stale facts and missing run costs
+    core_message: Build is cheap to start and costly to own. The agent shows all three years; the PM chooses
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads a vendor pack from the fallback case
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Check vendor pages for price and term changes each quarter, where web access is allowed
+    planted_error: Build option costed from a prototype
+    success_check: Each option has dated facts and full run costs, and the audit finds the planted gap
+    registry_check: 'Focus 28.01 teaches the buy, build or partner decision tree. This row starts after the tree: a costed, dated option pack kept current, with checks and an audit. No workshop overlap'
+    pragmatic_fit: Good fit. The capability 2 AI text names build, buy and partner choices
+  evidence:
+  - id: W16
+    claim: 'AI makes building fast but costs show up later: the real comparison is the cost to keep iterating, governing and securing the system; untracked ''shadow builds'' lose knowledge when the builder leaves; mistaking a fast prototype for a finished capability is where build vs buy decisions go wrong'
+    type: claim
+    source: 'The real build vs. buy question: Do we want to own this?, Dan Morgese, Gong'
+    url: https://gong.io/blog/the-real-build-vs-buy-question
+    source_date: '2026-08-05'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Software vendor blog with quoted practitioners (HubSpot, G2). Cites a Retool 2026 report (about a third replaced a tool with a custom AI build); primary not opened
+  - id: W17
+    claim: Teams treat build vs buy as a cost question, not a strategy question; buyers must look past the first invoice to total cost of flexibility; building AI carries heavy fixed costs (talent, data pipelines, evaluation tooling); bought AI changes models, behavior and price on the vendor's schedule
+    type: claim
+    source: 'Build vs Buy: Making Smarter Software Decisions in 2026, Carlos Gonzalez de Villaumbrosia, Product School'
+    url: https://productschool.com/blog/leadership/build-vs-buy
+    source_date: '2026-01-04'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Training company blog. No original data. Independent of W16
+  - id: W18
+    claim: 56.0% of 830 enterprise decision makers prefer to build most applications in-house and buy only where necessary (1H 2026), vs 56.6% in 2H 2025
+    type: statistic
+    source: Enterprises maintain 56% build in-house preference despite SaaS strengths (press release on the 1H 2026 Enterprise Software Decision Maker Survey), The Futurum Group
+    url: https://futurumgroup.com/press-release/enterprises-maintain-56-build-in-house-preference-despite-saas-strengths/
+    source_date: '2026-06-17'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: partly verified
+    note: Press release opened; full report and method not opened. IT decision makers, not PMs. Context, not a bottleneck source
+  open_gaps:
+  - Hardware source
+  - Second source on vendor change burden
+  gate_1_decision: ''
+- id: sp-wf-07
+  workflow: Refresh roadmap themes each quarter and trace every item to a validated problem and strategy
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 2.4 Product Vision and Roadmap (competencies 2.4B Roadmap Structuring and Framing and 2.4D Alignment to Market Problems and Strategy)
+  trigger_and_cadence: Each quarterly roadmap refresh, and when new validated problems arrive
+  input: The current roadmap, the validated problem backlog with evidence, the strategy choices, and the latest scored opportunity list
+  output: Updated outcome themes, a trace table (item to theme to validated problem to strategy choice), a list of items with no trace, and a flag report
+  pm_decision_informed: Which themes the roadmap shows next quarter, and which items leave the roadmap
+  bottleneck:
+    description: A roadmap that is not governed quickly becomes a historical record. Roadmap to strategy alignment is only middling, and keeping each item traced to evidence and strategy takes manual work each cycle
+    pdlc_stage: Focus
+    focus_area: Product Roadmap
+    sources:
+    - W19
+    - W3
+    sources_check: pass. W19 and W3 are independent and from 2026. W3 statistics are partly verified
+  scores:
+    judgment: medium. Clustering is rule-based; naming outcomes and cutting items needs the PM
+    repetition: medium to high. Every quarter, every item
+    ai_candidate: 'yes'
+  split:
+    agent_does:
+    - Cluster validated problems into candidate outcome themes
+    - Trace each roadmap item to a theme, a problem and a strategy choice
+    - Check each item's own evidence
+    - List items with no trace
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the rule for 'validated', the strategy choices, the theme format (outcome, not output), output format
+      quality_checks:
+      - Each item traces to a theme, a problem and a choice
+      - Each theme is written as an outcome
+      - Each item shows its own evidence and date
+      handoff_rules:
+      - An item with no trace
+      - An item whose evidence is below the 'validated' rule
+      - A theme with no item, or an item in two themes
+      audit: '5 random roadmap items: read each item''s own evidence, not the theme''s'
+    pm_decides:
+    - The themes and their wording
+    - Which items leave the roadmap
+    - What the roadmap shows to each audience
+    ai_error_to_catch: Validation by association. An item backed only by one sales request sits in a theme with strong evidence, so the trace table shows it as linked to validated problems. The trace check passes. The audit reads the item's own evidence and finds it is weak
+  contexts:
+    hardware: Partial. W19 says hardware roadmaps must include manufacturing readiness, design freeze and shared components, so themes carry physical dependencies
+    internal_pm: Partial. W24 (Thoughtworks, 2023, aged) says internal platform PMs own the roadmap and measure value by usage. No 2026 source
+    industry_notes: []
+  proposed_lab:
+    goal: Extend the course agent to refresh themes and keep every roadmap item traced to evidence
+    core_message: A roadmap item earns its place with its own evidence, not its theme's
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads their roadmap and problem backlog, or the fallback case
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Read the roadmap from a connected tool, where the platform allows (not verified)
+    planted_error: A weak item hidden inside a strong theme
+    success_check: The trace table lists the planted item as below the 'validated' rule after the brief is fixed
+    registry_check: 'Focus 28.01 teaches outcome not output, timeframe not date, problems not features, and has an optional one-pass AI activity on one roadmap for two audiences. This row starts after: quarterly refresh with traceability and an audit. PRW-AI teaches requirements; not used. Partner course Mastering the Product Roadmap maps here; Dan to check overlap'
+    pragmatic_fit: Good fit. The 2.4 AI text says 'cluster validated problems into outcome themes'
+  evidence:
+  - id: W19
+    claim: 'A roadmap that is not actively governed quickly becomes a historical record. Material changes need a controlled change process, a versioned roadmap and a decision log; a revised roadmap must say what changed, why and which commitments no longer hold; one version must feed plans, budgets and customer messages. Hardware: manufacturing readiness, design freeze, shared components, test facilities and suppliers spread delays across programs'
+    type: claim
+    source: Operating and Refreshing the Roadmap, chapter 8 of The Product Development Roadmap Playbook, Umbrex
+    url: https://umbrex.com/resources/rd-playbooks/the-product-development-roadmap-playbook/operating-and-refreshing-the-roadmap/
+    source_date: 2026-09-20 (last modified; no original date)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Consultancy playbook, no byline, no data. Strong hardware detail
+  - id: W3
+    claim: 'Roadmap to strategy alignment averages 3.6 of 5 and outcome to company goal connection 3.5 of 5. Top causes of misalignment: resource and capacity limits (49.2%), short-term priority shifts (47.5%), leadership direction changes (43.9%). 72.2% spend 25% or less of their time on product strategy'
+    type: statistic
+    source: The strategy-execution gap in product teams, Rebecca Stewart, Product-Led Alliance
+    url: https://www.productledalliance.com/the-strategy-execution-gap-in-product-teams/
+    source_date: '2026-03-11'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: partly verified
+    note: Cites the 2026 State of Product Management report, about 250 product leaders, method not given. Primary report not opened. Practitioner community that sells reports. Independent of W1 and W2
+  - id: W24
+    claim: Internal platforms need a product manager who owns the roadmap and measures value with usage metrics; teams without internal customers build 'in the void' on unverified assumptions
+    type: claim
+    source: Applying product management to internal platforms, Thoughtworks Technology Radar
+    url: https://www.thoughtworks.com/radar/techniques/applying-product-management-to-internal-platforms
+    source_date: '2023-04-26'
+    checked_on: '2026-11-22'
+    age_flag: true
+    status: verified
+    note: Older than 12 months; no longer on the current radar. Internal PM context lead only
+  open_gaps:
+  - Second 2026 source on roadmap traceability burden
+  - Internal PM 2026 source
+  gate_1_decision: ''
+- id: sp-wf-08
+  workflow: Assess each roadmap change request and send consistent trade-off notes to each audience
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 2.4 Product Vision and Roadmap (competencies 2.4C Assumption and Uncertainty Transparency and 2.4E Stakeholder Communication and Alignment)
+  trigger_and_cadence: Each material change request or slip. Assumption, several times a month
+  input: The change request, the current roadmap and its decision log, dependencies, team capacity, and the audience list
+  output: An impact note (what moves, what it displaces, which dependencies), a decision log entry, a draft note per audience from one master change record, and a flag report
+  pm_decision_informed: Accept, defer or reject the change, and what to tell each audience
+  bottleneck:
+    description: Shared roadmaps become de facto commitments, so every change means bad news delivered to several audiences in different words. Material changes need a change log, a versioned roadmap and one version for every plan, or unofficial roadmaps spread
+    pdlc_stage: Planning
+    focus_area: Stakeholder Management
+    sources:
+    - W20
+    - W19
+    sources_check: pass. W20 and W19 are independent and from 2026. W21 (2019) kept with age flag
+  scores:
+    judgment: medium. Impact analysis is rule-based; the trade-off is the PM's
+    repetition: high. Every change request
+    ai_candidate: 'yes'
+  split:
+    agent_does:
+    - Find what the change displaces and which dependencies it hits
+    - Write the impact note and the decision log entry
+    - Draft one note per audience from the master change record
+    - Check each note against the master record
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the roadmap horizons and what each one promises, the audiences and what each needs, the rule that notes never add dates, output format
+      quality_checks:
+      - Each audience note matches the master change record
+      - Each note uses the roadmap horizon words (Now, Next, Later), not new dates
+      - The decision log entry has date, decider and reason
+      handoff_rules:
+      - A change that hits a dependency on another team
+      - A change that breaks a commitment already given to a customer
+      - Any note that needs a date the roadmap does not hold
+      audit: All notes for 1 change per week, read side by side with the master record
+    pm_decides:
+    - Accept, defer or reject
+    - The trade-off
+    - What each audience hears
+    ai_error_to_catch: Direction becomes a date. In the sales note the agent turns 'Next' into 'Q2' because sales asked for dates in past notes. The note matches the master record on content, and 'Q2' is not a horizon word but is accepted as a time frame, so the checks pass. The audit reads the notes side by side and finds a false delivery commitment
+  contexts:
+    hardware: Partial. W19 says late design changes in hardware affect tooling, validation, regulatory evidence and launch timing, so a change note needs those impacts
+    internal_pm: gap. Internal platform changes affect other internal teams; no source found
+    industry_notes:
+    - 'health care and FinTech: regulatory dates are real commitments and must be marked as such. Not yet researched'
+  proposed_lab:
+    goal: Extend the course agent to assess roadmap changes and draft consistent notes per audience
+    core_message: One change record, many audiences, no new promises
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uses a change request from their own work or the fallback case
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Start the agent when a change request form is submitted, where the platform allows (not verified)
+    planted_error: A horizon turned into a quarter in the sales note
+    success_check: All notes match the master record and the audit finds the planted date
+    registry_check: 'Framework name note: ''Planning'' here is the Framework category (Stakeholder Management box), not annual planning. Focus 28.01 teaches ''the roadmap is the vision, the release plan is the promise'' and one roadmap, two audiences. Build 28.01 has AI-drafted stakeholder updates and release planning. This row starts after: change-triggered impact analysis, a decision log and consistency across audiences, with an audit. Do not reteach stakeholder mapping'
+    pragmatic_fit: Good fit. The 2.4 AI text says the AI 'must not convert uncertain direction into false delivery commitments'. This row's planted error tests exactly that
+  evidence:
+  - id: W20
+    claim: 'Shared roadmaps become de facto commitments: the disclaimer goes, the expectation stays, and sales and customer success act on implied dates. Items that slip build ''roadmap debt''. Cited survey: 41% use quarterly time-based roadmaps, 27% use Now-Next-Later'
+    type: claim
+    source: Honesty Scales Better Than Certainty, Janna Bastow, ProdPad
+    url: https://www.prodpad.com/blog/honesty-scales-better-than-certainty/
+    source_date: '2026-04-23'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: partly verified
+    note: Roadmap software vendor. Claims verified on the page; figures come from a '2026 State of B2B Product Management survey' that was not opened. Do not use the figures yet
+  - id: W19
+    claim: 'A roadmap that is not actively governed quickly becomes a historical record. Material changes need a controlled change process, a versioned roadmap and a decision log; a revised roadmap must say what changed, why and which commitments no longer hold; one version must feed plans, budgets and customer messages. Hardware: manufacturing readiness, design freeze, shared components, test facilities and suppliers spread delays across programs'
+    type: claim
+    source: Operating and Refreshing the Roadmap, chapter 8 of The Product Development Roadmap Playbook, Umbrex
+    url: https://umbrex.com/resources/rd-playbooks/the-product-development-roadmap-playbook/operating-and-refreshing-the-roadmap/
+    source_date: 2026-09-20 (last modified; no original date)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Consultancy playbook, no byline, no data. Strong hardware detail
+  - id: W21
+    claim: Roadmap changes shake confidence in the roadmap; each stakeholder group needs different framing; vague hedges force the PM to deliver the same bad news again; roadmaps get mistaken for committed schedules
+    type: claim
+    source: How to Communicate Product Roadmap Changes No One Wants to Hear, Jim Semick, UserTesting blog
+    url: https://www.usertesting.com/blog/communicate-roadmap-changes
+    source_date: '2019-07-01'
+    checked_on: '2026-11-22'
+    age_flag: true
+    status: verified
+    note: Older than 12 months; Dan decides. Author co-founded ProductPlan (roadmap vendor)
+  open_gaps:
+  - Primary survey behind W20 figures
+  - Internal PM source
+  gate_1_decision: ''
+- id: sp-wf-09
+  workflow: Assemble the quarterly portfolio review and planning input pack
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: '2.1 Strategy Alignment (skill objective: use strategy alignment to shape portfolio direction and resource allocation)'
+  trigger_and_cadence: Each quarterly portfolio review and the annual planning cycle
+  input: Team plan submissions, program status from source systems, capacity by team, the strategy choices, and last quarter's pack
+  output: 'One pack: each program''s status, outcomes, strategic fit and capacity ask; conflicts and shared dependencies; a capacity total by team; and a flag report'
+  pm_decision_informed: Which programs to fund, pause or stop, and where capacity goes next quarter
+  bottleneck:
+    description: Portfolio reviews run on decks that are stale before the meeting. One person stitches updates from many teams by hand, and meetings become data reconciliation instead of decisions. Large firms report weeks of preparation per quarterly review
+    pdlc_stage: Focus
+    focus_area: Product Portfolio
+    sources:
+    - W1
+    - W22
+    sources_check: pass. W1 and W22 are independent and from 2026. W1's Expedia item is an anecdote; its 72% figure is partly verified via W2
+  scores:
+    judgment: medium. Assembling is rule-based; funding calls are not
+    repetition: high. Each quarter, every team
+    ai_candidate: 'yes'
+  split:
+    agent_does:
+    - Collect each team's submission and check it against the template
+    - Pull status from the source system, not from the submission
+    - Total capacity asks by team and by shared resource
+    - List conflicts and shared dependencies
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the submission template, source systems, the strategy choices, capacity rules, output format
+      quality_checks:
+      - Each program has a submission dated this quarter
+      - Each status matches the source system
+      - Capacity per program is inside the team's total
+      handoff_rules:
+      - A shared team or resource asked for more than its capacity across programs
+      - A status that differs between the submission and the source system
+      - A program with no strategy choice
+      audit: Sum the capacity asks by team by hand for 2 shared teams
+    pm_decides:
+    - Fund, pause or stop
+    - Capacity trade-offs
+    - What goes to leadership
+    ai_error_to_catch: Capacity counted twice. A shared firmware team is planned at 100% in two programs. Each program's ask is inside the team's total, so the per-program check passes. The audit sums by team and finds 200%
+  contexts:
+    hardware: Partial. W22 (vendor) describes hardware portfolio reviews with stage gates of months next to software sprints. W19 names shared components, test facilities and suppliers as cross-program dependencies
+    internal_pm: 'Partial. W1: Expedia''s quarterly priority reviews took weeks and outreach to 50 or more PMs. Enterprise internal planning, anecdote only'
+    industry_notes: []
+  proposed_lab:
+    goal: Extend the course agent to assemble the quarterly pack and flag capacity conflicts
+    core_message: The meeting is for decisions, not reconciliation. The agent reconciles; the PM decides
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads team submissions from the fallback case
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Pull status from a connected work tracker, where the platform allows (not verified)
+    planted_error: One shared team counted at 100% in two programs
+    success_check: The pack shows capacity by team and the flag report names the over-allocated team
+    registry_check: 'Focus 28.01 does not cover portfolio review packs. Build 28.01 teaches estimates from past performance and release planning; not retaught. Overlap with sp-wf-01 (same data, different job: 01 measures drift, 09 prepares decisions). Dan may merge them. Workshops Strategic Transformation and Implementation and Action Planning Workshop map to capability 2; Dan to check overlap'
+    pragmatic_fit: Good fit. Workbook 2.1 objectives include shaping portfolio direction and resource allocation
+  evidence:
+  - id: W1
+    claim: 80% of 308 senior leaders say their strategic priorities are clear, but only 11% can show that at least three quarters of portfolio work is explicitly linked to them. 83% rely on manual status updates and personal judgment. 72% say competing priorities chronically overstretch key teams. Expedia quarterly priority reviews took weeks of preparation and outreach to 50 or more PMs
+    type: statistic
+    source: 'Shift happens: Finding and fixing the gap between strategic intent and actual work, Sapphire Reels, Atlassian blog'
+    url: https://www.atlassian.com/blog/leadership/gap-between-intent-and-work
+    source_date: '2026-09-28'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified (secondary report of W2)
+    note: Vendor of portfolio software reports its own study. Primary study is W2; W1 and W2 count as one source. Expedia item is a conference anecdote (Team 26, 2026-05-06), not study data
+  - id: W22
+    claim: Portfolio and roadmap reviews run on decks and spreadsheets that are already stale; meetings become data reconciliation, not decisions; one person becomes the 'human integration layer' who stitches engineering and procurement updates; hardware runs on stage gates of months while software ships in weeks, so dependencies stay hidden
+    type: claim
+    source: Why product portfolio reviews keep tracking sideways, Maziar Adl, Gocious
+    url: https://gocious.com/blog/why-product-portfolio-reviews-keep-tracking-sideways
+    source_date: '2026-05-05'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Hardware product management software vendor. No data
+  - id: W19
+    claim: 'A roadmap that is not actively governed quickly becomes a historical record. Material changes need a controlled change process, a versioned roadmap and a decision log; a revised roadmap must say what changed, why and which commitments no longer hold; one version must feed plans, budgets and customer messages. Hardware: manufacturing readiness, design freeze, shared components, test facilities and suppliers spread delays across programs'
+    type: claim
+    source: Operating and Refreshing the Roadmap, chapter 8 of The Product Development Roadmap Playbook, Umbrex
+    url: https://umbrex.com/resources/rd-playbooks/the-product-development-roadmap-playbook/operating-and-refreshing-the-roadmap/
+    source_date: 2026-09-20 (last modified; no original date)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Consultancy playbook, no byline, no data. Strong hardware detail
+  open_gaps:
+  - Second source with data on portfolio review effort
+  - Internal PM source beyond an anecdote
+  gate_1_decision: ''
+- id: sp-wf-10
+  workflow: Track realized outcomes against the business case and OKRs each month, and flag where investment should change
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: 2.3 Business Case Development (competency 2.3E Success Definition and Measurement)
+  trigger_and_cadence: Each month after launch or after a funding decision, and before each quarterly review
+  input: The business case success measures and baselines, the OKRs, metric exports, and last month's report
+  output: 'An outcome report: each measure vs baseline and target, trend, data source, confidence; outputs kept apart from outcomes; and a flag report'
+  pm_decision_informed: Whether to keep, change or stop investment in each product or initiative
+  bottleneck:
+    description: After approval, few teams compare results with the business case baseline. Reports rely on manual status updates, output measures stand in for outcomes, and evidence is weak or out of date. Few organizations fund by outcomes
+    pdlc_stage: Business
+    focus_area: Business Outcomes
+    sources:
+    - W23
+    - W1
+    sources_check: pass. W23 (2026) and W1 (2026, with primary W2) are independent
+  scores:
+    judgment: medium. Measuring is rule-based; reading why results moved is not
+    repetition: high. Every month, every measure
+    ai_candidate: 'yes'
+  split:
+    agent_does:
+    - Pull the current value of each measure from its source
+    - Compare with baseline, target and last month
+    - Mark each measure as outcome or output
+    - Note data gaps and stale data
+    - Send flags to the PM
+    pm_manages:
+      brief: Job, the measures with baseline, target and source, the rule for outcome vs output, output format
+      quality_checks:
+      - Each value has a source and a date
+      - Each measure is compared with its baseline
+      - Each measure is labeled outcome or output
+      handoff_rules:
+      - A measure off target by more than the set range for 2 months
+      - A measure with no current data
+      - An outcome measure with no change while its outputs grow
+      audit: '2 ''on track'' measures per month: check that the metric measures the outcome in the business case'
+    pm_decides:
+    - Which measures count as success
+    - Whether to keep, change or stop investment
+    - What to tell leaders
+    ai_error_to_catch: Output counted as outcome. The key result 'reduce onboarding time' is reported on track using 'onboarding guide shipped' and 'users enrolled', because the metric names match. Each value has a source and a label, so the checks pass. The audit finds the metric does not measure the outcome
+  contexts:
+    hardware: gap. Hardware outcomes (field failure rate, service cost, attach rate) fit well, but no source found
+    internal_pm: Partial. W23 covers benefits tracking for internal digital and equipment investments (public sector)
+    industry_notes:
+    - 'health care: outcome data can include patient data. Use aggregated data only. Not yet researched'
+  proposed_lab:
+    goal: Extend the course agent to track outcomes against the business case each month
+    core_message: Shipped is not success. The agent tracks outcomes; the PM decides what to fund
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads a metrics export from the fallback case
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the templates and the rules
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Run each month on a schedule, where the platform allows (not verified; CAW-AI already teaches scheduled tasks, so use new slides)
+    planted_error: An output metric reported as a key result
+    success_check: The report keeps outcomes and outputs apart and the audit finds the planted metric
+    registry_check: 'Focus 28.01 teaches success measures; Build 28.01 teaches the metrics story; MKT-2026 teaches marketing metrics. This row starts after measures exist: monthly tracking against the business case with checks and an audit. Closes the loop with sp-wf-05. Scheduled run is a stretch with new slides (CAW-AI overlap)'
+    pragmatic_fit: Good fit. The Framework Business Outcomes box monitors realized results against Measurement to inform investment
+  evidence:
+  - id: W23
+    claim: 'After an investment goes live, reviewers check if business case benefits are realized: warning signs are output measures that only show delivery, weak or outdated evidence, reporting without action, unclear attribution, double counting, and no comparison to the business case baseline and forecast. Guidance suggests annual tracking for up to 3 years'
+    type: claim
+    source: 'IDA Review Point 6: Operational Benefits Realisation (workbook), Investment Management and Strategy Team, New Zealand Treasury'
+    url: https://www.treasury.govt.nz/sites/default/files/2026-10/decaf-review-point-6-operational-benefits-realisation-oct26.pdf
+    source_date: 2026-10 (month only)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Government assurance workbook for digital, equipment and change investments. No statistics. Public sector internal investment context
+  - id: W1
+    claim: 80% of 308 senior leaders say their strategic priorities are clear, but only 11% can show that at least three quarters of portfolio work is explicitly linked to them. 83% rely on manual status updates and personal judgment. 72% say competing priorities chronically overstretch key teams. Expedia quarterly priority reviews took weeks of preparation and outreach to 50 or more PMs
+    type: statistic
+    source: 'Shift happens: Finding and fixing the gap between strategic intent and actual work, Sapphire Reels, Atlassian blog'
+    url: https://www.atlassian.com/blog/leadership/gap-between-intent-and-work
+    source_date: '2026-09-28'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified (secondary report of W2)
+    note: Vendor of portfolio software reports its own study. Primary study is W2; W1 and W2 count as one source. Expedia item is a conference anecdote (Team 26, 2026-05-06), not study data
+  - id: W2
+    claim: Only 11% have execution work connected to strategy in a system; 80% say their strategy is clear; only 8% use dynamic, outcome-based funding; nearly two thirds take a month or more to decide after a performance signal
+    type: statistic
+    source: 'Leading the Human + AI Enterprise: A New Playbook for Strategic Portfolio Management, Atlassian (report landing page)'
+    url: https://www.atlassian.com/collections/strategy/strategic-portfolio-management-evolution
+    source_date: unknown (reported 2026-09-28 in W1)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: partly verified
+    note: 308 senior enterprise leaders. Publish date, method and field dates not stated on the page; whitepaper not opened. The 11% wording differs from W1. Vendor study. Confirm it is a 2026 study before any slide use
+  open_gaps:
+  - Product-team source (W23 is public sector)
+  - Hardware source
+  gate_1_decision: ''
