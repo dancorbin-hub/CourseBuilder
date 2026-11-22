@@ -15,7 +15,7 @@ After this course, you can build and manage one AI agent that turns your intervi
 | Format | 5 modules. Each module is 40% instructor-led and 60% hands-on |
 | Offering intent | Develop and Apply |
 | Pragmatic Framework 2027 | Category: Market. Focus areas: Market Problems, Win/Loss Analysis, Competitive Landscape |
-| Capability Standards (proposed) | Capability 1 Market Intelligence. Skills 1.1 Market Problem Identification and 1.3 Market Discovery. Supporting skills 8.1 Market Data Context and Pattern Recognition and 8.4 Data Narrative and Stakeholder Communication |
+| Capability Standards (proposed) | Capability 1 Market Intelligence. Skills 1.1 Market Problem Identification, 1.2 Market Segmentation and 1.3 Market Discovery. Supporting skills 8.1 Market Data Context and Pattern Recognition and 8.4 Data Narrative and Stakeholder Communication |
 | Platforms | Claude, ChatGPT, Microsoft Copilot agent builder and Gemini. Every lab has a step card for each, with the same core steps |
 
 ## Who this course is for
@@ -69,6 +69,8 @@ By the end of the course, you can:
 | Willingness to pay clues | Signs that buyers spend money or effort on the problem |
 | Source dates | When each piece of evidence was collected |
 
+You know urgency, pervasiveness and willingness to pay from Pragmatic Foundations and Product Discovery with AI. In this course the agent reports them, and you check its report.
+
 The agent also states facts such as "single source" (one interview, however many quotes), "AI-moderated only" and "one segment only". These are facts, not verdicts. The problem stays in the backlog, so you can track it over time. The agent proposes a ranking with a reason for each problem. You decide the order, what is a pattern and what goes to validation. Priority is relative: you judge each problem against the others.
 
 **The agent climbs a ladder.** Each module gives the agent more room, and you check it in a different way.
@@ -81,6 +83,8 @@ The agent also states facts such as "single source" (one interview, however many
 | 3 plus. Faces other people | Answers stakeholder questions | Each answer before it goes out | 5 |
 
 **Each lab has a planted AI error.** In module 1 we tell you that it is there. In modules 2 to 4 you get a hint. In module 5 you get no hint. The debrief shows where it was and which check or audit found it.
+
+**Each lab has a check sample.** After you fix the brief, you run the agent on a second sample and compare the result with a pass condition. In modules 1, 2 and 5 you run it in the debrief. In modules 3 and 4 the instructor shows the result, and you run it after class in about 5 minutes.
 
 **Your own work first.** Use your own interviews, deals, feedback and reports when your company allows it. If you cannot, use the case company: Larkspan Systems, a fictional maker of wireless temperature sensors and the cloud software that watches them. It has product teams for external customers and an internal platform team. One case serves the whole course.
 
@@ -100,10 +104,10 @@ Minutes show the one-day format first, then the two-half-day format where it dif
   1. Build the Market Evidence Agent from the template, with a brief, a code book, an evidence profile and an output format.
   2. Decide each item in the flag report (keep, fix or send to discovery).
   3. Audit 3 random problems in the backlog against the source interviews and record what you find.
-  4. Add a ranking rule to the brief, rerun, and decide the order of your top problems by segment.
+  4. Add a flag rule to the brief for what the audit found, rerun, and decide the order of your top problems by segment.
 - **Lab:** Build the agent. Run two batches of interviews. Read the evidence profiles and the proposed ranking. Audit, tune and rerun. A fast-start card per platform helps learners who are new to the builders.
 - **Your input:** 5 to 15 of your own interview notes or transcripts, or the case interviews.
-- **Learner evidence:** Your tuned brief (with one new ranking rule), your flag report decisions, your audit findings for 3 problems and your order of the top problems by segment.
+- **Learner evidence:** Your tuned brief (with one new flag rule), your flag report decisions, your audit findings for 3 problems and your order of the top problems by segment.
 - **Stretch:** Screen the next round of study applicants and hand only edge cases to the PM. Turn the job into a custom skill.
 
 ### Module 2. Win/loss and the match rate (70 minutes; 75 in half days)
@@ -134,7 +138,7 @@ Minutes show the one-day format first, then the two-half-day format where it dif
 - **Lab:** Add the weekly feedback job. Run week 1, then week 2. Read only the flag report and a sample. Decide which problems move up or down the backlog.
 - **Your input:** One or two weeks of feedback items with personal data removed, or the case feedback exports.
 - **Learner evidence:** Your flag report decisions for week 2, your audit findings and the "no fit" rule in your brief.
-- **Stretch:** Add a survey wave as a second input. Set a schedule or a file trigger, on the platforms whose step card includes this step.
+- **Stretch:** Add a survey wave as a source for the evidence profile. Set a schedule or a file trigger, on the platforms whose step card includes this step.
 
 ### Module 4. First hand-off: the alternatives map from your own deals (55 minutes)
 
@@ -163,7 +167,7 @@ Minutes show the one-day format first, then the two-half-day format where it dif
   2. Write hand-off rules that limit what the agent may tell stakeholders.
   3. Decide to send, change or hold each answer after you open each citation.
   4. Judge the agent's ranking and validation proposals by segment, and decide the order and what goes to validation.
-- **Lab:** Add the answer job. Set an age limit and hand-off rules. Ask it real stakeholder questions, including one from an internal platform team. Open the citations before anything goes out.
+- **Lab:** Add the answer job. Set an age limit and hand-off rules. Ask it three stakeholder questions, including one from an internal platform team. Open the citations before anything goes out. In the debrief, fix the brief and ask one more question to check it.
 - **Your input:** Your logs from this course plus one or two past study reports, or the case reports.
 - **Learner evidence:** Your send, change or hold decisions, your audit findings for one cited answer, your hand-off rules, and your order and validation decisions by segment.
 

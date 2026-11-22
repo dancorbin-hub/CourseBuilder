@@ -107,7 +107,7 @@ In Copilot, use the `.txt` copy of each knowledge file (see `README.md`).
 | 2 | Win/loss job card, `m2-driver-code-book.md` | `m2-crm-export-q2.csv`, `m2-winloss-notes-q2.md` | `m2-check-sample.md` | 5 | none |
 | 3 | Weekly feedback job card, `m3-tag-list.md` | `m3-feedback-week-1.csv`, `m3-feedback-week-2.csv` | `m3-check-sample.md` | 5 | `m3-stretch-survey-wave.csv` |
 | 4 | Alternatives map job card, `m4-alternatives-map.md` | `m4-evidence-pack.md` (holds the driver log, CRM export, interviews and problem backlog) | `m4-check-sample.md` | 4 | none |
-| 5 | Stakeholder answer job card, `m5-past-reports.md` | `m5-stakeholder-questions.md`: Q1, Q2, Q3 and Q5 (the backlog and logs are already in the agent) | Q4 in `m5-stakeholder-questions.md` | 3 | none |
+| 5 | Stakeholder answer job card, `m5-past-reports.md` | `m5-stakeholder-questions.md`: Q1, Q2 and Q5 core, Q3 optional (the backlog and logs are already in the agent) | Q4 in `m5-stakeholder-questions.md` | 3 | none |
 
 "Files this lab" counts the agent files, run files and check file. It does not count the stretch file. The agent ends the course with 12 knowledge files: 5 job cards, 5 case knowledge files and 2 logs (problem backlog, driver log). The course budget is 13.
 

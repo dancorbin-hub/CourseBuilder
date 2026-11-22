@@ -8,7 +8,7 @@ The case PM's hand-off rule: evidence older than 18 months goes to the flag repo
 
 ## The 4 run questions
 
-Ask Q1, Q2, Q3 and Q5 in this order. Q4 is the check question below.
+Ask Q1, Q2 and Q5 in this order. Q3 is optional if you have time. Q4 is the check question below.
 
 **Q1. From the VP Sales**
 

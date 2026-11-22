@@ -1,6 +1,6 @@
 # Development brief: Advanced AI for Market Research
 
-- Course id: `market-research`. Stage 2 draft by the course planner, 2026-11-22. Revised once (v0.2) after `outline/critic-report.md`. Revised again (v0.3) for `outline/rework-brief-2.md` (Gate 2 comments). See the revision logs at the end.
+- Course id: `market-research`. Stage 2 draft by the course planner, 2026-11-22. Revised once (v0.2) after `outline/critic-report.md`. Revised again (v0.3) for `outline/rework-brief-2.md` (Gate 2 comments). Revision 3 fixes the points from the critic recheck. See the revision logs at the end.
 - Purpose: answer the 5 questions from "How the Capability Standards Drive Learning Development" (PRD decision 40) for the course and for each module.
 - The 5 questions: (1) What capability, and which skills? (2) What can the learner do? (3) How far: Introduce, Develop, Apply or Validate? (4) What evidence shows it? (5) What experience gets them there?
 - Capability and skill names come from the Capability Standards Workbook 2027, through `outline/capability-mapping.md`. Ids and names are copied exactly. Nothing is invented. Status: **proposed, Dan to confirm** (Gate 2 decision 7).
@@ -11,7 +11,7 @@
 
 | Question | Answer |
 | --- | --- |
-| 1. Capability and skills | **Proposed, Dan to confirm.** Capability: 1 Market Intelligence. Primary skills: 1.1 Market Problem Identification, 1.3 Market Discovery. Secondary skills (capability 8 Data-Driven Insight): 8.1 Market Data Context and Pattern Recognition, 8.4 Data Narrative and Stakeholder Communication. Pragmatic Framework 2027 category: Market. Focus areas: Market Problems, Win/Loss Analysis, Competitive Landscape |
+| 1. Capability and skills | **Proposed, Dan to confirm.** Capability: 1 Market Intelligence. Primary skills: 1.1 Market Problem Identification, 1.2 Market Segmentation, 1.3 Market Discovery. Secondary skills (capability 8 Data-Driven Insight): 8.1 Market Data Context and Pattern Recognition, 8.4 Data Narrative and Stakeholder Communication. Pragmatic Framework 2027 category: Market. Focus areas: Market Problems, Win/Loss Analysis, Competitive Landscape |
 | 2. What the learner can do | Build one agent from a template. Write and tune its brief. Set quality checks and hand-off rules. Decide each flag report item. Audit a sample against sources. Connect jobs so one output feeds the next. Read each problem's evidence profile, decide the order of problems by segment and defend it with sourced evidence |
 | 3. How far | Develop and Apply. Develop: learners build the skill through a demo, a lab, a planted error and feedback in each module, with more complex input each time. Apply: learners use their own work first and make the judgment calls themselves. The warning on the planted error fades, so by module 5 they find it with no hint |
 | 4. Evidence | Per lab (decision 42): the tuned brief, the flag report decisions and the audit findings. Plus the PM's order of top problems by segment (module 1), the match rate table (module 2), the hand-off rule (module 4), and the send, change or hold decisions and the order and validation decisions by segment (module 5). At the end: the saved agent with five jobs and a Monday plan with an audit date |
@@ -25,6 +25,7 @@
 | Skill 1.1D: urgency, pervasiveness, willingness to pay | The evidence profile uses these terms in learner-facing text |
 | Competency 1.1B: noisy 20% versus quiet 80% | Lab 1 planted error: one vocal buyer ranks near the top |
 | Skill 1.3: n=1 versus N=many | Fact label "single source" and the count rule "count interviews, not quotes" |
+| Competency 1.2A: learn from competitors' customers and evaluators what the competitor does not solve and why they buy | Module 4 alternatives map, built from the team's own deals and interviews |
 | Skill 3.3: "a prioritized problem backlog" | The agent keeps a problem backlog. Priority is relative across the backlog, not a fixed bar |
 | Skill 1.3 AI text: synthetic respondents never replace research with real people | Gate 1 rule on AI personas and AI-moderated interviews (PA-02) |
 
@@ -39,6 +40,7 @@
 | Not taught here (known from elsewhere) | Taught here |
 | --- | --- |
 | One-pass AI synthesis and the quote check (PDW-AI). PDW-AI maps to the same skills at Introduce | Running an agent on batches, the problem backlog over time, flags, audits and tuning, at Develop and Apply |
+| Urgency, pervasiveness and willingness to pay, and a planted outlier (PDW-AI and Foundations) | Referred to as known. New slides only on how the agent reports the three tests in the evidence profile and how the manager audits that report |
 | Persona creation (BPW-AI, Market core course) | Labeling sources by persona and segment |
 | Public competitor watching, scheduled-task setup (CAW-AI) | Alternatives map from the team's own deals. Schedule only as stretch where verified, new slides |
 | Boundaries and guardrails as first taught (AI Agents course) | The same ideas applied to an agent that answers stakeholders, with new slides (decision 33) |
@@ -55,10 +57,10 @@ Minutes: full day, then half days in brackets where they differ (Gate 2 decision
 | Question | Answer |
 | --- | --- |
 | 1. Capability and skills | **Proposed, Dan to confirm.** 1.1 Market Problem Identification, 1.3 Market Discovery. Competencies 1.1A, 1.1B, 1.3D. Box: Market Problems |
-| 2. What the learner can do | Build the agent from the template. Decide each flag. Audit 3 problems against the interviews. Add a ranking rule to the brief and rerun. Decide the order of the top problems by segment |
+| 2. What the learner can do | Build the agent from the template. Decide each flag. Audit 3 problems against the interviews. Add a flag rule to the brief and rerun. Decide the order of the top problems by segment |
 | 3. How far | Develop and Apply. First build, so a fast-start card supports new builders. Planted error warning: **told** |
-| 4. Evidence | Tuned brief (v1 to v2: the learner adds one ranking rule; the template already has "count interviews, not quotes", as in worked example v3). Flag report decisions for batch 1. Audit findings for 3 problems. The PM's order of the top problems by segment |
-| 5. Experience | Opening build check, then a live demo on one platform, then the lab on own interviews or case batches 1 and 2. The agent keeps a problem backlog with an evidence profile per problem and fact labels (single source, AI-moderated only, one segment only). It proposes a ranking with reasons. Planted error: the vocal buyer (I-104, 3 quotes, 1 interview) ranks near the top. The learner catches it in the evidence profile and the audit. Debrief: priority is relative (no magic number), and Dan's test: can you predict that the next buyer of this persona will raise it? Only the PM calls a pattern. Rung 1, hand-run batch. 70 minutes (80) |
+| 4. Evidence | Tuned brief (v1 to v2: the learner adds the flag rule "If all quotes for a problem come from 1 interview, send it to the flag report"; the template already has "count interviews, not quotes", as in worked example v3). A ranking rule is an optional second rule. Flag report decisions for batch 1. Audit findings for 3 problems. The PM's order of the top problems by segment |
+| 5. Experience | Opening build check, then a live demo on one platform, then the lab on own interviews or case batches 1 and 2. The agent keeps a problem backlog with an evidence profile per problem and fact labels (single source, AI-moderated only, one segment only). It proposes a ranking with reasons. Planted error: the vocal buyer (I-104, 3 quotes, 1 interview) ranks near the top. The learner catches it in the evidence profile and the audit. Debrief: each learner runs the check sample (3 minutes). Priority is relative (no magic number), and the Pragmatic test: can you predict that the next buyer of this persona will raise it? Only the PM calls a pattern. Rung 1, hand-run batch. 70 minutes (80) |
 
 ### Module 2. Win/loss and the match rate (row mr-wf-02)
 
@@ -68,7 +70,7 @@ Minutes: full day, then half days in brackets where they differ (Gate 2 decision
 | 2. What the learner can do | Add a win/loss job. Label each deal "interview" or "CRM only". Read the match rate. Audit source labels. Frame findings for sales without blame |
 | 3. How far | Develop and Apply. Two inputs joined for the first time. Planted error warning: **hint** ("Audit before you approve") |
 | 4. Evidence | Match rate table and the learner's read of it. Flag report decisions. Audit findings for 2 deals. The brief change |
-| 5. Experience | Pragmatic program rules (10 or more decided deals, interviews 2 to 4 weeks after the decision, by someone outside sales). The agent reports counts and changes per driver, with no pass or fail number. Lab on own deal export or the case CRM export. Planted error: a CRM-only "price" reason leaks into buyer findings. Debrief is the aha moment. Rung 1, two sources. 70 minutes (75) |
+| 5. Experience | Pragmatic program rules (10 or more decided deals, interviews 2 to 4 weeks after the decision, by someone outside sales). The agent reports counts and changes per driver, with no pass or fail number. Lab on own deal export or the case CRM export. Hand-off rules match the case: flag a deal where the CRM reason and the buyer differ, and show the count of interviewed deals behind every driver. Planted error: a CRM-only "price" reason leaks into buyer findings. Debrief is the aha moment, and each learner runs the check sample (3 minutes). Rung 1, two sources. 70 minutes (75) |
 
 ### Module 3. The weekly run: read flags, not every item (row mr-wf-03, folds 04)
 
@@ -78,27 +80,27 @@ Minutes: full day, then half days in brackets where they differ (Gate 2 decision
 | 2. What the learner can do | Add a weekly feedback job counted by unique account. Write a "no fit" rule. Audit 10 items and the "no fit" group. Decide which problems move in the backlog and which need discovery |
 | 3. How far | Develop and Apply. High volume: the learner reads flags and a sample, not each item. Planted error warning: **hint** |
 | 4. Evidence | Flag report decisions for week 2. Audit findings. The "no fit" rule added to the brief |
-| 5. Experience | Talk track uses the case internal platform example (Fleet Data Platform, decision 9). Two runs (week 1, week 2) on own feedback or case exports. Feedback adds to pervasiveness in the problem backlog. Hand-off numbers (change and no-fit repeat) are the PM's choice for the rule, not a truth bar. Planted error: forced fit hides a new problem. Stretch: schedule only where verified (decision 10), or a survey wave. Rung 2, recurring run. 60 minutes |
+| 5. Experience | Talk track uses the case internal platform example (Fleet Data Platform, decision 9). Two runs (week 1, week 2) on own feedback or case exports. Feedback adds to pervasiveness in the problem backlog. The agent reports the change in accounts for every tag and sends every "no fit" group to the flag report. No number decides what the PM sees (case rule 4). Planted error: forced fit hides a new problem. Debrief: the instructor shows the check sample result (1 minute); learners run it after class. Stretch: schedule only where verified (decision 10), or the survey wave as a source for the evidence profile. Rung 2, recurring run. 60 minutes |
 
 ### Module 4. First hand-off: the alternatives map from your own deals (row mr-wf-10)
 
 | Question | Answer |
 | --- | --- |
-| 1. Capability and skills | **Proposed, Dan to confirm.** 1.3 Market Discovery (competency 1.3A, evaluators and alternatives from win/loss). Box: Competitive Landscape. Gap: the box's primary skill is 2.2 Opportunity Prioritization (capability 2). The course does not claim 2.2 |
+| 1. Capability and skills | **Proposed, Dan to confirm.** 1.2 Market Segmentation (competency 1.2A: what competitors' customers and evaluators say). Box: Competitive Landscape. 1.2 is a secondary skill on this box. Gap: the box's primary skill is 2.2 Opportunity Prioritization (capability 2). The course does not claim 2.2. 1.3 is not mapped to this box. Dan may still choose 1.3 (competency 1.3A, win/loss) |
 | 2. What the learner can do | Connect the win/loss job to a map job. Write a hand-off rule. Trace 3 entries to interviews and deals. Choose the alternative to beat in one segment |
 | 3. How far | Develop and Apply. First hand-off between jobs. Planted error warning: **hint** |
 | 4. Evidence | The hand-off rule as written and as fixed. Audit findings for 3 traced entries. The alternative to beat, with its evidence |
-| 5. Experience | Dan's example in the talk track, told as a Pragmatic or unnamed client story (decision 6). Lab on own driver log or case data. Planted error: CRM says "Rimecore", buyer kept the spreadsheet (case deal D-3108). One slide names the second-agent platform gap (decision 10). Rung 3, hand-off between jobs. 55 minutes (decision 8) |
+| 5. Experience | Dan's example in the talk track, told as a Pragmatic or unnamed client story (decision 6). Lab on own driver log or case data. Planted error: CRM says "Rimecore", buyer kept the spreadsheet (case deal D-3108). One slide names the second-agent platform gap (decision 10). Debrief: the instructor shows the check sample result (1 minute); learners run it after class. Rung 3, hand-off between jobs. 55 minutes (decision 8) |
 
 ### Module 5. The agent answers stakeholders, and you stay accountable (row mr-wf-09, folds 07)
 
 | Question | Answer |
 | --- | --- |
-| 1. Capability and skills | **Proposed, Dan to confirm.** 1.1 Market Problem Identification, 8.4 Data Narrative and Stakeholder Communication. Competencies 1.1C, 1.1D. Box: Market Problems |
+| 1. Capability and skills | **Proposed, Dan to confirm.** 1.1 Market Problem Identification, 8.4 Data Narrative and Stakeholder Communication. Competencies 1.1C, 1.1D, 8.4A, 8.4C. Box: Market Problems |
 | 2. What the learner can do | Add an answer job with citations, dates, segments and a "what we do not know" line. Write rules for what the agent may say. Send, change or hold each answer. Judge the ranking and validation proposals by segment, then decide the order and what goes to validation |
 | 3. How far | Develop and Apply. The agent faces other people. Planted error warning: **none** |
 | 4. Evidence | Send, change or hold decisions for the answers. Audit findings for one cited answer. The hand-off rules. The PM's order and validation decisions by segment |
-| 5. Experience | Lab on own logs and past reports or case reports. The case includes one question from the internal Fleet Data Platform PM, answered from the problem backlog (decision 9). Planted error: an old study for another segment presented as "buyers want". Segment rule test: the agent must not say "food service buyers want" from one Food service interview (I-105; decision 3). Close: Monday plan and kit-final. Rung 3 plus, agent that faces other people. 65 minutes (60) |
+| 5. Experience | Lab on own logs and past reports or case reports. Learners ask 3 run questions: case Q1, Q2 and Q5. Q3 is optional on the case path. Q5 is the question from the internal Fleet Data Platform PM, answered from the problem backlog (decision 9). Each card step has a minute budget (27 of 30 lab minutes; 26 of 28 in half days). Hand-off rule: any source older than the age limit goes to the flag report. Planted error: an old study for another segment presented as "buyers want". Debrief: fix the brief, then run Q4 and compare (3 minutes). Q4 is the segment rule test: the agent must not say "food service buyers want" from one Food service interview (I-105; decision 3). Close: Monday plan and kit-final. Rung 3 plus, agent that faces other people. 65 minutes (60) |
 
 ## 3. Notes for an instructor who did not build the course (decision 45)
 
@@ -122,6 +124,9 @@ Minutes: full day, then half days in brackets where they differ (Gate 2 decision
 | 5 | Segment rule is provisional A until Dan runs the exercises (decision 3, spec OI-15) | Dan |
 | 6 | Template and lab 1 error are provisional C until proof P1 (decision 2, spec OI-14) | Dan |
 | 7 | Confirm the half-day module lengths: module 5 is 5 minutes shorter than in the full day (spec OI-21) | Dan |
+| 8 | Say yes to update `worked-example-row.yaml` v3. Lines 43 and 79 still say "below the PM's bar" and "emerging". The file is fingerprinted (spec OI-23) | Dan |
+| 9 | Change the case lab 5 files to "Q1, Q2 and Q5 core, Q3 optional" (spec OI-24) | Case builder |
+| 10 | Done: `m1-code-book.md` trimmed to 2,791 characters, under the 2,800 fallback budget | Case builder | 
 
 ## 5. Revision log (v0.2, 2026-11-22)
 
@@ -215,3 +220,47 @@ Source: `outline/rework-brief-2.md` (Dan's Gate 2 comments), `outline/gate-2-dec
 1. Spec version 0.3. Header comment and `course.length` updated.
 2. Open items: OI-13 superseded by the backlog model (new OI-20, decision 4 still "waiting for Dan yes" in `gate-2-decisions.md`). OI-14 and OI-15 show their provisional status. New OI-21 (half-day module lengths) and OI-22 (PA-04 minimum).
 3. Syllabus: internal notes removed (decision numbers, "Dan to name", the lunch buffer). New model, new half-day agenda, platform stretch note.
+
+## 7. Revision log 3 (v0.3, revision 3, 2026-11-22)
+
+Source: `outline/critic-report.md` (recheck after rework 2) and the corrected `outline/capability-mapping.md`. Edited files: `spec.yaml`, this brief and `outline/syllabus.md`. This revision did not edit case files. Timing totals do not change: 360 teaching minutes in the full day, 195 per half day, 40/60 in every module. Only the minutes inside debriefs and lab 5 have new budgets.
+
+### Must fix
+
+| Id | Result | What changed, or why not |
+| --- | --- | --- |
+| M1 | Fixed | Module 3 hand-off rules now match `company.md` rule 4. The agent reports the change in accounts for every tag (new quality check). Every "no fit" group goes to the flag report, with item IDs and accounts. The two numbers are gone. `hand_off_numbers_note` is replaced by a `no_threshold` note. Debrief check, `fallback_case.learner_files` and the module 3 row in this brief updated |
+| M2 | Fixed | Lab 5 card steps have minute budgets: 3, 4, 3, 6, 5, 6 (27 of 30 minutes). Half days: 3, 4, 3, 6, 5, 5 (26 of 28). Four run questions did not fit, so Q3 is optional on the case path. Q1, Q2 and Q5 are core. The debrief now holds "Run Q4 and compare" (3 minutes). Full-day debrief: reveal 2, brief fix 2, Q4 3, segment rule 1, Monday 1. Half days: brief fix 1. Cost: the "sources disagree" rule is tested only by learners who ask Q3 |
+| M3 | Case builder | Count error is in `expected-results.md`. Not a planner file |
+
+### Should fix
+
+| Id | Result | What changed, or why not |
+| --- | --- | --- |
+| S1 | Fixed, not as the critic proposed | The lab 1 fix is now the flag rule from `planted-errors.md`: "If all quotes for a problem come from 1 interview, send it to the flag report." The ranking rule is an optional second rule. Why not the critic's way: the case expected results (batch 1 flag 3, check sample pass condition 4) already depend on the flag rule, and the case is shared. Changed: growth, kits, template "left out on purpose", card step 5, objective m1-o4, fix, success check, debrief check, learner evidence, OI-14, syllabus |
+| S2 | Fixed | Removed the module 2 rule "a driver that rests on deals from one segment only". Rule 3 in the case already counts deals by segment, and the quality check shows the counts |
+| S3 | Fixed | Module 5 rule: "Any source older than the age limit the PM writes in the brief goes to the flag report" (case: 18 months, rule 1) |
+| S4, S5, S6 | Fixed in `capability-mapping.md` | Spec, brief and syllabus now match it. Primary skills 1.1, 1.2 and 1.3. Secondary 8.1 and 8.4. Module 4: 1.2 Market Segmentation, competency 1.2A. Module 5 adds 8.4A and 8.4C. OI-11 says 1.3 is not a box 05 skill and that Dan may still choose 1.3 |
+| S7 | Fixed in spec and brief | "Dan's test" is now "the Pragmatic test". `expected-results.md` line 19 still says "Dan's test". Case builder action |
+| S8 | Fixed | Module 1 registry guard: urgency, pervasiveness and willingness to pay, and the planted outlier, are known from PDW-AI and Foundations. New slides only on how the agent reports them. Module 3 stretch is now "add the survey wave as a source for the evidence profile". New row in "Where the course starts and stops". Syllabus says learners know the three tests |
+| S9 | Open item | New OI-23. `worked-example-row.yaml` v3 is fingerprinted, so an edit needs Dan's yes |
+| S10 | Fixed | Each lab now has a `check_sample` slot. Labs 1 and 2: learners run it in the debrief (3 minutes each). Labs 3 and 4: the instructor shows the demo run result in the debrief (1 minute), and learners run it after class (about 5 minutes). Lab 5: Q4 in the debrief (3 minutes). Each debrief arc lists its minutes |
+| S11 | Case builder | Heading in `expected-results.md`. Not a planner file |
+
+### Notes
+
+| Id | Result | What changed, or why not |
+| --- | --- | --- |
+| N1 | Recorded | G2-PF-05 now names `m1-code-book.md` at 2,906 characters, over the 2,800 budget. Brief open item 10. The case builder trims it, or Dan accepts a higher budget |
+| N2 | Fixed | Evidence pack is about 15,400 characters in `gate_2_risk` and G2-PF-03. Total of the 5 knowledge files is now about 11,900 characters |
+| N3 | Fixed | "12 knowledge files. They are 5 job cards, 5 case knowledge files and 2 logs (the problem backlog and the driver log)" |
+| N4, N5, N6, N9 | Case builder or mapping file | Not planner files |
+| N7 | No change | Decision 4 is still waiting for Dan (OI-20) |
+| N8 | No change | "(proposed)" stays in the syllabus until Dan confirms the mapping |
+| N10 | No action | Pass |
+
+### Actions for others
+
+1. Case builder: change `company.md` and `m5-stakeholder-questions.md` to "Q1, Q2 and Q5 core, Q3 optional" (OI-24).
+2. Case builder: change "Dan's test" to "the Pragmatic test" in `expected-results.md`.
+3. Dan: say yes or no to the v3 row update (OI-23), and confirm the capability mapping (OI-11).
