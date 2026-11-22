@@ -10,3 +10,4 @@ Dan answers in the Gate 2 doc. Status is final or provisional.
 | 6 | Dan own module 4 example vs decision 43 (OI-05) | A: Pragmatic or unnamed client story, identifying details removed | Final | 2026-11-22 | Dan sends the example before module 4 build |
 | 8 | Module 4 is 55 minutes (OI-17) | A: accept 55 minutes; times can flex in delivery | Final | 2026-11-22 | P3 timing check dropped |
 | 9 | Internal PM not used in any lab (OI-18) | C: module 3 talk track example plus one lab 5 question from the FDP PM | Final | 2026-11-22 | Add to case in the next rework pass; critic rechecks |
+| 10 | Rung 2 and rung 3 scope (OI-02, OI-03) | Accept as default | Final | 2026-11-22 | Platforms diverge on stretch: schedule and second-agent stretch only where verified (likely Claude, ChatGPT; verify in Stage 3). Copilot and Gemini cards stay on core path. Out of scope at launch: Copilot Studio, Power Automate, Google Antigravity. Slides in modules 3 and 4 name the gap once |
