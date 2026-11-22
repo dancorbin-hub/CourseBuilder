@@ -63,7 +63,7 @@ By the end of the course, you can:
 | Part of the profile | What it shows |
 | --- | --- |
 | Interviews | How many interviews (not quotes), accounts, segments and personas |
-| Source type | PM-held interview, AI-moderated interview, win/loss, feedback item or past report |
+| Source type | PM-held interview, win/loss, feedback item or past report. Also AI-moderated interview, where a team uses them |
 | Urgency | How pressing the problem is, with one buyer quote |
 | Pervasiveness | How many accounts and segments have the problem |
 | Willingness to pay clues | Signs that buyers spend money or effort on the problem |
@@ -71,7 +71,7 @@ By the end of the course, you can:
 
 You know urgency, pervasiveness and willingness to pay from Pragmatic Foundations and Product Discovery with AI. In this course the agent reports them, and you check its report.
 
-The agent also states facts such as "single source" (one interview, however many quotes), "AI-moderated only" and "one segment only". These are facts, not verdicts. The problem stays in the backlog, so you can track it over time. The agent proposes a ranking with a reason for each problem. You decide the order, what is a pattern and what goes to validation. Priority is relative: you judge each problem against the others.
+The agent also states facts such as "single source" (one interview, however many quotes) and "one segment only". These are facts, not verdicts. The problem stays in the backlog, so you can track it over time. The agent proposes a ranking with a reason for each problem. You decide the order, what is a pattern and what goes to validation. Priority is relative: you judge each problem against the others.
 
 **The agent climbs a ladder.** Each module gives the agent more room, and you check it in a different way.
 

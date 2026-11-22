@@ -456,7 +456,7 @@ modules:
       monday_close: Run your agent on your last interview batch. Audit 3 problems before you share anything
       cautions:
         - Synthetic respondents flatten opinion (E16, E17). Use once in the course. If Dan picks bond story candidate 2, do not repeat it here
-        - AI-moderated interviews (PA-02). AI may run some interviews. PMs still talk to every segment. AI personas only from data the team collected. The therapy preference study needs a 2026 primary source before any slide use
+        - AI-moderated interviews (PA-02, de-emphasized by Dan at Gate 2, 2026-11-22: few enterprise customers use them today; mention briefly, list last among source types, keep the PM-held or AI-moderated source label). AI may run some interviews. PMs still talk to every segment. AI personas only from data the team collected. The therapy preference study needs a 2026 primary source before any slide use
 
   - id: m2
     number: 2
