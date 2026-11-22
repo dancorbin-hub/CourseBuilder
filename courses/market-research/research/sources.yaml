@@ -1,0 +1,188 @@
+# Source register, course market-research. Stage 1, track 4. Written 2026-11-20.
+# type: vendor | practitioner | study | analyst | Pragmatic
+# independence: which sources count as one source (same study, same publisher or same data).
+
+sources:
+  - id: S1
+    publisher: Perspective AI
+    type: vendor
+    items: [E1, E2]
+    url: https://s.getperspective.ai/
+    independence: Sells an AI interview tool. E1 and E2 are one source. Own panel and customer data
+
+  - id: S2
+    publisher: Delight Path (with research partners Lyssna, Userflow, Foldspace)
+    type: practitioner
+    items: [E3, E30]
+    url: https://www.delightpath.com/product-leadership-report-2026
+    independence: >-
+      Survey hosted on Lyssna and partly recruited from the Lyssna panel. The Lyssna article (S3) repeats this
+      survey, so S2 and S3 are one source for E3 and E30. Full report gated
+
+  - id: S3
+    publisher: Lyssna
+    type: vendor
+    items: [E4]
+    url: https://www.lyssna.com/blog/product-leaders-ai-research-survey/
+    independence: Research-tool vendor. Gamilis quote is opinion. Independent of S4 and S14
+
+  - id: S4
+    publisher: Condens
+    type: vendor
+    items: [E10, E4, E5]
+    url: https://condens.io/blog/ai-in-user-research-analysis-report
+    independence: Research-repository vendor. Own survey of 332 practitioners. Independent of S1, S3, S11
+
+  - id: S5
+    publisher: Product Talk (Teresa Torres)
+    type: practitioner
+    items: [E5]
+    url: https://www.producttalk.org/customer-interview-analysis-ai/
+    independence: Independent practitioner. Published 2025-10-08, updated 2026-09-27. Older than 12 months, flagged
+
+  - id: S6
+    publisher: Journal of Medical Internet Research (Maastricht University authors)
+    type: study
+    items: [E12, E5]
+    url: https://www.jmir.org/2026/1/e98374
+    independence: Peer reviewed, academic, no vendor tie found
+
+  - id: S7
+    publisher: Microsoft Learn
+    type: vendor
+    items: [E6]
+    url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+    independence: Vendor doc, used only for a tool-feature claim
+
+  - id: S8
+    publisher: Anthropic, Claude Help Center
+    type: vendor
+    items: [E7]
+    url: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+    independence: Vendor doc, used only for a tool-feature claim
+
+  - id: S9
+    publisher: Google, Gemini Apps Help
+    type: vendor
+    items: [E8]
+    url: https://support.google.com/gemini/answer/18560919?hl=en
+    independence: Vendor doc, used only for a tool-feature claim
+
+  - id: S10
+    publisher: OpenAI Help Center
+    type: vendor
+    items: [E9]
+    url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+    independence: Vendor doc, used only for a tool-feature claim. Not loaded
+
+  - id: S11
+    publisher: Maze
+    type: vendor
+    items: [E11]
+    url: https://maze.co/blog/future-user-research-2026/
+    independence: Research-tool vendor. Own survey. Independent of S4
+
+  - id: S12
+    publisher: arXiv preprint (Liu, Monroy-Hernandez et al.)
+    type: study
+    items: [E13]
+    url: https://www.emergentmind.com/papers/2604.04479
+    independence: Academic preprint, not peer reviewed. No vendor tie found. Read via an abstract aggregator
+
+  - id: S13
+    publisher: University of Minnesota Medical School (paper in International Journal of Qualitative Methods)
+    type: study
+    items: [E14]
+    url: https://med.umn.edu/clhss/news/llm-assisted-analysis-proves-promising-qualitative-research
+    independence: University news item about its own peer-reviewed paper. Paper not opened
+
+  - id: S14
+    publisher: UKG engineering blog
+    type: practitioner
+    items: [E23, E4]
+    url: https://www.ukg.com/for-llms/company/newsroom/engineering-blog/signal-story
+    independence: First-party team writing about its own work. UKG does not sell the AI tool used. Undated
+
+  - id: S15
+    publisher: Association for Computational Linguistics (Findings of ACL 2026)
+    type: study
+    items: [E15]
+    url: https://preview.aclanthology.org/ingest-acl/2026.findings-acl.591/
+    independence: Peer reviewed, academic. Abstract only
+
+  - id: S16
+    publisher: Pew Research Center Data Labs
+    type: study
+    items: [E16]
+    url: https://www.pewresearch.org/data-labs/2026/09/30/how-well-synthetic-polls-capture-the-diversity-of-public-opinion/markdown
+    independence: Nonprofit research center. Tested Anthropic models among others; no commercial tie found
+
+  - id: S17
+    publisher: NIM Marketing Intelligence Review (Nuremberg Institute for Market Decisions)
+    type: study
+    items: [E17]
+    url: https://www.nim.org/en/publications/detail/leaving-insight-to-digital-twins
+    independence: Nonprofit institute journal. Independent of S16
+
+  - id: S18
+    publisher: NORC at the University of Chicago
+    type: study
+    items: [E18]
+    url: https://www.norc.org/content/dam/norc-org/pdf2026/cpss-research-brief-fraud-lit-review.pdf
+    independence: Literature review, no new data. NORC runs a probability panel, so it has an interest in favoring probability panels
+
+  - id: S19
+    publisher: Prolific (preprint on PsyArXiv), reported by Retraction Watch
+    type: vendor
+    items: [E19, E18]
+    url: https://retractionwatch.com/?p=134766
+    independence: Prolific funded the study and owns the detection tool. Retraction Watch is independent reporting on it, not a second source
+
+  - id: S20
+    publisher: Cyberhaven Labs
+    type: vendor
+    items: [E20]
+    url: https://www.cyberhaven.com/press-releases/cyberhaven-2026-ai-adoption-risk-report
+    independence: Data-loss-prevention vendor. Customer telemetry
+
+  - id: S21
+    publisher: G2
+    type: vendor
+    items: [E21]
+    url: https://company.g2.com/news/buyer-behavior-2026
+    independence: Software review and buyer-intent vendor. Own buyer survey
+
+  - id: S22
+    publisher: Microsoft Tech Community (Azure team)
+    type: vendor
+    items: [E22]
+    url: https://techcommunity.microsoft.com/blog/appsonazureblog/how-azure-uses-ai-to-turn-feedback-into-improved-customer-experiences/4552810
+    independence: First-party case by a company that sells the AI tools used
+
+  - id: S23
+    publisher: Airtable (customer story)
+    type: vendor
+    items: [E24]
+    url: https://www.airtable.com/customer-stories/flatiron-health
+    independence: Vendor customer story. Self-reported
+
+  - id: S24
+    publisher: Dovetail (customer stories)
+    type: vendor
+    items: [E25, E26, E27]
+    url: https://dovetail.com/customers/
+    independence: One vendor. E25, E26 and E27 count as one source for any shared claim
+
+  - id: S25
+    publisher: Manufacturers Alliance (case from Applied Marketing Science)
+    type: practitioner
+    items: [E28]
+    url: https://www.manufacturersalliance.org/research-insights/how-ai-powered-customer-voice-becoming-manufacturings-new-marketing-engine
+    independence: Industry association. The case comes from a consultancy that sells the method, so treat the case as vendor-reported
+
+  - id: S26
+    publisher: Discuss.io (customer story)
+    type: vendor
+    items: [E29]
+    url: https://www.discuss.io/customer-stories/how-hp-is-driving-customer-centric-product-innovation-with-ai-agents-and-discuss/
+    independence: Vendor customer story. Self-reported

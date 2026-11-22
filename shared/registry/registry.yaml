@@ -90,3 +90,10 @@ open_questions:
   - Fallback case company must not be BadgeWorks, Entrilo or FieldPro.
   - BPW-AI and the Market core course both teach buyer personas. The Market Research course must not reteach persona creation.
   - CAW-AI already teaches scheduled tasks. The autonomy ladder's scheduled step must use a different agent and new slides.
+
+handoffs_between_courses:
+  - from: market-research
+    to: product-strategy-and-planning
+    rows: [mr-wf-06 Build and refresh a sourced market size model (Focus / Market Definition), mr-wf-08 Score concept tests per hypothesis (Planning / Ideation)]
+    decided: Dan, Gate 1, 2026-11-22
+    note: Start points for the Strategy course workflow inventory. Full rows are in courses/market-research/research/workflows.yaml. Row 08 fails the 2-source bottleneck rule and needs new research

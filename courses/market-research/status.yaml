@@ -2,15 +2,27 @@
 # Only Dan changes a gate to approved.
 course: market-research
 title: Advanced AI for Market Research
-stage: 0              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+stage: 2              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp" }
-  gate_1_research:    { status: not_started, approved_on: null, doc: null }
-  gate_2_spec:        { status: not_started, approved_on: null, doc: null, pragmatic_review: null }
+  gate_1_research:    { status: approved, approved_on: 2026-11-22, doc: "https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW" }
+  gate_2_spec:        { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: null }
   gate_3_modules:     []   # one entry per module: { module: 1, status: ..., approved_on: ..., doc: ... }
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
-blockers:
-  - Dan names the rest of the Pragmatic sources for the alignment agent (blocks the first Stage 1 run). Named so far: Pragmatic Framework 2027 guide (project files, reference/pragmatic-sources/).
+blockers: []
+pragmatic_sources:   # complete list, Dan 2026-11-20
+  - Pragmatic Framework 2027 guide (project files, reference/pragmatic-sources/)
+  - Workshop and core course decks in reference/pragmatic-sources/ (see shared/registry/registry.yaml)
+  - Pragmatic Institute website (pragmaticinstitute.com)
+  - What makes a Pragmatic course (instructors) and How the Capability Standards drive learning development (instructional design), added 2026-11-21
 settings:
   capability_map: off
-fingerprints: {}      # approved item -> content hash. A change to a fingerprinted item needs Dan's yes.
+fingerprints:         # approved item -> content hash. A change to a fingerprinted item needs Dan's yes. Gate 1, 2026-11-22
+  research/worked-example-row.yaml: sha256:2e97424c65cc3f5e
+  research/workflows.yaml: sha256:9f541b5e9c7b8cb8
+  research/research-brief.md: sha256:05ca8037c5d6bc48
+  research/gate-1-packet.md: sha256:d8bde3cc4829bbf3
+  research/gate-1-decisions.md: sha256:d3285a843bb9e7fb
+  research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
+  research/platform-matrix.yaml: sha256:3cda94e3274e99e6
+  research/bond-stories.md: sha256:70ffa8521cb65122

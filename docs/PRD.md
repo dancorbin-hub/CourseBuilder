@@ -67,6 +67,18 @@ The PRD draft is complete after 5 interview rounds. It waits for Dan's review. N
 - 37: Thin evidence is accepted for now. The monthly refresh adds new evidence as it appears.
 - 38: Learners are agent managers. Each course has one agent that learners build in module 1 from a template and extend in each later lab. The agent does the workflow. The learner writes the brief, sets checks and hand-off rules, reviews the flag report and audits. Agent terms avoid the Pragmatic focus area names Exceptions and Escalations. A catch-up template is ready for each module.
 
+**Decisions on Pragmatic course design (Dan, 2026-11-21)**
+
+Sources: "What makes a Pragmatic course" (instructors) and "How the Capability Standards drive learning development" (instructional design). Both are in the Pragmatic sources folder.
+
+- 39: Each course opens with one bond story: a real company story or a striking real finding that connects the instructor to the learners and focuses the room on the day's topics. Existing bond stories (do not reuse): Foundations, Juicero; Focus, WeWork; Build, the Jitterbug phone; AI for Product Managers, employees maxed out while leaders expect more productivity. Stage 1 proposes 3 to 4 candidates. Dan picks one at Gate 1.
+- 40: Stage 2 starts with a development brief for the course and each module. It answers the 5 questions in the Capability Standards doc: capability, what the learner can do, how far (offering intent), what evidence shows it, and what experience gets them there. The Capability Standards Workbook is not available. Do not invent standards or skill names. Dan names the capability where the workbook is silent.
+- 41: Offering intent is Develop and Apply. The workshops Introduce. Validate stays with the instructional designers (decision 29).
+- 42: Each lab names its learner evidence, for example the tuned brief, the flag report decisions and the audit findings.
+- 43: Talk track suggestions, not rules: a short "why this matters" open and a "what you do Monday" close per module, and optional story slots. Instructors joined Pragmatic after generative AI arrived, so story slots use stories heard from client teams and executives, and from Pragmatic's work with companies. Never present them as the instructor's own experience.
+- 44: Learners get a platform readiness checklist before class, so technology does not distract them. It is a checklist they run, not a survey.
+- 45: Dan delivers Advanced AI for Market Research and for Product Strategy and Planning. Will, a fellow Pragmatic instructor and the SME, owns and delivers Advanced AI for Market and Launch. The course builder makes Will's first draft. Part-time instructors may teach these courses in 2027 (to be decided), so the talk track must be complete enough for an instructor who did not build the course.
+
 ## Problem and goals
 
 The course builder cuts the time to make a Pragmatic Institute AI course, from research to a deck with talk track. Dan stays the SME and owns the final content decisions. Instructional designers add some content, and one or two other instructors may review it. The system researches, drafts and checks. Dan approves at each gate.
@@ -120,7 +132,7 @@ The release checks prove that the course follows the rules. They do not prove th
 
 ## Users and scope
 
-Dan is the only user. The system is a set of Claude skills and agents that Dan runs. It must be robust enough to do deep research and build a full-day course with little rework.
+Dan is the only user of the course builder (Will gets a first draft of his course from it, decision 45). The system is a set of Claude skills and agents that Dan runs. It must be robust enough to do deep research and build a full-day course with little rework.
 
 **Course lineup.** Three standalone courses replace the retiring AI for Product Managers course.
 

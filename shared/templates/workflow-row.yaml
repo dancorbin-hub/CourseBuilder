@@ -42,6 +42,7 @@ proposed_lab:
   core_message: ""        # the 1 thing learners must take away
   build_type: ""          # skill | project | agent
   core_path_no_connectors: ""   # yes, and how
+  data_safety: ""         # approved tool, no client data, PHI or PII, consent before recording, log retention point
   platforms:
     claude: ""
     chatgpt: ""

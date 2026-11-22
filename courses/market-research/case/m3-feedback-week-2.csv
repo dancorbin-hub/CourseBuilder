@@ -1,0 +1,33 @@
+item_id,date,channel,account_id,account_name,segment,text
+F-1201,2026-11-09,Support ticket,A-05,Pellham Distribution,Distribution,Dock freezer 2 sent 18 alerts on Monday night. All door openings.
+F-1202,2026-11-09,Support ticket,A-05,Pellham Distribution,Distribution,Same issue on dock freezer 4. Please help us cut the door-open alerts.
+F-1203,2026-11-10,Feature request portal,A-05,Pellham Distribution,Distribution,Add a door-open delay setting per freezer.
+F-1204,2026-11-11,Support ticket,A-05,Pellham Distribution,Distribution,Night shift muted the app again because of alert noise.
+F-1205,2026-11-12,Sales call note,A-05,Pellham Distribution,Distribution,Ops manager says alert noise is the top complaint from the warehouse floor.
+F-1206,2026-11-09,Support ticket,A-01,Oxbend Cold Storage,Distribution,Still too many loading alerts on freezer 3.
+F-1207,2026-11-10,Internal intake (Customer Success),A-09,Bramblefield Bistro,Food service,Kitchen team ignores the alerts during prep. Asked for quiet hours.
+F-1208,2026-11-11,Support ticket,A-12,Fennick Health outpatient pharmacy,Pharmacy and lab,Restock alerts again. Staff do not look anymore.
+F-1209,2026-11-12,Sales call note,A-27,Calder Point Logistics,Distribution,Prospect says their current system has so many false alarms that the team turned sound off.
+F-1210,2026-11-13,Support ticket,A-28,Rookery Tavern Group,Food service,Walk-in alerts fire every time the door opens during service. Too many.
+F-1211,2026-11-13,Feature request portal,A-03,Ridgeway Cold Logistics,Distribution,Please group repeated alerts from one freezer into one message.
+F-1212,2026-11-09,Sales call note,A-02,Teller Creek Foods,Distribution,Audit prep still takes two days. Wants the report in the auditor's format.
+F-1213,2026-11-11,Support ticket,A-14,Northfold Diagnostics,Pharmacy and lab,Reformatting the export for our accreditation audit took most of a week.
+F-1214,2026-11-12,Feature request portal,A-29,Elmstead Pharmacy,Pharmacy and lab,Monthly fridge report for the state board takes hours to build.
+F-1215,2026-11-10,Support ticket,A-17,Bellweather Diners,Food service,The county inspector wants to log in and see our cooler records herself before she visits. Can she get read-only access instead of the inspection report?
+F-1216,2026-11-12,Sales call note,A-17,Bellweather Diners,Food service,Follow-up: inspector repeated the ask. She does not want a printed report or a PDF. She wants live access during the audit window.
+F-1217,2026-11-10,Internal intake (Customer Success),A-22,Meadowsweet Cafes,Food service,Customer says the health department is moving to remote inspections. Inspector asked for a login to view temperature records for the last 90 days.
+F-1218,2026-11-11,Feature request portal,A-31,Sorrel Street Eateries,Food service,"Our inspector asked for a live view of records, not a report. Is there an inspector or auditor login with view-only rights?"
+F-1219,2026-11-13,Sales call note,A-08,Kestle Market,Food service,Store manager says the new county audit rules let inspectors check records remotely. They asked how an inspector could get a view-only link to the cooler data.
+F-1220,2026-11-09,Install note,A-04,Saltgrass Kitchens,Food service,Repeat visit. Walk-in freezer drops off the network twice a week.
+F-1221,2026-11-12,Install note,A-30,Pikeworth Grill House,Food service,"Hub placement changed for the walk-ins. Site contact J. Doe, mobile 555-0147, asked for a callback after 6 p.m."
+F-1222,2026-11-10,Support ticket,A-06,Harlow Bay Foods,Distribution,Battery replacements again on 12 sensors. Asked about longer-life batteries.
+F-1223,2026-11-11,Sales call note,A-11,Tamsin Valley Produce,Distribution,Battery swap service question again. Staff time.
+F-1224,2026-11-13,Support ticket,A-32,Ironvale Cold Storage,Distribution,Changing batteries across 30 cold rooms is a full day of work.
+F-1225,2026-11-10,Sales call note,A-13,Marrowby Grocers,Food service,Director again asks for one view across all stores.
+F-1226,2026-11-12,Feature request portal,A-33,Wrenfield Foods,Distribution,Want a dashboard that compares all four warehouses.
+F-1227,2026-11-11,Support ticket,A-16,Dunmore Freight Cold,Distribution,Night alarm missed again. Who owns the call list after 10 p.m.?
+F-1228,2026-11-10,Support ticket,A-23,Ashcombe Lab Services,Pharmacy and lab,Certificate for probe 0041 missing serial number. Please resend.
+F-1229,2026-11-09,Feature request portal,A-25,Cobble Quay Provisions,Distribution,"Share link for delivery temperature proof, please."
+F-1230,2026-11-11,Sales call note,A-34,Halden Clinical Labs,Pharmacy and lab,"Lab wants to show its clients proof that samples stayed cold, without giving them our account."
+F-1231,2026-11-13,Feature request portal,A-35,Coldwater Institute core lab,Pharmacy and lab,Need a way to send a temperature record for one shipment to the sample owner.
+F-1232,2026-11-12,Support ticket,A-10,Copperleaf Kitchens,Food service,Is the app available in Spanish for our kitchen staff?
