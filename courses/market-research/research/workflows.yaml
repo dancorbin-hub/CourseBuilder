@@ -184,7 +184,7 @@
   topic_area: Win/loss analysis
   trigger_and_cadence: Deals close as won or lost every week. Pragmatic says interview evaluators 2 to 4 weeks after the decision and use 10 or more deals to find patterns. Assumption, a monthly batch and a quarterly report
   input: CRM records for decided deals (stage, amount, segment, stated loss reason), win/loss interview notes or transcripts, and the current decision-driver log
-  output: Decision-driver log per deal (primary driver, secondary drivers, alternative chosen, buyer quotes), a CRM versus buyer "truth rate" table, a quarterly pattern report by segment, and a flag report for the PM
+  output: Decision-driver log per deal (primary driver, secondary drivers, alternative chosen, buyer quotes), a CRM versus buyer "match rate" table, a quarterly pattern report by segment, and a flag report for the PM
   pm_decision_informed: Which market problems, pricing or positioning issues and sales gaps to act on, and which to share with sales, marketing and leadership
   bottleneck:
     description: Manual win/loss is slow and does not scale, so quarterly reports arrive after the chance to act has passed. Sales-entered loss reasons often differ from what buyers say, so teams that skip interviews act on the wrong reason. Many teams do not run win/loss at all
@@ -199,7 +199,7 @@
     agent_does:
       - Match each interview to its CRM deal record
       - Code the primary and secondary decision drivers against the driver code book
-      - Compare the CRM loss reason with the buyer's reason and update the truth rate
+      - Compare the CRM loss reason with the buyer's reason and update the match rate
       - Group drivers by segment, deal size and alternative chosen
       - Mark drivers as new, growing or fading against the last report
       - Send flags to the PM
@@ -213,7 +213,8 @@
         - A deal where the CRM reason and the buyer reason differ
         - A lost deal that names an alternative not in the code book
         - A segment with too few deals to report
-      audit: 2 random deals per batch, read in full against the driver codes and the truth rate entry
+      audit: 2 random deals per batch, read in full against the driver codes and the match rate entry
+    program_rules: Minimum 10 decided deals per batch. Someone outside sales runs the interviews (PA-04, Dan 2026-11-22)
     pm_decides:
       - The driver code book
       - Which patterns are real and which are noise
@@ -238,7 +239,7 @@
       copilot: Agent in Copilot agent builder with the code book as an embedded file (E6)
       gemini: Gemini skill with the brief and code book (E8). Workspace business accounts get skills in March 2027
     stretch: Run the agent on each new batch when the export file arrives, where the platform allows (not verified)
-    registry_check: "Not a CAW-AI agent. CAW-AI module 4 (\"what only your buyers can tell you\") compares own buyer sources with public reviews; this lab does not reteach that. Inputs overlap with mr-wf-01 (win/loss calls). The difference is the deal-level driver log and the CRM truth rate. Dan to decide whether this is a separate module or a lab inside mr-wf-01. Pragmatic fit is strong: the guide names win/loss, 2 to 4 weeks after the decision, at least 10 deals"
+    registry_check: "Not a CAW-AI agent. CAW-AI module 4 (\"what only your buyers can tell you\") compares own buyer sources with public reviews; this lab does not reteach that. Inputs overlap with mr-wf-01 (win/loss calls). The difference is the deal-level driver log and the CRM match rate. Dan to decide whether this is a separate module or a lab inside mr-wf-01. Pragmatic fit is strong: the guide names win/loss, 2 to 4 weeks after the decision, at least 10 deals"
   evidence:
     - id: W1
       claim: Sales-entered CRM loss reasons are often inaccurate; buyer interviews give better data
@@ -385,7 +386,7 @@
   trigger_and_cadence: Each validation or market survey wave. Assumption, 2 to 6 waves a year, each with hundreds of open-text answers
   input: Survey export (closed answers, segment fields, open-text answers) and the code frame from the market problem log
   output: Coded open-text answers, counts by code and segment, a short table that sets the open-text codes next to the closed answers, and a flag report for the PM
-  pm_decision_informed: Whether a market problem is pervasive and urgent enough in a segment to go forward
+  pm_decision_informed: Whether a market problem is urgent, pervasive and one buyers are willing to pay to solve, in a segment, to go forward (all three Pragmatic tests, PA-06)
   bottleneck:
     description: Coding open-ended answers by hand is tedious, slow and error-prone. Good practice needs two coders and a reviewer, so the open-text data is often skipped or skimmed
     pdlc_stage: Market
