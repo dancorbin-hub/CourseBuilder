@@ -1,0 +1,180 @@
+# Track 4 rerun (gaps only), course product-strategy-and-planning.
+# Written 2026-11-22 by the evidence researcher. The ledger is not edited here. The Verifier merges.
+# Web fetch budget: 10 pages. Used: 7 pages (plus 6 web searches).
+# Pages opened: arXiv 2603.28944, arXiv 2603.11821, EconPapers JMS 63(2), Dragonboat bank story,
+# inkl SAP article, Zenodo 19867851, EBSCO record of the HBR trendslop article.
+# All new entries have status "not verified". Vendor flag is set on each.
+
+new_entries:
+
+  - id: E15
+    claim: >-
+      In a behavioral version of Newcomb's paradox, over 40% of participants treated an AI as an authority that
+      could predict their own behavior. For that group, the odds of giving up a guaranteed reward rose by a
+      factor of 3.39 (95% CI 2.45 to 4.70), and earnings fell by 10.7% to 42.9%
+    type: study
+    source: Naito and Shirado. Faith in AI can narrow the futures individuals consider. arXiv 2603.28944v2
+    vendor: false
+    url: https://arxiv.org/abs/2603.28944
+    source_date: 2026-03-30 (v2 revised 2026-07-03)
+    checked_on: 2026-11-22
+    age_flag: false
+    status: not verified (abstract only)
+    note: >-
+      Preprint, not peer reviewed. Population not stated in the abstract. Sample: 1,305 participants. Method:
+      behavioral experiment; the study varied how AI predictions were shown and the decision context, and had a
+      condition where predictions failed again and again. This is deference to an AI prediction about the
+      person's own choice. It is NOT anchoring on an AI score or ranking. Weak fit for sp-wf-02. Use only as
+      background for "people give an AI authority it has not earned". Open the full paper before any number
+      goes on a slide
+
+  - id: E16
+    claim: >-
+      Pathology experts showed moderate anchoring on an AI system's tumor-cell percentage estimate, and the
+      anchoring grew under time pressure. In 7% of cases, an AI error overturned a correct independent judgment
+      (automation bias)
+    type: study
+    source: >-
+      Rosbach, Ammeling, Ganz, Bertram, Conrad, Riener, Aubreville. Stuck on Suggestions. Automation Bias, the
+      Anchoring Effect, and the Factors That Shape Them in Computational Pathology. arXiv 2603.11821v3
+    vendor: false
+    url: https://arxiv.org/abs/2603.11821
+    source_date: 2026-03-12 (v3 dated 2026-09-28)
+    checked_on: 2026-11-22
+    age_flag: false
+    status: not verified (abstract only)
+    note: >-
+      Preprint, not peer reviewed. Health care industry. Population: pathology experts. Sample: n = 28. Method:
+      online within-subject experiment; each expert estimated tumor-cell percentages alone and again with AI
+      support; some estimates were under time strain. Two linear mixed-effects models: one simulated weighted
+      averaging (anchoring), one measured automation reliance. The abstract reports a significant positive
+      coefficient for AI advice but gives no value. This is the CLOSEST fit found for "people anchor on an AI
+      number": experts pulled their own numeric estimate toward the AI estimate, more so when rushed. Not a
+      ranking or prioritization task, and the sample is small. Supports the sp-wf-02 check "score alone first,
+      then compare to the agent" and the trace-to-source method. Open the full PDF for the coefficient
+
+  - id: E17
+    claim: >-
+      Across longitudinal studies with an AI credit-rating advisor, people's initial estimates became more
+      similar to the AI's advice over time. When the gap between their own estimate and the AI advice was
+      larger, people revised more but showed lower relative dependence on the AI. Extra information reduced the
+      similarity to the AI advice
+    type: study
+    source: >-
+      Lee, Cho, Woo, de Jong. When Do Individuals Believe in Themselves Rather Than in Artificial Intelligence?
+      Insights from Longitudinal Investigations in Corporate Credit-Rating Contexts. Journal of Management
+      Studies 63(2), 399 to 437
+    vendor: false
+    url: https://econpapers.repec.org/RePEc:bla:jomstd:v:63:y:2026:i:2:p:399-437
+    source_date: 2026 (issue 63(2); month not shown)
+    checked_on: 2026-11-22
+    age_flag: false
+    status: not verified (abstract only, via EconPapers)
+    note: >-
+      Peer reviewed. FinTech and services context (corporate credit rating, a scoring task). Population and
+      sample not given in the abstract. Method: 2 main longitudinal studies and 4 supplementary studies, each
+      with 3 sessions; the authors built an AI system that could give more accurate advice than the users;
+      framed with anchoring theory. No effect sizes in the abstract. Direct fit to "anchoring on an AI score":
+      people's own ratings drift toward the AI rating over repeated use. The effect depends on decision
+      experience. Open the full article (Wiley) for sample and effect sizes before slide use
+
+  - id: E18
+    claim: >-
+      An unnamed top 5 US bank (Fortune 500) says quarterly planning for one business unit went from weeks to
+      days after it adopted Dragonboat for portfolio management
+    type: case_study
+    source: Dragonboat customer story, outcome-driven transformation at a Fortune 500 bank
+    vendor: true
+    url: https://dragonboat.io/customer-stories/outcome-driven-transformation-fortune-500-bank/
+    source_date: 2026-05-15 (last modified; no publish date shown)
+    checked_on: 2026-11-22
+    age_flag: false
+    status: not verified (single source, vendor, self-reported)
+    note: >-
+      Confirmed vendor story: published on Dragonboat's own site, promotes the product, ends with demo calls to
+      action. Company not named. FinTech. The "weeks to days" result is one VP Product quote, with no numbers,
+      baseline or period. Other benefits are qualitative. Scale is not consistent on the page ("thousands",
+      "hundreds" and "10s of thousands" of product teams). No AI model or agent is named for this customer.
+      Not usable as proof of AI impact. Do not put on a slide as evidence
+
+  - id: E19
+    claim: >-
+      An independent pilot replication of "strategy trendslop" (240 runs, GPT-4o and Claude Sonnet 4.5, 4
+      strategic tensions, 3 prompt variants) reports that Claude Sonnet did not comply with a direct
+      adversarial instruction in 75.0% of runs vs 27.5% for GPT-4o. GPT-4o chose the "Direct" option 98% of the
+      time with one organizational context vs 72% with generic conditions
+    type: study
+    source: >-
+      Lerer. Strategy Trendslop as Parasitic Spontaneous Order. Why Large Language Models Converge on Managerial
+      Buzzwords Regardless of Context. Zenodo working paper, DOI 10.5281/zenodo.19867851
+    vendor: false
+    url: https://zenodo.org/records/19867851
+    source_date: 2026-04-29
+    checked_on: 2026-11-22
+    age_flag: false
+    status: not verified (record page only)
+    note: >-
+      Independent researcher, not peer reviewed, pre-registered on GitHub (as stated). Population: model
+      outputs, not people. Not by the HBR authors, so it is an independent second source for the existence of
+      the trendslop pattern, but it is weak. Do not use its figures on a slide. Useful only as a lead
+
+updates_to_existing:
+
+  - id: E3
+    found: >-
+      Opened the EBSCO Business Source Ultimate record (accession 192612716) of the HBR article. It confirms
+      the authors (Romasanta, Thomas, Levina), the outlet (HBR Digital Articles) and the date (2026-03). The
+      abstract says the bias held "across seven core business tensions" and "regardless of varying company
+      contexts or prompt styles", and that better prompts or richer context "had limited effect". The record
+      gives no sample sizes or figures. The HBR full text was not opened (paywall). No primary write-up by the
+      authors (paper or preprint) was found. CHECK: the ledger claim says "seven leading LLMs". The abstract
+      says "seven core business tensions". Both may be true (the zby summary lists 7 models), but the
+      Verifier should confirm the wording before a slide uses "seven". The figures (under 2%, about 11%,
+      about 19%) still come only from the third-party summary. Keep status partly verified
+    url: https://www.ebsco.com/articles/business-and-management/2b719c91-ae1b-588d-9ad1-2be2f30e67ec/researchers-asked-llms-for-strategic-advice-they-got-trendslop-in-return
+
+  - id: E12
+    found: >-
+      The second Dragonboat story (Fortune 500 bank) is now opened and recorded as E18. It is also a vendor
+      story with no measured AI result. Both Dragonboat items are vendor true. Together they count as one
+      vendor source, not two
+    url: https://dragonboat.io/customer-stories/outcome-driven-transformation-fortune-500-bank/
+
+  - id: E13
+    found: >-
+      Original publisher cannot be traced. The inkl page names no outlet, has no "originally published" line,
+      no source link and no date. Only the byline (Akhil Kumar Pandey, Principal PM at SAP) is shown. Image
+      credits (Nature, SAP Community, Constellation Research, The Burndown) are not the publisher. A web search
+      found no SAP-published or other copy. The 25% figure cites a reference [7] whose title does not clearly
+      support it. No figure has a baseline. Other figures (30% faster decision cycles, 20% less compliance
+      workload, 40% fewer escalations) have the same problem. Keep status not verified. Recommend moving E13 to
+      "dropped" for slide use
+    url: https://www.inkl.com/news/roadmaps-risk-and-results-how-ai-changed-our-product-planning-at-sap
+
+gaps:
+
+  - id: G4-2
+    status: still open
+    note: >-
+      No 2026 named-company case of AI in portfolio, prioritization or roadmap planning with a measured result
+      was found in 4 searches. Results were vendor blogs, tool lists and consultancy pages with no named client
+      or no numbers. E11 (IBM, 2024) stays the only named company, with no results. Next step: ask Dan for
+      client stories (decision 43), or search conference talks (Mind the Product, ProductCon, PDMA) in Stage 2
+  - id: G4-4
+    status: partly closed
+    note: >-
+      E16 (pathology experts anchor on an AI numeric estimate, n = 28) and E17 (people's credit ratings drift
+      toward an AI rating over time, JMS, peer reviewed) show anchoring on an AI number or score. Neither is a
+      product prioritization or ranking task. Neither abstract gives effect sizes. E15 is deference to an AI
+      prediction, not anchoring on a score. Next step: open the full texts of E16 and E17 for sample and
+      coefficients
+  - id: G4-11
+    status: still open for E3
+    note: >-
+      HBR full text not opened (paywall). No authors' working paper found. E3 figures remain from a third-party
+      summary. Next step: Dan or Pragmatic opens the HBR article with a subscription, or E3 is used without
+      numbers
+  - id: G4-13
+    status: new
+    note: >-
+      E13 (SAP) cannot be traced to an original publisher. Treat as a gap, not as evidence
