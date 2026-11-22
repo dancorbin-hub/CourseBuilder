@@ -10,6 +10,10 @@ Repo record of Dan's Gate 1 answers. Applied to course files only after Dan's ye
 | e) Platform risks | "Acknowledged" | Take the 7 recommendations: ChatGPT core build is a Project; Go or Plus minimum; 20 files in step cards; Copilot license or billing is a prerequisite, fallback tested at Gate 2; text catch-up kit on all 4 platforms; Gate 2 tests file output; test Gemini on a Workspace account | Accepted by Dan 2026-11-22. Applies at Gate 2 |
 | f) Row 10, alternatives map | Retain. Dan fills the bottleneck gap with one real example: his own, Pragmatic's, or an unnamed client. Win/loss must feature in the course: a major data source most teams do not get, and a big aha moment | Option 1: retain row 10 with Dan's example. Gap recorded. Talk track slot for the example. Win/loss (row 02) stays its own module | Decided by Dan 2026-11-22 |
 | Quick yes or no (PA-04, PA-06 to PA-09, age flags) | "Yes to all of these" | PA-04: "match rate", minimum 10 deals, interviews by someone outside sales (applied to row 02). PA-06: all three tests named (applied to row 04). PA-07: 2027 terms only; tell Pragmatic MKT slide 7 is out of date. PA-08: keep pdlc_stage in repo, say "category" to learners. PA-09: Gemini step card says Gems are now skills. Keep W13 and E5 | Decided by Dan 2026-11-22 |
+| b) Approved row corrections | "Yes" | E8 Gemini Workspace line corrected in the approved row, rows 01 and 02 and ledger E8 (now cites gm-03). Approved row registry_check quoted, so the file parses. Row 01 sources changed to E4, E10, E5 (E1 kept as vendor note) | Applied 2026-11-22 |
+| d) Rows 06 and 08 | "Defer both to the Product Strategy and Planning course" | Row 06 market size model and row 08 concept tests move to the Strategy course inventory as candidate rows | Decided 2026-11-22. Recorded in the registry |
+| Rows | "Yes" | Retain 01, 02, 03, 09, 10. Fold 04 into 03, 05 into 01, 07 into 09 | Decided 2026-11-22 |
+| Bond story | "Hold off" | Not needed until Stage 3 (module 1 deck). Candidates stay in bond-stories.md | Open. Dan picks before module 1 is built |
 
 ## Course themes from Dan
 

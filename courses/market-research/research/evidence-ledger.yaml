@@ -133,7 +133,7 @@ entries:
     note: Not re-checked by track 4. Platform matrix owns re-checks
 
   - id: E8
-    claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). Workspace business accounts get skills in March 2027. A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
+    claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). For Workspace, skills available now per the Workspace Updates blog (gm-03); business Gems removed from March 2027. Corrected 2026-11-22 (Dan, Gate 1 b). A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
     type: tool-feature
     source: About the transition from Gems to skills, Gemini Apps Help
     source_id: S9
@@ -142,7 +142,7 @@ entries:
     source_date: unknown (page shows no date)
     checked_on: 2026-11-20
     age_flag: false
-    status: "wrong"
+    status: "verified (corrected 2026-11-22; Workspace part now cites gm-03)"
     verifier_note: "Opened 2026-11-20. Personal dates, 100 MB and tool list are correct. 'Workspace business accounts get skills in March 2027' is wrong: the Help page gives March 2027 as the Gem removal date for business accounts and says work accounts get skills 'soon'. The Workspace Updates blog (2026-09-30, updated 2026-11-09) says all Workspace customers get Gemini app skills, rollout done by mid-November 2026. Help page undated"
     note: No scheduling found for skills. Not re-checked by track 4
 

@@ -17,7 +17,7 @@
     description: Synthesis takes days per study, so insight reaches the roadmap late. AI cuts the analysis time, but the work moves to checking AI output
     pdlc_stage: Market
     focus_area: Market Problems
-    sources: [E1, E3, E5]
+    sources: [E4, E10, E5]   # E1 kept as a vendor note (Dan, Gate 1 b, 2026-11-22)
 
   scores:
     judgment: medium. Coding is rule-based; deciding what a pattern means needs the PM
@@ -64,7 +64,7 @@
       claude: Skill or Project with the brief and code book
       chatgpt: Project with the brief and code book (E9 not verified)
       copilot: Agent in Copilot agent builder with the brief and the code book as an embedded file
-      gemini: Gemini skill with the brief and code book. Workspace business accounts get skills in March 2027
+      gemini: Gemini skill with the brief and code book. For Workspace, Gemini app skills are available to all Workspace customers per the Workspace Updates blog (gm-03, 2026-09-30, updated 2026-11-09); business Gems are removed from March 2027. Test on a Workspace account at Gate 2
     steps:
       - Copy the agent brief template. Fill in the job, the code book and the output format
       - Add two quality checks and two hand-off rules from the menu
@@ -148,7 +148,7 @@
       age_flag: false
       status: "verified"
     - id: E8
-      claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). Workspace business accounts get skills in March 2027. A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
+      claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). For Workspace, skills available now per the Workspace Updates blog (gm-03); business Gems removed from March 2027. Corrected 2026-11-22 (Dan, Gate 1 b). A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
       type: tool-feature
       source: About the transition from Gems to skills, Gemini Apps Help
       url: https://support.google.com/gemini/answer/18560919?hl=en
@@ -237,7 +237,7 @@
       claude: Skill with the driver code book and output format, added to the course agent project
       chatgpt: Project with the brief, code book and CSV (E9 not verified)
       copilot: Agent in Copilot agent builder with the code book as an embedded file (E6)
-      gemini: Gemini skill with the brief and code book (E8). Workspace business accounts get skills in March 2027
+      gemini: Gemini skill with the brief and code book (E8). For Workspace, Gemini app skills are available to all Workspace customers per the Workspace Updates blog (gm-03, 2026-09-30, updated 2026-11-09); business Gems are removed from March 2027. Test on a Workspace account at Gate 2
     stretch: Run the agent on each new batch when the export file arrives, where the platform allows (not verified)
     registry_check: "Not a CAW-AI agent. CAW-AI module 4 (\"what only your buyers can tell you\") compares own buyer sources with public reviews; this lab does not reteach that. Inputs overlap with mr-wf-01 (win/loss calls). The difference is the deal-level driver log and the CRM match rate. Dan to decide whether this is a separate module or a lab inside mr-wf-01. Pragmatic fit is strong: the guide names win/loss, 2 to 4 weeks after the decision, at least 10 deals"
   evidence:

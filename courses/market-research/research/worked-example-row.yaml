@@ -17,7 +17,7 @@ bottleneck:
   description: Synthesis takes days per study, so insight reaches the roadmap late. AI cuts the analysis time, but the work moves to checking AI output
   pdlc_stage: Market
   focus_area: Market Problems
-  sources: [E1, E3, E5]
+  sources: [E4, E10, E5]   # E1 kept as a vendor note (Dan, Gate 1 b, 2026-11-22)
 
 scores:
   judgment: medium. Coding is rule-based; deciding what a pattern means needs the PM
@@ -66,7 +66,7 @@ proposed_lab:
     claude: Skill or Project with the brief and code book
     chatgpt: Project with the brief and code book (E9 not verified)
     copilot: Agent in Copilot agent builder with the brief and the code book as an embedded file
-    gemini: Gemini skill with the brief and code book. Workspace business accounts get skills in March 2027
+    gemini: Gemini skill with the brief and code book. For Workspace, Gemini app skills are available to all Workspace customers per the Workspace Updates blog (gm-03, 2026-09-30, updated 2026-11-09); business Gems are removed from March 2027. Test on a Workspace account at Gate 2
   steps:
     - Copy the agent brief template. Fill in the job, the code book and the output format
     - Add two quality checks and two hand-off rules from the menu
@@ -77,7 +77,7 @@ proposed_lab:
   stretch: Run the agent on a schedule or when files arrive, where the platform allows (not verified for 2027)
   planted_error: Vocal buyer counted as a pattern
   success_check: Batch 2 run. The log updates, the flag report lists the new contradiction, and no insight below the PM's bar is called a pattern
-  registry_check: AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by flags, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20). PDW-AI (Product Discovery with AI) already teaches one-pass AI synthesis, the quote check and frequency vs intensity. The lab starts where PDW-AI stops: no slides on coding or quote checks; time goes to running the agent on batches, the log over time, the flag report, the audit and tuning (Dan, 2026-11-20)
+  registry_check: "AI Agents course teaches boundaries, exit conditions and guardrails (slides 37 to 39, 57, 58). This lab refers to them and teaches what is new, managing a running agent by flags, audits and tuning. Not a repeat of CAW-AI buyer voice watch (Dan, 2026-11-20). PDW-AI (Product Discovery with AI) already teaches one-pass AI synthesis, the quote check and frequency vs intensity. The lab starts where PDW-AI stops: no slides on coding or quote checks; time goes to running the agent on batches, the log over time, the flag report, the audit and tuning (Dan, 2026-11-20)"
   pragmatic_fit: Good fit (Dan, 2026-11-20). Pragmatic Framework 2027 says to talk with evaluators who bought and who did not, then validate, prioritize and share the problems. It also says teams must verify AI output, protect sensitive information and stay accountable
 
 evidence:
@@ -150,7 +150,7 @@ evidence:
     age_flag: false
     status: verified
   - id: E8
-    claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). Workspace business accounts get skills in March 2027. A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
+    claim: Gems become skills from 2026-11-17 and are removed 2026-12-17 (personal accounts). For Workspace, skills available now per the Workspace Updates blog (gm-03); business Gems removed from March 2027. Corrected 2026-11-22 (Dan, Gate 1 b). A skill holds instructions and up to 100 MB of files. Most Gem tools (Deep research, Canvas) do not work in skills
     type: tool-feature
     source: About the transition from Gems to skills, Gemini Apps Help
     url: https://support.google.com/gemini/answer/18560919?hl=en
