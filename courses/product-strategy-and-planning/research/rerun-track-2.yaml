@@ -1,0 +1,107 @@
+# Rerun of track 2 (methods and platforms), gaps only. Course product-strategy-and-planning.
+# Written 2026-11-22 from the "Gaps for rerun" asks in critic-report.md section 4.
+# This file does not change platform-matrix.yaml. The Verifier decides what moves into the matrix.
+# Fetch budget used: 10 of 10 (2 searches, 8 page fetches; 2 fetches failed or were blocked).
+# All entries are "not verified" until the Verifier checks them.
+
+course: product-strategy-and-planning
+checked_on: '2026-11-22'
+features:
+- id: gm-14
+  platform: gemini
+  feature: Create, preview and edit files in the Gemini app (Sheets, slide decks, PDF)
+  plans: All Google Workspace customers, Workspace Individual subscribers and personal Google accounts, all languages where the Gemini app is available
+  limits: PDF preview and edit on web and mobile. Other formats, spreadsheets included, on web only. A sheet can be built and opened in Google Sheets. Slide decks download as PPTX or PDF. Post does not name .xlsx. Post does not mention code execution, skills or Gems
+  use_in_core_lab: 'no'
+  url: https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html
+  source_date: '2026-10-29'
+  checked_on: '2026-11-22'
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Post 2026-10-29. Confirmed: plans, PDF on web and mobile, other formats web only, Sheets open in Google Sheets, decks as PPTX or PDF, no .xlsx. Post also lists Docs, Markdown, TXT, LaTeX and code as file types on web, but says nothing on code execution, skills or Gems'
+  note: Adds to gm-09 (file generation, 2026-04-27). Both posts are about chat in the Gemini app. Neither says a skill run can create a file. Use only as support for the Gate 2 fallback below, not as proof that a skill makes files
+- id: gm-15
+  platform: gemini
+  feature: Code or scripts run by a Gemini app skill (ask 1)
+  plans: Same as gm-01
+  limits: 'No dated Google doc found that says a Gemini app skill runs code. Checked: Gems to skills help page (answer 18560919, undated) describes skills as "reusable custom instructions" and says nothing on code. Google blog launch post (2026-09-30) says skills can hold reference files (text, PDF, images) and says nothing on code, Python, math or file output. Workspace post 2026-10-29 says nothing on code or skills. Only the undated skills help page (gm-11) says code files can be uploaded and internet scripts are not supported'
+  use_in_core_lab: 'no'
+  url: https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/
+  source_date: '2026-09-30'
+  checked_on: '2026-11-22'
+  status: not verified
+  verifier_note: 'Blog post not reopened (budget). The gap is a "not found" result. gm-14 check confirms the 2026-10-29 post says nothing on skills or code execution. Gap stands'
+  note: Gap confirmed, see gaps. Gate 2 fallback for scoring and sensitivity labs on Gemini is a Google Sheet with formulas (see gaps)
+- id: mb-15
+  platform: copilot
+  feature: Code interpreter on an embedded .xlsx knowledge file in an agent builder agent (ask 3)
+  plans: Code interpreter for Microsoft 365 Copilot license and Copilot Chat users 'without metered usage enabled' (page text). Embedded files need a license or pay-as-you-go billing (mb-03)
+  limits: 'Code interpreter page, now last updated 2026-11-16, names inputs as files the user uploads: "Users can also upload data files ... Word, Excel, PowerPoint, PDF, CSV/TSV, and TXT/UTF8." It does not mention knowledge sources, embedded files, SharePoint or OneDrive. Agent builder page (2026-11-16) shows the example prompt "Analyze this Excel data and generate a chart" but does not say where the data comes from. Output files are session-only'
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter
+  source_date: 2026-11-16 (page "Last updated"; the matrix had 2026-09-28 on 2026-11-20)
+  checked_on: '2026-11-22'
+  status: verified
+  verifier_note: 'Opened 2026-11-22. Last updated 2026-11-16, ms.date 2026-11-09. Plans and the upload quote confirmed. Page does not name knowledge, embedded files, SharePoint or OneDrive as inputs. Output session-only confirmed. New: the page says "In Agent Builder, code interpreter is always enabled". MR-E6 and mb-04 describe a toggle. Check the toggle at the Gate 2 proof'
+  note: 'Answer: not documented for agent builder. Keep the mb-13 lab design: the learner uploads the scoring .xlsx in chat for each run. Test at the Gate 2 proof whether code interpreter reads the embedded copy. The page date moved from 2026-09-28 to 2026-11-16; the Verifier should note this on mb-11 and mb-13'
+- id: mb-16
+  platform: copilot
+  feature: Code interpreter on structured knowledge files in Copilot Studio (not agent builder), preview
+  plans: Copilot Studio. Code generation and execution count as premium generative AI features under Copilot Studio billing. Public clouds only
+  limits: 'Code interpreter reads .xlsx and .csv in 2 ways: files the user uploads in chat, or files in a SharePoint Documents library added as knowledge (Work IQ on). 16 MB per file, 10 files. Maker turns on Code interpreter in Settings, Generative AI. Preview. The page does not mention agent builder or files uploaded as embedded knowledge'
+  use_in_core_lab: 'no'
+  url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-code-interpreter-structured-data
+  source_date: '2026-08-04'
+  checked_on: '2026-11-22'
+  status: verified
+  verifier_note: 'Opened 2026-11-22. ms.date 2026-08-04. Preview, chat uploads and SharePoint knowledge (Work IQ on), 16 MB and 10 files, premium billing, public clouds only: all confirmed. No mention of agent builder or embedded files. Indirect evidence only, as the note says'
+  note: Indirect evidence only. In full Copilot Studio, code interpreter reads SharePoint knowledge, not device-uploaded knowledge files. Do not carry this to agent builder without a test. Copilot Studio is not a course platform, and SharePoint knowledge needs a connector-like setup, so not core
+- id: MR-E6
+  platform: copilot
+  feature: Agent builder instructions (8,000 characters) and embedded files as knowledge
+  plans: Knowledge source availability differs by license (page text). See mb-03
+  limits: 'Instructions 8,000 characters, name 30, description 1,000. Embedded files are listed as a knowledge source type with "Availability and limits vary by source type"; file counts and sizes are on the add knowledge page (mb-02), not this page. Code interpreter toggle is "Create documents, charts, and code"'
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+  source_date: 2026-11-16 (Last updated, ms.date and updated_at)
+  checked_on: '2026-11-22'
+  status: not verified
+  verifier_note: 'Not reopened in this pass (budget). Same page was verified in the first pass as mb-01 (unchanged)'
+  note: Unchanged from mb-01 (verified 2026-11-20). Same page date. Embedded file limits (20 files, 512 MB and 30 MB) not rechecked this run; budget spent on ask 3
+- id: MR-E8
+  platform: gemini
+  feature: Gems move to skills
+  plans: Personal accounts 18+ now. Under 18 later, not announced. Workspace business, enterprise and non-profit March 2027. Education June 2027
+  limits: Personal Gems read-only 2026-11-17, removed 2026-12-17. Skills hold up to 100 MB of files; largest Gem files are removed first. Audio, video and archives are not supported. Downloading a skill gives a .zip with SKILL.md. Folder name must match the skill name. Opal and Gems by Google Labs end in November
+  use_in_core_lab: 'no'
+  url: https://support.google.com/gemini/answer/18560919?hl=en
+  source_date: unknown (page shows no date)
+  checked_on: '2026-11-22'
+  status: not verified
+  verifier_note: 'Not reopened in this pass (budget). Same page as gm-02. Undated, so it cannot be the dated feature source'
+  note: Unchanged from gm-02. Still undated, so the dated source stays the Workspace Updates post 2026-09-30 (updated 2026-11-09) in gm-03. Page says nothing on code or file output in skills
+- id: MR-E9
+  platform: chatgpt
+  feature: Projects in ChatGPT
+  plans: Not rechecked
+  limits: Not rechecked
+  use_in_core_lab: 'yes'
+  url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+  source_date: not retrieved
+  checked_on: '2026-11-22'
+  status: not verified
+  verifier_note: 'Not reopened in this pass (budget). First pass verifier report lists cg-01 as reopened and unchanged. The file count conflict (cg-01 vs cg-03) stays open'
+  note: help.openai.com failed again (client error). The help-lb.openai.com copy used on 2026-11-20 was blocked by this session's permission check, so it was not retried. Last good reading is cg-01 (help-lb, approx 2026-11-17, rechecked 2026-11-22 by the first run of track 2). The cg-01 vs cg-03 file count conflict (Plus 25 or 20) stays open
+gaps:
+- id: gap-t2-r1
+  ask: 1
+  text: 'No dated Google doc says a Gemini app skill can run code or scripts, or can produce a downloadable file. Checked 4 Google pages (see gm-14, gm-15, MR-E8). Only the undated skills help page mentions code files in a skill (gm-11)'
+  gate_2_fallback: 'Scoring and sensitivity labs on Gemini use a Google Sheet template with formulas. The learner copies the sheet. The skill writes the scores and weights as a table to paste in. The sheet does the math. The skill then reads back the results and writes the flag report. Gate 2 proof: test one skill run that asks for a Sheet (gm-09, gm-14). If it works, make it a stretch step, not core'
+- id: gap-t2-r2
+  ask: 2
+  text: E9 (ChatGPT Projects) not rechecked. help.openai.com failed with a client error and the help-lb host was blocked in this session. Dan or the Verifier can open the page in a browser and record the date and file limits
+- id: gap-t2-r3
+  ask: 3
+  text: 'No Microsoft doc says code interpreter in an agent builder agent can read an embedded .xlsx knowledge file. Microsoft docs only cover files uploaded in chat (agent builder) and SharePoint knowledge (Copilot Studio, preview, mb-16). Core path: upload the .xlsx in chat for each run (mb-13). Test the embedded copy at the Gate 2 proof'
+- id: gap-t2-r4
+  ask: 2
+  text: E6 embedded file limits (mb-02 add knowledge page) not reopened this run because of the fetch budget. The build agents page date is unchanged (2026-11-16), so risk is low

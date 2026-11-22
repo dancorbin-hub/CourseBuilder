@@ -1,0 +1,28 @@
+# Course state. Agents read this before they start a stage.
+# Only Dan changes a gate to approved.
+course: product-strategy-and-planning
+title: Advanced AI for Product Strategy and Planning
+stage: 1              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+delivered_by: Dan (decision 45). Talk track must work for a part-time instructor later
+gates:
+  worked_example_row: { status: borrowed, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp", note: "No course-specific row. Stage 1 uses the approved Market Research row mr-wf-01 (v3) as the depth and format model. Dan to confirm at Gate 1" }
+  gate_1_research:    { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk" }
+  gate_2_spec:        { status: not_started, approved_on: null, doc: null, pragmatic_review: null }
+  gate_3_modules:     []
+  gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
+blockers: []
+hold: "Do not start Stage 2. Pragmatic reviews the Market Research syllabus first; its feedback may change structure or skill mapping for every course (coordinator, 2026-11-22)"
+inputs_from_other_courses:
+  - mr-wf-06 Build and refresh a sourced market size model (deferred by Dan, Market Research Gate 1, 2026-11-22)
+  - mr-wf-08 Score concept tests per hypothesis (deferred by Dan, Market Research Gate 1, 2026-11-22)
+  - "Market Research capability mapping gap 1: skill 2.2 Opportunity Prioritization (Competitive Landscape box) belongs to this course"
+pragmatic_sources:
+  - Pragmatic Framework 2027 guide (project files, reference/pragmatic-sources/)
+  - Pragmatic Capability Standards Workbook 2027 (project files, reference/pragmatic-sources/)
+  - Workshop and core course decks in reference/pragmatic-sources/ (see shared/registry/registry.yaml)
+  - Pragmatic Institute website (pragmaticinstitute.com)
+  - What makes a Pragmatic course; How the Capability Standards drive learning development
+  - "Proposed, Dan to confirm: Focus core course draft FCS_28.01_DRAFT_v6_Full.pptx and Build draft BLD_28.01_DRAFT_v1.pptx (project files root). Used for the no-repeat check only"
+settings:
+  capability_map: off
+fingerprints: {}
