@@ -7,3 +7,4 @@
 - Track 2 methods and platforms done (35 carried, 16 new features, methods S1 to S10, 15 fetches).
 - Track 1 workflows done (10 rows sp-wf-01 to 10, W1 to W24, 25 fetches). 06:03 UTC: Step 2 started: critic and alignment now; Verifier after the fetch budget resets (about 06:55 UTC).
 - Critic done: 6 pass, 6 concerns. Views: merge 01 into 09, 03 into 05; reject 04 here; defer 06. 8 rerun asks.
+- Alignment done: 17 conflicts (3 high: PS-01 drift row vs Focus demo agent, PS-02 change notes vs Build stakeholder agent, PS-03 scoring model differs from Focus). 7 fetches used by checkers.
