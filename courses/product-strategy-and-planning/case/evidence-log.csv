@@ -1,0 +1,61 @@
+evid_id,source_type,account,segment,date,problem_id,note
+INT-02,interview,A-3301,Distribution,2026-03-10,PB-01,Night shift lead did not hear the phone alert for a freezer door.
+INT-07,interview,A-3303,Distribution,2026-05-12,PB-01,Alert went to a manager who was off shift.
+WL-05,win/loss,A-3304,Distribution,2026-04-02,PB-01,Deal lost. Rival offers a second call when nobody answers.
+FB-12,feedback,A-4102,Food service,2026-07-14,PB-01,Kitchen manager missed a Sunday night alert.
+FB-19,feedback,A-4105,Food service,2026-08-03,PB-01,Store alert sat unread for two hours.
+REQ-031,request,A-3302,Distribution,2026-02-17,PB-01,Sales request: send a second alert by SMS if nobody answers.
+INT-03,interview,A-5101,Pharmacy and lab,2026-03-18,PB-02,Audit prep takes three days of manual record pulls.
+INT-09,interview,A-5103,Pharmacy and lab,2026-05-27,PB-02,Auditor asked for probe serial numbers on every certificate.
+INT-15,interview,A-5105,Pharmacy and lab,2026-09-09,PB-02,Records sit in three tools. Staff copy them by hand.
+WL-08,win/loss,A-5102,Pharmacy and lab,2026-04-21,PB-02,Chose Larkspan for calibration records. Wants less manual work.
+WL-14,win/loss,A-5106,Pharmacy and lab,2026-08-12,PB-02,Lost on audit report format.
+FB-22,feedback,A-5104,Pharmacy and lab,2026-08-29,PB-02,Report export misses calibration dates.
+FB-25,feedback,A-5107,Pharmacy and lab,2026-10-02,PB-02,Asks for one audit file per medicine fridge.
+REQ-087,request,A-5101,Pharmacy and lab,2026-06-04,PB-02,Pharmacy chain asks for a calibration certificate export.
+INT-04,interview,A-4101,Food service,2026-03-25,PB-03,Defrost cycle triggers an alarm every night at 3 am.
+FB-08,feedback,A-4103,Food service,2026-06-30,PB-03,Staff mute alerts because of defrost alarms.
+FB-15,feedback,A-4104,Food service,2026-07-28,PB-03,Three false alarms in one week from one walk-in.
+FB-27,feedback,A-4106,Food service,2026-10-10,PB-03,Defrost alarms hide a real alarm.
+REQ-044,request,A-4101,Food service,2026-04-08,PB-03,Reseller asks for a defrost window per sensor.
+INT-05,interview,A-3302,Distribution,2026-04-14,PB-04,Two installers needed two days for one warehouse.
+INT-11,interview,A-4102,Food service,2026-06-09,PB-04,Contractor waited for hub pairing at each store.
+INT-12,interview,I-Install,Internal,2026-07-02,PB-04,Install lead: checklist gaps cause second visits.
+WL-10,win/loss,A-4103,Food service,2026-05-30,PB-04,Buyer chose a rival with a shorter install.
+FB-14,feedback,A-3305,Distribution,2026-07-20,PB-04,Install took longer than the quote said.
+REQ-052,request,I-Install,Internal,2026-05-19,PB-04,Install team asks for a better install checklist.
+INT-06,interview,A-3303,Distribution,2026-04-28,PB-05,Wi-Fi does not reach the back of the cold room.
+INT-13,interview,A-3304,Distribution,2026-06-16,PB-05,Hub drops offline when the dock doors open.
+WL-11,win/loss,A-3305,Distribution,2026-06-22,PB-05,Rival cellular probe won. No hub needed.
+FB-17,feedback,A-3306,Distribution,2026-07-31,PB-05,Hub lost Wi-Fi twice in one month.
+FB-24,feedback,A-4105,Food service,2026-09-14,PB-05,Store has no Wi-Fi in the storage room.
+REQ-060,request,A-3301,Distribution,2026-06-02,PB-05,Sales request: a probe that needs no hub.
+FB-18,feedback,A-3302,Distribution,2026-08-05,PB-06,Dock door alarms fire when trucks load.
+FB-26,feedback,A-3306,Distribution,2026-09-22,PB-06,Door-open alert is too fast for the loading dock.
+INT-08,interview,A-3301,Distribution,2026-05-05,PB-07,Renaming 300 probes took a day.
+FB-13,feedback,A-4101,Food service,2026-07-09,PB-07,Cannot change alert settings for many probes at once.
+FB-23,feedback,A-3304,Distribution,2026-08-19,PB-07,New site setup repeats the same edits.
+REQ-066,request,A-4102,Food service,2026-07-02,PB-07,Reseller asks for bulk rename.
+INT-16,interview,I-Finance,Internal,2026-09-30,PB-08,Finance cannot match cellular bills to sites.
+REQ-070,request,I-Finance,Internal,2026-08-12,PB-08,Finance asks for data usage by site.
+FB-28,feedback,I-Support,Internal,2026-10-06,PB-08,Support cannot say which site uses the most data.
+REQ-071,request,I-CustSuccess,Internal,2026-10-14,PB-08,Customer Success asks for a usage report by site.
+FB-20,feedback,I-Install,Internal,2026-07-23,PB-09,Installers lost checklist entries at a remote site.
+INT-17,interview,A-3306,Distribution,2026-08-26,PB-09,Remote cold storage has no signal during install.
+REQ-045,request,I-Install,Internal,2025-10-06,PB-09,Install team asks for an offline mode in the checklist.
+FB-16,feedback,I-Support,Internal,2026-07-21,PB-10,Support cannot see when a hub last reported.
+INT-14,interview,I-CustSuccess,Internal,2026-06-24,PB-10,Customer Success asks Support for firmware status each week.
+REQ-058,request,I-Install,Internal,2026-05-30,PB-10,Install asks to see hub last-seen time before a visit.
+FB-29,feedback,R-201,Food service,2026-10-20,PB-11,Reseller cannot see all customer sites in one view.
+REQ-072,request,R-205,Food service,2026-09-03,PB-11,Reseller asks for a view of all their sites.
+FB-30,feedback,A-4104,Food service,2026-10-22,PB-12,Kitchen staff read alerts in Spanish.
+FB-31,feedback,A-4106,Food service,2026-10-27,PB-12,Alert text is hard to read for new staff.
+INT-10,interview,A-4101,Food service,2026-05-19,PB-13,Director wants one report across all stores.
+WL-12,win/loss,A-4102,Food service,2026-06-11,PB-13,Buyer asked for a multi-site summary.
+FB-11,feedback,A-4104,Food service,2026-06-26,PB-13,Manager builds a summary by hand each month.
+REQ-063,request,A-4105,Food service,2026-06-05,PB-13,Sales request: one summary for all stores.
+INT-18,interview,A-3305,Distribution,2026-08-25,PB-14,A failed firmware update left a hub offline for six days.
+FB-32,feedback,A-3303,Distribution,2026-09-02,PB-14,Hub stayed offline after an update. A technician visit fixed it.
+REQ-074,request,I-Support,Internal,2026-09-15,PB-14,Support asks for a way to roll back a bad update.
+FB-33,feedback,I-Install,Internal,2026-10-01,PB-14,Installers repair hubs after failed updates.
+REQ-079,request,A-5108,Pharmacy and lab,2026-08-18,,Sales request: put a chain logo on the audit report cover. No problem stated.

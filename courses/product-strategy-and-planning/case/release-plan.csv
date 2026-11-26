@@ -1,0 +1,6 @@
+release_id,release_date,rp_id,item,teams,roadmap_item,owner_role
+R-2027.1,2027-02-15,RP-01,Hub firmware over-the-air rollback,Firmware team;Test lab,RM-03,Delivery lead
+R-2027.1,2027-02-15,RP-02,Audit report v2 with probe serial numbers,Cloud team,RM-04,Delivery lead
+R-2027.1,2027-02-15,RP-03,Install checklist v2 in the Fleet Data Platform,Data platform team;Cloud team,RM-02,Delivery lead
+R-2027.2,2027-05-17,RP-04,Probe X volume launch,Firmware team;Cloud team;Hardware design team;Test lab,RM-07,Delivery lead
+R-2027.2,2027-05-17,RP-05,Guided hub pairing in the install app,Firmware team;Cloud team,RM-01,Delivery lead

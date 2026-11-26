@@ -1,0 +1,11 @@
+pb_id,problem,segments,evidence_count,accounts,source_types,evidence_ids
+PB-01,Staff miss the first alert at night or on weekends,Distribution; Food service,6,6,feedback; interview; request; win/loss,INT-02;INT-07;WL-05;FB-12;FB-19;REQ-031
+PB-02,Audit preparation needs manual record work,Pharmacy and lab,8,7,feedback; interview; request; win/loss,INT-03;INT-09;INT-15;WL-08;WL-14;FB-22;FB-25;REQ-087
+PB-03,Defrost cycles cause false alarms,Food service,5,4,feedback; interview; request,INT-04;FB-08;FB-15;FB-27;REQ-044
+PB-04,Installing a site takes too many days and visits,Distribution; Food service; Internal,6,5,feedback; interview; request; win/loss,INT-05;INT-11;INT-12;WL-10;FB-14;REQ-052
+PB-05,Wi-Fi hubs lose the signal in cold rooms,Distribution; Food service,6,6,feedback; interview; request; win/loss,INT-06;INT-13;WL-11;FB-17;FB-24;REQ-060
+PB-07,Changing many probes one by one takes hours,Distribution; Food service,4,4,feedback; interview; request,INT-08;FB-13;FB-23;REQ-066
+PB-08,Cellular data bills cannot be matched to sites,Internal,4,3,feedback; interview; request,INT-16;REQ-070;FB-28;REQ-071
+PB-10,Support cannot see hub last-seen time and firmware status fast,Internal,3,3,feedback; interview; request,FB-16;INT-14;REQ-058
+PB-13,Managers build multi-site summaries by hand,Food service,4,4,feedback; interview; request; win/loss,INT-10;WL-12;FB-11;REQ-063
+PB-14,A failed firmware update leaves a hub offline until a visit,Distribution; Internal,4,4,feedback; interview; request,INT-18;FB-32;REQ-074;FB-33

@@ -1,0 +1,17 @@
+Id,Assumption,Unit,Low,Base,High,Evidence source,Evidence date,Owner,Result at Low,Result at High,Effect of Low,Effect of High,Swing,Order by swing
+A-01,Year 1 volume,units,14400,18000,21600,"Source pack S-02, S-03, S-04",2026-06-04,"PM, Probe and Hub",1422560,2339840,-458640,458640,917280,1
+A-02,"Hardware price, net to Larkspan",USD per unit,94.5,96,97.5,Reseller price list v4,2026-03-02,VP Sales,1854200,1908200,-27000,27000,54000,5
+A-03,Enclosure and seal set cost,USD per unit,29.5,31.6,36,Corvane Tooling quote Q-2026-0417,2026-09-30,Head of Hardware,1919000,1802000,37800,-79200,117000,2
+A-04,"Other unit cost (cellular module, antenna, electronics, assembly, freight)",USD per unit,19.8,20.7,22.4,Bill of materials v7,2026-10-06,Head of Hardware,1897400,1850600,16200,-30600,46800,6
+A-05,Cloud attach rate (denominator: Probe X sites older than 90 days),share,0.6,0.62,0.64,Pilot cohort extract,2026-09-12,"PM, Larkspan Cloud",1832600,1929800,-48600,48600,97200,3
+A-06,Cloud net revenue per site per year,USD,140,144,148,Price book 2026,2026-08-20,"PM, Larkspan Cloud",1836560,1925840,-44640,44640,89280,4
+A-07,Cellular data cost per site per year,USD,8,9,10,,,Finance lead,1892360,1870040,11160,-11160,22320,8
+A-08,"Hard tooling cost, one time",USD,400000,412000,440000,Corvane Tooling quote Q-2026-0417,2026-09-30,Head of Hardware,1893200,1853200,12000,-28000,40000,7
+,,,,,,,,,,,,,,
+,Unit cost (USD per unit),,,52.3,,,,,,,,,,
+,Hardware margin per unit (USD),,,43.7,,,,,,,,,,
+,Hardware margin (share of price),,,0.455208,,,,,,,,,,
+,Year 1 gross profit (USD),,,1881200,,,,,,,,,,
+,Year 1 gross profit with every Low value (USD),,,1391360,,,,,,,,,,
+,Year 1 gross profit with every High value (USD),,,2312272,,,,,,,,,,
+,Result changes sign inside the tested range,,,no,,,,,,,,,,

@@ -2,16 +2,16 @@
 # Only Dan changes a gate to approved.
 course: product-strategy-and-planning
 title: Advanced AI for Product Strategy and Planning
-stage: 1              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+stage: 2              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 delivered_by: Dan (decision 45). Talk track must work for a part-time instructor later
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-26, doc: null, file: "research/worked-example-row.yaml", note: "Course row sp-wf-09 v1 (Dan picked it at Gate 1, decision h, 2026-11-26). Draft for Dan's approval. Format model stays mr-wf-01 (v3)" }
   gate_1_research:    { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk" }
-  gate_2_spec:        { status: not_started, approved_on: null, doc: null, pragmatic_review: null }
+  gate_2_spec:        { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/W2UADbKq77U3eiytxusc9J", pragmatic_review: null }
   gate_3_modules:     []
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
-hold: "Do not start Stage 2. Pragmatic reviews the Market Research syllabus first; its feedback may change structure or skill mapping for every course (coordinator, 2026-11-22)"
+hold: null   # lifted 2026-11-26: Pragmatic approved the Market Research syllabus ("looks great, keep moving forward")
 inputs_from_other_courses:
   - mr-wf-06 Build and refresh a sourced market size model (deferred by Dan, Market Research Gate 1, 2026-11-22)
   - mr-wf-08 Score concept tests per hypothesis (deferred by Dan, Market Research Gate 1, 2026-11-22)
