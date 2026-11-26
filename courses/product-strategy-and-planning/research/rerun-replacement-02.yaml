@@ -221,7 +221,7 @@
   - 'Hardware: a second source on customer special requests and how they are decided'
   - 'No 2026 source with time data on request handling'
   - 'Health care, FinTech and services examples'
-  gate_1_decision: ''
+  gate_1_decision: "Retain as the replacement for row 02 (Dan, 2026-11-26). Decision field stays blank for the PM; reply drafted only after the PM decides"
   researcher_recommendation: 'Recommended replacement for sp-wf-02. Best evidence of the three, strong internal PM context, keeps part of 2.2, and the agent-manager pattern is clean (card, blank decision, reply after the PM decides). Fits the roadmap module as its upstream step or stands as its own module'
 
 - id: sp-wf-13
@@ -354,7 +354,7 @@
   open_gaps:
   - Internal PM source on scenario modeling
   - 'A non-vendor source on the time cost of planning scenarios'
-  gate_1_decision: ''
+  gate_1_decision: "Not a row. Possible stretch step in 09 (Dan accepted A, 2026-11-26)"
   researcher_recommendation: 'Do not add as a row. Add one stretch step to the sp-wf-09 lab: compare 2 PM-named scenarios and mark kept or broken dates. Reason: same data, checks and planted-error family as 09 and 08'
 
 - id: sp-wf-14
@@ -440,5 +440,5 @@
   open_gaps:
   - 'Product-side burden source for competitor impact on backlog and business case'
   - Hardware and internal PM examples
-  gate_1_decision: ''
+  gate_1_decision: "Reject (Dan accepted A, 2026-11-26). Repeats CAW-AI module 3"
   researcher_recommendation: 'Reject. Fails the 2-source bottleneck rule and repeats CAW-AI module 3 and the AI-AGENTS Watchdog'
