@@ -122,7 +122,7 @@
   - Primary reports for W2 (date, method) and W3
   - Internal PM source
   - Hardware source for drift checks
-  gate_1_decision: "Fold into 09 (Dan, decision a, 2026-11-26). Drift becomes one section of the 09 pack"
+  gate_1_decision: "Drop (Dan, 2026-11-26). Replaces the fold into 09. No drift section and no Strategy Matrix in this course: it is taught in Focus, and too few learners use it"
 - id: sp-wf-02
   workflow: Re-score the problem backlog each intake cycle, with sensitivity and consistency checks
   topic_area: Strategy, roadmaps, planning
