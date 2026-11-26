@@ -116,3 +116,12 @@ Written 2026-11-22 by the workflow researcher. File: `research/workflows.yaml` (
 - Deloitte, semiconductor product management solutions; Built In, AI hardware product management guide (hardware leads)
 - New Zealand Treasury Investment Realisation guidance (cited in W23)
 - Market Research ledger E6 to E9 (platform features): not re-verified in this run
+
+### Replacement for row 02 (targeted rerun, 2026-11-26, rerun-replacement-02.yaml)
+
+1. sp-wf-12 (requests): hardware has one source only (W30). No 2026 source with time data on request handling. Health care, FinTech and services: gap.
+2. sp-wf-12: the State of Product Management 2026 figures (W25, W39) still need the primary report.
+3. sp-wf-13 (scenarios): both bottleneck sources are vendor content with no data. Internal PM: gap.
+4. sp-wf-14 (competitor impact): no product-side burden source found. Hardware and internal PM: gap.
+5. Skill 2.2: all five competencies are about scoring. With scoring out, no row covers 2.2A to 2.2D.
+6. Not opened: Forrester report on sales requests (paywall), Enterpret sales request guide, Planview 2026 scenario planning ebook, productify "Three questions before you react to competition".
