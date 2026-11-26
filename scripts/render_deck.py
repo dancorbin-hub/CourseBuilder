@@ -45,6 +45,9 @@ LIGHT = RGBColor(0x9A, 0x9A, 0x9A)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 PALE = RGBColor(0xF2, 0xF6, 0xF7)
 MIN_PT = 18
+# Sizes in this script are for a standard 13.33 in wide slide. SCALE grows them to the master's width
+# (the Pragmatic master is 26.67 in, so SCALE is 2 and the 18 pt floor is really 36 pt).
+SCALE = 1.0
 COURSE_CODES = {"market-research": "MR", "product-strategy-and-planning": "PSP", "market-and-launch": "ML"}
 
 # layout key -> (master layout name, content left edge in inches)
@@ -136,13 +139,14 @@ def _set_keep_format(tf, text):
 
 
 def fit_size(lines, width_in, height_in, start=32, gap=0.45):
-    for size in range(start, MIN_PT - 1, -2):
+    start, floor = int(round(start * SCALE)), int(round(MIN_PT * SCALE))
+    for size in range(start, floor - 1, -2):
         cpl = max(8, int(width_in * 72 / (size * 0.50)))
         rows = sum(max(1, math.ceil(len(l) / cpl)) for l in lines)
         need = rows * size * 1.2 / 72 + len(lines) * size * gap / 72
         if need <= height_in:
             return size, True
-    return MIN_PT, False
+    return floor, False
 
 
 def text(slide, left, top, width, height, lines, size, color=GRAY, font="Roboto Condensed",
@@ -222,19 +226,19 @@ def render_slide(prs, by_name, W, spec, notes, module_no, half_day):
         top = 1.45
     title = spec.get("title", "")
     if kind == "statement":
-        tsize, ok = fit_size([title], W - 4.4, 3.0, start=66)
+        tsize, ok = fit_size([title], W - 4.4, 3.0, start=40)
         text(s, 2.2, 3.0, W - 4.4, 3.2, [title], tsize, font="Roboto Medium", align=PP_ALIGN.CENTER,
              highlight=spec.get("highlight"), anchor=MSO_ANCHOR.MIDDLE)
         sizes.append(tsize)
         y = 6.8
     else:
-        tsize, ok = fit_size([title], width, 1.5, start=48 if lay != "chapter break" else 44)
+        tsize, ok = fit_size([title], width, 1.5, start=33 if lay != "chapter break" else 36)
         text(s, left, top, width, 1.6, [title], tsize, font="Roboto Medium",
              color=TEAL if lay == "chapter break" else GRAY, highlight=spec.get("highlight"))
         sizes.append(tsize)
         y = top + 1.75
     if minutes and lay in ("activity", "1_prompt"):
-        text(s, left, y - 0.2, 5, 0.55, ["%d MIN" % minutes], 22, color=ORANGE, font="Roboto Condensed Medium")
+        text(s, left, y - 0.2, 5, 0.55, ["%d MIN" % minutes], 28, color=ORANGE, font="Roboto Condensed Medium")
         y += 0.55
     lead = spec.get("lead")
     if lead:
@@ -248,7 +252,14 @@ def render_slide(prs, by_name, W, spec, notes, module_no, half_day):
 
     callout = spec.get("callout")
     safety = spec.get("box")
-    bottom = 12.9 - (1.3 if callout else 0) - (1.9 if safety else 0)
+    # Box heights grow with the scaled text size, so callout and data safety text fit at the floor size.
+    floor_pt = MIN_PT * SCALE
+    def need_h(t, w, pt):
+        cpl = max(8, int(w * 72 / (pt * 0.50)))
+        return max(1, math.ceil(len(t) / cpl)) * pt * 1.2 / 72 + 0.6
+    ch = max(1.05, need_h(callout or "", width - 0.6, floor_pt)) if callout else 0
+    sh = max(1.7, need_h((safety or {}).get("label", "") + "   " + (safety or {}).get("text", ""), width - 0.6, floor_pt)) if safety else 0
+    bottom = 12.9 - (ch + 0.25 if callout else 0) - (sh + 0.2 if safety else 0)
     items = spec.get("items", [])
     tiles = spec.get("tiles", [])
     if tiles:
@@ -259,15 +270,21 @@ def render_slide(prs, by_name, W, spec, notes, module_no, half_day):
         heads = [t.get("head", "") for t in tiles]
         bodies = [t.get("text", "") for t in tiles]
         hsize, ok1 = fit_size([max(heads, key=len)], tw - 0.5, 1.2, start=32)
-        bsize, ok2 = fit_size([max(bodies, key=len)], tw - 0.5, th - 1.6, start=28)
+        # Headings use a medium font, wider than the fit estimate. Measure rows with a wider
+        # character, so the body starts below the longest heading.
+        hcpl = max(6, int((tw - 0.5) * 72 / (hsize * 0.62)))
+        hrows = max(max(1, math.ceil(len(h) / hcpl)) for h in heads)
+        hh = hrows * hsize * 1.25 / 72
+        body_y = 0.35 + hh + 0.3
+        bsize, ok2 = fit_size([max(bodies, key=len)], tw - 0.5, th - body_y - 0.2, start=28)
         fits &= ok1 and ok2
         for i, t in enumerate(tiles):
             x = left + i * (tw + gap)
             box(s, x, y, tw, th, PALE)
             box(s, x, y, tw, 0.12, TEAL if i % 2 == 0 else NAVY)
-            text(s, x + 0.25, y + 0.35, tw - 0.5, 1.3, [t.get("head", "")], hsize, color=TEAL,
+            text(s, x + 0.25, y + 0.35, tw - 0.5, hh + 0.1, [t.get("head", "")], hsize, color=TEAL,
                  font="Roboto Condensed Medium")
-            text(s, x + 0.25, y + 1.6, tw - 0.5, th - 1.8, [t.get("text", "")], bsize)
+            text(s, x + 0.25, y + body_y, tw - 0.5, th - body_y - 0.2, [t.get("text", "")], bsize)
         sizes += [hsize, bsize]
     elif items:
         size, ok = fit_size(items, width, bottom - y, start=32)
@@ -286,18 +303,18 @@ def render_slide(prs, by_name, W, spec, notes, module_no, half_day):
         sizes.append(size)
     yb = bottom + 0.15
     if callout:
-        b = box(s, left, yb, width, 1.05, ORANGE)
-        csize, ok = fit_size([callout], width - 0.6, 0.9, start=26)
+        b = box(s, left, yb, width, ch, ORANGE)
+        csize, ok = fit_size([callout], width - 0.6, ch - 0.15, start=26)
         fits &= ok
-        text(s, left + 0.3, yb + 0.05, width - 0.6, 0.95, [callout], csize, color=WHITE,
+        text(s, left + 0.3, yb + 0.05, width - 0.6, ch - 0.1, [callout], csize, color=WHITE,
              font="Roboto Medium", anchor=MSO_ANCHOR.MIDDLE)
         sizes.append(csize)
-        yb += 1.3
+        yb += ch + 0.25
     if safety:
-        box(s, left, yb, width, 1.7, WHITE, line_color=NAVY)
-        ssize, ok = fit_size([safety.get("label", "") + " " + safety.get("text", "")], width - 0.6, 1.5, start=22)
+        box(s, left, yb, width, sh, WHITE, line_color=NAVY)
+        ssize, ok = fit_size([safety.get("label", "") + "   " + safety.get("text", "")], width - 0.6, sh - 0.2, start=22)
         fits &= ok
-        text(s, left + 0.3, yb + 0.1, width - 0.6, 1.5, [safety.get("text", "")], ssize, color=NAVY,
+        text(s, left + 0.3, yb + 0.1, width - 0.6, sh - 0.2, [safety.get("text", "")], ssize, color=NAVY,
              prefix=lambda i: safety.get("label", "DATA SAFETY") + "   ", prefix_color=NAVY)
         sizes.append(ssize)
     if spec.get("visual_todo"):
@@ -335,6 +352,8 @@ def main():
     os.remove(tmp)
     by_name = {l.name: l for m in prs.slide_masters for l in m.slide_layouts}
     W = prs.slide_width / 914400
+    global SCALE
+    SCALE = W / 13.333
     report = []
     for spec in plan["slides"]:
         sid = spec["id"]
@@ -344,13 +363,13 @@ def main():
         _, r = render_slide(prs, by_name, W, spec, notes.get(sid, ""), a.module, a.half_day)
         r.update({"id": sid, "title": spec.get("title"), "layout": spec.get("layout"),
                   "minutes": spec.get("minutes_half" if a.half_day else "minutes", 0),
-                  "has_notes": bool(notes.get(sid))})
+                  "has_notes": bool(notes.get(sid)), "min_pt": int(round(MIN_PT * SCALE))})
         report.append(r)
     prs.save(out)
     json.dump(report, open(out.replace(".pptx", ".json"), "w"), indent=1)
     bad = [r["id"] for r in report if not r["fits"]]
-    print("wrote %s: %d slides, %d minutes. Too dense at 18 pt: %s"
-          % (out, len(report), sum(r["minutes"] or 0 for r in report), ", ".join(bad) or "none"))
+    print("wrote %s: %d slides, %d minutes. Too dense at the floor (18 pt scaled to %d pt): %s"
+          % (out, len(report), sum(r["minutes"] or 0 for r in report), int(round(MIN_PT * SCALE)), ", ".join(bad) or "none"))
 
 
 if __name__ == "__main__":

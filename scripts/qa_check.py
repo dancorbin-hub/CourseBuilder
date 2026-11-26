@@ -78,9 +78,9 @@ def check_deck(r, pptx_path, sidecar_path, target_minutes, md_minutes, half=Fals
     if not side:
         r.add("D3 18 pt and fit (%s)" % name, False, "no sidecar .json; rerun render_deck.py")
         return
-    small = [s["id"] for s in side if s.get("body_pt") is not None and s["body_pt"] < 18]
+    small = [s["id"] for s in side if s.get("body_pt") is not None and s["body_pt"] < s.get("min_pt", 18)]
     nofit = [s["id"] for s in side if not s.get("fits", True)]
-    r.add("D3 body 18 pt or larger (%s)" % name, not small, ", ".join(small))
+    r.add("D3 body 18 pt or larger, scaled to slide width (%s)" % name, not small, ", ".join(small))
     r.add("D3 text fits (%s)" % name, not nofit, ", ".join(nofit))
     mod_min = sum(s.get("minutes") or 0 for s in side if not str(s.get("id", "")).startswith(("O.", "cover")))
     if not half and target_minutes:

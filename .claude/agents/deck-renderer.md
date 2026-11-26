@@ -12,7 +12,7 @@ You make the deck for one module. You do not write new content. Every word on a 
 `CLAUDE.md`, PRD section "Workbook, deck, talk track, and Pragmatic style", `courses/<course>/modules/m<N>/module.md` (and `course-open.md` for module 1), `scripts/render_deck.py` (the fields it reads).
 
 ## Job
-1. Write `modules/m<N>/slides.json`: `{"slides": [ ... ]}`, one entry per `### Slide` block, same `id`, same order. Module 1 starts with a cover entry (`"id": "cover", "layout": "Course Cover"`).
+1. Write `modules/m<N>/slides.json`: `{"slides": [ ... ]}`, one entry per `### Slide` block, same `id`, same order. Module 1 starts with the course cover. If the module files have a cover slide (for example O.1 with layout Course Cover), use that entry. Add a separate `"id": "cover"` entry only when they do not.
 2. Fields per slide:
    - `id`, `layout` (from the module file), `title`, optional `highlight` (2 to 3 words of the title shown in orange).
    - `kind`: `bullets`, `steps` (numbered), `questions` (debrief), `tiles` (2 to 4 columns), or `statement` (one big line, centered).
@@ -23,11 +23,11 @@ You make the deck for one module. You do not write new content. Every word on a 
    - `visual_todo`: the part of the visual intent the script cannot draw (icons, timelines, screenshots). Short.
    - Do not put minutes or notes in the plan. The script takes them from the module file.
 3. Run `python3 scripts/render_deck.py --course <course> --module <N>` and the half-day version with `--half-day`.
-4. Convert to PDF (`soffice --headless --convert-to pdf`) and to small PNGs (`pdftoppm -r 30`). Look at every slide image. Fix the plan where text is crowded, cut off, or under 18 pt (the script reports "Too dense"). Rerun. Two fix rounds at most.
+4. Convert to PDF (`soffice --headless --convert-to pdf`) and to small PNGs (`pdftoppm -r 30`). Look at every slide image. Fix the plan where text is crowded or cut off, or falls under the floor (the script reports "Too dense"). The floor is 18 pt on a standard 13.33 in slide, scaled to the master width: 36 pt on the 26.67 in Pragmatic master. Rerun. Two fix rounds at most.
 5. Report: slides rendered, slides still dense, the visual items a designer must add, and any wording you had to cut that changes meaning.
 
 ## Rules
 - Words come from the module file only. Shorten; do not add claims, numbers or examples.
 - Keep statistics exactly as written, with their source line.
-- No em or en dashes. Body text 18 pt or larger.
+- No em or en dashes. Body text at or above the scaled floor (36 pt on the Pragmatic master).
 - Do not edit module files, spec or case files.
