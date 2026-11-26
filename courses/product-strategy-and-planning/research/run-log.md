@@ -22,3 +22,4 @@
 ## Stage 2
 
 - 2026-11-26 03:40 UTC: Stage 2 started (course-outline skill). Hold lifted: Pragmatic approved the Market Research syllabus. Inputs: outline/stage-2-inputs.md. Step 1: course-planner.
+- 2026-11-26 04:05 UTC: planner and case builder done (committed). Step 3 critic running.
