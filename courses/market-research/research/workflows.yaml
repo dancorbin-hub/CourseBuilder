@@ -5,12 +5,12 @@
 # gate_1_decision is for Dan only.
 
 - id: mr-wf-01
-  workflow: Turn each new batch of buyer interviews into an updated, checked insight log
+  workflow: Turn each new batch of buyer interviews into an updated, checked problem backlog
   topic_area: Research, buyer and market insight
   trigger_and_cadence: Each new batch of market visits, win/loss calls or discovery interviews. Assumption, every 2 to 6 weeks
 
-  input: Notes or transcripts from 5 to 15 interviews, plus the current insight log
-  output: Updated insight log (insights coded by theme, problem, segment and strength, with verbatim quotes and source interviews), a "what changed" summary, and a flag report for the PM
+  input: Notes or transcripts from 5 to 15 interviews, plus the current problem backlog
+  output: Updated problem backlog (problems coded by theme, persona and segment, each with an evidence profile and fact labels, verbatim quotes and source interviews), a proposed ranking with reasons, a "what changed" summary, and a flag report for the PM. See worked-example-row.yaml v4
   pm_decision_informed: Which market problems go forward to prioritization, and for which segment
 
   bottleneck:
@@ -28,24 +28,27 @@
     agent_does:
       - Code each interview against the code book
       - Check each quote against the source text
-      - Merge new insights into the log
+      - Merge new problems into the backlog
+      - Propose a ranking with a reason for each problem
       - Mark problems as new, growing or fading
       - Send flags to the PM
     pm_manages:
       brief: Job, inputs, code book, output format, done criteria
       quality_checks:
         - Each quote is found word for word in its source interview
-        - Each insight has a confidence level
+        - Each problem counts interviews, not quotes, and shows urgency, pervasiveness and willingness to pay clues
       handoff_rules:
         - Notes that fit no code
-        - A new insight that contradicts the log
-      audit: 3 random insights per batch, checked against the source interviews
+        - A new problem that contradicts the backlog
+        - If all quotes for a problem come from 1 interview, send it to the flag report ("single source", kept for trend tracking)
+        - A segment with no PM-held interview (PA-02)
+      audit: 3 random problems per batch, checked against the source interviews
     pm_decides:
       - The code book
-      - Which patterns are real problems
+      - The order of problems, what is a pattern and what goes to validation
       - Which segment matters
       - What goes forward to prioritization
-    ai_error_to_catch: One vocal buyer counted as a pattern. Three real quotes from one interview make an insight look strong. The quote check passes; only the audit finds it. The fix is a new rule in the brief (2 or more interviews per insight)
+    ai_error_to_catch: One vocal buyer ranked near the top. Three real quotes from one interview make a problem look strong. The quote check passes; the evidence profile and the audit find it. The fix is a new hand-off rule, if all quotes for a problem come from 1 interview, send it to the flag report. No fixed bar (Dan, Gate 2 decisions 1 and 9, 2026-11-22)
 
   contexts:
     hardware: Field visits, distributor, installer and service technician interviews. gap, no source yet
@@ -180,7 +183,7 @@
   gate_1_decision: ""   # Dan only
 
 - id: mr-wf-02
-  workflow: Run a win/loss program that turns each batch of decided deals into a checked decision-driver report
+  workflow: Run a win/loss program that turns each decided deal into an updated, checked decision-driver report
   topic_area: Win/loss analysis
   trigger_and_cadence: Deals close as won or lost every week. Pragmatic says interview evaluators 2 to 4 weeks after the decision and use 10 or more deals to find patterns. Assumption, a monthly batch and a quarterly report
   input: CRM records for decided deals (stage, amount, segment, stated loss reason), win/loss interview notes or transcripts, and the current decision-driver log
@@ -207,17 +210,16 @@
       brief: Job, inputs, driver code book, minimum deals per pattern, output format, done criteria
       quality_checks:
         - Each driver has a buyer quote found word for word in the interview
-        - Each pattern rests on the minimum number of deals set in the brief
+        - Each driver shows its count of interviewed deals, accounts and segments (counts, not a verdict)
         - Each deal is marked "interview" or "CRM only"
       handoff_rules:
         - A deal where the CRM reason and the buyer reason differ
         - A lost deal that names an alternative not in the code book
-        - A segment with too few deals to report
       audit: 2 random deals per batch, read in full against the driver codes and the match rate entry
-    program_rules: Minimum 10 decided deals per batch. Someone outside sales runs the interviews (PA-04, Dan 2026-11-22)
+    program_rules: Add each win/loss interview to the driver log as soon as it is coded. Do not wait for a minimum number of deals. A win/loss interview covers the whole buyer journey, so one interview can change a decision. The agent shows the deal count with each driver; the PM decides what to act on. Someone outside sales runs the interviews (Dan, Gate 2 decision 7, 2026-11-22. Replaces the PA-04 minimum of 10 deals)
     pm_decides:
       - The driver code book
-      - Which patterns are real and which are noise
+      - Which drivers to act on, and what goes to validation
       - Which findings go to which team, and how to frame them for sales
       - Which deals to add to the interview list
   ai_error_to_catch: A CRM-only deal leaks into the buyer findings. The agent fills a missing interview with the CRM reason ("price"), so price looks like a top buyer driver. The quote check passes on the deals that have interviews; only the audit of the deal source column finds it

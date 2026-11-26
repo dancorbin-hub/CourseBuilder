@@ -35,7 +35,7 @@ Knowledge file for the Market Evidence Agent, win/loss job. Version 1, July 2026
 
 ## Program rules
 
-- Minimum 10 decided deals per batch.
+- Add each win/loss interview to the driver log as soon as it is coded. Do not wait for a minimum number of deals.
 - Someone outside sales runs the interviews.
 - Interview 2 to 4 weeks after the decision.
 

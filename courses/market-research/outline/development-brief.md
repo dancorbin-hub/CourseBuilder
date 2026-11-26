@@ -29,11 +29,15 @@
 | Skill 3.3: "a prioritized problem backlog" | The agent keeps a problem backlog. Priority is relative across the backlog, not a fixed bar |
 | Skill 1.3 AI text: synthetic respondents never replace research with real people | Gate 1 rule on AI personas and AI-moderated interviews (PA-02) |
 
-### Course themes (from Dan)
+### Big idea and themes (from Dan)
+
+**Big idea:** AI can gather far more market signal than you can read. All of it is noise until you put it in context: what matters to your customers and what your business is trying to do. The agent gathers and organizes. You bring the context and make the call. Workbook skill 8.1 supports it: collected data has no value until value is extracted.
+
+Ideas that run through the day:
 
 1. There is no magic number. The agent reports the evidence and proposes a ranking. The PM decides the order.
 2. Be great at product management before you are great at AI.
-3. Win/loss is the big aha. Most teams do not get this data.
+3. Win/loss is the data most teams do not get. Module 2 highlight, not a course theme.
 
 ### Where the course starts and stops
 
@@ -70,7 +74,7 @@ Minutes: full day, then half days in brackets where they differ (Gate 2 decision
 | 2. What the learner can do | Add a win/loss job. Label each deal "interview" or "CRM only". Read the match rate. Audit source labels. Frame findings for sales without blame |
 | 3. How far | Develop and Apply. Two inputs joined for the first time. Planted error warning: **hint** ("Audit before you approve") |
 | 4. Evidence | Match rate table and the learner's read of it. Flag report decisions. Audit findings for 2 deals. The brief change |
-| 5. Experience | Pragmatic program rules (10 or more decided deals, interviews 2 to 4 weeks after the decision, by someone outside sales). The agent reports counts and changes per driver, with no pass or fail number. Lab on own deal export or the case CRM export. Hand-off rules match the case: flag a deal where the CRM reason and the buyer differ, and show the count of interviewed deals behind every driver. Planted error: a CRM-only "price" reason leaks into buyer findings. Debrief is the aha moment, and each learner runs the check sample (3 minutes). Rung 1, two sources. 70 minutes (75) |
+| 5. Experience | Pragmatic program rules (interviews 2 to 4 weeks after the decision, by someone outside sales). Each interview goes into the driver log as it arrives, with no minimum number of deals (Gate 2 decision 7). The agent reports counts and changes per driver, with no pass or fail number. Lab on own deal export or the case CRM export. Hand-off rules match the case: flag a deal where the CRM reason and the buyer differ, and show the count of interviewed deals behind every driver. Planted error: a CRM-only "price" reason leaks into buyer findings. Debrief is the aha moment, and each learner runs the check sample (3 minutes). Rung 1, two sources. 70 minutes (75) |
 
 ### Module 3. The weekly run: read flags, not every item (row mr-wf-03, folds 04)
 
