@@ -8,3 +8,4 @@ date,course,phase_or_stage,module,activity,hours,source,notes
 2026-11-26,product-strategy-and-planning,stage-1,,gate-1-review,,manual,"Gate 1 comments applied (02:06 to 03:25 UTC): decisions a to k, row 02 replaced by request decision row (research and verify), model row 09 drafted. Gate 1 approved. Dan adds review hours."
 2026-11-26,product-strategy-and-planning,stage-2,,gate-2-packet,,manual,"Stage 2 run 03:28 to 06:35 UTC (planner, case builder, critic, revision, syllabus, Gate 2 doc). Run scripts/estimate_hours.py for Claude time. Dan adds review hours."
 2026-11-26,all,phase-3,,tool-build,,manual,"Phase 3 tools: course-modules skill, module-builder, consistency-reviewer, verifier module mode, module template (17:31 to 17:50 UTC). Not course hours."
+2026-11-26,product-strategy-and-planning,stage-2,,course,,manual,"Applied Dan Gate 2 answers 1 to 16: case 2027, spec v0.4, packet v3, critic v2, doc update. Hours to be added by Dan"
