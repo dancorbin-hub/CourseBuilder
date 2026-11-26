@@ -2,12 +2,13 @@
 # Only Dan changes a gate to approved.
 course: market-research
 title: Advanced AI for Market Research
-stage: 2              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+stage: 3              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp" }
   gate_1_research:    { status: approved, approved_on: 2026-11-22, doc: "https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW" }
-  gate_2_spec:        { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: null }
-  gate_3_modules:     []   # one entry per module: { module: 1, status: ..., approved_on: ..., doc: ... }
+  gate_2_spec:        { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: approved, pragmatic_review_on: 2026-11-26, pragmatic_comments: "none, looked good, proceed" }
+  gate_3_modules:     # one entry per module
+    - { module: 1, status: drafting, approved_on: null, doc: null }
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
@@ -26,3 +27,36 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
   research/platform-matrix.yaml: sha256:3cda94e3274e99e6
   research/bond-stories.md: sha256:70ffa8521cb65122
+  spec.yaml: sha256:bebe0258ba2b4f65   # Gate 2, 2026-11-26
+  outline/syllabus.md: sha256:119f67f41342965a   # Gate 2, 2026-11-26
+  outline/development-brief.md: sha256:7ac2ae6eb51b1574   # Gate 2, 2026-11-26
+  outline/capability-mapping.md: sha256:1a06dd2b89c5bc53   # Gate 2, 2026-11-26
+  outline/gate-2-decisions.md: sha256:33cf0e532496d4f5   # Gate 2, 2026-11-26
+  case/README.md: sha256:53d2ed534f358b60   # Gate 2, 2026-11-26
+  case/company.md: sha256:5aed55520acbd894   # Gate 2, 2026-11-26
+  case/expected-results.md: sha256:0942d1134dc32336   # Gate 2, 2026-11-26
+  case/m1-check-sample.md: sha256:02fcdb2f0fa6b3a6   # Gate 2, 2026-11-26
+  case/m1-code-book.md: sha256:7eb7543ae249c396   # Gate 2, 2026-11-26
+  case/m1-code-book.txt: sha256:7eb7543ae249c396   # Gate 2, 2026-11-26
+  case/m1-interviews-batch-1.md: sha256:cf7c1257a312ce0b   # Gate 2, 2026-11-26
+  case/m1-interviews-batch-2.md: sha256:fa6d2b8efbbd3fa8   # Gate 2, 2026-11-26
+  case/m1-stretch-applicants.md: sha256:e500e41ab7734d0e   # Gate 2, 2026-11-26
+  case/m2-check-sample.md: sha256:e21873b7e58b513a   # Gate 2, 2026-11-26
+  case/m2-crm-export-q2.csv: sha256:40a5dfc1ed0b696b   # Gate 2, 2026-11-26
+  case/m2-driver-code-book.md: sha256:d97397e513f0dc3e   # Gate 2, 2026-11-26
+  case/m2-driver-code-book.txt: sha256:d97397e513f0dc3e   # Gate 2, 2026-11-26
+  case/m2-winloss-notes-q2.md: sha256:faaa64a6dffb1c1c   # Gate 2, 2026-11-26
+  case/m3-check-sample.md: sha256:1a9942fcb1818605   # Gate 2, 2026-11-26
+  case/m3-feedback-week-1.csv: sha256:990a2c125ea74396   # Gate 2, 2026-11-26
+  case/m3-feedback-week-2.csv: sha256:a2f3ef1a90744806   # Gate 2, 2026-11-26
+  case/m3-stretch-survey-wave.csv: sha256:1b89e22ce744ed05   # Gate 2, 2026-11-26
+  case/m3-tag-list.md: sha256:47c67bdf98566ce6   # Gate 2, 2026-11-26
+  case/m3-tag-list.txt: sha256:47c67bdf98566ce6   # Gate 2, 2026-11-26
+  case/m4-alternatives-map.md: sha256:e072d50e1cafb96b   # Gate 2, 2026-11-26
+  case/m4-alternatives-map.txt: sha256:e072d50e1cafb96b   # Gate 2, 2026-11-26
+  case/m4-check-sample.md: sha256:8b7b6cefd77536a8   # Gate 2, 2026-11-26
+  case/m4-evidence-pack.md: sha256:88a1d8adf8880b3a   # Gate 2, 2026-11-26
+  case/m5-past-reports.md: sha256:fb63d4ab44f8b297   # Gate 2, 2026-11-26
+  case/m5-past-reports.txt: sha256:fb63d4ab44f8b297   # Gate 2, 2026-11-26
+  case/m5-stakeholder-questions.md: sha256:c9539e8580dbf6f9   # Gate 2, 2026-11-26
+  case/planted-errors.md: sha256:c7e41877a46e9edd   # Gate 2, 2026-11-26

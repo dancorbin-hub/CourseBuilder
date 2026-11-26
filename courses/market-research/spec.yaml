@@ -1103,7 +1103,7 @@ open_items:
     item: Bond story. Slot is open in the course open (5 minutes). Candidates are in research/bond-stories.md (recommendation is candidate 1, JAMIA)
     owner: Dan
     due: Before module 1 is built (Stage 3)
-    status: open (Gate 2 decision 5)
+    status: closed. Dan picked candidate 1, JAMIA 2026 (2026-11-26)
   - id: OI-02
     item: Rung 2 is a hand-started weekly run on the core path. Schedule is stretch only where verified
     owner: Dan
@@ -1118,7 +1118,7 @@ open_items:
     item: Row 05 (screening) is a stretch step in lab 1, not a core step, to keep the step card at 6 steps. Confirm this is an acceptable fold
     owner: Dan
     due: Gate 2
-    status: open (Gate 2 decision 11, no answer recorded in gate-2-decisions.md)
+    status: closed. Dan accepted screening as a lab 1 stretch step (2026-11-26)
   - id: OI-05
     item: Module 4 example is told as a Pragmatic or unnamed client story, with identifying details removed. Dan sends the example
     owner: Dan

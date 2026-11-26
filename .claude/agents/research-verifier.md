@@ -21,6 +21,11 @@ You check output. You did not write it. Do not trust the writer's summary of a s
 2. Flag any recommendation with no verified entry.
 3. Flag wording that goes past what the source supports.
 
+## Mode 3: module (Stage 3, one module)
+1. Check only claims, statistics and tool features in `modules/m<N>/` that are not already verified in `evidence-ledger.yaml` or `platform-matrix.yaml`.
+2. Check every screen name and feature that a step card uses against 1 dated vendor doc. A check date older than 30 days fails.
+3. Write `modules/m<N>/verifier-report.md`. Add new verified features to `platform-matrix.yaml`.
+
 ## Output
 - `courses/<course>/research/verifier-report.md`: a table (id, claim, result, note) and a list of failures. Trace mode adds a "Trace check" section.
 - Status updates in `evidence-ledger.yaml` and `platform-matrix.yaml`.
