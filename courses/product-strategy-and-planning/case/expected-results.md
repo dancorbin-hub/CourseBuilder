@@ -242,11 +242,11 @@ Gate recommendation: hold. Reason: the hard tooling price at the plan volume is 
 
 ---
 
-## Lab 4: roadmap refresh and change
+## Lab 4: roadmap trace and change impact
 
 Records: `roadmap.csv`, `validated-problem-backlog.csv`, `evidence-log.csv`, `release-plan.csv`, `roadmap-decision-log.csv`, `confidential-terms-list.md`, `m4-change-request-cr-07.md`.
 
-### Refresh result (the case PM's validated rule: 3 or more accounts and 2 or more source types, last 12 months)
+### Trace result (the case PM's validated rule: 3 or more accounts and 2 or more source types, last 12 months)
 
 | Result | Value |
 | --- | --- |
@@ -292,7 +292,7 @@ RM-14 (branded cover page on audit reports) is in theme T-02 and links to PB-02.
 
 | Flag type | Record | What the agent found | PM decides |
 | --- | --- | --- | --- |
-| Release plan change | RP-01 | CR-07 needs the Firmware team in Q1. RP-01 (2028-02-15) uses that team. Agent stopped. No new date. No edit to the release plan | PM and Delivery lead |
+| Release plan change | RP-01 | CR-07 needs the Firmware team in Q1. RP-01 (2028-02-15) uses that team. Agent stopped. No new date. No edit to the release plan | PM |
 | Commitment guard | CR-07 text | "ships in Q2" is not on the release plan for this item | Yes |
 | Dependency | Cloud team | 105 percent with CR-07. RP-02 and RP-03 use the Cloud team in Q1 | Yes |
 | Past decision | DL-2027-09 | Condition has 2 of 3 chains | Yes |

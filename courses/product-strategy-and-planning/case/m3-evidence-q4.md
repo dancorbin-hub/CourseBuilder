@@ -1,6 +1,6 @@
 **Fictional data for training.** Larkspan Systems, its people, customers, suppliers and all numbers are invented. Any match with a real company or person is chance. No real personal data and no health data.
 
-# New evidence for the Q4 refresh (run file, run 2)
+# New evidence for the quarterly business case review (run file, run 2)
 
 Collected between 2027-11-02 and 2027-11-12. Run date: 2027-11-23.
 

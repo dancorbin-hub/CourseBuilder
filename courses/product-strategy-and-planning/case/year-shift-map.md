@@ -90,5 +90,20 @@ Other ids (REQ-xxx, PB-xx, RM-xx, RP-xx, INT, FB, WL, A-nnnn, P-0x, KR) did not 
 
 ## Not changed (planner to decide)
 
-1. `m3-evidence-q4.md` title still says "Q4 refresh". `expected-results.md` still says "Lab 4: roadmap refresh and change". Check them against the cadence wording (no recurring reorder, PM sets the cadence).
+1. Done: `m3-evidence-q4.md` now says "quarterly business case review". `expected-results.md` Lab 4 heading is now "roadmap trace and change impact". The PM sets the cadence.
 2. Market Research case: `courses/market-research/case/company.md` says "November 2026" and "the 2027 plan". It has no founding year. Larkspan is in 2026 there and in 2027 here. Dan asked for one year in both courses. The Market Research case needs its own shift (not done here).
+
+## Release log ids (added)
+
+Apply with the same single pass. Old and new ids overlap in number only, not in year.
+
+| Old id | New id |
+| --- | --- |
+| RL-2026-01 | RL-2027-01 |
+| RL-2026-02 | RL-2027-02 |
+| RL-2026-03 | RL-2027-03 |
+| RL-2026-04 | RL-2027-04 |
+| RL-2026-05 | RL-2027-05 |
+| RL-2026-06 | RL-2027-06 |
+
+`roadmap-decision-log.csv` already uses the new ids. Spec and briefs may still hold RL-2026-xx.
