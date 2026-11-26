@@ -1,16 +1,16 @@
 Fictional data for training. Larkspan Systems, its people, customers, suppliers and all numbers are invented. Any match with a real company or person is chance. No real personal data and no health data.
 
-# Larkspan 2027 strategy overview, OKRs and KPIs
+# Larkspan 2028 strategy overview, OKRs and KPIs
 
-Written by the Head of Product and the executive team. Approved 6 October 2026. These are Larkspan's own choices. They are not a standard. The agent reads this file. The agent never sets, ranks or rewrites strategy.
+Written by the Head of Product and the executive team. Approved 6 October 2027. These are Larkspan's own choices. They are not a standard. The agent reads this file. The agent never sets, ranks or rewrites strategy.
 
 ## 1. Strategy overview
 
-Earlier planning used a Strategy Matrix. This overview replaces it for 2027. The case uses this overview, the OKRs and the KPIs.
+Earlier planning used a Strategy Matrix. This overview replaces it for 2028. The case uses this overview, the OKRs and the KPIs.
 
 ### Where to play
 
-| Segment | 2027 stance |
+| Segment | 2028 stance |
 | --- | --- |
 | Pharmacy and lab | Grow. Audit-ready records are the reason to buy |
 | Distribution | Move sites from Wi-Fi hubs to cellular probes |
@@ -32,18 +32,18 @@ Earlier planning used a Strategy Matrix. This overview replaces it for 2027. The
 | C3 | Cut install cost and days per site |
 | C4 | Grow recurring Cloud revenue |
 
-### What Larkspan will not do in 2027
+### What Larkspan will not do in 2028
 
 - Build custom hardware for one customer.
 - Sell sensors for homes or consumers.
 - Store patient data in the product.
 - Add sensor types outside the cold chain (for example air quality).
 
-## 2. OKRs, 2027 H1 (1 January to 30 June 2027)
+## 2. OKRs, 2028 H1 (1 January to 30 June 2028)
 
-Owners are roles. Baselines are from 30 September 2026.
+Owners are roles. Baselines are from 30 September 2027.
 
-| Objective | Key result | Baseline | Target (30 June 2027) | Owner |
+| Objective | Key result | Baseline | Target (30 June 2028) | Owner |
 | --- | --- | --- | --- | --- |
 | O1 Win Pharmacy and lab with audit-ready records | KR1.1 Active paid Pharmacy and lab sites | 3,100 | 3,900 | PM, Larkspan Cloud |
 | O1 | KR1.2 Pharmacy and lab customers with no missing records at last audit (survey) | 71.0% | 85.0% | PM, Larkspan Cloud |
@@ -56,7 +56,7 @@ Owners are roles. Baselines are from 30 September 2026.
 
 ## 3. KPIs and business metrics
 
-| Id | KPI | Definition | Current | Target (30 June 2027) |
+| Id | KPI | Definition | Current | Target (30 June 2028) |
 | --- | --- | --- | --- | --- |
 | K1 | Cloud subscription attach rate | Active hardware sites with a paid Cloud plan, divided by all active hardware sites | 62.5% | 72.0% |
 | K2 | Install days per site | Average days from first visit to a live site | 2.40 | 1.60 |
@@ -66,4 +66,4 @@ Owners are roles. Baselines are from 30 September 2026.
 | K6 | Field failure rate | Probes returned in 12 months, divided by probes shipped | 3.1% | 2.0% |
 | K7 | Pharmacy and lab audit record completeness | Surveyed customers with no missing records at last audit, divided by surveyed customers with an audit | 71.0% | 85.0% |
 
-Current values are at 30 September 2026.
+Current values are at 30 September 2027.

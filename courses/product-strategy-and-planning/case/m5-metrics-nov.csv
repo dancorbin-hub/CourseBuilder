@@ -1,6 +1,6 @@
 month,metric_id,metric,definition,value,unit,source_system,extracted_on
-2026-11,PX-1,Probe X paid sites shipped,"Units invoiced to resellers, cumulative since 2026-06-01. One unit per site in the limited release.",2690,units,Reseller ledger,2026-11-30
-2026-11,PX-2,Probe X site activations,"Sites with Probe X activated and a paid Cloud plan, at month end.",1780,sites,Activation system and billing,2026-11-30
-2026-11,CL-1,Cloud subscription attach rate,"Active hardware sites with a paid Cloud plan, divided by all active hardware sites.",64.0,percent,Billing,2026-11-30
-2026-11,IN-1,Install days per site,"Average elapsed days from first visit to a live site, for sites that went live in the month.",2.29,days,Fleet Data Platform,2026-11-30
-2026-11,SV-1,Pharmacy and lab audit record completeness,"Surveyed customers with no missing records at last audit, divided by surveyed customers with an audit. Survey runs each quarter.",,percent,Customer survey,2026-11-30
+2027-11,PX-1,Probe X paid sites shipped,"Units invoiced to resellers, cumulative since 2027-06-01. One unit per site in the limited release.",2690,units,Reseller ledger,2027-11-30
+2027-11,PX-2,Probe X site activations,"Sites with Probe X activated and a paid Cloud plan, at month end.",1780,sites,Activation system and billing,2027-11-30
+2027-11,CL-1,Cloud subscription attach rate,"Active hardware sites with a paid Cloud plan, divided by all active hardware sites.",64.0,percent,Billing,2027-11-30
+2027-11,IN-1,Install days per site,"Average elapsed days from first visit to a live site, for sites that went live in the month.",2.29,days,Fleet Data Platform,2027-11-30
+2027-11,SV-1,Pharmacy and lab audit record completeness,"Surveyed customers with no missing records at last audit, divided by surveyed customers with an audit. Survey runs each quarter.",,percent,Customer survey,2027-11-30

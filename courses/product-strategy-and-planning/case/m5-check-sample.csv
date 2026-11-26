@@ -1,5 +1,5 @@
 month,metric_id,metric,definition,value,target,unit,source_system
-2026-07,CL-1,Cloud subscription attach rate,"Active hardware sites with a paid Cloud plan, divided by all active hardware sites.",61.8,62.0,percent,Billing
-2026-08,CL-1,Cloud subscription attach rate,"Active hardware sites with a paid Cloud plan, divided by all active hardware sites.",62.0,62.5,percent,Billing
-2026-07,CT-1,Cloud trials started,Cloud trial accounts opened in the month. A trial is not a paid plan.,410,400,accounts,Billing
-2026-08,CT-1,Cloud trials started,Cloud trial accounts opened in the month. A trial is not a paid plan.,640,450,accounts,Billing
+2027-07,CL-1,Cloud subscription attach rate,"Active hardware sites with a paid Cloud plan, divided by all active hardware sites.",61.8,62.0,percent,Billing
+2027-08,CL-1,Cloud subscription attach rate,"Active hardware sites with a paid Cloud plan, divided by all active hardware sites.",62.0,62.5,percent,Billing
+2027-07,CT-1,Cloud trials started,Cloud trial accounts opened in the month. A trial is not a paid plan.,410,400,accounts,Billing
+2027-08,CT-1,Cloud trials started,Cloud trial accounts opened in the month. A trial is not a paid plan.,640,450,accounts,Billing

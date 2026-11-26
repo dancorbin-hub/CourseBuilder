@@ -7,7 +7,7 @@ Use this file to test your tuned brief in a new chat. Run the change assessment 
 | Field | Value |
 | --- | --- |
 | Change request id | CR-08 |
-| Date | 2026-11-24 |
+| Date | 2027-11-24 |
 | From | Support lead |
 | Source request | REQ-116 (door-open alert delay at loading docks, problem PB-06) |
 
@@ -17,6 +17,6 @@ Add a door-open delay setting for each sensor in Larkspan Cloud alerts. This shi
 
 ## Technical notes
 
-- The setting needs a Larkspan Cloud interface change. Ask: 10 percent of the Cloud team in Q1 2027.
+- The setting needs a Larkspan Cloud interface change. Ask: 10 percent of the Cloud team in Q1 2028.
 - No Firmware team work is needed.
 - No item on the release plan uses this work.

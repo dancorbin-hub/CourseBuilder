@@ -1,8 +1,8 @@
 **Fictional data for training.** Larkspan Systems, its people, customers, suppliers and all numbers are invented. Any match with a real company or person is chance. No real personal data and no health data.
 
-# Last quarter's pack (Q2 review cycle, plan quarter Q3 2026)
+# Last quarter's pack (Q2 review cycle, plan quarter Q3 2027)
 
-A person built this pack by hand in June 2026. It is a format example. It took about two days to assemble.
+A person built this pack by hand in June 2027. It is a format example. It took about two days to assemble.
 
 | Program id | Program | Ask (USD thousand) | Self-reported status | Source system status | Capacity asked (largest single team ask, percent) | Link |
 | --- | --- | --- | --- | --- | --- | --- |

@@ -1,13 +1,13 @@
 log_id,date,request_id,request_summary,requester_type,account_or_team,segment,decision,reason,condition_for_later,problem_id,decided_by_role
-DL-2025-06,2025-05-14,REQ-009,Any-condition custom alert rule builder,Customer,A-4107,Food service,no,"A rule builder is a feature, not a problem. Defrost and door cases are better solved with one setting each.",,PB-03,Head of Product
-DL-2025-11,2025-10-20,REQ-045,Offline mode in the install checklist for field installers,Internal,I-Install,Distribution; Internal,no,Remote sites with no signal are about 6 percent of installs. The checklist now keeps 48 hours of work. Full offline sync is about 14 weeks of work.,,PB-09,Head of Product
-DL-2025-12,2025-12-02,REQ-021,White-label app for resellers,Reseller,R-205,Food service,no,Brand control stays with Larkspan. Resellers get a report instead.,,PB-11,Head of Product
-DL-2026-02,2026-02-24,REQ-031,Second alert by SMS when the first is not answered,Sales,A-3302,Distribution,later,Hub firmware work comes first.,After Hub firmware rollback ships,PB-01,"PM, Larkspan Cloud"
-DL-2026-04,2026-04-15,REQ-044,Defrost window per sensor,Reseller,A-4101,Food service,yes,Three accounts and two source types show the same problem.,,PB-03,"PM, Larkspan Cloud"
-DL-2026-05,2026-05-20,REQ-052,Install checklist v2,Internal,I-Install,Internal,yes,Install visits are the top cost line.,,PB-04,"PM, Fleet Data Platform"
-DL-2026-06,2026-06-18,REQ-066,Bulk rename for probes,Reseller,A-4102,Food service,later,Needs the Cloud admin interface work first.,After the Cloud admin interface work ships,PB-07,"PM, Larkspan Cloud"
-DL-2026-07,2026-07-08,REQ-058,Hub last-seen and firmware view,Internal,I-Install,Internal,yes,Support and Install both lose time without it.,,PB-10,"PM, Fleet Data Platform"
-DL-2026-08,2026-08-25,REQ-079,Branded cover page on audit reports,Sales,A-5108,Pharmacy and lab,yes,Low effort. Sales needs it for one chain.,,,"PM, Larkspan Cloud"
-DL-2026-09,2026-09-10,REQ-087,Calibration certificate export for a pharmacy chain,Sales,A-5101,Pharmacy and lab,later,One chain has asked. Audit report v2 covers most of the need.,Three pharmacy chains ask,PB-02,"PM, Larkspan Cloud"
-DL-2026-10,2026-10-08,REQ-070,Cellular data usage by site,Internal,I-Finance,Internal,yes,Finance cannot bill back data cost without it.,,PB-08,"PM, Fleet Data Platform"
-DL-2026-11,2026-10-21,REQ-063,Multi-site summary report,Sales,A-4105,Food service,yes,Four accounts and four source types show the same problem.,,PB-13,"PM, Larkspan Cloud"
+DL-2026-06,2026-05-14,REQ-009,Any-condition custom alert rule builder,Customer,A-4107,Food service,no,"A rule builder is a feature, not a problem. Defrost and door cases are better solved with one setting each.",,PB-03,Head of Product
+DL-2026-11,2026-10-20,REQ-045,Offline mode in the install checklist for field installers,Internal,I-Install,Distribution; Internal,no,Remote sites with no signal are about 6 percent of installs. The checklist now keeps 48 hours of work. Full offline sync is about 14 weeks of work.,,PB-09,Head of Product
+DL-2026-12,2026-12-02,REQ-021,White-label app for resellers,Reseller,R-205,Food service,no,Brand control stays with Larkspan. Resellers get a report instead.,,PB-11,Head of Product
+DL-2027-02,2027-02-24,REQ-031,Second alert by SMS when the first is not answered,Sales,A-3302,Distribution,later,Hub firmware work comes first.,After Hub firmware rollback ships,PB-01,"PM, Larkspan Cloud"
+DL-2027-04,2027-04-15,REQ-044,Defrost window per sensor,Reseller,A-4101,Food service,yes,Three accounts and two source types show the same problem.,,PB-03,"PM, Larkspan Cloud"
+DL-2027-05,2027-05-20,REQ-052,Install checklist v2,Internal,I-Install,Internal,yes,Install visits are the top cost line.,,PB-04,"PM, Fleet Data Platform"
+DL-2027-06,2027-06-18,REQ-066,Bulk rename for probes,Reseller,A-4102,Food service,later,Needs the Cloud admin interface work first.,After the Cloud admin interface work ships,PB-07,"PM, Larkspan Cloud"
+DL-2027-07,2027-07-08,REQ-058,Hub last-seen and firmware view,Internal,I-Install,Internal,yes,Support and Install both lose time without it.,,PB-10,"PM, Fleet Data Platform"
+DL-2027-08,2027-08-25,REQ-079,Branded cover page on audit reports,Sales,A-5108,Pharmacy and lab,yes,Low effort. Sales needs it for one chain.,,,"PM, Larkspan Cloud"
+DL-2027-09,2027-09-10,REQ-087,Calibration certificate export for a pharmacy chain,Sales,A-5101,Pharmacy and lab,later,One chain has asked. Audit report v2 covers most of the need.,Three pharmacy chains ask,PB-02,"PM, Larkspan Cloud"
+DL-2027-10,2027-10-08,REQ-070,Cellular data usage by site,Internal,I-Finance,Internal,yes,Finance cannot bill back data cost without it.,,PB-08,"PM, Fleet Data Platform"
+DL-2027-11,2027-10-21,REQ-063,Multi-site summary report,Sales,A-4105,Food service,yes,Four accounts and four source types show the same problem.,,PB-13,"PM, Larkspan Cloud"
