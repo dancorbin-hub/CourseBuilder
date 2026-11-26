@@ -227,7 +227,7 @@
   open_gaps:
   - A dated, signed source with data on scoring inconsistency
   - Hardware and internal PM sources
-  gate_1_decision: ''
+  gate_1_decision: "Drop (Dan, 2026-11-26). Scoring attributes and rescoring are covered in Focus; do not teach or mention them again. Replace with another common strategy and planning workflow (research open)"
 - id: sp-wf-03
   origin: mr-wf-06
   workflow: Build and refresh a sourced market size and segment evidence model
