@@ -30,6 +30,7 @@ from render_workbook import COURSE_CODES  # noqa: E402
 
 DASHES = re.compile("[–—]")
 MAX_STEPS, MAX_WORDS, MAX_AGE_DAYS = 6, 20, 30
+WAIVED_FIT = set()  # slide ids Dan accepted as dense, from modules/m<N>/gate-4-decisions.md
 
 
 class Report:
@@ -79,7 +80,9 @@ def check_deck(r, pptx_path, sidecar_path, target_minutes, md_minutes, half=Fals
         r.add("D3 18 pt and fit (%s)" % name, False, "no sidecar .json; rerun render_deck.py")
         return
     small = [s["id"] for s in side if s.get("body_pt") is not None and s["body_pt"] < s.get("min_pt", 18)]
-    nofit = [s["id"] for s in side if not s.get("fits", True)]
+    nofit = [s["id"] for s in side if not s.get("fits", True) and s["id"] not in WAIVED_FIT]
+    for wid in sorted(WAIVED_FIT & {s["id"] for s in side if not s.get("fits", True)}):
+        r.rows.append(("D3 text fits (%s)" % name, "WAIVED", "%s: Dan accepted (gate-4-decisions.md)" % wid))
     r.add("D3 body 18 pt or larger, scaled to slide width (%s)" % name, not small, ", ".join(small))
     r.add("D3 text fits (%s)" % name, not nofit, ", ".join(nofit))
     mod_min = sum(s.get("minutes") or 0 for s in side if not str(s.get("id", "")).startswith(("O.", "cover")))
@@ -167,6 +170,10 @@ def main():
     md_min = sum(int(s.get("minutes") or 0) for s in md_slides)
     md_half = sum(int(s.get("minutes_half") or s.get("minutes") or 0) for s in md_slides)
 
+    global WAIVED_FIT
+    dec = os.path.join(mdir, "gate-4-decisions.md")
+    if os.path.exists(dec):
+        WAIVED_FIT = set(re.findall(r"^- D3 text fits:\s*(\S+)", open(dec, encoding="utf-8").read(), re.M))
     r = Report()
     for half in (False, True):
         tag = "_half" if half else ""
@@ -193,7 +200,7 @@ def main():
     with open(out, "w", encoding="utf-8") as f:
         f.write("# QA report: %s module %d\n\nRun %s. %d checks, %d fail.\n\n" % (a.course, a.module, today, len(r.rows), fails))
         f.write("| Check | Result | Detail |\n| --- | --- | --- |\n")
-        for c, s, d in sorted(r.rows, key=lambda x: {"FAIL": 0, "WARN": 1, "PASS": 2}[x[1]]):
+        for c, s, d in sorted(r.rows, key=lambda x: {"FAIL": 0, "WARN": 1, "WAIVED": 2, "PASS": 3}[x[1]]):
             f.write("| %s | %s | %s |\n" % (c, s, d.replace("|", "/")))
     print("wrote", out, "|", len(r.rows), "checks,", fails, "fail")
     sys.exit(1 if r.failed else 0)
