@@ -2,12 +2,13 @@
 # Only Dan changes a gate to approved.
 course: market-research
 title: Advanced AI for Market Research
-stage: 2              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+stage: 3              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp" }
   gate_1_research:    { status: approved, approved_on: 2026-11-22, doc: "https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW" }
   gate_2_spec:        { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: approved, pragmatic_review_on: 2026-11-26, pragmatic_comments: "none, looked good, proceed" }
-  gate_3_modules:     []   # one entry per module: { module: 1, status: ..., approved_on: ..., doc: ... }
+  gate_3_modules:     # one entry per module
+    - { module: 1, status: drafting, approved_on: null, doc: null }
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
@@ -26,11 +27,11 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
   research/platform-matrix.yaml: sha256:3cda94e3274e99e6
   research/bond-stories.md: sha256:70ffa8521cb65122
-  spec.yaml: sha256:4c57f9319cae4e6d   # Gate 2, 2026-11-26
+  spec.yaml: sha256:bebe0258ba2b4f65   # Gate 2, 2026-11-26
   outline/syllabus.md: sha256:119f67f41342965a   # Gate 2, 2026-11-26
   outline/development-brief.md: sha256:7ac2ae6eb51b1574   # Gate 2, 2026-11-26
   outline/capability-mapping.md: sha256:1a06dd2b89c5bc53   # Gate 2, 2026-11-26
-  outline/gate-2-decisions.md: sha256:07f174f0c63254ac   # Gate 2, 2026-11-26
+  outline/gate-2-decisions.md: sha256:33cf0e532496d4f5   # Gate 2, 2026-11-26
   case/README.md: sha256:53d2ed534f358b60   # Gate 2, 2026-11-26
   case/company.md: sha256:5aed55520acbd894   # Gate 2, 2026-11-26
   case/expected-results.md: sha256:0942d1134dc32336   # Gate 2, 2026-11-26
