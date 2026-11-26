@@ -58,6 +58,7 @@
     - W27
     - N9
     sources_check: 'pass. W29 (IdeaPlan, 2026-03-14) and the Product-Led Alliance pair (W25, 2026-03-26, and N9, 2026-01-07, one publisher, counted as one source) are independent and from 2026. W27 (ProductPlan, 2026-08-10) is a third independent text source; its figures are the same study as W25. All are vendor or vendor-run publishers. Statistics (60.2% leadership escalations, 38.5% sales or customer escalations override priorities) are partly verified: the primary survey report is not opened (track 3 ask N5). Text claims are usable now'
+    verifier_check: 'Verifier 2026-11-26: pass, with one fix. Independent source families: W29 (IdeaPlan) and W25 with W27 (PLA and ProductPlan are tied by the N21 sponsorship) and N9 (Productboard, hosted by PLA). All 2026. Supported by 2 families: escalations and the loudest voice override priorities (W29, W25, W27); requesters chase status or hear silence (W29, N9). Single source only: many channels (N9), every requester thinks theirs is most urgent (W29), decisions get reopened (W25). No source: "Past decisions and their reasons are hard to find, so the same request gets a different answer next time". Mark that sentence as an assumption or find a source. All publishers are vendor, vendor-run or anonymous; no time or cost data. Statistics: N21 primary opened; use the corrected wording in the verifier report, not W39'
   scores:
     judgment: medium. Linking a request to a problem, the strategy and past decisions is rule-based. Yes, no or later is the PM's call
     repetition: high. Every request, every week, from many channels
@@ -122,7 +123,8 @@
     source_date: '2026-03-14'
     checked_on: '2026-11-26'
     age_flag: false
-    status: not verified
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Published 2026-03-14, IdeaPlan Editorial, no named author. All quoted lines confirmed word for word. No link to ProductPlan, PLA or Pragmatic, so independent of W25 and W27. Weak publisher: no named owner, revenue from ads, affiliates and paid products, and its editorial policy says AI tools assist with research and drafting. Figures (30 to 50%, 80%) unsourced: keep off slides'
     note: 'Opened 2026-11-26. No named author. Practitioner guide site. Its figures (30 to 50% overestimate of time saved, 80% rule of thumb) have no source: do not use them. Also proposes impact scoring: do not use that part (Dan, decision d). Internal PM source'
   - id: W25
     claim: 'Teams do not disagree on what they value but on how consistently they weigh it. When criteria are not formalized, decisions feel subjective and are easier to reopen. When every escalation can reset the roadmap, roadmaps become provisional and strategy becomes elastic. "Revisiting trade-offs under shifting scope" is one of the themes that take the most prioritization time'
@@ -133,6 +135,7 @@
     checked_on: '2026-11-26'
     age_flag: false
     status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: reopened. Rebecca Stewart, 2026-03-26 (modified 2026-05-01). Text confirmed: criteria not formalized makes decisions easier to reopen; every escalation can reset the roadmap; ''revisiting trade-offs under shifting scope'' is in the time list. Figures 60.2%, 38.5%, 38.1% match the primary report N21 (p. 52). The page does not state the denominator. The page says nothing on past decisions being hard to find or the same request getting a different answer'
     verifier_note: 'Copied from rerun-track-1.yaml (Verifier 2026-11-22). Reopened 2026-11-26 by the workflow researcher: 60.2% leadership escalations or new directives, 38.5% sales or customer escalations, 38.1% revenue pressure override frameworks; priority change after agreement 3.3 of 5; "every escalation feels exceptional, and exceptional cases become routine"'
     note: 'Publisher runs the survey it reports (State of Product Management 2026). Do not use the figures on slides until the primary report is opened (track 3, N5). Same publisher as N9: count W25 and N9 as one source'
   - id: W27
@@ -144,6 +147,7 @@
     checked_on: '2026-11-22'
     age_flag: false
     status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: not reopened, status from 2026-11-22 stands. ProductPlan sponsors the N21 survey that PLA wrote, so W25 and W27 are commercially tied. Count them as one source family for the 2-source rule'
     verifier_note: 'Copied from rerun-track-1.yaml. Verifier 2026-11-22: text independent of W25; figures are the same survey'
     note: Roadmap software vendor. Use the text only. Supports the point that escalations arrive without the reasoning behind current priorities, which is what the decision card and decision log supply
   - id: N9
@@ -154,7 +158,8 @@
     source_date: 2026-01-07 (modified 2026-03-13)
     checked_on: '2026-11-22'
     age_flag: false
-    status: verified, vendor
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: reopened. Dated 2026-01-07. Byline and sponsor are Productboard; PLA hosts it. Confirmed: more than 70 request channels (Autodesk), assignment 6% to 100% (vendor case, not a statistic), teams spend time ''answering what happened to my request?'', ''close the loop with stakeholders without playing email ping-pong'', sales promises, customer emergencies. Productboard is a different vendor from ProductPlan, but this run counts it with W25 (same host) to stay conservative'
     note: 'Copied from needs.md. Sponsored, no named author. Autodesk figures are a vendor case, not audited: do not use as a statistic. Same publisher as W25'
   - id: N12
     claim: 'SiriusXM platform PMs treated prioritization as a product problem. Teams used different assumptions about users and data, which caused roadmap conflicts. AI synthesizes signals and surfaces past assumptions; platform leaders provide context and governance'
@@ -165,6 +170,7 @@
     checked_on: '2026-11-22'
     age_flag: false
     status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: not reopened, status from needs.md stands. Internal PM context only'
     note: 'Copied from needs.md. Internal PM context only. The framework scores requests; do not use the scoring part (Dan, decision d)'
   - id: W30
     claim: 'In industrial manufacturing, a new part made for one customer request often becomes another code instead of a reused part, so the bill of materials becomes less modular and more fragmented. Variants get added without asking whether each still earns its place. Custom items should run through an engineered-to-order path and must not quietly reenter the standard catalog as permanent complexity'
@@ -174,7 +180,8 @@
     source_date: 2026-04-20 (last modified; no original date)
     checked_on: '2026-11-26'
     age_flag: false
-    status: not verified
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Modified 2026-04-20, no publish date, no byline. All quoted text confirmed. The page does not describe how requests are decided and does not mention product managers; the burden it names falls on procurement and planning. Hardware context stays Partial with one source'
     note: 'Consultancy playbook, no byline, no data. Hardware context only. Same publisher as W19, different chapter and topic. One source: hardware stays Partial'
   - id: W36
     claim: 'Product managers face a constant flood of feature requests from internal teams, and it is hard to prioritize each team''s needs in one backlog. Telling someone their idea is "added to the backlog" can sound like it is shelved for good'
@@ -184,7 +191,8 @@
     source_date: unknown (last modified 2025-01-09)
     checked_on: '2026-11-26'
     age_flag: true
-    status: not verified
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Mike Savory, last modified 2025-01-09, no publish date. Text confirmed. Age flag stands (older than 12 months): Dan decides. Pragmatic content: not an independent outside source'
     note: 'Older than 12 months; Dan decides. Pragmatic content, so not an independent outside source for a Pragmatic course. No data, no text on duplicates or time cost. Talk track lead only'
   - id: W37
     claim: 'A sales request is one of many requests across the product surface; giving context back on each one is a lot of work when requests come day in and day out. Go back to the sales rep who asked, to give closure'
@@ -194,7 +202,8 @@
     source_date: 2023-09-12 (modified 2023-12-21)
     checked_on: '2026-11-26'
     age_flag: true
-    status: not verified
+    status: partly verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Diana Hsieh, 2023-09-12 (modified 2023-12-21). Confirmed: ''one of many requests that span the entire product surface area'', ''providing that additional context in response to a sales request is a lot of work'', a clear response ''gives sales reps closure''. ''Day in and day out'' not confirmed. Age flag stands: Dan decides'
     note: 'Older than 12 months; Dan decides. Signed practitioner. No data. Not counted in sources_check'
   - id: W38
     claim: 'Requester context often fails to reach the service queue, so someone chases it later; informal channels do not scale; stakeholders who do not see their context in outcomes stop giving it'
@@ -204,7 +213,8 @@
     source_date: unknown
     checked_on: '2026-11-26'
     age_flag: true
-    status: rejected
+    status: not verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: not opened. Researcher rejected it (no date). Keep out of all counts'
     note: 'No date shown, forum post by an app vendor employee. Not counted. Recorded so the next run does not reopen it'
   - id: W39
     claim: 'Over 60% of prioritization frameworks are overridden by leadership escalations (250 product leaders)'
@@ -214,7 +224,8 @@
     source_date: unknown (2026 report)
     checked_on: '2026-11-26'
     age_flag: false
-    status: partly verified
+    status: wrong
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: the landing page does say ''Over 60% of prioritization frameworks are overridden by leadership escalations'' and ''250 product leaders''. The primary report (N21, p. 52, reopened 2026-11-26) shows this wording is wrong: 60.2% of respondents selected ''leadership escalations or new directives'' in a multi-select question on factors that most often override their framework. The sample is nearly 250 product professionals (43.3% leaders), fieldwork Q4 2025. Do not cite the landing page; cite N21'
     note: 'Same study as W25 (PLA and ProductPlan co-publish it, see W27 verifier note). Not an independent source. No publish date, method or field dates on the page; PDF not opened'
   open_gaps:
   - 'Primary State of Product Management 2026 report: method and field dates (track 3, N5)'
