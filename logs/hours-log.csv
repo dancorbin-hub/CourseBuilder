@@ -9,3 +9,5 @@ date,course,phase_or_stage,module,activity,hours,source,notes
 2026-11-26,product-strategy-and-planning,stage-2,,gate-2-packet,,manual,"Stage 2 run 03:28 to 06:35 UTC (planner, case builder, critic, revision, syllabus, Gate 2 doc). Run scripts/estimate_hours.py for Claude time. Dan adds review hours."
 2026-11-26,all,phase-3,,tool-build,,manual,"Phase 3 tools: course-modules skill, module-builder, consistency-reviewer, verifier module mode, module template (17:31 to 17:50 UTC). Not course hours."
 2026-11-26,market-research,stage-3,1,module-draft,,manual,"Module 1 build, 2 checkers, revision, Gate 3 doc (18:12 to 19:10 UTC). Dan adds card test and review hours."
+2026-11-26,all,phase-4,,tool-build,,manual,"Phase 4 tools: deck, workbook and LD spec renderers, qa_check, qa-agent, course-produce skill (21:00 to 22:30 UTC). Not course hours."
+2026-11-26,market-research,stage-4,1,final-qa,,manual,"Module 1 deck plan, renders, QA, Gate 4 doc. Dan adds review hours."

@@ -2,14 +2,14 @@
 # Only Dan changes a gate to approved.
 course: market-research
 title: Advanced AI for Market Research
-stage: 3              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+stage: 4              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp" }
   gate_1_research:    { status: approved, approved_on: 2026-11-22, doc: "https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW" }
   gate_2_spec:        { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: approved, pragmatic_review_on: 2026-11-26, pragmatic_comments: "none, looked good, proceed" }
   gate_3_modules:     # one entry per module
     - { module: 1, status: content_approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/HsL2QbY9yrChpgYYYrmbri", card_test: open, note: "Dan approved content before the card test. Card test on 4 platforms (doubles as proof P1) still open. If P1 fails on 2 or more platforms, rework lab 1 with Dan yes" }
-  gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
+  gate_4_final_qa:    { module: 1, status: in_review, approved_on: null, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 38 of 40 pass; slide 1.10 too dense, Dan picks A, B or C" }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
   - Pragmatic Framework 2027 guide (project files, reference/pragmatic-sources/)
