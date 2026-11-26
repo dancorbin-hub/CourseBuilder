@@ -112,14 +112,14 @@ def _fit_cover_title(sh, title, sub_top):
     words = title.split()
     size, lines = 150, 1
     for size in range(150, 59, -6):
-        lines = _wrap_lines(words, int(width_in * 72 / (size * 0.66)))
+        lines = _wrap_lines(words, int(width_in * 72 / (size * 0.80)))
         if lines <= 2:
             break
     for p in sh.text_frame.paragraphs:
         for r in p.runs:
             r.font.size = Pt(size)
     if sub_top is not None:
-        need = Inches(lines * size * 1.15 / 72 + 0.25)
+        need = Inches(lines * size * 1.2 / 72 + 0.4)
         sh.top = max(Inches(0.5), sub_top - need)
 
 
