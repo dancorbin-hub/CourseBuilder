@@ -8,7 +8,7 @@ gates:
   gate_1_research:    { status: approved, approved_on: 2026-11-22, doc: "https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW" }
   gate_2_spec:        { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: approved, pragmatic_review_on: 2026-11-26, pragmatic_comments: "none, looked good, proceed" }
   gate_3_modules:     # one entry per module
-    - { module: 1, status: drafting, approved_on: null, doc: null }
+    - { module: 1, status: content_approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/HsL2QbY9yrChpgYYYrmbri", card_test: open, note: "Dan approved content before the card test. Card test on 4 platforms (doubles as proof P1) still open. If P1 fails on 2 or more platforms, rework lab 1 with Dan yes" }
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
@@ -25,13 +25,13 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   research/gate-1-packet.md: sha256:d8bde3cc4829bbf3
   research/gate-1-decisions.md: sha256:d3285a843bb9e7fb
   research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
-  research/platform-matrix.yaml: sha256:3cda94e3274e99e6
+  research/platform-matrix.yaml: sha256:f2b01bf39e7f8fc1
   research/bond-stories.md: sha256:70ffa8521cb65122
-  spec.yaml: sha256:40cfae7c1f7e819f   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
+  spec.yaml: sha256:e21bb98a02b06acc   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/syllabus.md: sha256:2468f0355f716385   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/development-brief.md: sha256:231fd68b99aedce7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/capability-mapping.md: sha256:62d094a14988aca7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
-  outline/gate-2-decisions.md: sha256:cee72550311875c6   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
+  outline/gate-2-decisions.md: sha256:91634c5b6ca9658c   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   case/README.md: sha256:53d2ed534f358b60   # Gate 2, 2026-11-26
   case/company.md: sha256:5aed55520acbd894   # Gate 2, 2026-11-26
   case/expected-results.md: sha256:0942d1134dc32336   # Gate 2, 2026-11-26
@@ -60,3 +60,4 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   case/m5-past-reports.txt: sha256:fb63d4ab44f8b297   # Gate 2, 2026-11-26
   case/m5-stakeholder-questions.md: sha256:c9539e8580dbf6f9   # Gate 2, 2026-11-26
   case/planted-errors.md: sha256:c7e41877a46e9edd   # Gate 2, 2026-11-26
+  modules/m1/module.md: sha256:ab5f550cea2aa569   # Gate 3 content approved, 2026-11-26
