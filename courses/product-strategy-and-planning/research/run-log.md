@@ -18,3 +18,7 @@
 - Synthesizer done: 6 rows retained, 3 folded, 1 out of scope, 1 deferred, 5 modules; decisions a to k. 07:18 UTC: Step 5, trace check.
 - Trace check done (about 140 claims, 8 wording fixes, 7 flags added to packet section 8). Paused 07:19 to 09:35 UTC by a usage limit.
 - 09:41 UTC: Gate 1 doc published: https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk. Status in_review.
+
+## Stage 2
+
+- 2026-11-26 03:40 UTC: Stage 2 started (course-outline skill). Hold lifted: Pragmatic approved the Market Research syllabus. Inputs: outline/stage-2-inputs.md. Step 1: course-planner.
