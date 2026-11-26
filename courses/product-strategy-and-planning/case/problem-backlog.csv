@@ -1,0 +1,15 @@
+pb_id,problem,segments,typical_user,evidence_count_12m,accounts_12m,source_types,first_seen,last_seen,validated_by_pm_rule
+PB-01,Staff miss the first alert at night or on weekends,Distribution; Food service,"Shift lead, kitchen manager",6,6,feedback; interview; request; win/loss,2026-02-17,2026-08-03,yes
+PB-02,Audit preparation needs manual record work,Pharmacy and lab,"Pharmacy manager, lab manager",8,7,feedback; interview; request; win/loss,2026-03-18,2026-10-02,yes
+PB-03,Defrost cycles cause false alarms,Food service,Kitchen manager,5,4,feedback; interview; request,2026-03-25,2026-10-10,yes
+PB-04,Installing a site takes too many days and visits,Distribution; Food service; Internal,"Installer, contractor",6,5,feedback; interview; request; win/loss,2026-04-14,2026-07-20,yes
+PB-05,Wi-Fi hubs lose the signal in cold rooms,Distribution; Food service,Warehouse shift lead,6,6,feedback; interview; request; win/loss,2026-04-28,2026-09-14,yes
+PB-06,Door-open alarms fire too often at loading docks,Distribution,Warehouse shift lead,2,2,feedback,2026-08-05,2026-09-22,no
+PB-07,Changing many probes one by one takes hours,Distribution; Food service,"Operations manager, reseller",4,4,feedback; interview; request,2026-05-05,2026-08-19,yes
+PB-08,Cellular data bills cannot be matched to sites,Internal,"Finance analyst, Customer Success",4,3,feedback; interview; request,2026-08-12,2026-10-14,yes
+PB-09,Installers cannot save the checklist where there is no signal,Distribution; Internal,Installer,2,2,feedback; interview,2026-07-23,2026-08-26,no
+PB-10,Support cannot see hub last-seen time and firmware status fast,Internal,"Support agent, Customer Success",3,3,feedback; interview; request,2026-05-30,2026-07-21,yes
+PB-11,Resellers cannot see all their customer sites in one view,Food service,Refrigeration contractor,2,2,feedback; request,2026-09-03,2026-10-20,no
+PB-12,Kitchen staff cannot read alerts in their own language,Food service,Kitchen staff,2,2,feedback,2026-10-22,2026-10-27,no
+PB-13,Managers build multi-site summaries by hand,Food service,Director of operations,4,4,feedback; interview; request; win/loss,2026-05-19,2026-06-26,yes
+PB-14,A failed firmware update leaves a hub offline until a visit,Distribution; Internal,"Operations manager, Support agent",4,4,feedback; interview; request,2026-08-25,2026-10-01,yes

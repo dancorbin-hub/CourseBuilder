@@ -1,0 +1,19 @@
+item_id,item,theme_id,theme,timeframe,linked_problem_ids,objective_ref,own_evidence_ids
+RM-01,Guided hub pairing in the install app,T-01,Installers put a site in service in under two days,2027 H1,PB-04,KR2.1,INT-05;INT-11;WL-10;FB-14
+RM-02,Install checklist v2 in the Fleet Data Platform,T-01,Installers put a site in service in under two days,2027 H1,PB-04,KR2.1,INT-12;REQ-052;FB-14;INT-05
+RM-03,Hub firmware over-the-air rollback,T-01,Installers put a site in service in under two days,2027 H1,PB-14,KR2.1,INT-18;FB-32;REQ-074;FB-33
+RM-04,Audit report v2 with probe serial numbers,T-02,Pharmacy and lab customers pass audits without manual record work,2027 H1,PB-02,KR1.2,INT-03;INT-09;WL-08;FB-22
+RM-05,Calibration due reminders,T-02,Pharmacy and lab customers pass audits without manual record work,2027 H2,PB-02,KR1.2,INT-15;WL-14;FB-25
+RM-06,Calibration certificate export,T-02,Pharmacy and lab customers pass audits without manual record work,Later,PB-02,KR1.2,REQ-087;INT-03;WL-08;FB-22
+RM-14,Branded cover page on audit reports,T-02,Pharmacy and lab customers pass audits without manual record work,2027 H1,PB-02,KR1.2,REQ-079
+RM-07,Probe X volume launch,T-03,Remote sites stay monitored without Wi-Fi,2027 H1,PB-05,KR2.2,INT-06;INT-13;WL-11;REQ-060
+RM-08,Hub cellular fallback,T-03,Remote sites stay monitored without Wi-Fi,2027 H2,PB-05,KR2.2,FB-17;FB-24;REQ-060;INT-13
+RM-08,Hub cellular fallback,T-01,Installers put a site in service in under two days,2027 H2,PB-05,KR2.2,FB-17;FB-24;REQ-060;INT-13
+RM-09,Second alert by SMS when the first is not answered,T-04,Customers run many sites with fewer false alerts and less admin,2027 H2,PB-01,KR3.1,INT-02;WL-05;FB-12;REQ-031
+RM-10,Defrost window per sensor,T-04,Customers run many sites with fewer false alerts and less admin,2027 H1,PB-03,KR3.1,INT-04;FB-08;FB-15;REQ-044
+RM-11,Bulk rename and bulk settings for probes,T-04,Customers run many sites with fewer false alerts and less admin,2027 H2,PB-07,KR3.3,INT-08;FB-13;FB-23;REQ-066
+RM-15,Multi-site summary report,T-04,Customers run many sites with fewer false alerts and less admin,2027 H2,PB-13,KR3.3,INT-10;WL-12;FB-11;REQ-063
+-,(no item yet),T-05,Resellers manage their customers' sites without Larkspan help,,,KR3.3,
+RM-12,Hub last-seen and firmware view in the Fleet Data Platform,T-06,Internal teams see device health and cost in one place,2027 H1,PB-10,KR2.1,FB-16;INT-14;REQ-058
+RM-13,Cellular data usage by site in the Fleet Data Platform,T-06,Internal teams see device health and cost in one place,2027 H2,PB-08,KR3.2,INT-16;REQ-070;FB-28;REQ-071
+RM-16,Tag 2 shipment logger,T-07,Cold-chain shipments carry proof of temperature,2027 H2,,,
