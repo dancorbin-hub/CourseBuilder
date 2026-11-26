@@ -1,12 +1,12 @@
 # Capability mapping: Advanced AI for Product Strategy and Planning
 
-Source: Pragmatic Capability Standards Workbook 2027 (project files `course-builder/reference/pragmatic-sources/`, read 2026-11-26). Status: proposed. Dan confirms at Gate 2. This file goes to the Pragmatic reviewer with the syllabus.
+Source: Pragmatic Capability Standards Workbook 2027 (project files `course-builder/reference/pragmatic-sources/`, read 2026-11-26). Status: confirmed by Dan (Gate 2 Q2, 2026-11-26). Version 2. This file goes to the Pragmatic reviewer with the syllabus. Dan tells the reviewer the gaps in the last table.
 
 ## Hierarchy used
 
 Framework box > Capability > Skill > Competency. Ids and names below are copied from the workbook. Nothing is invented. Two competency names are split across cells in the workbook ("2.1B Explicit vs. Implicit | Strategy Analysis" and "2.4D Alignment to Market | Problems and Strategy"). This file joins them.
 
-## Proposed capability and skills
+## Capability and skills
 
 | Item | Workbook id and name | Why |
 | --- | --- | --- |
@@ -27,15 +27,17 @@ Framework box > Capability > Skill > Competency. Ids and names below are copied 
 | 4. Roadmap refresh and change | Focus / Product Roadmap | 2.4 Product Vision and Roadmap | 2.4B Roadmap Structuring and Framing, 2.4C Assumption and Uncertainty Transparency, 2.4D Alignment to Market Problems and Strategy |
 | 5. Outcomes, not output | Business / Business Outcomes | 2.3 Business Case Development | 2.3E Success Definition and Measurement |
 
-Offering intent for every module: Develop and Apply.
+Offering intent for every module: Develop and Apply (confirmed by Dan, Gate 2 Q3).
+
+Module 4 box: Focus / Product Roadmap. The research file tags row sp-wf-08 as Planning / Stakeholder Management. The course has no audience drafting, so the module sits in Product Roadmap (confirmed by Dan, Gate 2 Q4). Module 2 touches Planning / Stakeholder Management only in the reply step.
 
 ## What the workbook confirms in the course design
 
 | Workbook text | Course design |
 | --- | --- |
-| 2.1 AI text: "Strategy stays a forced-choice human decision" | The agent reports evidence only. A hand-off rule stops it before any funding, ranking or strategy change |
+| 2.1 AI text: "Strategy stays a forced-choice human decision" | The agent reports evidence only. A hand-off rule stops it before any funding, priority or strategy change |
 | 2.1B: "comparing what leaders say the organization is prioritizing with where resources, products, and attention are really being invested" | The module 1 strategy consistency check. It shows where capacity goes by stated objective and lists work with no clear link. It does not judge it |
-| 2.2 AI text: "analyze evidence, surface inconsistencies". "Weights and final priorities stay human-owned" | The decision card links each request to the problem backlog, the strategy and past decisions. The decision field stays blank for the PM |
+| 2.2 AI text: "analyze evidence, surface inconsistencies". "Weights and final priorities stay human-owned" | The decision card links each request to the problem backlog, the strategy and past decisions. The decision field stays blank for the PM. The agent may order the problem backlog by the amount of market evidence. The column is "evidence order", not "priority". The PM weighs other factors |
 | 2.3 AI text: "Assemble evidence, model market size, costs ... find assumptions and risks, red-team the case. Data and calculations stay auditable" | The assumption register, the red team note and a course sheet that holds the formulas. One link per market size number |
 | 2.3E Success Definition and Measurement | Module 5 tracks outcomes against the module 3 business case baseline and keeps outcomes apart from outputs |
 | 2.4 AI text: "Must not turn uncertain direction into false delivery commitments" | The commitment guard flags any date or promise that is not on the release plan |
@@ -46,10 +48,11 @@ Offering intent for every module: Develop and Apply.
 | # | Item | What the course does |
 | --- | --- | --- |
 | 1 | 2.2A Attribute Selection and Definition, 2.2B Scoring Model Design, 2.2C Weighting and Priority Logic and 2.2D Calibration and Consistency are written around scoring | Not covered. The course does not teach or use scoring. Scoring is taught in a core course |
-| 2 | 2.2E workbook text says "Uses scoring outputs" | The course uses evidence cards and a blank decision field instead. Module 2 claims 2.2E in a light form only |
+| 2 | 2.2E workbook text says "Uses scoring outputs" | The course uses evidence cards, an evidence order column and a blank decision field instead. Module 2 claims 2.2E in a light form only |
 | 3 | The Product Portfolio and Business Outcomes boxes have no primary skill in the workbook | The course uses 2.1 (module 1) and 2.3 (module 5) as secondary skills on those boxes |
 | 4 | 2.1A Strategic Definition and 2.1C Strategy Matrix Application are not covered | The PM brings the strategy. The course does not teach writing it or applying the Strategy Matrix |
 | 5 | 2.3A Product Canvas Development, 2.3D Distribution and Solution Delivery Fit and 2.3F Stakeholder Argumentation are not covered | No lab step practices them. 2.3F was dropped so that the course claims only what it practices |
-| 6 | 2.4A Strategic Vision Articulation and 2.4E Stakeholder Communication and Alignment are not covered | The course has no audience versions of the roadmap. The 2.4 AI text "simulate sequencing and dependency scenarios" is covered only as dependency hits |
-| 7 | Release plan changes touch 3.4 Release Planning and Delivery Management (3.4B Roadmap-to-Release-Plan Alignment, 3.4D Change and Tradeoff Management) | Not claimed. The hand-off rule sends such a change to the person who owns the release plan |
-| 8 | Capability 2 is also mapped by workshops on strategic transformation and on implementation and action planning, and by a partner course on the product roadmap | Overlap check is open. This course is Develop and Apply, with one agent that the learner manages over time. The no-repeat rule covers slides and exercises, not skills |
+| 6 | 2.4A Strategic Vision Articulation and 2.4E Stakeholder Communication and Alignment are not covered | The course has no audience versions of the roadmap. The 2.4 AI text "simulate sequencing and dependency scenarios" is covered only as dependency hits. The 2.4 AI text "cluster validated problems into outcome themes" is not used: the agent does not group problems. The PM names themes |
+| 7 | Release plan changes touch 3.4 Release Planning and Delivery Management (3.4B Roadmap-to-Release-Plan Alignment, 3.4D Change and Tradeoff Management) | Not claimed. The hand-off rule sends such a change to the PM and the person who owns the release plan |
+| 8 | Capability 2 is also mapped by workshops on strategic transformation and on implementation and action planning, and by a partner course on the product roadmap | Overlap check is open (Dan). This course is Develop and Apply, with one agent that the learner manages over time. The no-repeat rule covers slides and exercises, not skills |
+| 9 | Title uses "planning" in the sense of annual and quarterly product planning. The Framework has a category named Planning | Question for the reviewer: does the title conflict with the category? Alternatives if yes: "Advanced AI for Product Strategy and Roadmaps" or "Advanced AI for Product Strategy and Portfolio Planning" |
