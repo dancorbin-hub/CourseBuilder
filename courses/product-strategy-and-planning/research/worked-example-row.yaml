@@ -1,5 +1,5 @@
 # Worked example workflow row for Advanced AI for Product Strategy and Planning. Version 1, draft.
-# Status: draft for Dan's approval. Model row chosen by Dan at Gate 1 (decision h, 2026-11-26).
+# Status: approved by Dan on 2026-11-26. Model row chosen by Dan at Gate 1 (decision h, 2026-11-26).
 # Format model: courses/market-research/research/worked-example-row.yaml (mr-wf-01, v3). Content is new.
 # Source rows: sp-wf-09 (workflows.yaml) with sp-wf-01 folded in as a strategy consistency check.
 # Gate 1 decisions applied (research/gate-1-decisions.md, all 2026-11-26):
@@ -142,4 +142,4 @@ open_gaps:
   - Internal PM source beyond an anecdote
   - Primary reports for W2 and W3
   - Overlap check with the Strategic Transformation and Action Planning workshops (Dan)
-gate_1_decision: ""   # Dan only
+gate_1_decision: "Approved by Dan 2026-11-26"

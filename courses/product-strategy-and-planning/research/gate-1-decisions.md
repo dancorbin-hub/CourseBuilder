@@ -26,6 +26,7 @@ Repo record of Dan's Gate 1 answers for Advanced AI for Product Strategy and Pla
 | f) Platform risks 2 to 6 | 2026-11-26: "I agree as well" | Take the 5 recommendations: (2) Gemini numeric steps use a Google Sheet template with formulas; Gate 2 tests one skill run that asks for a Sheet. (3) Copilot learners upload the sheet in chat each run and download output in the same session; Copilot case files are .xlsx, one sheet each; Gate 2 tests the toggle and the embedded copy; license or billing stays a prerequisite. (4) Market size refresh core path uses a case source pack; live search is a stretch on Claude, ChatGPT and Copilot; one link per number; Gemini learners upload the new source. (5) Second blind run in a new ChatGPT chat outside the project. (6) Ship a CSV copy in the case pack; 30 MB in step cards; code execution and web search go on the pre-class checklist | Accepted by Dan 2026-11-26. Applies at Gate 2 |
 | Focus AI-forward version, demo agents (PS-01, PS-02, PS-06) | 2026-11-26: "We haven't finalized the new AI forward version of focus. However, we decided NOT to do the strategy alignment agent. It will include the roadmap translator and market sizing agents, though" | PS-01 risk drops: row 01 (drift check) no longer repeats a Focus demo agent. Fold of 01 into 09 still stands on the critic's reason (same data and cadence), unless Dan wants 01 back as its own module. PS-02 (row 08 vs Roadmap Translator) and PS-06 (row 03 vs Market Sizing) stay open. Open question: did Dan build those two agents? If yes, house rule 11 applies | Input recorded 2026-11-26. Recheck when Focus is final |
 | Term: "opportunity backlog" | 2026-11-26: "We refer to the opportunity backlog as the problem backlog. It's the same concept. It's just where you track the problems in the market that are not being solved. the evidence that points to it and the problem backlog is what feeds the product backlog." | Say "problem backlog" in all course content. It holds unsolved market problems and their evidence, and it feeds the product backlog. Skill name 2.2 Opportunity Prioritization stays as the workbook writes it. Replaced in workflows.yaml (sp-wf-02), research-brief.md and gate-1-packet.md. critic-report.md kept as a record. Stage 2 glossary gets the term | Applied 2026-11-26 |
+| Gate 1 close | 2026-11-26 (thread): "1. approved 2. yes 3. yes" | Model row sp-wf-09 v1 approved. W37 dropped; W36 kept for method only, not on a slide. Gate 1 approved with all changes in this file | Approved by Dan 2026-11-26. status.yaml updated |
 
 ## Course themes from Dan
 
@@ -33,7 +34,6 @@ Repo record of Dan's Gate 1 answers for Advanced AI for Product Strategy and Pla
 
 ## Still open
 
-- Verifier pass on the new row 02 sources (W29 to W39).
-- Model row 09 draft for Dan's approval.
-- Dan's Gate 1 approval in status.yaml.
-- Parked to Gate 2: PS-10, decision e. Bond story held to Stage 3.
+- Parked to Gate 2: PS-10 (release plan hand-off), decision e (data safety, provisional).
+- Bond story held to Stage 3 (lean Trendslop).
+- Stage 2 waits for Pragmatic's feedback on the Market Research syllabus.
