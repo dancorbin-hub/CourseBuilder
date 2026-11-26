@@ -7,7 +7,7 @@ delivered_by: Dan (decision 45). Talk track must work for a part-time instructor
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-26, doc: null, file: "research/worked-example-row.yaml", note: "Course row sp-wf-09 v1 (Dan picked it at Gate 1, decision h, 2026-11-26). Draft for Dan's approval. Format model stays mr-wf-01 (v3)" }
   gate_1_research:    { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk" }
-  gate_2_spec:        { status: not_started, approved_on: null, doc: null, pragmatic_review: null }
+  gate_2_spec:        { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/W2UADbKq77U3eiytxusc9J", pragmatic_review: null }
   gate_3_modules:     []
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
