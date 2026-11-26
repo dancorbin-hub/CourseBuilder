@@ -193,7 +193,7 @@
     age_flag: true
     status: verified
     verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Mike Savory, last modified 2025-01-09, no publish date. Text confirmed. Age flag stands (older than 12 months): Dan decides. Pragmatic content: not an independent outside source'
-    note: 'Older than 12 months; Dan decides. Pragmatic content, so not an independent outside source for a Pragmatic course. No data, no text on duplicates or time cost. Talk track lead only'
+    note: 'Dan 2026-11-26: keep for method only, not on a slide. Older than 12 months. Pragmatic content, so not an independent outside source for a Pragmatic course. No data, no text on duplicates or time cost. Talk track lead only Dan 2026-11-26: keep for method only, not on a slide'
   - id: W37
     claim: 'A sales request is one of many requests across the product surface; giving context back on each one is a lot of work when requests come day in and day out. Go back to the sales rep who asked, to give closure'
     type: claim
@@ -204,7 +204,7 @@
     age_flag: true
     status: partly verified
     verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Diana Hsieh, 2023-09-12 (modified 2023-12-21). Confirmed: ''one of many requests that span the entire product surface area'', ''providing that additional context in response to a sales request is a lot of work'', a clear response ''gives sales reps closure''. ''Day in and day out'' not confirmed. Age flag stands: Dan decides'
-    note: 'Older than 12 months; Dan decides. Signed practitioner. No data. Not counted in sources_check'
+    note: 'Older than 12 months; Dan decides. Signed practitioner. No data. Not counted in sources_check. Dan 2026-11-26: dropped, do not use'
   - id: W38
     claim: 'Requester context often fails to reach the service queue, so someone chases it later; informal channels do not scale; stakeholders who do not see their context in outcomes stop giving it'
     type: claim
