@@ -41,6 +41,7 @@
         - Notes that fit no code
         - A new problem that contradicts the backlog
         - If all quotes for a problem come from 1 interview, send it to the flag report ("single source", kept for trend tracking)
+        - A segment with no PM-held interview (PA-02)
       audit: 3 random problems per batch, checked against the source interviews
     pm_decides:
       - The code book

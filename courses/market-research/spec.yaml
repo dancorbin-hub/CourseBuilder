@@ -1135,7 +1135,7 @@ open_items:
       old rule is now also a threshold, against rework brief 2 item 4. The file is fingerprinted, so a fix needs Dan's yes
     owner: Dan
     due: Gate 2
-    status: open
+    status: done 2026-11-26. Dan's yes in Gate 2 v2 decision 9. Row 01 uses the backlog model and has the PA-02 rule
   - id: OI-07
     item: Half days are 3.5 hours each, 195 teaching minutes, split after module 2
     owner: Dan
@@ -1255,7 +1255,7 @@ open_items:
       labels and proposed ranking, and record a new fingerprint. OI-06 covers only workflows.yaml
     owner: Dan
     due: When Gate 2 decision 4 is final
-    status: open, waiting for Dan yes
+    status: done 2026-11-22. Dan's yes in Gate 2 v2 decision 9. worked-example-row.yaml is now v4
   - id: OI-24
     item: >-
       Critic M2. Lab 5 makes Q3 optional on the case path. case/company.md (files by module table) and

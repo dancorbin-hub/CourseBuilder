@@ -20,18 +20,18 @@ settings:
   capability_map: off
 fingerprints:         # approved item -> content hash. A change to a fingerprinted item needs Dan's yes. Gate 1, 2026-11-22
   research/worked-example-row.yaml: sha256:a0f9c041b50acdd3   # v4, Gate 2 decision 9, 2026-11-22
-  research/workflows.yaml: sha256:e02a0c683c0c4fd8   # rows 01 and 02, Gate 2 decisions 7 and 9, 2026-11-22
+  research/workflows.yaml: sha256:5bc6f835f10b0a90   # rows 01 and 02, Gate 2 decisions 7 and 9, 2026-11-22
   research/research-brief.md: sha256:05ca8037c5d6bc48
   research/gate-1-packet.md: sha256:d8bde3cc4829bbf3
   research/gate-1-decisions.md: sha256:d3285a843bb9e7fb
   research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
   research/platform-matrix.yaml: sha256:3cda94e3274e99e6
   research/bond-stories.md: sha256:70ffa8521cb65122
-  spec.yaml: sha256:00fe4b9a81ed0be7   # Gate 2, 2026-11-26
-  outline/syllabus.md: sha256:2468f0355f716385   # Gate 2, 2026-11-26
-  outline/development-brief.md: sha256:231fd68b99aedce7   # Gate 2, 2026-11-26
-  outline/capability-mapping.md: sha256:62d094a14988aca7   # Gate 2, 2026-11-26
-  outline/gate-2-decisions.md: sha256:110eff1de2060a1f   # Gate 2, 2026-11-26
+  spec.yaml: sha256:40cfae7c1f7e819f   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
+  outline/syllabus.md: sha256:2468f0355f716385   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
+  outline/development-brief.md: sha256:231fd68b99aedce7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
+  outline/capability-mapping.md: sha256:62d094a14988aca7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
+  outline/gate-2-decisions.md: sha256:91634c5b6ca9658c   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   case/README.md: sha256:53d2ed534f358b60   # Gate 2, 2026-11-26
   case/company.md: sha256:5aed55520acbd894   # Gate 2, 2026-11-26
   case/expected-results.md: sha256:0942d1134dc32336   # Gate 2, 2026-11-26
@@ -43,8 +43,8 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   case/m1-stretch-applicants.md: sha256:e500e41ab7734d0e   # Gate 2, 2026-11-26
   case/m2-check-sample.md: sha256:e21873b7e58b513a   # Gate 2, 2026-11-26
   case/m2-crm-export-q2.csv: sha256:40a5dfc1ed0b696b   # Gate 2, 2026-11-26
-  case/m2-driver-code-book.md: sha256:3153c6edb517dbbd   # Gate 2, 2026-11-26
-  case/m2-driver-code-book.txt: sha256:3153c6edb517dbbd   # Gate 2, 2026-11-26
+  case/m2-driver-code-book.md: sha256:3153c6edb517dbbd   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
+  case/m2-driver-code-book.txt: sha256:3153c6edb517dbbd   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   case/m2-winloss-notes-q2.md: sha256:faaa64a6dffb1c1c   # Gate 2, 2026-11-26
   case/m3-check-sample.md: sha256:1a9942fcb1818605   # Gate 2, 2026-11-26
   case/m3-feedback-week-1.csv: sha256:990a2c125ea74396   # Gate 2, 2026-11-26
