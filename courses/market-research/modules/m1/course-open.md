@@ -24,9 +24,7 @@ Course: `market-research`. Stage 3 draft by the module builder, 2026-11-26. Runs
 
 ### Questions for Dan
 
-1. The open is 15 instructor-led and 10 hands-on, as in the spec. Slide O.1 is the Course Cover with welcome lines. There is no separate opening poll or platform login slide (PRD "patterns to keep" 5). The build check does the platform login job. Add a poll?
-2. The bond story uses only the figures in `research/bond-stories.md`: 122 transcripts; 68%, 20%, 3%, 9%. The hook line "almost 1 in 3 quotes" is also from that file (20 + 3 + 9 = 32%). OK to say it aloud? It is not on the slide.
-3. The build check uploads `code-book` from kit-m1-template as its sample file, so the lab starts with it in place (module.md, decision B3). OK?
+All open decisions for the course open and module 1 are in one list: `module.md`, section 1, "Decisions for Dan" (D17 and D18 are about the open).
 
 ## 2. Slides and talk track
 
@@ -45,7 +43,7 @@ Welcome.
 Today you build one AI agent and manage it through five market research jobs.
 Interviews, win/loss deals, weekly feedback, the alternatives map and stakeholder questions.
 You leave with the agent, on your own platform, ready for your own work.
-Let me start with a study from this year.
+Let me start with a study from 2026.
 TRANSITION: It is about quotes. The thing every PM puts in a deck.
 ```
 
@@ -58,13 +56,13 @@ TRANSITION: It is about quotes. The thing every PM puts in a deck.
 
 Notes:
 ```
-POINT: A 2026 study found that AI found good themes in interviews, but about a third of its quotes were not what the person said.
+POINT: A 2026 study found that AI found valid themes in interviews, but almost 1 in 3 of its quotes was not word for word.
 Talk Track:
 In 2026, a research team published a study in JAMIA, a peer-reviewed medical informatics journal.
 They gave 122 interview and consultation transcripts to an AI-assisted workflow.
 The interviews were with heart failure patients.
-The AI found valid themes. They matched the human team well.
-Then the team checked every quote the AI gave back against the transcript.
+The AI's themes were all judged valid, and they overlapped with the human team's themes.
+Then the lead author checked each quote the AI picked against the transcript.
 [POINT TO THE BAR]
 68% were word for word.
 20% were paraphrased.
@@ -90,7 +88,7 @@ Notes:
 ```
 POINT: A reworded quote that sounds right is the AI error nobody sees, and today you learn to manage an agent so that you see it.
 Talk Track:
-Almost 1 in 3 quotes was not what the person said.
+Almost 1 in 3 quotes was not word for word.
 Would your stakeholders know? Would you?
 A quote check finds most of these. Many of you already run one.
 Today goes further.
@@ -297,8 +295,8 @@ Saves: **Create** the first time. **Save** after each change.
 | --- | --- |
 | 1 | Select **Customize**, then **Skills**, then **Create**, then **Create manually**. Name it "market-evidence-agent". |
 | 2 | Paste the starter instruction into **Instructions**. |
-| 3 | Add `code-book.md` with **Add**, then files. |
-| 4 | In a new chat, type **/**, pick your skill and ask the question. |
+| 3 | Add `code-book.md` with **Add**, then **files**, then **Upload**. |
+| 4 | In a new chat, type **/** (or **@**), pick your skill and ask the question. |
 | 5 | Close the browser tab. |
 | 6 | Open Gemini again, and ask the question with your skill in a new chat. |
 

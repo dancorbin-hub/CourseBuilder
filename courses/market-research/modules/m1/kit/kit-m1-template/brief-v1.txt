@@ -30,7 +30,7 @@ Product and market [EDIT]: Larkspan Systems, wireless temperature sensors and cl
 - Pervasiveness: how many accounts and segments have the problem.
 - Willingness to pay clues: signs that buyers spend, or would spend, money or effort to solve it.
 - Source dates.
-- Fact labels, only where true: single source (1 interview, however many quotes), one segment only. A labeled problem stays in the backlog.
+- Fact labels, only where true: single source (1 interview, however many quotes), AI-moderated only (no PM-held interview), one segment only. A labeled problem stays in the backlog.
 
 ## Proposed ranking
 

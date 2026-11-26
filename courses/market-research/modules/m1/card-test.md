@@ -113,7 +113,7 @@ License state: licensed / no license Date tested: ______ Tester: ______ Tester w
 | --- | --- |
 | G2-PF-01: does Knowledge take `code-book.md`? (the card uses `.txt`) | |
 | G2-PF-02: upload of `.md` batch files in the agent chat, licensed and no license. 2 files in one message (lab step 6) | |
-| G2-PF-05: `copilot-fallback-instructions-m1.txt` (6,973 characters) accepted in **Instructions** and the run works | |
+| G2-PF-05: `copilot-fallback-instructions-m1.txt` (7,111 characters) accepted in **Instructions** and the run works | |
 | Paste of a batch as text works when upload fails | |
 | Downloaded file kept after the session ends (mb-11 says no) | |
 
