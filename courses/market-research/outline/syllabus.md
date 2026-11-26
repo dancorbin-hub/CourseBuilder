@@ -38,11 +38,13 @@ You become the **agent manager**. The agent does the routine research work. You 
 6. Read the agent's proposed ranking and decide the order of problems yourself.
 7. Tune the brief for what the audit found, and run again.
 
-Three ideas run through the day:
+**The big idea.** AI can gather far more market signal than you can read: online sources, customer feedback, deals and any data you give it. All of it is noise until you put it in context: what matters to your customers and what your business is trying to do. The agent gathers and organizes. You bring the context and make the call.
 
-1. **There is no magic number.** The agent reports the evidence and proposes a ranking. You decide the order.
-2. **Be great at product management before you are great at AI.**
-3. **Win/loss is the big aha.** Most teams do not get this data.
+**Ideas that run through the day:**
+
+- **There is no magic number.** The agent reports the evidence and proposes a ranking. You decide the order.
+- **Be great at product management before you are great at AI.**
+- **Win/loss is the data most teams do not get.** Module 2 shows what it reveals.
 
 ## Course objectives
 
@@ -63,7 +65,7 @@ By the end of the course, you can:
 | Part of the profile | What it shows |
 | --- | --- |
 | Interviews | How many interviews (not quotes), accounts, segments and personas |
-| Source type | PM-held interview, AI-moderated interview, win/loss, feedback item or past report |
+| Source type | PM-held interview, win/loss, feedback item or past report. Also AI-moderated interview, where a team uses them |
 | Urgency | How pressing the problem is, with one buyer quote |
 | Pervasiveness | How many accounts and segments have the problem |
 | Willingness to pay clues | Signs that buyers spend money or effort on the problem |
@@ -71,7 +73,7 @@ By the end of the course, you can:
 
 You know urgency, pervasiveness and willingness to pay from Pragmatic Foundations and Product Discovery with AI. In this course the agent reports them, and you check its report.
 
-The agent also states facts such as "single source" (one interview, however many quotes), "AI-moderated only" and "one segment only". These are facts, not verdicts. The problem stays in the backlog, so you can track it over time. The agent proposes a ranking with a reason for each problem. You decide the order, what is a pattern and what goes to validation. Priority is relative: you judge each problem against the others.
+The agent also states facts such as "single source" (one interview, however many quotes) and "one segment only". These are facts, not verdicts. The problem stays in the backlog, so you can track it over time. The agent proposes a ranking with a reason for each problem. You decide the order, what is a pattern and what goes to validation. Priority is relative: you judge each problem against the others.
 
 **The agent climbs a ladder.** Each module gives the agent more room, and you check it in a different way.
 
@@ -114,7 +116,7 @@ Minutes show the one-day format first, then the two-half-day format where it dif
 
 **Promise:** Find out how often your sales loss reasons match what buyers say.
 
-- **Workflow:** Run a win/loss program that turns each batch of decided deals into a checked decision-driver report.
+- **Workflow:** Run a win/loss program that turns each decided deal into an updated, checked decision-driver report.
 - **Bottleneck it removes:** Manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all.
 - **Objectives:**
   1. Extend the agent with a win/loss job that labels each deal "interview" or "CRM only".
@@ -122,7 +124,7 @@ Minutes show the one-day format first, then the two-half-day format where it dif
   3. Audit the deal source labels on 2 random deals and correct the brief.
   4. Decide which findings go to sales, marketing or leadership, and frame them so that sales does not read them as blame.
 - **Lab:** Add the win/loss job. Join a CRM export and win/loss interview notes. Read the match rate table and the deal counts for each driver. Audit and tune.
-- **Your input:** An export of 10 or more decided deals and any win/loss notes, or the case deals.
+- **Your input:** An export of recent decided deals and any win/loss notes, or the case deals.
 - **Learner evidence:** The match rate table with your one-sentence read of it, your flag report decisions, your audit findings for 2 deals and your brief change.
 
 ### Module 3. The weekly run: read flags, not every item (60 minutes)
