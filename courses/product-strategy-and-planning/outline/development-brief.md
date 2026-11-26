@@ -39,6 +39,8 @@ Quotes are from `research/stage-1-inputs.md` and the rerun files. No new names.
 
 Note: Dan's Market Research theme "win/loss is the big aha" belongs to the Market Research course. This course has no win/loss lab. The aha is module 1, decided by Dan (Gate 2 decision 7): the shared Firmware team is planned at 100% in two programs, every per-program check passes, and the total is 200%. Module 5 (units shipped against active paid sites) is the closing echo. Same effect, different topic.
 
+Pre-class and connectors (Gate 2 decisions 11 to 13): the "know before you design" check goes in the pre-class email and repeats in the course open. The Google Sheet template is an option on every platform. The core path is download .xlsx or CSV and upload in chat. Each lab has one optional connector lane card, outside the 6 steps. No connector is needed to pass. No connector is named until a dated vendor doc exists. Data safety check comes first.
+
 Cadence and evidence order (Gate 2): intake can be frequent, and the agent only logs and flags. The PM reviews the problem backlog at the PM's own cadence, often once a quarter. Reviewing too often causes whiplash. The agent may order the problem backlog by amount of market evidence. The column is "evidence order", never "priority". It is one input. The PM also weighs strategy, capacity, dependencies and other factors, because people follow an agent's lean (E1, "54% vs 36%"). A problem can rank high on evidence and impact and still be deprioritized for strategy, risk, investment level, build time, customer relations, dependencies or resource allocation.
 
 ### Where the course starts and stops
