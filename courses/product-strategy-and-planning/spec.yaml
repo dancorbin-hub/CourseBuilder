@@ -1,5 +1,5 @@
 # Course spec: Advanced AI for Product Strategy and Planning (course id product-strategy-and-planning)
-# Stage 2 draft (v0.1) by the course planner, 2026-11-26. Locked only when Dan approves Gate 2.
+# Stage 2 revision (v0.2) by the course planner, 2026-11-26, after the critic report. Draft v0.1 was the first pass. Locked only when Dan approves Gate 2.
 # Inputs: outline/stage-2-inputs.md (read first), research/gate-1-decisions.md (wins if files differ),
 #   research/worked-example-row.yaml (sp-wf-09, approved), research/workflows.yaml (rows 03, 05, 07, 08, 10),
 #   research/rerun-replacement-02.yaml (row 12), research/rerun-track-1.yaml (row 11), research/research-brief.md,
@@ -15,7 +15,7 @@ course:
     Planning here means annual and quarterly product planning. The course maps to Capability 2, Strategic
     Direction. (Gate 1 decision g. The title question goes to Pragmatic; see decisions_for_dan DD-03)
   status: draft
-  version: 0.1
+  version: 0.2
   drafted_on: 2026-11-26
   instructor: Dan Corbin (delivers, decision 45). Written so an instructor who did not build the course can deliver it
   offering_intent: Develop and Apply (decision 41)
@@ -161,8 +161,12 @@ course_agent:   # house rule 12, decision 38
     instructions: Core brief (role, core rule, shared rules, flag report format, decision field rule, confidential terms list). Under 8,000 characters for Copilot (mb-01)
     job_cards: One file per job (portfolio pack, requests, business case, roadmap, outcome tracking). Uploaded as knowledge
     knowledge_file_budget: >-
-      16 knowledge files or fewer at the end of the course, under the ChatGPT Plus and Copilot limit of 20 (cg-03,
-      mb-02). The case builder counts the real files. Copilot gets .txt copies of .md files; they replace, not add
+      16 knowledge files at the end of the course, under the ChatGPT Plus and Copilot limit of 20 (cg-03, mb-02).
+      Count follows case/README.md: 1 core instructions, 5 job cards, 10 case files (strategy-okrs-kpis, capacity-sheet,
+      problem-backlog, request-decision-log, roadmap, business-case, business-case-sheet, release-plan,
+      roadmap-decision-log, outcome-sheet). The source pack, the tooling quote, the evidence log, the validated problem
+      backlog and the confidential terms list are run files or brief text. They do not count. Copilot gets .txt copies
+      of .md files; they replace, not add
     sheets: >-
       Three course sheets with formulas: capacity sheet (module 1), business case sheet (module 3), outcome sheet
       (module 5). Each ships as .xlsx (one sheet each, for Copilot), a Google Sheet template (Gemini) and a CSV copy
@@ -174,33 +178,35 @@ course_agent:   # house rule 12, decision 38
   growth:
     - module: 1
       adds: >-
-        Portfolio pack job with the strategy consistency check. Brief v1 from the template: strategy overview, OKRs
-        and KPIs, submission template, per-program capacity check, link check ("names what the work does"), flag
+        Portfolio pack job with the strategy consistency check. Brief v1 from the template: the strategy, OKRs and KPIs
+        file (one file), submission template, per-program capacity check, link check ("names what the work does"), flag
         report. The template has no check that totals a shared team across programs. The learner adds it after the
         audit (brief v2)
-      files_after: [core instructions, job-card-portfolio-pack, strategy-overview, okrs-kpis, capacity-sheet]
+      files_after: [core instructions, job-card-portfolio-pack, strategy-okrs-kpis, capacity-sheet]   # 4 files
     - module: 2
       adds: >-
         Request job. Decision card template with a blank decision field. Reads the problem backlog, the stated
         strategy and OKRs, the current roadmap and the request decision log. Drafts replies only after the PM decides
-      files_after: [job-card-requests, problem-backlog, request-decision-log, roadmap]
+      files_after: [job-card-requests, problem-backlog, request-decision-log, roadmap]   # adds 4, total 8
     - module: 3
       adds: >-
         Business case job. Assumption register, red team of the assumptions with the largest effect, sensitivity in
-        the business case sheet, market size inputs from a source pack, denominator check, "what changed" note
-      files_after: [job-card-business-case, business-case, business-case-sheet, source-pack]
+        the business case sheet, market size inputs from a source pack (a run file, sent with the business case),
+        denominator check, "what changed" note
+      files_after: [job-card-business-case, business-case, business-case-sheet]   # adds 3, total 11. Source pack is a run file
     - module: 4
       adds: >-
-        Roadmap job in two parts. Refresh: trace each item to a theme, a validated problem and a stated objective.
+        Roadmap job in two parts. Refresh: trace each item to a theme, a validated problem and a stated objective
+        (the validated problem backlog and the evidence log are run files).
         Change: impact note, displacement, dependency hits, decision log entry with a blank decision field, standing
         commitment guard against the release plan. First hand-off between jobs: an approved request (module 2) and the
         capacity table (module 1) feed the change assessment
-      files_after: [job-card-roadmap, release-plan, roadmap-decision-log]
+      files_after: [job-card-roadmap, release-plan, roadmap-decision-log]   # adds 3, total 14
     - module: 5
       adds: >-
         Outcome tracking job. Reads the business case baseline (module 3) and the OKRs (module 1). Monthly run. Keeps
         outcomes apart from outputs
-      files_after: [job-card-outcomes, outcome-sheet]
+      files_after: [job-card-outcomes, outcome-sheet]   # adds 2, total 16
   log_save_card:
     steps:
       - Decide what the log keeps and delete the rest
@@ -213,11 +219,11 @@ course_agent:   # house rule 12, decision 38
   catch_up_kits:   # Text kit, no sharing feature needed. Rebuild in about 5 minutes. Gate 2 proof P1 to P3 test them
     rule: One kit per module. Each kit holds the brief text, job cards, knowledge files and sheets as they are at the start of that module, plus a one-page rebuild card per platform
     kits:
-      - kit-m1-template: Starter template. Brief v1 (no shared-team total check), portfolio pack job card, Larkspan strategy overview, OKRs and KPIs, capacity sheet
-      - kit-m2: State after module 1. Brief v2 (with the shared-team total check), adds the request job card, problem backlog, request decision log, roadmap
-      - kit-m3: State after module 2. Adds the matching rule, the decided cards in the request decision log, the business case job card, business case, sheet and source pack
-      - kit-m4: State after module 3. Adds the tuned business case brief, the roadmap job card, release plan, roadmap decision log
-      - kit-m5: State after module 4. Adds the tuned roadmap brief and the decided change, the outcome job card and outcome sheet
+      - kit-m1-template: Starter template. Brief v1 (no shared-team total check), portfolio pack job card, Larkspan strategy-okrs-kpis file, capacity sheet (4 files)
+      - kit-m2: State after module 1. Brief v2 (with the shared-team total check), adds the request job card, problem backlog, request decision log, roadmap (8 files)
+      - kit-m3: State after module 2. Adds the matching rule, the decided cards in the request decision log, the business case job card, business case and sheet (11 files). The source pack is a run file in the kit folder
+      - kit-m4: State after module 3. Adds the tuned business case brief, the roadmap job card, release plan, roadmap decision log (14 files). The validated problem backlog, evidence log, CR-07 and the confidential terms list are run files or brief text in the kit folder
+      - kit-m5: State after module 4. Adds the tuned roadmap brief (with the PM's own-evidence rule) and the decided change, the outcome job card and outcome sheet (16 files)
       - kit-final: The complete agent with five jobs. Learners take it home to rebuild on their own work
     copilot_note: Each kit holds .txt copies of .md files and a fallback instructions text under 8,000 characters for learners with no Copilot license
 
@@ -245,6 +251,11 @@ autonomy_ladder:   # decision 35. Climbs across the day
         One job's output is the next job's input. An approved request (module 2) and the capacity table (module 1)
         feed the roadmap change assessment. A hand-off rule says what passes and what stops. Second agent is stretch
         only where verified
+      handoff_rule_text: >-
+        Request to roadmap job: "Only a request that has a decision of yes, with the PM's reason and date, in the
+        request decision log passes to the roadmap job as a change request. A request with a blank decision field, or
+        a decision of no or later, stops here. The roadmap job never edits the request decision log." Roadmap job to
+        release plan: the release plan hand-off rule in module 4 (DD-01, option A text)
       modules: [4]
     - rung: 3 plus
       name: Monthly run across jobs
@@ -372,7 +383,7 @@ modules:
       core_path_no_connectors: yes. Upload submissions, status export and capacity sheet
       inputs:
         own_work: Your team plan submissions, a status export and capacity by team for one quarter, with names and spend removed if the tool is not approved
-        fallback_case: "Larkspan: strategy overview, OKRs and KPIs, capacity sheet (knowledge); m1-submissions-q3, m1-status-q3 (run); m1-submissions-q4 (run 2); m1-check-sample (check)"
+        fallback_case: "Larkspan: strategy-okrs-kpis, capacity sheet (knowledge); m1-submissions-q3, m1-status-q3 (run); m1-submissions-q4 (run 2); m1-check-sample (check)"
       stretch:
         - Compare 2 PM-named funding scenarios ("fund X instead of Y") and show what slips (sp-wf-13; Gate 1 places it here). The PM names both scenarios; the agent does not propose one
         - Turn the job into a custom skill (Claude all plans, ChatGPT business plans, Gemini)
@@ -447,7 +458,7 @@ modules:
     rung_name: Hand-run batch with a decision checkpoint
     objectives:
       - { id: m2-o1, text: "Extend the agent with a request job that builds one decision card per request and leaves the decision field blank", practiced_in: "lab step 1 to 2" }
-      - { id: m2-o2, text: "Audit 3 cards and every merge against the source requests and the cited decision log entries", practiced_in: "lab step 3" }
+      - { id: m2-o2, text: "Audit 3 cards and 2 cited decision log entries against the source requests", practiced_in: "lab step 3" }
       - { id: m2-o3, text: "Add a matching rule to the brief for what the audit found", practiced_in: "lab step 4 and debrief check sample" }
       - { id: m2-o4, text: "Write yes, no or later and a reason on each flagged card, then check that each reply matches your decision", practiced_in: "lab step 5 to 6" }
     lab:
@@ -458,7 +469,7 @@ modules:
       quality_checks:
         - Each card quotes the request and names the requester and source
         - Each duplicate or past decision cites a decision log id
-        - Each "serves strategy" line quotes the strategy or OKR text it relies on, or says "none found"
+        - Each card quotes the strategy or OKR text that may relate to the request, or says "none found". It makes no fit statement. The PM judges fit
         - The decision field is blank on every card the PM has not decided
         - Each reply matches the PM's decision and reason, with no new date
       handoff_rules:
@@ -466,11 +477,11 @@ modules:
         - A request that contradicts a past decision, or a past "later" whose condition may now be met
         - Any request from an executive, or tied to a named deal or contract date
         - Any request that holds personal, health or client data
-      agent_never: Fills the decision field, proposes an order of requests, or judges strategic fit
+      agent_never: Fills the decision field, proposes an order of requests, or judges strategic fit. It quotes text. The PM judges fit
       card_steps:
         - Add the request job card and the decision log to your agent
         - Send this week's requests with the prompt "Run the request job"
-        - Audit 3 cards, and open every merge the agent made
+        - Audit 3 cards and 2 cited log entries
         - Add one matching rule for what you found to the brief
         - Write yes, no or later and a reason on each flagged card
         - Send your decisions with the prompt "Draft the replies"
@@ -494,8 +505,8 @@ modules:
         warning: hint
         fix: Add the rule "Match on the problem statement and the user, not on feature words. Send any merge across segments to the flag report"
       success_check: >-
-        Every card has a blank decision field until you decide. Every merge cites a log id. You audited 3 cards and every
-        merge, added a rule, decided each flagged card and checked that each reply matches your decision
+        Every card has a blank decision field until you decide. Every past decision cites a log id. You audited 3 cards
+        and 2 cited log entries, added a rule, decided each flagged card and checked that each reply matches your decision
       debrief_check: >-
         Shown in the debrief only. After the fix, the two "offline mode" requests are on separate cards. Only the field
         installer card links to last year's decision. The pharmacy and lab card goes to the flag report as "no match".
@@ -504,7 +515,7 @@ modules:
         when: Debrief, 3 minutes. Learners run it. ChatGPT learners run it in a new chat outside the project
         input: m2-check-sample (a second week with two requests that share the words "custom alerts" but come from different users)
         pass_condition: Two separate cards. No decision field is filled. Exact result in case/expected-results.md
-      learner_evidence: [tuned brief with the matching rule, flag report decisions, audit findings for 3 cards and the merges, decision cards with yes no or later and a reason, reply drafts that match each decision]
+      learner_evidence: [tuned brief with the matching rule, flag report decisions, audit findings for 3 cards and 2 cited log entries, decision cards with yes no or later and a reason, reply drafts that match each decision]
       data_safety: >-
         Standard note. Requests often hold customer names, deal values and contract dates. Remove them or use the case.
         The request decision log keeps data longer than a one-off prompt; decide what it keeps
@@ -533,7 +544,7 @@ modules:
     workflow: Keep the business case assumption register current and red-team it before each decision point
     category: Business
     focus_area: Business Plan
-    capability_standards: { status: "proposed, Dan to confirm", skills: [2.3 Business Case Development], competencies: ["2.3B Market Value and Sizing", "2.3C Cost, Profit, and Resource Logic", "2.3F Stakeholder Argumentation"] }
+    capability_standards: { status: "proposed, Dan to confirm", skills: [2.3 Business Case Development], competencies: ["2.3B Market Value and Sizing", "2.3C Cost, Profit, and Resource Logic"], not_claimed: "2.3F Stakeholder Argumentation (no lab step practices it; dropped after the critic)" }
     bottleneck: >-
       Business cases go stale during execution, and teams rarely recheck the original assumptions (W15, 2024, age flag
       kept by Dan; W14 is not a PM statistic). Hardware commits in stages, and the cost of a wrong decision rises
@@ -563,7 +574,7 @@ modules:
       goal: Extend the course agent to keep the business case register, run sensitivity and red-team the case before the next commit point
       core_message: A business case is a living list of bets. The agent keeps the list and the math. You decide which bets to keep
       pm_decision: Whether the case still holds at the next commit point (go, hold or stop to recommend), and which assumption to test next
-      build: Extend the agent with the business case job card, the business case, the business case sheet and the market size source pack
+      build: Extend the agent with the business case job card, the business case and the business case sheet. The market size source pack is a run file, sent with the business case
       quality_checks:
         - Each assumption has evidence, a date and an owner
         - Each assumption has a low, base and high value set by the PM
@@ -576,7 +587,7 @@ modules:
         - Any result that flips sign (profit to loss) inside the tested range
         - Projected share from any source other than the PM's internal data
         - Any step that would recommend go, hold or stop. The agent stops and hands it to the PM
-      agent_never: Recommends go, hold or stop, or changes an assumption value. It ranks assumptions only by their arithmetic effect
+      agent_never: Recommends go, hold or stop, or changes an assumption value. It lists assumptions in the order of the sheet's swing column and adds no other order
       card_steps:
         - Add the business case job card and the sheet to your agent
         - Send the business case and the source pack with the prompt "Run the business case job"
@@ -592,7 +603,7 @@ modules:
       core_path_no_connectors: yes. Case source pack for market size. Live search is stretch
       inputs:
         own_work: One business case or investment proposal and its model, with supplier names, prices and non-public financials removed if the tool is not approved
-        fallback_case: "Larkspan: business case for Probe X, business case sheet, source pack (knowledge); m3-tooling-quote (run, inside the business case pack); m3-evidence-q4 (run 2); m3-check-sample (check)"
+        fallback_case: "Larkspan: business case for Probe X, business case sheet (knowledge); m3-source-pack and m3-tooling-quote (run 1, sent with the business case); m3-evidence-q4 (run 2); m3-check-sample (check)"
       stretch:
         - Refresh the market size inputs by live web search, one link per number (Claude, ChatGPT, Copilot only; decision f4). No confidential names in queries
         - Buy, build or partner pack for one component (sp-wf-06), only if time allows (Gate 1 decision a)
@@ -620,7 +631,7 @@ modules:
       data_safety: >-
         Standard note. Business cases hold forecasts, prices, supplier terms and non-public financials. Remove supplier
         names and prices, or use the case, if the tool is not approved. No confidential names in web search queries
-    agent_growth: Adds the business case job, the register, the sheet and the source pack
+    agent_growth: Adds the business case job, the register and the sheet. The source pack is a run file
     catch_up_kit: kit-m3
     registry_guard: >-
       Focus teaches value types, the Product Canvas, a one-pass Value and Cost Snapshot and market sizing as a one-pass
@@ -656,7 +667,7 @@ modules:
     minutes: 65   # full day
     split: { instructor_led: 26, hands_on: 39, percent_instructor_led: 40 }
     arc:
-      - { minutes: 7, mode: instructor-led, step: "Why this matters. The roadmap is direction; the release plan is the promise. A roadmap item earns its place with its own evidence. Terms defined: problem backlog, validated problem backlog, release plan" }
+      - { minutes: 7, mode: instructor-led, step: "Why this matters. The roadmap is direction; the release plan is the promise. Terms defined: problem backlog, validated problem backlog, release plan" }
       - { minutes: 10, mode: instructor-led, step: "Live demo. Add the roadmap job. Run the refresh. Then send the approved request from module 2 as a change request and read the impact note, the commitment guard and the flag report" }
       - { minutes: 9, mode: instructor-led, step: "Build pattern and lab brief. Hand-off between jobs. The release plan hand-off rule (gate_2_designs.ps_10). Data safety and the confidential terms line in the guard. Hint: audit before you approve" }
       - { minutes: 30, mode: hands-on, step: "Lab 4" }
@@ -670,47 +681,59 @@ modules:
     rung_name: Hand-off between jobs
     objectives:
       - { id: m4-o1, text: "Extend the agent to trace each roadmap item to a theme, a validated problem and a stated objective, and list items with no trace", practiced_in: "lab step 1 to 2" }
-      - { id: m4-o2, text: "Audit 3 roadmap items against their own evidence, not their theme's, and fix the brief", practiced_in: "lab step 3 and debrief rerun" }
-      - { id: m4-o3, text: "Write a hand-off rule that stops the agent on any change that touches the release plan", practiced_in: "lab step 1 and step 4" }
+      - { id: m4-o2, text: "Audit 3 roadmap items against the evidence log, and add a rule to the brief for what you find", practiced_in: "lab step 3 to 4 and debrief rerun" }
+      - { id: m4-o3, text: "Write the hand-off rule that stops the agent on any change that touches the release plan, and read the rule that passes an approved request into the roadmap job", practiced_in: "lab step 1" }
       - { id: m4-o4, text: "Decide each flag on a roadmap change and write the decision log entry with your reason", practiced_in: "lab step 5 to 6" }
     lab:
       goal: Extend the course agent to keep every roadmap item traced to evidence and to assess each change against the release plan
-      core_message: A roadmap item earns its place with its own evidence. A change never becomes a promise unless it is on the release plan
+      core_message: The roadmap is direction. The release plan is the promise. The agent traces, assesses and guards. You decide what becomes a promise
       pm_decision: Which items stay or leave, theme wording, accept, defer or reject each change, and whether a release plan change goes to the delivery lead
       build: >-
-        Extend the agent with the roadmap job card, the release plan and the roadmap decision log. The job reads the
-        validated problem backlog, the strategy overview and OKRs (module 1), the capacity table (module 1) and the
-        request decision log (module 2). Full design: gate_2_designs.ps_10
+        Extend the agent with the roadmap job card, the release plan and the roadmap decision log. The roadmap is
+        already in the agent from module 2. The validated problem backlog and the evidence log are run files, sent with
+        the refresh. The job also reads the strategy and OKRs file and the capacity sheet (module 1) and the request
+        decision log (module 2). The confidential terms list is pasted into the brief. Full design: gate_2_designs.ps_10
+      template_contents:
+        note: >-
+          The template holds no check or rule that reads an item's own evidence ids. The learner writes the
+          own-evidence rule and the "validated" range in step 4, after the audit (brief v2). The case shows the Larkspan
+          PM's choice (3 accounts, 2 source types), framed as a choice, not a standard
+        left_out_on_purpose: >-
+          A rule that judges each item by its own evidence, not its theme's. The trace check passes RM-14 through its
+          theme and its linked validated problem
+        release_plan_rule_slot: Blank. The learner writes it in step 1 (rule text options are in gate_2_designs.ps_10, DD-01)
+        request_pass_rule: The rung 3 rule text (autonomy_ladder, rung 3, handoff_rule_text) is in the template. The learner reads it in step 1
+      fix_the_learner_adds: "Judge each item by its own evidence ids, not its theme's. Send any item below the validated range you set to the flag report"
       quality_checks:
         - Each item traces to a theme, a validated problem and a stated objective
-        - Each item shows its own evidence and its date
         - Each theme is written as an outcome, in the PM's words
         - Each impact note lists displaced items and dependency hits with their source
         - The decision log entry has date, decider and reason, and its decision field is blank until the PM decides
       handoff_rules:
-        - An item with no trace, or whose own evidence is below the PM's "validated" rule
+        - An item with no trace
         - A theme with no item, or an item in two themes
-        - A change that touches an item on the release plan (rule wording per DD-01; recommended option A in gate_2_designs.ps_10)
+        - A change that touches an item on the release plan. The learner writes this rule (wording per DD-01; recommended option A in gate_2_designs.ps_10)
+        - A request with no PM decision of yes in the request decision log does not pass to this job (rung 3 rule text)
         - "Commitment guard, on every change: any date, \"will ship\", \"committed\" or \"available in\" not on the release plan"
         - "Commitment guard, confidential line: any term from the PM's confidential terms list in text marked for people outside the team"
         - A change that hits a dependency on another team
-      agent_never: Proposes a theme, accepts or rejects a change, writes a new date, or edits the release plan. It groups new validated problems into "candidate clusters" only; the PM names themes (DD-07)
+      agent_never: Proposes a theme, accepts or rejects a change, writes a new date, or edits the release plan. It lists validated problems that no item traces to and groups them by shared evidence (same segment, same source type). A group has no name and no advice. The PM names themes (DD-07)
       card_steps:
-        - Add the roadmap job card, the release plan and your hand-off rules to your agent
-        - Send the roadmap and the validated problem backlog with the prompt "Run the roadmap refresh"
-        - Audit 3 random roadmap items against their own evidence
+        - Add the roadmap job card, the release plan and your release plan hand-off rule to your agent
+        - Send the validated problem backlog and the evidence log with the prompt "Run the roadmap refresh"
+        - Audit 3 roadmap items against the evidence log
+        - Write one rule in the brief for what you found
         - Send change request CR-07 with the prompt "Run the change assessment"
-        - Decide each item in the flag report
-        - Write your decision and reason in the decision log entry
+        - Decide each flag and write your decision and reason in the decision log entry
       platform_cards:
         claude: Project with the brief and knowledge files. Second agent is stretch only where verified
         chatgpt: Project with the brief and files. Second agent is stretch only where verified
         copilot: Agent with embedded files. Upload the change request in chat. No second-agent stretch on this card
         gemini: Gemini skill with the brief. No second-agent stretch on this card
-      core_path_no_connectors: yes. Upload the roadmap, the validated problem backlog and the change request
+      core_path_no_connectors: yes. Upload the validated problem backlog, the evidence log and the change request. The roadmap is already in the agent
       inputs:
         own_work: Your current roadmap, validated problem backlog or equivalent, release plan and one real change request, with unreleased dates and customer names removed if the tool is not approved
-        fallback_case: "Larkspan: release plan, roadmap decision log (knowledge); validated problem backlog and roadmap (in the agent from module 2); m4-change-request-cr-07 (run); m4-check-sample (check)"
+        fallback_case: "Larkspan: release plan, roadmap decision log (knowledge); roadmap (already in the agent from module 2); validated-problem-backlog and evidence-log (run); m4-change-request-cr-07 (run); confidential-terms-list (paste into the brief); m4-check-sample (check)"
       stretch:
         - Build the change assessment as a second agent that reads the first agent's output (only where verified)
         - Read the roadmap from a connected tool, where the platform allows (not verified)
@@ -722,8 +745,9 @@ modules:
         warning: hint
         fix: Add the rule "Judge each item by its own evidence, not its theme's. Send any item below the validated rule to the flag report"
       success_check: >-
-        Every item shows its own evidence and trace. The change assessment lists what it displaces and its dependency
-        hits. The commitment guard ran. Each flag has your decision. The decision log entry has your decision and reason
+        Every item shows its trace. The change assessment lists what it displaces and its dependency hits. The
+        commitment guard ran. You wrote the release plan hand-off rule, audited 3 items and added a rule to the brief.
+        Each flag has your decision. The decision log entry has your decision and reason
       debrief_check: >-
         Shown in the debrief only. After the rerun, RM-14 is in the flag report as below the validated rule. The CR-07
         flag report stops on the release plan item it displaces and writes no new date. Exact lines in
@@ -732,7 +756,7 @@ modules:
         when: The instructor shows the result from the demo run in the debrief (1 minute). Learners run it after class (about 5 minutes)
         input: m4-check-sample (a second change request whose text says "ships in Q2" for an item not on the release plan)
         pass_condition: The commitment guard flags "ships in Q2" as not on the release plan. No new date in the impact note. Exact result in case/expected-results.md
-      learner_evidence: [the release plan hand-off rule as written, tuned brief with the own-evidence rule, flag report decisions, audit findings for 3 items, decision log entry with decision and reason]
+      learner_evidence: [the release plan hand-off rule as written, tuned brief with the own-evidence rule (written by the learner in step 4), flag report decisions, audit findings for 3 items, decision log entry with decision and reason]
       data_safety: >-
         Standard note. Roadmaps and release plans hold unreleased dates and customer commitments. The guard checks your
         confidential terms list. The decision log keeps data longer than a one-off prompt; decide what it keeps
@@ -771,7 +795,7 @@ modules:
     arc:
       - { minutes: 7, mode: instructor-led, step: "Why this matters. Shipped is not success. Outcome versus output, defined here. Theme: be great at product management before you are great at AI" }
       - { minutes: 8, mode: instructor-led, step: "Live demo. Add the outcome job. Run October on the module 3 baseline and the module 1 OKRs. Read only the flag report" }
-      - { minutes: 7, mode: instructor-led, step: "Build pattern and lab brief. Rung 3 plus: the monthly run across jobs. The PM writes the outcome-or-output rule and the off-target range. The agent never recommends an investment change. Data safety. No error warning" }
+      - { minutes: 7, mode: instructor-led, step: "Build pattern and lab brief. Rung 3 plus: the monthly run across jobs. The PM writes the off-target range. The agent never recommends an investment change. Data safety. No error warning" }
       - { minutes: 25, mode: hands-on, step: "Lab 5" }
       - { minutes: 8, mode: hands-on, step: "Debrief. Reveal the error (2 minutes). Fix the brief for what the audit found (1 minute). Check sample: each learner sends m5-check-sample on the fixed brief and compares with the pass condition (3 minutes). Keep, change or stop is yours (1 minute). What you do Monday (1 minute)" }
     half_day:
@@ -783,8 +807,8 @@ modules:
     rung_name: Monthly run across jobs
     objectives:
       - { id: m5-o1, text: "Extend the agent to track each measure against the business case baseline and the OKRs, labeled outcome or output", practiced_in: "lab step 1 to 3" }
-      - { id: m5-o2, text: "Write the outcome-or-output rule and the off-target range in the brief", practiced_in: "lab step 2" }
-      - { id: m5-o3, text: "Audit 2 \"on track\" measures against the outcome in the business case, and fix the brief", practiced_in: "lab step 5 and debrief" }
+      - { id: m5-o2, text: "Write the off-target range and the number of months in the brief", practiced_in: "lab step 2" }
+      - { id: m5-o3, text: "Audit 2 \"on track\" measures against the business case, and write the outcome-or-output rule for what you find", practiced_in: "lab step 5 and debrief" }
       - { id: m5-o4, text: "Write an investment review note: keep, change or stop, with a reason that cites the measures", practiced_in: "lab step 6" }
     lab:
       goal: Extend the course agent to track outcomes against the business case each month and flag measures for your investment review
@@ -794,7 +818,7 @@ modules:
       quality_checks:
         - Each value has a source and a date
         - Each measure is compared with its baseline and its target
-        - Each measure is labeled outcome or output by the PM's rule
+        - Each measure is labeled outcome or output, with one line on why
       handoff_rules:
         - A measure off target by more than the range the PM sets, for the number of months the PM sets
         - A measure with no current data
@@ -803,10 +827,10 @@ modules:
       agent_never: Recommends an investment change (PS-14)
       card_steps:
         - Add the outcome job card and the outcome sheet to your agent
-        - Write your outcome-or-output rule and off-target range into the brief
+        - Write your off-target range and number of months into the brief
         - Send the October and November exports with the prompt "Run the outcome job"
         - Decide each item in the flag report
-        - Audit 2 "on track" measures against the business case outcome
+        - Audit 2 "on track" measures
         - Write your investment review note with keep, change or stop and a reason
       platform_cards:
         claude: Project with the brief. Code execution on the outcome sheet
@@ -836,7 +860,7 @@ modules:
         when: Debrief, 3 minutes. Learners run it. ChatGPT learners run it in a new chat outside the project
         input: m5-check-sample (a KPI "Cloud subscription attach rate" next to an output "Cloud trials started")
         pass_condition: Attach rate is reported as the outcome; trials started is labeled output. No investment recommendation. Exact result in case/expected-results.md
-      learner_evidence: [outcome-or-output rule and hand-off rules, flag report decisions, audit findings for 2 measures, tuned brief after the debrief, investment review note with keep change or stop and a reason]
+      learner_evidence: [off-target range and hand-off rules, outcome-or-output rule written in the debrief, flag report decisions, audit findings for 2 measures, tuned brief after the debrief, investment review note with keep change or stop and a reason]
       data_safety: >-
         Standard note. Use aggregated metrics only. Health care outcome data can hold patient data: never upload it to a
         tool the company has not approved
@@ -971,7 +995,7 @@ platform_matrix_summary:   # research/platform-matrix.yaml, checked 2026-11-22. 
     - { id: G2-PF-03, platform: copilot, check: "Code interpreter toggle and the embedded copy of the sheet (decision f3; mb-04 and mb-15 conflict)" }
     - { id: G2-PF-04, platform: gemini, check: "One skill run that asks for a Google Sheet with formulas (decision f2). Whole-skill re-upload fits in the log save card time" }
     - { id: G2-PF-05, platform: copilot, check: "No-license fallback per module: core brief plus one job card plus one knowledge text stays under 8,000 characters (mb-01). Measure each kit" }
-    - { id: G2-PF-06, platform: all, check: "Knowledge file count at the end of the course is 16 or fewer (limit 20 on ChatGPT Plus and Copilot)" }
+    - { id: G2-PF-06, platform: all, check: "Knowledge file count at the end of the course is 16 or fewer (limit 20 on ChatGPT Plus and Copilot). Count per case/README.md: 1 core instructions, 5 job cards, 10 case files. Source pack, quote, evidence log, validated problem backlog and confidential terms list are run files or brief text. Counts by module: 4, 8, 11, 14, 16" }
 
 fallback_case:   # Placeholder. The case builder fills it in Stage 2. Gate 2 locks the records and results
   status: placeholder, to be built by the case builder
@@ -1000,7 +1024,7 @@ fallback_case:   # Placeholder. The case builder fills it in Stage 2. Gate 2 loc
     kpis: 5 to 7 business metrics with current value and target (for example Cloud attach rate, install days per site, active paid sites, gross margin by product, field failure rate)
   records_per_lab:
     m1: >-
-      Strategy overview, OKRs and KPIs (knowledge). Capacity sheet. m1-submissions-q3 (5 programs: Probe X cellular,
+      Strategy, OKRs and KPIs (one knowledge file). Capacity sheet. m1-submissions-q3 (5 programs: Probe X cellular,
       Hub firmware, Cloud compliance reports, Tag 2, Fleet Data Platform), m1-status-q3 (one status mismatch), capacity
       by team with the shared firmware team at 100% in Probe X and Hub firmware (planted), one program with no clear
       link to an objective, m1-submissions-q4, m1-check-sample (shared test lab in two programs), last quarter's pack
@@ -1017,7 +1041,7 @@ fallback_case:   # Placeholder. The case builder fills it in Stage 2. Gate 2 loc
       a year price tier against an 18,000 year 1 plan (planted). m3-evidence-q4 (new evidence for the refresh).
       m3-check-sample (antenna module quote with a minimum order above plan volume)
     m4: >-
-      Validated problem backlog (the problems the Larkspan PM has validated, with evidence). Release plan (dated
+      Validated problem backlog and evidence log (run files; the problems the Larkspan PM has validated, with evidence). Release plan (dated
       commitments for the next 2 releases, including Hub firmware OTA rollback). Roadmap decision log. RM-14 backed by one
       sales request inside a strong theme (planted). m4-change-request-cr-07 (from an approved module 2 request; it
       displaces a release plan item and needs the shared firmware team). Confidential terms list for the case PM.
@@ -1035,26 +1059,27 @@ gate_2_designs:   # Dan asked to SEE these before deciding (stage-2-inputs.md se
     dan_said: "I'm having a hard time visualizing this, so I'll have to see it in full before I can make a final decision."
     what_the_pm_owns: The roadmap is direction (themes and timeframes). The release plan is the promise (dated commitments the delivery team owns). The agent works on the roadmap and never edits the release plan
     inputs:
-      - { input: Current roadmap, source: "case m2 roadmap, already in the agent", holds: "Outcome themes and items with timeframes (any format the PM uses, PS-05)" }
-      - { input: Validated problem backlog, source: case m4, holds: "Problems the PM has validated, each with its evidence and dates" }
-      - { input: Strategy overview, OKRs and KPIs, source: module 1, holds: "Stated objectives each item must trace to" }
+      - { input: Current roadmap, source: "case m2 roadmap, already in the agent (not sent again)", holds: "Outcome themes and items with timeframes (any format the PM uses, PS-05)" }
+      - { input: Validated problem backlog, source: "case m4 run file", holds: "Problems the PM has validated, each with its evidence and dates" }
+      - { input: Evidence log, source: "case m4 run file", holds: "Each evidence record with account, source type and date. Items and problems link to it by id" }
+      - { input: Strategy, OKRs and KPIs file, source: module 1, holds: "Stated objectives each item must trace to" }
       - { input: Capacity table, source: module 1 pack, holds: "Team capacity, shared teams, current allocation" }
-      - { input: Request decision log, source: module 2, holds: "Approved requests that change the roadmap (here, CR-07)" }
+      - { input: Request decision log, source: module 2, holds: "Past decisions, and the PM's yes on REQ-112 that became CR-07" }
       - { input: Release plan, source: case m4, holds: "Dated commitments for the next 2 releases" }
       - { input: Roadmap decision log, source: case m4, holds: "Past roadmap changes with date, decider and reason" }
       - { input: Confidential terms list, source: "the PM, in the brief", holds: "Terms that must not appear in text for people outside the team (decision e)" }
     agent_steps_in_order:
       part_a_refresh:
-        - "1. Read every roadmap item and the validated problem backlog"
+        - "1. Read every roadmap item, the validated problem backlog and the evidence log"
         - "2. Trace each item to a theme, a validated problem and a stated objective. Write \"no trace\" where a link is missing"
-        - "3. Show each item's own evidence and its date, not the theme's"
-        - "4. Group new validated problems into candidate clusters. The PM names any theme (DD-07)"
-        - "5. Flag: no trace, own evidence below the PM's validated rule, theme with no item, item in two themes"
+        - "3. Show each item's trace table: theme, linked validated problem, objective"
+        - "4. List validated problems that no item traces to. Group them by shared evidence (same segment, same source type). A group has no name and no advice. The PM names any theme (DD-07)"
+        - "5. Flag: no trace, theme with no item, item in two themes, and any item below a rule the PM has written (after the audit, the own-evidence rule)"
       part_b_change:
-        - "6. Read the change request. Restate it in one line with its source (here, CR-07 from the module 2 decision log)"
+        - "6. Read the change request. Restate it in one line with its source (here, CR-07, from REQ-112, which the PM approved in the module 2 request job)"
         - "7. Find what it displaces in the same timeframe, using the capacity table"
         - "8. Find dependency hits: shared teams, hardware components, suppliers, other internal teams"
-        - "9. Check the release plan. If any displaced or changed item is on it, apply the release plan hand-off rule"
+        - "9. Check the release plan. If any displaced or changed item is on it, apply the release plan hand-off rule the PM wrote"
         - "10. Run the commitment guard on all agent text: any date, \"will ship\", \"committed\" or \"available in\" not on the release plan; any confidential term in text for people outside the team"
         - "11. Write the impact note and a decision log entry with the decision field blank"
         - "12. Send the flag report to the PM"
@@ -1088,8 +1113,8 @@ gate_2_designs:   # Dan asked to SEE these before deciding (stage-2-inputs.md se
       - "RELEASE PLAN CHANGE. CR-07 (approved request REQ-112: calibration certificate export for Pharmacy and lab) needs the shared firmware team in Q1. It displaces Hub firmware OTA rollback, which is on release plan R-2027.1 (dated 2027-02-15). Agent stopped. PM and delivery lead decide. No new date written."
       - "COMMITMENT GUARD. The CR-07 request text says \"ships in Q2\". Q2 is not on the release plan for this item. The phrase is not in the impact note. Source: CR-07, VP Sales, 2026-11-18."
       - "DEPENDENCY. CR-07 needs a Larkspan Cloud API change owned by the Cloud team. The capacity table shows the Cloud team at 95% in Q1 (module 1 pack, Q4). PM decides the trade-off."
-      - "PAST DECISION. Roadmap decision log DL-2026-09 put calibration export at \"later\" with the condition \"3 pharmacy chains ask\". The request log now shows 2 chains (REQ-087, REQ-112). PM decides if the condition is met."
-      - "CONFIDENTIAL TERM. The impact note quotes the antenna supplier name, which is on your confidential terms list. The note is marked internal only. PM decides before it leaves the team."
+      - "PAST DECISION. Request decision log DL-2026-09 put calibration export at \"later\" with the condition \"Three pharmacy chains ask\". The roadmap decision log records it as RL-2026-05. The request records now show 2 chains (A-5101, A-5120). PM decides if the condition is met."
+      - "CONFIDENTIAL TERM. The impact note quotes the antenna supplier name, which is on your confidential terms list. The note is marked \"Share with the Delivery lead and the Support lead\". PM decides before it is shared."
     what_the_pm_decides:
       - Accept, defer or reject CR-07, and the reason (written in the decision log entry)
       - Whether to take the release plan change to the delivery lead, and what to ask
@@ -1173,9 +1198,9 @@ capability_mapping:   # Proposed, Dan to confirm. Primary source: Pragmatic_Capa
         outputs"; this course uses evidence cards instead. Tell the Pragmatic reviewer
     - module: 3
       skills: [2.3 Business Case Development]
-      competencies: ["2.3B Market Value and Sizing", "2.3C Cost, Profit, and Resource Logic", "2.3F Stakeholder Argumentation"]
+      competencies: ["2.3B Market Value and Sizing", "2.3C Cost, Profit, and Resource Logic"]
       box: "Business / Business Plan. Workbook: primary 2.3"
-      not_taught: ["2.3A Product Canvas Development (no Product Canvas in this course)", "2.3D Distribution and Solution Delivery Fit"]
+      not_taught: ["2.3A Product Canvas Development (no Product Canvas in this course)", "2.3D Distribution and Solution Delivery Fit", "2.3F Stakeholder Argumentation (the gate recommendation is a debrief item, not a practiced step; dropped after the critic)"]
     - module: 4
       skills: [2.4 Product Vision and Roadmap]
       competencies: ["2.4B Roadmap Structuring and Framing", "2.4C Assumption and Uncertainty Transparency", "2.4D Alignment to Market Problems and Strategy"]
@@ -1210,7 +1235,7 @@ glossary:
   - { term: strategy consistency check, meaning: "Module 1. Shows where planned work and capacity go by stated objective, and lists work with no clear link. Evidence only, no judgment" }
   - { term: problem backlog, meaning: "Where a team tracks unsolved market problems and the evidence for each. It feeds the product backlog. Never 'opportunity backlog'" }
   - { term: validated problem backlog, meaning: "The problems the PM has validated by the PM's own rule, with evidence. Input to the roadmap refresh. Never 'Market Problems Table'" }
-  - { term: decision card, meaning: "Module 2. One card per request: the problem behind it, the linked problem, the strategy text it serves or 'none found', past decisions, and a blank decision field" }
+  - { term: decision card, meaning: "Module 2. One card per request: the problem behind it, the linked problem, strategy or OKR text that may relate (quoted, or 'none found', no fit statement), past decisions, and a blank decision field" }
   - { term: request decision log, meaning: "Past requests with the PM's decision, reason and any condition for 'later'" }
   - { term: assumption register, meaning: "Module 3. Each business case assumption with evidence, date, owner, low, base and high values, and its effect on the result" }
   - { term: red team, meaning: "A deliberate challenge of the assumptions with the largest effect. It tests evidence. It does not recommend a decision" }
@@ -1264,6 +1289,7 @@ monday_value:   # quality bar 3: 3 or more working builds per learner
     - Portfolio pack job on the learner's own plan (module 1)
     - Request job with the learner's decision log (module 2)
     - Business case job with the course sheet (module 3)
+    - Roadmap job with the trace, the change assessment and the commitment guard (module 4)
     - Outcome tracking job (module 5)
   templates: kit-final plus each module kit, the brief template, the job cards, the three course sheets, the data check card and the audit checklist
 
@@ -1376,12 +1402,13 @@ decisions_for_dan:
   - id: DD-07
     question: >-
       Design choice that touches Dan's rule "the agent never proposes strategy". In module 4 the 2.4 AI text says
-      "cluster validated problems into outcome themes". May the agent group new validated problems into candidate clusters?
+      "cluster validated problems into outcome themes". May the agent group validated problems that no roadmap item
+      traces to, by the evidence they share (same segment, same source type)?
     options:
-      - "A: yes, as unnamed candidate clusters; the PM names and decides every theme"
-      - "B: no clustering; the agent only traces existing items and lists untraced validated problems"
+      - "A: yes, evidence grouping only. A group has no name, no theme wording and no advice. The PM names and decides every theme"
+      - "B: no grouping; the agent only traces existing items and lists validated problems with no item"
     recommendation: A
-    reason: Themes are roadmap structure, not strategy, and the PM writes every theme. If Dan reads clustering as proposing direction, B keeps the lab whole with one fewer agent step
+    reason: A group shows shared evidence. It is not a theme and it does not propose direction. The PM writes every theme. If Dan reads grouping as proposing direction, B keeps the lab whole with one fewer agent step
   - id: DD-08
     question: Course aha. Dan's theme "win/loss is a big aha" belongs to Market Research. What is this course's aha?
     options:
