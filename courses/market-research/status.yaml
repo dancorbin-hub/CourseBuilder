@@ -8,7 +8,7 @@ gates:
   gate_1_research:    { status: approved, approved_on: 2026-11-22, doc: "https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW" }
   gate_2_spec:        { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: approved, pragmatic_review_on: 2026-11-26, pragmatic_comments: "none, looked good, proceed" }
   gate_3_modules:     # one entry per module
-    - { module: 1, status: drafting, approved_on: null, doc: null }
+    - { module: 1, status: in_review, approved_on: null, doc: "https://claude.ai/artifact/HsL2QbY9yrChpgYYYrmbri" }
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
