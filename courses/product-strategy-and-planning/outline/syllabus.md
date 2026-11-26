@@ -112,7 +112,7 @@ You do not fall behind. Each module has a catch-up kit. You can rebuild the agen
 
 Spreadsheets on every platform. The course sheets (capacity, business case and outcomes) come as an .xlsx file, a CSV copy and a Google Sheet template. If your company uses Google Workspace, you can work in the Google Sheet copy on any platform. On Claude, ChatGPT and Copilot, you download the sheet as .xlsx or CSV, upload it in chat and download the output. A Google Drive connector is an optional extra, only where your platform and plan support it. We do not promise that the agent writes live into your Sheet. Gemini learners work in the Google Sheet and can also upload or paste the data.
 
-Optional connector lane. Every lab has one optional connector card. If your company allows it, you read the input from a connected source instead of an upload, or send the output to a connected tool. The same checks and hand-off rules apply. You do the data check first, use approved connectors only and add no new type of data. The core steps need no connector, and no connector is needed to pass the lab. The instructor does not troubleshoot connectors in class.
+Optional connector lane (labs 3, 4 and 5 only). Each of these labs has one optional connector card. If your company allows it, you read the input from a connected source instead of an upload, or send the output to a connected tool. The same checks and hand-off rules apply. You do the data check first, use approved connectors only and add no new type of data. The core steps need no connector, and no connector is needed to pass the lab. The instructor does not troubleshoot connectors in class.
 
 
 ### Modules
@@ -135,7 +135,6 @@ Promise: Hand the quarterly portfolio pack to an agent that totals, links and fl
 - Your input: Your team plan submissions, a status export and capacity by team for one quarter, or the case submissions.
 - Learner evidence: Your tuned brief (with one new check), your flag report decisions, your audit findings for 2 shared teams and 3 linked items, and your fund, pause or stop calls with reasons.
 - Stretch: Compare 2 funding scenarios that you name, and show what slips. You write both scenarios. The agent does not propose one. Turn the job into a custom skill.
-- Optional connector lane: Read the submissions or the capacity sheet from a connected source, or send the pack to a connected tool.
 
 #### Module 2. Requests: the agent builds the case, you make the call (60 minutes; 75 in half days)
 
@@ -152,7 +151,6 @@ Promise: Answer every request with a reason, not silence, and keep every decisio
 - Your input: One request batch (8 to 15 requests) and any record of past decisions, or the case requests.
 - Learner evidence: Your tuned brief with the matching rule, your flag report decisions, your audit findings, your decision cards with yes, no or later and a reason, and reply drafts that match each decision.
 - Stretch: Read requests from a shared intake form or tracker, on the platforms whose step card includes this step.
-- Optional connector lane: Read the request batch from a connected tracker, or send the reply drafts to a connected tool.
 
 How the agent and you share the work in this module:
 
@@ -160,7 +158,7 @@ How the agent and you share the work in this module:
 - You decide which problems to solve and in what order. You also weigh strategy, capacity, dependencies and other factors.
 - You set how often you review the problem backlog. Many teams review it about once a quarter. Request intake can be frequent. The agent only logs and flags.
 
-Example from the case. A problem can rank high on market evidence and on problem impact, and you can still defer it. In the case, problem PB-02 (audit preparation needs manual record work) has the most market evidence: 8 records from 7 accounts. The agent puts it first in the evidence order. You may still defer it, for reasons like these:
+Example from the case. A problem can rank high on market evidence and on problem impact, and you can still defer it. In the case, problem PB-02 (audit preparation needs manual record work) has the most market evidence: 8 records from 7 accounts. The agent puts it first in the evidence order. The case PM says yes and acts on it. Another PM could still defer it, for reasons like these:
 
 | Other factor | A question you ask |
 | --- | --- |
@@ -172,7 +170,7 @@ Example from the case. A problem can rank high on market evidence and on problem
 | Dependencies | Which other team or supplier do we need first? |
 | Resource allocation | Which team has the capacity? |
 
-In the case, you could defer PB-02 for build time and dependencies. You write the reason on the decision card. The agent never writes it.
+Another PM could defer PB-02 for build time and dependencies. In your own work, you write the reason on the decision card. The agent never writes it.
 
 #### Module 3. The living business case: assumptions, red team and what changed (70 minutes; 65 in half days)
 
@@ -224,7 +222,7 @@ Promise: Check each month whether the business case outcomes moved, not only whe
 - Objectives:
 - Extend the agent to track each measure against the business case baseline and the OKRs, labeled outcome or output.
 - Write the off-target range and the number of months in the brief.
-- Audit 2 "on track" measures against the business case, and write the outcome-or-output rule for what you find.
+- Audit 2 "on track" measures against the business case, starting with the outcome the business case names, and write the outcome-or-output rule for what you find.
 - Write an investment review note: keep, change or stop, with a reason that cites the measures.
 - Lab: Add the outcome job and the course sheet. Set your off-target range. Run two months of metrics. Read only the flag report and a sample. In the debrief, fix the brief and run the check sample. The monthly run measures results. It changes no priority.
 - Your input: Two months of metric exports for one product or initiative, plus its business case measures or OKRs, aggregated, or the case exports.

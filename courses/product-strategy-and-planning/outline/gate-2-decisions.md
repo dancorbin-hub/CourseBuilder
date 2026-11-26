@@ -33,3 +33,8 @@ Dan answers in the Gate 2 doc. Apply to repo files only after Dan's full set of 
 
 | 12 | The "know before you design" check can go out to learners ahead of class. Few will do it, so run it at the start of class too. | Send the check in the pre-class email. Repeat it in the course open (about 5 minutes). The pre-class checklist and the course open both carry it. |
 | 13 | Let learners add connectors and extend the agent in the exercises when their company allows it. The class must not run at the level of the most restricted company. | Core path stays no-connector (every learner can finish). Add one optional "connector lane" per lab: a separate optional card, not counted in the 6 steps. The learner reads the input from a connected source instead of an upload, or sends the output to a connected tool. Same checks and hand-off rules apply. Data safety check first: only approved connectors, no new data class. No instructor troubleshooting promise and no connector is required for the lab pass condition. Needs dated vendor docs per platform before a card names a connector. |
+
+| 14 | Connector lane: only labs 3 to 5 (Dan, 2026-11-26). | Remove the lane from modules 1 and 2 in spec, brief, syllabus and packet (O9 closed). |
+| 15 | Funding scenario stretch: Dan asked whether a move to module 2 replaces the lab or joins it. Answer given: it stays a stretch step inside the existing lab, never a replacement. Dan has not chosen yet. | Keep in module 1 until Dan chooses. |
+
+| 16 | Funding scenario stretch stays in module 1 (Dan, 2026-11-26). O1 closed. | Planner marks O1 closed in packet and spec. |

@@ -38,10 +38,32 @@ By the course planner, 2026-11-26. Source: `outline/gate-2-decisions.md` (rows 1
 | Case says "PM and Delivery lead" (`expected-results.md`) | Decision 1 says "release plan owner". The spec says owner, with Delivery lead as the case role. Case wording can stay |
 | Knowledge text sizes | `strategy-okrs-kpis.txt` 3,639 and `business-case.txt` 3,214 characters. Both exceed the 2,800 budget for the no-license path. Case builder shortens, or Dan raises the budget |
 | Market Research case year | Still 2026. Needs its own shift (OI-15). Ostrelane name not searched (OI-14) |
-| Syllabus, packet, capability mapping | Later step. They still say "no magic number" and old terms |
+| Syllabus, packet, capability mapping | Done in v0.4. The syllabus has no "no magic number" text. The old note was stale |
 
 ## Conflicts between decisions
 
 1. Decision 2 moves the terms list to lab 4. Lab 4 is the tightest numeric lab. The list adds about 2 minutes and uses the 2 minutes of slack. The card test must check it.
 2. The core rule says the agent never ranks. Dan's evidence order allows one order (amount of market evidence). The spec names this exception and bans the word "priority".
 3. Decision 11 (late): Gemini live write to a Sheet (Gate 1 decision f2) is not verified. The Gemini card now also tells learners to upload or paste.
+
+## v0.4 changes (critic report v2, late items 14 to 16)
+
+By the course planner, 2026-11-26. Files changed: `spec.yaml` (v0.4), `development-brief.md`, `syllabus.md`, `gate-2-packet.md` (v3). `capability-mapping.md` needed no change. Not touched: `case/`, `research/`.
+
+| Item | What changed |
+| --- | --- |
+| B1 | Copilot cards in labs 1, 3 and 5 now say "Google Sheet option, download .xlsx, upload in chat" |
+| N1 | Sample flag report: Cloud team 95% before CR-07 and 105% with it. Wording "Larkspan Cloud interface change". RP-02 and RP-03 named |
+| N3 | Lab 5 audit step and objective m5-o3: audit the outcome the business case names, and one other. Syllabus follows |
+| N4 | PB-02 example: the case PM says yes (REQ-112 becomes CR-07). "Another PM could defer it". Spec, syllabus, packet |
+| N5 | Stale note above fixed. Phrase "no magic number" stays only in internal research and input files. It is not in learner text |
+| N6 | Case year label is Gate 2 Q6, not decision 9. Ostrelane name check stays open (OI-14, packet O12) |
+| Late 14 | Connector lane only in labs 3 to 5. Removed from modules 1 and 2 in spec, brief, syllabus, packet. Packet O9 closed |
+| Late 15 and 16 | Funding scenario stretch stays in module 1. Packet O1 closed. OI-03 not needed |
+
+## Case changes needed (case builder)
+
+| File | Change |
+| --- | --- |
+| `case/m4-check-sample.md` (N2) | CR-08 cites REQ-116 and says "From Support lead". REQ-116 is a customer ticket from the Operations manager (A-3306), and the PM decision is "later". Change the source to a request the PM approved with yes, or change the sender and the source note. Update the lab 4 check sample lines in `expected-results.md` to match |
+| `case/expected-results.md` (N6) | State the gap sign for OS-3: lower is better, so a negative gap means worse than target |

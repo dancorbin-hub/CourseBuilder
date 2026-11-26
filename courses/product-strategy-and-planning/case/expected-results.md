@@ -302,7 +302,7 @@ The decision log entry has a blank decision field.
 
 ### Check sample (lab 4)
 
-Input: `m4-check-sample.md` (CR-08, door-open delay, from the Support lead).
+Input: `m4-check-sample.md` (CR-08, door-open delay, from the customer Operations manager, account A-3306, on REQ-116).
 
 | Result | Value |
 | --- | --- |
@@ -327,6 +327,8 @@ Records: `outcome-sheet.xlsx` (targets), `business-case.md` (outcome path), `m5-
 | OS-2 Cloud subscription attach rate | 63.6 / 64.6 | 63.4 / 64 | -0.3% / -0.9% | ok |
 | OS-3 Install days per site | 2.31 / 2.22 | 2.35 / 2.29 | -1.7% / -3.2% | ok |
 | OS-4 Pharmacy and lab audit record completeness | 72.6 / 74.1 | none / none | none | no current data |
+
+Gap sign: gap is (actual minus target) divided by target. For OS-3, lower is better, so a negative gap (fewer days than target) is good. For OS-1, OS-2 and OS-4, higher is better, so a negative gap is bad.
 
 The case PM's labels: OS-1 outcome, OS-2 outcome, OS-3 outcome, OS-4 outcome. PX-1 "Probe X paid sites shipped" is an output.
 

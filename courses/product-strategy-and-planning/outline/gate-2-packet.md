@@ -1,7 +1,7 @@
-# Gate 2 packet v2: Advanced AI for Product Strategy and Planning
+# Gate 2 packet v3: Advanced AI for Product Strategy and Planning
 
-- Course id: `product-strategy-and-planning`. For Dan. Version 2, 2026-11-26. It replaces version 1.
-- Files under review: `spec.yaml` v0.3, `outline/development-brief.md`, `outline/syllabus.md` (v2), `outline/capability-mapping.md` (v2), `outline/proof-kit-drafts.md`, `case/` (Larkspan Systems, late November 2027, plan year 2028).
+- Course id: `product-strategy-and-planning`. For Dan. Version 3, 2026-11-26. It replaces version 2.
+- Files under review: `spec.yaml` v0.4, `outline/development-brief.md`, `outline/syllabus.md` (v2), `outline/capability-mapping.md` (v2), `outline/proof-kit-drafts.md`, `case/` (Larkspan Systems, late November 2027, plan year 2028).
 - Gate 2 is not approved. It is approved when you say so. Then Pragmatic reviews the syllabus.
 - Reading time: about 20 minutes. Section 1 shows what changed. Section 2 lists only what is still open.
 - Case facts for this version: the case is dated 2027. The plan year is 2028. The supplier is Ostrelane Tooling. The bond story is Trendslop. It goes in the module 1 deck only, with no HBR figures on slides.
@@ -10,7 +10,7 @@
 
 Answer with the item number and your choice. I recommend one option where there is a choice.
 
-Count: 11 open items in section 2.1 (items O1 to O11) and 6 smaller items in section 2.2.
+Count: 9 open items in section 2.1 (items O1 to O11, O1 and O9 are closed) and 6 smaller items in section 2.2.
 
 ## 1. What changed since your first read
 
@@ -34,27 +34,20 @@ Your answers are on the left. The files that now hold each answer are on the rig
 | Section 7 item 4: name check | Quick search found no exact match. Near miss: "Corvaer". The tooling supplier is now Ostrelane Tooling, not searched. Your decision is still open | O12 |
 | Section 7 item 5: "The plans look good, so yes" | Read as yes. Three draft proof briefs, five job cards and a Copilot test checklist exist | `outline/proof-kit-drafts.md`. O2 |
 | Late 9: do not overemphasize "no magic number" | The phrase is out of all learner text. The syllabus says: the AI gathers evidence and filters first, the PM decides, and the PM sets every threshold in the brief | Syllabus "What you learn to do". Spec themes and voice |
-| Late 10: examples of other factors | Module 2 shows a worked example. PB-02 (audit preparation) ranks first on evidence. The PM may defer it for build time and dependencies. A table lists strategy, risk, investment level, build time, customer relations, dependencies and resource allocation. The PM writes the reason on the card | Syllabus module 2. Spec m2 talk track |
+| Late 10: examples of other factors | Module 2 shows a worked example. PB-02 (audit preparation) ranks first on evidence. The case PM says yes and acts on it. Another PM could defer it for build time and dependencies. A table lists strategy, risk, investment level, build time, customer relations, dependencies and resource allocation. The PM writes the reason on the card | Syllabus module 2. Spec m2 talk track |
 | Late 11: Google Sheet on every platform | Each course sheet ships as .xlsx, CSV and a Google Sheet template. Core path on Claude, ChatGPT and Copilot: work in the Sheet copy, download .xlsx or CSV, upload in chat. A Drive connector is a stretch step, only with a dated vendor doc. No live-write claim | Syllabus "How the course works" and platform table. Spec `google_sheet_option` |
 | Late 12: pre-class plus in-class check | "Know before you design" goes in the pre-class email. It repeats in the course open (about 5 minutes) | Syllabus "What you need before class". Spec `readiness_checklist`, `course_open` |
-| Late 13: optional connector lane | One optional card per lab, outside the 6 steps and outside the pass condition. Core path has no connector. Data check first. Approved connectors only. No connector is named until a dated vendor doc exists. No troubleshooting promise | Syllabus "Optional connector lane" and each module. Spec `module_arc.connector_lane_rule` |
+| Late 13 and 14: optional connector lane | One optional card in labs 3, 4 and 5 only (your late item 14). Labs 1 and 2 have none. The card sits outside the 6 steps and outside the pass condition. Core path has no connector. Data check first. Approved connectors only. No connector is named until a dated vendor doc exists. No troubleshooting promise | Syllabus "Optional connector lane" and each module. Spec `module_arc.connector_lane_rule` |
 
-Syllabus change: the module 2 headings, the "request batch" wording, the connector lane lines and the Google Sheet lines are new. The structure and section order follow the Market Research syllabus that Pragmatic approved.
+Syllabus change: the module 2 headings, the "request batch" wording, the connector lane lines (labs 3 to 5) and the Google Sheet lines are new. The structure and section order follow the Market Research syllabus that Pragmatic approved.
 
 ## 2. Open items
 
 ### 2.1 Items that need you
 
-#### O1. Funding scenario stretch (was section 7 item 3)
+#### O1. Funding scenario stretch (closed)
 
-The funding scenario step (sp-wf-13) is assumed in module 1 as a stretch. The PM names both scenarios. The agent shows what slips. `gate-1-decisions.md` places it in module 1. `stage-2-inputs.md` says module 2.
-
-| Option | Effect |
-| --- | --- |
-| A. Keep in module 1 | Fits the capacity table the learner has just built. Matches Gate 1 |
-| B. Move to module 2 | Fits the "decide and give a reason" theme. Module 2 has more steps and a tight 28 minute lab |
-
-**Recommendation: A.** The capacity table is in module 1. The spec lists this as closed. Tell me if you want to move it. If you do, the spec and syllabus change in one line each.
+Closed by you (late item 16): the funding scenario step (sp-wf-13) stays in module 1 as a stretch step inside the lab. It never replaces the lab. The PM names both scenarios. The agent shows what slips.
 
 #### O2. Proof kit drafts (was section 7 item 5)
 
@@ -178,17 +171,9 @@ Open the primary Atlassian report (W2) and the N21 fieldwork method before any W
 
 The matrix was checked on 2026-11-22. Recheck it within 30 days of release. Gemini skills (gm-01) have no dated vendor doc. The Copilot code interpreter conflict (mb-04 and mb-15) stays open until O3 runs. Owner: researcher.
 
-#### O9. Connector lane scope: every lab or modules 3 to 5
+#### O9. Connector lane scope (closed)
 
-You asked for one optional connector lane per lab. The spec has it in all five labs. Each card needs a dated vendor doc per platform before it names a connector.
-
-| Option | Effect |
-| --- | --- |
-| A. All 5 labs | Matches your request. Up to 20 platform lane cards. More vendor docs to find. Lab 1 is the first build and has the tightest time for new builders |
-| B. Modules 3 to 5 | Learners already have a built agent. The business case, roadmap and metrics are the inputs most likely to live in connected tools. Up to 12 lane cards. Modules 1 and 2 keep the core path only |
-| C. All 5 labs in the syllabus, but write cards only where a dated doc exists | Syllabus promises it everywhere. Stage 3 drops a card on any platform with no doc |
-
-**Recommendation: B for the first release.** The lane is optional, so it adds no pass condition. It adds card work, doc work and time pressure in labs 1 and 2. You can add the lane to labs 1 and 2 later. If you choose B, the spec and syllabus change in modules 1 and 2 (remove the lane lines). If you choose A or C, nothing changes now. The syllabus today shows A.
+Closed by you (late item 14): the connector lane is in labs 3 to 5 only. The lane lines are removed from modules 1 and 2 in the spec, the development brief and the syllabus. Each lane card still needs a dated vendor doc per platform before it names a connector.
 
 #### O10. Gemini live write to a Sheet is not verified
 
@@ -214,7 +199,7 @@ The J4 template (module 4) is 1,567 characters. The no-license design budget is 
 | O13 | **Bond story record.** Write the Trendslop pick in `status.yaml` | Session | None |
 | O14 | **Research file fixes.** Apply the 4 fixes you approved in `research/workflows.yaml` and `worked-example-row.yaml`. Record new fingerprints | Session | None |
 | O15 | **Case wording.** `case/m3-evidence-q4.md` title says "Q4 refresh". `expected-results.md` says "roadmap refresh and change". Suggest "Q4 evidence" and "quarterly refresh at the PM's cadence". I do not edit `case/`. Also add RL ids to `year-shift-map.md` | Case builder | None |
-| O16 | **No new critic run.** The critic read spec v0.1. Spec v0.2 and v0.3 changed text in every module. Run a second critic pass before Gate 2 locks | Dan | Yes or no. I recommend yes |
+| O16 | **Critic run 2 done.** Critic report v2 read spec v0.3. It found 1 must-fix item and 6 smaller items. All are fixed in v0.4 except 3 case items for the case builder (see section 6). Run a third pass only if Dan wants one | Dan | None. Optional |
 | O17 | **Release plan role.** Internal platform teams may have no Delivery lead. The learner text says "the person who owns the release plan". The card test checks it | Stage 3 | None |
 
 ## 3. Module plan
@@ -229,7 +214,7 @@ Full-day minutes first, half-day minutes in brackets. Every module is 40% instru
 | 4 | Roadmap refresh and change. Rows sp-wf-07 and sp-wf-08. Focus / Product Roadmap | 65 (60) | 3 Hand-off between jobs | RM-14 validated by association: one sales request in a strong theme. **Hint** | Release plan rule as written, tuned brief with own-evidence rule, flag decisions, audit of 3 items, decision log entry | Adds the roadmap job, release plan, roadmap decision log. First hand-off: request to roadmap. 14 files |
 | 5 | Outcomes, not output. Row sp-wf-10 (retitled). Business / Business Outcomes | 55 (50) | 3 plus Monthly run across jobs | Units shipped reported as active paid sites. **No hint** | Off-target range and rules, flag decisions, audit of 2 measures, tuned brief, investment review note | Adds the outcome job and sheet. Reads the module 3 baseline and module 1 OKRs. 16 files |
 
-Open 25 minutes (15 instructor-led, 10 hands-on). Close 15 minutes (5 and 10). The ladder climbs: 1, 1 plus, 2, 3, 3 plus. The warning fades: told, hint, hint, hint, none. Every lab has one optional connector card, outside the 6 steps (see O9).
+Open 25 minutes (15 instructor-led, 10 hands-on). Close 15 minutes (5 and 10). The ladder climbs: 1, 1 plus, 2, 3, 3 plus. The warning fades: told, hint, hint, hint, none. Labs 3 to 5 each have one optional connector card, outside the 6 steps. Labs 1 and 2 have none (O9 closed).
 
 ## 4. Development brief summary
 
@@ -241,7 +226,7 @@ Full text: `outline/development-brief.md`. The five questions at course level:
 | 2. What the learner can do | Build one agent. Write and tune its brief. Set checks and hand-off rules. Decide each flag. Audit a sample. Connect jobs. Record each decision with a reason |
 | 3. How far | Develop and Apply |
 | 4. Evidence | Per lab: tuned brief, flag decisions, audit findings, one PM decision record. At the end: the saved agent and a Monday plan with an audit date |
-| 5. Experience | One agent that grows each module. Own work first. Larkspan as fallback. Same core steps on four platforms. Catch-up kit per module. Optional connector lane |
+| 5. Experience | One agent that grows each module. Own work first. Larkspan as fallback. Same core steps on four platforms. Catch-up kit per module. Optional connector lane in labs 3 to 5 |
 
 Course themes: the AI gathers evidence and filters first, and the PM decides. The PM sets the rules in the brief. Review too often and the team gets whiplash. Be great at product management before you are great at AI. The roadmap is direction. The release plan is the promise.
 
@@ -269,7 +254,7 @@ Gate 2 locks these records and results. Source: `case/expected-results.md` (inst
 
 ## 6. Critic results
 
-The critic saw only the spec, the case and the rules. It found 5 must-fix items in v0.1. All 5 were fixed in v0.2 (module 4 template held its own fix, module 2 "serves strategy" wording, 18 files against a 16 limit, module 4 inputs, module 4 steps). Items not changed, with reasons, are in `outline/revision-notes.md`. Your v0.3 answers changed more text. No critic has read v0.3 (see O16).
+The critic saw only the spec, the case and the rules. It found 5 must-fix items in v0.1. All 5 were fixed in v0.2 (module 4 template held its own fix, module 2 "serves strategy" wording, 18 files against a 16 limit, module 4 inputs, module 4 steps). Items not changed, with reasons, are in `outline/revision-notes.md`. Critic report v2 read spec v0.3. It found 1 must-fix item and 6 smaller items. v0.4 fixes them: Copilot Google Sheet option on labs 1, 3 and 5, the Cloud team numbers in the sample flag report (95% before CR-07, 105% with it), the lab 5 audit rule (start with the outcome the business case names), the PB-02 example (the case PM says yes), the case year label (Q6) and the stale note in `gate-2-changes.md`. Open for the case builder: the CR-08 source in `case/m4-check-sample.md`, the OS-3 gap sign in `case/expected-results.md`, and the Ostrelane name check (O12).
 
 ## 7. Source notes
 

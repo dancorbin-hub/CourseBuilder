@@ -1,5 +1,5 @@
 # Course spec: Advanced AI for Product Strategy and Planning (course id product-strategy-and-planning)
-# Stage 2 v0.3 by the course planner, 2026-11-26. Applies Dan's Gate 2 answers (outline/gate-2-decisions.md) and the 2027 case year shift (case/year-shift-map.md). v0.2 followed the critic report. Locked only when Dan approves Gate 2.
+# Stage 2 v0.4 by the course planner, 2026-11-26. Applies Dan's Gate 2 answers (outline/gate-2-decisions.md, rows 1 to 15) and the 2027 case year shift (case/year-shift-map.md). v0.4 follows critic report v2 and removes the connector lane from labs 1 and 2. Locked only when Dan approves Gate 2.
 # Inputs: outline/stage-2-inputs.md (read first), research/gate-1-decisions.md (wins if files differ),
 #   research/worked-example-row.yaml (sp-wf-09, approved), research/workflows.yaml (rows 03, 05, 07, 08, 10),
 #   research/rerun-replacement-02.yaml (row 12), research/rerun-track-1.yaml (row 11), research/research-brief.md,
@@ -15,7 +15,7 @@ course:
     Planning here means annual and quarterly product planning. The course maps to Capability 2, Strategic
     Direction. (Gate 1 decision g. Gate 2 decision 3: keep the title and this line. The question for Pragmatic is open_items OI-02)
   status: draft
-  version: 0.3
+  version: 0.4
   drafted_on: 2026-11-26
   instructor: Dan Corbin (delivers, decision 45). Written so an instructor who did not build the course can deliver it
   offering_intent: Develop and Apply (decision 41; Dan confirmed, Gate 2 Q3)
@@ -319,7 +319,7 @@ module_arc:   # PRD module arc, 40/60 split per module
     - { step: "Hands-on lab in platform breakout rooms", mode: hands-on }
     - { step: "Debrief, error reveal, check sample, \"what you do Monday\" close (optional), log save card", mode: hands-on }
   connector_lane_rule: >-
-    Each lab has one optional connector lane card (see each lab). It sits outside the 6 steps and outside the pass condition. Core path stays no-connector, so the class does not run at the level of the most restricted company
+    Labs 3 to 5 each have one optional connector lane card (Gate 2 late item 14, Dan). Labs 1 and 2 have none. The card sits outside the 6 steps and outside the pass condition. Core path stays no-connector in every lab, so the class does not run at the level of the most restricted company
   card_rules: >-
     6 steps or fewer. One action per step. 20 words or fewer per sentence. A step that sends files with a prompt is
     one action. Saving is not a step: the card header says how each platform saves. The data check card and "Start
@@ -414,7 +414,7 @@ modules:
       platform_cards:
         claude: Project with the brief and knowledge files. Code execution totals the capacity sheet. Output .xlsx. Google Sheet option, download .xlsx or CSV, upload in chat
         chatgpt: Project with the brief and files. Totals through ChatGPT Work file output with formulas (cg-09, cg-10). Google Sheet option, download .xlsx or CSV, upload in chat
-        copilot: Agent with the brief and embedded files. Upload the capacity sheet (.xlsx) in chat each run. Download the output in the same session
+        copilot: Agent with the brief and embedded files. Upload the capacity sheet (.xlsx) in chat each run. Download the output in the same session. Google Sheet option, download .xlsx, upload in chat
         gemini: Gemini skill with the brief. Totals in the Google Sheet template with formulas
       fast_start_card: One per platform, with one annotated screenshot of where to start and which field the template goes in
       core_path_no_connectors: yes. Upload submissions, status export and capacity sheet
@@ -424,11 +424,6 @@ modules:
       stretch:
         - Compare 2 PM-named funding scenarios ("fund X instead of Y") and show what slips (sp-wf-13; Gate 1 places it here). The PM names both scenarios; the agent does not propose one
         - Turn the job into a custom skill (Claude all plans, ChatGPT business plans, Gemini)
-      connector_lane:   # Gate 2 decision 13. One optional card per lab. Not one of the 6 steps. Not needed for the pass condition
-        card: Optional connector lane, a separate card after the data check card. Outside the 6 steps
-        what: The learner reads the input from a connected source instead of an upload, or sends the output to a connected tool. Same quality checks and hand-off rules apply
-        rules: Data safety check first. Approved connectors only. No new data class. The core path stays no-connector. No instructor troubleshooting promise
-        naming: Name no connector on any card until a dated vendor doc exists for that platform and plan
       planted_error:
         error: >-
           Capacity counted twice. The shared firmware team is planned at 100% in two programs (case: Probe X cellular
@@ -539,11 +534,6 @@ modules:
         fallback_case: "Larkspan: problem backlog, request decision log, roadmap (knowledge); m2-requests-batch-1 (run); m2-check-sample (check)"
       stretch:
         - Read requests from a shared intake form or tracker, where the platform and company allow (not verified)
-      connector_lane:   # Gate 2 decision 13. One optional card per lab. Not one of the 6 steps. Not needed for the pass condition
-        card: Optional connector lane, a separate card after the data check card. Outside the 6 steps
-        what: The learner reads the input from a connected source instead of an upload, or sends the output to a connected tool. Same quality checks and hand-off rules apply
-        rules: Data safety check first. Approved connectors only. No new data class. The core path stays no-connector. No instructor troubleshooting promise
-        naming: Name no connector on any card until a dated vendor doc exists for that platform and plan
       planted_error:
         error: >-
           False duplicate. Two requests say "offline mode" but describe different problems: field installers at remote
@@ -589,8 +579,9 @@ modules:
       weigh_other_factors_example: >-
         A problem can rank high on market evidence and problem impact and still be deprioritized for other factors:
         strategy, risk, investment level, build time, customer relations, dependencies and resource allocation. Case
-        example: PB-02 (audit preparation, evidence order 1) ranks first on evidence. The PM may still defer it for
-        build time and dependencies. The PM writes the reason in the decision card. The agent never writes it
+        example: PB-02 (audit preparation, evidence order 1) ranks first on evidence. The case PM says yes to REQ-112
+        and acts on it (it becomes CR-07). Say: "Another PM could still defer a top problem for build time and
+        dependencies." Do not say the case PM defers PB-02. The PM writes the reason in the decision card. The agent never writes it
       story_slot: Optional. An internal platform team that answered requests with silence until a decision log made the reason visible. Told as a story from Pragmatic's work with companies
       monday_close: Take the last 10 requests you got. Find the problem behind each one before you answer
       internal_and_hardware: Fleet Data Platform internal requests (W29 internal PM). Hardware, a "yes" can add a part variant (W30, one source; example only)
@@ -658,7 +649,7 @@ modules:
       platform_cards:
         claude: Project with the brief. Code execution writes inputs to the sheet and reads results. Output .xlsx. Google Sheet option, download .xlsx or CSV, upload in chat
         chatgpt: Project with the brief. ChatGPT Work file output with formulas (cg-09, cg-10). Check the memory mode (cg-14). Google Sheet option, download .xlsx or CSV, upload in chat
-        copilot: Agent with embedded files. Upload the sheet (.xlsx) in chat each run. Download output in the same session (mb-11)
+        copilot: Agent with embedded files. Upload the sheet (.xlsx) in chat each run. Download output in the same session (mb-11). Google Sheet option, download .xlsx, upload in chat
         gemini: Gemini skill with the brief. Google Sheet template with formulas. Upload any new source yourself
       core_path_no_connectors: yes. Case source pack for market size. Live search is stretch
       inputs:
@@ -667,7 +658,7 @@ modules:
       stretch:
         - Update the market size inputs by live web search at the PM's own cadence, one link per number (Claude, ChatGPT, Copilot only; decision f4). No confidential names in queries
         - Buy, build or partner pack for one component (sp-wf-06), only if time allows (Gate 1 decision a)
-      connector_lane:   # Gate 2 decision 13. One optional card per lab. Not one of the 6 steps. Not needed for the pass condition
+      connector_lane:   # Gate 2 late items 13 and 14. Labs 3 to 5 only. Not one of the 6 steps. Not needed for the pass condition
         card: Optional connector lane, a separate card after the data check card. Outside the 6 steps
         what: The learner reads the input from a connected source instead of an upload, or sends the output to a connected tool. Same quality checks and hand-off rules apply
         rules: Data safety check first. Approved connectors only. No new data class. The core path stays no-connector. No instructor troubleshooting promise
@@ -809,7 +800,7 @@ modules:
       stretch:
         - Build the change assessment as a second agent that reads the first agent's output (only where verified)
         - Read the roadmap from a connected tool, where the platform allows (not verified)
-      connector_lane:   # Gate 2 decision 13. One optional card per lab. Not one of the 6 steps. Not needed for the pass condition
+      connector_lane:   # Gate 2 late items 13 and 14. Labs 3 to 5 only. Not one of the 6 steps. Not needed for the pass condition
         card: Optional connector lane, a separate card after the data check card. Outside the 6 steps
         what: The learner reads the input from a connected source instead of an upload, or sends the output to a connected tool. Same quality checks and hand-off rules apply
         rules: Data safety check first. Approved connectors only. No new data class. The core path stays no-connector. No instructor troubleshooting promise
@@ -891,7 +882,7 @@ modules:
     objectives:
       - { id: m5-o1, text: "Extend the agent to track each measure against the business case baseline and the OKRs, labeled outcome or output", practiced_in: "lab step 1 to 3" }
       - { id: m5-o2, text: "Write the off-target range and the number of months in the brief", practiced_in: "lab step 2" }
-      - { id: m5-o3, text: "Audit 2 \"on track\" measures against the business case, and write the outcome-or-output rule for what you find", practiced_in: "lab step 5 and debrief" }
+      - { id: m5-o3, text: "Audit 2 \"on track\" measures against the business case, starting with the outcome the business case names, and write the outcome-or-output rule for what you find", practiced_in: "lab step 5 and debrief" }
       - { id: m5-o4, text: "Write an investment review note: keep, change or stop, with a reason that cites the measures", practiced_in: "lab step 6" }
     lab:
       goal: Extend the course agent to track outcomes against the business case each month and flag measures for your investment review
@@ -913,12 +904,12 @@ modules:
         - Write your off-target range and number of months into the brief
         - Send the October and November exports with the prompt "Run the outcome job"
         - Decide each item in the flag report
-        - Audit 2 "on track" measures
+        - Audit 2 "on track" measures: the outcome named in the business case, and one other
         - Write your investment review note with keep, change or stop and a reason
       platform_cards:
         claude: Project with the brief. Code execution on the outcome sheet. Google Sheet option, download .xlsx or CSV, upload in chat
         chatgpt: Project with the brief. ChatGPT Work file output with formulas. Google Sheet option, download .xlsx or CSV, upload in chat
-        copilot: Agent with embedded files. Upload the outcome sheet (.xlsx) and exports in chat each run
+        copilot: Agent with embedded files. Upload the outcome sheet (.xlsx) and exports in chat each run. Google Sheet option, download .xlsx, upload in chat
         gemini: Gemini skill with the brief. Google Sheet template with formulas
       core_path_no_connectors: yes. Upload metrics exports
       inputs:
@@ -926,7 +917,7 @@ modules:
         fallback_case: "Larkspan: outcome sheet (knowledge); business case baseline and OKRs (in the agent); m5-metrics-oct and m5-metrics-nov (run); m5-check-sample (check)"
       stretch:
         - Run each month on a schedule, only where verified. New slides; not the CAW-AI setup slide
-      connector_lane:   # Gate 2 decision 13. One optional card per lab. Not one of the 6 steps. Not needed for the pass condition
+      connector_lane:   # Gate 2 late items 13 and 14. Labs 3 to 5 only. Not one of the 6 steps. Not needed for the pass condition
         card: Optional connector lane, a separate card after the data check card. Outside the 6 steps
         what: The learner reads the input from a connected source instead of an upload, or sends the output to a connected tool. Same quality checks and hand-off rules apply
         rules: Data safety check first. Approved connectors only. No new data class. The core path stays no-connector. No instructor troubleshooting promise
@@ -1087,7 +1078,7 @@ platform_matrix_summary:   # research/platform-matrix.yaml, checked 2026-11-22. 
     - { id: G2-PF-06, platform: all, check: "Knowledge file count at the end of the course is 16 or fewer (limit 20 on ChatGPT Plus and Copilot). Count per case/README.md: 1 core instructions, 5 job cards, 10 case files. Source pack, quote, evidence log, validated problem backlog and confidential terms list are run files or brief text. Counts by module: 4, 8, 11, 14, 16" }
 
 fallback_case:   # Placeholder. The case builder fills it in Stage 2. Gate 2 locks the records and results
-  status: built by the case builder (case/README.md). Case date late November 2027, plan year 2028 (Gate 2 decision 9). Details below are the planning notes
+  status: built by the case builder (case/README.md). Case date late November 2027, plan year 2028 (Gate 2 Q6). Details below are the planning notes
   company: >-
     Larkspan Systems (fictional), reused from Market Research (Gate 1 decision j). Wireless temperature sensors
     (hardware) and the cloud software that watches them. External PMs own Probe, Hub, Tag and Cloud. An internal PM
@@ -1186,7 +1177,7 @@ gate_2_designs:   # Designs Dan asked to see. Both decided at Gate 2 (2026-11-26
     sample_flag_report:   # Illustrative, case-like. Not the planted error. Change request CR-07, Larkspan
       - "RELEASE PLAN CHANGE. CR-07 (approved request REQ-112: calibration certificate export for Pharmacy and lab) needs the shared firmware team in Q1. It displaces Hub firmware OTA rollback, which is on release plan R-2028.1 (dated 2028-02-15). Agent stopped. PM and delivery lead decide. No new date written."
       - "COMMITMENT GUARD. The CR-07 request text says \"ships in Q2\". Q2 is not on the release plan for this item. The phrase is not in the impact note. Source: CR-07, VP Sales, 2027-11-18."
-      - "DEPENDENCY. CR-07 needs a Larkspan Cloud API change owned by the Cloud team. The capacity table shows the Cloud team at 95% in Q1 (module 1 pack, Q4). PM decides the trade-off."
+      - "DEPENDENCY. CR-07 needs a Larkspan Cloud interface change and asks 10% of the Cloud team in Q1 2028. The Q4 capacity table shows the Cloud team at 95% before CR-07 and 105% with CR-07. Release plan items RP-02 and RP-03 use the Cloud team in Q1. PM decides the trade-off."
       - "PAST DECISION. Request decision log DL-2027-09 put calibration export at \"later\" with the condition \"Three pharmacy chains ask\". The roadmap decision log records it as RL-2027-05. The request records now show 2 chains (A-5101, A-5120). PM decides if the condition is met."
       - "CONFIDENTIAL TERM. The impact note quotes the antenna supplier name, which is on your confidential terms list. The note is marked \"Share with the Delivery lead and the Support lead\". PM decides before it is shared."
     what_the_pm_decides:
@@ -1371,13 +1362,14 @@ gate_2_decisions_applied:   # Source: outline/gate-2-decisions.md. Detail of eac
   - { id: 6, item: "Grouping of untraced validated problems", result: "No grouping. Talk track lines added (product backlog on merit and impact; epics and user stories; themes help but are not required). Epic and user story in the glossary" }
   - { id: 7, item: "Course aha", result: "Module 1: shared Firmware team at 100% in two programs, 200% in total. Module 5 is the closing echo. Not linked to win/loss" }
   - { id: 8, item: "Module 2 rung", result: "Rung 1 plus. Ladder: 1, 1 plus, 2, 3, 3 plus" }
-  - { id: 9, item: "Case year", result: "Case moves to late November 2027, plan year 2028. Ids, file names and supplier (Ostrelane Tooling) follow case/year-shift-map.md" }
+  - { id: 9, item: "Case year (Dan Q6)", result: "Case moves to late November 2027, plan year 2028. Ids, file names and supplier (Ostrelane Tooling) follow case/year-shift-map.md" }
   - { id: 10, item: "Cadence and evidence order", result: "The PM sets every cadence in the brief. Intake can be frequent (the agent logs and flags). The problem backlog is reviewed at the PM's cadence, often quarterly. The agent may order it by market evidence (column evidence_order, never priority). Module 5 monthly run changes no priorities" }
   - { id: 11, item: "Bond story", result: "Trendslop (E3). See decided" }
   - { id: 12, item: "Quick items Q1 to Q7", result: "Q1 agent name Strategy Evidence Agent final. Q2 capability mapping confirmed. Q3 intent Develop and Apply. Q4 module 4 box Focus / Product Roadmap. Q5 decision c option 1 (no audience drafting). Q7 syllabus tags Focus, Market, Business. Q6 replaced by the 2027 case" }
-  - { id: 13, item: "sp-wf-13 funding scenario stretch", result: "Stays in module 1 (OI-03 closed)" }
+  - { id: 13, item: "sp-wf-13 funding scenario stretch", result: "Stays in module 1 as a stretch step inside the existing lab, never a replacement. Dan decided: it stays in module 1 (Gate 2 late items 15 and 16). OI-03 closed" }
   - { id: 14, item: "Fix 4 research files (Section 7 item 2)", result: "Approved by Dan. Not applied here. A later step edits research/ and records fingerprints (OI-04)" }
-  - { id: 16, item: "Late Dan decisions 9 to 13", result: "9: no magic number phrase removed from learner text; AI gathers evidence and filters first, PM decides. 10: worked example list in module 2 talk track. 11: Google Sheet option on every platform; Drive connector stretch only. 12: know before you design in the pre-class email and repeated in the course open. 13: optional connector lane per lab, outside the 6 steps, no connector named until a dated vendor doc exists" }
+  - { id: 16, item: "Late Dan decisions 9 to 13", result: "9: no magic number phrase removed from learner text; AI gathers evidence and filters first, PM decides. 10: worked example list in module 2 talk track. 11: Google Sheet option on every platform; Drive connector stretch only. 12: know before you design in the pre-class email and repeated in the course open. 13: optional connector lane, outside the 6 steps, no connector named until a dated vendor doc exists (scope set by late item 14: labs 3 to 5 only)" }
+  - { id: 17, item: "Connector lane scope (Gate 2 late item 14)", result: "Dan: only labs 3 to 5. Lane removed from modules 1 and 2 in spec, brief, syllabus and packet. Packet O9 closed" }
   - { id: 15, item: "Proof kit drafts (Section 7 item 5)", result: "Read as yes. Drafts in outline/proof-kit-drafts.md. Dan to confirm (DD-10)" }
 
 open_items:   # Only what is still open after Gate 2 answers

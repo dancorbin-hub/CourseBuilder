@@ -8,7 +8,7 @@ Use this file to test your tuned brief in a new chat. Run the change assessment 
 | --- | --- |
 | Change request id | CR-08 |
 | Date | 2027-11-24 |
-| From | Support lead |
+| From | Operations manager, account A-3306 (customer, per REQ-116) |
 | Source request | REQ-116 (door-open alert delay at loading docks, problem PB-06) |
 
 ## Request text
