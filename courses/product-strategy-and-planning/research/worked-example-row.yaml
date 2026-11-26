@@ -1,0 +1,145 @@
+# Worked example workflow row for Advanced AI for Product Strategy and Planning. Version 1, draft.
+# Status: approved by Dan on 2026-11-26. Model row chosen by Dan at Gate 1 (decision h, 2026-11-26).
+# Format model: courses/market-research/research/worked-example-row.yaml (mr-wf-01, v3). Content is new.
+# Source rows: sp-wf-09 (workflows.yaml) with sp-wf-01 folded in as a strategy consistency check.
+# Gate 1 decisions applied (research/gate-1-decisions.md, all 2026-11-26):
+#   a and row 01 final: drift check folds in as a strategy consistency check. No Strategy Matrix.
+#   Dan's theme: the agent never proposes, ranks or rewrites strategy. The PM decides.
+#   j: Larkspan Systems case; strategy inputs are a strategy overview, OKRs and KPIs with targets.
+#   e (provisional): strategy data safety lines plus the teaching point.
+#   PS-06 rule: same Pragmatic terms, no callbacks to core courses, every term defined here.
+#   Platform risks f1 to f6: ChatGPT Plus minimum; Copilot upload in chat; CSV copy in the case pack.
+
+id: sp-wf-09
+workflow: Assemble the quarterly portfolio review pack and check that planned work stays consistent with the stated strategy
+topic_area: Strategy, roadmaps, planning
+capability_skill: "2.1 Strategy Alignment (skill objective: use strategy alignment to shape portfolio direction and resource allocation; competency 2.1B Explicit vs. Implicit Strategy Analysis, light form)"
+trigger_and_cadence: Each quarterly portfolio review and the annual planning cycle
+
+input: Team plan submissions, program status from source systems, capacity by team, the strategy overview, OKRs and KPIs with targets, and last quarter's pack
+output: "One pack: each program's status, outcomes, link to a stated objective, and capacity ask; conflicts and shared dependencies; a capacity total by team; a strategy consistency section (where planned work and capacity go, by objective, and work with no clear link); and a flag report for the PM"
+pm_decision_informed: Which programs to fund, pause or stop, where capacity goes next quarter, and whether the work or the stated strategy needs to change
+
+bottleneck:
+  description: Portfolio reviews run on decks that are stale before the meeting. One person stitches updates from many teams by hand, so the meeting becomes data reconciliation instead of decisions. Leaders say strategy is clear, but few can show that the work is linked to it
+  pdlc_stage: Focus
+  focus_area: Product Portfolio
+  sources: [W1, W22]   # W1 with its primary W2 counts as one source. W3 supports the strategy link gap (from sp-wf-01)
+
+scores:
+  judgment: medium. Assembling and totaling are rule-based; funding calls and strategy calls are not
+  repetition: high. Every quarter, every team, the same template
+  ai_candidate: yes. The agent assembles, totals and flags; the PM decides
+
+split:
+  agent_does:
+    - Collect each team's submission and check it against the template
+    - Pull status from the source system, not from the submission
+    - Total capacity asks by team and by shared resource
+    - List conflicts and shared dependencies
+    - Show where planned work and capacity go, by stated objective and KPI
+    - List work with no clear link to a stated objective, with the evidence
+    - Send flags to the PM
+  pm_manages:
+    brief: Job, submission template, source systems, strategy overview, OKRs and KPIs, capacity rules, output format. The brief says the agent reports evidence only. It does not propose, rank or rewrite strategy
+    quality_checks:
+      - Each program has a submission dated this quarter
+      - Each status matches the source system
+      - Capacity per program is inside the team's total
+      - Each link to an objective names what the work does, not only its tag
+    handoff_rules:
+      - A shared team or resource asked for more than its capacity across programs
+      - A status that differs between the submission and the source system
+      - Work with no clear link to a stated objective. The agent lists it and does not judge it
+      - Any step that would recommend funding, ranking or a strategy change. The agent stops and hands it to the PM
+    audit: Sum the capacity asks by team by hand for 2 shared teams. Read 3 random "linked" items and check what the work does
+  pm_decides:
+    - Fund, pause or stop
+    - Capacity trade-offs
+    - Whether to change the work or the stated strategy
+    - What goes to leadership
+  ai_error_to_catch: Capacity counted twice. A shared firmware team is planned at 100% in two programs. Each program's ask is inside the team's total, so the per-program check passes. The audit sums by team and finds 200%. The fix is a new check in the brief, total each shared team across all programs
+
+contexts:
+  hardware: "Partial. W22 (vendor) describes hardware portfolio reviews with stage gates of months next to software sprints. W19 names shared components, test facilities and suppliers as cross-program dependencies. The planted error uses a shared firmware team"
+  internal_pm: "Partial. W1: Expedia's quarterly priority reviews took weeks and outreach to 50 or more PMs. Conference anecdote only"
+  industry_notes:
+    - "health care: program data can name clinical partners or trials. Remove names before the agent reads them. Not yet researched"
+    - "FinTech: plans can hold non-public financial data. Use an approved tool only. Not yet researched"
+
+proposed_lab:
+  goal: Extend the course agent to assemble the quarterly pack, check strategy consistency and flag capacity conflicts
+  core_message: The meeting is for decisions, not reconciliation. The agent reconciles and shows the evidence; the PM makes the strategy and funding calls
+  build_type: agent (extend the course agent built in module 1)
+  core_path_no_connectors: yes. The learner uploads team submissions, the strategy overview, OKRs and KPIs from the Larkspan Systems case, or their own (approved tool only)
+  data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. No confidential plans, unreleased roadmaps, forecasts, pricing, supplier terms or non-public financial data in an unapproved tool. Check every version for people outside the team for confidential content. Do not put confidential names in web search queries. Teaching point: an agent that keeps a pack from quarter to quarter stores sensitive data longer than a one-off prompt. If the tool is not approved, use the fallback case or remove names and prices first (Dan, decision e, provisional, 2026-11-26)"
+  platforms:
+    claude: Skill or Project with the brief, templates and rules. CSV copy of the case sheets if code execution is off
+    chatgpt: Project with the brief and templates. ChatGPT Plus is the course minimum (Dan, f1, 2026-11-26)
+    copilot: Agent in Copilot agent builder with the brief and templates as embedded files. Learner uploads the team submissions in chat each run (.xlsx, one sheet each) and downloads the output in the same session (f3)
+    gemini: Gemini skill with the brief and templates. Totals run in a Google Sheet template with formulas; the skill writes inputs and reads results (f2)
+  steps:
+    - Open your course agent. Add the portfolio pack job and the strategy inputs to its brief
+    - Add two quality checks and two hand-off rules from the menu
+    - Run the agent on the Q3 team submissions
+    - Read only the flag report. Decide each item
+    - Audit 2 shared teams and 3 linked items. Fix the brief for what you find
+    - Run Q4. Check the pack and the "what changed" section
+  stretch: "Compare 2 PM-named funding scenarios ('fund X instead of Y') and show what slips, from sp-wf-13 (Dan, 2026-11-26). Pull status from a connected work tracker, where the platform allows (not verified)"
+  planted_error: One shared firmware team counted at 100% in two programs
+  success_check: The Q4 pack shows capacity by team, the flag report names the over-allocated team and the work with no clear objective, and the agent makes no funding or strategy recommendation
+  registry_check: "Core courses are not prerequisites (Dan, 2026-11-26): use Pragmatic terms, define them here, no callbacks. No Strategy Matrix inputs or slides (Dan, 2026-11-26). No Focus Strategy Alignment agent exists, so house rule 11 does not apply. Build 28.01 teaches estimates from past performance and release planning; not retaught. AI Agents course teaches boundaries and guardrails; this lab teaches the 'stop before a recommendation' hand-off rule with new slides (house rule 14). Workshops Strategic Transformation and Implementation and Action Planning Workshop map to capability 2: Dan to check overlap"
+  pragmatic_fit: "Good fit. Workbook 2.1 objectives include shaping portfolio direction and resource allocation. Workbook 2.1 AI text: strategy stays a forced-choice human decision"
+
+evidence:
+  - id: W1
+    claim: 80% of 308 senior leaders say their strategic priorities are clear, but only 11% can show that at least three quarters of portfolio work is explicitly linked to them. 83% rely on manual status updates and personal judgment. 72% say competing priorities chronically overstretch key teams. Expedia quarterly priority reviews took weeks of preparation and outreach to 50 or more PMs
+    type: statistic
+    source: "Shift happens: Finding and fixing the gap between strategic intent and actual work, Sapphire Reels, Atlassian blog"
+    url: https://www.atlassian.com/blog/leadership/gap-between-intent-and-work
+    source_date: "2026-09-28"
+    checked_on: "2026-11-22"
+    age_flag: false
+    status: verified
+    note: Vendor reports its own study. Survey period not stated. Primary study is W2; W1 and W2 count as one source. Expedia item is a conference anecdote. Do not put the Expedia item on a slide as data
+  - id: W22
+    claim: Portfolio and roadmap reviews run on stale decks and spreadsheets; meetings become data reconciliation, not decisions; one person becomes the "human integration layer"; hardware stage gates of months next to software releases in weeks hide dependencies
+    type: claim
+    source: Why product portfolio reviews keep tracking sideways, Maziar Adl, Gocious
+    url: https://gocious.com/blog/why-product-portfolio-reviews-keep-tracking-sideways
+    source_date: "2026-05-05"
+    checked_on: "2026-11-22"
+    age_flag: false
+    status: verified
+    note: Hardware product management software vendor. No data
+  - id: W3
+    claim: "Roadmap to strategy alignment averages 3.6 of 5. Top causes of misalignment: resource and capacity limits (49.2%), short-term priority shifts (47.5%), leadership direction changes (43.9%)"
+    type: statistic
+    source: State of Product Management 2026 (same study as N21)
+    url: see workflows.yaml sp-wf-01, evidence W3
+    source_date: "2026"
+    checked_on: "2026-11-22"
+    age_flag: false
+    status: partly verified
+    note: Fieldwork Q4 2025. Always state "fieldwork Q4 2025" with the figure (Dan, decision i, 2026-11-26). Primary report not opened
+  - id: W19
+    claim: Hardware programs share components, test facilities and suppliers, so delays spread across programs
+    type: claim
+    source: Operating and Refreshing the Roadmap, The Product Development Roadmap Playbook, Umbrex
+    url: https://umbrex.com/resources/rd-playbooks/the-product-development-roadmap-playbook/operating-and-refreshing-the-roadmap/
+    source_date: 2026-09-20 (last modified)
+    checked_on: "2026-11-22"
+    age_flag: false
+    status: verified
+    note: Consultancy playbook, no byline, no data. Context only
+
+dropped:
+  - Strategy Matrix box mapping and the "peanut butter" box count (PS-16; Dan, 2026-11-26)
+  - Label laundering planted error from sp-wf-01. One planted error per lab; the capacity error stays. The "names what the work does" check and the linked-item audit keep the idea
+
+open_gaps:
+  - Second source with data on portfolio review effort
+  - Internal PM source beyond an anecdote
+  - Primary reports for W2 and W3
+  - Overlap check with the Strategic Transformation and Action Planning workshops (Dan)
+gate_1_decision: "Approved by Dan 2026-11-26"

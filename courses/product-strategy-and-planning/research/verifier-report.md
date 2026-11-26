@@ -263,3 +263,57 @@ Checked 2026-11-22. Fetch budget: 15 pages, 15 used. Statuses are set in the rer
 | `rerun-track-1.yaml`, W6 | W6 status "verified" | This report marks W6 "not verified" (not reopened). The rerun file copied a researcher status with no verifier note. The brief and packet use "NV", which is correct | Set W6 to "not verified" in the rerun file when the Synthesizer merges, or reopen it |
 | Brief 3, packet 5 check 2 | Bottleneck rows 02 and 09 pass | All 4 sources (W1, W22, W25, W26) are vendor or vendor-run, with no time or cost data. The packet states this | Dan decides if this is strong enough (PRD decision 37) |
 | Brief 3, E1 row | "Strongest design evidence" | Only the research page was opened. The full paper (PDF) was not opened. Vendor studies its own model | Open the PDF before any slide (packet gap 21) |
+
+## Replacement row 02 pass (2026-11-26)
+
+- Scope: row sp-wf-12 (request decision and response) in `rerun-replacement-02.yaml`. Rows sp-wf-13 and sp-wf-14 are not retained, so W31 to W35 were not checked.
+- Fetch budget: 12 page opens, 11 used. Statuses are set in `rerun-replacement-02.yaml` (field `verifier_note_2026_11_26`, plus `verifier_check` on the bottleneck).
+
+### Primary report for the override figures (N21)
+
+| Item | Finding |
+| --- | --- |
+| Report | State of Product Management 2026. Product-Led Alliance team wrote it (Rebecca Stewart, Richard King). ProductPlan is the sponsor. Page 6 calls it "ProductPlan's eleventh annual State of Product Management report" |
+| Fieldwork | "In Q4 2025, we surveyed nearly 250 product professionals". No exact count, no response rate, no method, no publish date |
+| Question (p. 52) | "What factors most often override your prioritization framework?" Multi-select ("Respondents could select multiple options") |
+| Answers | Leadership escalations or new directives 60.2%. Sales or customer escalations 38.5%. Revenue or commercial pressure 38.1%. High-value new opportunities 36.1%. Resource or capacity limits 34%. Technical constraints 29.9% |
+| Population | Product professionals, 43.3% leaders and 56.7% individual contributors (p. 22, from the 2026-11-22 pass). Hardware is not an industry category |
+| Rule 4 | Published 2026, fieldwork Q4 2025. Dan decides (open since 2026-11-22) |
+
+Slide wording (if Dan accepts rule 4): "In a Q4 2025 survey of nearly 250 product professionals, 60.2% named leadership escalations or new directives as a factor that most often overrides their prioritization framework. 38.5% named sales or customer escalations." Source: State of Product Management 2026, Product-Led Alliance, sponsored by ProductPlan. Do not say "of frameworks" or "250 product leaders".
+
+### Results table
+
+| Id | Claim | Result | Note |
+| --- | --- | --- | --- |
+| W29 | IdeaPlan: more requests than capacity, loudest wins, CEO comment shifts roadmap, "even a no is better than silence" | Verified | 2026-03-14. All quotes confirmed. Independent of PLA and ProductPlan. Weak publisher: no named owner or author, ad and affiliate revenue, AI-assisted drafting disclosed. Unsourced 30 to 50% and 80% figures: off slides |
+| W25 | PLA: decisions easy to reopen, escalations reset roadmap, override figures | Verified | Reopened. 2026-03-26 (modified 2026-05-01). Text and figures match N21. No text on finding past decisions |
+| W27 | ProductPlan: escalations are the top override force | Verified | Not reopened. Tied to W25 through the N21 sponsorship: one source family |
+| N9 | Time sinks, request follow-ups, Autodesk 70 channels | Verified | Reopened. 2026-01-07. Written and sponsored by Productboard, hosted by PLA. Confirms "answering 'what happened to my request?'". Autodesk figures are a vendor case |
+| N12 | SiriusXM: different assumptions caused roadmap conflicts | Verified | Not reopened. Internal PM context |
+| W30 | Umbrex: customer special requests fragment the BOM; engineered-to-order path | Verified | Modified 2026-04-20, no publish date, no byline. Text confirmed. It does not describe how requests are decided or any PM burden. Hardware stays Partial, one source |
+| W36 | Pragmatic: constant flood of internal feature requests | Verified | Mike Savory, modified 2025-01-09. Age flag: Dan decides. Not independent for a Pragmatic course |
+| W37 | LogRocket: context back on sales requests is a lot of work; closure | Partly verified | 2023-09-12. Core quotes confirmed. "Day in and day out" not confirmed. Age flag: Dan decides |
+| W38 | Atlassian Community: requester context lost | Not verified | Not opened. Researcher rejected it (no date) |
+| W39 | ProductPlan landing page: "Over 60% of prioritization frameworks are overridden by leadership escalations", 250 product leaders | Wrong | The page says it, but the primary report does not support it. 60.2% is a multi-select share of respondents, and the sample is nearly 250 professionals, not 250 leaders. Cite N21, not W39 |
+
+### Bottleneck check: sp-wf-12
+
+| Bottleneck part | Sources | Result |
+| --- | --- | --- |
+| Escalations from leaders, sales and customers override priorities; loudest voice wins | W29; W25 and W27; N21 | Pass (2 families) |
+| Requesters chase status ("what happened to my request?") or hear silence | W29; N9 | Pass (2 families) |
+| Requests arrive through many channels | N9 | 1 source |
+| Every requester believes theirs is most urgent | W29 | 1 source |
+| Decisions get reopened | W25 (W29 close: "roadmap shifts overnight") | 1 source, near 2 |
+| Past decisions and reasons are hard to find, so the same request gets a different answer | None | Not supported |
+
+Result: **pass, with one fix.** The core burden has 2 independent source families from 2026. All sources are vendor, vendor-run or anonymous, and none gives time or cost data.
+
+### Failures and actions (row 02 pass)
+
+1. W39 wording is wrong. Remove "over 60% of frameworks" and "250 product leaders" from all files. Use the slide wording above.
+2. The sp-wf-12 bottleneck sentence on past decisions has no source. Mark it as an assumption, or find a source before Gate 2.
+3. `sources_check` in sp-wf-12 says N9 and W25 share one publisher. N9 is by Productboard, hosted by PLA. The count stays conservative, but correct the text. Also count W25 and W27 as one family (ProductPlan sponsors the PLA survey).
+4. Hardware: W30 is a context source only. It says nothing on how requests are decided. Hardware stays Partial. Gap stands.
+5. Rule 4 for N21 (fieldwork Q4 2025) is still open for Dan.

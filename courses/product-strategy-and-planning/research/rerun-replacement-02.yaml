@@ -1,0 +1,455 @@
+# Stage 1, track 1 targeted rerun: replacement candidates for row sp-wf-02 (dropped by Dan, Gate 1 decision d, 2026-11-26)
+# Written 2026-11-26 by the workflow researcher. workflows.yaml and rerun-track-1.yaml were read only. The Verifier merges these items.
+# Brief from the lead agent: 3 candidates (A request decision and response, B planning trade-off scenarios, C competitive move impact check).
+# Rules applied: no scoring attributes, weights or rescoring. AI never sets, proposes or ranks strategy. Say "problem backlog".
+# Workbook names checked against the workbook extract (scratchpad wb.txt, sheet "Skill Standards" and framework box table).
+#
+# RESULT (researcher view, Dan decides):
+#   Recommend sp-wf-12 (candidate A), with one design change: the agent builds a decision card and leaves the decision blank.
+#   It drafts the reply only after the PM writes the decision and the reason. This keeps Dan's rule (the agent does not propose).
+#   sp-wf-13 (candidate B): evidence passes, weak. Overlap with sp-wf-08 and sp-wf-09 is high. Recommend a stretch step in 09, not a row.
+#   sp-wf-14 (candidate C): reject. Bottleneck fails the 2-source rule on the product side, and it repeats the CAW-AI
+#   competitive signal watch and the AI-AGENTS Competitive Intel Watchdog (house rule 11).
+#   No own candidate added: no other workflow had stronger evidence in this run.
+#
+# Skill 2.2 caveat for Dan: all five 2.2 competencies (2.2A to 2.2E) are written around scoring attributes, a scoring model,
+#   weights and calibration. With scoring out of the course, no row can cover 2.2A to 2.2D. sp-wf-12 covers 2.2 through the skill
+#   AI text ("analyze evidence", "surface inconsistencies") and the level descriptors (level 1 "Prioritizes opportunities based on
+#   intuition, hierarchy, or urgency of request"; level 4 "reduce reactive or politically driven prioritization"). It also touches
+#   competency 2.2E in a light form (decisions about what advances, pauses or stops). Pragmatic review may ask about this.
+#
+# Fetch budget: 14 of 15 used. Pages opened:
+#   1 Pragmatic Institute, Managing Internal Feature Requests (W36, age flag, reopened for A)
+#   2 IdeaPlan, How to Prioritize Internal Tool Requests (W29)
+#   3 LogRocket, Managing sales requests (W37, age flag)
+#   4 Product-Led Alliance, The reprioritization trap (W25, reopened; figures confirmed again)
+#   5 ProductPlan, State of Product Management Report 2026 landing page (W39, same study as W25)
+#   6 G2 Research, AI Roadmaps Under Pressure (W33)
+#   7 Gocious, How scenario planning improves product portfolio decisions in manufacturing (W31)
+#   8 fitgap, Align annual planning with rolling reprioritization (W32)
+#   9 Atlassian Community, How teams prioritize service requests (W38, rejected: no date, no burden detail)
+#   10 Umbrex, SKU Rationalization in Industrial Manufacturing (W30)
+#   11 Crayon, 2026 State of Competitive Intelligence blog (W35)
+#   12 Forrester, Five findings about today's market and competitive intelligence programs (W34)
+# Search results only (not opened): Forrester report on prioritizing requests from sales (paywall); Enterpret guide on sales
+#   feature requests; Planview 2026 scenario planning FAQ ebook; productify "Three questions before you react to competition".
+# Local files read (no fetch): CAW-AI and AI-AGENTS deck text, Focus 28.01 text, Build 28.01 text, needs.md (N9, N12).
+# Reused evidence ids are copied in full where a row cites them: W1, W19, W22 (workflows.yaml), W25, W27 (rerun-track-1.yaml),
+#   N9, N12 (needs.md). New evidence status is "not verified" until the Verifier checks it.
+
+- id: sp-wf-12
+  candidate: A
+  replaces: sp-wf-02
+  workflow: Decide on each week's feature and stakeholder requests against the problem backlog, the stated strategy and past decisions, and close the loop with each requester
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: '2.2 Opportunity Prioritization (skill AI text: analyze evidence, surface inconsistencies; level descriptors on urgency of request and politically driven prioritization; competency 2.2E Opportunity Comparison and Decision Support in a light form, with no scoring). Secondary: 1.1 Market Problem Identification (competency 1.1A Problem vs. Opinion Discrimination), already taught in Market Research module 3; see registry_check'
+  trigger_and_cadence: Requests arrive every day from sales, executives, customers, support and internal teams. Assumption, a weekly batch, plus an ad hoc run for a request tied to a live deal or an executive ask
+  input: 'The week''s requests (who asked, account or team, the ask in their words, any deal or date attached), the problem backlog with its evidence, the stated strategy and OKRs (or the learner''s equivalent), the current roadmap (Now, Next, Later), and the request decision log (past requests, decisions, reasons, conditions)'
+  output: 'One decision card per request: the problem behind the ask (or "no problem found"), the linked problem backlog item and its evidence, the strategy or OKR it serves (or "none found"), duplicates and past decisions on the same problem, what is already planned, and open questions for the requester. The decision field is blank for the PM. After the PM decides, a reply draft in the PM''s words and a new decision log entry. A weekly flag report'
+  pm_decision_informed: Yes, no or later for each request, the reason, any condition for "later", and what to tell the requester
+  bottleneck:
+    description: 'Requests arrive through many channels and every requester believes theirs is the most urgent. Escalations from leaders, sales and customers override agreed priorities, so the loudest voice wins and decisions get reopened. PMs lose time to "what happened to my request?" follow-ups, and requesters hear silence instead of a reason. Assumption, no source yet: past decisions and their reasons are hard to find, so the same request gets a different answer next time'
+    pdlc_stage: Market
+    focus_area: Market Problems
+    focus_area_note: 'Market Problems is a 2.2 secondary box: the core job is to separate the request from the problem and link it to the problem backlog. The reply step sits in Planning / Stakeholder Management. Framework box 35 Operations / Exceptions names "non-standard requests" but is an Operations box, and CLAUDE.md bars that word for hand-offs. Do not tag it. Dan decides'
+    sources:
+    - W29
+    - W25
+    - W27
+    - N9
+    sources_check: 'pass. W29 (IdeaPlan, 2026-03-14) and the Product-Led Alliance family (W25, 2026-03-26; N9, 2026-01-07, written by Productboard and hosted by Product-Led Alliance; W27, ProductPlan, which sponsors the Product-Led Alliance survey; counted as one source family) are independent and from 2026. W27 (ProductPlan, 2026-08-10) is tied to W25 by the survey sponsorship, so it is not a third independent source; its figures are the same study as W25. W39 (ProductPlan landing page) is wrong: do not cite. All are vendor or vendor-run publishers. Statistics (60.2% leadership escalations, 38.5% sales or customer escalations override priorities) are partly verified: the primary survey report is not opened (track 3 ask N5). Text claims are usable now'
+    verifier_check: 'Verifier 2026-11-26: pass, with one fix. Independent source families: W29 (IdeaPlan) and W25 with W27 (PLA and ProductPlan are tied by the N21 sponsorship) and N9 (Productboard, hosted by PLA). All 2026. Supported by 2 families: escalations and the loudest voice override priorities (W29, W25, W27); requesters chase status or hear silence (W29, N9). Single source only: many channels (N9), every requester thinks theirs is most urgent (W29), decisions get reopened (W25). No source: "Past decisions and their reasons are hard to find, so the same request gets a different answer next time". Mark that sentence as an assumption or find a source. All publishers are vendor, vendor-run or anonymous; no time or cost data. Statistics: N21 primary opened; use the corrected wording in the verifier report, not W39'
+  scores:
+    judgment: medium. Linking a request to a problem, the strategy and past decisions is rule-based. Yes, no or later is the PM's call
+    repetition: high. Every request, every week, from many channels
+    ai_candidate: 'yes. The agent finds and links evidence and past decisions; the PM decides and signs the reply'
+  split:
+    agent_does:
+    - Restate each request as the problem behind it, in the requester's words, or mark "no problem stated"
+    - Link the problem to a problem backlog item and its evidence, or mark "no match"
+    - Find duplicates of the request and past decisions on the same problem in the decision log
+    - Show which stated strategy choice or OKR the problem serves, or mark "none found". It does not judge fit or rank the request
+    - Note what is already on the roadmap for that problem
+    - Leave the decision field blank. After the PM decides, draft the reply and the decision log entry
+    - Send flags to the PM
+    pm_manages:
+      brief: 'Job, request channels in scope, the decision card template, the rule that the agent never fills the decision field, the decision log format, reply rules (no dates the roadmap does not hold, no promise beyond the PM''s decision), output format'
+      quality_checks:
+      - Each card quotes the request and names the requester and source
+      - Each duplicate or past decision cites a decision log id
+      - Each "serves strategy" line quotes the strategy or OKR text it relies on
+      - The decision field is blank on every card the PM has not decided
+      - Each reply matches the PM's decision and reason, with no new date
+      handoff_rules:
+      - A request with "no problem stated" or "no match" in the problem backlog
+      - A request that contradicts a past decision, or a past "later" whose condition may now be met
+      - Any request from an executive, or tied to a named deal or contract date
+      - Any request that holds personal, health or client data
+      audit: 'Each week, read 3 cards in full against the source requests. Open every duplicate merge and every past decision the agent cited, and check that it is truly the same problem'
+    pm_decides:
+    - Yes, no or later, and the reason
+    - The condition that turns a "later" into a yes
+    - Whether a new problem goes to the problem backlog for discovery
+    - What each requester hears, and when
+    ai_error_to_catch: 'False duplicate. Two requests use the same words ("offline mode") but describe different problems: field technicians with no signal, and a hospital customer that cannot send data off site. The agent merges them and attaches last year''s "no" with its reason. The card cites a decision log id and quotes the request, so the checks pass. The audit opens the merged requests and finds two problems. Fix: the brief tells the agent to match on the problem statement and the user, not on the feature words'
+  contexts:
+    hardware: 'Partial. W30 (Umbrex, 2026) says customer special requests in industrial manufacturing add part codes and variants that fragment the bill of materials, and custom items should go through an engineered-to-order path, not quietly join the standard catalog. A "yes" in hardware carries tooling, certification and supply cost (N11, N10 in needs.md). One source on requests themselves'
+    internal_pm: 'Yes. W29 (IdeaPlan, 2026) is written for internal tools PMs: more requests than capacity, every team thinks its ask is most urgent, the loudest team gets served, a passing CEO comment shifts the roadmap, and "even a no is better than silence". N12 (SiriusXM, DX Annual 2026): platform teams worked from different assumptions, which caused roadmap conflicts. W36 (Pragmatic, 2025-01, age flag) describes a "constant flood of feature requests from internal teams"'
+    industry_notes:
+    - 'health care and FinTech: a regulatory or audit request is not a yes, no or later choice. The brief needs a "mandatory" route that goes straight to the PM. Not yet researched'
+    - 'services: client-specific asks blur product and project work. Not yet researched (gap)'
+  proposed_lab:
+    goal: Extend the course agent to build a decision card for each request, then draft the reply after the PM decides
+    core_message: The agent finds the problem, the evidence and the past decision. You make the call, and the requester hears a reason, not silence
+    build_type: agent (extend the course agent built in module 1)
+    core_path_no_connectors: yes. The learner uploads a week of requests and a decision log from their own work, or the fallback case set
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Requests often hold customer names, deal values and contract dates: remove them or use the fallback case. Teaching point: the decision log keeps sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
+    platforms:
+      claude: Skill or Project with the brief, the card template and the decision log
+      chatgpt: Project with the brief and templates (Market Research ledger E9, not verified)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Read requests from a shared intake form or tracker, where the platform and company allow (not verified)
+    planted_error: 'False duplicate: two "offline mode" requests with different problems, merged and given last year''s "no"'
+    success_check: Every card has a blank decision field until the PM decides, every merge cites a log id, and the audit finds the false duplicate
+    registry_check: 'Market Research mr-wf-03 (in the Market Research spec as module 3) tags hundreds of weekly feedback items to the problem backlog and counts accounts; its decision is which problems gain weight. This row differs: discrete asks from named requesters who expect an answer; the job is past decisions, duplicates, strategy evidence and a reply; the decision is yes, no or later per request. Shared step: linking to the problem backlog. Guard: no slides on tagging or counting accounts; refer to Market Research as known. Risk: Dan may see the link step as a repeat. Focus 28.01 slide 29 ("Where drift starts: the sales request") splits a sales request across Strategy Matrix boxes; this row does not use the Strategy Matrix (Dan, 2026-11-26). AI-AGENTS names "triaging feature requests against strategy" as one example line of guarded autonomy, with no build. Not the Competitive Intel Watchdog. Not a CAW-AI agent. Link to sp-wf-08: a "yes" that changes the roadmap goes to the 08 change assessment; most requests end at no or later and never reach 08'
+    pragmatic_fit: 'Good fit to the 2.2 level descriptors and AI text, partial fit to the 2.2 competencies (see file header). Also matches 1.1 level 1 "Treats internal requests, stakeholder opinions, or sales asks as equivalent to validated market problems" and level 3 "Challenges requests that lack market evidence with constructive alternative framing". Dan''s rule holds: the agent never fills the decision'
+  evidence:
+  - id: W29
+    claim: 'Internal tools PMs always have more requests than capacity. Every internal team believes its request is the most urgent. Without a process the PM builds for whoever shouts loudest; a passing CEO comment can shift the roadmap overnight. Saying no is the most important skill for an internal tools PM; transparency is the best defense against political pressure; tell requesters when they will hear back, and "even a no is better than silence"'
+    type: claim
+    source: How to Prioritize Internal Tool Requests, IdeaPlan Editorial
+    url: https://www.ideaplan.io/guides/how-to-prioritize-internal-tool-requests
+    source_date: '2026-03-14'
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Published 2026-03-14, IdeaPlan Editorial, no named author. All quoted lines confirmed word for word. No link to ProductPlan, PLA or Pragmatic, so independent of W25 and W27. Weak publisher: no named owner, revenue from ads, affiliates and paid products, and its editorial policy says AI tools assist with research and drafting. Figures (30 to 50%, 80%) unsourced: keep off slides'
+    note: 'Opened 2026-11-26. No named author. Practitioner guide site. Its figures (30 to 50% overestimate of time saved, 80% rule of thumb) have no source: do not use them. Also proposes impact scoring: do not use that part (Dan, decision d). Internal PM source'
+  - id: W25
+    claim: 'Teams do not disagree on what they value but on how consistently they weigh it. When criteria are not formalized, decisions feel subjective and are easier to reopen. When every escalation can reset the roadmap, roadmaps become provisional and strategy becomes elastic. "Revisiting trade-offs under shifting scope" is one of the themes that take the most prioritization time'
+    type: claim
+    source: 'The reprioritization trap: 4 prioritization challenges facing product leaders, Rebecca Stewart, Product-Led Alliance'
+    url: https://www.productledalliance.com/4-prioritization-challenges-facing-product-leaders/
+    source_date: '2026-03-26'
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: reopened. Rebecca Stewart, 2026-03-26 (modified 2026-05-01). Text confirmed: criteria not formalized makes decisions easier to reopen; every escalation can reset the roadmap; ''revisiting trade-offs under shifting scope'' is in the time list. Figures 60.2%, 38.5%, 38.1% match the primary report N21 (p. 52). The page does not state the denominator. The page says nothing on past decisions being hard to find or the same request getting a different answer'
+    verifier_note: 'Copied from rerun-track-1.yaml (Verifier 2026-11-22). Reopened 2026-11-26 by the workflow researcher: 60.2% leadership escalations or new directives, 38.5% sales or customer escalations, 38.1% revenue pressure override frameworks; priority change after agreement 3.3 of 5; "every escalation feels exceptional, and exceptional cases become routine"'
+    note: 'Publisher runs the survey it reports (State of Product Management 2026). Do not use the figures on slides until the primary report is opened (track 3, N5). Same publisher as N9: count W25 and N9 as one source'
+  - id: W27
+    claim: 'Leadership escalations are the largest force that overrides prioritization. Escalations arrive without the reasoning behind current priorities, so an override is the only lever leaders hold. Documented priorities get overridden until the plan no longer matches the work'
+    type: claim
+    source: How to Handle Escalations When They Break Your Prioritization Model, Jennifer Haley, ProductPlan blog
+    url: https://www.productplan.com/blog/how-to-handle-escalations-when-they-break-your-prioritization-model
+    source_date: '2026-08-10'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: not reopened, status from 2026-11-22 stands. ProductPlan sponsors the N21 survey that PLA wrote, so W25 and W27 are commercially tied. Count them as one source family for the 2-source rule'
+    verifier_note: 'Copied from rerun-track-1.yaml. Verifier 2026-11-22: text independent of W25; figures are the same survey'
+    note: Roadmap software vendor. Use the text only. Supports the point that escalations arrive without the reasoning behind current priorities, which is what the decision card and decision log supply
+  - id: N9
+    claim: 'Planning time sinks: firefighting, unplanned escalations and sales commitments, status collection meetings, request follow-up emails, realignment meetings. Autodesk case: 70 or more request channels merged; assignment rate 6% to 100%'
+    type: claim
+    source: Why your product plans fall apart by Q2, Product-Led Alliance (sponsored by Productboard)
+    url: https://www.productledalliance.com/why-your-product-plans-fall-apart-by-q2/
+    source_date: 2026-01-07 (modified 2026-03-13)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: reopened. Dated 2026-01-07. Byline and sponsor are Productboard; PLA hosts it. Confirmed: more than 70 request channels (Autodesk), assignment 6% to 100% (vendor case, not a statistic), teams spend time ''answering what happened to my request?'', ''close the loop with stakeholders without playing email ping-pong'', sales promises, customer emergencies. Productboard is a different vendor from ProductPlan, but this run counts it with W25 (same host) to stay conservative'
+    note: 'Copied from needs.md. Sponsored, no named author. Autodesk figures are a vendor case, not audited: do not use as a statistic. Same publisher as W25'
+  - id: N12
+    claim: 'SiriusXM platform PMs treated prioritization as a product problem. Teams used different assumptions about users and data, which caused roadmap conflicts. AI synthesizes signals and surfaces past assumptions; platform leaders provide context and governance'
+    type: claim
+    source: Prioritization as Code, an AI-supported framework for platform engineering, Mina Tawadrous and Eleanor Millman (SiriusXM), DX Annual 2026
+    url: https://getdx.com/dxannual/sessions/prioritization-as-code/
+    source_date: '2026-04-16'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: not reopened, status from needs.md stands. Internal PM context only'
+    note: 'Copied from needs.md. Internal PM context only. The framework scores requests; do not use the scoring part (Dan, decision d)'
+  - id: W30
+    claim: 'In industrial manufacturing, a new part made for one customer request often becomes another code instead of a reused part, so the bill of materials becomes less modular and more fragmented. Variants get added without asking whether each still earns its place. Custom items should run through an engineered-to-order path and must not quietly reenter the standard catalog as permanent complexity'
+    type: claim
+    source: SKU Rationalization in Industrial Manufacturing, chapter 28 of The SKU Rationalization Playbook, Umbrex
+    url: https://umbrex.com/resources/the-sku-rationalization-playbook/sku-rationalization-in-industrial-manufacturing/
+    source_date: 2026-04-20 (last modified; no original date)
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Modified 2026-04-20, no publish date, no byline. All quoted text confirmed. The page does not describe how requests are decided and does not mention product managers; the burden it names falls on procurement and planning. Hardware context stays Partial with one source'
+    note: 'Consultancy playbook, no byline, no data. Hardware context only. Same publisher as W19, different chapter and topic. One source: hardware stays Partial'
+  - id: W36
+    claim: 'Product managers face a constant flood of feature requests from internal teams, and it is hard to prioritize each team''s needs in one backlog. Telling someone their idea is "added to the backlog" can sound like it is shelved for good'
+    type: claim
+    source: Managing Internal Feature Requests, Mike Savory, Pragmatic Institute
+    url: https://www.pragmaticinstitute.com/resources/articles/product/managing-internal-feature-requests
+    source_date: unknown (last modified 2025-01-09)
+    checked_on: '2026-11-26'
+    age_flag: true
+    status: verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Mike Savory, last modified 2025-01-09, no publish date. Text confirmed. Age flag stands (older than 12 months): Dan decides. Pragmatic content: not an independent outside source'
+    note: 'Dan 2026-11-26: keep for method only, not on a slide. Older than 12 months. Pragmatic content, so not an independent outside source for a Pragmatic course. No data, no text on duplicates or time cost. Talk track lead only Dan 2026-11-26: keep for method only, not on a slide'
+  - id: W37
+    claim: 'A sales request is one of many requests across the product surface; giving context back on each one is a lot of work when requests come day in and day out. Go back to the sales rep who asked, to give closure'
+    type: claim
+    source: Managing sales requests, Diana Hsieh, LogRocket blog
+    url: https://blog.logrocket.com/product-management/managing-sales-requests
+    source_date: 2023-09-12 (modified 2023-12-21)
+    checked_on: '2026-11-26'
+    age_flag: true
+    status: partly verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: opened. Diana Hsieh, 2023-09-12 (modified 2023-12-21). Confirmed: ''one of many requests that span the entire product surface area'', ''providing that additional context in response to a sales request is a lot of work'', a clear response ''gives sales reps closure''. ''Day in and day out'' not confirmed. Age flag stands: Dan decides'
+    note: 'Older than 12 months; Dan decides. Signed practitioner. No data. Not counted in sources_check. Dan 2026-11-26: dropped, do not use'
+  - id: W38
+    claim: 'Requester context often fails to reach the service queue, so someone chases it later; informal channels do not scale; stakeholders who do not see their context in outcomes stop giving it'
+    type: claim
+    source: How teams prioritize service requests and where it usually breaks down, Denitsa Stefanova, Atlassian Community
+    url: https://community.atlassian.com/forums/App-Central-articles/How-teams-prioritize-service-requests-and-where-it-usually/ba-p/3212797
+    source_date: unknown
+    checked_on: '2026-11-26'
+    age_flag: true
+    status: not verified
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: not opened. Researcher rejected it (no date). Keep out of all counts'
+    note: 'No date shown, forum post by an app vendor employee. Not counted. Recorded so the next run does not reopen it'
+  - id: W39
+    claim: 'Over 60% of prioritization frameworks are overridden by leadership escalations (250 product leaders)'
+    type: statistic
+    source: The State of Product Management Report 2026, ProductPlan (landing page)
+    url: https://www.productplan.com/ebooks/the-state-of-product-management-report-2026
+    source_date: unknown (2026 report)
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: wrong
+    verifier_note_2026_11_26: 'Verifier 2026-11-26: the landing page does say ''Over 60% of prioritization frameworks are overridden by leadership escalations'' and ''250 product leaders''. The primary report (N21, p. 52, reopened 2026-11-26) shows this wording is wrong: 60.2% of respondents selected ''leadership escalations or new directives'' in a multi-select question on factors that most often override their framework. The sample is nearly 250 product professionals (43.3% leaders), fieldwork Q4 2025. Do not cite the landing page; cite N21'
+    note: 'Same study as W25 (PLA and ProductPlan co-publish it, see W27 verifier note). Not an independent source. No publish date, method or field dates on the page; PDF not opened'
+  open_gaps:
+  - 'Primary State of Product Management 2026 report: method and field dates (track 3, N5)'
+  - 'Hardware: a second source on customer special requests and how they are decided'
+  - 'No 2026 source with time data on request handling'
+  - 'Health care, FinTech and services examples'
+  gate_1_decision: "Retain as the replacement for row 02 (Dan, 2026-11-26). Decision field stays blank for the PM; reply drafted only after the PM decides"
+  researcher_recommendation: 'Recommended replacement for sp-wf-02. Best evidence of the three, strong internal PM context, keeps part of 2.2, and the agent-manager pattern is clean (card, blank decision, reply after the PM decides). Fits the roadmap module as its upstream step or stands as its own module'
+
+- id: sp-wf-13
+  candidate: B
+  replaces: sp-wf-02 (candidate, not recommended as a row)
+  workflow: Model "fund X instead of Y" scenarios for annual or quarterly planning, and show what slips
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: '2.1 Strategy Alignment (AI text: run scenarios; skill objective: shape portfolio direction and resource allocation) and 2.4 Product Vision and Roadmap (AI text: simulate sequencing and dependency scenarios; must not turn uncertain direction into false delivery commitments). No honest 2.2 fit: the 2.2 AI text "run sensitivity tests" refers to scoring weights'
+  trigger_and_cadence: Annual planning, each quarterly reset, and when leaders ask "what if we fund X instead". Assumption, 4 to 6 times a year
+  input: The programs or bets with their capacity asks, team capacity, shared teams and resources, dependencies between programs, committed dates (customer, contract, regulatory), and the scenarios the PM names
+  output: 'A side-by-side table per PM-named scenario: capacity by team, what moves, what slips, which committed dates break, and which dependencies are hit. A flag report. No recommended scenario'
+  pm_decision_informed: Which scenario goes to leaders, and which trade-off the PM argues for
+  bottleneck:
+    description: 'Planning trade-offs live in slides, spreadsheets and a work tracker that do not connect. Each scenario means rebuilding the planning picture by hand, so a leader''s "what if" waits weeks and the decision window closes. When capacity is not modeled, each request is judged alone and "we can probably fit it in" hides what slips. Shared components and teams spread one delay across programs'
+    pdlc_stage: Focus
+    focus_area: Product Portfolio
+    sources:
+    - W31
+    - W32
+    sources_check: 'pass, weak. W31 (Gocious, signed, 2026-06-02) and W32 (fitgap, unsigned, 2026-01-19) are independent and from 2026, but both are vendor content with no data. W19 and W22 add dependency and reconciliation points. W33 (G2, 2026) is a primary statistic that trade-offs happen (52% deprioritized adjacent work), not that modeling them is a burden'
+  scores:
+    judgment: medium. Arithmetic on capacity and dates is rule-based; choosing the scenario and the argument is the PM's
+    repetition: low to medium. A few planning events a year, many scenarios each time
+    ai_candidate: 'yes, as a step. The agent computes consequences of scenarios the PM names; it never proposes a scenario'
+  split:
+    agent_does:
+    - Build the baseline from the capacity asks and team totals
+    - Apply each PM-named scenario and recompute capacity by team
+    - List what moves, what slips and which committed dates break
+    - Trace dependencies to other programs
+    - Send flags to the PM
+    pm_manages:
+      brief: 'Job, the baseline files, the list of committed dates and who committed them, dependency rules, the rule that the agent never adds or ranks scenarios, output format'
+      quality_checks:
+      - Capacity by team in each scenario adds up to the team total
+      - Each slipped item names the dependency or capacity line that caused it
+      - Each committed date is marked kept or broken in every scenario
+      handoff_rules:
+      - A scenario that breaks a customer, contract or regulatory date
+      - A shared team above its capacity in any scenario
+      - A dependency with no owner or no date
+      audit: 'For 1 scenario, recompute one shared team''s capacity and one slipped item by hand'
+    pm_decides:
+    - Which scenarios to model
+    - Which trade-off to argue for, and what goes to leaders
+    - What to tell teams whose work slips
+    ai_error_to_catch: 'Freed capacity that is not free. Stopping program Y frees its team on paper, but Y holds a contract date for one customer. The agent marks the date "kept" because the date sits in the contract list, not in the program file. Capacity adds up and each slip has a cause, so the checks pass. The audit finds the broken contract date'
+  contexts:
+    hardware: 'Yes, partial. W31 (Gocious, 2026, manufacturing) describes scenario comparison rebuilt by hand, tooling already committed, supplier minimum order quantities, and a shared feature across three product lines that spreads cost exposure. W19 (Umbrex) names shared components, test facilities and suppliers. Both vendor or consultancy'
+    internal_pm: 'Partial. W1: Expedia quarterly priority reviews took weeks and outreach to 50 or more PMs (anecdote). No source on internal scenario modeling (gap)'
+    industry_notes:
+    - 'health care and FinTech: regulatory dates are fixed commitments in every scenario. Not yet researched'
+  proposed_lab:
+    goal: Extend the course agent to compute PM-named funding scenarios and show what slips
+    core_message: You name the scenarios. The agent shows the cost of each one. Leaders see the trade-off, not a recommendation
+    build_type: 'agent step (recommended as a stretch step in the sp-wf-09 lab, not a lab of its own)'
+    core_path_no_connectors: yes. The learner uploads the capacity and dependency files from the fallback case
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Budget and headcount files can be confidential: use the fallback case if in doubt'
+    platforms:
+      claude: Skill or Project with the brief and the capacity templates
+      chatgpt: Project with the brief and templates. Numeric steps use file output with formulas (Gate 1 decision f, Plus minimum)
+      copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
+      gemini: Gemini skill with the brief and templates (Market Research ledger E8)
+    stretch: Pull capacity from a connected planning tool, where the platform allows (not verified)
+    planted_error: A contract date held only in the contract list, marked "kept" when its program stops
+    success_check: Each scenario shows capacity by team and kept or broken dates, and the audit finds the broken contract date
+    registry_check: 'High overlap. sp-wf-09 already totals capacity by team, lists conflicts and shared dependencies, and its planted error is a shared team counted twice. sp-wf-08 already finds what a change displaces and which dependencies it hits. Focus 28.01 has a capacity slide ("Don''t double or triple book your team") with an AI use on estimate accuracy. Build 28.01 has estimates from past performance. A separate row would reteach the same checks with the same data. Recommend: one stretch step in 09 ("compare 2 PM-named scenarios"). No workshop overlap'
+    pragmatic_fit: 'Good fit to 2.1 and 2.4 AI text ("run scenarios", "simulate sequencing and dependency scenarios"). No fit to 2.2. Risk to Dan''s rule is low if the PM names every scenario'
+  evidence:
+  - id: W31
+    claim: 'Manufacturing portfolio planning runs on PowerPoint for the story, Excel for the model and a project tool for execution, and none of them holds the links. Comparing scenarios means rebuilding the planning picture by hand each time; a leader''s "what if we delayed the launch" can wait two weeks, and by then the decision window has closed. A feature shared across three product lines means a delay in one creates cost exposure in two others. Committed tooling and supplier minimum order quantities make delays costly'
+    type: claim
+    source: How Scenario Planning Improves Product Portfolio Decisions in Manufacturing, Simon Leyland, Gocious
+    url: https://gocious.com/blog/how-scenario-planning-improves-product-portfolio-decisions-in-manufacturing
+    source_date: '2026-06-02'
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: not verified
+    note: 'Hardware product management software vendor (same publisher as W22, different author). No data; "two weeks" is illustrative'
+  - id: W32
+    claim: 'Annual planning often produces a static artifact (a slide, a spreadsheet, a memo). When capacity is not modeled, every new request is judged alone, and "we can probably fit it in" hides what slips and what risk grows. Without a fixed checkpoint, decisions get made in side messages and teams learn of changes late'
+    type: claim
+    source: Align annual planning with rolling reprioritization to absorb mid-year shocks, fitgap
+    url: https://us.fitgap.com/stack-guides/align-annual-planning-with-rolling-reprioritization-to-absorb-mid-year-shocks
+    source_date: '2026-01-19'
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: not verified
+    note: 'Unsigned vendor guide (same publisher as W4, different topic). No data. Also supports sp-wf-12 (requests judged alone)'
+  - id: W33
+    claim: '52% of respondents said adjacent work was deprioritized for AI; of those, 48% delayed roadmap items, features or product lines. 31% named budget, profit or staffing reallocation as the source of trade-offs; 18% deferred core non-AI work. The report gives two different figures for full roadmap rewrites (40% and 30%)'
+    type: statistic
+    source: 'AI Roadmaps Under Pressure: Speed, Tradeoffs, and Control, G2 Research'
+    url: https://research-hub.g2.com/ai-roadmaps-under-pressure-speed-tradeoffs-control
+    source_date: 2026-06-12 (updated 2026-09-23)
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: not verified
+    note: 'Primary study, 246 in-depth interviews across software, financial services, health care, retail and manufacturing. Field dates not stated. Internal inconsistency on rewrite figures: do not use those. Shows trade-offs happen; does not measure the burden of modeling them'
+  - id: W19
+    claim: 'A roadmap that is not actively governed quickly becomes a historical record. Material changes need a controlled change process, a versioned roadmap and a decision log. Hardware: manufacturing readiness, design freeze, shared components, test facilities and suppliers spread delays across programs'
+    type: claim
+    source: Operating and Refreshing the Roadmap, chapter 8 of The Product Development Roadmap Playbook, Umbrex
+    url: https://umbrex.com/resources/rd-playbooks/the-product-development-roadmap-playbook/operating-and-refreshing-the-roadmap/
+    source_date: 2026-09-20 (last modified; no original date)
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: Copied from workflows.yaml. Consultancy playbook, no byline, no data
+  - id: W22
+    claim: 'Portfolio and roadmap reviews run on decks and spreadsheets that are already stale; meetings become data reconciliation, not decisions; hardware runs on stage gates of months while software ships in weeks, so dependencies stay hidden'
+    type: claim
+    source: Why product portfolio reviews keep tracking sideways, Maziar Adl, Gocious
+    url: https://gocious.com/blog/why-product-portfolio-reviews-keep-tracking-sideways
+    source_date: '2026-05-05'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: 'Copied from workflows.yaml. Same publisher as W31: count as one source with W31'
+  - id: W1
+    claim: '72% of 308 senior leaders say competing priorities chronically overstretch key teams. Expedia quarterly priority reviews took weeks of preparation and outreach to 50 or more PMs'
+    type: statistic
+    source: 'Shift happens: Finding and fixing the gap between strategic intent and actual work, Sapphire Reels, Atlassian blog'
+    url: https://www.atlassian.com/blog/leadership/gap-between-intent-and-work
+    source_date: '2026-09-28'
+    checked_on: '2026-11-22'
+    age_flag: false
+    status: verified
+    note: 'Copied from workflows.yaml (shortened claim). Vendor study; primary is W2. Expedia item is an anecdote'
+  open_gaps:
+  - Internal PM source on scenario modeling
+  - 'A non-vendor source on the time cost of planning scenarios'
+  gate_1_decision: "Not a row. Possible stretch step in 09 (Dan accepted A, 2026-11-26)"
+  researcher_recommendation: 'Do not add as a row. Add one stretch step to the sp-wf-09 lab: compare 2 PM-named scenarios and mark kept or broken dates. Reason: same data, checks and planted-error family as 09 and 08'
+
+- id: sp-wf-14
+  candidate: C
+  replaces: sp-wf-02 (candidate, rejected)
+  workflow: When a competitor ships or changes price, check which problem backlog items, bets and business case assumptions are affected
+  topic_area: Strategy, roadmaps, planning
+  capability_skill: '2.2 Opportunity Prioritization (primary box Competitive Landscape) and 2.3 Business Case Development (the assumption register in sp-wf-05 is the closer home)'
+  trigger_and_cadence: Each material competitor launch or price change. Assumption, a few times a quarter
+  input: The competitor event with sources, the problem backlog, the current bets, and the business case assumption register
+  output: 'An impact note: which backlog items, bets and assumptions the event touches, with the evidence, and a flag report'
+  pm_decision_informed: Whether any bet, assumption or plan needs a new look
+  bottleneck:
+    description: 'Teams react to competitor news one item at a time and spin without a filter. Connecting competitive insight to decisions and measurable impact is a known hurdle for intelligence teams. No 2026 source found that describes the product-side burden of tracing a competitor move to backlog items or business case assumptions'
+    pdlc_stage: Market
+    focus_area: Competitive Landscape
+    sources:
+    - W34
+    sources_check: 'fail. W34 (Forrester, signed, 2026-01-23, 21 organizations) says connecting intelligence to measurable impact is one of the field''s biggest hurdles, from the intelligence team side. W35 (Crayon, 2026) is about sales readiness, not product. The CAW-AI deck states the burden ("most teams react to competitor news one item at a time"), but it is Dan''s own workshop, not an independent source'
+  scores:
+    judgment: high. Reading what a competitor move means for a bet is close to strategy
+    repetition: low to medium. Event-driven
+    ai_candidate: 'partly. Tracing is rule-based; meaning is strategic'
+  split:
+    agent_does:
+    - Separate what shipped from what was only announced
+    - List backlog items, bets and assumptions that name the same problem or segment
+    - Quote the assumption text the event touches
+    - Send flags to the PM
+    pm_manages:
+      brief: 'Job, the event sources allowed, the assumption register, the rule that the agent never rates threat or recommends a response'
+      quality_checks:
+      - Each link quotes the assumption or backlog text
+      - Each event is marked shipped or announced, with its source
+      handoff_rules:
+      - Any event that touches a business case assumption
+      audit: Trace 2 links by hand to the source
+    pm_decides:
+    - Whether a bet or assumption changes
+    - Whether to respond at all
+    ai_error_to_catch: 'Announced read as shipped: a price page draft reported in the press is linked as a live price change. Same error family as the CAW-AI threat test (shipped, announced with a date, talk with no date)'
+  contexts:
+    hardware: gap. Not searched in this run (budget spent on A and B)
+    internal_pm: 'gap. For internal products the "competitor" is a buy option or a shadow tool; this belongs to the Buy, Build or Partner row sp-wf-06 (deferred)'
+    industry_notes: []
+  proposed_lab:
+    goal: Not proposed
+    core_message: Not proposed
+    build_type: none
+    core_path_no_connectors: not assessed
+    data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved'
+    platforms:
+      claude: not assessed
+      chatgpt: not assessed
+      copilot: not assessed
+      gemini: not assessed
+    stretch: 'Option for Dan: add "a competitor event" as one trigger type for the sp-wf-05 assumption register red-team, with no competitive watch'
+    planted_error: not proposed
+    success_check: not proposed
+    registry_check: 'Reject under house rule 11. CAW-AI module 3 (competitive signal watch, weekly) tests each competitor item against the company''s three goals and sorts it into noise, watch, attention or critical, then the learner decides to act. AI-AGENTS runs the Competitive Intel Watchdog (assess request, strategy score, severity, log, Slack update). This row is the same job with a different target list (backlog, bets, assumptions). Focus 28.01 has a one-pass AI competitive landscape. Also close to Dan''s strategy rule: deciding what a competitor move means for a bet is strategy work'
+    pragmatic_fit: 'Best box fit for 2.2 (primary box Competitive Landscape), but blocked by overlap and evidence'
+  evidence:
+  - id: W34
+    claim: 'Product innovation is one of the top use cases for market and competitive intelligence teams. Connecting insights to measurable impact remains one of the field''s biggest hurdles; most teams track deliverables such as product roadmaps, and just over one third track win rates. 13 of 21 organizations have five or fewer intelligence staff'
+    type: claim
+    source: 'Five findings about today''s market and competitive intelligence programs, Beth Caplow, Forrester blog'
+    url: https://www.forrester.com/blogs/five-findings-about-todays-market-and-competitive-intelligence-programs
+    source_date: 2026-01-23 (modified 2026-01-28)
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: not verified
+    note: 'Analyst firm, signed. Sample of 21 organizations, field dates not stated: do not use the counts as statistics. Intelligence-team view, not product team burden'
+  - id: W35
+    claim: 'Two thirds of competitive intelligence teams run on a dedicated platform; the gap is between how competitive selling has become and how ready sales reps are'
+    type: statistic
+    source: '2026 State of Competitive Intelligence: What Sets the Best Programs Apart, Shannon De Marco, Crayon blog'
+    url: https://www.crayon.co/blog/state-of-competitive-intelligence-2026
+    source_date: '2026-07-08'
+    checked_on: '2026-11-26'
+    age_flag: false
+    status: not verified
+    note: 'CI software vendor reporting its own survey of hundreds of CI and revenue leaders. Sales focus. No product-side finding. Not counted'
+  open_gaps:
+  - 'Product-side burden source for competitor impact on backlog and business case'
+  - Hardware and internal PM examples
+  gate_1_decision: "Reject (Dan accepted A, 2026-11-26). Repeats CAW-AI module 3"
+  researcher_recommendation: 'Reject. Fails the 2-source bottleneck rule and repeats CAW-AI module 3 and the AI-AGENTS Watchdog'

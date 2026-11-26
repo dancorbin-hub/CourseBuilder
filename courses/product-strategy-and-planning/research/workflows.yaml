@@ -122,9 +122,9 @@
   - Primary reports for W2 (date, method) and W3
   - Internal PM source
   - Hardware source for drift checks
-  gate_1_decision: ''
+  gate_1_decision: "Fold into 09 as a strategy consistency check (Dan, 2026-11-26, final). The agent checks that planned work and spend stay consistent with the stated strategy and OKRs. No Strategy Matrix inputs, boxes or slides, and no Focus framing"
 - id: sp-wf-02
-  workflow: Re-score the opportunity backlog each intake cycle, with sensitivity and consistency checks
+  workflow: Re-score the problem backlog each intake cycle, with sensitivity and consistency checks
   topic_area: Strategy, roadmaps, planning
   capability_skill: 2.2 Opportunity Prioritization (competencies 2.2C Weighting and Priority Logic, 2.2D Calibration and Consistency)
   trigger_and_cadence: Each intake or planning cycle, and when new evidence arrives for a scored item. Assumption, monthly or quarterly
@@ -227,7 +227,7 @@
   open_gaps:
   - A dated, signed source with data on scoring inconsistency
   - Hardware and internal PM sources
-  gate_1_decision: ''
+  gate_1_decision: "Drop (Dan, 2026-11-26). Scoring attributes and rescoring are covered in Focus; do not teach or mention them again. Replaced by sp-wf-12, request decision and response (Dan, 2026-11-26)"
 - id: sp-wf-03
   origin: mr-wf-06
   workflow: Build and refresh a sourced market size and segment evidence model
@@ -344,7 +344,7 @@
   open_gaps:
   - Hardware and internal PM sizing sources
   - A non-vendor 2026 source
-  gate_1_decision: ''
+  gate_1_decision: "Fold into 05 (Dan, decision a, 2026-11-26). Size model is the market input of the business case"
 - id: sp-wf-04
   origin: mr-wf-08
   workflow: Turn each round of concept or prototype tests into a result per hypothesis
@@ -447,7 +447,7 @@
   - A concept test specific 2026 source
   - Hardware and internal PM sources
   - Scope decision (Design course vs this course)
-  gate_1_decision: ''
+  gate_1_decision: "Out of scope as a lab (Dan, decision a, 2026-11-26). Denominator check becomes one quality check in 05 when evidence is a concept test"
 - id: sp-wf-05
   workflow: Keep the business case assumption register current and red-team it before each decision point
   topic_area: Strategy, roadmaps, planning
@@ -663,7 +663,7 @@
   open_gaps:
   - Hardware source
   - Second source on vendor change burden
-  gate_1_decision: ''
+  gate_1_decision: "Defer (Dan, decision a, 2026-11-26). Stretch step in module 3 only if time allows at Gate 2"
 - id: sp-wf-07
   workflow: Refresh roadmap themes each quarter and trace every item to a validated problem and strategy
   topic_area: Strategy, roadmaps, planning
@@ -764,7 +764,7 @@
   open_gaps:
   - Second 2026 source on roadmap traceability burden
   - Internal PM 2026 source
-  gate_1_decision: ''
+  gate_1_decision: "One roadmap module with 08 (Dan, decision a, 2026-11-26): refresh the trace, then assess a change"
 - id: sp-wf-08
   workflow: Assess each roadmap change request and send consistent trade-off notes to each audience
   topic_area: Strategy, roadmaps, planning
@@ -866,7 +866,7 @@
   open_gaps:
   - Primary survey behind W20 figures
   - Internal PM source
-  gate_1_decision: ''
+  gate_1_decision: "One roadmap module with 07 (Dan, decision a, 2026-11-26): refresh the trace, then assess a change"
 - id: sp-wf-09
   workflow: Assemble the quarterly portfolio review and planning input pack
   topic_area: Strategy, roadmaps, planning

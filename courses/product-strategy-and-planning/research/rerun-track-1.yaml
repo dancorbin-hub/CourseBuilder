@@ -188,4 +188,4 @@ new_rows:
   - No 2026 data on how long a hardware gate package review takes, or how often commits go ahead on open assumptions
   - No product team source for internal PM (only public sector W23)
   - Overlap with sp-wf-05 needs a Dan decision (separate row, hardware variant, or merge)
-  gate_1_decision: ''
+  gate_1_decision: "Hardware path of 05 (Dan, decision a, 2026-11-26)"

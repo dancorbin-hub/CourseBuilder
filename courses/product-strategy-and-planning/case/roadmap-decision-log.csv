@@ -1,0 +1,7 @@
+log_id,date,change,decider_role,reason,release_plan_effect
+RL-2026-01,2026-03-12,Move audit report v2 into R-2027.1,Head of Product,Pharmacy and lab audit demand. Fits KR1.2.,RP-02 added
+RL-2026-02,2026-05-26,Add install checklist v2 to R-2027.1,Head of Product,Install visits are the top cost. Fits KR2.1.,RP-03 added
+RL-2026-03,2026-06-30,Start Probe X limited release on bridge tooling,Head of Product,"Learn from 3,000 sites before the hard tooling commit.",None
+RL-2026-04,2026-08-12,Hub cellular fallback moved to 2027 H2,"PM, Probe and Hub",Firmware team has no room before Probe X launch.,None
+RL-2026-05,2026-09-10,Calibration certificate export set to Later. See DL-2026-09,"PM, Larkspan Cloud",One chain asked. Audit report v2 covers most of the need.,None
+RL-2026-06,2026-10-14,Guided hub pairing moved from R-2027.1 to R-2027.2,"Head of Product, Delivery lead",Firmware team capacity. Both agreed.,RP-05 moved to 2027-05-17
