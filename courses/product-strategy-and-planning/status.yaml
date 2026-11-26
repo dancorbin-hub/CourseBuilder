@@ -5,7 +5,7 @@ title: Advanced AI for Product Strategy and Planning
 stage: 1              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 delivered_by: Dan (decision 45). Talk track must work for a part-time instructor later
 gates:
-  worked_example_row: { status: borrowed, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp", note: "No course-specific row. Stage 1 uses the approved Market Research row mr-wf-01 (v3) as the depth and format model. Dan to confirm at Gate 1" }
+  worked_example_row: { status: draft, approved_on: null, doc: null, file: "research/worked-example-row.yaml", note: "Course row sp-wf-09 v1 (Dan picked it at Gate 1, decision h, 2026-11-26). Draft for Dan's approval. Format model stays mr-wf-01 (v3)" }
   gate_1_research:    { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk" }
   gate_2_spec:        { status: not_started, approved_on: null, doc: null, pragmatic_review: null }
   gate_3_modules:     []

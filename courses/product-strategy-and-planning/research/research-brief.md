@@ -23,7 +23,7 @@ The critic's view and this brief agree on the set. Dan decides each row.
 | --- | --- | --- |
 | sp-wf-09 Quarterly portfolio review pack | Retain. Lead row of module 1, with 01 folded in | Passes on 2 independent 2026 sources (W1, W22). Hardware detail (W19, W22). Focus 28.01 does not cover portfolio packs. Fix the planted error so the agent's own hand-off rule does not catch it (critic) |
 | sp-wf-01 Quarterly strategy drift check | Fold into 09 | Same data and cadence as 09 (critic). Close to a Focus 28.01 demo agent (PS-01). Drift by Strategy Matrix box becomes one section of the 09 pack (PS-16) |
-| sp-wf-02 Rescore the opportunity backlog | Retain as its own module | Only skill 2.2 row. Passes after the rerun on W25 and W26 (both signed, 2026, vendor or vendor-run). Internal PM context N12. Planted error lives in the data |
+| sp-wf-02 Rescore the problem backlog | Retain as its own module | Only skill 2.2 row. Passes after the rerun on W25 and W26 (both signed, 2026, vendor or vendor-run). Internal PM context N12. Planted error lives in the data |
 | sp-wf-05 Assumption register and red-team | Retain with a condition. Lead row of module 3 | Exact fit with the 2.3 AI text. Bottleneck partly passes: W15 is from 2024 (age flag) and W14 is not a PM source. Dan decides if W15 stays |
 | sp-wf-03 Market size model (from mr-wf-06) | Fold into 05 | The size model is the market input of the business case (critic). Use the 4 Focus bubbles (PS-06) |
 | sp-wf-11 Hardware gate package check (new) | Fold into 05 as its hardware path | Same agent job as 05: check the case before a commit point. Partly passes (N10, N11). Hardware is a priority context |
