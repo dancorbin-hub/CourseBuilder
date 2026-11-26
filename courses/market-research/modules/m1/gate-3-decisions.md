@@ -25,3 +25,5 @@ Dan answered in the Gate 3 doc on 2026-11-26: "I agree with all of these" (the r
 | D19 | Platform matrix append | A: accept, new fingerprint | status.yaml fingerprint updated |
 
 Module 1 stays in review until Dan's card test on 4 platforms and his approval.
+
+Gate 3 outcome (2026-11-26): Dan approved module 1 content before the card test (decision card). Card test stays open.
