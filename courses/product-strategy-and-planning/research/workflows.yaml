@@ -124,7 +124,7 @@
   - Hardware source for drift checks
   gate_1_decision: ''
 - id: sp-wf-02
-  workflow: Re-score the opportunity backlog each intake cycle, with sensitivity and consistency checks
+  workflow: Re-score the problem backlog each intake cycle, with sensitivity and consistency checks
   topic_area: Strategy, roadmaps, planning
   capability_skill: 2.2 Opportunity Prioritization (competencies 2.2C Weighting and Priority Logic, 2.2D Calibration and Consistency)
   trigger_and_cadence: Each intake or planning cycle, and when new evidence arrives for a scored item. Assumption, monthly or quarterly
