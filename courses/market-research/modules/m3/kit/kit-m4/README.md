@@ -11,7 +11,7 @@ Not loaded into the agent. This file is for you.
 | `brief-v4.md` | Core brief with the lab 1, lab 2 and lab 3 rules in "My rules" | Instructions | 3,253 |
 | `job-card-problem-backlog.md` | Job 1: the problem backlog job (no change) | Knowledge | 1,194 |
 | `code-book.md` | Codes, segments, personas and output formats (no change) | Knowledge | 2,791 |
-| `problem-backlog.md` | The log after module 3: interviews, feedback weeks 1 and 2, P09 and P10, the case PM's order and flag decisions | Knowledge | 15,176 |
+| `problem-backlog.md` | The log after module 3: interviews, feedback weeks 1 and 2, P09 and P10, the case PM's order and flag decisions | Knowledge | 15,194 |
 | `job-card-win-loss.md` | Job 2: the win/loss job (no change) | Knowledge | 1,483 |
 | `driver-code-book.md` | Drivers, alternatives, deal source labels and formats (no change) | Knowledge | 2,284 |
 | `driver-log.md` | The log after the Q2 batch (no change in module 3) | Knowledge | 5,047 |
@@ -23,6 +23,8 @@ Not loaded into the agent. This file is for you.
 Each loaded file, and the fix rules handout, has a `.txt` copy with the same text. The README and the fallback text have none. Use the `.txt` copies in Copilot.
 
 Knowledge files in the agent after module 3: 8 (3 job cards, code book, driver code book, tag list, 2 logs). Course budget 13.
+
+The tag list and the backlog hold the case PM's lab 3 decision: P10 added. Your own lab 3 backlog has no P10 row unless you added it. On your own work, add your own new tag the same way.
 
 Module 4 adds the alternatives map job card and the map. Module 4 adds its own Copilot fallback text.
 

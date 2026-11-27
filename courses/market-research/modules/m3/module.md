@@ -1,6 +1,6 @@
 # Module 3: The weekly run: read flags, not every item
 
-Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Case year is 2027 (`case/year-shift-map.md`). Real source and vendor dates stay 2026. Built from `spec.yaml` (Gate 2, approved 2026-11-26; module 3 entry, `stretch_scope`, `platform_matrix_summary.stretch_verification`, `gate_2_proof_patterns` P2), `outline/development-brief.md`, `outline/gate-2-decisions.md`, the case files, `research/stretch-verification-2026-11.md`, the approved module 1 (`modules/m1/`, Gate 3 decisions D1, D7, D11, D12 and D13, Gate 4 decision G4-1) and the module 2 draft in review (`modules/m2/`, decisions in its section 1 and `revision-notes.md`). Starts from `modules/m2/kit/kit-m3/`.
+Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Revised once on 2026-11-27 after the consistency and verifier reports (`revision-notes.md`). Case year is 2027 (`case/year-shift-map.md`). Real source and vendor dates stay 2026. Built from `spec.yaml` (Gate 2, approved 2026-11-26; module 3 entry, `stretch_scope`, `platform_matrix_summary.stretch_verification`, `gate_2_proof_patterns` P2), `outline/development-brief.md`, `outline/gate-2-decisions.md`, the case files, `research/stretch-verification-2026-11.md`, the approved module 1 (`modules/m1/`, Gate 3 decisions D1, D7, D11, D12 and D13, Gate 4 decision G4-1) and the module 2 draft in review (`modules/m2/`, decisions in its section 1 and `revision-notes.md`). Starts from `modules/m2/kit/kit-m3/`.
 
 ## 1. Summary
 
@@ -33,39 +33,40 @@ Full day and half days use the same 60 minutes (spec module 3 has no `half_day` 
 
 | # | Decision | Why |
 | --- | --- | --- |
-| B1 | The debrief rerun (3 minutes) runs in a new chat with both exports: "In a new chat, send both exports with the prompt 'Run the weekly feedback job'." The brief runs batches in date order, so week 1 runs first and week 2 compares with it | Same reason as module 1 D1 (approved) and module 2 B1: a new chat is the only way to be sure the tuned brief applies on all 4 platforms. See decision D2 |
+| B1 | The debrief rerun (3 minutes) runs in a new chat with both exports: "In a new chat, send both exports with the prompt 'Run the weekly feedback job'." The brief runs batches in date order, so week 1 runs first and week 2 compares with it | Same reason as module 1 D1 (approved) and module 2 B1: a new chat is the only way to be sure the tuned brief applies on all 4 platforms. See decision D3 |
 | B2 | The lab brief is 2 short slides. 3.10: goal, 6 key actions and a pointer to the step card in the workbook. 3.11: done when, hint and data safety box. Full steps only on the step cards | Dan's lab brief slide rule (2026-11-27). Same pattern as module 2 B2 |
 | B3 | "Which problems move in the backlog" has no minutes in the spec debrief. It is asked on 3.13 while the rerun runs, and recorded in section 4 of the record sheet | The spec debrief minutes add up to 8 without it. The PM decision (spec `pm_decision`) still gets practice. Same pattern as module 2 B3 |
-| B4 | The check sample result on 3.15 comes from a tuned instructor project built from `kit-m4` before class. The live demo runs on brief v3, which has no "no fit" rule, so its check sample result would show the error | The spec says "the m3-check-sample.md result from the demo run". A result from the untuned brief cannot show the pass condition. See decision D3 |
-| B5 | No audit hint beyond the spec step. The record sheet asks for 10 item IDs at random from the week 2 run, and every item in the "no fit" group. Its checklist is neutral ("The tag is right for the item") | Module 1 D11: the audit hint was for lab 1 only. Warning level for lab 3 is "hint". See decision D11 |
-| B6 | The survey wave stretch (row 04 fold) is on all 4 cards, but only after step 6 | The survey CSV column names say "inspector remote access". Before the audit, the stretch file would give the planted error away. See decision D4 |
-| B7 | Schedule stretch: Claude card only (Cowork scheduled task, cl-sc-07), marked "not yet tested by the course team", and added to the card test. ChatGPT card: "The schedule stretch step is not available on this platform in this course" plus the reason (cg-06). Copilot and Gemini cards: the standard `stretch_scope` line | Dan, 2026-11-27, and `research/stretch-verification-2026-11.md`. See decisions D1 and D9 |
+| B4 | The check sample result on 3.15 comes from a tuned instructor project built from `kit-m4` before class. The live demo runs on brief v3, which has no "no fit" rule, so its check sample result would show the error | The spec says "the m3-check-sample.md result from the demo run". A result from the untuned brief cannot show the pass condition. See decision D4 |
+| B5 | No audit hint beyond the spec step. The record sheet asks for 10 item IDs at random from the week 2 run, and every item in the "no fit" group. Its checklist is neutral ("The tag is right for the item") | Module 1 D11: the audit hint was for lab 1 only. Warning level for lab 3 is "hint". Slide 3.7 does not say where new things show up (consistency finding 10). See decision D13 |
+| B6 | The survey wave stretch (row 04 fold) is on all 4 cards, but only after step 6 | The survey CSV column names say "inspector remote access". Before the audit, the stretch file would give the planted error away. See decision D6 |
+| B7 | Schedule stretch: Claude card only (Cowork scheduled task, cl-sc-07), marked "not yet tested by the course team", and added to the card test. ChatGPT card: "The schedule stretch step is not available on this platform in this course" plus the reason (cg-06). Copilot and Gemini cards: the standard `stretch_scope` line | Dan, 2026-11-27, and `research/stretch-verification-2026-11.md`. The Claude steps follow the verifier rewrite (6 steps, 1 action each), with the **Scheduled** sidebar path as a fallback. See decisions D1 and D11 |
 | B8 | Slide 3.3 uses a general example ("one account, five tickets"), not the case account A-05 | A-05 sends 5 alert items in week 2. It is a secondary check in the debrief (`planted-errors.md`). The rule is taught; the case example stays for the reveal |
-| B9 | On-slide bottleneck line on 3.2 uses only the claim with 2 sources: "Tagging by hand is slow and inconsistent" (W4, W5). "Spread across many tools" (W4 only) and "label meanings drift" (W5 only) are in the talk track, attributed to the vendor | Research rule 2: a factual claim needs 2 independent sources. See decision D5 |
-| B10 | The job card keeps the tag list's table name "What moved" when it points to the format. Learner-facing text says "what changed summary", as the spec does | `case/m3-tag-list.md` is fingerprinted and says "What moved". The spec and expected results say "what changed". See decision D8 |
-| B11 | kit-m4 `tag-list.md` is version 2: it adds P10 Inspector remote access, with a definition written from the case flag entry. The case file `m3-tag-list.md` does not change | `case/planted-errors.md` gives the PM decision "Add P10 to the backlog and the tag list". `case/expected-results.md` names P10 "Inspector remote access". See decision D6 |
-| B12 | kit-m4 `problem-backlog.md` uses the code book format with the facts of `m4-evidence-pack.md` Part 4. It adds the week 1 counts, the agent's proposed ranking and the case PM's lab 3 flag decisions. Flags with no case PM decision (F-1124, F-1232) say "Your decision" | `case/expected-results.md` kit table: kit-m4 "Problem backlog as in Part 4". Same approach as module 2 D4 and D6. See decision D7 |
-| B13 | The Copilot no-license fallback holds brief v3 with the kit's lab 1 and lab 2 rules. Total 6,856 characters | Spec P2 runs the fallback for module 3. Under the 7,800 course budget and the 8,000 limit (mb-01) |
+| B9 | On-slide bottleneck line on 3.2 uses only the claim with 2 sources: "Tagging by hand is slow and inconsistent" (W4, W5). "Spread across many tools" (W4 only) and "label meanings drift" (W5 only) are in the talk track, attributed to the vendor | Research rule 2: a factual claim needs 2 independent sources. See decision D7 |
+| B10 | The job card keeps the tag list's table name "What moved" when it points to the format. Learner-facing text says "what changed summary", as the spec does | `case/m3-tag-list.md` is fingerprinted and says "What moved". The spec and expected results say "what changed". See decision D10 |
+| B11 | kit-m4 `tag-list.md` is version 2: it adds P10 Inspector remote access, with a definition written from the case flag entry. The case file `m3-tag-list.md` does not change | `case/planted-errors.md` gives the PM decision "Add P10 to the backlog and the tag list". `case/expected-results.md` names P10 "Inspector remote access". The kit-m4 README and slide 3.17 say kit-m4 holds this decision. See decisions D2 and D8 |
+| B12 | kit-m4 `problem-backlog.md` uses the code book format with the facts of `m4-evidence-pack.md` Part 4. It adds the week 1 counts, the agent's proposed ranking and the case PM's lab 3 flag decisions. Flags with no case PM decision (F-1124, F-1232) say "Your decision" | `case/expected-results.md` kit table: kit-m4 "Problem backlog as in Part 4". Same approach as module 2 D4 and D6. See decision D9 |
+| B13 | The Copilot no-license fallback holds brief v3 with the kit's lab 1 and lab 2 rules. Total 6,856 characters | Spec P2 runs the fallback for module 3. Under the 7,800 course budget and the 8,000 limit (mb-01). The no-license box sends the backlog in its own message at step 2 and again at the debrief rerun. See decision D5 |
 
 ### Decisions for Dan
 
-Open decisions for the Gate 3 doc, most important first. One line each, with a recommendation.
+Open decisions for the Gate 3 doc, most important first. One line each, with a recommendation. Revised once on 2026-11-27 (`revision-notes.md` maps the old numbers).
 
 | # | Decision | Recommended |
 | --- | --- | --- |
-| D1 | Claude schedule stretch ships on the card before your hands-on test, marked "not yet tested by the course team"? B: hold it off the card until your test passes | A: keep, marked, with the card test rows. If your test fails, the Claude card uses the standard line |
-| D2 | Debrief rerun in a new chat with both weeks (3 minutes), as module 1 D1. B: same chat, week 2 only (faster, but the new rule may not apply) | A |
-| D3 | Check sample on 3.15 shown from a tuned project built from `kit-m4` before class, not from the live demo run (brief v3 cannot pass). Accept? | A: accept. Spec wording change listed below |
-| D4 | Survey wave stretch only after step 6, because its column names give away the new problem. Accept? | A: accept |
-| D5 | Slide 3.2 shows only "Tagging by hand is slow and inconsistent" (W4, W5). "Spread across many tools" and "tags drift" stay in the talk track (1 source each). Accept? | A: accept |
-| D6 | kit-m4 tag list v2 adds P10 with a builder-written definition. B: keep the tag list at v1; P10 is in the backlog only | A |
-| D7 | Lab 3 flags with no case PM decision (F-1124 invoice currency, F-1232 Spanish app) say "Your decision" in the kit-m4 backlog. Keep, or you supply them? | A: keep |
-| D8 | The tag list says "What moved"; the spec says "what changed". Keep both (table name and learner text)? B: case builder renames the tag list heading (new fingerprint) | A |
-| D9 | ChatGPT card says "The schedule stretch step is not available on this platform in this course", with the reason. Not the standard line, because module 4 may give ChatGPT the second-agent stretch. Accept? | A |
-| D10 | Story slot on 3.4 (internal platform team, loudest Slack channel; W18, one source). Supply one real Pragmatic story, or use the skip path? | A if you have one, else skip path |
-| D11 | The card and record sheet say the audit uses the week 2 run. Too much of a hint? | A: keep. The spec success check is about the week 2 summary |
-| D12 | Card pass condition says "run this after class", not "in the debrief" (spec `check_sample`). Accept? | A: accept |
-| D13 | Copilot no-license: the backlog (10,004 characters) and the week 1 export (3,872) go in chat together. Paste size is not verified (G2-PF-03). Card says "upload, or paste the text"; proof P2 tests it | A: card test decides. If paste fails, paste the backlog first in its own message |
+| D1 | Claude schedule stretch ships before your hands-on test, marked "not yet tested". If your test fails, option B removes it from 5 places: the Claude card stretch, slide 3.9 on-slide text and talk track, section 7 "Steps per platform", and the 2 Claude stretch rows in section 9 | A: keep, marked. Your test uses the card test rows (incl. new Claude experience and cloud move) |
+| D2 | After lab 3 the learner's backlog and tag list have no P10; kit-m4 has it (the case PM's decision). A: keep; the kit-m4 README and the 3.17 talk track say so (applied). B: the log save card also loads `kit-m4/tag-list` on the case path (changes the learner path) | A. The module 5 builder checks if lab 5 needs P10 in the learner's own backlog |
+| D3 | Debrief rerun in a new chat with both weeks (3 minutes). B: same chat, week 2 only. The card test times it | A. Switch to B if the rerun runs over 3 minutes on 2 or more platforms |
+| D4 | Check sample on 3.15 shown from a tuned project built from `kit-m4` before class (brief v3 in the live demo cannot pass) | A: accept |
+| D5 | Copilot no-license: each paste is one file group (backlog alone 10,004; then the export or exports, at most 8,873), under the 15,400 target. Microsoft publishes no message limit (Support page, ms.date 2026-10-31). Card test decides | A |
+| D6 | Survey wave stretch only after step 6, because its column names give away the new problem | A: accept |
+| D7 | Slide 3.2 shows only "Tagging by hand is slow and inconsistent" (W4, W5). "Spread across many tools" and "tags drift" stay in the talk track, attributed | A: accept |
+| D8 | kit-m4 tag list v2 adds P10 with a definition written from the case flag entry. B: tag list stays v1, P10 in the backlog only | A |
+| D9 | Lab 3 flags with no case PM decision (F-1124, F-1232) say "Your decision" in the kit-m4 backlog | A: keep |
+| D10 | The tag list says "What moved"; the spec says "what changed". Keep both (table name and learner text) | A |
+| D11 | ChatGPT card: "The schedule stretch step is not available on this platform in this course", with the reason (not the standard line, because module 4 may give ChatGPT the second-agent stretch) | A |
+| D12 | Story slot on 3.4 (internal platform team, loudest channel; W18, one source) | Supply one real Pragmatic story, else skip path |
+| D13 | Card and record sheet say the audit uses the week 2 run. Too much of a hint? | A: keep. The spec success check is about week 2 |
+| D14 | Card pass condition says "run this after class", not "in the debrief" | A: accept |
 
 ### Changes needing Dan's yes
 
@@ -73,9 +74,13 @@ None of these are made. Each waits for your yes.
 
 | # | File (fingerprinted or approved) | Change | Why |
 | --- | --- | --- | --- |
-| 1 | `spec.yaml`, module 3 `arc` (debrief) and `check_sample` | "the m3-check-sample.md result from the demo run" becomes "the m3-check-sample.md result from a tuned instructor project (kit-m4), run before class" | Only if D3 is A |
-| 2 | `spec.yaml`, module 3 `stretch` item 1 | "Set a schedule or a file trigger. Only on step cards where verified" becomes "Schedule: Claude card only (Cowork scheduled task, cl-sc-07, Dan test pending). ChatGPT: not available (cg-06, a project task cannot read project files). Copilot and Gemini: standard line" | Matches Dan's 2026-11-27 decision, as the module 2 stretch line was updated |
-| 3 | `research/platform-matrix.yaml`, cl-sc-07 | Add the Cowork project screen names from support article 14116274 (**Projects**, **+**, import from a Claude project, "Search projects in Chat…", **Create**, the project's **Scheduled tasks** section) and the note "folder option only where the organization has Computer access turned on" (article 13854387, seen 2026-11-27) | The Claude stretch steps use these names. The verifier confirms them |
+| 1 | `spec.yaml`, module 3 `arc` (debrief) and `check_sample` | "the m3-check-sample.md result from the demo run" becomes "the m3-check-sample.md result from a tuned instructor project (kit-m4), run before class" | Only if D4 is A |
+| 2 | `spec.yaml`, module 3 `arc` (debrief) and `debrief_check` | "Rerun week 2 with the new rule" and "after the rerun of week 2" become "Rerun weeks 1 and 2 in a new chat with the new rule" | Only if D3 is A |
+| 3 | `spec.yaml`, `planted_error_fade.success_checks` | Add: "Modules 3 and 4: the card marks the pass condition 'run this after class' (spec `check_sample`)" | Only if D14 is A. The current text says "run this in the debrief" |
+| 4 | `spec.yaml`, `stretch_scope.schedule_and_second_agent_stretch` and `platform_matrix_summary.stretch_verification.rule` | Add: "A step verified by a dated vendor doc may ship marked 'not yet tested by the course team' until Dan's test. If the test fails, the card uses the standard line" | Only if D1 is A. The rule asks for a doc and a test |
+| 5 | `spec.yaml`, module 3 `stretch` item 1 | "Set a schedule or a file trigger. Only on step cards where verified" becomes "Schedule: Claude card only (Cowork scheduled task, cl-sc-07, Dan test pending). ChatGPT: not available (cg-06). Copilot and Gemini: standard line" | Matches Dan's 2026-11-27 decision, as the module 2 stretch line was updated |
+| 6 | `research/platform-matrix.yaml` | cl-sc-07: source_date 2026-11-18, checked_on 2026-11-27, screen names (**Scheduled**, **New task**, **Set up manually**, the "Create scheduled task" fields incl. approval mode, **Save**) and 3 limits (Computer access; tasks move to the cloud on Pro, Max, Ultra; new Claude experience). New row cl-ui-11 (Cowork projects: **Projects**, **+**, **Import from project**, "Search projects in Chat…", save location, **Create**, per-project **Scheduled tasks**; 14116274, 2026-11-12). New row mb-ui-16 (no published Copilot Chat message limit; Support page, ms.date 2026-10-31) | Verifier report, last section. The cards use these names and limits |
+| 7 | `research/workflows.yaml`, row mr-wf-03 evidence W4, W5, W18 | checked_on 2026-11-27 (quotes found again) | Verifier report |
 
 ## 2. Slides and talk track
 
@@ -104,11 +109,11 @@ TRANSITION: First, the workflow and what slows it down.
 - Minutes: 2
 - On-slide text: Headline: "Feedback every day. Who reads it all?" Line: "Tagging by hand is slow and inconsistent." Workflow strip: "Each week's feedback export, then tagged items, a what changed summary and a flag report."
 - Visual intent: Headline in navy. Four small channel icons (ticket, call note, install note, request form) feeding one strip. Strip ends in three outputs. No numbers.
-- Sources: W4 (claim, ProductPlan, 2026-06-02) and W5 (claim, Enterpret, 2026-07-27). Both are vendors, independent of each other. No figure from either (decision D5)
+- Sources: W4 (claim, ProductPlan, 2026-06-02) and W5 (claim, Enterpret, 2026-07-27). Both are vendors, independent of each other. No figure from either (decision D7)
 
 Notes:
 ```
-POINT: Feedback arrives every day, and tagging it by hand is slow and inconsistent, so teams stop reading it.
+POINT: Feedback arrives every day, and tagging it by hand is slow and inconsistent.
 Talk Track:
 Here is the workflow for this module.
 Support tickets. Sales call notes. Install notes. Feature requests. Requests that other teams pass on.
@@ -118,8 +123,9 @@ Two vendor pages from 2026 say the same thing about that work.
 ProductPlan, a roadmap tool vendor, says tagging feedback is slow and subjective, and insights sit in different tools.
 Enterpret, a feedback analytics vendor, says tags get applied in different ways, and their meaning drifts over time.
 Both sell tools for this work. So treat it as their experience, not a study.
-When the tags drift, the trend lines lie. And when the pile grows, people stop reading.
-At Larkspan, our case company, the Head of Product asks: "Which new problems show up in weekly feedback?"
+When the tags drift, the trend lines lie.
+[ASK: "What happens to your pile when nobody has time to tag it?" TAKE 1 ANSWER]
+At Larkspan, our case company, one of the current market questions is: "Which new problems show up in weekly feedback?"
 That is the question your agent answers today.
 TRANSITION: Before the agent, one rule for counting.
 ```
@@ -164,12 +170,12 @@ It shows device health, firmware status and install status.
 Its customers are other teams: Support, Install, Customer Success and Finance.
 They send requests through an intake form. They also pass on what customers tell them.
 The trap is the same as on the last slide.
-The team that writes the most gets served first.
+The risk is that the team that writes the most gets served first.
 So the FDP PM counts teams, not messages. Teams are the accounts here.
 Second point. When Customer Success passes on a customer's feedback, whose feedback is it?
 The customer's. Count the customer account, not the team that passed it on.
 You will see items like that in the case export, in the channel "Internal intake (Customer Success)".
-Hardware teams have the same issue. Install notes and technician notes hold product feedback.
+In hardware, install notes and technician notes can hold product feedback too.
 The Larkspan export has an "Install note" channel for that reason.
 [OPTIONAL STORY SLOT, 1 MINUTE. Topic: an internal platform team where the loudest Slack channel got served first, and what changed when the PM counted teams. Use only a story from Pragmatic's work with companies or from a client team. Tell it as their story, never as your own. If you have no such story, skip this slot and ask: "Who is the loudest internal customer you serve?" Take 1 or 2 answers]
 [IF ASKED FOR A SOURCE] One vendor page, from Enterpret, describes this for platform PMs. One source, so we use it as an example only.
@@ -192,7 +198,7 @@ Here is the agent after module 2. Brief v3 in the instructions. Six files in kno
 I add two files: the weekly feedback job card and the tag list.
 The tags are the problem codes from the backlog. Each tag has a definition.
 I do not touch the brief.
-[ADD THE 2 FILES]
+[ADD THE 2 FILES. SEND WEEK 1 BY MINUTE 1 OF THIS SLIDE, AND TALK OVER THE RUN]
 New chat. Week 1 export. One prompt: "Run the weekly feedback job".
 [SEND. WHILE IT RUNS:]
 Week 1 has 24 items. Five channels. Three segments.
@@ -200,6 +206,7 @@ The agent tags each item, or says "no fit". It counts by account. It writes into
 [WHEN WEEK 1 ENDS, SAY:] Week 1 has no last week to compare with. Week 2 does.
 Same chat. Week 2 export. Same prompt.
 [SEND. WHILE IT RUNS:] Week 2 has 32 items. Now the agent compares the two weeks.
+[IF WEEK 2 IS NOT DONE AT MINUTE 6, OPEN THE REHEARSAL OUTPUT AND MOVE ON. LET THE LIVE RUN FINISH IN THE BACKGROUND]
 [WHEN THE RUN ENDS, OPEN THE OUTPUT]
 TRANSITION: Here is how you read it, without reading all 32 items.
 ```
@@ -243,7 +250,7 @@ Each week you read four things.
 The flag report: the items the agent stopped on.
 The what changed summary: every tag, with its change in accounts.
 A random sample of 10 tagged items. That is your audit.
-And every item in the "no fit" group. It is short, and it is where new things show up.
+And every item in the "no fit" group.
 You do not read every item. That is the point of the job.
 Your sample is how you keep trust in the items you do not read.
 TRANSITION: What the agent reports, and what it must never decide for you.
@@ -260,7 +267,7 @@ Notes:
 ```
 POINT: The agent reports every change and flags every "no fit" group, and only the PM decides which changes matter.
 Talk Track:
-Many feedback tools show you only the "top movers". A number decides what you see.
+A "top movers" view lets a number decide what you see.
 This job does not.
 The case PM's hand-off rule says: report the change in accounts for every tag. Send every "no fit" group to the flag report.
 No number in the brief says "a jump of 3 is news".
@@ -474,6 +481,8 @@ Download it. Replace the old problem-backlog in your agent's knowledge.
 Gemini: replace the file in the skill. If that fails, upload the whole skill again.
 Copilot without a license: keep the file on your computer. You paste it in chat next time.
 If your rerun did not finish, kit-m4 has the backlog after week 2. Load that instead.
+kit-m4 also holds the case PM's decision: P10 added to the tag list and the backlog.
+On your own work, add your own new tag the same way.
 TRANSITION: [MOVE TO MODULE 4]
 ```
 
@@ -483,7 +492,7 @@ Platform: Claude (Project). Before class:
 
 1. Have the project "Market Evidence Agent" in its state after module 2 (brief v3 in the instructions; 6 files in knowledge). Use `kit-m3` if the module 2 demo project changed.
 2. Check that **Code execution and file creation** (or **Create and edit files**) is on.
-3. Do one rehearsal run on the case files. Save the rehearsal output and screenshots in your instructor folder.
+3. Do one rehearsal run on the case files. Time each run. Save the rehearsal output and screenshots in your instructor folder.
 4. Build a second project, "Market Evidence Agent (tuned)", from `kit-m4` (brief v4 and 8 files). Run `m3-check-sample.md` in it with "Run the weekly feedback job". Save the result and a screenshot for slide 3.15. Check it against the pass condition on the cards.
 5. Keep a ChatGPT Project in the state after module 2 as the backup.
 
@@ -492,7 +501,7 @@ Platform: Claude (Project). Before class:
 | 1 | Open **Projects**, then "Market Evidence Agent" | Brief v3 in the instructions. 6 files in project knowledge | Rebuild from `kit-m3` in about 5 minutes, or switch to the ChatGPT backup. Say: "This is what kit-m3 is for." |
 | 2 | Select **+** in project knowledge. Add `job-card-weekly-feedback.md` and `tag-list.md` | 8 files in project knowledge | Paste both texts into the chat with the run in step 3 |
 | 3 | Start a new chat in the project. Upload `m3-feedback-week-1.csv`. Send "Run the weekly feedback job" | 24 tagged items, a what changed table with last week "none", a flag report with the "no fit" item F-1124 (A-26, invoice currency), and the backlog. A downloadable file, or the full tables in one message | If no file: say "Rule 7 in the brief asks for the full tables in one message." If the run fails: switch to the ChatGPT backup. If both fail: show the rehearsal output |
-| 4 | In the same chat, upload `m3-feedback-week-2.csv`. Send "Run the weekly feedback job" | 32 tagged items. The what changed table with accounts last week and this week for every tag. The "no fit" group. The flag report. The updated backlog | If the run stops halfway: send "Continue". If it fails: show the rehearsal output |
+| 4 | In the same chat, upload `m3-feedback-week-2.csv`. Send "Run the weekly feedback job" | 32 tagged items. The what changed table with accounts last week and this week for every tag. The "no fit" group. The flag report. The updated backlog | If the run stops halfway: send "Continue". If it fails, or is not done at minute 6 of slide 3.5: show the rehearsal output |
 | 5 | Point to the tagged item F-1222 | F-1222, A-06 Harlow Bay Foods, Distribution, P04, reason quotes "Battery replacements again on 12 sensors." | If the tag differs, say: "That is what an audit is for." Do not fix it live |
 | 6 | Point to the what changed table header | Columns: Tag, Accounts last week, Accounts this week, Change, Items this week | If the format differs, say: "The tag list sets the format. A different format is an audit finding." |
 | 7 | Point to the "no fit" group and the flag report | The "no fit" items with their IDs and accounts. A blank PM decision column | If a flag is missing, say: "Hand-off rules are not perfect. That is why you audit." |
@@ -543,19 +552,22 @@ Notes: No file in the answer? Check that **Code execution and file creation** (o
 **Done early:** Run the job on one week of your own feedback. Or fill section 4 of your record sheet.
 
 **Stretch (only where verified):**
-- Survey wave (all platforms, after step 6 only): send `m3-stretch-survey-wave.csv` with the prompt "Add this survey wave as a source. Code the open-text answers. Set them next to the closed answers, by segment."
+- Survey wave (all platforms, after step 6 only). Send `m3-stretch-survey-wave.csv` with the prompt "Add this survey wave as a source. Code the open-text answers. Set them next to the closed answers, by segment."
 - Schedule (Claude only). Paid plan and Claude Desktop. Vendor doc checked 2026-11-27. Not yet tested by the course team.
-  1. In Cowork **Projects**, select **+** and import your "Market Evidence Agent" project.
-  2. Save next week's feedback export in the new project's folder on your computer.
-  3. In the project's **Scheduled tasks**, select **New task**, then **Set up manually**.
-  4. Enter a name, the prompt "Run the weekly feedback job on the newest export", **Weekly** and the project folder.
-  The task saves when you select **Save**. It runs only while your computer is awake and Claude Desktop is open. Your company must allow Cowork and folder access. Use no connectors.
+  1. In Cowork, select **+** next to **Projects**, then **Import from project**.
+  2. Pick "Market Evidence Agent", choose a folder on your computer, and select **Create**.
+  3. Save next week's feedback export in that folder.
+  4. In the project's **Scheduled tasks**, select **New task**, then **Set up manually**.
+  5. Fill in a name, the prompt "Run the weekly feedback job on the newest export", **Weekly** and that folder.
+  6. Keep the default approval mode. Select **Save**.
+  No **New task** in the project? Select **Scheduled** in the left sidebar, then **New task**. Pick the project folder.
+  With a folder, the task runs only while your computer is awake and Claude Desktop is open. Your company must allow Cowork and Computer access. Use no connectors. Your screens look different (new Claude experience)? Stop the stretch and tell the instructor.
 
 ### Card: ChatGPT
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the Project "Market Evidence Agent" from module 2. Plan: Go or Plus or higher. Lost or behind? Rebuild it from `kit-m3` first.
 - Saves: As you go.
-- Check date and vendor doc: 2026-11-27 (module 2 verifier reopened the doc; same screen names as module 2). OpenAI Help Center, "Projects in ChatGPT" (https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt, "Updated: 3 days ago" when seen 2026-11-26, platform matrix cg-ui-09). Schedule line: "Scheduled tasks in ChatGPT" (https://help-lb.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt, cg-06, seen 2026-11-27).
+- Check date and vendor doc: 2026-11-27 (module 2 verifier reopened the doc; same screen names as module 2). OpenAI Help Center, "Projects in ChatGPT" (https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt, "Updated: 3 days ago" when seen 2026-11-27, platform matrix cg-ui-09). Schedule line: "Scheduled tasks in ChatGPT" (https://help-lb.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt, cg-06, seen 2026-11-27).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.
 
 | Step | Do this |
@@ -604,7 +616,9 @@ Notes: Use the `.txt` copies. Copilot does not list `.md` as a knowledge file ty
 **No Copilot license or billing?** Your agent cannot read Knowledge files. Do this instead:
 1. Paste all of `copilot-fallback-instructions-m3.txt` into **Instructions**. It replaces the module 2 text.
 2. Your own rules differ from the kit? Put yours under "My rules".
-3. Do the steps above, but skip step 1. At step 2, also send your `problem-backlog.txt`. Upload it, or paste the text.
+3. Do the steps above, but skip step 1. At step 2, send your `problem-backlog.txt` first, in its own message. Then send week 1.
+4. Debrief rerun: in the new chat, send `problem-backlog.txt` first again. Then send both exports in a second message.
+Upload each file, or paste the text.
 If the instructions do not fit, keep only `brief-v3.txt` in **Instructions**. Paste the job card and the tag list in chat at the start of each run. The fallback agent does one job at a time.
 
 **Start here with sample data:** Add: `job-card-weekly-feedback.txt`, `tag-list.txt`. Week 1: `m3-feedback-week-1.csv`. Week 2: `m3-feedback-week-2.csv`. Own work: as on the Claude card.
@@ -657,7 +671,7 @@ Notes: Type **/** (or **@**) in the chat and pick your skill from the list. If a
 - Debrief check (instructor only, after the rerun; `case/expected-results.md` lab 3): The new problem is in the "no fit" group with 4 accounts (A-08, A-17, A-22, A-31), and the flag report names it. P02 stays at 3 accounts (change 0). P01 shows 7 accounts, not 11 (A-05 sent 5 items). F-1221 (A-30, a name and a phone number) is flagged. Week 2 after the fix: P01 6 to 7 (+1, 11 items). P02 3 to 3 (0). P03 4 to 2 (-2). P04 2 to 3 (+1). P05 1 to 2 (+1). P06 2 to 1 (-1). P07 1 to 0 (-1). P08 2 to 1 (-1). P09 2 to 3 (+1). No fit 1 to 5 (+4; 6 items: F-1215 to F-1219 and F-1232). The agent calls no one-week change a trend.
 - Flag report after the fix: (1) "No fit" group F-1215 to F-1219, 4 accounts: inspectors want read-only remote access. Case PM decision: send to discovery, add P10 to the backlog and the tag list. (2) "No fit" item F-1232 (A-10, Spanish app). (3) Personal data: F-1221. Remove it before the backlog keeps it.
 - Which problems move (case PM, `m4-evidence-pack.md` Part 4): the PM order does not change: P01, P02, P08, P03, P06, P05, P04, then P09 (new row), then P07. P10 is not ranked and goes to discovery. Top by segment: Distribution P01 and P02, Food service P03, Pharmacy and lab P08.
-- Check sample (1 minute, instructor shows the tuned project result; learners run it after class, about 5 minutes; `case/expected-results.md` lab 3 second sample): P01 2 accounts (A-01, A-03), 4 items. P02, P04, P05, P08 1 account each. No fit 4 accounts: F-1305, F-1306, F-1307 (A-04, A-09, A-15: send alarms to the refrigeration contractor's dispatch) and F-1312 (A-26, invoice email). Pass: F-1305 to F-1307 are "no fit", not P06; the flag report names the contractor dispatch request across 3 accounts; P01 counts 2 accounts, not 4.
+- Check sample (1 minute, instructor shows the tuned project result; learners run it after class, about 5 minutes; `case/expected-results.md` lab 3 second sample): P01 2 accounts (A-01, A-03), 4 items. P02, P04, P05, P08 1 account each. No fit 4 accounts: F-1305, F-1306, F-1307 (A-04, A-09, A-15: send alarms to the refrigeration contractor's dispatch) and F-1312 (A-26, invoice email). Pass (the same 5 items as the card): (1) F-1305 to F-1307 are "no fit", not P06. (2) The flag report names the contractor dispatch request across 3 accounts. (3) P01 counts 2 accounts, not 4. Items 1 to 3 are the `expected-results.md` pass condition. (4) F-1312 is "no fit" (from the case table). (5) No change is called a trend (spec `no_threshold`).
 - What you do Monday: Export last week's feedback. Run the job. Read only the flag report.
 - Log save card:
 
@@ -700,7 +714,7 @@ Character counts measured with `wc -m` on 2026-11-27. Copilot course budget (spe
 | `kit-m4/brief-v4.md` | Instructions | 3,253 (budget 3,500) | yes |
 | `kit-m4/job-card-problem-backlog.md` (no change) | Knowledge | 1,194 | yes |
 | `kit-m4/code-book.md` (no change) | Knowledge | 2,791 | yes |
-| `kit-m4/problem-backlog.md` (after lab 3: feedback weeks 1 and 2, P09 and P10, case PM order and flag decisions; facts from `case/m4-evidence-pack.md` Part 4) | Knowledge | 15,176 (a log, not in the fallback instructions) | yes |
+| `kit-m4/problem-backlog.md` (after lab 3: feedback weeks 1 and 2, P09 and P10, case PM order and flag decisions; facts from `case/m4-evidence-pack.md` Part 4) | Knowledge | 15,194 (a log, not in the fallback instructions) | yes |
 | `kit-m4/job-card-win-loss.md` (no change) | Knowledge | 1,483 | yes |
 | `kit-m4/driver-code-book.md` (no change) | Knowledge | 2,284 | yes |
 | `kit-m4/driver-log.md` (no change from kit-m3) | Knowledge | 5,047 (a log) | yes |
@@ -730,7 +744,7 @@ Knowledge files in the agent after module 3: 8 (3 job cards, code book, driver c
 | Agent lost or broken after module 2 | Rebuild from `kit-m3` (about 5 minutes), then do step 1 |
 | Copilot: the agent ignores the knowledge files (no license or billing) | Use the no-license box on the Copilot card: `copilot-fallback-instructions-m3.txt` in Instructions, backlog and export uploaded or pasted |
 | Copilot or Gemini: `.csv` upload fails in chat | Open the file and paste the text. Week 1 is 3,872 characters, week 2 is 5,001 |
-| Copilot no license: backlog and week 1 in one message is too long | Paste the backlog alone first with "This is the problem backlog. Wait for the export." Then send week 1 |
+| Copilot no license: a pasted message is too long | The card already splits it: backlog alone first (10,004 characters), then the export or exports (week 1 3,872; both weeks 8,873). Add "This is the problem backlog. Wait for the export." to the first message. Microsoft publishes no message limit (Support, "Limits for features in Microsoft Copilot Chat", ms.date 2026-10-31) |
 | Gemini: adding files to the existing skill fails | Check the label: **Add files** on an existing skill. If it still fails, upload the whole skill again with all its files (gm-01) |
 | Claude: no file in the answer | Turn on **Code execution and file creation** (**Create and edit files**). Team or Enterprise: the owner sets it in **Organization settings**. Or accept the full tables in one message (brief rule 7) |
 | The answer stops halfway (long output) | Send "Continue". Or send "Give the what changed table and the flag report first, then the tagged items" |
@@ -745,7 +759,8 @@ Knowledge files in the agent after module 3: 8 (3 job cards, code book, driver c
 | The agent tags F-1215 to F-1219 as P08 Calibration records or P05 | Same forced fit, different tag. The fix is the same rule |
 | The agent writes "pattern" or "validated" | Audit finding. Point to brief rule 3. Rerun |
 | A learner's own feedback export holds personal or health data | Stop. Remove names, contact details and health data, or use the case data. Data safety box |
-| Claude schedule stretch: no **Scheduled tasks** in the project, or no folder option | Cowork may be off for the organization, or Computer access is off. Stop the stretch. Record it for the course team |
+| Claude schedule stretch: no **New task** in the project | Use **Scheduled** in the left sidebar, then **New task**, and pick the project folder (card note) |
+| Claude schedule stretch: no **Scheduled tasks** or no folder option | Cowork may be off for the organization, or Computer access is off. Or the account has the new Claude experience. Stop the stretch. Record it for the course team |
 
 - Case notes (module builder, checked 2026-11-27 against the case files):
   1. OI-19 (owner module builder). F-1108 (week 1, A-07 Quarry Lane Pharmacies) and F-1214 (week 2, A-29 Elmstead Pharmacy) are both P02 feedback items in lab 3. They support the lab 5 report pack answer but are not lab 5 inputs. Both are in the kit-m4 backlog, in P02 "other sources" (A-29 in week 2; A-07 in the week 1 count). The I-201 quote 2 note is a lab 1 item, covered in module 1 section 9.
@@ -753,7 +768,8 @@ Knowledge files in the agent after module 3: 8 (3 job cards, code book, driver c
   3. F-1207 (A-09) asks for "quiet hours". It is P01 in the case. An agent may also see it as P06. P06 covers who responds at night, so P01 is right.
   4. F-1221 (A-30 Pikeworth Grill House) counts for P03 (hub placement) and is flagged for personal data. The name and number are fictional (555-01xx range, `case/README.md`).
   5. The check sample items F-1305 to F-1307 name no night or weekend (`case/planted-errors.md`), so they are not P06. An agent that tags them P06 shows the same forced fit. Learners see this only after class.
-  6. The case tag list says "What moved". The spec, the slides and the cards say "what changed". Same table (decision D8).
-  7. The kit-m4 backlog follows `m4-evidence-pack.md` Part 4 facts, so module 4 starts from the same backlog. Its F-1124 and F-1232 flag decisions are left to the learner (decision D7).
-- Kept off the slides on purpose: any feedback tagging figure (W4 and W5 hour figures are vendor arithmetic, not data; W4's report figure is not opened). "Spread across many tools" and "tags drift" (1 source each; decision D5). Any schedule setup screen (CAW-AI slide 9, registry). The case account A-05 before the debrief (B8).
+  6. The case tag list says "What moved". The spec, the slides and the cards say "what changed". Same table (decision D10).
+  7. The kit-m4 backlog follows `m4-evidence-pack.md` Part 4 facts, so module 4 starts from the same backlog. Its F-1124 and F-1232 flag decisions are left to the learner (decision D9).
+  8. For the module 4 builder (verifier F12): `kit-m4/problem-backlog.txt` is 15,194 characters. A module 4 no-license learner who pastes it is near the 15,400 paste target. Split it, or rely on the evidence pack Part 4.
+- Kept off the slides on purpose: any feedback tagging figure (W4 and W5 hour figures are vendor arithmetic, not data; W4's report figure is not opened). "Spread across many tools" and "tags drift" (1 source each; decision D7). Any schedule setup screen (CAW-AI slide 9, registry). "People stop reading" and "tools show only top movers" (no source; verifier F3, F6). The case account A-05 before the debrief (B8).
 - Registry guard: CAW-AI buyer voice watch reads public reviews of competitors on a monthly schedule. This job reads the company's own feedback into its own backlog, started by hand on the core path. No scheduled-task setup slide. New slides only.

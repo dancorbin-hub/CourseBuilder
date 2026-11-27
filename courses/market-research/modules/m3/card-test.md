@@ -1,6 +1,6 @@
 # Card test: module 3 (lab 3)
 
-Course: `market-research`. For Dan (Gate 3). Builder draft 2026-11-27.
+Course: `market-research`. For Dan (Gate 3). Builder draft 2026-11-27, revised once 2026-11-27.
 
 Gate 2 proof P2 covers module 3 (spec `gate_2_proof_patterns`). This card test also records P2, including the Copilot no-license fallback for module 3 with the problem backlog pasted in chat, and your hands-on test of the Claude schedule stretch (Dan, 2026-11-27: verified by doc, test pending).
 
@@ -23,6 +23,7 @@ Target times: rebuild from kit-m3 about 5 minutes. Lab 3 core path 28 minutes. D
 | Before step 1 | Check the Instructions length: brief v3 3,094 characters (after step 6: about 3,250) | P2 "under 8,000" |
 | After lab step 3 | Save the output file. Fill the "before the fix" column | P2-m3-a to P2-m3-h, before |
 | After the debrief rerun | Save the output file. Fill the "after the fix" column | P2-m3-a to P2-m3-h, after |
+| Demo rehearsal (Claude, instructor) | Time each run: week 1 ______ min, week 2 ______ min, total for slide 3.5 ______ (target 6). Slide 3.14 talk track ______ min (target 2) | Run times (consistency finding 3) |
 | After the log save card | In a new chat, ask "List your knowledge files. How many feedback accounts does P01 have in week 2 in the backlog?" | P2-m3-i |
 
 ## Claude
@@ -33,6 +34,7 @@ Account or plan: ______ Code execution and file creation on: yes / no Date teste
 | --- | --- | --- | --- | --- |
 | Rebuild from kit-m3 (if used) | | | n/a | |
 | Lab 3, steps 1 to 6 | | | | |
+| Week 1 run, then week 2 run (run minutes each) | | | n/a | |
 | Debrief rerun (target 3 minutes) | | | n/a | |
 | Log save card | | | n/a | |
 | Check sample (after class, target 5 minutes) | | | Items 1 to 5: | |
@@ -53,9 +55,12 @@ Account or plan: ______ Code execution and file creation on: yes / no Date teste
 | Claude schedule stretch test (Dan, hands-on; `research/stretch-verification-2026-11.md` section 5, tests 1 and 2) | Result |
 | --- | --- |
 | Plan used (Pro, Max, Team or Enterprise). Claude Desktop version | |
-| Cowork **Projects**, **+**, import "Market Evidence Agent": instructions and files arrive in the Cowork project | |
-| The project has a **Scheduled tasks** section with **New task** and **Set up manually** (record the real labels) | |
-| The task form offers **Weekly** and a folder. "Require this computer" turns on | |
+| New Claude experience on this account: yes / no. If yes, which path makes the task (verifier F7) | |
+| **+** next to **Projects**, then **Import from project**, "Search projects in Chat…", save location, **Create**: instructions and files arrive in the Cowork project | |
+| The project's **Scheduled tasks** shows **New task** and **Set up manually**, or only the **Scheduled** sidebar does (verifier F2). Record the real labels | |
+| The "Create scheduled task" form: name, prompt, approval mode, frequency (**Weekly**), model, folder. Record the default approval mode | |
+| Pro plan: is the folder option offered? Does "Require this computer" turn on (verifier F7) | |
+| After **Save**: does the task keep the folder and "Require this computer", or move to the cloud (verifier F7) | |
 | A manual or first scheduled run reads the tag list, the saved backlog and the newest export in the folder | |
 | The run writes a new backlog file. Where does it go? | |
 | What happens when the computer sleeps at the run time | |
@@ -72,6 +77,7 @@ Account or plan (Go, Plus or higher): ______ Date tested: ______ Tester: ______
 | --- | --- | --- | --- | --- |
 | Rebuild from kit-m3 (if used) | | | n/a | |
 | Lab 3, steps 1 to 6 | | | | |
+| Week 1 run, then week 2 run (run minutes each) | | | n/a | |
 | Debrief rerun (target 3 minutes) | | | n/a | |
 | Log save card | | | n/a | |
 | Check sample (after class, target 5 minutes) | | | Items 1 to 5: | |
@@ -102,6 +108,7 @@ License state: licensed / no license Date tested: ______ Tester: ______ Tester w
 | Rebuild from kit-m3 (if used) | | | n/a | |
 | Lab 3, steps 1 to 6 | | | | |
 | Lab 3, no-license path | | | | |
+| Week 1 run, then week 2 run (run minutes each) | | | n/a | |
 | Debrief rerun (target 3 minutes) | | | n/a | |
 | Log save card | | | n/a | |
 | Check sample (after class, target 5 minutes) | | | Items 1 to 5: | |
@@ -125,7 +132,9 @@ License state: licensed / no license Date tested: ______ Tester: ______ Tester w
 | Paste of the CSV as text works when upload fails (week 1 3,872 characters, week 2 5,001) | |
 | G2-PF-05: `copilot-fallback-instructions-m3.txt` (6,856 characters) accepted in **Instructions**, and the run works | |
 | The fallback still fits after you add your "no fit" rule (about 7,020 characters) | |
-| P2 no-license: `problem-backlog.txt` (10,004 characters) and week 1 in one message (G2-PF-03). If it fails, backlog alone first, then week 1 | |
+| P2 no-license, step 2: `problem-backlog.txt` alone (10,004 characters), then week 1 (3,872). Record if each message is accepted (G2-PF-03; Microsoft publishes no limit) | |
+| No-license debrief rerun (verifier F10): backlog alone (10,004), then both exports in one message (8,873). 18,877 in total. Record if accepted, and how many messages you needed | |
+| Paste of the longest message (10,004) works when upload fails. Target: under 15,400 | |
 | Downloaded backlog kept after the session ends (mb-11 says no) | |
 
 Screen names that differ from the card: ______
@@ -140,6 +149,7 @@ Account: personal / Workspace (test on a Workspace account if you can, gm-03) Da
 | --- | --- | --- | --- | --- |
 | Rebuild from kit-m3 (if used) | | | n/a | |
 | Lab 3, steps 1 to 6 | | | | |
+| Week 1 run, then week 2 run (run minutes each) | | | n/a | |
 | Debrief rerun (target 3 minutes) | | | n/a | |
 | Log save card | | | n/a | |
 | Check sample (after class, target 5 minutes) | | | Items 1 to 5: | |
@@ -180,4 +190,4 @@ New chat: record how you start a new chat with the skill (module 2 verifier F12)
 
 If P2-m3-d is "no" before the fix on 2 or more platforms, the error is too easy to avoid. Tell the course builder. The saved demo output is the debrief fallback until then.
 
-If the debrief rerun takes more than 3 minutes on 2 or more platforms, tell the course builder. Option: rerun week 2 only in the same chat (decision D2, option B).
+If the debrief rerun takes more than 3 minutes on 2 or more platforms, tell the course builder. Option: rerun week 2 only in the same chat (decision D3, option B).

@@ -24,8 +24,9 @@ On your own work: replace `tag-list.md` with your own tags. Use the problem code
 Your agent cannot read knowledge files.
 
 1. Paste all of `copilot-fallback-instructions-m3.txt` into **Instructions**. It replaces the module 2 text. Select **Update**.
-2. In chat, paste or upload `problem-backlog.txt` with the week 1 export. Paste the CSV as text if upload fails.
-3. Keep the problem backlog from each run on your computer. Paste it in chat at the next run.
+2. In chat, send `problem-backlog.txt` first, in its own message. Then send the week 1 export. Upload, or paste the text.
+3. Debrief rerun: in the new chat, send `problem-backlog.txt` first again. Then send both exports in a second message.
+4. Keep the problem backlog from each run on your computer. Paste it in chat at the next run.
 
 The text holds brief v3 with the lab 1 and lab 2 rules from the kit. If your own rules differ, put yours under "My rules". The fallback agent does one job at a time. To rerun the module 2 job, use `kit-m3/copilot-fallback-instructions-m2-v3.txt`.
 
