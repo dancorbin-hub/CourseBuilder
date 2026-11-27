@@ -7,7 +7,7 @@ delivered_by: Dan (decision 45). Talk track must work for a part-time instructor
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-26, doc: null, file: "research/worked-example-row.yaml", note: "Course row sp-wf-09 v1 (Dan picked it at Gate 1, decision h, 2026-11-26). Draft for Dan's approval. Format model stays mr-wf-01 (v3)" }
   gate_1_research:    { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk" }
-  gate_2_spec:        { status: in_review, approved_on: null, doc: "https://claude.ai/artifact/W2UADbKq77U3eiytxusc9J", pragmatic_review: null }
+  gate_2_spec:        { status: approved, approved_on: 2026-11-27, doc: "https://claude.ai/artifact/W2UADbKq77U3eiytxusc9J", pragmatic_review: pending, pragmatic_review_note: "Dan approved Gate 2 on 2026-11-27. Send syllabus and mapping to Pragmatic. Ask the title question." }
   gate_3_modules:     []
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
@@ -30,3 +30,13 @@ fingerprints:
   research/workflows.yaml: sha256:ac40b377fe5df898   # Gate 2 fixes applied with Dan's yes, 2026-11-26
   research/research-brief.md: sha256:7949a218160c88d3
   research/gate-1-decisions.md: sha256:d2ddc0f1b9c5e09f
+  spec.yaml: sha256:4dfd5cd2a8253cb4   # Gate 2, 2026-11-27
+  outline/syllabus.md: sha256:82a1de3a37cf8588   # Gate 2, 2026-11-27
+  outline/development-brief.md: sha256:b9a874ff11a5b381   # Gate 2, 2026-11-27
+  outline/capability-mapping.md: sha256:838c4e30cd084617   # Gate 2, 2026-11-27
+  outline/gate-2-decisions.md: sha256:c904352189b19fdb   # Gate 2, 2026-11-27
+  case/README.md: sha256:cbca6621fbd6a8da   # Gate 2, 2026-11-27
+  case/company.md: sha256:ca19b897ee5dbce5   # Gate 2, 2026-11-27
+  case/expected-results.md: sha256:11e0ea827f1cf7cf   # Gate 2, 2026-11-27
+  case/planted-errors.md: sha256:1c747556a15a34dd   # Gate 2, 2026-11-27
+  case/strategy-okrs-kpis.md: sha256:6967e85dcde00d72   # Gate 2, 2026-11-27
