@@ -9,7 +9,7 @@ gates:
   gate_2_spec:        { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: approved, pragmatic_review_on: 2026-11-26, pragmatic_comments: "none, looked good, proceed" }
   gate_3_modules:     # one entry per module
     - { module: 1, status: content_approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/HsL2QbY9yrChpgYYYrmbri", card_test: open, note: "Dan approved content before the card test. Card test on 4 platforms (doubles as proof P1) still open. If P1 fails on 2 or more platforms, rework lab 1 with Dan yes" }
-  gate_4_final_qa:    { module: 1, status: in_review, approved_on: null, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 42 checks, 0 fail, 2 waived (slide 1.10, Dan chose option C, modules/m1/gate-4-decisions.md). Dan reviewing files" }
+  gate_4_final_qa:    { module: 1, status: approved, approved_on: 2026-11-27, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 42 checks, 0 fail, 2 waived (slide 1.10, Dan chose option C, modules/m1/gate-4-decisions.md). Dan approved 2026-11-27" }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
   - Pragmatic Framework 2027 guide (project files, reference/pragmatic-sources/)
@@ -61,3 +61,4 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   case/m5-stakeholder-questions.md: sha256:c9539e8580dbf6f9   # Gate 2, 2026-11-26
   case/planted-errors.md: sha256:c7e41877a46e9edd   # Gate 2, 2026-11-26
   modules/m1/module.md: sha256:ab5f550cea2aa569   # Gate 3 content approved, 2026-11-26
+  modules/m1/slides.json: sha256:57401ddbc650ffd1   # Gate 4 approved, 2026-11-27
