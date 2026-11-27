@@ -10,7 +10,7 @@ gates:
   gate_3_modules:     # one entry per module
     - { module: 1, status: content_approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/HsL2QbY9yrChpgYYYrmbri", card_test: open, note: "Dan approved content before the card test. Card test on 4 platforms (doubles as proof P1) still open. If P1 fails on 2 or more platforms, rework lab 1 with Dan yes" }
     - { module: 2, status: in_review, doc: "https://claude.ai/artifact/4FD1kVJVwDkWENQF1E6ANy", card_test: open, note: "Drafted, checked, revised once 2026-11-27. 10 decisions D1 to D10 and 4 file changes for Dan" }
-    - { module: 3, status: drafting, note: "Stage 3 started 2026-11-27, in parallel with the m2 review. Built on m2 kit-m3" }
+    - { module: 3, status: in_review, doc: "https://claude.ai/artifact/Mz9U3x6Z4w5rr3ebSJbMt8", card_test: open, note: "Drafted, checked, revised once 2026-11-27. 14 decisions and 7 file changes for Dan. Built on m2 kit-m3 (m2 in review)" }
   gate_4_final_qa:    { module: 1, status: approved, approved_on: 2026-11-27, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 42 checks, 0 fail, 2 waived (slide 1.10, Dan chose option C, modules/m1/gate-4-decisions.md). Dan approved 2026-11-27. 2026-11-27: case year moved to 2027 (Dan, option B); workbook re-rendered v2 (kit dates only); deck and LD specs unchanged. Dan approved workbook v2 2026-11-27", workbook_version: v2 }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
