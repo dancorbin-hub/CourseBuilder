@@ -576,7 +576,7 @@ Notes: **Project settings** is in the **•••** menu of the project. No file
 
 **Done early:** Same as the Claude card.
 
-**Stretch (only where verified):** No stretch step in module 2. The schedule stretch is in module 3.
+**Stretch (only where verified):** No stretch step in module 2.
 
 ### Card: Copilot agent builder
 Build and save your own agent. Share your screen only when someone is stuck.
