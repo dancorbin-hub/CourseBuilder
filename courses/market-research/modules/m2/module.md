@@ -71,14 +71,14 @@ Open decisions for the Gate 3 doc, most important first. One line each, with a r
 
 ### Changes needing Dan's yes
 
-None of these are made. Each waits for your yes.
+All 4 approved by Dan 2026-11-27 (comment "Yes, these are approved.") and applied.
 
 | # | File (fingerprinted or approved) | Change | Why |
 | --- | --- | --- | --- |
 | 1 (APPLIED, Dan 2026-11-27) | `spec.yaml`, module 2 `bottleneck` | Change "Many teams do not run win/loss at all (W1, W2; ...)" to "Many teams do not run win/loss at all (course view; no 2026 source, gap)" | Verifier F4: W2 does not say it. W1 says it from old Pragmatic data, the same data as W3 |
-| 2 | `research/evidence-ledger.yaml` | Add Klue, "Difficulty running win-loss analysis" (https://klue.com/blog/difficulty-running-win-loss-analysis, modified 2025-09-04, vendor, age flag). Claim: manual win/loss is slow; results arrive out of date | Only if D1 is A |
-| 3 | `research/platform-matrix.yaml` | Verifier rows: checked_on 2026-11-27 for cl-ui-09, cl-ui-10, cg-ui-09, mb-ui-12, mb-ui-13, mb-01, mb-ui-14, gm-ui-10. mb-03 source_date 2026-11-16. cl-ui-10 limits: Team and Enterprise owners use Organization settings. gm-ui-10 limits: existing skill uses **Add files**; "Instructions" is named. mb-01 note: **New chat** is named only in the **Try it** pane. New row mb-ui-15 (file formats for upload in Copilot, licensed, agents not named, ms.date 2026-07-28) | Verifier report, last section |
-| 4 | `modules/m1/module.md` (approved), Gemini card | Blog title: "Let skills in Gemini tackle your most repetitive tasks" (2026-09-30). Step 1 on an existing skill may use **Add files**, not **Add**, **files**, **Upload** | Verifier F7 and F8 apply to module 1 too. Card test confirms first |
+| 2 (APPLIED as W4 in `research/workflows.yaml`, D1 option C) | `research/evidence-ledger.yaml` | Add Klue, "Difficulty running win-loss analysis" (https://klue.com/blog/difficulty-running-win-loss-analysis, modified 2025-09-04, vendor, age flag). Claim: manual win/loss is slow; results arrive out of date | Only if D1 is A |
+| 3 (APPLIED) | `research/platform-matrix.yaml` | Verifier rows: checked_on 2026-11-27 for cl-ui-09, cl-ui-10, cg-ui-09, mb-ui-12, mb-ui-13, mb-01, mb-ui-14, gm-ui-10. mb-03 source_date 2026-11-16. cl-ui-10 limits: Team and Enterprise owners use Organization settings. gm-ui-10 limits: existing skill uses **Add files**; "Instructions" is named. mb-01 note: **New chat** is named only in the **Try it** pane. New row mb-ui-15 (file formats for upload in Copilot, licensed, agents not named, ms.date 2026-07-28) | Verifier report, last section |
+| 4 (APPLIED; m1 workbook v3 and LD lab1 v2 re-rendered) | `modules/m1/module.md` (approved), Gemini card | Blog title: "Let skills in Gemini tackle your most repetitive tasks" (2026-09-30). Step 1 on an existing skill may use **Add files**, not **Add**, **files**, **Upload** | Verifier F7 and F8 apply to module 1 too. Card test confirms first |
 
 ## 2. Slides and talk track
 

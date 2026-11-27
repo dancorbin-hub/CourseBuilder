@@ -225,10 +225,10 @@ features:
     use_in_core_lab: "yes"
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
     source_date: 2026-11-16
-    checked_on: 2026-11-20
+    checked_on: 2026-11-27
     status: "verified"
     verifier_note: "Opened 2026-11-20 (updated 2026-11-16). 8,000 / 30 / 1,000 characters and 3 response modes confirmed"
-    note: Recheck of E6. Still 8,000 characters. Same page date
+    note: Recheck of E6. Still 8,000 characters. Same page date. New chat is named only in the Try it pane (verifier 2026-11-27)
   - id: mb-02
     platform: copilot
     feature: Embedded files as knowledge (upload from device)
@@ -248,8 +248,8 @@ features:
     limits: Code interpreter, custom instructions, web search work for all three. Embedded file content, SharePoint and Copilot connectors need a license or billing. Email, People and Teams knowledge need a license. Pay-as-you-go bills only agents grounded in tenant data
     use_in_core_lab: "yes"
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/prerequisites
-    source_date: 2026-11-06
-    checked_on: 2026-11-20
+    source_date: 2026-11-16
+    checked_on: 2026-11-27
     status: "verified"
     verifier_note: "Opened 2026-11-20 (ms.date 2026-11-06). Embedded files and SharePoint need license or usage billing; code interpreter, instructions, web search work for all. Self-conflict on unlicensed authoring confirmed"
     note: Key risk. A learner with Copilot Chat only and no billing cannot ground the agent in embedded files. The page also conflicts with itself on whether unlicensed users can author agents. Ask Microsoft or a second Copilot tester (PRD open item)
@@ -477,18 +477,18 @@ features_stage3_m1:
     use_in_core_lab: "yes"
     url: https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
     source_date: 2026-11-06 (page metadata dateModified; page says "Updated over 2 weeks ago")
-    checked_on: 2026-11-26
+    checked_on: 2026-11-27
     status: "verified"
     verifier_note: "Loaded 2026-11-26 (curl). All five labels quoted on the page. Delete a knowledge file: not on this page or on 9517075"
   - id: cl-ui-10
     platform: claude
     feature: File creation toggle. Settings > Capabilities > "Code execution and file creation", called "Create and edit files" in the updated Settings layout
     plans: Free, Pro, Max, Ultra set it in Settings > Capabilities. Team and Enterprise owners set it in Organization settings > Capabilities. Mobile uses Settings > Capabilities
-    limits: On by default for Team and new Enterprise organizations
+    limits: "On by default for Team and new Enterprise organizations. Team and Enterprise owners use Organization settings > Capabilities"
     use_in_core_lab: "yes"
     url: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
     source_date: 2026-11-24 (page metadata dateModified; page says "Updated yesterday")
-    checked_on: 2026-11-26
+    checked_on: 2026-11-27
     status: "verified"
     verifier_note: "Loaded 2026-11-26 (curl). Both toggle names and both paths quoted"
   - id: cl-pj-11
@@ -510,7 +510,7 @@ features_stage3_m1:
     use_in_core_lab: "yes"
     url: https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt
     source_date: "approx 2026-11-23 (page says \"Updated: 3 days ago\")"
-    checked_on: 2026-11-26
+    checked_on: 2026-11-27
     status: "verified"
     verifier_note: "Loaded 2026-11-26 (WebFetch). New project, •••, Project settings and 'project sources list' quoted. 25 files for Go and Plus confirmed again. Relative date only"
   - id: mb-ui-12
@@ -521,7 +521,7 @@ features_stage3_m1:
     use_in_core_lab: "yes"
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge
     source_date: 2026-11-16
-    checked_on: 2026-11-26
+    checked_on: 2026-11-27
     status: "verified"
     verifier_note: "Loaded 2026-11-26 (WebFetch). Add knowledge page and Build agents page (both Last updated 2026-11-16). All labels quoted"
   - id: mb-ui-13
@@ -532,7 +532,7 @@ features_stage3_m1:
     use_in_core_lab: "yes"
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents
     source_date: 2026-11-16
-    checked_on: 2026-11-26
+    checked_on: 2026-11-27
     status: "verified"
     verifier_note: "Loaded 2026-11-26 (WebFetch). All labels quoted"
   - id: mb-ui-14
@@ -543,17 +543,28 @@ features_stage3_m1:
     use_in_core_lab: "yes"
     url: https://support.microsoft.com/en-US/Microsoft-365-Copilot/add-content-to-microsoft-365-copilot-chat-prompts
     source_date: 2026-11-18 (ms.date in page metadata; updated_at 2026-11-19; no date in the page body)
-    checked_on: 2026-11-26
+    checked_on: 2026-11-27
     status: "partly verified"
     verifier_note: "Loaded 2026-11-26 (WebFetch). Labels quoted for Copilot Chat. Agent chat and file types not stated. G2-PF-02 stays open"
+  - id: mb-ui-15
+    platform: copilot
+    feature: File formats for upload in Copilot (Work and School) with a Copilot license, for Copilot Chat, Pages, Notebooks and Create. .csv, .tsv, .xlsx for data analysis. .md, .txt, .docx, .pdf for documents
+    plans: Microsoft 365 Copilot license (Work and School)
+    limits: No size limit given. Agents and no-license users not named
+    use_in_core_lab: "yes"
+    url: https://support.microsoft.com/en-gb/topic/file-formats-supported-by-copilot-1afb9a70-2232-4753-85c2-602c422af3a8
+    source_date: 2026-07-28 (ms.date; updated_at 2026-11-10)
+    checked_on: 2026-11-27
+    status: "partly verified"
+    verifier_note: "Added from the m2 verifier report (F6), Dan yes 2026-11-27. Licensed Copilot Chat yes; agent chat and no-license not stated. G2-PF-02 stays open for the agent chat"
   - id: gm-ui-10
     platform: gemini
     feature: Skill screen names (Customize > Skills > Create > Create manually; name in lowercase with hyphens; instructions; Add > images or files > Upload; Create; click a skill to edit; More > Replace file or Replace skill; Save; type / or @ in chat to pick the skill)
     plans: See gm-01 and gm-03
-    limits: The same page also says "To update files in a skill, you need to upload the entire skill with its reference files again", which conflicts with Replace file. No exact "Instructions" label shown. The @ shortcut is for users with "the updated shortcut"
+    limits: "The same page also says 'To update files in a skill, you need to upload the entire skill with its reference files again', which conflicts with Replace file. No exact 'Instructions' label shown. The @ shortcut is for users with 'the updated shortcut' Update 2026-11-27: the page now names the 'Instructions' field. For an existing skill the label is Add files"
     use_in_core_lab: "yes"
     url: https://support.google.com/gemini?p=pn_skills
     source_date: unknown (page shows no date)
-    checked_on: 2026-11-26
+    checked_on: 2026-11-27
     status: "partly verified"
     verifier_note: "Loaded 2026-11-26 (WebFetch). Labels match the page, but the page has no date, so it fails the dated doc rule. Only '/' has a dated doc: blog.google 'Let skills in Gemini tackle your most repetitive tasks' (2026-09-30). Workspace Updates posts of 2026-09-30 and 2026-11-16 name no skill screen labels. Dan decides (module 1 verifier report F11)"

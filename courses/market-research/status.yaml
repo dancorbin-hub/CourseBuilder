@@ -13,7 +13,7 @@ gates:
     - { module: 3, status: in_review, doc: "https://claude.ai/artifact/Mz9U3x6Z4w5rr3ebSJbMt8", card_test: open, note: "Drafted, checked, revised once 2026-11-27. 14 decisions and 7 file changes for Dan. Built on m2 kit-m3 (m2 in review)" }
     - { module: 4, status: in_review, doc: "https://claude.ai/artifact/TRmJCPtj7do3VBWUEiAXd9", card_test: open, note: "Drafted, checked, revised once 2026-11-27. Delivers kit-m5 (module 5 updated to match). 15 decisions and 9 file changes for Dan; D8 Pragmatic OK for the client story" }
     - { module: 5, status: in_review, doc: "https://claude.ai/artifact/LKqJwuQUHuEy9yp2YDrd7W", card_test: "open, needs module 4", note: "Drafted, checked, revised once 2026-11-27, before module 4 (OI-05). Start state from the case (kit/kit-m5-expected.md); module 4 must match. 17 decisions and 7 file changes for Dan" }
-  gate_4_final_qa:    { module: 1, status: approved, approved_on: 2026-11-27, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 42 checks, 0 fail, 2 waived (slide 1.10, Dan chose option C, modules/m1/gate-4-decisions.md). Dan approved 2026-11-27. 2026-11-27: case year moved to 2027 (Dan, option B); workbook re-rendered v2 (kit dates only); deck and LD specs unchanged. Dan approved workbook v2 2026-11-27", workbook_version: v2 }
+  gate_4_final_qa:    { module: 1, status: approved, approved_on: 2026-11-27, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 42 checks, 0 fail, 2 waived (slide 1.10, Dan chose option C, modules/m1/gate-4-decisions.md). Dan approved 2026-11-27. 2026-11-27: case year moved to 2027 (Dan, option B); workbook re-rendered v2 (kit dates only); deck and LD specs unchanged. Dan approved workbook v2 2026-11-27. Workbook v3 and LD lab1 v2 rendered 2026-11-27 for the Gemini card fix (m2 change 4, Dan yes); text diff shows only that fix; deck unchanged", workbook_version: v3 }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
   - Pragmatic Framework 2027 guide (project files, reference/pragmatic-sources/)
@@ -29,7 +29,7 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   research/gate-1-packet.md: sha256:d8bde3cc4829bbf3
   research/gate-1-decisions.md: sha256:d3285a843bb9e7fb
   research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
-  research/platform-matrix.yaml: sha256:5e7d9fad5eda2669   # Dan yes 2026-11-27 (m2 builder changes and stretch check)
+  research/platform-matrix.yaml: sha256:3f396e809a47477f   # Dan yes 2026-11-27 (m2 builder changes, stretch check, m2 change 3)
   research/bond-stories.md: sha256:70ffa8521cb65122
   spec.yaml: sha256:fee330e8271e11e0   # OI-05 closed 2026-11-27; m2 bottleneck citation = instructor team view, Dan yes 2026-11-27
   outline/syllabus.md: sha256:2468f0355f716385   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
@@ -64,5 +64,5 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   case/m5-past-reports.txt: sha256:ddceecb96af427e9   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
   case/m5-stakeholder-questions.md: sha256:2484a8495ce0ea85   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
   case/planted-errors.md: sha256:6832ece9eeb6f5de   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
-  modules/m1/module.md: sha256:ab5f550cea2aa569   # Gate 3 content approved, 2026-11-26
+  modules/m1/module.md: sha256:bc5a6373fd3f7a05   # Gate 3 content approved 2026-11-26; Gemini card fix (m2 change 4), Dan yes 2026-11-27
   modules/m1/slides.json: sha256:57401ddbc650ffd1   # Gate 4 approved, 2026-11-27
