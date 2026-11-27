@@ -13,3 +13,4 @@ date,course,phase_or_stage,module,activity,hours,source,notes
 2026-11-26,all,phase-4,,tool-build,,manual,"Phase 4 tools: deck, workbook and LD spec renderers, qa_check, qa-agent, course-produce skill (21:00 to 22:30 UTC). Not course hours."
 2026-11-26,market-research,stage-4,1,final-qa,,manual,"Module 1 deck plan, renders, QA, Gate 4 doc. Dan adds review hours."
 2026-11-27,market-research,stage-3,2;3;4;5,module-draft,,manual,"Also module 4 (19:25 to 20:30 UTC). Modules 2, 3 and 5: builder, 2 checkers, revision, Gate 3 docs; stretch check; case year move to 2027 (00:06 to 07:30 UTC, about 2.5 active hours, paused by usage limits). Dan adds card test and review hours."
+2026-11-27,market-research,stage-4,2,final-qa,,manual,"Module 2 deck plan, renders, QA, fix round (workbook renderer: catch-up kit split, warning label), Gate 4 doc (20:37 to 21:10 UTC). Also m2 Gate 3 comments applied. Dan adds review hours."
