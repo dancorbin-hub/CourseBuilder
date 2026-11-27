@@ -26,3 +26,4 @@
 | 2026-11-27 19:25 | m4 | Start. OI-05 closed with Dan's example (Pragmatic client built an internal training center, then came back). Contract: m5 kit-m5-expected.md |
 | 2026-11-27 19:38 | m4 | Builder draft done: module.md (17 slides, 55 min, 22/33 = 40%), kit (lab-4, kit-m5 to the m5 contract), card-test.md. Lab 4 rule is brief "My rules" 4. Log save saves map and driver log. Second-agent stretch on Claude and ChatGPT, not tested. 13 decisions D1 to D13, 6 changes for Dan yes. Next: consistency reviewer and verifier |
 | 2026-11-27 19:48 | m4 | Builder revise once done: revision-notes.md. Audit takes growing or fading entries first (consistency F5). ChatGPT stretch path fixed (verifier F1). Slide 4.2 reworded. Module 5 hand-over done (kit-final job card, contract met, m5 D8 closed). Open decisions D1 to D15, 9 changes for Dan yes |
+| 2026-11-27 19:49 | m4 | Revised once, m5 hand-over done. Gate 3 doc published, status in_review |
