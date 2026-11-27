@@ -16,7 +16,7 @@ Ask Q1, Q2 and Q5 in this order. Q3 is optional if you have time. Q4 is the chec
 
 **Q2. From the Head of Hardware**
 
-> What do pharmacy and lab buyers want in a compliance report? I want to commit a report pack for them in the 2027 roadmap.
+> What do pharmacy and lab buyers want in a compliance report? I want to commit a report pack for them in the 2028 roadmap.
 
 **Q3. From the Support lead (internal team)**
 
@@ -24,7 +24,7 @@ Ask Q1, Q2 and Q5 in this order. Q3 is optional if you have time. Q4 is the chec
 
 **Q5. From the PM, Fleet Data Platform (internal PM)**
 
-> Install and Support ask me to add a hub signal history view to the Fleet Data Platform. They say hubs lose signal at many customer sites. What do customers say about this, and in which segments? I need to place this request in the FDP backlog for Q1 2027.
+> Install and Support ask me to add a hub signal history view to the Fleet Data Platform. They say hubs lose signal at many customer sites. What do customers say about this, and in which segments? I need to place this request in the FDP backlog for Q1 2028.
 
 ## Check question (second sample input)
 

@@ -2,7 +2,7 @@
 
 # Check sample for lab 4 (second sample input)
 
-Five more lost deals from October 2026. Use this after you fix your hand-off rule. Run the map job on it with your current map. Then compare the result with the pass condition on your step card.
+Five more lost deals from October 2027. Use this after you fix your hand-off rule. Run the map job on it with your current map. Then compare the result with the pass condition on your step card.
 
 ## Driver log rows
 

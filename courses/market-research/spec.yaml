@@ -857,7 +857,7 @@ modules:
         has your decided order and your validation decisions
       debrief_check: >-
         Shown in the debrief only. The fixed answer names the date and segment of every source. The flag report
-        lists the old evidence for another segment (case: R-2024-07). The answer does not say "buyers want".
+        lists the old evidence for another segment (case: R-2025-07). The answer does not say "buyers want".
         Proposals are by segment and stay proposals until the PM decides. The agent does not write "food service
         buyers want" from the one Food service interview (case: I-105; decision 3 test). Counts:
         case/expected-results.md
@@ -1041,7 +1041,7 @@ fallback_case:   # critic S4. Built by the case builder in Stage 2. Reworked in 
     m2: [m2-driver-code-book.md (.txt copy), m2-crm-export-q2.csv (decided deals), m2-winloss-notes-q2.md (planted CRM-only deal with "price"), m2-check-sample.md]
     m3: [m3-tag-list.md (.txt copy), m3-feedback-week-1.csv, m3-feedback-week-2.csv (planted new problem), m3-check-sample.md, m3-stretch-survey-wave.csv (stretch)]
     m4: [m4-alternatives-map.md (.txt copy), m4-evidence-pack.md (planted D-3108, CRM says Rimecore, buyer kept the spreadsheet), m4-check-sample.md]
-    m5: [m5-past-reports.md (.txt copy; R-2024-07 is 2024 food service, over the case age limit), m5-stakeholder-questions.md (one question tempts the old study; one question from the Fleet Data Platform PM; one check question)]
+    m5: [m5-past-reports.md (.txt copy; R-2025-07 is 2025 food service, over the case age limit), m5-stakeholder-questions.md (one question tempts the old study; one question from the Fleet Data Platform PM; one check question)]
   expected_results: case/expected-results.md (instructor only). Recounted under the problem backlog model. Each lab has a second sample input and a pass condition. Catch-up kit state files are listed at its end
 
 glossary:

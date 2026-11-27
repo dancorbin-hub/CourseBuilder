@@ -4,7 +4,7 @@
 
 Optional. Lab 1 stretch step. The agent screens applicants against the study criteria. It hands only edge cases to the PM.
 
-## Study criteria (next round, December 2026)
+## Study criteria (next round, December 2027)
 
 1. Works at a company in one of the three segments: Distribution, Food service, Pharmacy and lab.
 2. Makes or strongly influences the decision to buy temperature monitoring.
@@ -18,12 +18,12 @@ Optional. Lab 1 stretch step. The agent screens applicants against the study cri
 | --- | --- | --- | --- | --- | --- | --- |
 | AP-01 | Distribution | Operations manager | 3 warehouses | Decides | Food distributor | Never |
 | AP-02 | Food service | Kitchen manager | 1 site | Uses only | Restaurant | Never |
-| AP-03 | Pharmacy and lab | Lab manager | 12 fridges | Decides | Reference lab | 2026-09 |
+| AP-03 | Pharmacy and lab | Lab manager | 12 fridges | Decides | Reference lab | 2027-09 |
 | AP-04 | Food service | Director of operations | 7 stores | Decides | Grocery chain | Never |
 | AP-05 | Distribution | Refrigeration technician | 30 cold rooms | Recommends | Refrigeration contractor that resells Larkspan | Never |
 | AP-06 | Pharmacy and lab | Pharmacy manager | 4 locations | Decides | Pharmacy group | Never |
 | AP-07 | Food service | Facilities lead | 2 sites, 11 walk-ins | Influences | Restaurant group | Never |
-| AP-08 | Distribution | Quality manager | 2 warehouses | Decides | Cold storage | 2026-05 |
+| AP-08 | Distribution | Quality manager | 2 warehouses | Decides | Cold storage | 2027-05 |
 | AP-09 | Hardware retail | Store owner | 1 store | Decides | Hardware store | Never |
 | AP-10 | Pharmacy and lab | Procurement analyst | 6 locations | Runs the purchase, does not choose | Pharmacy group | Never |
 | AP-11 | Food service | Director of operations | 5 stores | Decides | Grocery chain that uses Rimecore | Never |

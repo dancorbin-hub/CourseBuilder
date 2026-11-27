@@ -171,7 +171,7 @@ TRANSITION: Let me add the win/loss job in front of you.
 ### Slide 2.5: Live demo. Add the win/loss job
 - Layout: 1_prompt
 - Minutes: 7 (half day 8)
-- On-slide text: LIVE DEMO. "Add the win/loss job." Running example: Larkspan Systems, Q2 2026 decided deals. 7 MIN (half day: 8 MIN).
+- On-slide text: LIVE DEMO. "Add the win/loss job." Running example: Larkspan Systems, Q2 2027 decided deals. 7 MIN (half day: 8 MIN).
 - Visual intent: Orange "LIVE DEMO" tag. Platform logo for the demo platform (Claude). Small list of the 2 new files and the 2 run files.
 - Sources: cl-pj-01, cl-ui-09 (platform matrix, verified). Demo script in section 3
 

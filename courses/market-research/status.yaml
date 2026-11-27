@@ -10,7 +10,7 @@ gates:
   gate_3_modules:     # one entry per module
     - { module: 1, status: content_approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/HsL2QbY9yrChpgYYYrmbri", card_test: open, note: "Dan approved content before the card test. Card test on 4 platforms (doubles as proof P1) still open. If P1 fails on 2 or more platforms, rework lab 1 with Dan yes" }
     - { module: 2, status: drafting, note: "Stage 3 started 2026-11-27. Adds Copilot fallback (m1 Gate 3 D13)" }
-  gate_4_final_qa:    { module: 1, status: approved, approved_on: 2026-11-27, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 42 checks, 0 fail, 2 waived (slide 1.10, Dan chose option C, modules/m1/gate-4-decisions.md). Dan approved 2026-11-27" }
+  gate_4_final_qa:    { module: 1, status: approved, approved_on: 2026-11-27, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 42 checks, 0 fail, 2 waived (slide 1.10, Dan chose option C, modules/m1/gate-4-decisions.md). Dan approved 2026-11-27. 2026-11-27: case year moved to 2027 (Dan, option B); workbook re-rendered v2 (kit dates only); deck and LD specs unchanged" }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20
   - Pragmatic Framework 2027 guide (project files, reference/pragmatic-sources/)
@@ -28,38 +28,38 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
   research/platform-matrix.yaml: sha256:f2b01bf39e7f8fc1
   research/bond-stories.md: sha256:70ffa8521cb65122
-  spec.yaml: sha256:e21bb98a02b06acc   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
+  spec.yaml: sha256:7c61badd5ef1a79d   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions); recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
   outline/syllabus.md: sha256:2468f0355f716385   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/development-brief.md: sha256:231fd68b99aedce7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/capability-mapping.md: sha256:62d094a14988aca7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/gate-2-decisions.md: sha256:91634c5b6ca9658c   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   case/README.md: sha256:53d2ed534f358b60   # Gate 2, 2026-11-26
-  case/company.md: sha256:5aed55520acbd894   # Gate 2, 2026-11-26
-  case/expected-results.md: sha256:0942d1134dc32336   # Gate 2, 2026-11-26
-  case/m1-check-sample.md: sha256:02fcdb2f0fa6b3a6   # Gate 2, 2026-11-26
-  case/m1-code-book.md: sha256:7eb7543ae249c396   # Gate 2, 2026-11-26
-  case/m1-code-book.txt: sha256:7eb7543ae249c396   # Gate 2, 2026-11-26
-  case/m1-interviews-batch-1.md: sha256:cf7c1257a312ce0b   # Gate 2, 2026-11-26
-  case/m1-interviews-batch-2.md: sha256:fa6d2b8efbbd3fa8   # Gate 2, 2026-11-26
-  case/m1-stretch-applicants.md: sha256:e500e41ab7734d0e   # Gate 2, 2026-11-26
-  case/m2-check-sample.md: sha256:e21873b7e58b513a   # Gate 2, 2026-11-26
-  case/m2-crm-export-q2.csv: sha256:40a5dfc1ed0b696b   # Gate 2, 2026-11-26
-  case/m2-driver-code-book.md: sha256:3153c6edb517dbbd   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
-  case/m2-driver-code-book.txt: sha256:3153c6edb517dbbd   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
-  case/m2-winloss-notes-q2.md: sha256:faaa64a6dffb1c1c   # Gate 2, 2026-11-26
-  case/m3-check-sample.md: sha256:1a9942fcb1818605   # Gate 2, 2026-11-26
-  case/m3-feedback-week-1.csv: sha256:990a2c125ea74396   # Gate 2, 2026-11-26
-  case/m3-feedback-week-2.csv: sha256:a2f3ef1a90744806   # Gate 2, 2026-11-26
+  case/company.md: sha256:2cd7e1f16ff130dd   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/expected-results.md: sha256:069e5a13df00c2ad   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m1-check-sample.md: sha256:0c3590bc2cfcbca2   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m1-code-book.md: sha256:7f4ee2af5b962535   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m1-code-book.txt: sha256:7f4ee2af5b962535   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m1-interviews-batch-1.md: sha256:2dad4ce4ae9f6db3   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m1-interviews-batch-2.md: sha256:53c31315e54b784d   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m1-stretch-applicants.md: sha256:c91c857db0783964   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m2-check-sample.md: sha256:3e5110d98e2b7dc5   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m2-crm-export-q2.csv: sha256:61a87ff1b77afb84   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m2-driver-code-book.md: sha256:c5f8704dc76600c9   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions); recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m2-driver-code-book.txt: sha256:c5f8704dc76600c9   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions); recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m2-winloss-notes-q2.md: sha256:46854df9e12a1d3e   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m3-check-sample.md: sha256:9f377fc913ac31ee   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m3-feedback-week-1.csv: sha256:3f2b4790859cf12c   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m3-feedback-week-2.csv: sha256:ac45b7e07b215474   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
   case/m3-stretch-survey-wave.csv: sha256:1b89e22ce744ed05   # Gate 2, 2026-11-26
-  case/m3-tag-list.md: sha256:47c67bdf98566ce6   # Gate 2, 2026-11-26
-  case/m3-tag-list.txt: sha256:47c67bdf98566ce6   # Gate 2, 2026-11-26
-  case/m4-alternatives-map.md: sha256:e072d50e1cafb96b   # Gate 2, 2026-11-26
-  case/m4-alternatives-map.txt: sha256:e072d50e1cafb96b   # Gate 2, 2026-11-26
-  case/m4-check-sample.md: sha256:8b7b6cefd77536a8   # Gate 2, 2026-11-26
-  case/m4-evidence-pack.md: sha256:88a1d8adf8880b3a   # Gate 2, 2026-11-26
-  case/m5-past-reports.md: sha256:fb63d4ab44f8b297   # Gate 2, 2026-11-26
-  case/m5-past-reports.txt: sha256:fb63d4ab44f8b297   # Gate 2, 2026-11-26
-  case/m5-stakeholder-questions.md: sha256:c9539e8580dbf6f9   # Gate 2, 2026-11-26
-  case/planted-errors.md: sha256:c7e41877a46e9edd   # Gate 2, 2026-11-26
+  case/m3-tag-list.md: sha256:f4af2ca2830c15d1   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m3-tag-list.txt: sha256:f4af2ca2830c15d1   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m4-alternatives-map.md: sha256:fc8066c1b1390517   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m4-alternatives-map.txt: sha256:fc8066c1b1390517   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m4-check-sample.md: sha256:5a0f5e04f9828fdb   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m4-evidence-pack.md: sha256:c82f0814913e8cca   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m5-past-reports.md: sha256:ddceecb96af427e9   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m5-past-reports.txt: sha256:ddceecb96af427e9   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/m5-stakeholder-questions.md: sha256:2484a8495ce0ea85   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/planted-errors.md: sha256:6832ece9eeb6f5de   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
   modules/m1/module.md: sha256:ab5f550cea2aa569   # Gate 3 content approved, 2026-11-26
   modules/m1/slides.json: sha256:57401ddbc650ffd1   # Gate 4 approved, 2026-11-27

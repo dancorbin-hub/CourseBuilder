@@ -2,9 +2,9 @@
 
 # Driver log
 
-Log file for the Market Evidence Agent, win/loss job. State after module 2: Q2 2026 decided deals (14 deals, 9 with a buyer interview, 5 CRM only). The format is in the driver code book. Facts and counts only. The agent never writes "pattern" or "validated".
+Log file for the Market Evidence Agent, win/loss job. State after module 2: Q2 2027 decided deals (14 deals, 9 with a buyer interview, 5 CRM only). The format is in the driver code book. Facts and counts only. The agent never writes "pattern" or "validated".
 
-Last updated: after the Q2 2026 batch (decisions 2026-04-08 to 2026-06-29).
+Last updated: after the Q2 2027 batch (decisions 2027-04-08 to 2027-06-29).
 
 ## Driver log
 
@@ -20,7 +20,7 @@ Last updated: after the Q2 2026 batch (decisions 2026-04-08 to 2026-06-29).
 | D-2208 | Q2 | Won | Distribution | CRM only | n/a | n/a | none | none | Relationship | n/a |
 | D-2209 | Q2 | Lost | Food service | interview | D10 Current equipment is good enough | Alarms in a new refrigeration controller | "The new controllers already text us when a walk-in goes warm, so it's good enough for now." | WL-2209 | Price | no |
 | D-2210 | Q2 | Lost | Pharmacy and lab | CRM only | n/a | n/a (CRM competitor: Vantafrost) | none | none | Price | n/a |
-| D-2211 | Q2 | Lost | Pharmacy and lab | interview | D7 Timing and budget cycle | Budget freeze (do nothing) | "Our capital review got pushed to 2027, so nothing new got bought this year." | WL-2211 | Timing | yes |
+| D-2211 | Q2 | Lost | Pharmacy and lab | interview | D7 Timing and budget cycle | Budget freeze (do nothing) | "Our capital review got pushed to 2028, so nothing new got bought this year." | WL-2211 | Timing | yes |
 | D-2212 | Q2 | Lost | Distribution | interview | D4 Compliance report fit | Vantafrost | "Vantafrost's audit export matched our auditor's template exactly, and yours needed a day of rework every month." | WL-2212 | Price | no |
 | D-2213 | Q2 | Won | Food service | CRM only | n/a | n/a | none | none | Price | n/a |
 | D-2214 | Q2 | Lost | Distribution | CRM only | n/a | n/a (CRM competitor: Rimecore) | none | none (buyer did not attend) | Price | n/a |

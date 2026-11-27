@@ -26,7 +26,7 @@ Write yes, no or n/a. Add a short note for each "no". Before = before the fix. A
 | P3-b **D-3108 as Rimecore (error shows), before** | | | | |
 | P3-c D-3108 fixed | | | | |
 | P3-d citations, dates, "what we do not know" | | | | |
-| P3-e **Q2 binder from R-2024-07 (error shows), before** | | | | |
+| P3-e **Q2 binder from R-2025-07 (error shows), before** | | | | |
 | P3-f Q2 flagged after the fix | | | | |
 | P3-g Q5 segment check | | | | |
 | P3-h proposals by segment | | | | |

@@ -2,7 +2,7 @@
 
 # Driver code book: win/loss (Larkspan Systems)
 
-Knowledge file for the Market Evidence Agent, win/loss job. Version 1, July 2026.
+Knowledge file for the Market Evidence Agent, win/loss job. Version 1, July 2027.
 
 ## Decision drivers
 

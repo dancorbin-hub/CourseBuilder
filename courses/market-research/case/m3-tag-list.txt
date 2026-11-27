@@ -2,7 +2,7 @@
 
 # Tag list: weekly feedback (Larkspan Systems)
 
-Knowledge file for the Market Evidence Agent, weekly feedback job. Version 1, November 2026. Tags match the market problem codes in the problem backlog.
+Knowledge file for the Market Evidence Agent, weekly feedback job. Version 1, November 2027. Tags match the market problem codes in the problem backlog.
 
 | Tag | Problem | Definition |
 | --- | --- | --- |
