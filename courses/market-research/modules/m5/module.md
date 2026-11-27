@@ -15,7 +15,6 @@ Module 4 is not built yet (OI-05 open). Module 5 starts from kit-m5, the state a
 | Minutes (full day / half day) | 65 / 60. Course close after it: 15 / 10 (section 10) |
 | Instructor-led / hands-on (minutes, %) | Full day 26 / 39 = 40% / 60% (8 + 9 + 9 = 26; 30 + 9 = 39). Half day 24 / 36 = 40% / 60% (7 + 8 + 9 = 24; 28 + 8 = 36). Inside the 40/60 rule (plus or minus 5 points). Course close: 5 / 10 (half day 4 / 6), as the spec sets it |
 | Planted error and warning level | Old research for another segment presented as current. Q2 (Head of Hardware) asks about pharmacy and lab. The agent answers "Buyers want a one-click inspection binder" from R-2025-07 (2025-09-12, Food service only, date and segment in a small-print header). The citation check passes. Warning: none (last lab). No audit hint |
-| Learner evidence | Send, change or hold decisions for the answers. Audit findings for every citation in one answer. The hand-off rules for what the agent may say (rule 5) and the audit rule (rule 6). The PM's order and validation decisions by segment. All on `lab-5-record-sheet.md`. Course close: the Monday plan and saved kit-final |
 | Agent after this module (files) | Instructions: brief v6 (rules 1 to 6). Knowledge: 12 files: 5 job cards (problem backlog, win/loss, weekly feedback, alternatives map, stakeholder answers), 5 case knowledge files (code book, driver code book, tag list, alternatives map, past reports), 2 logs (problem backlog, driver log). Take-home: `kit/kit-final/` |
 
 ### Start state (the agent after lab 4)
