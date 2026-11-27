@@ -10,3 +10,4 @@
 | 2026-11-27 00:15 | m2 | Start. Copilot fallback (m1 D13). No audit hint (m1 D11). Builder runs |
 | 2026-11-27 00:18 | m2 | Builder draft done: module.md, kit (lab-2, kit-m3), card-test.md. Lab brief slides short per Dan's new rule. Next: consistency reviewer and verifier |
 | 2026-11-27 00:45 | all | Case year moved 2026 to 2027 (Dan, option B). See case/year-shift-map.md. m1 workbook re-rendered v2 |
+| 2026-11-27 00:38 | m1 | Dan approved workbook v2 (case year 2027) |
