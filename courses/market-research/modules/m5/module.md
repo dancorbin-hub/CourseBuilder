@@ -769,7 +769,7 @@ Character counts measured with `wc -m` on 2026-11-27. Copilot course budget (spe
 | `kit-final/monday-plan.md` | Not loaded. Course close sheet | 2,046 (not loaded) | no |
 | `kit-final/README.md` (with the rebuild card) | Not loaded | not counted | no |
 
-Fallback sum check (module 5): header 399 + brief v5 3,491 + separator 5 + job card 1,398 = 5,293. Learner rule 5 (about 220) and rule 6 (about 330) bring it to about 5,850, under 8,000. With the past reports in Instructions it would be 7,662 before rule 5, and about 8,210 after rule 6 (over the limit; D3). kit-final fallback: header 400 + brief v6 4,008 + 5 + 1,398 = 5,813 (counted, 5,813).
+Fallback sum check (module 5): header 399 + brief v5 3,491 + separator 5 + job card 1,398 = 5,293. Learner rule 5 (about 220) and rule 6 (about 330) bring it to about 5,850, under 8,000. With the past reports in Instructions it would be 7,662 before rule 5, and about 8,210 after rule 6 (over the limit; D3). kit-final fallback: header 402 + brief v6 4,008 + separator 5 + job card 1,398 = 5,813.
 
 Copilot no-license pastes (target 15,400 each): message 1, `problem-backlog.txt` 15,194. Message 2, `driver-log.txt` 7,565 + `alternatives-map.txt` 3,286 + `past-reports.txt` 2,773 = 13,624. Message 3, the questions file 1,667. Debrief: messages 1 and 2 again, then the questions file.
 

@@ -20,3 +20,4 @@
 | 2026-11-27 02:27 | m3 | Builder revise once done: revision-notes.md, open decisions D1 to D14, 7 changes for Dan's yes |
 | 2026-11-27 02:28 | m3 | Revised once. Gate 3 doc published, status in_review |
 | 2026-11-27 02:35 | m5 | Start before m4 (OI-05 open). Start state from case; m4 builder makes kit-m5 match |
+| 2026-11-27 06:55 | m5 | Builder draft done: module.md (17 slides, 65/60 min, 40%; course close C.1 to C.4), kit (lab-5, kit-final, kit-m5-draft, kit-m5-expected.md), card-test.md. Start state from the case before m4. 15 decisions D1 to D15, 5 changes for Dan's yes. Next: consistency reviewer and verifier |
