@@ -27,7 +27,7 @@ Pick 2 deals at random from the driver log. For each deal, open the CRM export a
 | | | | |
 | | | | |
 
-Then read the deal source column for every deal. For each deal labeled "interview", find its interview in the notes.
+Then read the deal source column for every deal.
 
 Deal source finding:
 

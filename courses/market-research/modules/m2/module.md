@@ -47,16 +47,7 @@ Open decisions for the Gate 3 doc, most important first. One line each, with a r
 
 | # | Decision | Recommended |
 | --- | --- | --- |
-| D1 | Slide 2.2 line "Manual win/loss is slow and does not scale" has 1 source (W2). Accept Klue (2025-09-04, vendor, age flag) as the second source and shorten the line to "Manual win/loss is slow."? B: move the line to the talk track, attributed to Corporate Visions | A: accept Klue, line becomes "Manual win/loss is slow." Not applied on the slide until your yes |
-| D2 | How strong is the lab 2 hint? Card step 4 names the deal source column (spec). The record sheet also says "For each deal labeled 'interview', find its interview in the notes", which leads straight to WL-2214. A: keep both. B: keep the card, shorten the sheet line to "Then read the deal source column for every deal." C: drop the column from both (the error becomes hard to find in 32 minutes) | B. Not applied until your yes |
-| D3 | Slide 2.3 says "Do not wait for a minimum number of deals". The Pragmatic guide (page 7) says "at least 10 deals". Keep the wording, which does not say the guide is wrong? | A: keep |
-| D4 | The case has no case PM decisions for the lab 2 flags. kit-m3 `driver-log.md` leaves them to the learner. Keep, or you supply them? | A: keep |
-| D5 | Copilot `.csv` upload in the agent chat is still partly verified (G2-PF-02; new Microsoft doc covers licensed Copilot Chat, not agents or no-license users). Card says "upload, or paste the text". Add an `.xlsx` copy only if the card test fails? | A: card test decides |
-| D6 | kit-m3 driver log follows the case state (`m4-evidence-pack.md` Part 1: "Period", no "Secondary drivers"), not the code book format. Accept, and tell the module 4 builder? | A: accept |
-| D7 | Lab brief as 2 short slides (2.10 goal, 6 key actions, workbook pointer; 2.11 pass check, hint, data safety), per your lab brief rule. Or merge into 1 short slide? | A: keep 2 slides |
-| D8 | "Share findings with sales" has no debrief minutes in the spec. It is taught on 2.8 and practiced on 2.13. Accept? | A: accept |
-| D9 | Half day: 1 extra minute on the demo (2.5) and on 2.9, not named in the spec note. Accept, as module 1 D16? | A: accept |
-| D10 | Story slot on 2.2 (sales leader who changed a pricing plan from CRM loss reasons). Supply one real Pragmatic story, or skip path? | A if you have one, else skip path |
+| D1 | (Open: Dan commented that AI now reads stored calls, emails and interviews. Option C proposed: line 2 "Win/loss was slow. AI can now read the calls, emails and interviews you already store." Waits for Dan to pick A or C.) Slide 2.2 line "Manual win/loss is slow and does not scale" has 1 source (W2). Accept Klue (2025-09-04, vendor, age flag) as the second source and shorten the line to "Manual win/loss is slow."? B: move the line to the talk track, attributed to Corporate Visions | A: accept Klue, line becomes "Manual win/loss is slow." Not applied on the slide until your yes |
 
 ### Decided by Dan (2026-11-27)
 
@@ -66,6 +57,15 @@ Open decisions for the Gate 3 doc, most important first. One line each, with a r
 | Draft D2 | No schedule stretch in module 2. The schedule stretch moves to module 3, Claude card only (`research/stretch-verification-2026-11.md`: cl-sc-07 verified by doc, test pending; cg-06 verified by doc but a project task cannot read project files; mb-06 not verified; gm-07 not available for Workspace) | Spec module 2 `stretch` updated. Claude and ChatGPT cards say "No stretch step in module 2. The schedule stretch is in module 3." |
 | Draft D5 | Delete "(program minimum met)" from `case/expected-results.md` | Done by the case builder. Case note removed |
 | Draft D13 | Old Pragmatic market visit article (2025-08-27) for the no-blame frame on 2.8 | Dan accepted this age flag and PA-04 at Gate 1 (`gate-1-decisions.md`). No decision needed |
+| Gate 3 D2 | D2 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | B. Record sheet line shortened to "Then read the deal source column for every deal." Card step 4 unchanged |
+| Gate 3 D3 | D3 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Keep. No change |
+| Gate 3 D4 | D4 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Keep. Learner decides the lab 2 flags. No change |
+| Gate 3 D5 | D5 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Card test decides. No change now |
+| Gate 3 D6 | D6 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Accept. Module 4 already uses the case log columns (kit-m5 contract). No change |
+| Gate 3 D7 | D7 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Keep 2 slides. No change |
+| Gate 3 D8 | D8 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Accept. No change |
+| Gate 3 D9 | D9 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Accept. No change |
+| Gate 3 D10 | D10 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Skip path. Story slot stays optional |
 | Draft D11 | "Many teams do not run win/loss at all" stays off the slides | Research rule: W1 and W3 rest on the same old Pragmatic survey, so 1 source. Talk track says it as the course view only. Spec wording: see "Changes needing Dan's yes" row 1 |
 
 ### Changes needing Dan's yes
