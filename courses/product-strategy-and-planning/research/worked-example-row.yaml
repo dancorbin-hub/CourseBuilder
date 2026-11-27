@@ -6,7 +6,7 @@
 #   a and row 01 final: drift check folds in as a strategy consistency check. No Strategy Matrix.
 #   Dan's theme: the agent never proposes, ranks or rewrites strategy. The PM decides.
 #   j: Larkspan Systems case; strategy inputs are a strategy overview, OKRs and KPIs with targets.
-#   e (provisional): strategy data safety lines plus the teaching point.
+#   e (Dan, decision 2, option B, 2026-11-26): strategy data safety lines, teaching point, and work with data science, privacy and compliance teams.
 #   PS-06 rule: same Pragmatic terms, no callbacks to core courses, every term defined here.
 #   Platform risks f1 to f6: ChatGPT Plus minimum; Copilot upload in chat; CSV copy in the case pack.
 
@@ -72,7 +72,7 @@ proposed_lab:
   core_message: The meeting is for decisions, not reconciliation. The agent reconciles and shows the evidence; the PM makes the strategy and funding calls
   build_type: agent (extend the course agent built in module 1)
   core_path_no_connectors: yes. The learner uploads team submissions, the strategy overview, OKRs and KPIs from the Larkspan Systems case, or their own (approved tool only)
-  data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. No confidential plans, unreleased roadmaps, forecasts, pricing, supplier terms or non-public financial data in an unapproved tool. Check every version for people outside the team for confidential content. Do not put confidential names in web search queries. Teaching point: an agent that keeps a pack from quarter to quarter stores sensitive data longer than a one-off prompt. If the tool is not approved, use the fallback case or remove names and prices first (Dan, decision e, provisional, 2026-11-26)"
+  data_safety: "Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. No confidential plans, unreleased roadmaps, forecasts, pricing, supplier terms or non-public financial data in an unapproved tool. Do not put confidential names in web search queries. Teaching point: an agent that keeps a pack from quarter to quarter stores sensitive data longer than a one-off prompt. Work with your data science, privacy and compliance teams before you use real data. If the tool is not approved, use the fallback case or remove names and prices first (Dan, decision 2, option B, 2026-11-26)"
   platforms:
     claude: Skill or Project with the brief, templates and rules. CSV copy of the case sheets if code execution is off
     chatgpt: Project with the brief and templates. ChatGPT Plus is the course minimum (Dan, f1, 2026-11-26)

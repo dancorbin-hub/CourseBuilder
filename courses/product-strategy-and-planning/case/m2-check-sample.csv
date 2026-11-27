@@ -1,7 +1,7 @@
 request_id,date,channel,requester_role,requester_type,account_or_team,segment,deal_or_contract_date,request_text,stated_problem
-REQ-117,2026-11-23,Support ticket,Kitchen manager,customer,A-4103,Food service,,Custom alerts: let me mute alerts during the defrost cycle at 3 am.,The defrost cycle sets off a false alarm every night.
-REQ-118,2026-11-23,Support ticket,Pharmacy manager,customer,A-5104,Pharmacy and lab,,Custom alerts: warn me when a medicine fridge is out of range for more than 30 minutes and log it.,We must show how long an excursion lasted at audit.
-REQ-119,2026-11-24,Support ticket,Support lead,support,A-3302,Distribution,,Show probe battery level in the daily email.,
-REQ-120,2026-11-24,Internal intake form,Install lead,internal,I-Install,Internal,,Add photo upload to the install checklist.,Support cannot check that an install was done right.
-REQ-121,2026-11-25,Email,Head of Hardware,executive,Hardware team,Internal,2027-01-15 (price list date),Add Probe X to the reseller price list by 15 January.,
-REQ-122,2026-11-25,Support ticket,Operations manager,customer,A-3301,Distribution,,Rename 120 new probes at once.,Setting up new probes one by one takes half a day.
+REQ-117,2027-11-23,Support ticket,Kitchen manager,customer,A-4103,Food service,,Custom alerts: let me mute alerts during the defrost cycle at 3 am.,The defrost cycle sets off a false alarm every night.
+REQ-118,2027-11-23,Support ticket,Pharmacy manager,customer,A-5104,Pharmacy and lab,,Custom alerts: warn me when a medicine fridge is out of range for more than 30 minutes and log it.,We must show how long an excursion lasted at audit.
+REQ-119,2027-11-24,Support ticket,Support lead,support,A-3302,Distribution,,Show probe battery level in the daily email.,
+REQ-120,2027-11-24,Internal intake form,Install lead,internal,I-Install,Internal,,Add photo upload to the install checklist.,Support cannot check that an install was done right.
+REQ-121,2027-11-25,Email,Head of Hardware,executive,Hardware team,Internal,2028-01-15 (price list date),Add Probe X to the reseller price list by 15 January.,
+REQ-122,2027-11-25,Support ticket,Operations manager,customer,A-3301,Distribution,,Rename 120 new probes at once.,Setting up new probes one by one takes half a day.

@@ -1,5 +1,5 @@
 Id,Measure,Direction,Unit,Baseline,Baseline date,Target Oct,Target Nov,Target source,Label (agent writes),Actual Oct,Actual Nov,Gap Oct,Gap Nov,Off Oct,Off Nov,Flag
-OS-1,Active paid Probe X sites,higher,sites,1200,2026-09-30,2000,2600,"Business case outcome path, KR2.2",,,,,,no data,no data,no current data
-OS-2,Cloud subscription attach rate,higher,percent,62.5,2026-09-30,63.6,64.6,KR3.1 path,,,,,,no data,no data,no current data
-OS-3,Install days per site,lower,days,2.4,2026-09-30,2.31,2.22,KR2.1 path,,,,,,no data,no data,no current data
-OS-4,Pharmacy and lab audit record completeness,higher,percent,71,2026-09-30,72.6,74.1,KR1.2 path,,,,,,no data,no data,no current data
+OS-1,Active paid Probe X sites,higher,sites,1200,2027-09-30,2000,2600,"Business case outcome path, KR2.2",,,,,,no data,no data,no current data
+OS-2,Cloud subscription attach rate,higher,percent,62.5,2027-09-30,63.6,64.6,KR3.1 path,,,,,,no data,no data,no current data
+OS-3,Install days per site,lower,days,2.4,2027-09-30,2.31,2.22,KR2.1 path,,,,,,no data,no data,no current data
+OS-4,Pharmacy and lab audit record completeness,higher,percent,71,2027-09-30,72.6,74.1,KR1.2 path,,,,,,no data,no data,no current data

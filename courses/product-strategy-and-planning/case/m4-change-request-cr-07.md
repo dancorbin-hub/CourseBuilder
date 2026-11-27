@@ -5,10 +5,10 @@
 | Field | Value |
 | --- | --- |
 | Change request id | CR-07 |
-| Date | 2026-11-18 |
+| Date | 2027-11-18 |
 | From | VP Sales |
 | Source request | REQ-112, approved by the PM in the request job (module 2) |
-| Account | A-5120 (Quillfern Pharmacy Group), contract signature date 2027-01-31 |
+| Account | A-5120 (Quillfern Pharmacy Group), contract signature date 2028-01-31 |
 
 ## Request text
 
@@ -16,9 +16,9 @@ Add a calibration certificate export for Pharmacy and lab customers. This ships 
 
 ## Technical notes from the Head of Hardware
 
-- Probe calibration data sits on the device. The export needs the Firmware team to add a read field in Q1 2027. Ask: 40 percent of the Firmware team in Q1 2027.
+- Probe calibration data sits on the device. The export needs the Firmware team to add a read field in Q1 2028. Ask: 40 percent of the Firmware team in Q1 2028.
 - The antenna module from Brindle RF Components stores the calibration record. It needs a firmware field change.
-- The export needs a Larkspan Cloud interface change. Ask: 10 percent of the Cloud team in Q1 2027.
+- The export needs a Larkspan Cloud interface change. Ask: 10 percent of the Cloud team in Q1 2028.
 
 ## Text marked for people outside the product team
 
