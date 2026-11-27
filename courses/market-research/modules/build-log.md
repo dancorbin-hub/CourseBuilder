@@ -24,3 +24,4 @@
 | 2026-11-27 07:06 | m5 | Builder revise once done: revision-notes.md. Audit pick now random (blocker 1). kit-final released after slide 5.13. Share steps Claude and ChatGPT only. Open decisions D1 to D17, 7 changes for Dan's yes |
 | 2026-11-27 07:08 | m5 | Revised once. Gate 3 doc published, status in_review |
 | 2026-11-27 19:25 | m4 | Start. OI-05 closed with Dan's example (Pragmatic client built an internal training center, then came back). Contract: m5 kit-m5-expected.md |
+| 2026-11-27 19:38 | m4 | Builder draft done: module.md (17 slides, 55 min, 22/33 = 40%), kit (lab-4, kit-m5 to the m5 contract), card-test.md. Lab 4 rule is brief "My rules" 4. Log save saves map and driver log. Second-agent stretch on Claude and ChatGPT, not tested. 13 decisions D1 to D13, 6 changes for Dan yes. Next: consistency reviewer and verifier |
