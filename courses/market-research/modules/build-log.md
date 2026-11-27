@@ -12,3 +12,5 @@
 | 2026-11-27 00:45 | all | Case year moved 2026 to 2027 (Dan, option B). See case/year-shift-map.md. m1 workbook re-rendered v2 |
 | 2026-11-27 00:38 | m1 | Dan approved workbook v2 (case year 2027) |
 | 2026-11-27 01:58 | m2 | Dan yes to 3 approved-file changes: expected-results phrase, spec m2 card step 6 and stretch note, platform matrix stretch rows |
+| 2026-11-27 02:10 | m2 | Consistency report (0 blocker, 1 major, 8 minor) and verifier report done. Builder revises once |
+| 2026-11-27 02:01 | m2 | Builder revise once done: revision-notes.md, open decisions D1 to D10, 4 changes for Dan's yes |

@@ -1,6 +1,6 @@
 # Module 2: Win/loss and the match rate
 
-Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Built from `spec.yaml` (Gate 2, approved 2026-11-26), `outline/development-brief.md`, `outline/gate-2-decisions.md`, the case files and the approved module 1 (`modules/m1/`, Gate 3 decisions D9, D11, D12 and D13, Gate 4 decision G4-1).
+Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Revised once on 2026-11-27 after the consistency and verifier reports (`revision-notes.md`). Case year is 2027 (`case/year-shift-map.md`). Built from `spec.yaml` (Gate 2, approved 2026-11-26), `outline/development-brief.md`, `outline/gate-2-decisions.md`, the case files and the approved module 1 (`modules/m1/`, Gate 3 decisions D9, D11, D12 and D13, Gate 4 decision G4-1).
 
 ## 1. Summary
 
@@ -33,34 +33,40 @@ Half day: the slide minutes follow spec `half_day.arc_minutes` (8, 11, 11, 34, 1
 
 | # | Decision | Why |
 | --- | --- | --- |
-| B1 | Card step 6 runs in a new chat: "In a new chat, send the same 2 files with the prompt 'Run the win/loss job'." | Same reason as module 1 decision D1 (approved): a new chat is the only way to be sure the tuned brief applies on all 4 platforms. The spec card text is an outline (spec `card_rules`). See decision D1 |
-| B2 | The lab brief is 2 short slides. 2.10: goal, 5 key actions and a pointer to the step card in the workbook. 2.11: pass check, hint and data safety box. The full 6 steps are only on the step cards (kit and workbook) | Dan's rule for lab brief slides (2026-11-27, same idea as G4-1 option C for slide 1.10): the slide shows a short version and points to the workbook, which learners download from the Pragmatic Learning Hub. Same minutes (3). See decision D4 |
-| B3 | "How to share findings with sales" has no minutes in the spec debrief. It is taught on slide 2.8 (the match rate is a data gap, not a score for sales) and practiced on slide 2.13 (who hears it, and how) | The spec debrief minutes add up to 10 without it. m2-o4 still has a place to practice. See decision D3 |
-| B4 | No audit hint beyond the spec step. The record sheet asks for 2 random deals and a read of the deal source column, as in spec `card_steps` 4 and objective m2-o3. It does not say which deals or which driver to check | Module 1 decision D11: the audit hint was for lab 1 only. Warning level for lab 2 is "hint": the slide says "Audit before you approve." only |
+| B1 | Card step 6 runs in a new chat: "In a new chat, send the same 2 files with the prompt 'Run the win/loss job'." | Same reason as module 1 decision D1 (approved): a new chat is the only way to be sure the tuned brief applies on all 4 platforms. Dan agreed on 2026-11-27. Spec `card_steps` 6 now says the same |
+| B2 | The lab brief is 2 short slides. 2.10: goal, 6 key actions and a pointer to the step card in the workbook. 2.11: pass check, hint and data safety box. The full 6 steps are only on the step cards (kit and workbook) | Dan's rule for lab brief slides (2026-11-27, same idea as G4-1 option C for slide 1.10): the slide shows a short version and points to the workbook, which learners download from the Pragmatic Learning Hub. Same minutes (3). See decision D7 |
+| B3 | "How to share findings with sales" has no minutes in the spec debrief. It is taught on slide 2.8 (the match rate is a data gap, not a score for sales) and practiced on slide 2.13 (who hears it, and how) | The spec debrief minutes add up to 10 without it. m2-o4 still has a place to practice. See decision D8 |
+| B4 | No audit hint beyond the spec step. The record sheet asks for 2 random deals and a read of the deal source column, as in spec `card_steps` 4 and objective m2-o3. It does not say which deals or which driver to check. How far the record sheet line may go is decision D2 | Module 1 decision D11: the audit hint was for lab 1 only. Warning level for lab 2 is "hint": the slide says "Audit before you approve." only |
 | B5 | The slides and talk track never use the term the spec bans for the match rate (PA-04). The talk track says what the match rate does not tell you | Spec `voice.terms_never_used` and `registry_guard` |
 | B6 | Module 2 adds no empty driver log to the agent. The first run makes the driver log. The log save card adds it to knowledge (nothing to replace the first time) | Spec `uploads_per_lab`: module 2 adds 2 files to the agent. `case/company.md` says the same |
 | B7 | The Copilot no-license fallback text holds brief v2 with the kit's lab 1 rule. The card tells learners to put their own lab 1 rule there if it differs | Module 1 decision D13. Total 7,171 characters, under the 7,800 course budget and the 8,000 limit (mb-01) |
 
 ### Decisions for Dan
 
-Most important first. Each decision has a recommended answer.
+Open decisions for the Gate 3 doc, most important first. One line each, with a recommendation.
 
-| # | Decision | Options | Recommended |
-| --- | --- | --- | --- |
-| D1 | **Card step 6 in a new chat.** Spec `card_steps` 6 says "Send the same files again with the prompt 'Run the win/loss job'". The draft adds "In a new chat", as in module 1 D1 | A: keep the draft. Update spec `card_steps` 6 to match. B: same chat. Risk: the new rule may not apply in an open chat on some platforms | A. Confirm in your card test |
-| D2 | **Schedule stretch is on no card.** Spec stretch: "Run the job on each new batch when the export file arrives", only where verified. Nothing is verified yet (cl-sc-07, cg-06 not verified; check is due before module 3). Also, a schedule with no new input does nothing in a no-connector lab (methods M8), and a ChatGPT task cannot read project files (cg-06). Each card has a "Done early" line instead: run the job on your own deal export, or draft your note to sales. Neither uses a new platform feature | A: no schedule stretch in module 2. Module 3 owns the schedule stretch (spec `stretch_scope.slides`). B: hold module 2 until the module 3 verification, then add it to the Claude and ChatGPT cards | A |
-| D3 | **Share findings with sales has no debrief minutes in the spec.** Taught on 2.8, practiced on 2.13 (B3) | A: accept. B: take 1 minute from the check sample (3 to 2) for a separate slide | A |
-| D4 | **Lab brief as 2 short slides (B2), per your lab brief rule.** 2.10 has the goal, 5 key actions and the workbook pointer. 2.11 has the pass check, the hint and the data safety box. PRD rule 7 wants the success criteria "on the slide before the lab": that is 2.11. The spec places the data safety note on the lab brief slide: it is on 2.11 | A: keep 2 short slides. B: merge into one short slide (goal, key actions, pass check, hint, data safety box) | A. The data safety box and the pass check together fill one slide at 36 pt |
-| D5 | **Case wording conflicts with Gate 2 decision v2-7.** `case/expected-results.md`, lab 2 second sample, says "10 deals (program minimum met)". Dan removed the 10-deal minimum. The module does not repeat the phrase. The file is fingerprinted | A: the case builder deletes "(program minimum met)" and records a new fingerprint. B: leave it (instructor-only file) | A |
-| D6 | **The audit step names the deal source column.** This is the spec wording (card step 4, objective m2-o3). It points near the error. With only 2 random deals out of 14, the chance to draw D-2214 is about 1 in 7. The read of the whole deal source column is what finds it | A: keep the spec wording. It is a step, not a hint about the error. B: drop "and the deal source column" (the error becomes hard to find in 32 minutes) | A |
-| D7 | **kit-m3 driver log has no case PM flag decisions.** The case gives the lab 2 flags but no PM decisions for them. The kit does not invent them: the decision column says "From your lab 2 record sheet" | A: keep. B: you give the case PM's decisions, and the case builder adds them to `expected-results.md` | A |
-| D8 | **Copilot CSV in chat is not verified** (G2-PF-02). The card says "upload, or paste the text" (module 1 D9). The no-license path pastes the CRM export as text (spec). No `.xlsx` copy is in the kit: the spec adds one only if `.csv` fails | A: card test checks `.csv` upload. If it fails, the next build adds an `.xlsx` copy. B: add an `.xlsx` copy now | A |
-| D9 | **Half-day minutes.** The arc minutes need 1 extra minute on the demo (2.5) and on 2.9, which the spec note does not name | A: accept, as module 1 D16 | A |
-| D10 | **Story slot (slide 2.2).** No story written, to avoid an invented story (decision 43). Topic from the spec: a sales leader who changed a pricing plan from CRM loss reasons | A: you supply one real Pragmatic story. B: leave it optional with the skip path (module 1 D12) | A if you have one, else B |
-| D11 | **"Many teams do not run win/loss at all."** The spec bottleneck cites W1 and W2 for it. In the ledger, W1 and W2 support "CRM reasons often differ" and "manual win/loss is slow and does not scale". Only W3 (2022, not verified) says "underused". So the slide does not say it. The talk track says "Win/loss is the data most teams do not get" as the course's view (Dan's theme, Gate 2 C1), not as a finding | A: keep it off the slide. Verifier confirms. B: find a 2026 source first | A |
-| D12 | **Pragmatic guide and the 10-deal rule.** The Pragmatic Framework 2027 guide (page 7) says to repeat win/loss "across at least 10 deals to find patterns". You removed the minimum (v2-7). Slide 2.3 says "Do not wait for a minimum number of deals." The talk track says some programs wait for 10 or more, and why this course does not. It does not say the guide is wrong. Pragmatic reviewers may still notice | A: keep the wording. B: name the guide rule and the reason for the change on the slide | A |
-| D13 | **Old Pragmatic source for the no-blame frame.** Slide 2.8 talk track uses the Pragmatic frame: win/loss is about the buyer's experience, not a judgment of sales (PA-04, market visit article, modified 2025-08-27, older than 12 months) | A: keep. It is Pragmatic guidance, not a statistic. B: drop the line | A |
-| D14 | **Driver log columns.** The code book format has "Secondary drivers". The case state for the log (`m4-evidence-pack.md` Part 1) has "Period" and no "Secondary drivers". `kit-m3/driver-log.md` follows the case state, so module 4 matches it. Agent runs follow the code book format | A: accept. Tell the module 4 builder. B: the case builder aligns the two (fingerprinted files) | A |
+| # | Decision | Recommended |
+| --- | --- | --- |
+| D1 | Slide 2.2 line "Manual win/loss is slow and does not scale" has 1 source (W2). Accept Klue (2025-09-04, vendor, age flag) as the second source and shorten the line to "Manual win/loss is slow."? B: move the line to the talk track, attributed to Corporate Visions | A: accept Klue, line becomes "Manual win/loss is slow." Not applied on the slide until your yes |
+| D2 | How strong is the lab 2 hint? Card step 4 names the deal source column (spec). The record sheet also says "For each deal labeled 'interview', find its interview in the notes", which leads straight to WL-2214. A: keep both. B: keep the card, shorten the sheet line to "Then read the deal source column for every deal." C: drop the column from both (the error becomes hard to find in 32 minutes) | B. Not applied until your yes |
+| D3 | Slide 2.3 says "Do not wait for a minimum number of deals". The Pragmatic guide (page 7) says "at least 10 deals". Keep the wording, which does not say the guide is wrong? | A: keep |
+| D4 | The case has no case PM decisions for the lab 2 flags. kit-m3 `driver-log.md` leaves them to the learner. Keep, or you supply them? | A: keep |
+| D5 | Copilot `.csv` upload in the agent chat is still partly verified (G2-PF-02; new Microsoft doc covers licensed Copilot Chat, not agents or no-license users). Card says "upload, or paste the text". Add an `.xlsx` copy only if the card test fails? | A: card test decides |
+| D6 | kit-m3 driver log follows the case state (`m4-evidence-pack.md` Part 1: "Period", no "Secondary drivers"), not the code book format. Accept, and tell the module 4 builder? | A: accept |
+| D7 | Lab brief as 2 short slides (2.10 goal, 6 key actions, workbook pointer; 2.11 pass check, hint, data safety), per your lab brief rule. Or merge into 1 short slide? | A: keep 2 slides |
+| D8 | "Share findings with sales" has no debrief minutes in the spec. It is taught on 2.8 and practiced on 2.13. Accept? | A: accept |
+| D9 | Half day: 1 extra minute on the demo (2.5) and on 2.9, not named in the spec note. Accept, as module 1 D16? | A: accept |
+| D10 | Story slot on 2.2 (sales leader who changed a pricing plan from CRM loss reasons). Supply one real Pragmatic story, or skip path? | A if you have one, else skip path |
+
+### Decided by Dan (2026-11-27)
+
+| Was | Decision | Applied |
+| --- | --- | --- |
+| Draft D1 | Card step 6 runs "In a new chat" | Spec `card_steps` 6 updated (commit e78ee77). Cards as drafted |
+| Draft D2 | No schedule stretch in module 2. The schedule stretch moves to module 3, Claude card only (`research/stretch-verification-2026-11.md`: cl-sc-07 verified by doc, test pending; cg-06 verified by doc but a project task cannot read project files; mb-06 not verified; gm-07 not available for Workspace) | Spec module 2 `stretch` updated. Claude and ChatGPT cards say "No stretch step in module 2. The schedule stretch is in module 3." |
+| Draft D5 | Delete "(program minimum met)" from `case/expected-results.md` | Done by the case builder. Case note removed |
+| Draft D13 | Old Pragmatic market visit article (2025-08-27) for the no-blame frame on 2.8 | Dan accepted this age flag and PA-04 at Gate 1 (`gate-1-decisions.md`). No decision needed |
+| Draft D11 | "Many teams do not run win/loss at all" stays off the slides | Research rule: W1 and W3 rest on the same old Pragmatic survey, so 1 source. Talk track says it as the course view only. Spec wording: see "Changes needing Dan's yes" row 1 |
 
 ### Changes needing Dan's yes
 
@@ -68,9 +74,10 @@ None of these are made. Each waits for your yes.
 
 | # | File (fingerprinted or approved) | Change | Why |
 | --- | --- | --- | --- |
-| 1 | `case/expected-results.md` | Delete "(program minimum met)" in lab 2, second sample. New fingerprint | D5 |
-| 2 | `spec.yaml` | Module 2 `card_steps` 6: add "In a new chat". Module 2 `stretch`: "Module 3 owns the schedule stretch". New fingerprint | D1, D2 |
-| 3 | `modules/m1/kit/kit-m2/` (module 1 kit) | No change needed. Its README already says module 2 adds its own Copilot fallback. The fallback is in `modules/m2/kit/lab-2/`. If you want it inside kit-m2 too, it is a copy only | D13 of module 1 |
+| 1 | `spec.yaml`, module 2 `bottleneck` | Change "Many teams do not run win/loss at all (W1, W2; ...)" to "Many teams do not run win/loss at all (course view; no 2026 source, gap)" | Verifier F4: W2 does not say it. W1 says it from old Pragmatic data, the same data as W3 |
+| 2 | `research/evidence-ledger.yaml` | Add Klue, "Difficulty running win-loss analysis" (https://klue.com/blog/difficulty-running-win-loss-analysis, modified 2025-09-04, vendor, age flag). Claim: manual win/loss is slow; results arrive out of date | Only if D1 is A |
+| 3 | `research/platform-matrix.yaml` | Verifier rows: checked_on 2026-11-27 for cl-ui-09, cl-ui-10, cg-ui-09, mb-ui-12, mb-ui-13, mb-01, mb-ui-14, gm-ui-10. mb-03 source_date 2026-11-16. cl-ui-10 limits: Team and Enterprise owners use Organization settings. gm-ui-10 limits: existing skill uses **Add files**; "Instructions" is named. mb-01 note: **New chat** is named only in the **Try it** pane. New row mb-ui-15 (file formats for upload in Copilot, licensed, agents not named, ms.date 2026-07-28) | Verifier report, last section |
+| 4 | `modules/m1/module.md` (approved), Gemini card | Blog title: "Let skills in Gemini tackle your most repetitive tasks" (2026-09-30). Step 1 on an existing skill may use **Add files**, not **Add**, **files**, **Upload** | Verifier F7 and F8 apply to module 1 too. Card test confirms first |
 
 ## 2. Slides and talk track
 
@@ -99,7 +106,7 @@ TRANSITION: First, the workflow and what slows it down.
 - Minutes: 3 (half day 3)
 - On-slide text: Headline: "Sales says price. Is that what buyers say?" Line 1: "CRM loss reasons often differ from buyer reasons." Line 2: "Manual win/loss is slow and does not scale." Workflow strip: "Decided deals and win/loss interviews, then an updated, checked driver report."
 - Visual intent: Headline with "price" in orange. Two short lines. A left-to-right strip: a CRM row and an interview note, then a driver report.
-- Sources: W1 (claim, Clozd, 2026-04-20), W2 (claim, Corporate Visions, updated 2026-07-30). No figure from either (spec `claims_on_slides`)
+- Sources: Line 1: W1 (claim, Clozd, 2026-04-20) and W2 (claim, Corporate Visions, updated 2026-07-30). Line 2: W2 only. Decision D1 proposes Klue (2025-09-04, age flag) as the second source and the line "Manual win/loss is slow." No figure from any source (spec `claims_on_slides`)
 
 Notes:
 ```
@@ -109,9 +116,9 @@ Here is the workflow for this module.
 A deal closes, won or lost.
 Someone types a reason into the CRM. Usually the sales rep, at the end of a busy quarter.
 A win/loss program asks the buyer instead.
-Two win/loss firms, Clozd and Corporate Visions, both wrote in 2026 that the CRM reason often differs from what the buyer says.
+Two win/loss firms, Clozd and Corporate Visions, both say in 2026 pages that the CRM reason often differs from what the buyer says.
 Both sell win/loss services. So treat this as their experience, not a study.
-Both also say a manual program is slow.
+Corporate Visions also says a manual program is slow.
 Someone books the calls, takes notes, codes them and writes a quarterly report.
 By the time the report lands, the chance to act has passed.
 So many teams act on the CRM field alone.
@@ -132,7 +139,7 @@ Notes:
 ```
 POINT: Win/loss interviews are run by someone outside sales, soon after the decision, and each one goes into the log as soon as it is coded.
 Talk Track:
-These rules come from Pragmatic, with one change Dan made for this course.
+These rules come from Pragmatic, with one change for this course.
 One. Someone outside sales runs the interview. The buyer gives more honest answers to someone who did not sell to them.
 Two. Interview 2 to 4 weeks after the decision. The decision is final, and the buyer still remembers why.
 Three. Add each interview as soon as it is coded.
@@ -253,7 +260,7 @@ TRANSITION: Once deals are labeled, you can compare the two sources.
 - Minutes: 3 (half day 3)
 - On-slide text: Match rate: of the deals with a buyer interview, how often the CRM reason matches the buyer's primary driver. Shown for won, lost and total. "A gap in the data. Not a score for sales."
 - Visual intent: The empty match rate table (Outcome, Deals with an interview, CRM reason matches buyer primary driver, Match rate) with 3 rows. Bottom line in teal.
-- Sources: case `m2-driver-code-book.md` (table format). Alignment log PA-04 (Pragmatic: match rate wording; frame win/loss around the buyer's experience, not as a judgment of sales; market visit article, modified 2025-08-27, see D13)
+- Sources: case `m2-driver-code-book.md` (table format). Alignment log PA-04 (Pragmatic: match rate wording; frame win/loss around the buyer's experience, not as a judgment of sales; market visit article, modified 2025-08-27; age flag accepted by Dan at Gate 1)
 
 Notes:
 ```
@@ -301,8 +308,8 @@ TRANSITION: Here is your lab.
 ### Slide 2.10: Lab 2 brief
 - Layout: Activity
 - Minutes: 2 (half day 2)
-- On-slide text: ACTIVITY. Lab 2: Add the win/loss job. Goal: Run win/loss on decided deals. Report the gap between sales and buyer reasons. Key actions: Add the win/loss job. Run it. Decide each flag. Audit the deal source labels. Add one rule. Footer: "Full steps: your step card in the workbook (Pragmatic Learning Hub)."
-- Visual intent: Orange "ACTIVITY" band. Goal at the top. 5 short key actions in large type. Workbook pointer in the footer. Nothing else on the slide.
+- On-slide text: ACTIVITY. Lab 2: Add the win/loss job. Goal: Run win/loss on decided deals. Report the gap between sales and buyer reasons. Key actions: Add the win/loss job. Run it. Decide each flag. Audit the deal source labels. Add one rule. Run again in a new chat. Footer: "Full steps: your step card in the workbook (Pragmatic Learning Hub)."
+- Visual intent: Orange "ACTIVITY" band. Goal at the top. 6 short key actions in large type. Workbook pointer in the footer. Nothing else on the slide.
 - Sources: none
 
 Notes:
@@ -331,6 +338,7 @@ Notes:
 ```
 POINT: The success check names the outputs and your manager actions, and the data safety rule covers deal data too.
 Talk Track:
+The goal of this activity is to know what done looks like before you start.
 Done when: a complete match rate table, a source label on each deal, counts on each driver, your decision on each flag, 2 audited deals and one new rule.
 [POINT TO THE DATA SAFETY BOX]
 Same rule as module 1. Approved tool. Confidentiality agreed for win/loss.
@@ -372,7 +380,7 @@ TRANSITION: [CLOSE ROOMS AT MINUTE 32, HALF DAY 34] Bring your record sheet and 
 - Layout: debrief
 - Minutes: 3 (half day 4)
 - On-slide text: DEBRIEF. Write one sentence: what does your match rate table show? Who hears it: sales, marketing or leadership? How do you say it so sales does not hear blame?
-- Visual intent: Navy "DEBRIEF" band. 3 questions. On click: the case match rate table (won 3 / 2 / 67%, lost 6 / 2 / 33%, total 9 / 4 / 44%) and one line: "CRM says Price on 7 of 9 lost deals. Interviewed buyers name price on 1 of 6."
+- Visual intent: Navy "DEBRIEF" band. 3 questions. On click: the case match rate table (won 3 / 2 / 67%, lost 6 / 2 / 33%, total 9 / 4 / 44%) and one line: "CRM says Price on 7 of all 9 lost deals. Buyers name price on 1 of the 6 interviewed lost deals."
 - Sources: none (case `expected-results.md` lab 2)
 
 Notes:
@@ -386,7 +394,8 @@ Then mark who hears it, and how you would say it.
 [CLICK TO SHOW THE CASE TABLE]
 Here is the Larkspan table, from the 9 deals with a buyer interview.
 Won: 3 deals, the CRM reason matches on 2. Lost: 6 deals, it matches on 2.
-The CRM says "Price" on 7 of 9 lost deals. Interviewed buyers name price on 1 of 6.
+Now all 9 lost deals in the CRM: the CRM says "Price" on 7 of them.
+Of the 6 interviewed lost deals, buyers name price on 1.
 The other lost buyers name the hub in blast freezers, alert noise in the trial, the audit export, a budget delay, and new refrigeration controllers.
 No driver repeats. Every driver has 1 interviewed lost deal. That is a reason to interview more buyers, not a reason to pick a winner.
 Who hears it? One way to split it:
@@ -414,7 +423,7 @@ Talk Track:
 Here is the planted error.
 WL-2214, deal D-2214, Highcastle Foods. The interview was scheduled. The buyer did not attend.
 The entry holds only a note copied from the CRM: "Lost on price. Rimecore came in about 15% lower."
-On the template brief, the agent treats that entry as an interview. Or it fills the gaps from the CRM: D-2204 and D-2210 are CRM only, both "Price".
+On brief v2, the agent treats that entry as an interview. Or it fills the gaps from the CRM: D-2204 and D-2210 are CRM only, both "Price".
 So price shows 2 to 4 buyer deals and looks like the top buyer driver.
 The quote check passes. These deals have no buyer quote, so there is nothing to check.
 Only one interviewed buyer named price: WL-2205, Juniper Yard Cafes. "Four site subscriptions was more than we spend on the coolers' service contract, so we stayed with paper logs."
@@ -521,7 +530,7 @@ All four cards have the same 6 core steps. Saving is in each card header, not a 
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the Project "Market Evidence Agent" from module 1. Lost or behind? Rebuild it from `kit-m2` first.
 - Saves: **Save instructions** saves the instructions. Files save when you add them. Chats save as you go.
-- Check date and vendor doc: 2026-11-26. Claude Help Center, "How can I create and manage projects?" (https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects, page metadata 2026-11-06, seen 2026-11-26, platform matrix cl-ui-09). "Create and edit files with Claude" (https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude, page metadata 2026-11-24, seen 2026-11-26, cl-ui-10).
+- Check date and vendor doc: 2026-11-27 (all docs reopened by the module 2 verifier). Claude Help Center, "How can I create and manage projects?" (https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects, page metadata 2026-11-06, seen 2026-11-26, platform matrix cl-ui-09). "Create and edit files with Claude" (https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude, page metadata 2026-11-24, seen 2026-11-26, cl-ui-10).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.
 
 | Step | Do this |
@@ -533,7 +542,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 5 | Add one rule for what you found under "My rules" in the project instructions. |
 | 6 | In a new chat, send the same 2 files with the prompt "Run the win/loss job". |
 
-Notes: No file in the answer? Check that **Code execution and file creation** (or **Create and edit files**) is on in **Settings**, then **Capabilities**. Your project opens as one conversation with a Library? Tell the instructor.
+Notes: No file in the answer? Check that **Code execution and file creation** (or **Create and edit files**) is on in **Settings**, then **Capabilities**. Team or Enterprise: ask your owner. Your project opens as one conversation with a Library? Tell the instructor.
 
 **Start here with sample data:** Add: `job-card-win-loss.md`, `driver-code-book.md`. Run files: `m2-crm-export-q2.csv` and `m2-winloss-notes-q2.md`. Own work: replace `driver-code-book` with your drivers in the same format. Use an export of recent decided deals and your win/loss notes.
 
@@ -541,13 +550,13 @@ Notes: No file in the answer? Check that **Code execution and file creation** (o
 
 **Done early:** Run the job on your own deal export. Or write your note to sales in section 4 of your record sheet.
 
-**Stretch (only where verified):** The schedule stretch is not on this card. It is not yet verified for this course.
+**Stretch (only where verified):** No stretch step in module 2. The schedule stretch is in module 3.
 
 ### Card: ChatGPT
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the Project "Market Evidence Agent" from module 1. Plan: Go or Plus or higher. Lost or behind? Rebuild it from `kit-m2` first.
 - Saves: As you go.
-- Check date and vendor doc: 2026-11-26. OpenAI Help Center, "Projects in ChatGPT" (https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt, "Updated: 3 days ago", seen 2026-11-26, platform matrix cg-ui-09).
+- Check date and vendor doc: 2026-11-27 (all docs reopened by the module 2 verifier). OpenAI Help Center, "Projects in ChatGPT" (https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt, "Updated: 3 days ago", seen 2026-11-26, platform matrix cg-ui-09).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.
 
 | Step | Do this |
@@ -567,13 +576,13 @@ Notes: **Project settings** is in the **•••** menu of the project. No file
 
 **Done early:** Same as the Claude card.
 
-**Stretch (only where verified):** The schedule stretch is not on this card. It is not yet verified for this course.
+**Stretch (only where verified):** No stretch step in module 2. The schedule stretch is in module 3.
 
 ### Card: Copilot agent builder
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the agent "Market Evidence Agent" from module 1. To open it: **All agents**, then **...** next to it, then **Edit**. Lost or behind? Rebuild it from `kit-m2` first.
 - Saves: **Update** after each change.
-- Check date and vendor doc: 2026-11-26. Microsoft Learn, "Add knowledge sources" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge, "Last updated on 2026-11-16", mb-ui-12). "Share and manage agents" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents, "Last updated on 2026-11-16", mb-ui-13). Microsoft Support, "Add content to Microsoft 365 Copilot Chat prompts" (https://support.microsoft.com/en-US/Microsoft-365-Copilot/add-content-to-microsoft-365-copilot-chat-prompts, ms.date 2026-11-18, mb-ui-14, partly verified). All seen 2026-11-26.
+- Check date and vendor doc: 2026-11-27 (all docs reopened by the module 2 verifier). Microsoft Learn, "Add knowledge sources" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge, "Last updated on 2026-11-16", mb-ui-12). "Share and manage agents" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents, "Last updated on 2026-11-16", mb-ui-13). Microsoft Support, "Add content to Microsoft 365 Copilot Chat prompts" (https://support.microsoft.com/en-US/Microsoft-365-Copilot/add-content-to-microsoft-365-copilot-chat-prompts, ms.date 2026-11-18, mb-ui-14, partly verified). All seen 2026-11-26.
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.
 
 | Step | Do this |
@@ -605,12 +614,12 @@ If the instructions do not fit, keep only `brief-v2.txt` in **Instructions**. Pa
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the skill "market-evidence-agent" from module 1. Find it in **Customize**, then **Skills**. Click it to edit. This is a Gemini skill. Gems are now skills. Lost or behind? Rebuild it from `kit-m2` first.
 - Saves: **Save** after each change.
-- Check date and vendor doc: 2026-11-26. Gemini Apps Help, skills page (https://support.google.com/gemini?p=pn_skills, page shows no date, seen 2026-11-26, gm-ui-10; module 1 decision D3 accepts it with a check date). Google blog, "Automate tasks with skills" (https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/, 2026-09-30) for **/**.
+- Check date and vendor doc: 2026-11-27 (all docs reopened by the module 2 verifier). Gemini Apps Help, skills page (https://support.google.com/gemini?p=pn_skills, page shows no date, seen 2026-11-26, gm-ui-10; module 1 decision D3 accepts it with a check date). Google blog, "Let skills in Gemini tackle your most repetitive tasks" (https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/, 2026-09-30) for **/**. The Help page names **Add files** for an existing skill (verifier, 2026-11-27).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.
 
 | Step | Do this |
 | --- | --- |
-| 1 | Add `job-card-win-loss` and `driver-code-book` to your skill with **Add**, **files**, **Upload**. |
+| 1 | Add `job-card-win-loss` and `driver-code-book` to your skill with **Add files**. |
 | 2 | In a new chat, send the CRM export and notes with "/market-evidence-agent Run the win/loss job". |
 | 3 | Write your decision for each flag report item on your record sheet. |
 | 4 | Audit 2 random deals and the deal source column, with the checklist on your record sheet. |
@@ -631,7 +640,7 @@ Notes: Type **/** (or **@**) in the chat and pick your skill from the list. If a
 
 - Questions: What does your match rate table show, in one sentence? Who hears it, and how do you say it so sales does not hear blame? Which check or audit found the error? Which deals did your agent treat as buyer evidence?
 - Match rate read (case, from `case/expected-results.md`): 14 decided deals. 9 with an interview, 5 CRM only (D-2204, D-2208, D-2210, D-2213, D-2214). Won: 3 interviewed, 2 match (D-2201, D-2206), 67%. Lost: 6 interviewed, 2 match (D-2205, D-2211), 33%. Total: 9, 4, 44%. CRM says "Price" on 7 of 9 lost deals. Interviewed buyers name price on 1 of 6. Buyer drivers on lost deals: D1 Price 1 (D-2205), D2 Install 1 (D-2203), D3 Alert accuracy 1 (D-2207), D4 Report fit 1 (D-2212), D7 Timing 1 (D-2211), D10 Current equipment 1 (D-2209). No driver repeats.
-- Error reveal (record ids): WL-2214 (deal D-2214, Highcastle Foods, Distribution, lost). The buyer did not attend. Two reschedule requests got no reply. The entry holds only a note from the account owner, copied from CRM: "Lost on price. Rimecore came in about 15% lower." D-2204 (Lantern Row Bakeries) and D-2210 (Wexley Pharmacy Group) are CRM-only lost deals with the CRM reason "Price". On the template brief, the agent treats WL-2214 as interview evidence, or fills missing interviews from the CRM reason. Price then shows 2 to 4 buyer deals and looks like the top buyer driver. The quote check passes because these deals have no buyer quote. Only 1 interviewed buyer names price: WL-2205 (D-2205, Juniper Yard Cafes), "Four site subscriptions was more than we spend on the coolers' service contract, so we stayed with paper logs."
+- Error reveal (record ids): WL-2214 (deal D-2214, Highcastle Foods, Distribution, lost). The buyer did not attend. Two reschedule requests got no reply. The entry holds only a note from the account owner, copied from CRM: "Lost on price. Rimecore came in about 15% lower." D-2204 (Lantern Row Bakeries) and D-2210 (Wexley Pharmacy Group) are CRM-only lost deals with the CRM reason "Price". On brief v2, the agent treats WL-2214 as interview evidence, or fills missing interviews from the CRM reason. Price then shows 2 to 4 buyer deals and looks like the top buyer driver. The quote check passes because these deals have no buyer quote. Only 1 interviewed buyer names price: WL-2205 (D-2205, Juniper Yard Cafes), "Four site subscriptions was more than we spend on the coolers' service contract, so we stayed with paper logs."
 - Fix the learner adds (`case/planted-errors.md`, lab 2): "A deal with no buyer interview is CRM only. Never use the CRM reason or a sales note as a buyer driver. Count only deals with an interview in the match rate table."
 - Debrief check (instructor only): The match rate table counts only the 9 interviewed deals. No CRM-only deal (including D-2214) is in the buyer driver findings. The flag report lists the 5 deals where the CRM reason and the buyer reason differ: D-2202, D-2203, D-2207, D-2209, D-2212. It also lists D-2209 (alternative not in the code book: alarms in a new refrigeration controller) and D-2214 (no interview, CRM only). Counts by segment (case hand-off rule 3): interviewed deals Distribution 4, Food service 3, Pharmacy and lab 2. Interviewed lost deals Distribution 3, Food service 2, Pharmacy and lab 1. No driver repeats across the lost deals of any segment, so the agent states no top loss driver for a segment.
 - One interview can change a decision: D-2207 (Breckwood Distribution, USD 88,300, lost to Rimecore). CRM: "Feature gap: multi-site dashboard". Buyer (WL-2207): "We got over forty alerts in the first week of the trial, and most were dock doors during loading." Count: 1 interviewed deal.
@@ -646,7 +655,7 @@ Notes: Type **/** (or **@**) in the chat and pick your skill from the list. If a
 | ChatGPT | Download the driver log file from your step 6 run | Add it to the project's files |
 | Copilot | Download the driver log file from your step 6 run, in the same session | On **Configure**, **Upload** the file. Select **Update** |
 | Copilot, no license | Download or copy the driver log from your step 6 run | Keep it on your computer. Paste it in chat when a job needs it |
-| Gemini | Download the driver log file from your step 6 run | In your skill, **Add**, **files**, **Upload**. Select **Save**. If that fails, upload the whole skill again with the new file |
+| Gemini | Download the driver log file from your step 6 run | In your skill, **Add files**. Select **Save**. If that fails, upload the whole skill again with the new file |
 
 Name the file `driver-log` before you add it. Use the step 6 run, not the check sample run. This is the first driver log, so there is no old file to replace. Later runs replace it. If you have no file, use `kit-m3/driver-log.md`.
 
@@ -658,7 +667,7 @@ Name the file `driver-log` before you add it. Use the step 6 run, not the check 
 | Timing | Full day: lab 32 minutes, debrief 10 (match rate read 3, check sample 3). Half day: lab 34, debrief 11 (match rate read 4). Lab brief before it: 3 minutes (2 short slides; full steps on the step cards in the workbook) |
 | Setup (Zoom) | Breakout rooms by platform (Claude, ChatGPT, Copilot, Gemini), 3 to 5 learners each. Learners keep their own screen. Share only when stuck. Instructor visits rooms in turn, Copilot first |
 | Setup (in person) | Tables by platform, 3 to 5 learners. One laptop per learner. Instructor walks the tables, Copilot first |
-| Steps per platform | See section 5 (4 cards with the same 6 core steps). No fast-start card. No stretch step in module 2 (decision D2) |
+| Steps per platform | See section 5 (4 cards with the same 6 core steps). No fast-start card. No stretch step in module 2 (Dan, 2026-11-27: schedule stretch in module 3) |
 | Materials | `kit/lab-2/` (job card, driver code book, Copilot fallback text, record sheet, README). Case files `m2-crm-export-q2.csv`, `m2-winloss-notes-q2.md`, `m2-check-sample.md`. `modules/m1/kit/kit-m2/` to rebuild before the lab. `kit/kit-m3/` for catch-up after. Instructor only: `case/planted-errors.md`, `case/expected-results.md`, saved demo output |
 | Success criteria | The match rate table is complete. Each deal has a source label. Each driver shows its counts. Each flag has the learner's decision. 2 deals audited and a rule added to the brief. One-sentence read of the match rate table written. Check sample passes the 5-item pass condition |
 | Debrief questions | What does your match rate table show, in one sentence? Who hears it, and how do you say it so sales does not hear blame? Which check or audit found the error? Which deals did your agent treat as buyer evidence? |
@@ -687,7 +696,7 @@ Character counts measured with `wc -m` on 2026-11-27. Copilot course budget (spe
 | `kit-m3/copilot-fallback-instructions-m2-v3.txt` | Copilot Instructions, no license, to rerun job 2 | 7,314 (budget 7,800) | is a `.txt` |
 | `kit-m3/README.md` | Not loaded | not counted | no |
 
-Fallback sum check (module 2): brief v2 2,920 + job card 1,483 + driver code book 2,284 = 6,687, plus a 470-character header and separators = 7,171. A learner rule of about 230 characters brings it to about 7,400, still under 8,000. Module 1 D13 estimated about 2,600 characters left for the job card and header: actual use is 1,967.
+Fallback sum check (module 2): brief v2 2,920 + job card 1,483 + driver code book 2,284 = 6,687, plus 484 characters of header (470) and separators (14) = 7,171. A learner rule of about 230 characters brings it to about 7,400, still under 8,000. Module 1 D13 estimated about 2,600 characters left for the job card and header: actual use is 1,967.
 
 Knowledge files in the agent after module 2: 6 (2 job cards, code book, driver code book, problem backlog, driver log). Course budget 13.
 
@@ -705,8 +714,8 @@ Knowledge files in the agent after module 2: 6 (2 job cards, code book, driver c
 | Agent lost or broken after module 1 | Rebuild from `kit-m2` (about 5 minutes), then do step 1 |
 | Copilot: the agent ignores the knowledge files (no license or billing) | Use the no-license box on the Copilot card: `copilot-fallback-instructions-m2.txt` in Instructions, CRM export pasted as text |
 | Copilot or Gemini: `.csv` upload fails in chat | Open the file and paste the text. It is 1,855 characters |
-| Gemini: adding files to the existing skill fails | Upload the whole skill again with all its files (gm-01) |
-| Claude: no file in the answer | Turn on **Code execution and file creation** (**Create and edit files**). Or accept the full tables in one message (brief rule 7) |
+| Gemini: adding files to the existing skill fails | Check the label: **Add files** on an existing skill. If it still fails, upload the whole skill again with all its files (gm-01) |
+| Claude: no file in the answer | Turn on **Code execution and file creation** (**Create and edit files**). Team or Enterprise: the owner sets it in **Organization settings**. Or accept the full tables in one message (brief rule 7) |
 | The answer stops halfway (long output) | Send "Continue". Or send "Give the driver log and the match rate table only, then the flag report" |
 | The agent runs the problem backlog job instead | Check the prompt says "Run the win/loss job". Check `job-card-win-loss` is in knowledge |
 | The agent adds win/loss drivers to the problem backlog | The job card says the job does not change the backlog. Point to it. Rerun. Module 4 joins the two logs |
@@ -723,7 +732,6 @@ Knowledge files in the agent after module 2: 6 (2 job cards, code book, driver c
   2. D-2207 (Breckwood Distribution): the buyer calls the multi-site dashboard "nice to have". D5 as a secondary driver is fair. The primary driver is D3 Alert accuracy.
   3. D-2209 (Ferrow Street Grill Group): the alternative, alarms in a new refrigeration controller, is a substitute in `company.md` but not in the driver code book. So it is a correct flag. CRM competitor "Unknown".
   4. WL-2214 is in the notes file with a WL id. Learners may argue it is an interview. The code book says "interview: a buyer win/loss interview exists for the deal". The buyer did not attend, so it is CRM only.
-  5. `case/expected-results.md` says "10 deals (program minimum met)" for the second sample. Do not say it in class. Dan removed the minimum (Gate 2 v2-7). See decision D5.
-  6. The driver log in `kit-m3` follows the case state (`m4-evidence-pack.md` Part 1, Q2 rows), so module 4 starts from the same log. Its flag decisions are left to the learner (decision D7).
-  7. OI-19 items (I-201 quote 2; F-1108 and F-1214 in lab 5) are covered in module 1 section 9. No module 2 item in OI-19.
-- Kept off the slides on purpose: any win/loss figure (W1, W2 figures have no dated primary study; spec `claims_on_slides`). "Many teams do not run win/loss at all" as a finding (decision D11). The term the spec bans for the match rate (PA-04).
+  5. The driver log in `kit-m3` follows the case state (`m4-evidence-pack.md` Part 1, Q2 rows), so module 4 starts from the same log. Its flag decisions are left to the learner (decision D4).
+  6. OI-19 items (I-201 quote 2; F-1108 and F-1214 in lab 5) are covered in module 1 section 9. No module 2 item in OI-19.
+- Kept off the slides on purpose: any win/loss figure (W1, W2 figures have no dated primary study; spec `claims_on_slides`). "Many teams do not run win/loss at all" as a finding (one old source only; verifier F4). The term the spec bans for the match rate (PA-04).

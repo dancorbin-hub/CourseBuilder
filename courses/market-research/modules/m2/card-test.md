@@ -1,6 +1,6 @@
 # Card test: module 2 (lab 2)
 
-Course: `market-research`. For Dan (Gate 3). Draft 2026-11-27.
+Course: `market-research`. For Dan (Gate 3). Draft 2026-11-27, revised once 2026-11-27.
 
 Gate 2 proof P1 covers modules 1 and 2 (spec `gate_2_proof_patterns`). This card test also records the module 2 part of P1, including the Copilot no-license fallback for module 2 (module 1 decision D13).
 
@@ -40,7 +40,7 @@ Account or plan: ______ Code execution and file creation on: yes / no Date teste
 | P1-m2-b driver log has 14 deals, each labeled "interview" or "CRM only" | | |
 | P1-m2-c **planted error**: D-2214 labeled interview, or a CRM-only deal has a buyer driver, or price shows 2 or more buyer deals | (expected yes) | (expected no) |
 | P1-m2-d match rate table counts 9 deals: won 3 (2 match), lost 6 (2 match) | | |
-| P1-m2-e flag report lists D-2202, D-2203, D-2207, D-2209, D-2212 (reasons differ) and D-2209 (alternative not in the code book) | | |
+| P1-m2-e flag report lists D-2202, D-2203, D-2207, D-2209, D-2212 (reasons differ), D-2209 (alternative not in the code book) and, after the fix, D-2214 (no interview) | | |
 | P1-m2-f each driver shows interviewed deals, accounts and segments. No top driver for a segment | | |
 | P1-m2-g no "pattern" or "validated". Problem backlog not changed | | |
 | P1-m2-h next chat reads the saved driver log | n/a | |
@@ -64,7 +64,7 @@ Account or plan (Go, Plus or higher): ______ Date tested: ______ Tester: ______
 | P1-m2-b driver log has 14 deals, each labeled "interview" or "CRM only" | | |
 | P1-m2-c **planted error**: D-2214 labeled interview, or a CRM-only deal has a buyer driver, or price shows 2 or more buyer deals | (expected yes) | (expected no) |
 | P1-m2-d match rate table counts 9 deals: won 3 (2 match), lost 6 (2 match) | | |
-| P1-m2-e flag report lists D-2202, D-2203, D-2207, D-2209, D-2212 (reasons differ) and D-2209 (alternative not in the code book) | | |
+| P1-m2-e flag report lists D-2202, D-2203, D-2207, D-2209, D-2212 (reasons differ), D-2209 (alternative not in the code book) and, after the fix, D-2214 (no interview) | | |
 | P1-m2-f each driver shows interviewed deals, accounts and segments. No top driver for a segment | | |
 | P1-m2-g no "pattern" or "validated". Problem backlog not changed | | |
 | P1-m2-h next chat reads the saved driver log | n/a | |
@@ -91,7 +91,7 @@ License state: licensed / no license Date tested: ______ Tester: ______ Tester w
 | P1-m2-b driver log has 14 deals, each labeled "interview" or "CRM only" | | | |
 | P1-m2-c **planted error**: D-2214 labeled interview, or a CRM-only deal has a buyer driver, or price shows 2 or more buyer deals | (expected yes) | (expected no) | |
 | P1-m2-d match rate table counts 9 deals: won 3 (2 match), lost 6 (2 match) | | | |
-| P1-m2-e flag report lists D-2202, D-2203, D-2207, D-2209, D-2212 (reasons differ) and D-2209 (alternative not in the code book) | | | |
+| P1-m2-e flag report lists D-2202, D-2203, D-2207, D-2209, D-2212 (reasons differ), D-2209 (alternative not in the code book) and, after the fix, D-2214 (no interview) | | | |
 | P1-m2-f each driver shows interviewed deals, accounts and segments. No top driver for a segment | | | |
 | P1-m2-g no "pattern" or "validated". Problem backlog not changed | | | |
 | P1-m2-h next chat reads the saved driver log | n/a | | n/a (log kept on the computer) |
@@ -104,7 +104,7 @@ License state: licensed / no license Date tested: ______ Tester: ______ Tester w
 | The fallback still fits after you add your lab 2 rule (about 7,400 characters) | |
 | Downloaded driver log kept after the session ends (mb-11 says no) | |
 
-Screen names that differ from the card (note how you send a file in the agent chat): ______
+Screen names that differ from the card (note how you send a file in the agent chat, and how you start a new chat with the agent, verifier F12): ______
 
 ## Gemini
 
@@ -123,7 +123,7 @@ Account: personal / Workspace (test on a Workspace account if you can, gm-03) Da
 | P1-m2-b driver log has 14 deals, each labeled "interview" or "CRM only" | | |
 | P1-m2-c **planted error**: D-2214 labeled interview, or a CRM-only deal has a buyer driver, or price shows 2 or more buyer deals | (expected yes) | (expected no) |
 | P1-m2-d match rate table counts 9 deals: won 3 (2 match), lost 6 (2 match) | | |
-| P1-m2-e flag report lists D-2202, D-2203, D-2207, D-2209, D-2212 (reasons differ) and D-2209 (alternative not in the code book) | | |
+| P1-m2-e flag report lists D-2202, D-2203, D-2207, D-2209, D-2212 (reasons differ), D-2209 (alternative not in the code book) and, after the fix, D-2214 (no interview) | | |
 | P1-m2-f each driver shows interviewed deals, accounts and segments. No top driver for a segment | | |
 | P1-m2-g no "pattern" or "validated". Problem backlog not changed | | |
 | P1-m2-h next chat reads the saved driver log | n/a | |
@@ -131,10 +131,12 @@ Account: personal / Workspace (test on a Workspace account if you can, gm-03) Da
 | Gemini proof item | Result |
 | --- | --- |
 | G2-PF-04: `.csv` and `.md` files, 2 in one prompt (lab steps 2 and 6) | |
-| **Add**, **files**, **Upload** adds 2 files to an existing skill, then **Save** (or whole-skill re-upload needed), and minutes taken | |
+| **Add files** adds 2 files to an existing skill, then **Save** (or whole-skill re-upload needed), and minutes taken. Record the real upload dialog labels | |
 | Log save: driver log added to the skill and read in the next chat | |
 
 Screen names that differ from the card: ______
+
+New chat: record how you start a new chat with the skill (verifier F12).
 
 ## Summary for Gate 3
 
