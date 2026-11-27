@@ -1,0 +1,12 @@
+Quarter,Team,Team_FTE,Program,Alloc_pct,Team_capacity_pct,Alloc_FTE,Per_program_check
+,Firmware team,12,P-01,,100,,
+,Firmware team,12,P-02,,100,,
+,Cloud team,18,P-03,,100,,
+,Cloud team,18,P-01,,100,,
+,Cloud team,18,P-05,,100,,
+,Hardware design team,8,P-01,,100,,
+,Hardware design team,8,P-04,,100,,
+,Test lab,6,P-01,,100,,
+,Test lab,6,P-04,,100,,
+,Test lab,6,P-02,,100,,
+,Data platform team,5,P-05,,100,,

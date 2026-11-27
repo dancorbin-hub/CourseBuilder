@@ -1,0 +1,12 @@
+Quarter,Team,Team_FTE,Program,Alloc_pct,Team_capacity_pct,Alloc_FTE,Per_program_check
+Q1 2028,Firmware team,12,P-01,90,100,10.8,inside
+Q1 2028,Firmware team,12,P-02,60,100,7.2,inside
+Q1 2028,Cloud team,18,P-03,55,100,9.9,inside
+Q1 2028,Cloud team,18,P-01,25,100,4.5,inside
+Q1 2028,Cloud team,18,P-05,15,100,2.7,inside
+Q1 2028,Hardware design team,8,P-01,50,100,4,inside
+Q1 2028,Hardware design team,8,P-04,35,100,2.8,inside
+Q1 2028,Test lab,6,P-01,45,100,2.7,inside
+Q1 2028,Test lab,6,P-04,30,100,1.8,inside
+Q1 2028,Test lab,6,P-02,25,100,1.5,inside
+Q1 2028,Data platform team,5,P-05,85,100,4.25,inside
