@@ -71,6 +71,7 @@ features:
   verifier_note: Opened 2026-11-20. Plans, code execution, 64/200 character limits, zip structure confirmed. Relative date only
   note: Recheck of E7. Still true. The plan list now also names Ultra. The page changed date since 2026-11-19 ("over 2 weeks" then, "over 3 weeks" now, so no new edit). A catch-up skill can be a zip that the learner uploads, on all plans
   carried_from: market-research
+  recheck_2026_11_27: 'Module 1 verifier (curl). dateModified 2026-10-30T17:08:37Z (not approx 2026-10-28). All plans, code execution required, Customize > Skills quoted. Status unchanged'
 - id: cl-cl-04
   platform: claude
   feature: Record a skill (screen recording, Claude proposes a skill)
@@ -276,6 +277,7 @@ features:
   note: Downloadable .xlsx or .docx output is not stated. Test at Gate 2 proof
   carried_from: market-research
   recheck_2026_11_22: 'See mb-13 (2026-11-22): input formats now known (Word, Excel, PowerPoint, PDF, CSV/TSV, TXT)'
+  recheck_2026_11_27: 'Module 1 verifier (WebFetch). Last updated 2026-11-16. Toggle label quoted. Conflict with mb-11 stays open: see mb-ui-15'
 - id: mb-05
   platform: copilot
   feature: Share an agent (Can edit, Can chat, org-wide, copy chat link, edit link)
@@ -364,6 +366,7 @@ features:
   note: 'Rerun 2026-11-20. Quote: "Code interpreter can generate and host downloadable files ... Copilot automatically presents a download link in the response." Learners must download the log in the same session. The license line reads oddly ("without metered usage enabled"); check it against mb-03 at the Gate 2 proof. Adds to mb-04, which said no formats'
   carried_from: market-research
   recheck_2026_11_22: 'Reopened 2026-11-22. Same dates and text. The page also says code interpreter is ''always enabled in Agent Builder'' and has a Settings toggle for in-context agents. These two lines do not fully agree. Not documented: if code interpreter can read the agent''s knowledge files. See mb-13'
+  recheck_2026_11_27: 'Module 1 verifier (WebFetch). Last updated 2026-11-16. Always enabled in Agent Builder, session-only files, license sentence quoted. Status unchanged'
 - id: gm-01
   platform: gemini
   feature: Gemini skills (create with Gemini, from a template, or by uploading SKILL.md, a folder or a zip)
@@ -586,6 +589,7 @@ features:
   checked_on: '2026-11-22'
   status: "verified"
   verifier_note: "Verifier 2026-11-22: opened on help-lb (updated 3 days ago). Two memory modes, shared projects project-only, ChatGPT Work not available in the project, paid tools sentence confirmed"
+  recheck_2026_11_27: 'Module 1 verifier (WebFetch, Updated 35 minutes ago). Labels Default memory and Project-only memory, Work not available under project-only quoted. See cg-ui-15'
 - id: mb-12
   platform: copilot
   feature: Public websites and 'Search all websites' as agent knowledge
@@ -670,6 +674,149 @@ features:
   checked_on: '2026-11-22'
   status: "verified"
   verifier_note: "Verifier 2026-11-22: opened. Posted 2026-10-13, updated 2026-11-09. Gemini app skills for all Workspace customers and personal accounts, all ages, no admin controls; Workspace editions list, 18+, delayed then started rolling out confirmed. Sync not described on this page"
+# Stage 3, module 1 verifier (Mode 3), 2026-11-27. Screen name rows copied from
+# courses/market-research/research/platform-matrix.yaml (checked there 2026-11-26) and rechecked here on 2026-11-27.
+# They keep their ids and add carried_from: market-research. New rows have new ids. See modules/m1/verifier-report.md.
+- id: cl-ui-09
+  platform: claude
+  feature: Project screen names (Projects in the sidebar, + New Project, Set project instructions, Save instructions, + in project knowledge, chats in a project)
+  plans: All plans (cl-pj-01)
+  limits: Start a chat in a project is described ("initiate chats with Claude within the project") with no control name. Deleting a project knowledge file is not described
+  use_in_core_lab: 'yes'
+  url: https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
+  source_date: 2026-11-06 (page metadata dateModified)
+  checked_on: '2026-11-27'
+  status: verified
+  verifier_note: "Module 1 verifier 2026-11-27 (curl, dateModified 2026-11-06T18:06:37Z). '+ New Project', 'Set project instructions', 'Save instructions', 'Click on the \"+\" button to add content to the project' quoted. Delete a knowledge file: still not on the page"
+  carried_from: market-research
+- id: cl-ui-10
+  platform: claude
+  feature: File creation toggle. Settings > Capabilities > "Code execution and file creation", called "Create and edit files" in the updated Settings layout
+  plans: Free, Pro, Max, Ultra set it in Settings > Capabilities. Team and Enterprise owners set it in Organization settings > Capabilities
+  limits: On by default for Free, Pro, Max, Ultra, Team and new Enterprise organizations. Owners can turn it off
+  use_in_core_lab: 'yes'
+  url: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
+  source_date: 2026-11-24 (page metadata dateModified)
+  checked_on: '2026-11-27'
+  status: verified
+  verifier_note: "Module 1 verifier 2026-11-27 (curl, dateModified 2026-11-24T22:57:06Z). 'Settings > Capabilities by toggling Code execution and file creation (called Create and edit files in the updated Settings layout)' and 'Organization settings > Capabilities' quoted"
+  carried_from: market-research
+- id: cl-pj-11
+  platform: claude
+  feature: New version of projects (beta). A project is one conversation; Claude runs parallel threads; files sit in the project Library
+  plans: Select Pro, Max and Ultra users who use Claude Code, and some Pro, Max and Ultra users whose existing projects were moved
+  limits: Instructions, files, chat history and scheduled tasks move with the project. The rest of the article describes the current version
+  use_in_core_lab: 'no'
+  url: https://support.claude.com/en/articles/9517075-what-are-projects
+  source_date: 2026-10-30 (page metadata dateModified)
+  checked_on: '2026-11-27'
+  status: verified
+  verifier_note: "Module 1 verifier 2026-11-27 (curl, dateModified 2026-10-30T17:08:09Z). Beta note, one conversation, parallel threads, Library, who has it and 'moving existing projects for some Pro, Max, and Ultra users' quoted. Supports the Claude card note. Risk: 'new chat in the project' steps do not fit the new version"
+  carried_from: market-research
+- id: cg-ui-09
+  platform: chatgpt
+  feature: Project screen names (plus icon (+) for New project, then Create project; more options menu ••• > Project settings > Instructions; add files by upload or paste; open a file from the project sources list to preview, download or delete it)
+  plans: See cg-01. Files per project 5 (Free), 25 (Go, Plus), 40 (Edu, Pro, Business, Enterprise). 10 files per upload
+  limits: No button name for adding files or for starting a new chat in a project. No replace option. A same-name upload offers 'Upload anyway' or 'Skip'
+  use_in_core_lab: 'yes'
+  url: https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt
+  source_date: 'approx 2026-11-27 (page says "Updated 35 minutes ago")'
+  checked_on: '2026-11-27'
+  status: verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch). New project, Create project, •••, Project settings, Instructions, project sources list, delete quoted. Relative date only"
+  carried_from: market-research
+- id: cg-ui-15
+  platform: chatgpt
+  feature: Project memory labels ("Default memory", "Project-only memory"), set at project creation or later in ••• > Project settings > Memory, then Save
+  plans: See cg-01 and cg-14
+  limits: "Changes may take a few hours to take effect. Under project-only memory, 'ChatGPT Work is not available in the project'. Shared projects are project-only (cg-14)"
+  use_in_core_lab: 'yes'
+  url: https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt
+  source_date: 'approx 2026-11-27 (page says "Updated 35 minutes ago")'
+  checked_on: '2026-11-27'
+  status: verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch). Both labels, change later in Project settings, 'Changes may take a few hours' quoted. A learner who picks project-only cannot fix it inside the class time"
+- id: mb-ui-12
+  platform: copilot
+  feature: Agent builder configure and knowledge screen names (New agent > Skip to configure; Configure tab with Name, Instructions, Knowledge; Knowledge > Upload; files under Uploaded files; remove with the X next to the file, then Remove)
+  plans: See mb-03
+  limits: Also drag and drop, or the arrow icon on the Configure tab. Individual files only, no folders. Embedded types .doc, .docx, .pdf, .ppt, .pptx, .txt, .xls, .xlsx. CSV and .md not listed
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge
+  source_date: '2026-11-16'
+  checked_on: '2026-11-27'
+  status: verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch). Add knowledge and Build agents pages, both 'Last updated on 2026-11-16'. All labels quoted"
+  carried_from: market-research
+- id: mb-ui-13
+  platform: copilot
+  feature: Open, edit, create and update an agent (All agents or the ... next to the agent in the left pane, then Edit, the pencil icon; Create the first time; Update in the top right corner)
+  plans: See mb-03
+  limits: Changes save automatically but users do not see them until Update. New agent > View all agents is another path. Position of Create not stated
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents
+  source_date: '2026-11-16'
+  checked_on: '2026-11-27'
+  status: verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch). All agents, More (...), Edit (pencil), Create, Update in the top right corner quoted"
+  carried_from: market-research
+- id: mb-ui-14
+  platform: copilot
+  feature: File upload in a Copilot Chat prompt (+ in the "Message Copilot" box, then Upload images and files)
+  plans: Not stated. Page notes limits for users without a Microsoft 365 Copilot subscription
+  limits: Page does not say this works in a chat with an agent. No file types or sizes listed. The code interpreter page (mb-13, 2026-11-16) says 'Users can also upload data files' (Word, Excel, PowerPoint, PDF, CSV/TSV, TXT) with no control name
+  use_in_core_lab: 'yes'
+  url: https://support.microsoft.com/en-au/topic/add-content-and-agents-to-copilot-chat-438173cf-2a2b-47e0-a1e0-82d830922fe5
+  source_date: 2026-11-18 (ms.date in page metadata; updated_at 2026-11-19)
+  checked_on: '2026-11-27'
+  status: partly verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch). Labels quoted for Copilot Chat only. Agent chat upload still not documented. The card test must confirm it (G2-PF-02)"
+  carried_from: market-research
+- id: mb-ui-15
+  platform: copilot
+  feature: Code interpreter in Agent Builder. Build agents page - Capabilities, 'select the toggle next to Create documents, charts, and code'. Code interpreter page - 'always enabled in Agent Builder'
+  plans: Microsoft 365 Copilot license and Copilot Chat users 'without metered usage enabled' (mb-11)
+  limits: "Two Microsoft pages of the same date disagree. Build agents also says 'You automatically get these capabilities' and 'Code interpreter and image generator capabilities are automatically available'. A card must work in both cases"
+  use_in_core_lab: 'yes'
+  url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents
+  source_date: '2026-11-16'
+  checked_on: '2026-11-27'
+  status: partly verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch both pages, both 'Last updated on 2026-11-16'). Toggle label verified. Whether the toggle shows or is always on is not resolved. Second url: https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter"
+- id: gm-ui-10
+  platform: gemini
+  feature: Skill screen names (Customize > Skills > Create > Create manually; name in lowercase with hyphens; Instructions; Add > images or files > Upload; Create; click a skill to edit; More > Replace file or Replace skill; Save; type / or @ in chat)
+  plans: See gm-01 and gm-03
+  limits: "The page also says 'To update files in a skill, you need to upload the entire skill with its reference files again', which conflicts with Replace file. The device option is 'images or files', not 'files'. If Customize is not shown, click More first"
+  use_in_core_lab: 'yes'
+  url: https://support.google.com/gemini?p=pn_skills
+  source_date: unknown (page shows no date)
+  checked_on: '2026-11-27'
+  status: partly verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch). All labels match the page. Page undated, so it fails the dated doc rule for Create, Create manually, Add, images or files, Upload, Save, More, Replace file. Customize and Skills are now dated by gm-ui-11; / by blog.google 2026-09-30. Dan accepted the undated page in Market Research (D3); Dan decides for this course"
+  carried_from: market-research
+- id: gm-ui-11
+  platform: gemini
+  feature: Customize hub in the Gemini app (left navigation menu > Customize; sections Skills and connected apps)
+  plans: Workspace (rollout from 2026-10-13, Rapid and Scheduled Release)
+  limits: Names no create, add, upload, save or replace labels
+  use_in_core_lab: 'yes'
+  url: https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html
+  source_date: '2026-10-21'
+  checked_on: '2026-11-27'
+  status: verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch). 'Customize' from the left navigation menu and Skills as a hub section quoted. First dated Google doc for these 2 labels"
+- id: gm-14
+  platform: gemini
+  feature: Skill file types (supported .csv, .ods, .xlsx; .docx, .pdf, .rtf, .tex, .log, .md, .rst, .txt, .markdown, .odt. Not supported legacy .doc, .xls, .ppt)
+  plans: Same as gm-01
+  limits: Undated page
+  use_in_core_lab: 'yes'
+  url: https://support.google.com/gemini?p=pn_skills
+  source_date: unknown (page shows no date)
+  checked_on: '2026-11-27'
+  status: partly verified
+  verifier_note: "Module 1 verifier 2026-11-27 (WebFetch). '.xlsx' listed under 'Spreadsheets & data tables', with .csv. Answers module 1 question 9. Page undated, so partly verified"
 not_opened:
 - url: https://www.microsoft.com/releasecommunications/api/v2/m365/531759
   reason: Opened (fetch 15) but returned binary data. Microsoft-hosted copy of the agent builder scheduled prompts item (mb-06) still missing
