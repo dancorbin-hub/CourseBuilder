@@ -235,7 +235,7 @@
   capability_skill: 2.3 Business Case Development (competency 2.3B Market Value and Sizing)
   trigger_and_cadence: A new opportunity or segment question, then a refresh each quarter or when a new source appears
   input: The market question, segment definitions, analyst and public sources, and the PM's own customer data
-  output: A top-down and bottom-up size model, each number linked to source, date, unit, scope and base year; an assumptions list with risk ratings; a 'what changed' note on refresh; and a flag report
+  output: A size model built top-down (whole market cut down) and bottom-up (units times price), each number linked to source, date, unit, scope and base year; an assumptions list with risk ratings; a 'what changed' note on refresh; and a flag report
   pm_decision_informed: Which segment is large and reachable enough to put into the business case
   bottleneck:
     description: Published estimates for one market can differ by 5 times or more because they measure different layers, scopes, units and base years. The PM must align each source before any comparison, and data goes stale, so the work repeats
@@ -669,7 +669,7 @@
   topic_area: Strategy, roadmaps, planning
   capability_skill: 2.4 Product Vision and Roadmap (competencies 2.4B Roadmap Structuring and Framing and 2.4D Alignment to Market Problems and Strategy)
   trigger_and_cadence: Each quarterly roadmap refresh, and when new validated problems arrive
-  input: The current roadmap, the validated problem backlog with evidence, the strategy choices, and the latest scored opportunity list
+  input: The current roadmap, the validated problem backlog with evidence, the strategy choices
   output: Updated outcome themes, a trace table (item to theme to validated problem to strategy choice), a list of items with no trace, and a flag report
   pm_decision_informed: Which themes the roadmap shows next quarter, and which items leave the roadmap
   bottleneck:
@@ -766,13 +766,13 @@
   - Internal PM 2026 source
   gate_1_decision: "One roadmap module with 08 (Dan, decision a, 2026-11-26): refresh the trace, then assess a change"
 - id: sp-wf-08
-  workflow: Assess each roadmap change request and send consistent trade-off notes to each audience
+  workflow: Assess each roadmap change request and check it against the release plan
   topic_area: Strategy, roadmaps, planning
   capability_skill: 2.4 Product Vision and Roadmap (competencies 2.4C Assumption and Uncertainty Transparency and 2.4E Stakeholder Communication and Alignment)
   trigger_and_cadence: Each material change request or slip. Assumption, several times a month
-  input: The change request, the current roadmap and its decision log, dependencies, team capacity, and the audience list
-  output: An impact note (what moves, what it displaces, which dependencies), a decision log entry, a draft note per audience from one master change record, and a flag report
-  pm_decision_informed: Accept, defer or reject the change, and what to tell each audience
+  input: The change request, the current roadmap and its decision log, dependencies, team capacity, and the release plan
+  output: An impact note (what moves, what it displaces, which dependencies), a decision log entry, a commitment guard check against the release plan, and a flag report
+  pm_decision_informed: Accept, defer or reject the change
   bottleneck:
     description: Shared roadmaps become de facto commitments, so every change means bad news delivered to several audiences in different words. Material changes need a change log, a versioned roadmap and one version for every plan, or unofficial roadmaps spread
     pdlc_stage: Planning
@@ -789,33 +789,31 @@
     agent_does:
     - Find what the change displaces and which dependencies it hits
     - Write the impact note and the decision log entry
-    - Draft one note per audience from the master change record
-    - Check each note against the master record
+    - Run the commitment guard: compare the change with each date and promise on the release plan
     - Send flags to the PM
     pm_manages:
-      brief: Job, the roadmap horizons and what each one promises, the audiences and what each needs, the rule that notes never add dates, output format
+      brief: Job, the roadmap horizons and what each one promises, the release plan and what it promises, the rule that no date or promise appears unless it is on the release plan, output format
       quality_checks:
-      - Each audience note matches the master change record
-      - Each note uses the roadmap horizon words (Now, Next, Later), not new dates
+      - Each item in the impact note traces to the roadmap and the release plan
+      - Any date in the output appears on the release plan
       - The decision log entry has date, decider and reason
       handoff_rules:
       - A change that hits a dependency on another team
       - A change that breaks a commitment already given to a customer
       - Any note that needs a date the roadmap does not hold
-      audit: All notes for 1 change per week, read side by side with the master record
+      audit: One change per week, read the impact note and the guard result against the release plan
     pm_decides:
     - Accept, defer or reject
     - The trade-off
-    - What each audience hears
-    ai_error_to_catch: Direction becomes a date. In the sales note the agent turns 'Next' into 'Q2' because sales asked for dates in past notes. The note matches the master record on content, and 'Q2' is not a horizon word but is accepted as a time frame, so the checks pass. The audit reads the notes side by side and finds a false delivery commitment
+    ai_error_to_catch: Direction becomes a date. In the impact note the agent turns 'Next' into 'Q2' because past notes used quarters. The note traces to the roadmap, so the checks pass. The audit reads the note against the release plan and finds a date that is not on it
   contexts:
     hardware: Partial. W19 says late design changes in hardware affect tooling, validation, regulatory evidence and launch timing, so a change note needs those impacts
     internal_pm: gap. Internal platform changes affect other internal teams; no source found
     industry_notes:
     - 'health care and FinTech: regulatory dates are real commitments and must be marked as such. Not yet researched'
   proposed_lab:
-    goal: Extend the course agent to assess roadmap changes and draft consistent notes per audience
-    core_message: One change record, many audiences, no new promises
+    goal: Extend the course agent to assess roadmap changes and guard the release plan
+    core_message: The roadmap is direction. The release plan is the promise. The agent guards the promise
     build_type: agent (extend the course agent built in module 1)
     core_path_no_connectors: yes. The learner uses a change request from their own work or the fallback case
     data_safety: 'Use an approved tool only. No client data, PHI or PII in a tool the company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Teaching point: an agent that keeps a log stores sensitive data longer than a one-off prompt (Dan, PA-03, 2026-11-22)'
@@ -825,8 +823,8 @@
       copilot: Agent in Copilot agent builder with the brief and templates as embedded files (Market Research ledger E6)
       gemini: Gemini skill with the brief and templates (Market Research ledger E8)
     stretch: Start the agent when a change request form is submitted, where the platform allows (not verified)
-    planted_error: A horizon turned into a quarter in the sales note
-    success_check: All notes match the master record and the audit finds the planted date
+    planted_error: A horizon turned into a quarter in the impact note
+    success_check: The audit finds the date that is not on the release plan
     registry_check: 'Framework name note: ''Planning'' here is the Framework category (Stakeholder Management box), not annual planning. Focus 28.01 teaches ''the roadmap is the vision, the release plan is the promise'' and one roadmap, two audiences. Build 28.01 has AI-drafted stakeholder updates and release planning. This row starts after: change-triggered impact analysis, a decision log and consistency across audiences, with an audit. Do not reteach stakeholder mapping'
     pragmatic_fit: Good fit. The 2.4 AI text says the AI 'must not convert uncertain direction into false delivery commitments'. This row's planted error tests exactly that
   evidence:

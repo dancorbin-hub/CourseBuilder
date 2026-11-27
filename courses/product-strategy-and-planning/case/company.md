@@ -11,10 +11,10 @@ Use this case only when you cannot use your own work. One company serves the who
 | What it does | Makes wireless temperature sensors (hardware) and the cloud software that watches them (SaaS) |
 | Size | About 420 employees. Revenue about USD 68 million |
 | Business model | Hardware sold once per sensor and hub. Software sold as a subscription per site per year |
-| Active paid sites | 9,840 (30 September 2026) |
+| Active paid sites | 9,840 (30 September 2027) |
 | Channels | Direct sales for distribution and pharmacy. Resellers (refrigeration contractors) for most food service sites |
 | Product teams | 3 external product teams and 1 internal platform team |
-| Case date | Late November 2026. Planning for 2027 |
+| Case date | Late November 2027. Planning for 2028 |
 
 ## Products
 
@@ -22,7 +22,7 @@ Use this case only when you cannot use your own work. One company serves the who
 | --- | --- | --- |
 | Larkspan Probe | Hardware | Wireless sensor for walk-in coolers, freezers and medicine fridges |
 | Larkspan Hub | Hardware | Gateway that sends sensor data to the cloud over Wi-Fi or cellular. Runs firmware |
-| Larkspan Probe X | Hardware | New Probe with a built-in cellular radio. No hub needed. Limited release since June 2026 on bridge tooling. The hard tooling commit decision is due 15 December 2026 |
+| Larkspan Probe X | Hardware | New Probe with a built-in cellular radio. No hub needed. Limited release since June 2027 on bridge tooling. The hard tooling commit decision is due 15 December 2027 |
 | Larkspan Tag | Hardware | Single-use logger that rides with a shipment. Tag 2 is in development |
 | Larkspan Cloud | Software | Live alerts, dashboards and compliance reports (food safety logs, calibration records, audit trail) |
 | Fleet Data Platform (FDP) | Internal software | Shows device health, firmware status and install status. Used by Support, Install, Customer Success and Finance |
@@ -65,7 +65,7 @@ Use this case only when you cannot use your own work. One company serves the who
 
 Roles only. The case uses no personal names.
 
-- Head of Product (decides the 2027 plan)
+- Head of Product (decides the 2028 plan)
 - PM, Probe and Hub. PM, Larkspan Cloud. PM, Fleet Data Platform (internal PM)
 - Delivery lead (owns the release plan)
 - Head of Hardware, VP Sales, Support lead, Install lead, Finance lead
@@ -81,13 +81,14 @@ Roles only. The case uses no personal names.
 
 ## Strategy, OKRs and KPIs
 
-The file `strategy-okrs-kpis.md` holds the 2027 strategy overview, the 2027 H1 OKRs and the KPIs with targets. The agent reads that file. It never writes or changes strategy.
+The file `strategy-okrs-kpis.md` holds the 2028 strategy overview, the 2028 H1 OKRs and the KPIs with targets. The agent reads that file. It never writes or changes strategy.
 
 ## Terms used in this case
 
 | Term | Meaning |
 | --- | --- |
 | Problem backlog | Where a team tracks unsolved market problems and the evidence for each. It feeds the product backlog |
+| Evidence order | A rank in the problem backlog by amount of market evidence (records, then accounts). Equal evidence shares a rank. It is one input. It is not a priority. The PM also weighs strategy, capacity and dependencies |
 | Validated problem backlog | The problems the PM has validated by the PM's own rule, with evidence |
 | Market | All buyers who have the problem the product solves |
 | Market segment | A group inside the market with shared needs that the team can reach |
@@ -96,10 +97,10 @@ The file `strategy-okrs-kpis.md` holds the 2027 strategy overview, the 2027 H1 O
 | Roadmap | Direction: outcome themes and timeframes. Not a promise |
 | Release plan | The promise: dated commitments the Delivery lead owns |
 
-## Current planning questions (November 2026)
+## Current planning questions (November 2027)
 
-1. Is the planned work for next quarter consistent with the 2027 strategy and OKRs?
-2. Which of this week's requests do we answer yes, no or later, and why?
+1. Is the planned work for next quarter consistent with the 2028 strategy and OKRs?
+2. Which requests in this batch do we answer yes, no or later, and why?
 3. Does the Probe X business case still hold before the hard tooling commit?
 4. Does every roadmap item have its own evidence? What does a change to the roadmap displace?
 5. Are the outcomes the business case promised on track, or only the outputs?

@@ -10,10 +10,10 @@ Team sizes: Firmware team 12 FTE. Cloud team 18. Hardware design team 8. Test la
 
 | Program id | Program | Owner role | Submitted | Plan quarter | Ask (USD thousand) | Self-reported status | Link to objective | Next milestone |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| P-01 | Probe X development | PM, Probe and Hub | 2026-03-12 | Q2 2026 | 1400 | On track | KR2.2 Active paid Probe X sites. Builds the cellular probe for the limited release. | Bridge tooling build, 2026-05-30 |
-| P-03 | Cloud compliance reports | PM, Larkspan Cloud | 2026-03-13 | Q2 2026 | 800 | On track | KR1.2 Pharmacy and lab records at audit. Designs audit report v2. | Design review, 2026-05-15 |
-| P-04 | Tag 2 | PM, Probe and Hub | 2026-03-15 | Q2 2026 | 520 | On track | KR1.1 Pharmacy and lab sites. Gives pharmacy shipments proof of temperature. | Design start, 2026-04-30 |
-| P-05 | Fleet Data Platform | PM, Fleet Data Platform | 2026-03-16 | Q2 2026 | 410 | On track | KR2.1 Install days per site. Builds the install status view. | Status view release, 2026-06-01 |
+| P-01 | Probe X development | PM, Probe and Hub | 2027-03-12 | Q2 2027 | 1400 | On track | KR2.2 Active paid Probe X sites. Builds the cellular probe for the limited release. | Bridge tooling build, 2027-05-30 |
+| P-03 | Cloud compliance reports | PM, Larkspan Cloud | 2027-03-13 | Q2 2027 | 800 | On track | KR1.2 Pharmacy and lab records at audit. Designs audit report v2. | Design review, 2027-05-15 |
+| P-04 | Tag 2 | PM, Probe and Hub | 2027-03-15 | Q2 2027 | 520 | On track | KR1.1 Pharmacy and lab sites. Gives pharmacy shipments proof of temperature. | Design start, 2027-04-30 |
+| P-05 | Fleet Data Platform | PM, Fleet Data Platform | 2027-03-16 | Q2 2027 | 410 | On track | KR2.1 Install days per site. Builds the install status view. | Status view release, 2027-06-01 |
 
 ## Source system statuses
 

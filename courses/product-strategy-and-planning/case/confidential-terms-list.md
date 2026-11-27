@@ -7,7 +7,7 @@ Paste this list into the brief. No term on this list may appear in any text mark
 | Term | Why it is on the list |
 | --- | --- |
 | Brindle RF Components | Antenna supplier name |
-| Corvane Tooling | Tooling supplier name |
+| Ostrelane Tooling | Tooling supplier name |
 | Quillfern Pharmacy Group | Customer name tied to an open contract |
-| Quote Q-2026-0417 | Supplier quote id |
+| Quote Q-2027-0417 | Supplier quote id |
 | Project Larch | Internal code name for the Probe X hard tooling decision |

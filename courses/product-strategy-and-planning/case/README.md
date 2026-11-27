@@ -43,7 +43,7 @@ K means a knowledge file: it stays in the agent. Run means upload or paste in ch
 | 1 | `m1-pack-q2.md` | Format example (optional) |
 | 1 | `m1-check-sample.md` | Check |
 | 2 | `problem-backlog.csv` (+ `.xlsx`), `request-decision-log.csv` (+ `.xlsx`), `roadmap.csv` (+ `.xlsx`) | K |
-| 2 | `m2-requests-week-47.csv` (+ `.xlsx`) | Run |
+| 2 | `m2-requests-batch-1.csv` (+ `.xlsx`) | Run |
 | 2 | `m2-check-sample.csv` (+ `.xlsx`) | Check |
 | 3 | `business-case.md` (+ `.txt`), `business-case-sheet.xlsx` (+ `.csv`) | K |
 | 3 | `m3-source-pack.md`, `m3-tooling-quote.md` | Run 1 (sent with the business case) |
@@ -57,6 +57,10 @@ K means a knowledge file: it stays in the agent. Run means upload or paste in ch
 | 5 | `outcome-sheet.xlsx` (+ `.csv`) | K |
 | 5 | `m5-metrics-oct.csv`, `m5-metrics-nov.csv` (+ `.xlsx`) | Run |
 | 5 | `m5-check-sample.csv` (+ `.xlsx`) | Check |
+
+## Problem backlog order
+
+`problem-backlog` has the column `evidence_order`. It ranks problems by amount of market evidence (records in 12 months, then accounts). Equal evidence shares a rank. It is not a priority. The PM sets the review cadence, often once a quarter.
 
 ## Knowledge file count
 

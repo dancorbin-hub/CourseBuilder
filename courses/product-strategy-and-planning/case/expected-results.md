@@ -72,11 +72,11 @@ Records: `m1-submissions-q4.md`, `m1-status-q4.csv`.
 
 | Flag type | Record | What the agent found | Evidence | PM decides |
 | --- | --- | --- | --- | --- |
-| Capacity over | Firmware team | P-01 90 + P-02 60 = 150 percent of capacity. 18 FTE asked, 12 FTE available | `m1-submissions-q4.md`, submitted 2026-11-16 and 2026-11-17 | Yes. No funding line |
+| Capacity over | Firmware team | P-01 90 + P-02 60 = 150 percent of capacity. 18 FTE asked, 12 FTE available | `m1-submissions-q4.md`, submitted 2027-11-16 and 2027-11-17 | Yes. No funding line |
 
 ### Check sample (lab 1)
 
-Input: `m1-check-sample.md` (4 programs, plan quarter Q2 2026).
+Input: `m1-check-sample.md` (4 programs, plan quarter Q2 2027).
 
 | Result | Value |
 | --- | --- |
@@ -99,20 +99,20 @@ Used by `kit-m2` as the recorded state. The PM decides on the PM's own judgment.
 
 ## Lab 2: requests
 
-Records: `m2-requests-week-47.csv`, `problem-backlog.csv`, `request-decision-log.csv`, `roadmap.csv`.
+Records: `m2-requests-batch-1.csv`, `problem-backlog.csv`, `request-decision-log.csv`, `roadmap.csv`.
 
-### The week 47 result the records support (brief with the matching rule)
+### The request batch 1 result the records support (brief with the matching rule)
 
 | Request | Requester | Linked problem | Past decision | Expected flag |
 | --- | --- | --- | --- | --- |
-| REQ-108 | sales | PB-01 | DL-2026-02 (later) | executive or named deal; past no or later |
+| REQ-108 | sales | PB-01 | DL-2027-02 (later) | executive or named deal; past no or later |
 | REQ-109 | customer | PB-12 | none | problem not validated |
-| REQ-110 | support | PB-07 | DL-2026-06 (later) | past no or later |
-| REQ-111 | internal | PB-10 | DL-2026-07 (yes) | true duplicate of a past yes |
-| REQ-112 | executive | PB-02 | DL-2026-09 (later) | executive or named deal; past no or later |
-| REQ-113 | internal | PB-09 | DL-2025-11 (no) | past no or later; problem not validated |
+| REQ-110 | support | PB-07 | DL-2027-06 (later) | past no or later |
+| REQ-111 | internal | PB-10 | DL-2027-07 (yes) | true duplicate of a past yes |
+| REQ-112 | executive | PB-02 | DL-2027-09 (later) | executive or named deal; past no or later |
+| REQ-113 | internal | PB-09 | DL-2026-11 (no) | past no or later; problem not validated |
 | REQ-114 | customer | none (no match) | none | no match |
-| REQ-115 | internal | PB-08 | DL-2026-10 (yes) | true duplicate of a past yes |
+| REQ-115 | internal | PB-08 | DL-2027-10 (yes) | true duplicate of a past yes |
 | REQ-116 | customer | PB-06 | none | problem not validated |
 
 | Count | Value |
@@ -127,50 +127,50 @@ Records: `m2-requests-week-47.csv`, `problem-backlog.csv`, `request-decision-log
 
 `problem-backlog.csv` holds 14 problems. 10 meet the case PM's validated rule (3 or more accounts and 2 or more source types in the last 12 months, counted from `evidence-log.csv`).
 
-**Condition check for REQ-112.** DL-2026-09 says "later" with the condition "Three pharmacy chains ask". The records show 2 pharmacy chains (A-5101, A-5120). The condition is not met. The PM decides.
+**Condition check for REQ-112.** DL-2027-09 says "later" with the condition "Three pharmacy chains ask". The records show 2 pharmacy chains (A-5101, A-5120). The condition is not met. The PM decides.
 
 ### The planted error, found by the audit
 
-The agent merges REQ-113 and REQ-114 because both say "offline mode", and attaches DL-2025-11 ("no") with its reason.
+The agent merges REQ-113 and REQ-114 because both say "offline mode", and attaches DL-2026-11 ("no") with its reason.
 
 | Request | User | Segment | Problem |
 | --- | --- | --- | --- |
 | REQ-113 | Install lead (internal) | Distribution | Installers at remote cold storage sites have no signal. The checklist will not save |
 | REQ-114 | Pharmacy manager (customer) | Pharmacy and lab | Policy does not let readings leave the site |
 
-After the fix: two cards. REQ-113 links to PB-09 and to DL-2025-11 (no). REQ-114 has no match in the problem backlog and goes to the flag report as "no match". The DL-2025-11 reason (remote sites in about 6 percent of installs) does not apply to REQ-114.
+After the fix: two cards. REQ-113 links to PB-09 and to DL-2026-11 (no). REQ-114 has no match in the problem backlog and goes to the flag report as "no match". The DL-2026-11 reason (remote sites in about 6 percent of installs) does not apply to REQ-114.
 
 **Expected flag report entry.**
 
 | Flag type | Record | What the agent found | Evidence | PM decides |
 | --- | --- | --- | --- | --- |
-| No match | REQ-114 | No problem in the backlog covers "readings must stay on site". The request shares the words "offline mode" with REQ-113 but has a different user and problem | `m2-requests-week-47.csv` (2026-11-19), `problem-backlog.csv` | Yes. Includes whether it goes to discovery |
+| No match | REQ-114 | No problem in the backlog covers "readings must stay on site". The request shares the words "offline mode" with REQ-113 but has a different user and problem | `m2-requests-batch-1.csv` (2027-11-19), `problem-backlog.csv` | Yes. Includes whether it goes to discovery |
 
 ### Check sample (lab 2)
 
-Input: `m2-check-sample.csv` (6 requests, week 48). REQ-117 and REQ-118 both start with "Custom alerts" but come from different users.
+Input: `m2-check-sample.csv` (6 requests, request batch 2). REQ-117 and REQ-118 both start with "Custom alerts" but come from different users.
 
 | Request | User | Segment | Linked problem |
 | --- | --- | --- | --- |
 | REQ-117 | customer | Food service | PB-03 |
 | REQ-118 | customer | Pharmacy and lab | PB-02 |
 
-**Pass condition.** Two separate cards for REQ-117 and REQ-118. No decision field is filled on any card. REQ-118 does not cite DL-2025-06 or DL-2026-04 (both belong to problem PB-03). REQ-119 and REQ-121 go to the flag report (no problem stated, or an executive request).
+**Pass condition.** Two separate cards for REQ-117 and REQ-118. No decision field is filled on any card. REQ-118 does not cite DL-2026-06 or DL-2027-04 (both belong to problem PB-03). REQ-119 and REQ-121 go to the flag report (no problem stated, or an executive request).
 
-### Case PM's example decisions for week 47 (a choice, not an answer)
+### Case PM's example decisions for request batch 1 (a choice, not an answer)
 
 Used by `kit-m3` and by CR-07 in lab 4. The PM decides on the PM's own judgment.
 
 | Request | Decision | Reason |
 | --- | --- | --- |
-| REQ-108 | later | DL-2026-02 condition (Hub firmware rollback ships) is not met. Reply names the condition. No date |
+| REQ-108 | later | DL-2027-02 condition (Hub firmware rollback ships) is not met. Reply names the condition. No date |
 | REQ-109 | later | Problem PB-12 is not validated. Collect more evidence |
-| REQ-110 | later | DL-2026-06 condition (Cloud admin interface work) is not met |
-| REQ-111 | yes | Same problem and user as DL-2026-07. Already on the roadmap as RM-12 |
+| REQ-110 | later | DL-2027-06 condition (Cloud admin interface work) is not met |
+| REQ-111 | yes | Same problem and user as DL-2027-07. Already on the roadmap as RM-12 |
 | REQ-112 | yes | Problem PB-02 is validated. The case PM treats 2 chains as enough to act now. This becomes CR-07 |
-| REQ-113 | no | DL-2025-11 reason still holds |
+| REQ-113 | no | DL-2026-11 reason still holds |
 | REQ-114 | later | Send to discovery. No validated problem yet |
-| REQ-115 | yes | Same problem and user as DL-2026-10. Already on the roadmap as RM-13 |
+| REQ-115 | yes | Same problem and user as DL-2027-10. Already on the roadmap as RM-13 |
 | REQ-116 | later | Problem PB-06 is not validated |
 
 ---
@@ -179,7 +179,7 @@ Used by `kit-m3` and by CR-07 in lab 4. The PM decides on the PM's own judgment.
 
 Records: `business-case.md`, `business-case-sheet.xlsx`, `m3-source-pack.md`, `m3-tooling-quote.md`.
 
-### Run 1 result (as of 2026-11-02, brief with the evidence age set to 180 days)
+### Run 1 result (as of 2027-11-02, brief with the evidence age set to 180 days)
 
 | Result | Value |
 | --- | --- |
@@ -196,9 +196,9 @@ Records: `business-case.md`, `business-case-sheet.xlsx`, `m3-source-pack.md`, `m
 
 ### The planted error, found by the audit
 
-The quote Q-2026-0417 gives USD 31.60 per set only at 50,000 units a year or more. The plan is 18,000 units. The matching tier is 10,000 to 24,999 at USD 38.40. The base cost A-03 is USD 31.60. The High value of A-03 is USD 36.00, so the true price is above the tested range (yes).
+The quote Q-2027-0417 gives the lower price of USD 31.60 per set only if Larkspan orders at least 50,000 sets a year (the minimum yearly order). The plan buys 18,000 sets. For 10,000 to 24,999 sets a year the supplier charges USD 38.40. The base cost A-03 is USD 31.60. The High value of A-03 is USD 36.00, so the true price is above the tested range (yes).
 
-| Measure | In the case | With the plan volume tier | Change |
+| Measure | In the case | With the price for the plan volume | Change |
 | --- | --- | --- | --- |
 | Enclosure and seal set (A-03) | USD 31.60 | USD 38.40 | + USD 6.80 |
 | Unit cost | USD 52.30 | USD 59.10 | + USD 6.80 |
@@ -211,16 +211,16 @@ The sheet recomputes the same unit cost from the same inputs, so its check passe
 
 | Flag type | Record | What the agent found | Evidence | PM decides |
 | --- | --- | --- | --- | --- |
-| Quote terms do not match plan volume | A-03 | The price USD 31.60 applies at 50,000 units a year or more. Plan volume is 18,000. The tier for 18,000 is USD 38.40. Unit cost line affected: A-03 | Quote Q-2026-0417, 2026-09-30, price table | Yes. No go, hold or stop line |
+| Quote terms do not match plan volume | A-03 | The supplier gives USD 31.60 only above a minimum order of 50,000 sets a year. The plan buys 18,000. The price for 18,000 is USD 38.40. Unit cost line affected: A-03 | Quote Q-2027-0417, 2027-09-30, price table | Yes. No go, hold or stop line |
 
-### Run 2 result (Q4 evidence, as of 2026-11-23)
+### Run 2 result (Q4 evidence, as of 2027-11-23)
 
 | Result | Value |
 | --- | --- |
 | Assumptions with changed evidence | 3: A-02, A-05, A-07 (A-06 was re-checked and did not change) |
 | A-05 new value | 57% (365 of 640 sites). Below the Low value of 60%: yes |
 | Year 1 gross profit, base, new values | USD 1,718,336 (change from run 1: USD -162,864) |
-| Same, with the plan volume tier for A-03 | USD 1,595,936 |
+| Same, with the price for the plan volume for A-03 | USD 1,595,936 |
 | Assumptions ordered by swing | A-01, A-03, A-05 |
 | Evidence older than 180 days | 0 |
 | Tooling quote flag | Still raised (the quote did not change) |
@@ -238,15 +238,15 @@ Input: `m3-check-sample.md`. Quote B-7731 rev B: price USD 3.85 applies at 30,00
 
 ### Case PM's example for the debrief (a choice, not an answer)
 
-Gate recommendation: hold. Reason: the hard tooling price at the plan volume is USD 38.40, not USD 31.60. The attach rate fell below the Low value. Next assumption to test: A-05 (attach rate), then ask Corvane for a price at 18,000 units.
+Gate recommendation: hold. Reason: the hard tooling price at the plan volume is USD 38.40, not USD 31.60. The attach rate fell below the Low value. Next assumption to test: A-05 (attach rate), then ask Ostrelane for a price at 18,000 units.
 
 ---
 
-## Lab 4: roadmap refresh and change
+## Lab 4: roadmap trace and change impact
 
 Records: `roadmap.csv`, `validated-problem-backlog.csv`, `evidence-log.csv`, `release-plan.csv`, `roadmap-decision-log.csv`, `confidential-terms-list.md`, `m4-change-request-cr-07.md`.
 
-### Refresh result (the case PM's validated rule: 3 or more accounts and 2 or more source types, last 12 months)
+### Trace result (the case PM's validated rule: 3 or more accounts and 2 or more source types, last 12 months)
 
 | Result | Value |
 | --- | --- |
@@ -272,43 +272,43 @@ RM-14 (branded cover page on audit reports) is in theme T-02 and links to PB-02.
 
 | Flag type | Record | What the agent found | Evidence | PM decides |
 | --- | --- | --- | --- | --- |
-| Own evidence below the validated rule | RM-14 | Own evidence is REQ-079 (1 request, 1 account). Linked to PB-02 through its theme only | `roadmap.csv`, `evidence-log.csv` (2026-08-18) | Yes. Whether the item stays |
+| Own evidence below the validated rule | RM-14 | Own evidence is REQ-079 (1 request, 1 account). Linked to PB-02 through its theme only | `roadmap.csv`, `evidence-log.csv` (2027-08-18) | Yes. Whether the item stays |
 
 ### Change assessment result for CR-07
 
 | Result | Value |
 | --- | --- |
-| Request | CR-07 from REQ-112 (account A-5120), dated 2026-11-18 |
-| Team asks in Q1 2027 | Firmware team 40 percent. Cloud team 10 percent |
-| Firmware team in Q1 2027 (from the Q4 pack) | 150 percent before CR-07. 190 percent with CR-07 |
-| Cloud team in Q1 2027 | 95 percent before CR-07. 105 percent with CR-07 |
-| Release plan items due in Q1 2027 that use the Firmware team | 1: RP-01 Hub firmware over-the-air rollback 2027-02-15 |
-| Release plan items due in Q1 2027 that use the Cloud team (dependency hits) | RP-02, RP-03 |
+| Request | CR-07 from REQ-112 (account A-5120), dated 2027-11-18 |
+| Team asks in Q1 2028 | Firmware team 40 percent. Cloud team 10 percent |
+| Firmware team in Q1 2028 (from the Q4 pack) | 150 percent before CR-07. 190 percent with CR-07 |
+| Cloud team in Q1 2028 | 95 percent before CR-07. 105 percent with CR-07 |
+| Release plan items due in Q1 2028 that use the Firmware team | 1: RP-01 Hub firmware over-the-air rollback 2028-02-15 |
+| Release plan items due in Q1 2028 that use the Cloud team (dependency hits) | RP-02, RP-03 |
 | Text "ships in Q2" in CR-07 | yes. A calibration export item on the release plan: no |
 | Confidential terms found in CR-07 | 2 of 5: Brindle RF Components, Quillfern Pharmacy Group |
-| Past decision | DL-2026-09 "later", condition "three pharmacy chains ask". Chains in the records: 2 |
+| Past decision | DL-2027-09 "later", condition "three pharmacy chains ask". Chains in the records: 2 |
 
 **Expected flag report (hand-off rule A, the recommended option).**
 
 | Flag type | Record | What the agent found | PM decides |
 | --- | --- | --- | --- |
-| Release plan change | RP-01 | CR-07 needs the Firmware team in Q1. RP-01 (2027-02-15) uses that team. Agent stopped. No new date. No edit to the release plan | PM and Delivery lead |
+| Release plan change | RP-01 | CR-07 needs the Firmware team in Q1. RP-01 (2028-02-15) uses that team. Agent stopped. No new date. No edit to the release plan | PM |
 | Commitment guard | CR-07 text | "ships in Q2" is not on the release plan for this item | Yes |
 | Dependency | Cloud team | 105 percent with CR-07. RP-02 and RP-03 use the Cloud team in Q1 | Yes |
-| Past decision | DL-2026-09 | Condition has 2 of 3 chains | Yes |
+| Past decision | DL-2027-09 | Condition has 2 of 3 chains | Yes |
 | Confidential term | Impact note | The note repeats Brindle RF Components and Quillfern Pharmacy Group if it quotes the request. Note is marked for the Delivery lead and the Support lead | Yes |
 
 The decision log entry has a blank decision field.
 
 ### Check sample (lab 4)
 
-Input: `m4-check-sample.md` (CR-08, door-open delay, from the Support lead).
+Input: `m4-check-sample.md` (CR-08, door-open delay, from the customer Operations manager, account A-3306, on REQ-116).
 
 | Result | Value |
 | --- | --- |
 | Text "ships in Q2" in CR-08 | yes. No release plan item for it |
 | Release plan item touched | none |
-| Cloud team in Q1 2027 | 105 percent with CR-08 (dependency flag) |
+| Cloud team in Q1 2028 | 105 percent with CR-08 (dependency flag) |
 | Confidential terms in CR-08 | 0 |
 
 **Pass condition.** The commitment guard flags "ships in Q2" as not on the release plan. No new date appears in the impact note. No release plan hand-off is raised, because no release plan item is touched.
@@ -327,6 +327,8 @@ Records: `outcome-sheet.xlsx` (targets), `business-case.md` (outcome path), `m5-
 | OS-2 Cloud subscription attach rate | 63.6 / 64.6 | 63.4 / 64 | -0.3% / -0.9% | ok |
 | OS-3 Install days per site | 2.31 / 2.22 | 2.35 / 2.29 | -1.7% / -3.2% | ok |
 | OS-4 Pharmacy and lab audit record completeness | 72.6 / 74.1 | none / none | none | no current data |
+
+Gap sign: gap is (actual minus target) divided by target. For OS-3, lower is better, so a negative gap (fewer days than target) is good. For OS-1, OS-2 and OS-4, higher is better, so a negative gap is bad.
 
 The case PM's labels: OS-1 outcome, OS-2 outcome, OS-3 outcome, OS-4 outcome. PX-1 "Probe X paid sites shipped" is an output.
 
