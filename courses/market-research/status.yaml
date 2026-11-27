@@ -2,13 +2,14 @@
 # Only Dan changes a gate to approved.
 course: market-research
 title: Advanced AI for Market Research
-stage: 4              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+stage: 3              # m1 is in stage 4; m2 to m5 in stage 3. 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-20, doc: "https://claude.ai/artifact/NADMs5axGsw8DWPju1g8tp" }
   gate_1_research:    { status: approved, approved_on: 2026-11-22, doc: "https://claude.ai/artifact/TgksEYpF4ffbFaBoTWbNLW" }
   gate_2_spec:        { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/7My6Phxh46TWYsaHenzgqx", pragmatic_review: approved, pragmatic_review_on: 2026-11-26, pragmatic_comments: "none, looked good, proceed" }
   gate_3_modules:     # one entry per module
     - { module: 1, status: content_approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/HsL2QbY9yrChpgYYYrmbri", card_test: open, note: "Dan approved content before the card test. Card test on 4 platforms (doubles as proof P1) still open. If P1 fails on 2 or more platforms, rework lab 1 with Dan yes" }
+    - { module: 2, status: drafting, note: "Stage 3 started 2026-11-27. Adds Copilot fallback (m1 Gate 3 D13)" }
   gate_4_final_qa:    { module: 1, status: approved, approved_on: 2026-11-27, version: v1, doc: "https://claude.ai/artifact/GPPdpxbMGcme7knhRQcrgY", note: "QA 42 checks, 0 fail, 2 waived (slide 1.10, Dan chose option C, modules/m1/gate-4-decisions.md). Dan approved 2026-11-27" }
 blockers: []
 pragmatic_sources:   # complete list, Dan 2026-11-20

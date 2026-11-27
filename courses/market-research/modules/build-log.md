@@ -7,3 +7,4 @@
 | 2026-11-26 18:36 | m1 | Builder revise once done: revision-notes.md, decisions D1 to D19 |
 | 2026-11-26 19:05 | m1 | Revised once. Gate 3 doc published, status in_review |
 | 2026-11-26 21:35 | m1 | Content approved by Dan. Card test open |
+| 2026-11-27 00:15 | m2 | Start. Copilot fallback (m1 D13). No audit hint (m1 D11). Builder runs |
