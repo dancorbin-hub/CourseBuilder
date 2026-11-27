@@ -14,3 +14,5 @@
 | 2026-11-27 01:58 | m2 | Dan yes to 3 approved-file changes: expected-results phrase, spec m2 card step 6 and stretch note, platform matrix stretch rows |
 | 2026-11-27 02:10 | m2 | Consistency report (0 blocker, 1 major, 8 minor) and verifier report done. Builder revises once |
 | 2026-11-27 02:01 | m2 | Builder revise once done: revision-notes.md, open decisions D1 to D10, 4 changes for Dan's yes |
+| 2026-11-27 02:25 | m2 | Gate 3 doc published, status in_review |
+| 2026-11-27 02:25 | m3 | Start, in parallel with m2 review. Schedule stretch: Claude card only, Dan test pending |
