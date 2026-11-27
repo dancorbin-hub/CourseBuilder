@@ -2,15 +2,17 @@
 # Only Dan changes a gate to approved.
 course: product-strategy-and-planning
 title: Advanced AI for Product Strategy and Planning
-stage: 2              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
+stage: 3              # 0 = setup, 1 = research, 2 = outline, 3 = modules, 4 = production
 delivered_by: Dan (decision 45). Talk track must work for a part-time instructor later
 gates:
   worked_example_row: { status: approved, approved_on: 2026-11-26, doc: null, file: "research/worked-example-row.yaml", note: "Course row sp-wf-09 v1 (Dan picked it at Gate 1, decision h, 2026-11-26). Draft for Dan's approval. Format model stays mr-wf-01 (v3)" }
   gate_1_research:    { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk" }
-  gate_2_spec:        { status: approved, approved_on: 2026-11-27, doc: "https://claude.ai/artifact/W2UADbKq77U3eiytxusc9J", pragmatic_review: pending, pragmatic_review_note: "Dan approved Gate 2 on 2026-11-27. Send syllabus and mapping to Pragmatic. Ask the title question." }
-  gate_3_modules:     []
+  gate_2_spec:        { status: approved, approved_on: 2026-11-27, doc: "https://claude.ai/artifact/W2UADbKq77U3eiytxusc9J", pragmatic_review: pending, pragmatic_review_note: "Dan approved Gate 2 on 2026-11-27. Send syllabus and mapping to Pragmatic. Ask the title question. Dan chose (2026-11-27) to start Stage 3 before Pragmatic review: CEO wants speed, Dan owns content decisions. Course-modules skill check 1 is waived by Dan for this course. Pragmatic comments that arrive later come back as rework items for Dan's yes." }
+  gate_3_modules:
+    - { module: 1, status: drafting, started_on: 2026-11-27, doc: null, note: "Bond story Trendslop (words only, no HBR figures). Card test may double as platform proof P1 if Dan agrees" }
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
+bond_story: { pick: Trendslop (E3), decided_on: 2026-11-26, condition: "No HBR figures on slides until a licensed copy is read (OI-10)" }   # OI-16
 hold: null   # lifted 2026-11-26: Pragmatic approved the Market Research syllabus ("looks great, keep moving forward")
 inputs_from_other_courses:
   - mr-wf-06 Build and refresh a sourced market size model (deferred by Dan, Market Research Gate 1, 2026-11-22)
