@@ -9,7 +9,7 @@ gates:
   gate_1_research:    { status: approved, approved_on: 2026-11-26, doc: "https://claude.ai/artifact/3eUhFMaL5rhUiJSgsWNrsk" }
   gate_2_spec:        { status: approved, approved_on: 2026-11-27, doc: "https://claude.ai/artifact/W2UADbKq77U3eiytxusc9J", pragmatic_review: pending, pragmatic_review_note: "Dan approved Gate 2 on 2026-11-27. Send syllabus and mapping to Pragmatic. Ask the title question. Dan chose (2026-11-27) to start Stage 3 before Pragmatic review: CEO wants speed, Dan owns content decisions. Course-modules skill check 1 is waived by Dan for this course. Pragmatic comments that arrive later come back as rework items for Dan's yes." }
   gate_3_modules:
-    - { module: 1, status: drafting, started_on: 2026-11-27, doc: null, note: "Bond story Trendslop (words only, no HBR figures). Card test may double as platform proof P1 if Dan agrees" }
+    - { module: 1, status: in_review, started_on: 2026-11-27, doc: "https://claude.ai/artifact/RYW9xFUvG6FCABmtcc9C4j", card_test: open, note: "8 decisions D1 to D8 for Dan. Bond story Trendslop (words only, no HBR figures). Card test may double as platform proof P1 if Dan agrees" }
   gate_4_final_qa:    { status: not_started, approved_on: null, doc: null }
 blockers: []
 bond_story: { pick: Trendslop (E3), decided_on: 2026-11-26, condition: "No HBR figures on slides until a licensed copy is read (OI-10)" }   # OI-16
