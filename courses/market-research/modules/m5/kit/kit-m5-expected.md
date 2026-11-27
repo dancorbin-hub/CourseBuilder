@@ -2,7 +2,7 @@
 
 **Status 2026-11-27: met.** Module 4 delivered every file in `modules/m4/kit/kit-m5/`. Rows 1 to 13: met as listed, with the counts in the last column. Row 14: met, with the map in chat (module 4 D12). Section 3 answers: (1) rule 4 lives in the brief "My rules"; (2) the text is the `case/planted-errors.md` lab 4 fix; (3) yes, the log save card saves the driver log with the Q3 rows and the map; (4) `modules/m4/kit/kit-m5/job-card-alternatives-map.md`, 1,497, now also in kit-final; (5) no "controller alarms" row in the driver code book; (6) counts in `modules/m4/module.md` section 8.
 
-Module 5 builder, 2026-11-27. Module 4 is not built yet (OI-05 open). Module 5 starts from kit-m5, the state after module 4. This file lists exactly what kit-m5 must hold, so module 4 makes it to match. Decision for Dan: D1 in `modules/m5/module.md`.
+Module 5 builder, 2026-11-27. Written before module 4 was built. Module 5 starts from kit-m5, the state after module 4. This file lists exactly what kit-m5 must hold, so module 4 makes it to match. Decision for Dan: D1 in `modules/m5/module.md`.
 
 Where kit-m5 goes: `modules/m4/kit/kit-m5/` (module 4 builder). Draft files built from the case are in `modules/m5/kit/kit-m5-draft/`. Copy them if module 4 keeps them as they are.
 
