@@ -23,3 +23,4 @@
 | 2026-11-27 06:55 | m5 | Builder draft done: module.md (17 slides, 65/60 min, 40%; course close C.1 to C.4), kit (lab-5, kit-final, kit-m5-draft, kit-m5-expected.md), card-test.md. Start state from the case before m4. 15 decisions D1 to D15, 5 changes for Dan's yes. Next: consistency reviewer and verifier |
 | 2026-11-27 07:06 | m5 | Builder revise once done: revision-notes.md. Audit pick now random (blocker 1). kit-final released after slide 5.13. Share steps Claude and ChatGPT only. Open decisions D1 to D17, 7 changes for Dan's yes |
 | 2026-11-27 07:08 | m5 | Revised once. Gate 3 doc published, status in_review |
+| 2026-11-27 19:25 | m4 | Start. OI-05 closed with Dan's example (Pragmatic client built an internal training center, then came back). Contract: m5 kit-m5-expected.md |

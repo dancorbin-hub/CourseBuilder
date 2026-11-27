@@ -1132,7 +1132,7 @@ open_items:
     item: Module 4 example is told as a Pragmatic or unnamed client story, with identifying details removed. Dan sends the example
     owner: Dan
     due: Before module 4 is built
-    status: decided (Gate 2 decision 6, final). Open action, Dan sends the example
+    status: closed. Dan sent the example 2026-11-27 (modules/m4/example-oi-05.md). Pragmatic client story, client not named
   - id: OI-06
     item: >-
       research/workflows.yaml row 01 still has the old rule ("2 or more interviews per insight") and lacks the PA-02 hand-off
