@@ -16,3 +16,4 @@
 | 2026-11-27 02:01 | m2 | Builder revise once done: revision-notes.md, open decisions D1 to D10, 4 changes for Dan's yes |
 | 2026-11-27 02:25 | m2 | Gate 3 doc published, status in_review |
 | 2026-11-27 02:25 | m3 | Start, in parallel with m2 review. Schedule stretch: Claude card only, Dan test pending |
+| 2026-11-27 02:16 | m3 | Builder draft done: module.md, kit (lab-3, kit-m4), card-test.md. Schedule stretch on the Claude card only, marked not tested. 13 decisions D1 to D13, 3 changes for Dan's yes. Next: consistency reviewer and verifier |
