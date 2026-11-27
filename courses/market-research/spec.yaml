@@ -477,7 +477,7 @@ modules:
     category: Market
     focus_area: Win/Loss Analysis
     capability_standards: { status: "confirmed by Dan, Pragmatic to confirm", skills: [1.3 Market Discovery, 8.1 Market Data Context and Pattern Recognition], competencies: [1.3A, 1.3C, 8.1B], gap: "Win/Loss Analysis box has no primary skill (capability-mapping.md gap 2)" }
-    bottleneck: Manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all (W1, W2; claims only, no figure on slides)
+    bottleneck: Manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all (Pragmatic instructor team view from class polls, Dan 2026-11-27; no published source; claims only, no figure on slides)
     minutes: 70   # full day
     split: { instructor_led: 28, hands_on: 42, percent_instructor_led: 40 }
     arc:

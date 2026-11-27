@@ -6,7 +6,7 @@ Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by th
 
 | Item | Value |
 | --- | --- |
-| Workflow row and bottleneck | mr-wf-02. Run a win/loss program that turns each decided deal into an updated, checked decision-driver report. Bottleneck: manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all (W1, W2; claims only, no figure on slides) |
+| Workflow row and bottleneck | mr-wf-02. Run a win/loss program that turns each decided deal into an updated, checked decision-driver report. Bottleneck: manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all (Pragmatic instructor team view from class polls, Dan 2026-11-27; no published source; claims only, no figure on slides) |
 | Framework category and focus area | Market. Win/Loss Analysis |
 | Capability Standards (as in spec) | Confirmed by Dan, Pragmatic to confirm. Skills 1.3 Market Discovery, 8.1 Market Data Context and Pattern Recognition. Competencies 1.3A, 1.3C, 8.1B. Gap: the Win/Loss Analysis box has no primary skill (`capability-mapping.md` gap 2) |
 | Rung | 1, Hand-run batch, two sources joined |
@@ -67,7 +67,7 @@ Open decisions for the Gate 3 doc, most important first. One line each, with a r
 | Gate 3 D8 | D8 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Accept. No change |
 | Gate 3 D9 | D9 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Accept. No change |
 | Gate 3 D10 | D10 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Skip path. Story slot stays optional |
-| Draft D11 | "Many teams do not run win/loss at all" stays off the slides | Research rule: W1 and W3 rest on the same old Pragmatic survey, so 1 source. Talk track says it as the course view only. Spec wording: see "Changes needing Dan's yes" row 1 |
+| Draft D11 | "Many teams do not run win/loss at all" stays off the slides | Dan 2026-11-27: the Pragmatic instructor team sees this in its class polls, and no citation is needed. No live poll (Dan said no). Talk track on 2.2 says it as the instructor team view, with no figure. Spec citation changed (change 1, applied) |
 
 ### Changes needing Dan's yes
 
@@ -75,7 +75,7 @@ None of these are made. Each waits for your yes.
 
 | # | File (fingerprinted or approved) | Change | Why |
 | --- | --- | --- | --- |
-| 1 | `spec.yaml`, module 2 `bottleneck` | Change "Many teams do not run win/loss at all (W1, W2; ...)" to "Many teams do not run win/loss at all (course view; no 2026 source, gap)" | Verifier F4: W2 does not say it. W1 says it from old Pragmatic data, the same data as W3 |
+| 1 (APPLIED, Dan 2026-11-27) | `spec.yaml`, module 2 `bottleneck` | Change "Many teams do not run win/loss at all (W1, W2; ...)" to "Many teams do not run win/loss at all (course view; no 2026 source, gap)" | Verifier F4: W2 does not say it. W1 says it from old Pragmatic data, the same data as W3 |
 | 2 | `research/evidence-ledger.yaml` | Add Klue, "Difficulty running win-loss analysis" (https://klue.com/blog/difficulty-running-win-loss-analysis, modified 2025-09-04, vendor, age flag). Claim: manual win/loss is slow; results arrive out of date | Only if D1 is A |
 | 3 | `research/platform-matrix.yaml` | Verifier rows: checked_on 2026-11-27 for cl-ui-09, cl-ui-10, cg-ui-09, mb-ui-12, mb-ui-13, mb-01, mb-ui-14, gm-ui-10. mb-03 source_date 2026-11-16. cl-ui-10 limits: Team and Enterprise owners use Organization settings. gm-ui-10 limits: existing skill uses **Add files**; "Instructions" is named. mb-01 note: **New chat** is named only in the **Try it** pane. New row mb-ui-15 (file formats for upload in Copilot, licensed, agents not named, ms.date 2026-07-28) | Verifier report, last section |
 | 4 | `modules/m1/module.md` (approved), Gemini card | Blog title: "Let skills in Gemini tackle your most repetitive tasks" (2026-09-30). Step 1 on an existing skill may use **Add files**, not **Add**, **files**, **Upload** | Verifier F7 and F8 apply to module 1 too. Card test confirms first |
@@ -123,6 +123,8 @@ Corporate Visions also says a manual program is slow. So does a Klue product mar
 Someone books the calls, takes notes, codes them and writes a quarterly report.
 By the time the report lands, the chance to act has passed.
 So many teams act on the CRM field alone.
+Pragmatic instructors ask this in every class. Few teams run win/loss on every decided deal, and many do not run it at all.
+Ask yourself: does your team?
 That is changing.
 Most buyer conversations are now stored: recorded sales calls, emails, interview transcripts.
 Win/loss tools now run the same analysis on recorded sales calls as on buyer interviews. Clozd documents this for Gong calls.

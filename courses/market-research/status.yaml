@@ -31,7 +31,7 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
   research/platform-matrix.yaml: sha256:5e7d9fad5eda2669   # Dan yes 2026-11-27 (m2 builder changes and stretch check)
   research/bond-stories.md: sha256:70ffa8521cb65122
-  spec.yaml: sha256:30257f1b8e1e8b54   # OI-05 closed with Dan's example, 2026-11-27
+  spec.yaml: sha256:fee330e8271e11e0   # OI-05 closed 2026-11-27; m2 bottleneck citation = instructor team view, Dan yes 2026-11-27
   outline/syllabus.md: sha256:2468f0355f716385   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/development-brief.md: sha256:231fd68b99aedce7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/capability-mapping.md: sha256:62d094a14988aca7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
