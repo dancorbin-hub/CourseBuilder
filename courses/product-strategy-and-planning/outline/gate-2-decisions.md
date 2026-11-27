@@ -38,3 +38,5 @@ Dan answers in the Gate 2 doc. Apply to repo files only after Dan's full set of 
 | 15 | Funding scenario stretch: Dan asked whether a move to module 2 replaces the lab or joins it. Answer given: it stays a stretch step inside the existing lab, never a replacement. Dan has not chosen yet. | Keep in module 1 until Dan chooses. |
 
 | 16 | Funding scenario stretch stays in module 1 (Dan, 2026-11-26). O1 closed. | Planner marks O1 closed in packet and spec. |
+
+| 17 | Market Research case moves to 2027 later (option B, Dan 2026-11-27): shift before module 2, module 1 stays as approved, one quick re-render at the end. Real stats and sources stay 2026. Only the Larkspan case is set in 2027. | Market Research thread owns the shift. Do not edit the MR case from this thread. |
