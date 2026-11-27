@@ -26,7 +26,7 @@ Numbers 2 to 13 follow packet v1 and the module 1 thread. C1 and C2 are Dan's co
 
 | # | Decision | Dan chose | Status | Date | Note |
 | --- | --- | --- | --- | --- | --- |
-| v2-1 | Problem backlog model (packet v2, items 1 to 3) | A: confirm | Final | 2026-11-22 | Replaces the PM's bar. Spec v0.3 and case already use it |
+| v2-1 | Problem backlog model (packet v2, items 1 to 3) | A: confirm | Agreed arc, open to iteration (Dan, 2026-11-26: not "final", work is iterative) | 2026-11-22 | Replaces the PM's bar. Spec v0.3 and case already use it |
 | v2-2 | Capability and skills (packet v2, section 3) | A: confirm as proposed. Module 4 uses 1.2 | Final for Dan. Pragmatic ID team confirms in its review | 2026-11-22 | capability-mapping.md |
 | v2-3 | Offering intent Develop and Apply, ID team confirms learner evidence | A: yes | Final | 2026-11-22 | In the Pragmatic review doc |
 | v2-4 | Lab 1 fix rule | A: flag rule ("if all quotes for a problem come from 1 interview, send it to the flag report") | Provisional until proof P1 | 2026-11-22 | Ranking rule is an optional second rule |

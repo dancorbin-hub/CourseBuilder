@@ -177,6 +177,10 @@ course_agent:   # house rule 12, decision 38
       - "single source: 1 interview, however many quotes"
       - "AI-moderated only: no PM-held interview supports the problem"
       - "one segment only: all evidence comes from one segment"
+    fact_label_display: >-
+      Gate 3 module 1 D2 (Dan, 2026-11-26). Agent files (brief, code book, backlog) keep all 3 labels as facts.
+      Learner-facing slides and cards show 2 labels (single source, one segment only), per decision C2. Talk track
+      says the third label may appear
     fact_label_rule: >-
       Fact labels state facts. They are not verdicts. A problem with a fact label stays in the backlog for trend
       tracking. The agent does not drop it
@@ -289,8 +293,9 @@ planted_error_fade:   # house rule 13, decision 34
   reveal: The debrief of each lab reveals the error and asks which check or audit found it
   success_checks: >-
     Critic S2. The success check on the lab brief slide is general (PRD rule 7). It names the outputs and the
-    manager actions, never the error. The error-specific pass condition is shown only in the debrief
-    (debrief_check in each module). Step card steps also stay general
+    manager actions, never the error. Step card steps also stay general. PRD rule 7 puts the second-sample pass
+    condition at the end of each card, so the card has it, marked "run this in the debrief" (Gate 3 module 1 D7,
+    Dan 2026-11-26). The debrief reveals the error (debrief_check in each module)
   case_counts: >-
     Debrief checks name case record ids. The counts for each check are in case/expected-results.md, recounted by the
     case builder under the problem backlog model (rework brief 2, item 10)
@@ -410,7 +415,7 @@ modules:
         - Decide each item in the flag report
         - Audit 3 random problems against the source interviews
         - Add one flag rule for what you found to the brief
-        - Send batch 2 with the prompt "Run the problem backlog job"
+        - In a new chat, send batch 1 and batch 2 with the prompt "Run the problem backlog job" (Gate 3 module 1 D1, Dan 2026-11-26)
       core_path_no_connectors: yes. Upload batch files and run
       inputs:
         own_work: 5 to 15 of your own interview notes or transcripts, from an approved tool, with consent
@@ -420,7 +425,7 @@ modules:
         - Turn the job into a custom skill (Claude all plans, ChatGPT business plans, Gemini)
       planted_error:
         error: >-
-          One vocal buyer ranks near the top. Interview I-104 (persona P05) gives 3 real quotes in 1 interview, and
+          One vocal buyer ranks near the top. Interview I-104 (problem P05) gives 3 real quotes in 1 interview, and
           the agent ranks that problem near the top of the proposed ranking. The quote check passes. The learner
           finds it by reading the evidence profile (1 interview, single source) and in the audit. Workbook
           competency 1.1B: the noisy 20% versus the quiet 80%

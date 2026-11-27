@@ -464,3 +464,96 @@ retries:
   - url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
     result: Failed again on 2026-11-20 (client error). Same for help.openai.com/sr-rs/... and the skills article 20001066 on help.openai.com
     alternative: help-lb.openai.com loaded the Projects, Skills, Scheduled tasks and File uploads FAQ articles. OpenAI Academy loaded the Skills guide
+
+# ---------------- Stage 3, module 1 verifier (2026-11-26) ----------------
+# Appended by the Verifier in Mode 3. Screen names used on the module 1 step cards.
+# Existing rows above are not changed. Report: modules/m1/verifier-report.md
+features_stage3_m1:
+  - id: cl-ui-09
+    platform: claude
+    feature: Project screen names (Projects in the sidebar, + New Project, Set project instructions, Save instructions, + in project knowledge, chats in a project)
+    plans: All plans (cl-pj-01)
+    limits: Start a chat in a project is described ("initiate chats with Claude within the project") with no control name. Deleting a project knowledge file is not described
+    use_in_core_lab: "yes"
+    url: https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
+    source_date: 2026-11-06 (page metadata dateModified; page says "Updated over 2 weeks ago")
+    checked_on: 2026-11-26
+    status: "verified"
+    verifier_note: "Loaded 2026-11-26 (curl). All five labels quoted on the page. Delete a knowledge file: not on this page or on 9517075"
+  - id: cl-ui-10
+    platform: claude
+    feature: File creation toggle. Settings > Capabilities > "Code execution and file creation", called "Create and edit files" in the updated Settings layout
+    plans: Free, Pro, Max, Ultra set it in Settings > Capabilities. Team and Enterprise owners set it in Organization settings > Capabilities. Mobile uses Settings > Capabilities
+    limits: On by default for Team and new Enterprise organizations
+    use_in_core_lab: "yes"
+    url: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
+    source_date: 2026-11-24 (page metadata dateModified; page says "Updated yesterday")
+    checked_on: 2026-11-26
+    status: "verified"
+    verifier_note: "Loaded 2026-11-26 (curl). Both toggle names and both paths quoted"
+  - id: cl-pj-11
+    platform: claude
+    feature: New version of projects (beta). A project is one conversation; Claude runs parallel threads; files sit in the project Library
+    plans: Select Pro, Max and Ultra users who use Claude Code, and some Pro, Max and Ultra users whose existing projects were moved. Chat, Cowork, Team and Enterprise follow later
+    limits: Existing projects keep instructions, files, chat history and scheduled tasks when moved. Users of a project in the last 30 days get an email first
+    use_in_core_lab: "no"
+    url: https://support.claude.com/en/articles/9517075-what-are-projects
+    source_date: 2026-10-30 (page metadata dateModified)
+    checked_on: 2026-11-26
+    status: not verified
+    note: New feature, left not verified (PRD decision 25). Risk for the module 1 cards. Learners whose projects moved may not see the card screen names. Recheck before each delivery
+  - id: cg-ui-09
+    platform: chatgpt
+    feature: Project screen names (New project in the sidebar; more options menu ••• > Project settings for instructions; add files by upload or paste; open a file from the project sources list to preview, download or delete it)
+    plans: See cg-01. Files per project 5 (Free), 25 (Go, Plus), 40 (Edu, Pro, Business, Enterprise)
+    limits: No button name for adding files or for starting a new chat in a project
+    use_in_core_lab: "yes"
+    url: https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt
+    source_date: "approx 2026-11-23 (page says \"Updated: 3 days ago\")"
+    checked_on: 2026-11-26
+    status: "verified"
+    verifier_note: "Loaded 2026-11-26 (WebFetch). New project, •••, Project settings and 'project sources list' quoted. 25 files for Go and Plus confirmed again. Relative date only"
+  - id: mb-ui-12
+    platform: copilot
+    feature: Agent builder configure and knowledge screen names (New agent > Skip to configure; Configure tab with Name, Instructions, Knowledge; Knowledge > Upload; files under Uploaded files; remove with the X next to the file, then Remove)
+    plans: See mb-03
+    limits: Also drag and drop, or the arrow icon on the Configure tab. Individual files only, no folders
+    use_in_core_lab: "yes"
+    url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge
+    source_date: 2026-11-16
+    checked_on: 2026-11-26
+    status: "verified"
+    verifier_note: "Loaded 2026-11-26 (WebFetch). Add knowledge page and Build agents page (both Last updated 2026-11-16). All labels quoted"
+  - id: mb-ui-13
+    platform: copilot
+    feature: Open, edit, create and update an agent (All agents or the ... next to the agent in the left pane, then Edit, the pencil icon; Create the first time; Update in the top right corner)
+    plans: See mb-03
+    limits: Changes save automatically but users do not see them until Update. New agent > View all agents is another path
+    use_in_core_lab: "yes"
+    url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents
+    source_date: 2026-11-16
+    checked_on: 2026-11-26
+    status: "verified"
+    verifier_note: "Loaded 2026-11-26 (WebFetch). All labels quoted"
+  - id: mb-ui-14
+    platform: copilot
+    feature: File upload in a Copilot Chat prompt (+ in the "Message Copilot" box, then Upload images and files)
+    plans: Not stated. Page notes limits for users without a Microsoft 365 Copilot subscription
+    limits: Page does not say this works in a chat with an agent. No file types or sizes listed
+    use_in_core_lab: "yes"
+    url: https://support.microsoft.com/en-US/Microsoft-365-Copilot/add-content-to-microsoft-365-copilot-chat-prompts
+    source_date: 2026-11-18 (ms.date in page metadata; updated_at 2026-11-19; no date in the page body)
+    checked_on: 2026-11-26
+    status: "partly verified"
+    verifier_note: "Loaded 2026-11-26 (WebFetch). Labels quoted for Copilot Chat. Agent chat and file types not stated. G2-PF-02 stays open"
+  - id: gm-ui-10
+    platform: gemini
+    feature: Skill screen names (Customize > Skills > Create > Create manually; name in lowercase with hyphens; instructions; Add > images or files > Upload; Create; click a skill to edit; More > Replace file or Replace skill; Save; type / or @ in chat to pick the skill)
+    plans: See gm-01 and gm-03
+    limits: The same page also says "To update files in a skill, you need to upload the entire skill with its reference files again", which conflicts with Replace file. No exact "Instructions" label shown. The @ shortcut is for users with "the updated shortcut"
+    use_in_core_lab: "yes"
+    url: https://support.google.com/gemini?p=pn_skills
+    source_date: unknown (page shows no date)
+    checked_on: 2026-11-26
+    status: "partly verified"
+    verifier_note: "Loaded 2026-11-26 (WebFetch). Labels match the page, but the page has no date, so it fails the dated doc rule. Only '/' has a dated doc: blog.google 'Let skills in Gemini tackle your most repetitive tasks' (2026-09-30). Workspace Updates posts of 2026-09-30 and 2026-11-16 name no skill screen labels. Dan decides (module 1 verifier report F11)"
