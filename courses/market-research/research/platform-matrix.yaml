@@ -113,9 +113,9 @@ features:
     use_in_core_lab: "no"
     url: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork
     source_date: approx 2026-11-19 (page says "updated yesterday")
-    checked_on: 2026-11-20
-    status: not verified
-    note: Stretch path. The input (new interviews) must reach the task without a connector, for example files saved to the Claude account. Not tested
+    checked_on: 2026-11-27
+    status: verified (doc), hands-on test by Dan pending
+    note: "Stretch path. The input (new interviews) must reach the task without a connector, for example files saved to the Claude account. Not tested. 2026-11-27 (research/stretch-verification-2026-11.md): Doc 13854387 dated 2026-11-18. Projects scheduled tasks doc 14116274 dated 2026-11-12. Only platform that may carry the module 3 schedule stretch, after Dan tests it"
 
   # ---------------- ChatGPT ----------------
   - id: cg-01
@@ -183,9 +183,9 @@ features:
     use_in_core_lab: "no"
     url: https://help-lb.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt
     source_date: approx 2026-11-02 (page says "updated 18 days ago")
-    checked_on: 2026-11-20
-    status: not verified
-    note: Stretch path limit. A scheduled run cannot read the code book in project files. The brief and code book must be in the task prompt or a skill. Page does not say if tasks can use skills
+    checked_on: 2026-11-27
+    status: verified (doc), not usable for the lab
+    note: "Stretch path limit. A scheduled run cannot read the code book in project files. The brief and code book must be in the task prompt or a skill. Page does not say if tasks can use skills. 2026-11-27 (research/stretch-verification-2026-11.md): A project task cannot read project files and GPTs are not supported, so a weekly run cannot read the tag list or the saved backlog. Workspace agent schedules need Business or Enterprise credits. No schedule stretch on ChatGPT cards"
   - id: cg-07
     platform: chatgpt
     feature: Event-triggered tasks (new Gmail message, Slack channel message, GitHub pull request)
@@ -284,9 +284,9 @@ features:
     use_in_core_lab: "no"
     url: https://mc.merill.net/message/MC1302906
     source_date: 2026-10-30 (Message Center MC1302906, version 3, first posted 2026-05-06)
-    checked_on: 2026-11-20
+    checked_on: 2026-11-27
     status: not verified
-    note: Source is a third-party mirror of the Microsoft 365 Message Center. Not a Microsoft Learn page. The Verifier needs a Microsoft-hosted copy. Stretch path once rolled out
+    note: "Source is a third-party mirror of the Microsoft 365 Message Center. Not a Microsoft Learn page. The Verifier needs a Microsoft-hosted copy. Stretch path once rolled out. 2026-11-27 (research/stretch-verification-2026-11.md): Still rolling out to mid-December 2026. No Microsoft-hosted doc. Recheck after mid-December 2026"
   - id: mb-07
     platform: copilot
     feature: Scheduled tasks in Microsoft 365 Copilot (was Scheduled prompts)
@@ -430,9 +430,9 @@ features:
     use_in_core_lab: "no"
     url: https://support.google.com/gemini/answer/17094710?hl=en
     source_date: unknown (page shows no date)
-    checked_on: 2026-11-20
-    status: not verified
-    note: Stretch path for personal accounts only. Not for Workspace learners
+    checked_on: 2026-11-27
+    status: not available for Workspace accounts
+    note: "Stretch path for personal accounts only. Not for Workspace learners. 2026-11-27 (research/stretch-verification-2026-11.md): Spark is personal accounts only, which breaks the lab data safety note"
   - id: gm-08
     platform: gemini
     feature: Scheduled actions in Gemini chat

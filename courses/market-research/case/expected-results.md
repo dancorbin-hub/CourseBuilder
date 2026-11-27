@@ -170,7 +170,7 @@ The correct driver log is Part 1 (Q2 rows) of `m4-evidence-pack.md`.
 
 ### Second sample: `m2-check-sample.md`
 
-10 deals (program minimum met). Interviewed: D-1301, D-1302, D-1304, D-1306, D-1308, D-1309. CRM only: D-1303, D-1305, D-1307 (declined, sales note "Price"), D-1310.
+10 deals. Interviewed: D-1301, D-1302, D-1304, D-1306, D-1308, D-1309. CRM only: D-1303, D-1305, D-1307 (declined, sales note "Price"), D-1310.
 
 | Outcome | Interviewed | Match | Match rate |
 | --- | --- | --- | --- |

@@ -26,16 +26,16 @@ fingerprints:         # approved item -> content hash. A change to a fingerprint
   research/gate-1-packet.md: sha256:d8bde3cc4829bbf3
   research/gate-1-decisions.md: sha256:d3285a843bb9e7fb
   research/evidence-ledger.yaml: sha256:96eff6a49dfebd7e
-  research/platform-matrix.yaml: sha256:f2b01bf39e7f8fc1
+  research/platform-matrix.yaml: sha256:5e7d9fad5eda2669   # Dan yes 2026-11-27 (m2 builder changes and stretch check)
   research/bond-stories.md: sha256:70ffa8521cb65122
-  spec.yaml: sha256:7c61badd5ef1a79d   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions); recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  spec.yaml: sha256:e6c96823a9b479d0   # Dan yes 2026-11-27 (m2 builder changes and stretch check)
   outline/syllabus.md: sha256:2468f0355f716385   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/development-brief.md: sha256:231fd68b99aedce7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/capability-mapping.md: sha256:62d094a14988aca7   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   outline/gate-2-decisions.md: sha256:91634c5b6ca9658c   # Gate 2, 2026-11-26; recomputed after PR #9 merge (Gate 2 v2 decisions)
   case/README.md: sha256:53d2ed534f358b60   # Gate 2, 2026-11-26
   case/company.md: sha256:2cd7e1f16ff130dd   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
-  case/expected-results.md: sha256:069e5a13df00c2ad   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
+  case/expected-results.md: sha256:0f4ef22c14a7ed06   # Dan yes 2026-11-27 (m2 builder changes and stretch check)
   case/m1-check-sample.md: sha256:0c3590bc2cfcbca2   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
   case/m1-code-book.md: sha256:7f4ee2af5b962535   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)
   case/m1-code-book.txt: sha256:7f4ee2af5b962535   # Gate 2, 2026-11-26; recomputed 2026-11-27 for case year move to 2027 (Dan, option B)

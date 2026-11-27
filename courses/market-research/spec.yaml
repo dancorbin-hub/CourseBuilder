@@ -529,13 +529,13 @@ modules:
         - Decide each flag in the flag report
         - Audit 2 random deals, including the deal source column
         - Add one rule for what you found to the brief
-        - Send the same files again with the prompt "Run the win/loss job"
+        - In a new chat, send the same files again with the prompt "Run the win/loss job" (Gate 3 module 2, Dan 2026-11-27, same as module 1 D1)
       core_path_no_connectors: yes. Upload a CRM export (CSV) and interview notes
       inputs:
         own_work: An export of recent decided deals and any win/loss notes, from an approved tool, with confidentiality agreed
         fallback_case: "Larkspan: m2-driver-code-book.md (knowledge), m2-crm-export-q2.csv and m2-winloss-notes-q2.md (run), m2-check-sample.md (check)"
       stretch:
-        - Run the job on each new batch when the export file arrives. Schedule stretch, only on step cards where verified (stretch_scope)
+        - Run the job on each new batch when the export file arrives. No schedule stretch in module 2: the stretch check (research/stretch-verification-2026-11.md) moves the schedule stretch to module 3, Claude card only (Dan 2026-11-27)
       planted_error:
         error: >-
           A CRM-only deal leaks into the buyer findings. The agent fills a missing interview with the CRM reason
