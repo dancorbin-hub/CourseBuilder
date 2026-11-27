@@ -6,9 +6,9 @@ Knowledge file for the Market Evidence Agent, stakeholder answer job. Two report
 
 ---
 
-## Report R-2024-07: Food Service Compliance Reporting Study
+## Report R-2025-07: Food Service Compliance Reporting Study
 
-<small>Report date: 2024-09-12. Fieldwork: June to August 2024. Segment: Food service only (restaurant groups and grocery chains). Owner: Product team, Larkspan Cloud.</small>
+<small>Report date: 2025-09-12. Fieldwork: June to August 2025. Segment: Food service only (restaurant groups and grocery chains). Owner: Product team, Larkspan Cloud.</small>
 
 ### Method
 
@@ -20,13 +20,13 @@ Knowledge file for the Market Evidence Agent, stakeholder answer job. Two report
 
 1. **Buyers want a one-click inspection binder that follows the county template.** 11 of 14 interviewees asked for it. "Give me one button that prints what the county inspector wants." (Director of operations, grocery chain)
 2. Report work is heavy. 68% of surveyed managers spend 2 hours or more per site to prepare for an inspection.
-3. Managers print reports. Few inspectors asked for digital records in 2024.
+3. Managers print reports. Few inspectors asked for digital records in 2025.
 4. Calibration certificates came up in 1 of 14 interviews. Food service inspectors rarely ask for them.
 5. Alert noise was a minor concern. 2 of 14 interviewees raised it.
 
-### Recommendation (2024)
+### Recommendation (2025)
 
-Build an inspection binder export for food service in 2025.
+Build an inspection binder export for food service in 2026.
 
 ### Limits
 
@@ -34,14 +34,14 @@ Food service only. Survey respondents were current customers. Prospects and lost
 
 ---
 
-## Report R-2026-03: Distribution After-Hours Alert Study
+## Report R-2027-03: Distribution After-Hours Alert Study
 
-<small>Report date: 2026-05-20. Fieldwork: January to April 2026. Segment: Distribution only (food distributors and cold storage warehouses). Owner: Product team, Larkspan Cloud.</small>
+<small>Report date: 2027-05-20. Fieldwork: January to April 2027. Segment: Distribution only (food distributors and cold storage warehouses). Owner: Product team, Larkspan Cloud.</small>
 
 ### Method
 
 - 9 interviews: 6 PM-held, 3 AI-moderated.
-- Alert data from 40 distribution sites, January to April 2026.
+- Alert data from 40 distribution sites, January to April 2027.
 
 ### Key findings
 
@@ -50,7 +50,7 @@ Food service only. Survey respondents were current customers. Prospects and lost
 3. Buyers are split on who should take the night call. 5 of 9 want an option for a monitoring service to take the first call. 4 of 9 want their own managers to own it. "Nobody knows our freezers like my own supervisors." (Operations manager, cold storage)
 4. No buyer named a price they would pay for a monitoring service.
 
-### Recommendation (2026)
+### Recommendation (2027)
 
 Fix door-open alert noise first. Test interest in a monitoring service with a priced offer before any build.
 

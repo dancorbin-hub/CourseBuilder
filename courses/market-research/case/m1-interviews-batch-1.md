@@ -1,14 +1,14 @@
 **Fictional data for training.** Larkspan Systems case. All companies, people, quotes and numbers are invented. No real personal data.
 
-# Buyer interviews, batch 1 (September 2026)
+# Buyer interviews, batch 1 (September 2027)
 
-Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quotes in the excerpts are word for word.
+Study: Cold chain monitoring needs, 2027. 8 interviews. Transcript excerpts. Quotes in the excerpts are word for word.
 
 ---
 
 ## I-101
 
-- Date: 2026-09-08
+- Date: 2027-09-08
 - Segment: Distribution
 - Role: Operations manager, cold storage warehouse (Oxbend Cold Storage, 14 freezer rooms)
 - Run by: PM-held
@@ -30,7 +30,7 @@ Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quo
 
 ## I-102
 
-- Date: 2026-09-09
+- Date: 2027-09-09
 - Segment: Distribution
 - Role: Quality manager, regional food distributor (Teller Creek Foods, 3 warehouses)
 - Run by: AI-moderated
@@ -52,7 +52,7 @@ Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quo
 
 ## I-103
 
-- Date: 2026-09-10
+- Date: 2027-09-10
 - Segment: Food service
 - Role: Facilities lead, restaurant group (Saltgrass Kitchens, 12 sites)
 - Run by: PM-held
@@ -70,7 +70,7 @@ Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quo
 
 ## I-104
 
-- Date: 2026-09-11
+- Date: 2027-09-11
 - Segment: Food service
 - Role: Director of operations, grocery chain (Marrowby Grocers, 9 stores)
 - Run by: PM-held
@@ -86,7 +86,7 @@ Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quo
 
 **Interviewer:** How important is this compared with other problems?
 
-**Buyer:** It is the only thing I care about this year. "If I can't compare all nine stores on one page by next spring, I'm not renewing, it's that simple." We are opening three more stores in 2027. I can't make nine phone calls today and twelve next year.
+**Buyer:** It is the only thing I care about this year. "If I can't compare all nine stores on one page by next spring, I'm not renewing, it's that simple." We are opening three more stores in 2028. I can't make nine phone calls today and twelve next year.
 
 **Interviewer:** Anything about alerts or reports?
 
@@ -96,7 +96,7 @@ Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quo
 
 ## I-105
 
-- Date: 2026-09-14
+- Date: 2027-09-14
 - Segment: Food service
 - Role: Kitchen manager, restaurant (Bramblefield Bistro group, 4 sites)
 - Run by: AI-moderated
@@ -114,7 +114,7 @@ Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quo
 
 ## I-106
 
-- Date: 2026-09-15
+- Date: 2027-09-15
 - Segment: Distribution
 - Role: VP operations, food distributor (Pellham Distribution, 2 warehouses)
 - Run by: PM-held
@@ -132,7 +132,7 @@ Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quo
 
 ## I-107
 
-- Date: 2026-09-16
+- Date: 2027-09-16
 - Segment: Pharmacy and lab
 - Role: Pharmacy manager, independent pharmacy group (Quarry Lane Pharmacies, 5 locations)
 - Run by: AI-moderated
@@ -150,7 +150,7 @@ Study: Cold chain monitoring needs, 2026. 8 interviews. Transcript excerpts. Quo
 
 ## I-108
 
-- Date: 2026-09-17
+- Date: 2027-09-17
 - Segment: Pharmacy and lab
 - Role: Lab manager, reference lab (Northfold Diagnostics, 1 site)
 - Run by: AI-moderated

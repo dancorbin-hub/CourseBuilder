@@ -477,7 +477,7 @@ modules:
     category: Market
     focus_area: Win/Loss Analysis
     capability_standards: { status: "confirmed by Dan, Pragmatic to confirm", skills: [1.3 Market Discovery, 8.1 Market Data Context and Pattern Recognition], competencies: [1.3A, 1.3C, 8.1B], gap: "Win/Loss Analysis box has no primary skill (capability-mapping.md gap 2)" }
-    bottleneck: Manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all (W1, W2; claims only, no figure on slides)
+    bottleneck: Manual win/loss is slow and does not scale. Sales-entered loss reasons often differ from buyer reasons. Many teams do not run win/loss at all (Pragmatic instructor team view from class polls, Dan 2026-11-27; no published source; claims only, no figure on slides)
     minutes: 70   # full day
     split: { instructor_led: 28, hands_on: 42, percent_instructor_led: 40 }
     arc:
@@ -529,13 +529,13 @@ modules:
         - Decide each flag in the flag report
         - Audit 2 random deals, including the deal source column
         - Add one rule for what you found to the brief
-        - Send the same files again with the prompt "Run the win/loss job"
+        - In a new chat, send the same files again with the prompt "Run the win/loss job" (Gate 3 module 2, Dan 2026-11-27, same as module 1 D1)
       core_path_no_connectors: yes. Upload a CRM export (CSV) and interview notes
       inputs:
         own_work: An export of recent decided deals and any win/loss notes, from an approved tool, with confidentiality agreed
         fallback_case: "Larkspan: m2-driver-code-book.md (knowledge), m2-crm-export-q2.csv and m2-winloss-notes-q2.md (run), m2-check-sample.md (check)"
       stretch:
-        - Run the job on each new batch when the export file arrives. Schedule stretch, only on step cards where verified (stretch_scope)
+        - Run the job on each new batch when the export file arrives. No schedule stretch in module 2: the stretch check (research/stretch-verification-2026-11.md) moves the schedule stretch to module 3, Claude card only (Dan 2026-11-27)
       planted_error:
         error: >-
           A CRM-only deal leaks into the buyer findings. The agent fills a missing interview with the CRM reason
@@ -857,7 +857,7 @@ modules:
         has your decided order and your validation decisions
       debrief_check: >-
         Shown in the debrief only. The fixed answer names the date and segment of every source. The flag report
-        lists the old evidence for another segment (case: R-2024-07). The answer does not say "buyers want".
+        lists the old evidence for another segment (case: R-2025-07). The answer does not say "buyers want".
         Proposals are by segment and stay proposals until the PM decides. The agent does not write "food service
         buyers want" from the one Food service interview (case: I-105; decision 3 test). Counts:
         case/expected-results.md
@@ -1041,7 +1041,7 @@ fallback_case:   # critic S4. Built by the case builder in Stage 2. Reworked in 
     m2: [m2-driver-code-book.md (.txt copy), m2-crm-export-q2.csv (decided deals), m2-winloss-notes-q2.md (planted CRM-only deal with "price"), m2-check-sample.md]
     m3: [m3-tag-list.md (.txt copy), m3-feedback-week-1.csv, m3-feedback-week-2.csv (planted new problem), m3-check-sample.md, m3-stretch-survey-wave.csv (stretch)]
     m4: [m4-alternatives-map.md (.txt copy), m4-evidence-pack.md (planted D-3108, CRM says Rimecore, buyer kept the spreadsheet), m4-check-sample.md]
-    m5: [m5-past-reports.md (.txt copy; R-2024-07 is 2024 food service, over the case age limit), m5-stakeholder-questions.md (one question tempts the old study; one question from the Fleet Data Platform PM; one check question)]
+    m5: [m5-past-reports.md (.txt copy; R-2025-07 is 2025 food service, over the case age limit), m5-stakeholder-questions.md (one question tempts the old study; one question from the Fleet Data Platform PM; one check question)]
   expected_results: case/expected-results.md (instructor only). Recounted under the problem backlog model. Each lab has a second sample input and a pass condition. Catch-up kit state files are listed at its end
 
 glossary:
@@ -1132,7 +1132,7 @@ open_items:
     item: Module 4 example is told as a Pragmatic or unnamed client story, with identifying details removed. Dan sends the example
     owner: Dan
     due: Before module 4 is built
-    status: decided (Gate 2 decision 6, final). Open action, Dan sends the example
+    status: closed. Dan sent the example 2026-11-27 (modules/m4/example-oi-05.md). Pragmatic client story, client not named
   - id: OI-06
     item: >-
       research/workflows.yaml row 01 still has the old rule ("2 or more interviews per insight") and lacks the PA-02 hand-off

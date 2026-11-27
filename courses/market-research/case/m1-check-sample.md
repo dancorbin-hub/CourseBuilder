@@ -8,7 +8,7 @@ Use this after you tune your brief. Start a new chat with an empty problem backl
 
 ## I-201
 
-- Date: 2026-11-03
+- Date: 2027-11-03
 - Segment: Distribution
 - Role: VP operations, cold storage warehouse (Gullhaven Cold Storage, 8 freezer rooms)
 - Run by: PM-held
@@ -21,7 +21,7 @@ Use this after you tune your brief. Start a new chat with an empty problem backl
 
 ## I-202
 
-- Date: 2026-11-04
+- Date: 2027-11-04
 - Segment: Distribution
 - Role: Shift lead, food distributor (Ridgeway Cold Logistics)
 - Run by: PM-held
@@ -34,7 +34,7 @@ Use this after you tune your brief. Start a new chat with an empty problem backl
 
 ## I-203
 
-- Date: 2026-11-05
+- Date: 2027-11-05
 - Segment: Food service
 - Role: Kitchen manager, restaurant group (Saltgrass Kitchens)
 - Run by: PM-held
@@ -47,7 +47,7 @@ Use this after you tune your brief. Start a new chat with an empty problem backl
 
 ## I-204
 
-- Date: 2026-11-06
+- Date: 2027-11-06
 - Segment: Pharmacy and lab
 - Role: Lab manager, university research lab (Coldwater Institute core lab)
 - Run by: AI-moderated

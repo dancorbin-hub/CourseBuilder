@@ -585,12 +585,12 @@ If the instructions do not fit, keep only `brief-v1.txt` in **Instructions**. Pa
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the skill "market-evidence-agent" from the opening build check. Skill names use lowercase and hyphens. Find it in **Customize**, then **Skills**. This is a Gemini skill. Gems are now skills.
 - Saves: **Create** the first time. **Save** after each change.
-- Check date and vendor doc: 2026-11-26. Gemini Apps Help, skills page (https://support.google.com/gemini?p=pn_skills, page shows no date, seen 2026-11-26). Google Workspace Updates, "Share skills and add files from Drive, Notebook and Photos to skills in the Gemini app" (https://workspaceupdates.googleblog.com/2026/11/share-skills-add-files-from-Drive-Notebook-Photos-to-skills-Gemini-app.html, 2026-11-16). Google blog, "Automate tasks with skills" (https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/, 2026-09-30) for **/**. The skills Help page has no date: Dan decides if it counts (decision D3).
+- Check date and vendor doc: 2026-11-26. Gemini Apps Help, skills page (https://support.google.com/gemini?p=pn_skills, page shows no date, seen 2026-11-26). Google Workspace Updates, "Share skills and add files from Drive, Notebook and Photos to skills in the Gemini app" (https://workspaceupdates.googleblog.com/2026/11/share-skills-add-files-from-Drive-Notebook-Photos-to-skills-Gemini-app.html, 2026-11-16). Google blog, "Let skills in Gemini tackle your most repetitive tasks" (https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/, 2026-09-30) for **/**. The skills Help page has no date: Dan decides if it counts (decision D3).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.
 
 | Step | Do this |
 | --- | --- |
-| 1 | Add the kit to your skill: `brief-v1` text in **Instructions**, the other files with **Add**, **files**, **Upload**. |
+| 1 | Add the kit to your skill: `brief-v1` text in **Instructions**, the other files with **Add files**. |
 | 2 | In a new chat, send batch 1 with the prompt "/market-evidence-agent Run the problem backlog job". |
 | 3 | Write your decision for each flag report item on your record sheet. |
 | 4 | Audit 3 random problems against the source interviews, with the checklist on your record sheet. |
@@ -616,7 +616,7 @@ For learners new to the builder. One annotated screenshot per card (Stage 4 adds
 | Claude | **Projects**, then your project | **Set project instructions**, then **Save instructions** | Project knowledge, **+** | A new chat in the project |
 | ChatGPT | Your project in the sidebar | **•••**, then **Project settings** | The project's files | A new chat in the project |
 | Copilot | **All agents**, then **...**, then **Edit** | **Configure** tab, **Instructions**. Then **Update** | **Knowledge**, **Upload** (`.txt` only) | The agent chat |
-| Gemini | **Customize**, then **Skills**, then your skill | **Instructions**. Then **Save** | **Add**, then **files**, then **Upload** | A new chat. Type **/** (or **@**) and pick the skill |
+| Gemini | **Customize**, then **Skills**, then your skill | **Instructions**. Then **Save** | **Add files** | A new chat. Type **/** (or **@**) and pick the skill |
 
 ## 6. Debrief
 

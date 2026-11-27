@@ -41,7 +41,7 @@ Use this case only when you cannot use your own work. One company serves the who
 
 Roles only. The case uses no personal names.
 
-- Head of Product (decides which problems go to the 2027 plan)
+- Head of Product (decides which problems go to the 2028 plan)
 - PM, Larkspan Cloud
 - PM, Fleet Data Platform (internal PM). Asks one question in lab 5
 - VP Sales, Head of Hardware, Support lead (stakeholders who ask questions)
@@ -56,9 +56,9 @@ Roles only. The case uses no personal names.
 | Alarms built into a new refrigeration controller | Substitute |
 | Keep paper logs, a spreadsheet or old USB data loggers | Do nothing |
 
-## Current market questions (November 2026)
+## Current market questions (November 2027)
 
-1. Which market problems should go forward to the 2027 plan, and for which segment?
+1. Which market problems should go forward to the 2028 plan, and for which segment?
 2. Why do we lose deals? Sales says price. Is that what buyers say?
 3. Which new problems show up in weekly feedback?
 4. Which alternative must we beat in each segment? Is Rimecore growing?

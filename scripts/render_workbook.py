@@ -41,6 +41,20 @@ def debrief_for_learners(body):
     return "\n".join(out)
 
 
+def lab_brief_for_learners(body):
+    """Learner copy of the lab brief: no warning level label, no instructor labels (QA m2 V11)."""
+    out = []
+    for line in body.splitlines():
+        m = re.match(r'^- Planted error warning:\s*([^.]*)\.?\s*(.*)$', line)
+        if m:
+            quote = re.findall(r'"([^"]+)"', m.group(2))
+            if quote and not m.group(1).lower().startswith("none"):
+                out.append("- Reminder: " + quote[0])
+            continue
+        out.append(line.replace("Teaching point:", "Why it matters:"))
+    return "\n".join(out)
+
+
 def step_cards(body):
     """Split section 5 into its intro and one chunk per '### Card' or '### Fast-start'."""
     parts = re.split(r"^(### .+)$", body, flags=re.M)
@@ -84,6 +98,7 @@ def main():
     ap.add_argument("--module", required=True, type=int)
     ap.add_argument("--version", default="1")
     ap.add_argument("--no-pdf", action="store_true")
+    ap.add_argument("--catchup-in-workbook", action="store_true", help="old layout: catch-up kit at the end of the workbook")
     a = ap.parse_args()
     root = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "courses", a.course))
     mdir = os.path.join(root, "modules", "m%d" % a.module)
@@ -106,7 +121,7 @@ def main():
     doc.add_heading(title, 1)
     _, lab = course_model.find_section(mod, "Lab brief")
     doc.add_heading("Lab brief", 2)
-    M.add_markdown(doc, lab, shift=1)
+    M.add_markdown(doc, lab_brief_for_learners(lab), shift=1)
 
     _, cards = course_model.find_section(mod, "Step cards")
     intro, chunks = step_cards(cards)
@@ -123,13 +138,33 @@ def main():
 
     kit = os.path.join(mdir, "kit")
     subs = sorted(d for d in glob.glob(os.path.join(kit, "*")) if os.path.isdir(d))
-    for i, d in enumerate(subs):
-        M.page_break(doc)
-        label = "Templates for this module" if i == 0 else "Catch-up kit for the next module"
-        kit_block(doc, d, "%s (%s)" % (label, os.path.basename(d)))
-
+    nxt = "kit-m%d" % (a.module + 1)
+    # This module's templates first, then the catch-up kit for the next module (QA m2 V13)
+    subs.sort(key=lambda d: os.path.basename(d) == nxt)
     code = COURSE_CODES.get(a.course, a.course.upper())
     os.makedirs(os.path.join(root, "build"), exist_ok=True)
+    catchup = [d for d in subs if os.path.basename(d) == nxt]
+    for d in subs:
+        if d in catchup and not a.catchup_in_workbook:
+            continue
+        M.page_break(doc)
+        label = "Catch-up kit for the next module" if d in catchup else "Templates for this module"
+        kit_block(doc, d, "%s (%s)" % (label, os.path.basename(d)))
+    # The catch-up kit holds this lab's answers (match rates, fix rules), so it is a separate file
+    # the instructor shares after the debrief (QA m2 V12)
+    for d in catchup:
+        if a.catchup_in_workbook:
+            break
+        cdoc = M.new_document(course_title, "Catch-up kit. Start of module %d. Share after the module %d debrief." % (a.module + 1, a.module))
+        cdoc.add_paragraph("Use this kit only if your agent is not ready for module %d. It holds the answers to lab %d." % (a.module + 1, a.module))
+        kit_block(cdoc, d, "Catch-up kit (%s)" % os.path.basename(d))
+        cout = os.path.join(root, "build", "%s_m%d_CatchUp_%s_DRAFT_v%s.docx" % (code, a.module, os.path.basename(d), a.version))
+        cdoc.save(cout)
+        print("wrote", cout)
+        if not a.no_pdf:
+            cp = to_pdf(cout)
+            if cp:
+                print("wrote", cp)
     out = os.path.join(root, "build", "%s_m%d_Workbook_DRAFT_v%s.docx" % (code, a.module, a.version))
     doc.save(out)
     print("wrote", out)

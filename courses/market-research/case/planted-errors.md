@@ -14,7 +14,7 @@ Important: the data makes each error likely and findable. It cannot force a mode
 | 2 | Hint | CRM-only "price" leaks into buyer findings | `m2-winloss-notes-q2.md`, entry WL-2214 (no-show). Also CRM-only deals D-2204, D-2210 in `m2-crm-export-q2.csv` | Quote check (passes on deals with interviews) | Audit of the deal source column |
 | 3 | Hint | Forced fit hides a new problem | `m3-feedback-week-2.csv`, items F-1215 to F-1219 | Reason check (items share words with tag P02) | Audit of 10 random items and the "no fit" group |
 | 4 | Hint | CRM competitor trusted where the buyer did nothing | `m4-evidence-pack.md`, deal D-3108 (Parts 1, 2 and 3) | Link check (entry has a deal ID and interview ID) | Audit of map entries against the interview |
-| 5 | None | Old research for another segment presented as current | `m5-past-reports.md`, report R-2024-07, asked by Q2 in `m5-stakeholder-questions.md` | Citation check (the report is in scope and cited) | Opening each citation in the answer |
+| 5 | None | Old research for another segment presented as current | `m5-past-reports.md`, report R-2025-07, asked by Q2 in `m5-stakeholder-questions.md` | Citation check (the report is in scope and cited) | Opening each citation in the answer |
 
 ---
 
@@ -105,7 +105,7 @@ Important: the data makes each error likely and findable. It cannot force a mode
 
 ## Lab 4: CRM competitor trusted where the buyer did nothing
 
-**Where.** Deal D-3108 (Hobnail Burger Co, Food service, lost Q3 2026) in `m4-evidence-pack.md`.
+**Where.** Deal D-3108 (Hobnail Burger Co, Food service, lost Q3 2027) in `m4-evidence-pack.md`.
 
 - Part 1, driver log: "Alternative chosen" is blank. The buyer quote is "Rimecore's demo had fewer alerts, I'll give them that."
 - Part 2, CRM export: crm_competitor is "Rimecore".
@@ -131,19 +131,19 @@ D-3102 is a decoy. Its alternative is also blank, but the CRM and the interview 
 
 ## Lab 5: old research for another segment presented as current
 
-**Where.** Report R-2024-07 in `m5-past-reports.md`. Dated 2024-09-12 (about 26 months old in November 2026). Food service only. The date and segment are in a small-print header line. Finding 1 is in bold: "Buyers want a one-click inspection binder that follows the county template." Question Q2 asks about pharmacy and lab buyers.
+**Where.** Report R-2025-07 in `m5-past-reports.md`. Dated 2025-09-12 (about 26 months old in November 2027). Food service only. The date and segment are in a small-print header line. Finding 1 is in bold: "Buyers want a one-click inspection binder that follows the county template." Question Q2 asks about pharmacy and lab buyers.
 
-**What the agent does.** It answers Q2 with "Buyers want a one-click inspection binder" and cites R-2024-07. It may show the date in the citation but the answer text still says "buyers want".
+**What the agent does.** It answers Q2 with "Buyers want a one-click inspection binder" and cites R-2025-07. It may show the date in the citation but the answer text still says "buyers want".
 
 **Why the citation check passes.** The report is in scope, and the citation is real.
 
-**How the audit finds it.** The learner opens the citation. The report is food service only, and it is older than 18 months (the case PM's hand-off rule 1). The 2026 pharmacy and lab evidence points somewhere else: calibration certificates with probe serial numbers, and audit exports in the accreditor's or state board's format.
+**How the audit finds it.** The learner opens the citation. The report is food service only, and it is older than 18 months (the case PM's hand-off rule 1). The 2027 pharmacy and lab evidence points somewhere else: calibration certificates with probe serial numbers, and audit exports in the accreditor's or state board's format.
 
 **Expected flag report entry (after the fix).**
 
 | Flag ID | Question | Why the agent stopped | Evidence | PM decision |
 | --- | --- | --- | --- | --- |
-| example | Q2 | Only evidence for a "report pack" is older than 18 months and covers another segment. Report effort in Pharmacy and lab is 1 interview (P02, I-108): single source in this segment, AI-moderated only, plus feedback from 2 accounts. Calibration certificates (P08: 3 interviews, 3 accounts) are a different need, not a report pack. Question needs new research | R-2024-07 (2024-09-12, Food service); P08; P02 (I-108; A-14, A-29); D-2206; D-3105 | Hold the roadmap commitment. Start 4 to 6 PM-held pharmacy and lab interviews on report needs |
+| example | Q2 | Only evidence for a "report pack" is older than 18 months and covers another segment. Report effort in Pharmacy and lab is 1 interview (P02, I-108): single source in this segment, AI-moderated only, plus feedback from 2 accounts. Calibration certificates (P08: 3 interviews, 3 accounts) are a different need, not a report pack. Question needs new research | R-2025-07 (2025-09-12, Food service); P08; P02 (I-108; A-14, A-29); D-2206; D-3105 | Hold the roadmap commitment. Start 4 to 6 PM-held pharmacy and lab interviews on report needs |
 
 **Fix the learner adds (hand-off rules).** "Do not use a source for a segment it did not study. Flag any source older than my age limit. Rank within a segment before any claim about it. Never write '<segment> buyers want' from 1 interview in that segment. Write what we know, with counts, dates and segments, and what we do not know."
 

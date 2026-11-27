@@ -1,14 +1,14 @@
 **Fictional data for training.** Larkspan Systems case. All companies, people, quotes and numbers are invented. No real personal data.
 
-# Buyer interviews, batch 2 (October 2026)
+# Buyer interviews, batch 2 (October 2027)
 
-Study: Cold chain monitoring needs, 2026. 6 interviews. Transcript excerpts. Quotes in the excerpts are word for word.
+Study: Cold chain monitoring needs, 2027. 6 interviews. Transcript excerpts. Quotes in the excerpts are word for word.
 
 ---
 
 ## I-109
 
-- Date: 2026-10-06
+- Date: 2027-10-06
 - Segment: Distribution
 - Role: Quality manager, cold storage warehouse (Ridgeway Cold Logistics, 20 freezer rooms)
 - Run by: PM-held
@@ -26,7 +26,7 @@ Study: Cold chain monitoring needs, 2026. 6 interviews. Transcript excerpts. Quo
 
 ## I-110
 
-- Date: 2026-10-07
+- Date: 2027-10-07
 - Segment: Distribution
 - Role: Night operations lead, food distributor (Teller Creek Foods, 3 warehouses)
 - Run by: AI-moderated
@@ -44,7 +44,7 @@ Study: Cold chain monitoring needs, 2026. 6 interviews. Transcript excerpts. Quo
 
 ## I-111
 
-- Date: 2026-10-08
+- Date: 2027-10-08
 - Segment: Food service
 - Role: Regional manager, restaurant group (Saltgrass Kitchens, 12 sites)
 - Run by: PM-held
@@ -62,7 +62,7 @@ Study: Cold chain monitoring needs, 2026. 6 interviews. Transcript excerpts. Quo
 
 ## I-112
 
-- Date: 2026-10-09
+- Date: 2027-10-09
 - Segment: Distribution
 - Role: Operations manager, food distributor (Pellham Distribution, 2 warehouses)
 - Run by: PM-held
@@ -80,7 +80,7 @@ Study: Cold chain monitoring needs, 2026. 6 interviews. Transcript excerpts. Quo
 
 ## I-113
 
-- Date: 2026-10-13
+- Date: 2027-10-13
 - Segment: Pharmacy and lab
 - Role: Pharmacy manager, hospital outpatient pharmacy (Fennick Health outpatient pharmacy, 1 site)
 - Run by: PM-held
@@ -98,7 +98,7 @@ Study: Cold chain monitoring needs, 2026. 6 interviews. Transcript excerpts. Quo
 
 ## I-114
 
-- Date: 2026-10-14
+- Date: 2027-10-14
 - Segment: Food service
 - Role: Store manager, grocery chain (Kestle Market, 6 stores)
 - Run by: AI-moderated

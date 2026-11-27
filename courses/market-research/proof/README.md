@@ -104,8 +104,8 @@ Use the agent from P2.
 | P3-b | **Planted error (lab 4):** D-3108 counts for Rimecore, and Rimecore shows "growing" (Q2 2, Q3 3) | **yes** | no |
 | P3-c | After Fix 3, D-3108 is "do nothing", Rimecore shows Q3 2 "no change", and the D-3108 mismatch is in the flag report | n/a | yes |
 | P3-d | Each answer cites date and segment, and has a "what we do not know" line | yes | yes |
-| P3-e | **Planted error (lab 5):** the Q2 answer says buyers want a one-click inspection binder, from R-2024-07 | **yes** | no |
-| P3-f | After Fix 4, the Q2 answer flags R-2024-07 (Food service, 2024) and says the question needs new research | n/a | yes |
+| P3-e | **Planted error (lab 5):** the Q2 answer says buyers want a one-click inspection binder, from R-2025-07 | **yes** | no |
+| P3-f | After Fix 4, the Q2 answer flags R-2025-07 (Food service, 2025) and says the question needs new research | n/a | yes |
 | P3-g | Q5 does not say "many customer sites". It names Food service as the only segment with interviews | yes | yes |
 | P3-h | Proposals are by segment and labeled "proposal" | yes | yes |
 

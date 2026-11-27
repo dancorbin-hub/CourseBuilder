@@ -28,12 +28,12 @@ There is no fixed bar. Priority is relative across the problem backlog.
 
 | Problem | Interviews | Accounts | Segments (interviews) | Personas | Urgency (one quote) | Willingness to pay clues | Fact labels | Dates |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| P01 Alert fatigue | 4: **I-101**, I-102, I-105, I-107 | 4 | Distribution 2, Food service 1, Pharmacy and lab 1 | Operations manager, quality manager, kitchen manager, pharmacy manager | "If it beeps forty times a night, it's not an alarm anymore, it's background noise." (I-101) | A failed door seal found about an hour late (I-101) | None | 2026-09-08 to 2026-09-16 |
-| P02 Compliance report effort | 4: I-102, **I-103**, **I-106**, I-108 | 4 | Distribution 2, Food service 1, Pharmacy and lab 1 | Quality manager, facilities lead, VP operations, lab manager | "Pulling two years of reagent fridge records into the auditor's format took my team a week." (I-108) | Staff time in every interview: 2 days, 3 hours per site, 1 day, 1 week | None | 2026-09-09 to 2026-09-17 |
-| P03 Install and connectivity | 2: **I-103**, I-105 | 2 | Food service 2 | Facilities lead, kitchen manager | "Two of our freezers lost signal every night until the contractor moved the hub." (I-103) | Two installer visits (I-105) | One segment only | 2026-09-10, 2026-09-14 |
-| P06 After-hours response | 2: **I-101**, **I-106** | 2 | Distribution 2 | Operations manager, VP operations | "I want my own on-call manager to own the night alarms, not some outside call center that doesn't know our building." (I-101) | None. Both reject an outside service | One segment only | 2026-09-08, 2026-09-15 |
-| P08 Calibration records | 2: I-107, I-108 | 2 | Pharmacy and lab 2 | Pharmacy manager, lab manager | "The auditor rejected one certificate because it didn't list the probe serial number." (I-108) | None | AI-moderated only. One segment only | 2026-09-16, 2026-09-17 |
-| P05 Multi-site visibility (planted error) | 1: **I-104** (3 quotes) | 1 | Food service 1 | Director of operations | "If I can't compare all nine stores on one page by next spring, I'm not renewing, it's that simple." (I-104) | Renewal threat from 1 account | Single source. One segment only | 2026-09-11 |
+| P01 Alert fatigue | 4: **I-101**, I-102, I-105, I-107 | 4 | Distribution 2, Food service 1, Pharmacy and lab 1 | Operations manager, quality manager, kitchen manager, pharmacy manager | "If it beeps forty times a night, it's not an alarm anymore, it's background noise." (I-101) | A failed door seal found about an hour late (I-101) | None | 2027-09-08 to 2027-09-16 |
+| P02 Compliance report effort | 4: I-102, **I-103**, **I-106**, I-108 | 4 | Distribution 2, Food service 1, Pharmacy and lab 1 | Quality manager, facilities lead, VP operations, lab manager | "Pulling two years of reagent fridge records into the auditor's format took my team a week." (I-108) | Staff time in every interview: 2 days, 3 hours per site, 1 day, 1 week | None | 2027-09-09 to 2027-09-17 |
+| P03 Install and connectivity | 2: **I-103**, I-105 | 2 | Food service 2 | Facilities lead, kitchen manager | "Two of our freezers lost signal every night until the contractor moved the hub." (I-103) | Two installer visits (I-105) | One segment only | 2027-09-10, 2027-09-14 |
+| P06 After-hours response | 2: **I-101**, **I-106** | 2 | Distribution 2 | Operations manager, VP operations | "I want my own on-call manager to own the night alarms, not some outside call center that doesn't know our building." (I-101) | None. Both reject an outside service | One segment only | 2027-09-08, 2027-09-15 |
+| P08 Calibration records | 2: I-107, I-108 | 2 | Pharmacy and lab 2 | Pharmacy manager, lab manager | "The auditor rejected one certificate because it didn't list the probe serial number." (I-108) | None | AI-moderated only. One segment only | 2027-09-16, 2027-09-17 |
+| P05 Multi-site visibility (planted error) | 1: **I-104** (3 quotes) | 1 | Food service 1 | Director of operations | "If I can't compare all nine stores on one page by next spring, I'm not renewing, it's that simple." (I-104) | Renewal threat from 1 account | Single source. One segment only | 2027-09-11 |
 
 **Expected proposed ranking, batch 1.**
 
@@ -119,18 +119,18 @@ Run on an empty backlog. 4 interviews, 4 accounts.
 
 ### Stretch: `m1-stretch-applicants.md`
 
-Criteria are in `m1-stretch-applicants.md`. The study starts in December 2026.
+Criteria are in `m1-stretch-applicants.md`. The study starts in December 2027.
 
 | Result | Applicant | Reason |
 | --- | --- | --- |
 | Pass | AP-01, AP-04, AP-06 | Meet all 5 criteria |
 | Pass | AP-11 | Meets all 5 criteria. Uses a competitor (Rimecore), which is allowed |
 | Fail | AP-02 | Criterion 2 and 3: uses only, 1 site |
-| Fail | AP-03 | Criterion 5: interviewed 2026-09, inside 6 months |
+| Fail | AP-03 | Criterion 5: interviewed 2027-09, inside 6 months |
 | Fail | AP-05 | Criterion 4: works for a reseller |
 | Fail | AP-09 | Criterion 1: segment out of scope (hardware retail) |
 | Edge case to the PM | AP-07 | Criterion 2: "Influences" only. Is that "strongly influences"? Criterion 3 passes (11 walk-ins) |
-| Edge case to the PM | AP-08 | Criterion 3: 2 warehouses and no cold-room count. Criterion 5 passes (last interview 2026-05, 7 months before) |
+| Edge case to the PM | AP-08 | Criterion 3: 2 warehouses and no cold-room count. Criterion 5 passes (last interview 2027-05, 7 months before) |
 | Edge case to the PM | AP-10 | Criterion 2: runs the purchase but does not choose |
 | Edge case to the PM | AP-12 | Criterion 2: "Influences" only |
 
@@ -170,7 +170,7 @@ The correct driver log is Part 1 (Q2 rows) of `m4-evidence-pack.md`.
 
 ### Second sample: `m2-check-sample.md`
 
-10 deals (program minimum met). Interviewed: D-1301, D-1302, D-1304, D-1306, D-1308, D-1309. CRM only: D-1303, D-1305, D-1307 (declined, sales note "Price"), D-1310.
+10 deals. Interviewed: D-1301, D-1302, D-1304, D-1306, D-1308, D-1309. CRM only: D-1303, D-1305, D-1307 (declined, sales note "Price"), D-1310.
 
 | Outcome | Interviewed | Match | Match rate |
 | --- | --- | --- | --- |
@@ -231,7 +231,7 @@ The agent reports every change in accounts. After the fix, changes run from -2 (
 
 **Pass condition (debrief check, instructor only).** After the fix, the week 2 rerun shows the new problem in the "no fit" group with 4 accounts, and the flag report names it. P02 stays at 3 accounts. P01 shows 7 accounts, not 11. F-1221 is flagged.
 
-### Second sample: `m3-check-sample.md` (week of 2026-11-16)
+### Second sample: `m3-check-sample.md` (week of 2027-11-16)
 
 | Tag | Accounts | Items |
 | --- | --- | --- |
@@ -261,7 +261,7 @@ Expected read: urgent and pervasive in Food service only. Willingness to pay is 
 
 ### Result on `m4-evidence-pack.md` with `m4-alternatives-map.md`, after the fix
 
-Counts are lost deals with a buyer interview. Periods compared: Q2 2026 vs Q3 2026.
+Counts are lost deals with a buyer interview. Periods compared: Q2 2027 vs Q3 2027.
 
 | Entry | Q2 | Q3 | Q3 evidence | Change |
 | --- | --- | --- | --- | --- |
@@ -281,7 +281,7 @@ Counts are lost deals with a buyer interview. Periods compared: Q2 2026 vs Q3 20
 
 **Planted error.** Before the fix, D-3108 counts for Rimecore. Rimecore shows Q2 2, Q3 3, "growing". Do nothing shows 3.
 
-**Pass condition (debrief check, instructor only).** D-3108 is under ALT-04 do nothing. Rimecore shows 2 in Q3 and "no change". The flag report lists the D-3108 mismatch. Every entry shows its source type. Each "growing" or "fading" label names Q2 2026 vs Q3 2026.
+**Pass condition (debrief check, instructor only).** D-3108 is under ALT-04 do nothing. Rimecore shows 2 in Q3 and "no change". The flag report lists the D-3108 mismatch. Every entry shows its source type. Each "growing" or "fading" label names Q2 2027 vs Q3 2027.
 
 **Alternative to beat (debrief, Food service).** Do nothing: paper logs and spreadsheets (D-3103, D-3106, D-3108; Q2 D-2205). Next is the substitute, controller alarms (D-2209).
 
@@ -305,7 +305,7 @@ Counts are lost deals with a buyer interview. Periods compared: Q2 2026 vs Q3 20
 
 ## Lab 5: stakeholder answers
 
-Case PM's hand-off rule 1: evidence older than 18 months goes to the flag report. R-2024-07 (2024-09-12) is over the limit. R-2026-03 (2026-05-20) is within it.
+Case PM's hand-off rule 1: evidence older than 18 months goes to the flag report. R-2025-07 (2025-09-12) is over the limit. R-2027-03 (2027-05-20) is within it.
 
 The agent reads the problem backlog (Part 4 of `m4-evidence-pack.md`), the driver log, the alternatives map after lab 4 and `m5-past-reports.md`.
 
@@ -313,10 +313,10 @@ The agent reads the problem backlog (Part 4 of `m4-evidence-pack.md`), the drive
 
 | Question | What the answer says | Flags | Expected PM decision |
 | --- | --- | --- | --- |
-| Q1 VP Sales: pharmacy and lab losses on price? | Interviewed buyers do not name price. D-2211 and D-3107: budget or grant timing. D-3105: Rimecore's on-site calibration. Only D-2210 says price, and it is CRM only. Count: 3 interviewed Pharmacy and lab losses in 2 quarters (Q2 and Q3 2026). What we do not know: price sensitivity in this segment | Small count, stated in the answer (hand-off rule 3). D-2210 is CRM only | Change, then send. Soften to "the 3 interviews we have do not point to price". Add the next pharmacy losses to the interview list |
-| Q2 Head of Hardware: pharmacy and lab report pack? (planted) | Evidence points to 2 needs. (1) Calibration certificates with probe serial numbers: P08, 3 interviews, 3 accounts (I-107, I-108, I-113, Sep to Oct 2026); won D-2206; lost D-3105. (2) Audit exports in the accreditor's or state board's format: P02 in Pharmacy and lab, 1 interview (I-108, AI-moderated, Sep 2026) and feedback from 2 accounts (A-14, A-29, Nov 2026). R-2024-07 is Food service and over the age limit, so it is not used. What we do not know: which formats the boards and accreditors require, and whether a report pack changes deals | Old evidence for another segment (R-2024-07). Report effort in Pharmacy and lab is 1 interview: single source in this segment, AI-moderated only. Needs new research | Hold the roadmap commitment. Change the answer and start research |
-| Q3 Support lead: night monitoring service for distribution? | Buyers disagree. P06: 4 interviews, 3 accounts, Distribution only (Sep to Oct 2026). 2 want own managers (I-101, I-106), 2 want a service (I-110, I-112). I-106 and I-112 are the same account. R-2026-03 (May 2026, Distribution): 5 of 9 want a service option, 4 of 9 want own managers. I-110 says "I'd pay"; no price was tested | Sources disagree. Needs new research | Change, then send as "split; test a priced offer before Support plans staff" |
-| Q5 FDP PM (internal): hub signal history view? | Customer evidence for hub signal loss is P03. 3 interviews (I-103, I-111 PM-held; I-105 AI-moderated), 2 accounts (Saltgrass Kitchens, Bramblefield Bistro), all Food service, Sep to Oct 2026. Feedback from 2 Food service accounts in the week of 2026-11-09 (A-04, A-30), down 2 from the week before. 1 Distribution lost deal: D-2203 (Q2 2026), the hub dropped sensors in blast freezers and the buyer chose Rimecore. No Pharmacy and lab evidence. P03 is the agent's proposed rank 1 in Food service and the PM's rank 4 overall. What we do not know: how many sites in the whole fleet lose hub signal. FDP device-health data can answer this. The agent has no FDP data | One segment only. "Many customer sites" is not supported across segments. The FDP backlog order is the internal PM's decision | Send. Add one line: pull hub drop counts by segment from FDP before placing the request |
+| Q1 VP Sales: pharmacy and lab losses on price? | Interviewed buyers do not name price. D-2211 and D-3107: budget or grant timing. D-3105: Rimecore's on-site calibration. Only D-2210 says price, and it is CRM only. Count: 3 interviewed Pharmacy and lab losses in 2 quarters (Q2 and Q3 2027). What we do not know: price sensitivity in this segment | Small count, stated in the answer (hand-off rule 3). D-2210 is CRM only | Change, then send. Soften to "the 3 interviews we have do not point to price". Add the next pharmacy losses to the interview list |
+| Q2 Head of Hardware: pharmacy and lab report pack? (planted) | Evidence points to 2 needs. (1) Calibration certificates with probe serial numbers: P08, 3 interviews, 3 accounts (I-107, I-108, I-113, Sep to Oct 2027); won D-2206; lost D-3105. (2) Audit exports in the accreditor's or state board's format: P02 in Pharmacy and lab, 1 interview (I-108, AI-moderated, Sep 2027) and feedback from 2 accounts (A-14, A-29, Nov 2027). R-2025-07 is Food service and over the age limit, so it is not used. What we do not know: which formats the boards and accreditors require, and whether a report pack changes deals | Old evidence for another segment (R-2025-07). Report effort in Pharmacy and lab is 1 interview: single source in this segment, AI-moderated only. Needs new research | Hold the roadmap commitment. Change the answer and start research |
+| Q3 Support lead: night monitoring service for distribution? | Buyers disagree. P06: 4 interviews, 3 accounts, Distribution only (Sep to Oct 2027). 2 want own managers (I-101, I-106), 2 want a service (I-110, I-112). I-106 and I-112 are the same account. R-2027-03 (May 2027, Distribution): 5 of 9 want a service option, 4 of 9 want own managers. I-110 says "I'd pay"; no price was tested | Sources disagree. Needs new research | Change, then send as "split; test a priced offer before Support plans staff" |
+| Q5 FDP PM (internal): hub signal history view? | Customer evidence for hub signal loss is P03. 3 interviews (I-103, I-111 PM-held; I-105 AI-moderated), 2 accounts (Saltgrass Kitchens, Bramblefield Bistro), all Food service, Sep to Oct 2027. Feedback from 2 Food service accounts in the week of 2027-11-09 (A-04, A-30), down 2 from the week before. 1 Distribution lost deal: D-2203 (Q2 2027), the hub dropped sensors in blast freezers and the buyer chose Rimecore. No Pharmacy and lab evidence. P03 is the agent's proposed rank 1 in Food service and the PM's rank 4 overall. What we do not know: how many sites in the whole fleet lose hub signal. FDP device-health data can answer this. The agent has no FDP data | One segment only. "Many customer sites" is not supported across segments. The FDP backlog order is the internal PM's decision | Send. Add one line: pull hub drop counts by segment from FDP before placing the request |
 
 **Q5 is not a planted error** (decision 9). It gives the internal PM a real question and tests the segment rule a second time. It adds no case data and changes no lab 1 to 4 count.
 
@@ -341,7 +341,7 @@ Each table lists every problem with evidence in that segment: interviews, feedba
 | --- | --- | --- | --- |
 | 1 | P01 Alert fatigue | 4 interviews, 3 accounts, 2 PM-held. Feedback 4 accounts. Lost D-2207, D-3101 on alert accuracy; won D-3104 | Propose for validation |
 | 2 | P02 Compliance report effort | 3 interviews, 3 accounts, 2 PM-held. Feedback 1 account. Won D-2201; lost D-2212, D-3102 on report fit | Propose for validation |
-| 3 | P06 After-hours response | 4 interviews, 3 accounts. Feedback 1 account. Buyers disagree 2 to 2. R-2026-03 split 5 to 4 | Propose research (priced offer test), not validation |
+| 3 | P06 After-hours response | 4 interviews, 3 accounts. Feedback 1 account. Buyers disagree 2 to 2. R-2027-03 split 5 to 4 | Propose research (priced offer test), not validation |
 | 4 to 5 | P04 Sensor upkeep, P09 Proof for own customers | 1 interview each. Feedback: P04 3 accounts, P09 1 account. P09 is AI-moderated only | Keep in backlog, watch |
 | Not ranked | P03 Install and connectivity | 0 interviews. No feedback. 1 lost deal (D-2203) | Note only. Ask about hubs in the next Distribution interviews |
 | Not ranked | P05 Multi-site visibility | 0 interviews. Feedback 1 account (A-33) | Keep in backlog, watch |
@@ -366,15 +366,15 @@ Each table lists every problem with evidence in that segment: interviews, feedba
 
 **Expected PM decision.** Send to validation: P01 and P02 (Distribution), P03 (Food service), P08 (Pharmacy and lab). Research: P06. Discovery: P10. Keep and watch: the rest. The case PM chose not to send a problem to validation on feedback counts alone. The PM added a "watch" note instead (for example P04 and P09: 3 accounts each in week 2).
 
-**Planted error.** The Q2 answer says "Buyers want a one-click inspection binder" and cites R-2024-07.
+**Planted error.** The Q2 answer says "Buyers want a one-click inspection binder" and cites R-2025-07.
 
-**Pass condition (debrief check, instructor only).** The fixed Q2 answer names the study date and segment of every source. The flag report lists R-2024-07 as old evidence for another segment. The answer does not say "buyers want". The agent ranks within each segment before any segment claim. Ranking and validation proposals stay labeled as proposals until the PM decides.
+**Pass condition (debrief check, instructor only).** The fixed Q2 answer names the study date and segment of every source. The flag report lists R-2025-07 as old evidence for another segment. The answer does not say "buyers want". The agent ranks within each segment before any segment claim. Ranking and validation proposals stay labeled as proposals until the PM decides.
 
 ### Second sample: Q4 in `m5-stakeholder-questions.md`
 
 Q4 asks about alert noise in Food service and tempts "food service buyers want quiet hours".
 
-Expected evidence: P01 has 1 Food service interview (I-105, AI-moderated, 2026-09-14). Feedback from 2 Food service accounts (A-09, A-28, week of 2026-11-09). Lost deal D-3108 (alerts every lunch rush, interview 2026-09-15). Inside Food service, P01 is not in the top proposed rank (see the Food service table). No interview asks for quiet hours. R-2024-07 says alert noise was minor in 2024, but it is over the age limit.
+Expected evidence: P01 has 1 Food service interview (I-105, AI-moderated, 2027-09-14). Feedback from 2 Food service accounts (A-09, A-28, week of 2027-11-09). Lost deal D-3108 (alerts every lunch rush, interview 2027-09-15). Inside Food service, P01 is not in the top proposed rank (see the Food service table). No interview asks for quiet hours. R-2025-07 says alert noise was minor in 2025, but it is over the age limit.
 
 If the learner also pasted the week 2 feedback, the agent may add that 1 account asks for quiet hours (A-09, F-1207). That is still 1 account.
 
@@ -383,7 +383,7 @@ If the learner also pasted the week 2 feedback, the agent may add that 1 account
 1. The answer does not say "food service buyers want quiet hours".
 2. Each claim shows its date and segment.
 3. The answer has a "what we do not know" line.
-4. The flag report lists R-2024-07 as over the age limit, the Food service interview evidence as 1 interview (single source in this segment, AI-moderated only), and the 2024 and 2026 sources as in disagreement.
+4. The flag report lists R-2025-07 as over the age limit, the Food service interview evidence as 1 interview (single source in this segment, AI-moderated only), and the 2025 and 2027 sources as in disagreement.
 
 ---
 
