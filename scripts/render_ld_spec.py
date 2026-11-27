@@ -24,6 +24,8 @@ from render_workbook import COURSE_CODES, to_pdf  # noqa: E402
 
 def build(out, course_title, ex_title, ld_body, cards_body, no_pdf):
     doc = M.new_document(course_title, "LD spec. " + ex_title + ". Draft for review.")
+    # module.md section numbers mean nothing in the LD spec (QA m2 V17)
+    ld_body = re.sub(r"[Ss]ee section 5", "See the attachment: step cards per platform", ld_body)
     M.add_markdown(doc, ld_body, shift=1)
     if cards_body:
         M.page_break(doc)
