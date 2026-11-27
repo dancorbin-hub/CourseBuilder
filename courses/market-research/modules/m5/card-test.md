@@ -1,8 +1,8 @@
 # Card test: module 5 (lab 5) and the course close
 
-Course: `market-research`. For Dan (Gate 3). Builder draft 2026-11-27.
+Course: `market-research`. For Dan (Gate 3). Builder draft 2026-11-27, revised once 2026-11-27.
 
-Gate 2 proof P3 covers modules 4 and 5 (spec `gate_2_proof_patterns`). This sheet records the module 5 part of P3: the cited answer, the old-research error, proposals by segment, the rebuild from kit-m5 in about 5 minutes, and the Copilot no-license fallback for module 5. It also records the share stretch (doc-checked 2026-11-27, not tested) and the Monday plan timing.
+Gate 2 proof P3 covers modules 4 and 5 (spec `gate_2_proof_patterns`). This sheet records the module 5 part of P3: the cited answer, the old-research error, proposals by segment, the rebuild from kit-m5 in about 5 minutes, and the Copilot no-license fallback for module 5. It also records the share stretch on the Claude and ChatGPT cards (doc-checked 2026-11-27, not yet tested by the course team; Copilot and Gemini are plan only) and the Monday plan timing.
 
 Module 4 is not built. Until it is, build the start state from `kit/kit-m5-draft/` (brief v5, driver log, map), the other 7 knowledge files from `modules/m3/kit/kit-m4/`, and `proof/job-card-alternatives-map.md` (decision D1). Record that you did.
 
@@ -16,7 +16,7 @@ Module 4 is not built. Until it is, build the start state from `kit/kit-m5-draft
 6. At least one person who did not write the card tests the Copilot card (module 1 decision D9).
 7. Run the Q4 check after the debrief rule (rule 6), in a new chat, as the card says.
 
-Target times: rebuild from kit-m5 about 5 minutes. Lab 5 core path 30 minutes, card steps 3, 4, 3, 6, 5, 6 (half day 28: 3, 4, 3, 6, 5, 5). Debrief rule 2 minutes. Q4 run and compare 3 minutes. Monday plan 10 minutes (half day 6).
+Target times: rebuild from kit-m5 about 5 minutes. Lab 5 core path 30 minutes, card steps 3, 4, 3, 6, 5, 6 (half day 28: 3, 4, 3, 6, 5, 5). Debrief rule 2 minutes. Q4 run and compare 3 minutes. Course close hands-on: kit-final download 1 minute, Monday plan 9 minutes (half day 1 and 5).
 
 ## Extra steps for proof P3, module 5 (not on the learner card)
 
@@ -38,7 +38,7 @@ Account or plan: ______ Code execution and file creation on: yes / no Date teste
 | Step 2 rule 5 (budget 4) | | | n/a | |
 | Step 3 send questions, run minutes (budget 3) | | | n/a | |
 | Step 4 send, change or hold (budget 6) | | | n/a | |
-| Step 5 open every citation in one answer (budget 5). Which answer picked | | | n/a | |
+| Step 5 open every citation in one answer, picked at random (budget 5). Which answer | | | n/a | |
 | Step 6 order and validation by segment (budget 6, half day 5) | | | n/a | |
 | Debrief rule 6 (target 2) | | | n/a | |
 | Q4 run and compare (target 3) | | | Items 1 to 4: | |
@@ -62,6 +62,8 @@ Account or plan: ______ Code execution and file creation on: yes / no Date teste
 | **Share project** is next to the project name | |
 | **Can view**, **Share** and **Remove access** labels as on the card | |
 | Can a Can view member see the owner's chats? (doc does not say) | |
+| Does a Can view member's chat use project memory from the owner's chats? (doc does not say; verifier F2) | |
+| The sharing menu: how do you open it to reach **Remove access**? | |
 | Verdict: keep the share steps on the card (yes / no) | |
 
 Screen names that differ from the card: ______
@@ -77,7 +79,7 @@ Account or plan (Go, Plus or higher): ______ Date tested: ______ Tester: ______
 | Step 2 rule 5 in **Project settings** (budget 4) | | | n/a | |
 | Step 3 send questions, run minutes (budget 3) | | | n/a | |
 | Step 4 send, change or hold (budget 6) | | | n/a | |
-| Step 5 open every citation in one answer (budget 5). Which answer picked | | | n/a | |
+| Step 5 open every citation in one answer, picked at random (budget 5). Which answer | | | n/a | |
 | Step 6 order and validation by segment (budget 6, half day 5) | | | n/a | |
 | Debrief rule 6 (target 2) | | | n/a | |
 | Q4 run and compare (target 3) | | | Items 1 to 4: | |
@@ -90,6 +92,7 @@ Account or plan (Go, Plus or higher): ______ Date tested: ______ Tester: ______
 | Share stretch (ChatGPT) | Result |
 | --- | --- |
 | **Share** opens the sharing pane. Chat access can be chosen | |
+| **Only those invited** is the label, and it is the default (verifier F4) | |
 | A chat-access member sees the owner's chats and can download files (doc says yes) | |
 | Verdict: keep the share steps on the card (yes / no) | |
 
@@ -106,11 +109,11 @@ License state (Microsoft 365 Copilot, pay-as-you-go, or none): ______ Date teste
 | Step 2 rule 5 in **Instructions**, **Update** (budget 4) | | | n/a | |
 | Step 3 send questions, run minutes (budget 3) | | | n/a | |
 | Step 4 send, change or hold (budget 6) | | | n/a | |
-| Step 5 open every citation in one answer (budget 5). Which answer picked | | | n/a | |
+| Step 5 open every citation in one answer, picked at random (budget 5). Which answer | | | n/a | |
 | Step 6 order and validation by segment (budget 6, half day 5) | | | n/a | |
 | Debrief rule 6 (target 2) | | | n/a | |
 | Q4 run and compare (target 3) | | | Items 1 to 4: | |
-| Stretch: share agent, **Can chat** (licensed; after class) | | | n/a | |
+| Stretch: share plan only (no share steps on this card) | | | n/a | |
 
 | P3 check, module 5 | Before the fix | After the fix |
 | --- | --- | --- |
@@ -121,7 +124,7 @@ License state (Microsoft 365 Copilot, pay-as-you-go, or none): ______ Date teste
 | `copilot-fallback-instructions-m5.txt` (5,293) accepted in **Instructions** | |
 | After rule 5 and rule 6: Instructions length ______ (expected about 5,850), accepted | |
 | Message 1: `problem-backlog.txt` (15,194) accepted in one message. If not: split at "## Proposed ranking after lab 3", both parts accepted | |
-| Message 2: driver log, map and past reports (13,624) accepted | |
+| Message 2: driver log, map and past reports (13,675) accepted | |
 | Message 3: questions file and prompt. The agent uses all 3 pasted files | |
 | Minutes for the 3 messages ______ (fits the 3-minute lab slack?) | |
 | Debrief Q4 with messages 1 and 2 sent again: minutes ______ (target 3) | |
@@ -140,7 +143,7 @@ Account (personal or Workspace): ______ Date tested: ______ Tester: ______
 | Step 2 rule 5 in the skill **Instructions**, **Save** (budget 4) | | | n/a | |
 | Step 3 send questions with "/market-evidence-agent ..." (budget 3) | | | n/a | |
 | Step 4 send, change or hold (budget 6) | | | n/a | |
-| Step 5 open every citation in one answer (budget 5). Which answer picked | | | n/a | |
+| Step 5 open every citation in one answer, picked at random (budget 5). Which answer | | | n/a | |
 | Step 6 order and validation by segment (budget 6, half day 5) | | | n/a | |
 | Debrief rule 6 (target 2) | | | n/a | |
 | Q4 run and compare (target 3) | | | Items 1 to 4: | |
@@ -156,7 +159,9 @@ Screen names that differ from the card: ______
 
 | Item | Minutes | Stuck points | Tester |
 | --- | --- | --- | --- |
-| Monday plan sheet filled (target 10, half day 6) | | | |
+| kit-final released on the Learning Hub after slide 5.13 (not before) | | | |
+| C.3 download kit-final (target 1) | | | |
+| Monday plan sheet filled (target 9, half day 5) | | | |
 | Save kit-final: brief copied to `my-brief.txt`, logs downloaded | | | |
 | Rebuild from kit-final on a new project or agent (target 5; after class) | | | |
 

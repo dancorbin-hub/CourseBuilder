@@ -1,6 +1,6 @@
 # Module 5: The agent answers stakeholders, and you stay accountable
 
-Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Last module. It also holds the course close (section 10). Case year is 2027 (`case/year-shift-map.md`). Real source and vendor dates stay 2026. Built from `spec.yaml` (Gate 2, approved 2026-11-26; module 5 entry, `course_close`, `copilot_no_license_fallback`, `stretch_scope`, `gate_2_proof_patterns` P3), `outline/development-brief.md`, `outline/gate-2-decisions.md`, the case files, `research/stretch-verification-2026-11.md`, the approved module 1 and the module 2 and 3 drafts in review (decisions and revision notes).
+Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Revised once on 2026-11-27 after the consistency and verifier reports (`revision-notes.md`). Last module. It also holds the course close (section 10). Case year is 2027 (`case/year-shift-map.md`). Real source and vendor dates stay 2026. Built from `spec.yaml` (Gate 2, approved 2026-11-26; module 5 entry, `course_close`, `copilot_no_license_fallback`, `stretch_scope`, `gate_2_proof_patterns` P3), `outline/development-brief.md`, `outline/gate-2-decisions.md`, the case files, `research/stretch-verification-2026-11.md`, the approved module 1 and the module 2 and 3 drafts in review (decisions and revision notes).
 
 Module 4 is not built yet (OI-05 open). Module 5 starts from kit-m5, the state after module 4. This draft defines that start state from the spec and the case (section 1, "Start state"). The full list is `kit/kit-m5-expected.md`. The module 4 builder makes kit-m5 match it (decision D1).
 
@@ -8,7 +8,7 @@ Module 4 is not built yet (OI-05 open). Module 5 starts from kit-m5, the state a
 
 | Item | Value |
 | --- | --- |
-| Workflow row and bottleneck | mr-wf-09 (folds mr-wf-07: ranking and validation proposals by segment). Answer stakeholder questions from past research and the problem backlog with sourced, dated answers. Bottleneck: people cannot find past insights, stakeholders do not remember study names, and teams commission new studies on questions already answered (W13, age flag kept by Dan; W20) |
+| Workflow row and bottleneck | mr-wf-09 (folds mr-wf-07: ranking and validation proposals by segment). Answer stakeholder questions from past research and the problem backlog with sourced, dated answers. Bottleneck: people cannot find past insights, product managers do not remember study names, and teams commission new studies on questions already answered (W13, age flag kept by Dan; W20) |
 | Framework category and focus area | Market. Market Problems |
 | Capability Standards (as in spec) | Confirmed by Dan, Pragmatic to confirm. Skills 1.1 Market Problem Identification, 8.4 Data Narrative and Stakeholder Communication. Competencies 1.1C, 1.1D, 8.4A, 8.4C |
 | Rung | 3 plus, an agent that faces other people. The chain ends in an answer to a person. The PM sends, changes or holds each answer |
@@ -25,8 +25,8 @@ Module 4 is not built. This is the state module 5 assumes. Status words as in `k
 | Part | State after lab 4 | Status |
 | --- | --- | --- |
 | Instructions | Brief v5: brief v4 (kit-m4) plus "My rules" 4, the lab 4 fix text in `case/planted-errors.md` ("The alternative chosen comes from the buyer's interview..."). 3,491 characters | Rule text from the case. Place to be set by module 4 |
-| Knowledge, unchanged from kit-m4 | `job-card-problem-backlog`, `code-book`, `problem-backlog` (Part 4 of `m4-evidence-pack.md`, 15,194), `job-card-win-loss`, `driver-code-book`, `job-card-weekly-feedback`, `tag-list` (v2, P10) | No change |
-| Knowledge, changed in lab 4 | `driver-log`: Q2 rows plus the 10 Q3 rows of the evidence pack, with D-3102 and D-3108 alternatives read from the interviews (7,565). `alternatives-map`: end of Q3 2027, the lab 4 result after the fix (3,286) | From the case. Drafts in `kit/kit-m5-draft/`. Driver log needs D2 |
+| Knowledge, unchanged from kit-m4 | `job-card-problem-backlog`, `code-book`, `problem-backlog` (kit-m4 file, same facts as Part 4 of `m4-evidence-pack.md`, 15,194), `job-card-win-loss`, `driver-code-book`, `job-card-weekly-feedback`, `tag-list` (v2, P10) | No change |
+| Knowledge, changed in lab 4 | `driver-log`: Q2 rows plus the 10 Q3 rows of the evidence pack, with D-3102 and D-3108 alternatives read from the interviews (7,616). `alternatives-map`: end of Q3 2027, the lab 4 result after the fix (3,286) | From the case. Drafts in `kit/kit-m5-draft/`. Driver log needs D2 |
 | Knowledge, new in lab 4 | `job-card-alternatives-map` | To be set by module 4 |
 | Count | 10 knowledge files. Lab 5 adds 2. 12 at the end (spec `knowledge_file_budget`) | |
 
@@ -47,42 +47,46 @@ Debrief minutes follow the spec arc: reveal 2, brief fix 2 (half day 1), Run Q4 
 
 | # | Decision | Why |
 | --- | --- | --- |
-| B1 | The demo asks Q3 (Support lead), the optional lab question | Q2 holds the planted error and Q4 is the check question, so neither can be the demo. Q1 and Q5 are core lab questions. Q3 also shows the "sources disagree" flag, which the lab tests only for learners who ask Q3 (spec `case_question_plan`). See D7 |
-| B2 | Step 3 sends the whole questions file with the prompt "Run the stakeholder answer job for Q1, Q2 and Q5". The debrief Q4 run uses "...for Q4" | The case file holds Q1 to Q5. The plain prompt would answer Q4 before the fix and add Q3. One file, one prompt stays one action. See D5 |
+| B1 | The demo asks Q3 (Support lead), the optional lab question | Q2 holds the planted error and Q4 is the check question, so neither can be the demo. Q1 and Q5 are core lab questions. Q3 also shows the "sources disagree" flag, which the lab tests only for learners who ask Q3 (spec `case_question_plan`). See D11 |
+| B2 | Step 3 sends the whole questions file with the prompt "Run the stakeholder answer job for Q1, Q2 and Q5". The debrief Q4 run uses "...for Q4" | The case file holds Q1 to Q5. The plain prompt would answer Q4 before the fix and add Q3. One file, one prompt stays one action. See D4 |
 | B3 | Lab brief is 2 short slides. 5.10: goal, 6 key actions, pointer to the workbook card. 5.11: done when and the data safety box. No warning box on 5.11 | Dan's lab brief slide rule (2026-11-27). Fade level none: no warning (spec `planted_error_fade` module 5) |
-| B4 | Step 5 says which answer to audit: "the answer you would least like to get wrong" | The spec says "Open each citation in one answer" and does not say which. A risk rule is what a manager uses on Monday. It names no error. See D4 |
+| B4 | Step 5 audits one answer picked at random. Slide 5.4 uses Q1 and Q5 as examples, not Q2. Slide 5.8 has no roadmap line | Revise once (consistency blocker 1): a risk rule ("the answer you would least like to get wrong") plus the Q2 stake on 5.4 and 5.8 steered learners to the planted answer. Last lab: no hint (house rule 13). A random pick is neutral. About 1 in 3 learners audits Q2; the reveal covers the rest |
 | B5 | Record sheet audit checklist is neutral: the source is in the files, the claim's words or numbers are in the source, the citation's date and segment are the source's own | No audit hint (module 1 D11, fade level none). All three items pass for the planted error; the learner must still judge the answer against the question |
-| B6 | Step 2 writes "rule 5" under "My rules": the age limit and what the agent may say. The record sheet gives the case PM's age limit (18 months, `company.md` rule 1) and 3 example "may say" rules (draft only, name no person, no commitment for the team) | Spec card step 2 and objective m5-o2. The examples are boundaries for an agent that faces people (decision 33). None names a source, a date rule beyond the age limit, or a segment rule, so none gives the error away. See D12 |
-| B7 | The card pass condition item 4 is general: "The flag report lists each source over your age limit, each claim on thin evidence (a fact label) and each disagreement between sources." The debrief slide names the records (R-2025-07, I-105) | The card is in the workbook before the lab. A record id on the card would point at the old report. Same idea as module 1 D7 (pass condition on the card, run in the debrief) |
+| B6 | Step 2 writes "rule 5" under "My rules": the age limit and what the agent may say. The record sheet gives the case PM's age limit (18 months, `company.md` rule 1) and 3 example "may say" rules (draft only, name no person, no commitment for the team) | Spec card step 2 and objective m5-o2. The examples are boundaries for an agent that faces people (decision 33). None names a source, a date rule beyond the age limit, or a segment rule, so none gives the error away. See D14 |
+| B7 | The card pass condition item 4 is general: "The flag report lists old sources, thin evidence (a fact label) and sources that disagree." The debrief slide names the records (R-2025-07, I-105) | The card is in the workbook before the lab. A record id on the card would point at the old report. Same idea as module 1 D7 (pass condition on the card, run in the debrief) |
 | B8 | Proposals by segment read the backlog that is already in the agent. Lab 5 adds no log | Spec `uploads_per_lab` module 5: 2 to the agent, 1 in chat. Logs already in the agent |
 | B9 | No log save card in module 5. The course close (C.4) saves kit-final and the learner's logs and brief | The spec module 5 debrief arc has no log save step, and lab 5 writes no log. Instructions save as on every card header. See D9 |
 | B10 | Spec step order is kept: decide send, change or hold (step 4), then open every citation in one answer (step 5). The record sheet adds "My decision after the audit". 5.13 asks if the audit changed a decision | Spec `card_steps` is the contract. Objective m5-o3 says to decide after the citations; the second column covers that. See D10 |
 | B11 | Copilot no-license: Instructions hold brief v5 and the job card (5,293). The past reports go in chat, with the driver log and the map | Brief v5, the job card and the past reports are 7,662 before any lab 5 rule. Rule 5 and rule 6 add about 590, over the 8,000 limit (mb-01). Spec backup path allows knowledge files in chat. See D3 |
 | B12 | Course close is section 10 of this file, slides C.1 to C.4. The recap slide (C.1) shows the five audits and the five rules. It does not show the manager loop circle again | Slide 1.7 is the manager loop. House rule 9: no repeated slide. C.2 shows the five PM calls, not slide 1.14 again |
 | B13 | Slide 5.4 carries the spec theme ("be great at product management before you are great at AI") as one line. The slide is about the decision behind the question | Slide O.9 already has the theme as its headline. A new slide with a new point, no repeat |
-| B14 | Slide 5.2 shows only "Past research is hard to find and reuse" (W13, W20). "Stakeholders do not remember study names" and "teams commission new studies" (W20 only) are in the talk track, attributed | Research rule 2. Same pattern as module 3 D7 |
+| B14 | Slide 5.2 shows only "Past research is hard to find and reuse" (W13, W20). "Product managers do not remember study names" and "teams commission new studies" (W20 only) are in the talk track, attributed | Research rule 2. Same pattern as module 3 D7 |
+| B15 | kit-final is released on the Learning Hub after slide 5.13, not with the workbook | Revise once (consistency finding 2): brief v6 rule 6, the lab 5 rules handout and the README decisions table hold the lab 5 fix. Released before the lab, they are a full hint. See D6 |
+| B16 | Share stretch steps only on the Claude and ChatGPT cards, headed "Stretch (vendor doc checked, not yet tested)". Copilot and Gemini cards: share plan only | Revise once (consistency finding 6): `stretch_scope` keeps the Copilot and Gemini cards on the core path. Same "not yet tested by the course team" wording as module 3 D1. See D5 |
 
 ### Decisions for Dan
 
-Open decisions for the Gate 3 doc, most important first. One line each, with a recommendation.
+Open decisions for the Gate 3 doc, most important first. One line each, with a recommendation. Revised once on 2026-11-27 (`revision-notes.md` maps the old numbers). The audit pick is no longer a decision: step 5 uses a random pick (B4).
 
 | # | Decision | Recommended |
 | --- | --- | --- |
-| D1 | Start state before module 4 exists: kit-m5 as listed in `kit/kit-m5-expected.md` (brief v5 = v4 plus the case lab 4 fix as rule 4; driver log with Q3 rows; map after lab 4; backlog unchanged). Module 4 must make kit-m5 match. B: wait for module 4 and rebuild module 5 from it | A. Module 5 uses only case records. Module 4 tells module 5 the 6 choices in `kit-m5-expected.md` section 3 |
-| D2 | Lab 5 Q1 and Q4 need the Q3 deals (D-3105, D-3107, D-3108) in the agent. A: the module 4 log save card saves the driver log with the Q3 rows as well as the map; kit-m5 ships it. B: the map carries the Q3 deal evidence; the driver log stays Q2 only | A. Needs change 1 below (`expected-results.md` kit-m5 row) |
-| D3 | Copilot no-license: past reports in chat, not in Instructions (the spec says Instructions). B: spec letter; learners paste rules 5 and 6 in chat at each run | A. With B, step 2 cannot be done in Instructions |
-| D4 | Step 5 audit: "the answer you would least like to get wrong". With slide 5.4, most learners will pick Q2 (a roadmap commitment). B: a random answer (1 in 3 finds the error) | A. A risk rule is real manager practice and names no error. Choose B if you count it as a hint |
-| D5 | Step 3 prompt names the questions ("for Q1, Q2 and Q5"); Q4 runs with "for Q4" | A. Needs change 3 |
-| D6 | Share stretch: share plan on all 4 cards. Share steps on Claude (Team, Enterprise), ChatGPT and Copilot from dated vendor docs seen 2026-11-27, after class, "not yet tested". Gemini: plan only (Google's post names no labels). B: share plan only on all 4 cards | A, with the "stop here" file check on each card. A shared agent shows all its files (ChatGPT also shows all project chats). Needs changes 4 and 5 |
-| D7 | Demo asks Q3, the optional lab question | A |
-| D8 | Card pass condition item 4 is general; record ids only on the debrief slide | A |
-| D9 | No log save card in module 5; the course close saves kit-final, the brief and the logs | A |
+| D1 | Start state before module 4 exists: kit-m5 as listed in `kit/kit-m5-expected.md`. Module 4 must match it. B: wait for module 4 | A |
+| D2 | Lab 5 Q1 and Q4 need the Q3 deals in the agent. A: module 4's log save card also saves the driver log with Q3 rows. B: the map carries the Q3 evidence; the driver log stays Q2 | A. Needs change 1 |
+| D3 | Copilot no-license: past reports in chat, not in Instructions (the spec says Instructions; with them, rules 5 and 6 pass 8,000) | A. Needs change 2 |
+| D4 | Step 3 prompt names the questions ("for Q1, Q2 and Q5"); Q4 uses "for Q4" | A. Needs change 3 |
+| D5 | Share stretch: steps on Claude (Team, Enterprise) and ChatGPT, after class, "not yet tested by the course team". Copilot and Gemini: share plan only (`stretch_scope`). B: plan only on all 4. C: add Copilot and Gemini steps (needs a `stretch_scope` change) | A. Needs change 4 |
+| D6 | kit-final is released on the Learning Hub only after slide 5.13, because it holds the lab 5 fix | A |
+| D7 | kit-m5 driver log: D-3108 quote is the WL-3108 quote "Your trial sent alerts every lunch rush, and my managers gave up on it." (matches Q4 expected evidence). Module 4 must match | A |
+| D8 | kit-final holds a placeholder `job-card-alternatives-map` (the proof card text), marked "to be set by module 4" | A. Replace when module 4 is final |
+| D9 | No log save card in module 5; the course close saves the brief, the logs and kit-final | A. Needs change 5 |
 | D10 | Spec order kept: decide (step 4) before the audit (step 5), with a "decision after the audit" column | A. Or swap steps 4 and 5 in the spec |
-| D11 | Course close lives in this file (section 10). B: a separate `course-close.md`, like `course-open.md` in module 1 | A for Gate 3. Stage 4 can split it |
-| D12 | Example "may say" rules on the record sheet (draft only, name no person, no commitment) | A: keep |
-| D13 | Story slot on 5.4 (an executive who repeated an old finding as current in a board deck) | Supply one real story heard from executives, else skip path |
-| D14 | Brief v6 (kit-final) is 4,008 characters, over the 3,500 course budget for the core brief. Instructions limit is 8,000; fallback v6 is 5,813 | Accept. The budget was set for the module fallback texts |
-| D15 | Module 3 D2 follow-up: lab 5 does not need P10 in the learner's own backlog. Only the Food service proposals list P10 | Keep module 3 D2 option A |
+| D11 | Demo asks Q3, the optional lab question | A |
+| D12 | Card pass condition item 4 is general; record ids only on the debrief slide | A |
+| D13 | Course close in this file (section 10). C.3 (kit-final) moved into the hands-on Monday plan segment | A |
+| D14 | Example "may say" rules on the record sheet (draft only, name no person, no commitment) | A |
+| D15 | Story slot on 5.4 (an executive who repeated an old finding as current) | Supply one real story, else skip path |
+| D16 | Brief v6 is 4,008 characters, over the 3,500 core brief budget (limit 8,000) | Accept |
+| D17 | Lab 5 does not need P10 in the learner's own backlog (module 3 D2 follow-up) | Keep module 3 D2 option A |
 
 ### Changes needing Dan's yes
 
@@ -90,21 +94,22 @@ None of these are made. Each waits for your yes.
 
 | # | File (fingerprinted or approved) | Change | Why |
 | --- | --- | --- | --- |
-| 1 | `case/expected-results.md`, "State files for the catch-up kits", row kit-m5 | "Adds the map after lab 4" becomes "Adds the map after lab 4 and the Q3 driver log rows (Part 1 of `m4-evidence-pack.md`; D-3102 and D-3108 alternatives read from the interviews)" | Only if D2 is A |
+| 1 | `case/expected-results.md`, "State files for the catch-up kits", row kit-m5 | "Adds the map after lab 4" becomes "Adds the map after lab 4 and the Q3 driver log rows (Part 1 of `m4-evidence-pack.md`; D-3102 and D-3108 alternatives and the D-3108 quote read from the interviews)" | Only if D2 and D7 are A |
 | 2 | `spec.yaml`, `copilot_no_license_fallback.per_module` module 5 | Instructions: "Core brief + stakeholder answer job card". Paste in chat: "Problem backlog (alone); then driver log, alternatives map and past reports; then the questions" | Only if D3 is A |
-| 3 | `spec.yaml`, module 5 `card_steps` step 3 and `check_sample` | Prompt "Run the stakeholder answer job for Q1, Q2 and Q5". Q4 run: "...for Q4" | Only if D5 is A |
-| 4 | `spec.yaml`, module 5 `stretch` | "Share the agent ... (not verified)" becomes "Share plan on all 4 cards. Share steps on Claude (Team, Enterprise), ChatGPT and Copilot from dated vendor docs (2026-11-27), after class, not yet tested. Gemini: plan only" | Only if D6 is A |
-| 5 | `research/platform-matrix.yaml`, rows cl-pj-02, cg-02, mb-05, gm-04 | checked_on 2026-11-27. Screen names: Claude **Share project**, **Can view**, **Share**, **Remove access** ("Can view" members see knowledge and instructions). ChatGPT **Share**, chat access ("Project members can view the project's chats, files, and member list"). Copilot **Share**, **Add a name, group, or email**, **Can chat**, **Add** ("Last updated on 2026-11-16"). Gemini: share from the Skills page with View or Edit, no labels (post 2026-11-16) | The cards use these names (D6). The verifier checks them |
-| 6 | `spec.yaml`, module 5 `arc` and `half_day` | No change needed. Noted: the spec module 5 arc has no log save card (B9) | For the record only |
+| 3 | `spec.yaml`, module 5 `card_steps` step 3 and `check_sample` | Prompt "Run the stakeholder answer job for Q1, Q2 and Q5". Q4: "...for Q4" | Only if D4 is A |
+| 4 | `spec.yaml`, module 5 `stretch` | "Share the agent ... (not verified)" becomes "Share plan on all 4 cards. Share steps on Claude (Team, Enterprise) and ChatGPT from dated vendor docs (2026-11-27), after class, not yet tested by the course team. Copilot and Gemini: plan only (stretch_scope)". Option C also edits `stretch_scope.copilot_and_gemini_cards` | Only if D5 is A (or C) |
+| 5 | `spec.yaml`, `module_arc` (debrief step) | Add: "Module 5 has no log save card. The course close saves the brief, the logs and kit-final" | Only if D9 is A |
+| 6 | `research/platform-matrix.yaml`, rows cl-pj-02, cg-02, mb-05, gm-04, gm-ui-10 | As in the verifier report, last section: checked_on 2026-11-27; status verified (doc) for the Claude, ChatGPT and Copilot share steps, partly verified for Gemini; screen names (**Share project**, **Can view**, **Share**, **Remove access**; **Share**, chat or edit access, **Only those invited**; **Share**, **Add a name, group, or email**, **Can chat**, **Add**, **Send notification**, **Remove**; Gemini labels on the undated Help page only); limits (what a shared member sees; Claude project memory not documented for members) | The cards use these names. Verifier proposal |
+| 7 | `research/workflows.yaml`, row mr-wf-09 evidence W13, W20 | checked_on 2026-11-27 (quotes found again). W20 note: "The source says product managers, not stakeholders, do not remember study names" | Verifier proposal |
 
 ### Notes for the module 4 builder
 
 1. Build `modules/m4/kit/kit-m5/` to match `modules/m5/kit/kit-m5-expected.md`. Copy the 3 drafts in `modules/m5/kit/kit-m5-draft/` if your lab keeps them.
 2. Tell module 5 the 6 choices in `kit-m5-expected.md` section 3: where the lab 4 rule lives, its text, the driver log save, the final map job card, the driver code book, and the character counts.
 3. Keep brief v5 at 3,500 characters or fewer. The draft is 3,491. A longer lab 4 rule breaks the module 4 fallback budget.
-4. Keep the backlog at 15,194 characters (one Copilot paste, under the 15,400 target). Keep the driver log, the map and the past reports together under 15,400 (draft: 13,624).
+4. Keep the backlog at 15,194 characters (one Copilot paste, under the 15,400 target). Keep the driver log, the map and the past reports together under 15,400 (draft: 13,675).
 5. Lab 5 needs these Q3 deals in the agent: D-3105, D-3107 (Q1) and D-3108 (Q4). D-3108 must show do nothing, not Rimecore.
-6. The D-3108 driver log quote is "Rimecore's demo had fewer alerts, I'll give them that." (Part 1). Q4's expected evidence names "alerts every lunch rush" (WL-3108). If your map job rewrites the driver quote, use a word-for-word quote from WL-3108.
+6. The kit-m5 draft driver log gives D-3108 the WL-3108 quote "Your trial sent alerts every lunch rush, and my managers gave up on it." (D3 alert accuracy), not the Part 1 quote. Q4 expected evidence names it (D7). Keep it, or tell module 5.
 7. Slide registry inside this course: module 5 uses no second-agent step and no schedule slide. The platform gap slide for the second agent stays in module 4 only (spec `stretch_scope.slides`).
 
 ## 2. Slides and talk track
@@ -122,7 +127,7 @@ POINT: In this module your agent gets its fifth and last job: it answers other p
 Talk Track:
 Your agent has four jobs now.
 The problem backlog. Win/loss. The weekly feedback run. The alternatives map.
-Each job writes a log. The logs are your research store.
+Each job writes to a log or a file in your agent. Together they are your research store.
 Today the agent gets its last job. It answers questions from other people.
 A sales leader. A hardware lead. An internal product manager.
 That changes one thing. The answer leaves your desk.
@@ -146,9 +151,9 @@ Someone asks: "What do we know about pharmacy buyers?" In Slack, in email, in a 
 The answer is somewhere in past research. Finding it is the problem.
 Two sources say this.
 Nielsen Norman Group, a research firm, says research repositories fail. Adding to them is too much work, and people cannot find past insights. That article is from 2024, so we use it as a claim only.
-UserTesting, a research platform vendor, wrote in 2026 that people do not remember study names. Teams commission new studies on questions already answered. That is a vendor's experience, not a study.
+UserTesting, a research platform vendor, wrote in 2026 that product managers do not remember study names. Teams commission new studies on questions already answered. That is a vendor's experience, not a study.
 So two things go wrong. The team pays for the same study twice.
-Or someone answers from memory, and the answer goes further than the evidence.
+The risk this job removes: someone answers from memory, and the answer goes further than the evidence.
 [ASK: "When did someone in your team last answer a 'what do we know' question from memory?" TAKE 1 ANSWER]
 At Larkspan, our case company, one current market question is: "What can we tell stakeholders now, and what needs new research?"
 That is today's job.
@@ -159,7 +164,7 @@ TRANSITION: This job is the top of the ladder.
 - Layout: Blank
 - Minutes: 2 (half day 2)
 - On-slide text: Your logs feed one answer. The agent drafts. You send, change or hold. The stakeholder gets only what you send.
-- Visual intent: Four log tiles on the left (problem backlog, driver log, alternatives map, past reports) feeding one "answer job" tile. Then a "draft" tile, then a PM tile with three buttons (send, change, hold), then a stakeholder icon. Ladder at the side with rung 3 plus lit.
+- Visual intent: Four file tiles on the left (problem backlog, driver log, alternatives map, past reports) feeding one "answer job" tile. Then a "draft" tile, then a PM tile with three buttons (send, change, hold), then a stakeholder icon. Ladder at the side with rung 3 plus lit.
 - Sources: none (spec `autonomy_ladder` rung 3 plus)
 
 Notes:
@@ -193,9 +198,8 @@ You heard this theme this morning: be great at product management before you are
 Here is what it means for answers.
 The agent answers the question as it is written.
 You know the decision behind the question.
-Look at three of today's case questions.
+Look at two of today's case questions.
 The VP Sales asks if pharmacy and lab deals are lost on price. It goes into the sales kickoff.
-The Head of Hardware asks what pharmacy and lab buyers want in a compliance report. He wants to commit it to the 2028 roadmap.
 The Fleet Data Platform PM asks about hub signal loss. She must place a request in her backlog.
 Same agent. Same evidence. Different stakes.
 So ask three things before you send. Who asks? What will they decide? What would change that decision?
@@ -294,9 +298,9 @@ Three calls.
 Send. The answer says what its sources say, and no more.
 Change. The facts are right, but the words go too far, or a count is missing. You fix it, then send.
 Hold. Do not send yet. Maybe the question needs new research. Maybe it needs a conversation first.
-Hold is not failure. A held answer can save a roadmap commitment.
+Hold is not failure.
 Your audit in this job: open every citation in one answer. Not glance at it. Open it.
-Which answer? The one you would least like to get wrong.
+Which answer? Pick one at random. Every answer you send carries your name.
 TRANSITION: One more call is yours: what goes to validation.
 ```
 
@@ -383,7 +387,7 @@ The goal of this activity is to run one full turn of the manager loop on an agen
 [AT MINUTE 3: ANYONE WHO HAS NOT ADDED THE 2 FILES GETS HELP FIRST]
 [AT MINUTE 7: "Send your questions now, even if your rule is short."]
 [AT MINUTE 10: "Read each answer. Write send, change or hold, and why."]
-[AT MINUTE 16: "Pick one answer: the one you would least like to get wrong. Open every citation in it."]
+[AT MINUTE 16: "Pick one answer at random. Open every citation in it."]
 [AT MINUTE 21: "Now the proposals. Write your order and validation decisions for each segment."]
 [AT MINUTE 27: "Spare time: ask Q3, or one of your own questions."]
 [COPILOT NO-LICENSE LEARNERS USE THE SPARE TIME FOR THE PASTES. CHECK THEY SENT THE BACKLOG FIRST, ALONE]
@@ -418,6 +422,7 @@ Two. Audit exports in the accreditor's or state board's format. P02 in pharmacy 
 The case PM held the roadmap commitment, and started 4 to 6 PM-held pharmacy and lab interviews on report needs.
 [ASK: "Who changed their send, change or hold call after the audit?" TAKE 1 ANSWER]
 [IF NO AGENT IN THE ROOM MADE THE ERROR, SHOW THE SAVED Q2 REHEARSAL OUTPUT. SEE SECTION 3, "BEFORE CLASS"]
+[RELEASE KIT-FINAL ON THE LEARNING HUB NOW. NOT BEFORE THIS SLIDE: IT HOLDS THE LAB 5 FIX]
 TRANSITION: So add a rule for what your audit found.
 ```
 
@@ -435,7 +440,7 @@ Talk Track:
 Write a rule for what your audit found. Put it under "My rules" as rule 6.
 Here is the case PM's rule. Yours can be different.
 "Do not use a source for a segment it did not study. Flag any source older than my age limit. Rank within a segment before any claim about it. Never write '<segment> buyers want' from 1 interview in that segment. Write what we know, with counts, dates and segments, and what we do not know."
-The full text is in kit-final, in the lab 5 rules handout.
+The full text is in kit-final, in the lab 5 rules handout. Kit-final is on the Learning Hub now.
 [1 MINUTE TO WRITE. HALF DAY: 30 SECONDS, THEN MOVE ON]
 Save it. Gemini: select Save. Copilot: select Update.
 TRANSITION: Did your rule work on a question you have not asked?
@@ -553,7 +558,7 @@ All four cards have the same 6 core steps. Saving is in each card header, not a 
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the Project "Market Evidence Agent" from module 4. Lost or behind? Rebuild it from `kit-m5` first.
 - Saves: **Save instructions** saves the instructions. Files save when you add them. Chats save as you go.
-- Check date and vendor doc: Core steps use the same screen names as the module 3 card (checked 2026-11-27 by the module 2 and 3 verifiers; module 5 verifier rechecks). Claude Help Center, "How can I create and manage projects?" (https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects, page metadata 2026-11-06, cl-ui-09; share section seen 2026-11-27, "Updated over 2 weeks ago", cl-pj-02). "Create and edit files with Claude" (https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude, cl-ui-10).
+- Check date and vendor doc: Core steps use the same screen names as the module 3 card (checked 2026-11-27 by the module 2 and 3 verifiers; module 5 verifier rechecks). Claude Help Center, "How can I create and manage projects?" (https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects, page metadata 2026-11-06, cl-ui-09; share section: page metadata 2026-11-06, "Updated over 3 weeks ago" when seen 2026-11-27, cl-pj-02). "Create and edit files with Claude" (https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude, cl-ui-10).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Share answers only inside approved tools.
 
 | Step | Do this |
@@ -562,7 +567,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 2 | Write rule 5 under "My rules" in the project instructions: your age limit and what the agent may say. |
 | 3 | In a new chat, send the questions file with "Run the stakeholder answer job for Q1, Q2 and Q5". |
 | 4 | Write send, change or hold for each answer on your record sheet. |
-| 5 | Open every citation in one answer, with your record sheet checklist. Pick the answer you would least like to get wrong. |
+| 5 | Open every citation in one answer, picked at random, with your record sheet checklist. |
 | 6 | Write your order and validation decisions for each segment on your record sheet. |
 
 **Debrief:**
@@ -573,20 +578,20 @@ Notes: No file in the answer? Check that **Code execution and file creation** (o
 
 **Start here with sample data:** Add: `job-card-stakeholder-answers.md`, `past-reports.md`. Questions: `m5-stakeholder-questions.md`. Rule 5 on the case path: the case PM's age limit is 18 months. Own work: replace `past-reports` with one or two of your past study reports. Ask your last three stakeholder questions with "Run the stakeholder answer job".
 
-**Pass condition (second sample, run in the debrief):** On your fixed brief, in a new chat. Send the questions file with "Run the stakeholder answer job for Q4". Pass if: (1) The answer does not say "food service buyers want quiet hours". (2) Each claim shows its date and segment. (3) The answer has a "what we do not know" line. (4) The flag report lists each source over your age limit, each claim on thin evidence (a fact label) and each disagreement between sources.
+**Pass condition (second sample, run in the debrief):** On your fixed brief, in a new chat. Send the questions file with "Run the stakeholder answer job for Q4". Pass if: (1) The answer does not say "food service buyers want quiet hours". (2) Each claim shows its date and segment. (3) The answer has a "what we do not know" line. (4) The flag report lists old sources, thin evidence (a fact label) and sources that disagree.
 
 **Done early:** Ask Q3. Or ask one question from your own work.
 
-**Stretch (only where verified):**
+**Stretch (vendor doc checked, not yet tested):**
 - Share plan (all platforms). Fill in section 7 of your record sheet.
 - Share the agent (Team or Enterprise plan only). After class, with a colleague in your company. Vendor doc checked 2026-11-27. Not yet tested by the course team.
-  1. Fill in section 7 of your record sheet.
-  2. A **Can view** member sees the instructions and all knowledge files. If any file must stay private, stop here.
+  1. A **Can view** member sees the instructions and all knowledge files. If any file must stay private, stop here.
+  2. Project memory may also carry what you said in this project. If that must stay private, stop here.
   3. Open the project. Select **Share project**.
-  4. Add one colleague by name or email. Choose **Can view**. Select **Share**.
-  5. Ask your colleague to send you their first answer. Audit it with your record sheet checklist.
-  6. To stop sharing, open the sharing menu. Select their role, then **Remove access**.
-  Your admin can turn project sharing off. Then stop the stretch.
+  4. Add one colleague by name or email.
+  5. Choose **Can view**, then select **Share**.
+  6. Ask your colleague to send you their first answer. Audit it with your record sheet checklist.
+  To stop sharing, open the sharing menu. Select their role, then **Remove access**. Your admin can turn project sharing off. Then stop the stretch.
 
 ### Card: ChatGPT
 Build and save your own agent. Share your screen only when someone is stuck.
@@ -601,7 +606,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 2 | Write rule 5 under "My rules" in **Project settings**: your age limit and what the agent may say. |
 | 3 | In a new chat, send the questions file with "Run the stakeholder answer job for Q1, Q2 and Q5". |
 | 4 | Write send, change or hold for each answer on your record sheet. |
-| 5 | Open every citation in one answer, with your record sheet checklist. Pick the answer you would least like to get wrong. |
+| 5 | Open every citation in one answer, picked at random, with your record sheet checklist. |
 | 6 | Write your order and validation decisions for each segment on your record sheet. |
 
 **Debrief:**
@@ -616,21 +621,22 @@ Notes: **Project settings** is in the **•••** menu of the project. No file
 
 **Done early:** Same as the Claude card.
 
-**Stretch (only where verified):**
+**Stretch (vendor doc checked, not yet tested):**
 - Share plan (all platforms). Fill in section 7 of your record sheet.
 - Share the project. After class, with a colleague in your company. Vendor doc checked 2026-11-27. Not yet tested by the course team.
-  1. Fill in section 7 of your record sheet.
-  2. Members see all chats and files in the project, and can download the files. If any must stay private, stop here.
-  3. Open the project. Select **Share**.
-  4. Invite one colleague. Give chat access, not edit access.
-  5. Ask your colleague to send you their first answer. Audit it with your record sheet checklist.
+  1. Members see all chats, files and instructions in the project, and can download the files. If any must stay private, stop here.
+  2. Open the project. Select **Share**.
+  3. Keep **Only those invited**. Do not share a link.
+  4. Enter your colleague's name or email.
+  5. Choose chat access, not edit access.
+  6. Ask your colleague to send you their first answer. Audit it with your record sheet checklist.
   Only the owner can remove a member. Your workspace settings can limit sharing.
 
 ### Card: Copilot agent builder
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the agent "Market Evidence Agent" from module 4. To open it: **All agents**, then **...** next to it, then **Edit**. Lost or behind? Rebuild it from `kit-m5` first.
 - Saves: **Update** after each change.
-- Check date and vendor doc: Core steps use the same screen names as the module 3 card (checked 2026-11-27; module 5 verifier rechecks). Microsoft Learn, "Add knowledge sources" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge, "Last updated on 2026-11-16", mb-ui-12). "Share and manage agents" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents, "Last updated on 2026-11-16", mb-ui-13; share labels seen 2026-11-27, mb-05). Microsoft Support, "Add content to Microsoft 365 Copilot Chat prompts" (ms.date 2026-11-18, mb-ui-14, partly verified).
+- Check date and vendor doc: Core steps use the same screen names as the module 3 card (checked 2026-11-27; module 5 verifier rechecks). Microsoft Learn, "Add knowledge sources" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge, "Last updated on 2026-11-16", mb-ui-12). "Share and manage agents" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents, "Last updated on 2026-11-16", mb-ui-13). Microsoft Support, "Add content to Microsoft 365 Copilot Chat prompts" (ms.date 2026-11-18, mb-ui-14, partly verified).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Share answers only inside approved tools.
 
 | Step | Do this |
@@ -639,7 +645,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 2 | Write rule 5 under "My rules" in **Instructions**: your age limit and what the agent may say. |
 | 3 | In a new chat, send the questions file with "Run the stakeholder answer job for Q1, Q2 and Q5". |
 | 4 | Write send, change or hold for each answer on your record sheet. |
-| 5 | Open every citation in one answer, with your record sheet checklist. Pick the answer you would least like to get wrong. |
+| 5 | Open every citation in one answer, picked at random, with your record sheet checklist. |
 | 6 | Write your order and validation decisions for each segment on your record sheet. |
 
 **Debrief:**
@@ -650,7 +656,7 @@ Notes: Use the `.txt` copies. To send the questions file, upload it, or paste th
 
 **No Copilot license or billing?** Your agent cannot read Knowledge files. Do this instead:
 1. Paste all of `copilot-fallback-instructions-m5.txt` into **Instructions**. It replaces the module 4 text.
-2. Your own rules differ from the kit? Put yours under "My rules". Skip step 1 above.
+2. Skip card step 1. You cannot add knowledge files. Your own rules differ from the kit? Put yours under "My rules".
 3. Before step 3, in the new chat, send `problem-backlog.txt` in its own message.
 4. Then send `driver-log.txt`, `alternatives-map.txt` and `past-reports.txt` in a second message.
 5. Debrief Q4: in the new chat, send the same 2 messages first.
@@ -663,15 +669,9 @@ The past reports go in chat because your rules would take Instructions over 8,00
 
 **Done early:** Same as the Claude card.
 
-**Stretch (only where verified):**
-- Share plan (all platforms). Fill in section 7 of your record sheet.
-- Share the agent (Microsoft 365 Copilot license only). After class, with a colleague in your company. Vendor doc checked 2026-11-27. Not yet tested by the course team.
-  1. Fill in section 7 of your record sheet.
-  2. Anyone who can use the agent gets answers from all its files. If any file must stay private, stop here.
-  3. Select **Share**.
-  4. Enter your colleague in **Add a name, group, or email**. Choose **Can chat**. Select **Add**.
-  5. Ask your colleague to send you their first answer. Audit it with your record sheet checklist.
-  Your colleague needs the license that the agent's features require. Never choose **Can edit** for a stakeholder.
+**Stretch:**
+- Share plan (all platforms). Fill in section 7 of your record sheet. Do not share the agent.
+- The share step is not on this card. Copilot and Gemini cards stay on the core path in this course.
 
 ### Card: Gemini
 Build and save your own agent. Share your screen only when someone is stuck.
@@ -686,7 +686,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 2 | Write rule 5 under "My rules" in the skill **Instructions**: your age limit and what the agent may say. |
 | 3 | In a new chat, send the questions file with "/market-evidence-agent Run the stakeholder answer job for Q1, Q2 and Q5". |
 | 4 | Write send, change or hold for each answer on your record sheet. |
-| 5 | Open every citation in one answer, with your record sheet checklist. Pick the answer you would least like to get wrong. |
+| 5 | Open every citation in one answer, picked at random, with your record sheet checklist. |
 | 6 | Write your order and validation decisions for each segment on your record sheet. |
 
 **Debrief:**
@@ -701,9 +701,9 @@ Notes: Type **/** (or **@**) in the chat and pick your skill from the list. If a
 
 **Done early:** Same as the Claude card.
 
-**Stretch (only where verified):**
-- Share plan (all platforms). Fill in section 7 of your record sheet.
-- The share step is not on this card. Google's post names no screen labels for it. A shared skill needs its Drive files shared too.
+**Stretch:**
+- Share plan (all platforms). Fill in section 7 of your record sheet. Do not share the skill.
+- The share step is not on this card. Copilot and Gemini cards stay on the core path in this course. The dated Google post names no screen labels for it.
 
 ## 6. Debrief
 
@@ -735,8 +735,8 @@ Notes: Type **/** (or **@**) in the chat and pick your skill from the list. If a
 | Timing | Lab 30 minutes (half day 28). Card step minutes 3, 4, 3, 6, 5, 6 (half day 3, 4, 3, 6, 5, 5), 3 minutes slack (half day 2). Debrief 9 (reveal 2, brief fix 2, Q4 3, segment rule 1, Monday 1). Half day 8 (brief fix 1). Lab brief before it: 4 minutes (2 short slides; full steps on the step cards in the workbook) |
 | Setup (Zoom) | Breakout rooms by platform (Claude, ChatGPT, Copilot, Gemini), 3 to 5 learners each. Learners keep their own screen. Share only when stuck. Instructor visits rooms in turn, Copilot first |
 | Setup (in person) | Tables by platform, 3 to 5 learners. One laptop per learner. Instructor walks the tables, Copilot first |
-| Steps per platform | See section 5 (4 cards with the same 6 core steps and the same 2 debrief steps). No fast-start card. Stretch: share plan on all 4 cards; share steps on Claude (Team, Enterprise), ChatGPT and Copilot (licensed), after class, not yet tested by the course team. Gemini: plan only. No second-agent or schedule step (spec) |
-| Materials | `kit/lab-5/` (job card, past reports, Copilot fallback text, record sheet, README). Case file `m5-stakeholder-questions.md`. `kit-m5` to rebuild before the lab (module 4; until then `kit/kit-m5-draft/` with `modules/m3/kit/kit-m4/`). `kit/kit-final/` for the course close. Instructor only: `case/planted-errors.md`, `case/expected-results.md`, saved demo output (Q3), saved Q2 rehearsal output, saved Q4 result from the final project |
+| Steps per platform | See section 5 (4 cards with the same 6 core steps and the same 2 debrief steps). No fast-start card. Stretch: share plan on all 4 cards. Share steps on Claude (Team, Enterprise) and ChatGPT only, after class, "not yet tested by the course team". Copilot and Gemini stay on the core path (spec `stretch_scope`). No second-agent or schedule step (spec) |
+| Materials | `kit/lab-5/` (job card, past reports, Copilot fallback text, record sheet, README). Case file `m5-stakeholder-questions.md`. `kit-m5` to rebuild before the lab (module 4; until then `kit/kit-m5-draft/` with `modules/m3/kit/kit-m4/`). `kit/kit-final/` for the course close: release it on the Learning Hub only after slide 5.13 (it holds the lab 5 fix). Instructor only: `case/planted-errors.md`, `case/expected-results.md`, saved demo output (Q3), saved Q2 rehearsal output, saved Q4 result from the final project |
 | Success criteria | Each answer has the learner's send, change or hold decision. Every citation in one answer opened and recorded. Each segment has the learner's order and validation decisions. Debrief: rule 6 added; Q4 passes the 4-item pass condition |
 | Debrief questions | Which check or audit found the error? Did your audit change a send, change or hold decision? Would you send the fixed Q2 answer? Which problems in each segment go to validation? |
 | Fallback path | Cannot use own work: case data. Agent lost or behind: rebuild from `kit-m5` (about 5 minutes). Platform blocked: pair with a learner on another platform. Copilot with no license: `copilot-fallback-instructions-m5.txt`, then the backlog alone, then the driver log, map and past reports, then the questions. Upload fails: paste the text. No file output: full text in one message (brief rule 7). Agent does not make the error: show the saved Q2 rehearsal output. Q4 not done in 3 minutes: finish after class |
@@ -751,27 +751,27 @@ Character counts measured with `wc -m` on 2026-11-27. Copilot course budget (spe
 | `lab-5/job-card-stakeholder-answers.md` | Knowledge | 1,398 (budget 1,500) | yes |
 | `lab-5/past-reports.md` (copy of `case/m5-past-reports.md`) | Knowledge | 2,773 (budget 2,800) | yes |
 | `lab-5/copilot-fallback-instructions-m5.txt` (brief v5 and job card) | Copilot Instructions, no license | 5,293 (limit 8,000) | is a `.txt` |
-| `lab-5/lab-5-record-sheet.md` | Not loaded. Learner keeps it | 2,239 (not loaded) | no |
+| `lab-5/lab-5-record-sheet.md` | Not loaded. Learner keeps it | 2,272 (not loaded) | no |
 | `lab-5/README.md` | Not loaded | not counted | no |
 | `kit-m5-draft/brief-v5.md` (start state; place of rule 4 to be set by module 4) | Instructions | 3,491 (budget 3,500) | yes |
-| `kit-m5-draft/driver-log.md` (Q2 and Q3; D2) | Knowledge | 7,565 (a log) | yes |
-| `kit-m5-draft/alternatives-map.md` (end of Q3 2027) | Knowledge | 3,286 (a log in module 5; pasted in chat, not in Instructions) | yes |
+| `kit-m5-draft/driver-log.md` (Q2 and Q3; D2) | Knowledge | 7,616 (a log) | yes |
+| `kit-m5-draft/alternatives-map.md` (end of Q3 2027) | Knowledge | 3,286 (a case knowledge file, updated in lab 4; Copilot no license pastes it in chat) | yes |
 | `kit-m5-draft/README.md`, `kit-m5-expected.md` | Not loaded. For the module 4 builder and Dan | not counted | no |
-| `kit-final/brief-v6.md` (rules 1 to 6) | Instructions | 4,008 (over the 3,500 budget; D14) | yes |
+| `kit-final/brief-v6.md` (rules 1 to 6) | Instructions | 4,008 (over the 3,500 budget; D16) | yes |
 | `kit-final/job-card-problem-backlog.md`, `job-card-win-loss.md`, `job-card-weekly-feedback.md` (no change) | Knowledge | 1,194; 1,483; 1,496 | yes |
-| `kit-final/job-card-alternatives-map.md` | Knowledge | To be set by module 4 | to be set by module 4 |
+| `kit-final/job-card-alternatives-map.md` (PLACEHOLDER: proof card text, to be set by module 4; D8) | Knowledge | 1,450 | yes |
 | `kit-final/job-card-stakeholder-answers.md` | Knowledge | 1,398 | yes |
 | `kit-final/code-book.md`, `driver-code-book.md`, `tag-list.md` (no change) | Knowledge | 2,791; 2,284; 2,038 | yes |
 | `kit-final/alternatives-map.md`, `past-reports.md` | Knowledge | 3,286; 2,773 | yes |
-| `kit-final/problem-backlog.md` (no change from kit-m4), `driver-log.md` | Knowledge | 15,194; 7,565 | yes |
+| `kit-final/problem-backlog.md` (no change from kit-m4), `driver-log.md` | Knowledge | 15,194; 7,616 | yes |
 | `kit-final/lab-5-fix-rules.md` | Not loaded. Handout | 1,155 | yes |
 | `kit-final/copilot-fallback-instructions-m5-v6.txt` | Copilot Instructions, no license, to rerun job 5 | 5,813 (limit 8,000) | is a `.txt` |
-| `kit-final/monday-plan.md` | Not loaded. Course close sheet | 2,046 (not loaded) | no |
+| `kit-final/monday-plan.md` | Not loaded. Course close sheet | 2,048 (not loaded) | no |
 | `kit-final/README.md` (with the rebuild card) | Not loaded | not counted | no |
 
 Fallback sum check (module 5): header 399 + brief v5 3,491 + separator 5 + job card 1,398 = 5,293. Learner rule 5 (about 220) and rule 6 (about 330) bring it to about 5,850, under 8,000. With the past reports in Instructions it would be 7,662 before rule 5, and about 8,210 after rule 6 (over the limit; D3). kit-final fallback: header 402 + brief v6 4,008 + separator 5 + job card 1,398 = 5,813.
 
-Copilot no-license pastes (target 15,400 each): message 1, `problem-backlog.txt` 15,194. Message 2, `driver-log.txt` 7,565 + `alternatives-map.txt` 3,286 + `past-reports.txt` 2,773 = 13,624. Message 3, the questions file 1,667. Debrief: messages 1 and 2 again, then the questions file.
+Copilot no-license pastes (target 15,400 each): message 1, `problem-backlog.txt` 15,194. Message 2, `driver-log.txt` 7,616 + `alternatives-map.txt` 3,286 + `past-reports.txt` 2,773 = 13,675. Message 3, the questions file 1,667. Debrief: messages 1 and 2 again, then the questions file.
 
 Spec P3 check "core instructions stay under 8,000 characters": brief v5 3,491; brief v6 4,008.
 
@@ -804,7 +804,7 @@ Knowledge files in the agent after module 5: 12 (5 job cards, 5 case knowledge f
 | The agent writes "validated" or "pattern" | Audit finding. Point to brief rule 3. Rerun |
 | The agent says "food service buyers want" or "buyers want" from 1 interview | Audit finding. Point to brief rule 4 (the segment rule). It is the Q4 test in the debrief |
 | The agent does not make the planted error (Q2 already flags R-2025-07 and avoids "buyers want") | Good. Ask the learner which line in the brief or job card stopped it. In the debrief, show the saved Q2 rehearsal output |
-| The learner's audit picks Q1 or Q5 and finds nothing | Fine. The reveal shows Q2. Ask in 5.13: "Which answer had the most at stake?" |
+| The learner's random pick is Q1 or Q5 and the audit finds nothing | Fine. A clean audit is a real result. The reveal shows Q2. Ask in 5.13: "What would have found it, if you had picked Q2?" |
 | A learner's own past report or question holds client names or personal data | Stop. Use the case data, or remove the names. Data safety box |
 | Share stretch: "Share project" or "Share" is missing | The plan or the admin does not allow sharing. Stop the stretch. Keep the share plan |
 
@@ -818,24 +818,24 @@ Knowledge files in the agent after module 5: 12 (5 job cards, 5 case knowledge f
   7. P10 (module 3 D2): lab 5 needs P10 only in the Food service proposals ("Not ranked", discovery). A learner whose own backlog has no P10 row gets no P10 line. Accept it.
   8. The case question file holds the line "The case PM's hand-off rule: evidence older than 18 months goes to the flag report." It tells learners the case age limit for rule 5. It does not say which report is old.
   9. The demo answers Q3 on brief v5 with rule 5. Learners who ask Q3 in the spare time see the same flags.
-- Kept off the slides on purpose: any repository or duplicate-research figure (W13 survey figures fail the 2026 rule; W20 has no data). "Stakeholders do not remember study names" and "teams commission new studies" (W20 only; B14). The manager loop circle (slide 1.7) and the "no magic number" slide (1.14) in the course close (B12). Any second-agent or schedule slide (spec: not in module 5).
+- Kept off the slides on purpose: any repository or duplicate-research figure (W13 survey figures fail the 2026 rule; W20 has no data). "Product managers do not remember study names" and "teams commission new studies" (W20 only; B14). The manager loop circle (slide 1.7) and the "no magic number" slide (1.14) in the course close (B12). Any second-agent or schedule slide (spec: not in module 5).
 - Registry guard: No workshop teaches research reuse (spec `registry_guard`). AI Agents course boundaries and guardrails are referred to as known; slide 5.7 is new and written for an agent that faces other people (decision 33). Not the Competitive Intel Watchdog. CAW-AI "exit packet with two scheduled tasks" is not used: the course close saves a text kit and a Monday plan, with no scheduled task.
 
 ## 10. Course close
 
-Runs after module 5. Full day 15 minutes (5 instructor-led, 10 hands-on). Half days 10 minutes (4 instructor-led, 6 hands-on). Spec `course_close`.
+Runs after module 5. Full day 15 minutes (5 instructor-led, 10 hands-on). Half days 10 minutes (4 instructor-led, 6 hands-on). Spec `course_close`. C.3 (kit-final) sits in the hands-on Monday plan segment, because the spec puts "saves kit-final" there (consistency finding 11). The C.1 extra minute (full day) goes to one learner answer: "Which audit surprised you most?"
 
 ### Close minutes check
 
 | Segment | Slides | Minutes (full day) | Minutes (half day) | Mode |
 | --- | --- | --- | --- | --- |
-| Recap of the manager loop. Theme: there is no magic number | C.1 to C.3 | 2 + 2 + 1 = 5 | 2 + 1 + 1 = 4 | Instructor-led |
-| Monday plan | C.4 | 10 | 6 | Hands-on |
+| Recap of the manager loop. Theme: there is no magic number | C.1, C.2 | 3 + 2 = 5 | 2 + 2 = 4 | Instructor-led |
+| Monday plan: take home kit-final, then plan | C.3, C.4 | 1 + 9 = 10 | 1 + 5 = 6 | Hands-on |
 | Total | 4 slides | 15 | 10 | |
 
 ### Slide C.1: Five audits, five rules
 - Layout: Blank
-- Minutes: 2 (half day 2)
+- Minutes: 3 (half day 2)
 - On-slide text: Table. Lab 1: quote check passed; evidence profile found it; single-source rule. Lab 2: quote check; deal source; CRM-only rule. Lab 3: reason check; no fit group; no fit rule. Lab 4: link check; the interview; buyer's answer rule. Lab 5: citation check; the source header; segment rule.
 - Visual intent: A 5-row table with 4 columns: Lab, The check that passed, What found it, The rule you added. Short words, large type. "What found it" column in orange.
 - Sources: none (case `planted-errors.md` summary table; spec `course_agent.manager_loop`)
@@ -849,15 +849,16 @@ Five labs. Five planted errors.
 Every time, a quality check passed. The quotes were real. The links were real. The citations were real.
 And every time, the error was still there.
 Your audit found it. The evidence profile. The deal source column. The "no fit" group. The interview behind the CRM field. The header of an old report.
-Then you wrote a rule. Your brief now has six of them.
+Then you wrote a rule. Your brief now has six rules. Five came from your audits.
 That is the manager loop, five times. Brief, checks, hand-off rules, run, review, audit, tune, run again.
 The checks catch what you predicted. Your audit catches what you did not.
+[FULL DAY: ASK "Which audit surprised you most?" TAKE 1 ANSWER]
 TRANSITION: And in every lab, one call stayed with you.
 ```
 
 ### Slide C.2: Five calls the agent never made
 - Layout: Blank
-- Minutes: 2 (half day 1)
+- Minutes: 2 (half day 2)
 - On-slide text: You decided: the order of problems by segment. What sales hears. Which problems need discovery. The alternative to beat. What gets sent, and what goes to validation. Bottom line: "No magic number. The agent proposes. You decide."
 - Visual intent: Five short lines, one per module, with a small module number in a circle. The bottom line in orange.
 - Sources: none (spec `course_close`, `course.themes`; module `pm_decision` fields)
@@ -878,9 +879,9 @@ TRANSITION: Now take it home.
 ```
 
 ### Slide C.3: Take it home: kit-final
-- Layout: Blank
+- Layout: Activity
 - Minutes: 1 (half day 1)
-- On-slide text: kit-final: brief v6, 5 job cards, 7 knowledge and log files, a rebuild card. On your work: change the [EDIT] line and your age limit. Use your own code book. Start the logs empty.
+- On-slide text: ACTIVITY. Download kit-final from the Learning Hub: brief v6, 5 job cards, 5 knowledge files, 2 logs, a rebuild card. On your work: change the [EDIT] line and your age limit. Use your own code book. Start the logs empty.
 - Visual intent: A folder icon labeled kit-final with 3 small stacks (brief, job cards, files). A 4-item checklist on the right.
 - Sources: none (spec `catch_up_kits` kit-final; `kit/kit-final/README.md`)
 
@@ -888,8 +889,10 @@ Notes:
 ```
 POINT: kit-final holds the complete agent, so each learner can rebuild it on their own work in about 5 minutes.
 Talk Track:
-Your kit has a folder called kit-final.
-It holds the complete agent. Brief v6 with all your rules. Five job cards. The knowledge files and the logs.
+The goal of this activity is to download kit-final and know what is in it.
+Download kit-final from the Learning Hub now. It is the folder you got after the lab 5 reveal.
+It holds the complete agent. Brief v6 with all your rules. Five job cards. Five knowledge files and two logs.
+[IF MODULE 4 IS NOT FINAL: THE ALTERNATIVES MAP JOB CARD IN KIT-FINAL IS A PLACEHOLDER. THE README SAYS SO]
 And a rebuild card for your platform. About 5 minutes.
 On your own work, change four things.
 The [EDIT] line: your product, your market, your segments.
@@ -901,9 +904,9 @@ TRANSITION: One last activity. Your Monday plan.
 
 ### Slide C.4: Your Monday plan
 - Layout: Activity
-- Minutes: 10 (half day 6)
-- On-slide text: ACTIVITY. 10 MIN. 1. Pick the first job you run on your own work. 2. Set your audit date. 3. Save kit-final with your brief and your logs. Sheet: `monday-plan.md` in kit-final.
-- Visual intent: Orange band. Three numbered steps, large. A calendar icon with an empty date. Timer 10 MIN (half day 6).
+- Minutes: 9 (half day 5)
+- On-slide text: ACTIVITY. 9 MIN. 1. Pick the first job you run on your own work. 2. Set your audit date. 3. Save kit-final with your brief and your logs. Sheet: `monday-plan.md` in kit-final.
+- Visual intent: Orange band. Three numbered steps, large. A calendar icon with an empty date. Timer 9 MIN (half day 5).
 - Sources: none (spec `course_close` segment 2)
 
 Notes:
@@ -916,8 +919,8 @@ One. Pick the first job you will run on your own work. One job, not five.
 Pick the one where your team loses the most time today.
 Two. Set the date of your first audit. Write what you will audit. Use the same sample size as in the lab.
 Three. Save kit-final. Copy your brief text into my-brief.txt. Download your logs into the folder.
-[START A 10-MINUTE TIMER. HALF DAY: 6. WALK THE ROOM OR VISIT THE BREAKOUT ROOMS]
-[AT MINUTE 7, HALF DAY MINUTE 4: TAKE 2 ANSWERS: "Which job first, and when is your audit?"]
+[START A 9-MINUTE TIMER. HALF DAY: 5. WALK THE ROOM OR VISIT THE BREAKOUT ROOMS]
+[AT MINUTE 6, HALF DAY MINUTE 3: TAKE 2 ANSWERS: "Which job first, and when is your audit?"]
 [IF A LEARNER CANNOT USE THEIR OWN WORK IN THEIR TOOL:] Then step one is a question for your IT or security team. Write it down as your first job.
 Thank you. You came in with a platform. You leave with an agent you manage.
 [END OF COURSE]

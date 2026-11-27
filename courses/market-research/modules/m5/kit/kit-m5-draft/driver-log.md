@@ -4,7 +4,7 @@
 
 Log file for the Market Evidence Agent, win/loss job. State after module 4: Q2 2027 decided deals (14 deals, 9 with a buyer interview, 5 CRM only) and Q3 2027 decided deals (10 deals, 9 with a buyer interview, 1 CRM only). The format is in the driver code book. Facts and counts only. The agent never writes "pattern" or "validated".
 
-Last updated: after lab 4. Q3 rows come from the lab 4 evidence pack. The alternative chosen for D-3102 and D-3108 is read from the buyer interview (WL-3102, WL-3108), not the CRM field.
+Last updated: after lab 4. Q3 rows come from the lab 4 evidence pack. The alternative chosen for D-3102 and D-3108 is read from the buyer interview (WL-3102, WL-3108), not the CRM field. The D-3108 quote is from WL-3108.
 
 ## Driver log
 
@@ -31,7 +31,7 @@ Last updated: after lab 4. Q3 rows come from the lab 4 evidence pack. The altern
 | D-3105 | Q3 | Lost | Pharmacy and lab | interview | D6 Calibration and certificates | Rimecore | "Rimecore calibrates on site twice a year, so the probes never leave the pharmacy." | WL-3105 | Calibration | yes |
 | D-3106 | Q3 | Lost | Food service | interview | D7 Timing and budget cycle | Spreadsheet (do nothing) | "We froze all new spend after the second quarter, so the spreadsheet stays for now." | WL-3106 | Timing | yes |
 | D-3107 | Q3 | Lost | Pharmacy and lab | interview | D7 Timing and budget cycle | Budget freeze (do nothing) | "The grant that would have paid for it did not come through this cycle." | WL-3107 | Timing | yes |
-| D-3108 | Q3 | Lost | Food service | interview | D3 Alert accuracy | Spreadsheet and clipboard (do nothing) | "Rimecore's demo had fewer alerts, I'll give them that." | WL-3108 | Price | no |
+| D-3108 | Q3 | Lost | Food service | interview | D3 Alert accuracy | Spreadsheet and clipboard (do nothing) | "Your trial sent alerts every lunch rush, and my managers gave up on it." | WL-3108 | Price | no |
 | D-3109 | Q3 | Lost | Distribution | CRM only | n/a | n/a (CRM competitor: Incumbent loggers) | none | none | Price | n/a |
 | D-3110 | Q3 | Won | Food service | interview | D8 Reseller and install support | n/a | "The contractor set up all four sites in a week and showed every manager the app." | WL-3110 | Reseller support | yes |
 

@@ -44,7 +44,7 @@ Pick one.
 
 1. Open your agent's instructions. Copy all of the text.
 2. Paste it into a new file named `my-brief.txt` in your kit-final folder.
-3. Download each log your agent made today (problem backlog, driver log, alternatives map).
+3. Download your logs and the map from today (problem backlog, driver log, alternatives map).
 4. Put them in the kit-final folder, next to the kit files.
 
 Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss.

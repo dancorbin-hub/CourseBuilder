@@ -18,10 +18,10 @@ Status words in the table:
 | 2 | `brief-v5.md` | Instructions | From the case, place to be set by module 4 | `kit-m4/brief-v4.md` plus "My rules" 4, the lab 4 fix text in `case/planted-errors.md` | 3,500 characters or fewer (draft: 3,491). If module 4 puts its rule in the job card, brief v5 is brief v4 with the new title. Then the lab 5 rule is "My rules" 4, and module 5 changes "rule 5" on the record sheet and cards |
 | 3 | `job-card-problem-backlog.md` | Knowledge | No change | `kit-m4` | 1,194 |
 | 4 | `code-book.md` | Knowledge | No change | `kit-m4` | 2,791 |
-| 5 | `problem-backlog.md` | Knowledge | No change | `kit-m4` (Part 4 of `case/m4-evidence-pack.md`). The map job reads it. It does not write it | 15,194. Under the 15,400 paste target. Do not make it longer |
+| 5 | `problem-backlog.md` | Knowledge | No change | `kit-m4` (same facts as Part 4 of `case/m4-evidence-pack.md`, different layout). The map job reads it. It does not write it | 15,194. Under the 15,400 paste target. Do not make it longer |
 | 6 | `job-card-win-loss.md` | Knowledge | No change | `kit-m4` | 1,483 |
 | 7 | `driver-code-book.md` | Knowledge | No change, unless module 4 adds controller alarms to the alternatives list (to be set by module 4) | `kit-m4` | 2,800 or fewer |
-| 8 | `driver-log.md` | Knowledge | From the case. Needs D2 | `kit-m4` Q2 rows plus the 10 Q3 rows of Part 1 of `case/m4-evidence-pack.md`. Alternative chosen read from the interview: D-3102 Vantafrost (WL-3102), D-3108 do nothing (WL-3108). Q3 flag: D-3108 with the case PM decision | 7,565 in the draft. With the map and the past reports, 15,400 or fewer in one paste (draft: 13,624) |
+| 8 | `driver-log.md` | Knowledge | From the case. Needs D2 | `kit-m4` Q2 rows plus the 10 Q3 rows of Part 1 of `case/m4-evidence-pack.md`. Alternative chosen read from the interview: D-3102 Vantafrost (WL-3102), D-3108 do nothing (WL-3108). D-3108 quote from WL-3108: "Your trial sent alerts every lunch rush, and my managers gave up on it." (D7 in module 5). Q3 flag: D-3108 with the case PM decision | 7,616 in the draft. With the map and the past reports, 15,400 or fewer in one paste (draft: 13,675) |
 | 9 | `job-card-weekly-feedback.md` | Knowledge | No change | `kit-m4` | 1,496 |
 | 10 | `tag-list.md` (version 2, with P10) | Knowledge | No change | `kit-m4` | 2,038 |
 | 11 | `job-card-alternatives-map.md` | Knowledge | To be set by module 4 | Start: `proof/job-card-alternatives-map.md` | 1,500 or fewer. Name where the lab 4 hand-off rule lives |

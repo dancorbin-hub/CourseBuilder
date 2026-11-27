@@ -19,6 +19,8 @@ Run file (case path, from the case folder): `m5-stakeholder-questions.md`. Lab: 
 
 The problem backlog, the driver log and the alternatives map are already in your agent. Lab 5 adds no log.
 
+kit-final, the complete agent, comes to the Learning Hub after the lab 5 debrief reveal. Not before.
+
 On your own work: replace `past-reports.md` with one or two of your own past study reports, from an approved tool. Each report needs a header line with its date and segment. Ask your own last 3 stakeholder questions.
 
 ## Copilot with no license or billing
@@ -27,9 +29,9 @@ Your agent cannot read knowledge files.
 
 1. Paste all of `copilot-fallback-instructions-m5.txt` into **Instructions**. It replaces the module 4 text. Select **Update**.
 2. In a new chat, send `problem-backlog.txt` in its own message (15,194 characters).
-3. In a second message, send `driver-log.txt`, `alternatives-map.txt` and `past-reports.txt` (13,624 characters together).
+3. In a second message, send `driver-log.txt`, `alternatives-map.txt` and `past-reports.txt` (13,675 characters together).
 4. Then send the questions file with the prompt on your card.
-5. Debrief: in a new chat, send messages 2 and 3 again. Then send the questions file with the Q4 prompt.
+5. Debrief: in a new chat, send `problem-backlog.txt` alone. Then send the driver log, the map and the past reports. Then send the questions file with the Q4 prompt.
 
 Upload each file, or paste the text. If Copilot does not take the backlog in one message, split it at the line "## Proposed ranking after lab 3". Send the two parts one after the other.
 

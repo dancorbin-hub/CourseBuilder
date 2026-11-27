@@ -26,7 +26,7 @@ My rule text:
 
 ## 3. Citation audit: every citation in one answer (step 5)
 
-The answer I audit: ______ Why I picked it:
+The answer I audit (picked at random): ______
 
 For each claim in the answer, open the cited source in the agent's files and check:
 
@@ -71,7 +71,7 @@ What it fixes:
 | Question | My answer |
 | --- | --- |
 | Who would ask the agent directly? | |
-| Which files may they see? (A shared agent shows its files) | |
+| Which files may they see? (A shared agent can show its files, or answer from all of them) | |
 | Which questions may it answer with no review by me? | |
 | How do I audit what it said? How often? | |
 | Does my company allow sharing in this tool? | |

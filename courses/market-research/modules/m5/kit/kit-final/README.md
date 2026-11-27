@@ -2,6 +2,8 @@
 
 The agent with all five jobs, as it is after module 5 on the case path. Take it home. Rebuild it on your own platform in about 5 minutes, then run it on your own work.
 
+Released on the Learning Hub after the lab 5 debrief reveal (slide 5.13), not before. It holds the lab 5 fix.
+
 Not loaded into the agent. This file and `monday-plan.md` are for you.
 
 ## Files
@@ -12,7 +14,7 @@ Not loaded into the agent. This file and `monday-plan.md` are for you.
 | `job-card-problem-backlog.md` | Job 1: problem backlog | Knowledge | 1,194 |
 | `job-card-win-loss.md` | Job 2: win/loss | Knowledge | 1,483 |
 | `job-card-weekly-feedback.md` | Job 3: weekly feedback | Knowledge | 1,496 |
-| `job-card-alternatives-map.md` | Job 4: alternatives map. To be set by module 4 (copy it from `kit-m5` when module 4 is built) | Knowledge | to be set by module 4 |
+| `job-card-alternatives-map.md` | Job 4: alternatives map. Placeholder: the proof card text, to be set by module 4. Replace it with the `kit-m5` file when module 4 is built | Knowledge | PLACEHOLDER |
 | `job-card-stakeholder-answers.md` | Job 5: stakeholder answers | Knowledge | 1,398 |
 | `code-book.md` | Problem codes, segments, personas and formats (case) | Knowledge | 2,791 |
 | `driver-code-book.md` | Drivers, alternatives, deal source labels and formats (case) | Knowledge | 2,284 |
@@ -20,7 +22,7 @@ Not loaded into the agent. This file and `monday-plan.md` are for you.
 | `alternatives-map.md` | The map at the end of Q3 2027 (case) | Knowledge | 3,286 |
 | `past-reports.md` | Two past research reports (case) | Knowledge | 2,773 |
 | `problem-backlog.md` | The log after module 3. Labs 4 and 5 do not change it | Knowledge | 15,194 |
-| `driver-log.md` | The log with Q2 and Q3 2027 deals | Knowledge | 7,565 |
+| `driver-log.md` | The log with Q2 and Q3 2027 deals | Knowledge | 7,616 |
 | `lab-5-fix-rules.md` | The lab 5 rules, with why | Keep on your computer | 1,155 |
 | `copilot-fallback-instructions-m5-v6.txt` | Brief v6 and the stakeholder answer job card in one text | Copilot Instructions, no-license learners only | 5,813 |
 | `monday-plan.md` | Your first job, your audit date and how to save this kit | Keep on your computer | not loaded |
