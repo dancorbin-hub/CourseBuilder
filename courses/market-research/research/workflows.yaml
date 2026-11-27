@@ -273,6 +273,26 @@
       age_flag: true
       status: "not verified"
       note: Last modified date only. Older than 12 months; Dan decides. Its "35% of teams" figure is an old survey and fails the 2026 rule. Independent of W1 and W2
+    - id: W4
+      claim: A manual win/loss program is slow; results arrive out of date
+      type: claim
+      source: Difficulty running win-loss analysis, Adam McQueen, Klue
+      url: https://klue.com/blog/difficulty-running-win-loss-analysis
+      source_date: 2025-09-04
+      checked_on: 2026-11-27
+      age_flag: true
+      status: "verified"
+      note: "Vendor. First-hand account: 'by the time I could share results, it was an out-of-date point in time.' Published 2024-05-29, modified 2025-09-04. Older than 12 months; Dan accepted the age flag (Gate 3 module 2 D1 option C, 2026-11-27). Independent of W1 and W2. Supports 'slow', not 'does not scale'"
+    - id: W5
+      claim: Win/loss tools now apply the same analysis to recorded sales calls as to buyer interviews, and the calls feed an AI analysis of the deal
+      type: tool feature
+      source: Gong integration, Clozd Help Center
+      url: https://help.clozd.com/hc/en-us/articles/42193312117531
+      source_date: 2026-11-02
+      checked_on: 2026-11-27
+      age_flag: false
+      status: "verified"
+      note: "Vendor doc. Quotes: 'Calls are included in Gong's AI analysis of an opportunity, account, or pipeline.' Gong call transcripts are 'tagged and summarized using the same analysis applied to interviews.' Covers calls and interviews. Does not cover emails, so emails stay in the talk track as the course view (module 2 slide 2.2, D1 option C)"
   open_gaps:
     - A 2026 primary study on win/loss time or CRM reason accuracy
     - Hardware and internal PM win/loss sources

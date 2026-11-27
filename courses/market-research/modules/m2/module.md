@@ -47,7 +47,7 @@ Open decisions for the Gate 3 doc, most important first. One line each, with a r
 
 | # | Decision | Recommended |
 | --- | --- | --- |
-| D1 | (Open: Dan commented that AI now reads stored calls, emails and interviews. Option C proposed: line 2 "Win/loss was slow. AI can now read the calls, emails and interviews you already store." Waits for Dan to pick A or C.) Slide 2.2 line "Manual win/loss is slow and does not scale" has 1 source (W2). Accept Klue (2025-09-04, vendor, age flag) as the second source and shorten the line to "Manual win/loss is slow."? B: move the line to the talk track, attributed to Corporate Visions | A: accept Klue, line becomes "Manual win/loss is slow." Not applied on the slide until your yes |
+| D1 | (Decided: option C, see "Decided by Dan".) Slide 2.2 line "Manual win/loss is slow and does not scale" has 1 source (W2). Accept Klue (2025-09-04, vendor, age flag) as the second source and shorten the line to "Manual win/loss is slow."? B: move the line to the talk track, attributed to Corporate Visions | A: accept Klue, line becomes "Manual win/loss is slow." Not applied on the slide until your yes |
 
 ### Decided by Dan (2026-11-27)
 
@@ -57,6 +57,7 @@ Open decisions for the Gate 3 doc, most important first. One line each, with a r
 | Draft D2 | No schedule stretch in module 2. The schedule stretch moves to module 3, Claude card only (`research/stretch-verification-2026-11.md`: cl-sc-07 verified by doc, test pending; cg-06 verified by doc but a project task cannot read project files; mb-06 not verified; gm-07 not available for Workspace) | Spec module 2 `stretch` updated. Claude and ChatGPT cards say "No stretch step in module 2. The schedule stretch is in module 3." |
 | Draft D5 | Delete "(program minimum met)" from `case/expected-results.md` | Done by the case builder. Case note removed |
 | Draft D13 | Old Pragmatic market visit article (2025-08-27) for the no-blame frame on 2.8 | Dan accepted this age flag and PA-04 at Gate 1 (`gate-1-decisions.md`). No decision needed |
+| Gate 3 D1 | Option C (Dan comment "Agreed! Let's go with that approach.", 2026-11-27). Dan: AI now reads stored calls, emails and interviews, so win/loss is much faster | Slide 2.2 line 2 is "Win/loss was slow. AI can now read the calls and interviews you already store." Sources W2, W4 (Klue, age flag) and W5 (Clozd, 2026-11-02) added to workflows.yaml. "Emails" moved to the talk track as the course view, because W5 covers calls and interviews only. Talk track adds the sales-call bias point and a data safety line |
 | Gate 3 D2 | D2 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | B. Record sheet line shortened to "Then read the deal source column for every deal." Card step 4 unchanged |
 | Gate 3 D3 | D3 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Keep. No change |
 | Gate 3 D4 | D4 as recommended (Dan comment "I'm good with all these recommendations", 2026-11-27) | Keep. Learner decides the lab 2 flags. No change |
@@ -104,13 +105,13 @@ TRANSITION: First, the workflow and what slows it down.
 ### Slide 2.2: Sales says price. Is that what buyers say?
 - Layout: Blank
 - Minutes: 3 (half day 3)
-- On-slide text: Headline: "Sales says price. Is that what buyers say?" Line 1: "CRM loss reasons often differ from buyer reasons." Line 2: "Manual win/loss is slow and does not scale." Workflow strip: "Decided deals and win/loss interviews, then an updated, checked driver report."
-- Visual intent: Headline with "price" in orange. Two short lines. A left-to-right strip: a CRM row and an interview note, then a driver report.
-- Sources: Line 1: W1 (claim, Clozd, 2026-04-20) and W2 (claim, Corporate Visions, updated 2026-07-30). Line 2: W2 only. Decision D1 proposes Klue (2025-09-04, age flag) as the second source and the line "Manual win/loss is slow." No figure from any source (spec `claims_on_slides`)
+- On-slide text: Headline: "Sales says price. Is that what buyers say?" Line 1: "CRM loss reasons often differ from buyer reasons." Line 2: "Win/loss was slow. AI can now read the calls and interviews you already store." Workflow strip: "Decided deals and win/loss interviews, then an updated, checked driver report."
+- Visual intent: Headline with "price" in orange. Two short lines. On line 2, "was slow" in grey and "AI can now read" in orange. A left-to-right strip: a CRM row and an interview note, then a driver report.
+- Sources: Line 1: W1 (claim, Clozd, 2026-04-20) and W2 (claim, Corporate Visions, updated 2026-07-30). Line 2, "was slow": W2 and W4 (Klue, 2025-09-04, age flag accepted by Dan). Line 2, AI part: W5 (tool feature, Clozd Help Center "Gong integration", updated 2026-11-02). Emails are in the talk track only, as the course view (W5 covers calls and interviews). No figure from any source (spec `claims_on_slides`)
 
 Notes:
 ```
-POINT: Teams act on the CRM loss reason because buyer interviews are slow to collect and code, and the two reasons often differ.
+POINT: The CRM loss reason often differs from the buyer reason. Win/loss used to be too slow to fix that. AI now reads the buyer evidence teams already store, so the bottleneck moves to checking it.
 Talk Track:
 Here is the workflow for this module.
 A deal closes, won or lost.
@@ -118,10 +119,19 @@ Someone types a reason into the CRM. Usually the sales rep, at the end of a busy
 A win/loss program asks the buyer instead.
 Two win/loss firms, Clozd and Corporate Visions, both say in 2026 pages that the CRM reason often differs from what the buyer says.
 Both sell win/loss services. So treat this as their experience, not a study.
-Corporate Visions also says a manual program is slow.
+Corporate Visions also says a manual program is slow. So does a Klue product marketer, in a first-hand account.
 Someone books the calls, takes notes, codes them and writes a quarterly report.
 By the time the report lands, the chance to act has passed.
 So many teams act on the CRM field alone.
+That is changing.
+Most buyer conversations are now stored: recorded sales calls, emails, interview transcripts.
+Win/loss tools now run the same analysis on recorded sales calls as on buyer interviews. Clozd documents this for Gong calls.
+Our course view: AI can read that stored evidence, pull out themes and sentiment, and speed win/loss up a lot.
+Pair it with buyer interviews. Here is why.
+On a sales call, the buyer talks to the seller. That can carry the same bias as the CRM field.
+In an interview after the decision, the buyer talks to a neutral person. That is where the real reason often comes out.
+So the bottleneck moves. Reading is fast now. Checking what the AI read is the new work, and that is your job today.
+Data safety: call recordings and emails hold customer data and PII. Use only a tool your company has approved for that data.
 At Larkspan, our case company, the Head of Product asks it plainly: "Why do we lose deals? Sales says price. Is that what buyers say?"
 [OPTIONAL STORY SLOT, 1 MINUTE. Topic: a sales leader who changed a pricing plan from CRM loss reasons, and what the buyers really said. Use only a story from Pragmatic's work with companies or from a client team. Tell it as their story, never as your own. If you have no such story, skip this slot and spend the minute on the Larkspan question.]
 [IF ASKED FOR A NUMBER] Vendor figures exist. None has a dated primary study, so we do not use them.

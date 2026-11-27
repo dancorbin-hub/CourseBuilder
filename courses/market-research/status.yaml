@@ -24,7 +24,7 @@ settings:
   capability_map: off
 fingerprints:         # approved item -> content hash. A change to a fingerprinted item needs Dan's yes. Gate 1, 2026-11-22
   research/worked-example-row.yaml: sha256:a0f9c041b50acdd3   # v4, Gate 2 decision 9, 2026-11-22
-  research/workflows.yaml: sha256:5bc6f835f10b0a90   # rows 01 and 02, Gate 2 decisions 7 and 9, 2026-11-22
+  research/workflows.yaml: sha256:2e572d035c087d41   # rows 01 and 02, Gate 2 decisions 7 and 9, 2026-11-22; W4, W5 added Dan yes 2026-11-27 (m2 D1 C)
   research/research-brief.md: sha256:05ca8037c5d6bc48
   research/gate-1-packet.md: sha256:d8bde3cc4829bbf3
   research/gate-1-decisions.md: sha256:d3285a843bb9e7fb
