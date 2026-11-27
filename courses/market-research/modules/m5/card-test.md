@@ -4,7 +4,7 @@ Course: `market-research`. For Dan (Gate 3). Builder draft 2026-11-27, revised o
 
 Gate 2 proof P3 covers modules 4 and 5 (spec `gate_2_proof_patterns`). This sheet records the module 5 part of P3: the cited answer, the old-research error, proposals by segment, the rebuild from kit-m5 in about 5 minutes, and the Copilot no-license fallback for module 5. It also records the share stretch on the Claude and ChatGPT cards (doc-checked 2026-11-27, not yet tested by the course team; Copilot and Gemini are plan only) and the Monday plan timing.
 
-Module 4 is not built. Until it is, build the start state from `kit/kit-m5-draft/` (brief v5, driver log, map), the other 7 knowledge files from `modules/m3/kit/kit-m4/`, and `proof/job-card-alternatives-map.md` (decision D1). Record that you did.
+Build the start state from `modules/m4/kit/kit-m5/` (brief v5 and 10 knowledge files), or use your agent after the module 4 card test.
 
 ## How to test
 

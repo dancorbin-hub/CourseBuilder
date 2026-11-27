@@ -1,12 +1,12 @@
 # Module 4: First hand-off: the alternatives map from your own deals
 
-Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Case year is 2027 (`case/year-shift-map.md`). Real source and vendor dates stay 2026. Built from `spec.yaml` (Gate 2, approved 2026-11-26; module 4 entry, `stretch_scope`, `copilot_no_license_fallback`, `platform_matrix_summary.stretch_verification`, `gate_2_proof_patterns` P3), `outline/development-brief.md`, `outline/gate-2-decisions.md` (decisions 6, 8, 10), the case files, `research/stretch-verification-2026-11.md`, Dan's OI-05 example (`modules/m4/example-oi-05.md`), the approved module 1 and the module 2, 3 and 5 drafts in review (decisions and revision notes). Starts from `modules/m3/kit/kit-m4/`. Ends at `kit/kit-m5/`, built to match the contract `modules/m5/kit/kit-m5-expected.md`.
+Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Revised once on 2026-11-27 after the consistency and verifier reports (`revision-notes.md`). Case year is 2027 (`case/year-shift-map.md`). Real source and vendor dates stay 2026. Built from `spec.yaml` (Gate 2, approved 2026-11-26; module 4 entry, `stretch_scope`, `copilot_no_license_fallback`, `platform_matrix_summary.stretch_verification`, `gate_2_proof_patterns` P3), `outline/development-brief.md`, `outline/gate-2-decisions.md` (decisions 6, 8, 10), the case files, `research/stretch-verification-2026-11.md`, Dan's OI-05 example (`modules/m4/example-oi-05.md`), the approved module 1 and the module 2, 3 and 5 drafts in review (decisions and revision notes). Starts from `modules/m3/kit/kit-m4/`. Ends at `kit/kit-m5/`, built to match the contract `modules/m5/kit/kit-m5-expected.md`.
 
 ## 1. Summary
 
 | Item | Value |
 | --- | --- |
-| Workflow row and bottleneck | mr-wf-10. Keep the alternatives map current from the team's own evaluator and deal evidence. Bottleneck: keeping the competitive picture current is recurring work that no one has time for, and hand-built documents age fast (N13, W21 weak). Teams track named competitors and miss the workarounds and "do nothing" that buyers choose. Gap: no source on an alternatives map built from own deal evidence. Dan's Pragmatic client example fills the example slot (OI-05, closed) |
+| Workflow row and bottleneck | mr-wf-10. Keep the alternatives map current from the team's own evaluator and deal evidence. Bottleneck: keeping the competitive picture current is recurring work that no one has time for, and competitor documents age fast (N13, W21 weak). Teams track named competitors and miss the workarounds and "do nothing" that buyers choose (no source; recorded gap). Gap: no source on an alternatives map built from own deal evidence. Dan's Pragmatic client example fills the example slot (OI-05, closed) |
 | Framework category and focus area | Market. Competitive Landscape |
 | Capability Standards (as in spec) | Confirmed by Dan, Pragmatic to confirm. Skill 1.2 Market Segmentation. Competency 1.2A. Gap: the Competitive Landscape box has primary skill 2.2 (capability 2). 1.2 is a secondary skill on the box. The course does not claim 2.2 |
 | Rung | 3, Hand-off between jobs. The win/loss job hands its driver log to the map job. A hand-off rule says what passes and what stops. Second agent: stretch, Claude and ChatGPT cards only, manual file hand-off, not yet tested by the course team |
@@ -31,7 +31,7 @@ Full day and half days use the same 55 minutes (spec module 4 has no `half_day` 
 
 ### Slide text check (36 pt on the wide master)
 
-Rule used: the on-slide body text of each slide is 300 characters or fewer and 8 short lines or fewer, so it fits 36 pt body text on the wide master. Layout tags ("ACTIVITY", "DEBRIEF", "LIVE DEMO") and minutes are not counted. Longest bodies: 4.11 data safety (300), 4.14 reveal (248, shown on click), 4.9 lab brief (235). Measured with a script on 2026-11-27. The full steps are only on the cards in the workbook (Dan's lab brief slide rule; module 1 Gate 4 decision G4-1).
+Rule used: the on-slide body text of each slide is 300 characters or fewer and 8 short lines or fewer, so it fits 36 pt body text on the wide master. Layout tags ("ACTIVITY", "DEBRIEF", "LIVE DEMO") and minutes are not counted. Longest bodies: 4.11 data safety (300), 4.9 lab brief (297), 4.14 reveal (248, shown on click). Measured with a script on 2026-11-27. The full steps are only on the cards in the workbook (Dan's lab brief slide rule; module 1 Gate 4 decision G4-1).
 
 ### Builder decisions inside the spec
 
@@ -39,40 +39,42 @@ Rule used: the on-slide body text of each slide is 300 characters or fewer and 8
 | --- | --- | --- |
 | B1 | The lab 4 hand-off rule lives in the brief, "My rules" 4. The job card points to it: step 1 "Map it only as "My rules" allow" and the hand-off rule "A deal that a hand-off rule in "My rules" stops." Card step 2 writes rule 4. Card step 6 fixes rule 4 | Same place as the lab 1 to 3 rules, so card steps 2 and 6 edit the instructions, not a knowledge file (a knowledge file edit needs a re-upload on every platform). It matches the `kit-m5-expected.md` default and the module 5 draft (brief v5 rule 4, lab 5 rule 5). See D1 |
 | B2 | The job card holds 2 of the 3 spec hand-off rules: "An alternative that is not in the map" and "A segment where "do nothing" or a workaround is the top alternative". The third spec rule (CRM competitor and buyer differ) enters through the learner's fixed rule 4. After the fix, the agent has all 3 | The Gate 2 proof card (`proof/job-card-alternatives-map.md`) leaves the third rule to the PM. With the mismatch rule in the template, the planted error could not reach the audit. See D2 |
-| B3 | The map job also writes the updated driver log (job card step 6, output 5: add the new deals, do not recount match rates). The log save card saves 2 files: the map and the driver log | Module 5 D2: lab 5 Q1 and Q4 need the Q3 deals in the agent. See D3 |
+| B3 | The map job also writes the updated driver log (job card step 6, output 5: add the new deals, do not recount match rates). The log save card saves 2 files: the map and the driver log | Module 5 D2: lab 5 Q1 and Q4 need the Q3 deals in the agent. See D4 |
 | B4 | The lab brief is 3 short Activity slides: 4.9 goal, 6 key actions and the workbook pointer; 4.10 done when and the hint; 4.11 data safety. Full steps only on the step cards | Dan's lab brief slide rule (2026-11-27) and the 36 pt rule. The standard data safety text and the module 4 deal data line do not fit on 4.10 with the success check at 36 pt |
 | B5 | "Which alternative must you beat in each segment?" is asked on 4.13 while the rerun runs, and recorded in section 5 of the record sheet. The reveal (4.14) gives the case answer for Food service | The spec debrief minutes add up to 8 without it. Objective m4-o4 still gets practice. Same pattern as module 2 B3 and module 3 B3 |
-| B6 | The check sample result on 4.15 comes from a tuned instructor project built from `kit-m5` before class. The live demo runs on the untuned brief | A result from the untuned brief cannot show the pass condition. Same as module 3 B4. See D9 |
-| B7 | No audit hint. Step 5 picks 3 map entries at random. The record sheet checklist is neutral. The demo points to ALT-04 (do nothing), not ALT-01 (Rimecore). The step 2 examples on the record sheet and slide 4.7 name no blank cell and no CRM field | Module 1 D11: the audit hint was for lab 1 only. Warning level for lab 4 is "hint" |
-| B8 | Second-agent stretch: Claude and ChatGPT cards only, manual file hand-off, after class, headed "Stretch (vendor doc checked, not yet tested)". Copilot and Gemini cards: the standard `stretch_scope` line. Slide 4.8 names the gap once | `research/stretch-verification-2026-11.md` section 4 (module 4 table). Same marking as module 3 D1 and module 5 B16. See D5 |
-| B9 | No schedule stretch on the module 4 cards | The module 3 Claude schedule stretch is not tested yet. A Cowork project imported in module 3 does not hold the map job card. A 25-minute lab has no room for it. See D6 |
-| B10 | Slide 4.2 shows only "Hand-built competitor documents age fast" (N13 primary Wynter 2026, W21 weak; independent). "One task among many" (N13 only) is in the talk track, attributed. "Buyers choose do nothing more often than teams track" is not on a slide as a claim (no source, recorded gap) | Research rule 2. Same pattern as module 3 D7 and module 5 B14 |
-| B11 | The required example (OI-05) is on 4.3 as Pragmatic's client story, with no client name, dates, values or people | Gate 2 decision 6, decision 43, `example-oi-05.md` guardrails. See D11 |
-| B12 | `kit-m5` copies the 3 drafts in `modules/m5/kit/kit-m5-draft/` with no change (brief v5 3,491, driver log 7,616, map 3,286) and 7 kit-m4 files with no change. The driver code book stays the case file: no "controller alarms" row | Contract `kit-m5-expected.md`. The map holds controller alarms as ALT-03 (substitute) since lab 2. See D4 |
-| B13 | The `kit-m5` Copilot fallback text holds brief v5 and the map job card only (5,388). The map goes in chat | Brief v5 + job card + Q3 map = 8,681 with the header, over the 8,000 limit (mb-01). The lab 4 fallback text follows the spec (brief v4, job card and the Q2 map: 7,419). See D7 |
+| B6 | The check sample result on 4.15 comes from a tuned instructor project built from `kit-m5` before class. The live demo runs on the untuned brief | A result from the untuned brief cannot show the pass condition. Same as module 3 B4. See D6 |
+| B7 | No audit hint. Step 5 audits 3 map entries: every entry labeled growing or fading first, then random picks up to 3 (revise once, consistency F5). The rule is a manager rule ("audit what moved"), not a pointer: before the fix it covers Rimecore, do nothing and controller alarms alike. The record sheet checklist is neutral. The demo points to ALT-04 (do nothing), not ALT-01 (Rimecore). The step 2 examples on the record sheet and slide 4.7 name no blank cell and no CRM field | Module 1 D11: the audit hint was for lab 1 only. Warning level for lab 4 is "hint". A pure random pick of 3 of 4 entries missed Rimecore for 1 learner in 4. See D3 |
+| B8 | Second-agent stretch: Claude and ChatGPT cards only, manual file hand-off, after class, headed "Stretch (vendor doc checked, not yet tested)". Copilot and Gemini cards: the standard `stretch_scope` line. Slide 4.8 names the gap once | `research/stretch-verification-2026-11.md` section 4 (module 4 table). Same marking as module 3 D1 and module 5 B16. Revise once: file-only hand-off kept, with a card note. See D5 |
+| B9 | No schedule stretch on the module 4 cards | The module 3 Claude schedule stretch is not tested yet. A Cowork project imported in module 3 does not hold the map job card. A 25-minute lab has no room for it. See D7 |
+| B10 | Slide 4.2 shows only "Competitor documents age fast" (N13 primary Wynter 2026: battlecards go stale; W21 weak: documents age quickly; independent). "Hand-built" (W21 only) is off the slide (verifier F3). "A side job" (N13 only) is in the talk track, attributed. "Buyers choose do nothing more often than teams track" is not on a slide as a claim (no source, recorded gap) | Research rule 2. Same pattern as module 3 D7 and module 5 B14. See D10 |
+| B11 | The required example (OI-05) is on 4.3 as Pragmatic's client story, with no client name, dates, values or people | Gate 2 decision 6, decision 43, `example-oi-05.md` guardrails. See D8 |
+| B12 | `kit-m5` copies the 3 drafts in `modules/m5/kit/kit-m5-draft/` with no change (brief v5 3,491, driver log 7,616, map 3,286) and 7 kit-m4 files with no change. The driver code book stays the case file: no "controller alarms" row | Contract `kit-m5-expected.md`. The map holds controller alarms as ALT-03 (substitute) since lab 2. See D11 |
+| B13 | The `kit-m5` Copilot fallback text holds brief v5 and the map job card only (5,388). The map goes in chat | Brief v5 + job card + Q3 map = 8,681 with the header, over the 8,000 limit (mb-01). The lab 4 fallback text follows the spec (brief v4, job card and the Q2 map: 7,419). See D12 |
 | B14 | The debrief rerun runs in a new chat with the evidence pack: "In a new chat, send the evidence pack with the prompt "Run the alternatives map job"." | A new chat is the only way to be sure the fixed brief applies on all 4 platforms. Same as module 1 D1 and module 3 B1 |
-| B15 | The card pass condition (second sample, run after class) names D-4102 and D-4104 but gives no reason text | The card is in the workbook before the lab. A reason ("CRM says Vantafrost") would point at the planted error. See D8 |
+| B15 | The card pass condition (second sample, run after class) names D-4102 and D-4104 but gives no reason text | The card is in the workbook before the lab. A reason ("CRM says Vantafrost") would point at the planted error. See D9 |
 | B16 | The demo writes a neutral draft rule 4: "Pass only lost deals to the map. Won deals stay in the driver log." | Shows the shape of a hand-off rule between jobs without pointing at the planted error |
 
 ### Decisions for Dan
 
-Open decisions for the Gate 3 doc, most important first. One line each, with a recommendation.
+Open decisions for the Gate 3 doc, most important first. One line each, with a recommendation. Revised once on 2026-11-27 (`revision-notes.md` maps the old numbers).
 
 | # | Decision | Recommended |
 | --- | --- | --- |
-| D1 | Where the lab 4 hand-off rule lives. A: brief "My rules" 4, the job card points to it (built). B: in the job card (learners re-upload a knowledge file in steps 2 and 6; module 5 renumbers its rule to 4) | A. Matches the module 5 draft as it is |
+| D1 | Where the lab 4 hand-off rule lives. A: brief "My rules" 4, the job card points to it (built). B: in the job card (learners re-upload a knowledge file in steps 2 and 6; module 5 renumbers its rule) | A. Module 5 is built on it |
 | D2 | The job card holds 2 of the 3 spec hand-off rules. The CRM-and-buyer mismatch rule enters through the learner's fixed rule 4, so the planted error can reach the audit | A. Needs change 1 |
-| D3 | The log save card saves the driver log with the Q3 rows, as well as the map (module 5 D2 option A). The job card writes both | A |
-| D4 | "Controller alarms" is not added to the driver code book. The map holds it as ALT-03. B: add a row to the kit driver code book (kit and kit-final differ from the fingerprinted case file) | A: no change |
-| D5 | Second-agent stretch on the Claude and ChatGPT cards: a second project runs the map job on the driver log file from the first project. After class, "not yet tested by the course team". Your tests 3 and 4 in `stretch-verification-2026-11.md` decide it | A: keep, marked. Needs change 2 |
-| D6 | No schedule stretch on the module 4 cards (spec stretch item 1) | A. Needs change 3 |
-| D7 | `kit-m5` Copilot no-license text: map in chat, not in Instructions (over 8,000 with it). The lab 4 text follows the spec | A |
-| D8 | Card pass condition names D-4102 and D-4104 with no reason text, and says "run this after class" (as module 3 D14) | A. Same spec change as module 3 change 3 |
-| D9 | Check sample on 4.15 shown from a tuned instructor project built from `kit-m5` before class | A. Needs change 4 |
-| D10 | A learner's own saved driver log may keep the Part 1 D-3108 quote ("Rimecore's demo had fewer alerts..."). `kit-m5` uses the WL-3108 quote (module 5 D7). Lab 5 Q4 needs D-3108 on alert accuracy, which both have | A: accept. Module 5 builder checks its Q4 talk track |
-| D11 | The Pragmatic client story on 4.3 (`example-oi-05.md`): confirm Pragmatic is fine with it in licensed course content | Confirm before Gate 3 approval |
-| D12 | Lab brief as 3 short slides (4.9 to 4.11) so each fits 36 pt | A |
-| D13 | The live demo runs on the lab data with the untuned brief, so the planted error may show on screen. The instructor does not comment (module 3 pattern) | A |
+| D3 | Audit pick: every entry labeled growing or fading first, then random picks up to 3 (spec says 3 random). Every learner audits what moved, so no one misses the planted entry by chance | A. Needs change 5 |
+| D4 | The log save card saves the driver log with the Q3 rows and the map (module 5 D2 option A). The job card writes both | A |
+| D5 | Second-agent stretch on the Claude and ChatGPT cards only: a second project runs the map job on the driver log file alone (file-only hand-off, with a card note). After class, "not yet tested by the course team". Your stretch tests 3 and 4 decide it | A: keep, marked. Needs change 2 |
+| D6 | Check sample on 4.15 shown from a tuned instructor project built from `kit-m5` before class | A. Needs change 4 |
+| D7 | No schedule stretch on the module 4 cards (spec stretch item 1) | A. Needs change 3 |
+| D8 | Pragmatic client story on 4.3: confirm Pragmatic is fine with it in licensed course content | Confirm before Gate 3 approval |
+| D9 | Card pass condition names D-4102 and D-4104 with no reason text, and says "run this after class" (as module 3 D14) | A. Same spec change as module 3 change 3 |
+| D10 | Slide 4.2 says "Competitor documents age fast" (2 sources). B: keep "Hand-built" with W21 alone (weak) | A |
+| D11 | "Controller alarms" is not added to the driver code book. The map holds it as ALT-03 | A: no change |
+| D12 | `kit-m5` Copilot no-license text: map in chat, not in Instructions (8,681 with it, over 8,000). The lab 4 text follows the spec | A |
+| D13 | A learner's own saved driver log may keep the Part 1 D-3108 quote. `kit-m5` uses the WL-3108 quote (module 5 D7). Lab 5 Q4 needs only D-3108 on alert accuracy | A: accept |
+| D14 | Lab brief as 3 short slides (4.9 to 4.11) so each fits 36 pt | A |
+| D15 | The demo runs the untuned brief on the lab data, so the planted error may show. The instructor does not comment (module 3 pattern) | A |
 
 ### Changes needing Dan's yes
 
@@ -81,11 +83,16 @@ None of these are made. Each waits for your yes.
 | # | File (fingerprinted or approved) | Change | Why |
 | --- | --- | --- | --- |
 | 1 | `spec.yaml`, module 4 `lab.handoff_rules` | Add a note: "The job card holds rules 1 and 3. Rule 2 (CRM competitor and buyer differ) is the learner's fix, rule 4 in the brief ("My rules"). After lab 4 the agent has all 3" | Only if D2 is A |
-| 2 | `spec.yaml`, module 4 `stretch` item 2 | "Build the map job as a second agent that reads the first agent's output file. Only on step cards where verified" becomes "Manual hand-off, Claude and ChatGPT cards: a second project runs the map job on the driver log file from the first project. After class. Vendor doc checked 2026-11-27, not yet tested by the course team. Copilot and Gemini: standard line (stretch_scope)". The `stretch_scope` rule change is module 3 change 4 (doc now, test pending) | Only if D5 is A |
-| 3 | `spec.yaml`, module 4 `stretch` item 1 | "Run the map job on each new win/loss batch. Schedule stretch..." becomes "Not on the module 4 cards. The module 3 Claude schedule stretch covers the schedule" | Only if D6 is A |
-| 4 | `spec.yaml`, module 4 `arc` (debrief) and `check_sample` | "the m4-check-sample.md result from the demo run" becomes "the m4-check-sample.md result from a tuned instructor project (kit-m5), run before class" | Only if D9 is A |
-| 5 | `case/expected-results.md`, kit state row kit-m5 | Same as module 5 change 1 (Q3 driver log rows, D-3102 and D-3108 read from the interviews). Not a new change | Already listed by module 5 |
-| 6 | Module 5 files (in review, not approved): `kit/kit-final/job-card-alternatives-map.md` and `.txt`, `kit/kit-final/README.md`, `module.md` section 8, `kit/kit-m5-expected.md` status words | Replace the placeholder job card with `modules/m4/kit/kit-m5/job-card-alternatives-map.md` (1,497). Set its README count. Mark the contract rows met. Point module 5 materials to `modules/m4/kit/kit-m5/` | The contract asks for it. Module 5 is not mine to edit |
+| 2 | `spec.yaml`, module 4 `stretch` item 2 | "Build the map job as a second agent that reads the first agent's output file. Only on step cards where verified" becomes "Manual file hand-off, Claude and ChatGPT cards: a second project runs the map job on the driver log file from the first project. After class. Vendor doc checked 2026-11-27, not yet tested by the course team. Copilot and Gemini: standard line (stretch_scope)". The `stretch_scope` rule change is module 3 change 4 (doc now, test pending) | Only if D5 is A |
+| 3 | `spec.yaml`, module 4 `stretch` item 1 | "Run the map job on each new win/loss batch. Schedule stretch..." becomes "Not on the module 4 cards. The module 3 Claude schedule stretch covers the schedule" | Only if D7 is A |
+| 4 | `spec.yaml`, module 4 `arc` (debrief) and `check_sample` | "the m4-check-sample.md result from the demo run" becomes "the m4-check-sample.md result from a tuned instructor project (kit-m5), run before class" | Only if D6 is A |
+| 5 | `spec.yaml`, module 4 `card_steps` step 5; `research/workflows.yaml` mr-wf-10 `audit` | "Audit 3 random map entries..." becomes "Audit 3 map entries, every growing or fading entry first, then at random, against the interviews and deal records" | Only if D3 is A |
+| 6 | `research/platform-matrix.yaml` | As in the module 4 verifier report, last section: cl-pj-01 (source_date 2026-11-06, Free 5 projects), cl-ui-09 (checked 2026-11-27), cl-fo-06 (source_date 2026-11-24, plain text output, download from the conversation), cg-01 (about 2026-11-26, unlimited projects), cg-ui-09 (new path: **+** next to **Projects**, **Create project**; **•••** > **Project settings** > **Instructions**), cg-03 (new URL and title; **+**, **Add photos & files**; Go and Plus 25 files; remove the "Plus 20" conflict), cg-08 (checked 2026-11-27, stays partly verified) | The cards use these names. Verifier proposal |
+| 7 | `research/needs.md` N13 and `research/workflows.yaml` W21 | N13: checked_on 2026-11-27; Wynter wording "PMM owns it on the side" (52%), battlecards go stale; no wording on hand-built work. W21: checked_on 2026-11-27; "Originally published at seeto.ai"; only source for "hand-built" | Verifier proposal |
+| 8 | `modules/m1/course-open.md` (approved), line 268, ChatGPT build check step 1; and `m1/slides.json` or the workbook if they carry it | "Select **New project** in the sidebar." becomes "In the sidebar, select **+** next to **Projects**. Name it "Market Evidence Agent", then select **Create project**." Modules 2, 3 and 5 have no hit for the old path (grep 2026-11-27) | OpenAI page changed about 2026-11-26 (module 4 verifier F1) |
+| 9 | `case/expected-results.md`, kit state row kit-m5 | Same as module 5 change 1 (Q3 driver log rows, D-3102 and D-3108 read from the interviews). Not a new change | Already listed by module 5 |
+
+The module 5 side of the hand-over (old change 6) is done in this revision. See `revision-notes.md`, "Module 5 hand-over edits".
 
 ### Contract check: kit-m5 against `modules/m5/kit/kit-m5-expected.md`
 
@@ -112,7 +119,7 @@ Contract section 3 answers:
 2. Exact text: "Lab 4: The alternative chosen comes from the buyer's interview. If the driver log cell is blank, read the interview. Never fill it from the CRM competitor field. If the CRM field and the buyer differ, send the deal to the flag report." (`case/planted-errors.md`, lab 4.)
 3. Yes. The log save card saves the driver log with the Q3 rows, and the map.
 4. Final job card: `kit/kit-m5/job-card-alternatives-map.md` (1,497).
-5. No. "Controller alarms" is not added to the driver code book.
+5. No. "Controller alarms" is not added to the driver code book (D11).
 6. Counts: section 8.
 
 ## 2. Slides and talk track
@@ -140,19 +147,21 @@ TRANSITION: First, why the map matters.
 ### Slide 4.2: Lost to whom?
 - Layout: Blank
 - Minutes: 2
-- On-slide text: Headline: "Lost to whom?" Line: "Hand-built competitor documents age fast." Workflow strip: "Lost deals and buyer interviews, then a checked alternatives map."
+- On-slide text: Headline: "Lost to whom?" Line: "Competitor documents age fast." Workflow strip: "Lost deals and buyer interviews, then a checked alternatives map."
 - Visual intent: Headline in navy, "whom" in orange. One short line. A left-to-right strip: a deal card and an interview note, then a map with 4 tiles (competitor, substitute, workaround, do nothing). No numbers.
 - Sources: N13 (Wynter, State of Competitive Intelligence in B2B SaaS, May 2026, primary; via `research/needs.md`) and W21 (DEV Community, 2026-02-10, verified weak). Independent of each other. No figure from either (B10)
 
 Notes:
 ```
-POINT: Teams keep a competitor list by hand, it ages fast, and it rarely shows what lost buyers really chose.
+POINT: A competitor list ages fast, and it lists companies, not what lost buyers chose.
 Talk Track:
 Here is the workflow for this module.
 A deal is lost. Somebody asks: lost to whom?
-Most teams answer from a competitor list. Somebody built it by hand, a while ago.
-A 2026 Wynter survey of B2B SaaS product marketers found that for many, competitive work is one task among many.
-The same survey, and a 2026 article by the maker of a competitive analysis tool, say the same thing: hand-built competitive documents go stale fast.
+[ASK: "Where does your team's answer come from?" TAKE 1 ANSWER]
+Often the answer comes from a competitor list, built a while ago.
+A 2026 Wynter survey of B2B SaaS product marketers found that for about half of them, competitive work is a side job.
+The same survey found that battlecards go stale fast.
+A 2026 article, first published on a competitive analysis tool's site, says competitive documents built by hand age quickly.
 And a competitor list has a blind spot.
 It lists companies. It does not list what buyers do when they buy no one.
 We found no published study on how often that happens. Your own deals will tell you.
@@ -163,11 +172,11 @@ No public sources. No competitor websites. Only what buyers did.
 TRANSITION: Here is what that blind spot looked like for one Pragmatic client.
 ```
 
-### Slide 4.3: "We built it ourselves"
+### Slide 4.3: They built it themselves
 - Layout: Blank
 - Minutes: 3
-- On-slide text: Headline: "We built it ourselves." Lines: Not on any competitor list. Track it as an alternative. Watch if the buyer comes back.
-- Visual intent: Headline as a quote in large type. Two simple tiles: "Built in-house" and "Came back for part of the need", joined by a curved return arrow. No logos, names or dates.
+- On-slide text: Headline: They built it themselves. Lines: Not on any competitor list. Track it as an alternative. Watch if the buyer comes back.
+- Visual intent: Headline in large type, not styled as a quote (no quote marks: the client's words are not on record). Two simple tiles: "Built in-house" and "Came back for part of the need", joined by a curved return arrow. No logos, names or dates.
 - Sources: Pragmatic client story, from Dan (OI-05, closed 2026-11-27; `modules/m4/example-oi-05.md`). Required example slot (Gate 1 decision f, Gate 2 decision 6)
 
 Notes:
@@ -320,7 +329,7 @@ TRANSITION: Here is your lab.
 ### Slide 4.9: Lab 4 brief
 - Layout: Activity
 - Minutes: 2
-- On-slide text: ACTIVITY. Lab 4: Add the alternatives map job. Goal: Map what buyers chose, from your own deals. Key actions: Add the job. Write a hand-off rule. Run the evidence pack. Decide each flag. Audit 3 entries. Fix your rule. Footer: "Full steps: your step card in the workbook."
+- On-slide text: ACTIVITY. Lab 4: Add the alternatives map job. Goal: Map what buyers chose, from your own deals. Key actions: Add the job. Write a hand-off rule. Run the evidence pack. Decide each flag. Audit 3 entries. Fix your rule. Footer: "Full steps: your step card in the workbook (Pragmatic Learning Hub)."
 - Visual intent: Orange "ACTIVITY" band. Goal at the top. 6 short key actions in large type. Workbook pointer in the footer. Nothing else on the slide.
 - Sources: none
 
@@ -353,7 +362,7 @@ Talk Track:
 The goal of this activity is to know what done looks like before you start.
 Every map entry shows its source type, and links to a deal ID or an interview ID.
 Each "growing" or "fading" label names the two periods and the counts in each.
-Each flag has your decision. You audited 3 entries, picked at random, and fixed your hand-off rule.
+Each flag has your decision. You audited 3 entries, the ones that moved first, and fixed your hand-off rule.
 [POINT TO THE ORANGE BOX]
 Audit before you approve.
 TRANSITION: One more thing before the rooms open: what is in a deal record.
@@ -396,10 +405,10 @@ The goal of this activity is to run one full turn of the manager loop on your ag
 [AT MINUTE 2: ANYONE WHO HAS NOT ADDED THE 2 FILES GETS HELP FIRST]
 [AT MINUTE 5: "Send the evidence pack now, even if your rule is a draft."]
 [AT MINUTE 11: "Decide your flags now. Then start the audit."]
-[AT MINUTE 14: "Start your audit. Number the map entries. Pick 3 at random. Open every evidence row they list."]
+[AT MINUTE 14: "Start your audit. Take every entry labeled growing or fading. Add random picks up to 3. Open every evidence row they list."]
 [AT MINUTE 21: "Fix your rule now, even if your audit is not done. The rerun is in the debrief."]
 [COMMON FAILURES AND RECOVERY: SEE SECTION 9]
-[DO NOT REVEAL THE ERROR. IF A LEARNER ASKS "IS THIS IT?", ASK: "What did the buyer say they chose? Where did the map's answer come from?"]
+[DO NOT REVEAL THE ERROR. IF A LEARNER ASKS "IS THIS IT?", ASK: "Which evidence rows did you open? What do they say?"]
 TRANSITION: [CLOSE ROOMS AT MINUTE 25] Bring your record sheet. Keep your agent open.
 ```
 
@@ -447,6 +456,7 @@ The interview, WL-3108, says this: "In the end we didn't buy anything; we kept t
 The agent filled the blank from the CRM. So Rimecore went from 2 deals in Q2 to 3 in Q3. "Growing."
 The link check passed. The entry linked D-3108 and WL-3108. The source type said "buyer interview".
 Every check passed. Only reading the interview found it.
+You all audited the Rimecore entry, because it was labeled growing. Audit what moved first: a change is what you will act on.
 After your fix, D-3108 moves to do nothing.
 Rimecore: 2 in Q2, 2 in Q3. No change.
 Do nothing: 2 in Q2, 4 in Q3. Growing.
@@ -540,7 +550,7 @@ Platform: Claude (Project). Before class:
 | 7 | Point to the flag report | Flags with a blank PM decision column. Likely: do nothing is the top alternative in Food service; "Incumbent loggers" (D-3109, CRM only) is not a map entry | If a flag is missing, say: "Hand-off rules are not perfect. That is why you audit." |
 | 8 | Download the output file and save it | The file in your instructor folder | Use the rehearsal output in the debrief |
 
-Do not comment on the Rimecore count, on its change, on D-3108 or on D-3102 on screen. The demo runs on brief v4 with a neutral draft rule, so the planted error may show (Rimecore Q2 2, Q3 3, "growing"). That is the lab's planted error (module 1 decision D5 pattern; D13).
+Do not comment on the Rimecore count, on its change, on D-3108 or on D-3102 on screen. The demo runs on brief v4 with a neutral draft rule, so the planted error may show (Rimecore Q2 2, Q3 3, "growing"). That is the lab's planted error (module 1 decision D5 pattern; D15).
 
 ## 4. Lab brief
 
@@ -571,7 +581,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 2 | Write rule 4 under "My rules" in the project instructions: one hand-off rule from win/loss to the map. |
 | 3 | In a new chat, send the evidence pack with the prompt "Run the alternatives map job". |
 | 4 | Write your decision for each flag report item on your record sheet. |
-| 5 | Audit 3 map entries, picked at random, against the interviews and deal records, with your record sheet. |
+| 5 | Audit 3 map entries, growing or fading ones first, against the interviews and deal records, with your record sheet. |
 | 6 | Fix rule 4 under "My rules" for what your audit found. |
 
 **Debrief rerun:** In a new chat, send the evidence pack with the prompt "Run the alternatives map job".
@@ -585,21 +595,22 @@ Notes: No file in the answer? Check that **Code execution and file creation** (o
 **Done early:** Fill section 5 of your record sheet for a second segment. Or run the job on your own lost deals.
 
 **Stretch (vendor doc checked, not yet tested):**
-- Second agent, manual hand-off. After class. Vendor doc checked 2026-11-27. Not yet tested by the course team.
+- Second agent, manual hand-off. After class. Vendor doc checked 2026-11-27. Not yet tested by the course team. Free plan: 5 projects at most.
   1. In **Projects**, select **+ New Project**. Name it "Alternatives Map Agent".
   2. Paste your brief, with your fixed rule 4, into **Set project instructions**.
   3. Add `job-card-alternatives-map` and the lab 4 `alternatives-map` to project knowledge with **+**.
   4. In your first project, send the evidence pack with "Run the win/loss job on the Q3 deals".
-  5. Download that driver log file.
+  5. Download that driver log file. No file? Copy the driver log table into a text file.
   6. In a new chat in the second project, send the driver log file with "Run the alternatives map job".
-  Pass: each map entry links to a deal ID or interview ID. The second project sees only the file you send. That file is the hand-off.
+  Pass: each map entry links to a deal ID or interview ID.
+  Note: the second project sees only the file you send. That file is the hand-off. It has no interviews, CRM export or backlog. So your rule 4 interview check runs in the first project, and the map has no backlog links. Do not save the first project's driver log back to your agent. The win/loss job recounts its match rates.
 - The schedule stretch step is not on this card in module 4.
 
 ### Card: ChatGPT
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the Project "Market Evidence Agent" from module 3. Plan: Go or Plus or higher. Lost or behind? Rebuild it from `kit-m4` first.
 - Saves: As you go.
-- Check date and vendor doc: Core steps use the same screen names as the module 3 card (checked 2026-11-27). OpenAI Help Center, "Projects in ChatGPT" (https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt, "Updated: 3 days ago" when seen 2026-11-26, cg-ui-09). Stretch: `research/stretch-verification-2026-11.md` (ChatGPT manual file hand-off, rows cg-01 and cg-ui-09 verified; file download cg-08 partly verified: OpenAI Academy, "Working with files", last updated 2026-09-04; checked 2026-11-27). Module 4 verifier rechecks.
+- Check date and vendor doc: Core steps use the same screen names as the module 3 card (checked 2026-11-27). OpenAI Help Center, "Projects in ChatGPT" (https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt, "Updated: 19 hours ago" when seen 2026-11-27, about 2026-11-26, cg-ui-09; new project path changed to **+** next to **Projects**, then **Create project**). "Uploading files and audio to ChatGPT" (https://help-lb.openai.com/en/articles/8555545-uploading-files-and-audio-and-video-in-chatgpt, about 2026-11-26, cg-03) for **+** and **Add photos & files**. Stretch: `research/stretch-verification-2026-11.md` (ChatGPT manual file hand-off, rows cg-01 and cg-ui-09 verified; file download cg-08 partly verified: OpenAI Academy, "Working with files", last updated 2026-09-04; checked 2026-11-27). Module 4 verifier rechecks.
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Get consent before you record an interview. Agree confidentiality for win/loss. Deal records hold customer names, deal values and competitor prices.
 
 | Step | Do this |
@@ -608,7 +619,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 2 | Write rule 4 under "My rules" in **Project settings**: one hand-off rule from win/loss to the map. |
 | 3 | In a new chat, send the evidence pack with the prompt "Run the alternatives map job". |
 | 4 | Write your decision for each flag report item on your record sheet. |
-| 5 | Audit 3 map entries, picked at random, against the interviews and deal records, with your record sheet. |
+| 5 | Audit 3 map entries, growing or fading ones first, against the interviews and deal records, with your record sheet. |
 | 6 | Fix rule 4 under "My rules" for what your audit found. |
 
 **Debrief rerun:** In a new chat, send the evidence pack with the prompt "Run the alternatives map job".
@@ -623,13 +634,13 @@ Notes: **Project settings** is in the **•••** menu of the project. No file
 
 **Stretch (vendor doc checked, not yet tested):**
 - Second agent, manual hand-off. After class. Vendor doc checked 2026-11-27. Not yet tested by the course team.
-  1. In the sidebar, select **New project**. Name it "Alternatives Map Agent".
-  2. Paste your brief, with your fixed rule 4, into **Project settings**.
+  1. In the sidebar, select **+** next to **Projects**. Name it "Alternatives Map Agent", then select **Create project**.
+  2. In **Project settings** (**•••** menu), paste your brief, with your fixed rule 4, into **Instructions**.
   3. Add `job-card-alternatives-map` and the lab 4 `alternatives-map` to the project's files.
   4. In your first project, send the evidence pack with "Run the win/loss job on the Q3 deals".
   5. Download that driver log file. No file? Copy the driver log table into a text file.
-  6. In a new chat in the second project, send the driver log file with "Run the alternatives map job".
-  Pass: same as the Claude card.
+  6. In a new chat in the second project, attach the file with **+**, then **Add photos & files**. Send "Run the alternatives map job".
+  Pass and note: same as the Claude card.
 - The schedule stretch step is not available on this platform in this course. A scheduled task in a project cannot read project files.
 
 ### Card: Copilot agent builder
@@ -645,7 +656,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 2 | Write rule 4 under "My rules" in **Instructions**: one hand-off rule from win/loss to the map. |
 | 3 | In a new chat, send the evidence pack with the prompt "Run the alternatives map job". |
 | 4 | Write your decision for each flag report item on your record sheet. |
-| 5 | Audit 3 map entries, picked at random, against the interviews and deal records, with your record sheet. |
+| 5 | Audit 3 map entries, growing or fading ones first, against the interviews and deal records, with your record sheet. |
 | 6 | Fix rule 4 under "My rules" in **Instructions** for what your audit found. |
 
 **Debrief rerun:** In a new chat, send the evidence pack with the prompt "Run the alternatives map job".
@@ -682,7 +693,7 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 2 | Write rule 4 under "My rules" in the skill **Instructions**: one hand-off rule from win/loss to the map. |
 | 3 | In a new chat, send the evidence pack with "/market-evidence-agent Run the alternatives map job". |
 | 4 | Write your decision for each flag report item on your record sheet. |
-| 5 | Audit 3 map entries, picked at random, against the interviews and deal records, with your record sheet. |
+| 5 | Audit 3 map entries, growing or fading ones first, against the interviews and deal records, with your record sheet. |
 | 6 | Fix rule 4 under "My rules" in the skill **Instructions** for what your audit found. |
 
 **Debrief rerun:** In a new chat, send the evidence pack with "/market-evidence-agent Run the alternatives map job".
@@ -725,13 +736,13 @@ Rename the new files `alternatives-map` and `driver-log` before you add them. Us
 
 | Field | Value |
 | --- | --- |
-| Objective | Extend the Market Evidence Agent with an alternatives map job that reads the win/loss job's driver log. Write a hand-off rule between the two jobs, decide each flag, trace 3 random map entries to their interviews and deal records, fix the rule, and choose the alternative to beat in one segment with its evidence (m4-o1 to m4-o4) |
+| Objective | Extend the Market Evidence Agent with an alternatives map job that reads the win/loss job's driver log. Write a hand-off rule between the two jobs, decide each flag, trace 3 map entries (growing or fading first) to their interviews and deal records, fix the rule, and choose the alternative to beat in one segment with its evidence (m4-o1 to m4-o4) |
 | Timing | Lab 25 minutes. Debrief 8 (rerun 3, reveal 2, check sample shown 1, Monday 1, log save 1). Lab brief before it: 4 minutes (3 short slides; full steps on the step cards in the workbook). Same in full day and half days. Check sample after class: about 5 minutes |
 | Setup (Zoom) | Breakout rooms by platform (Claude, ChatGPT, Copilot, Gemini), 3 to 5 learners each. Learners keep their own screen. Share only when stuck. Instructor visits rooms in turn, Copilot first |
 | Setup (in person) | Tables by platform, 3 to 5 learners. One laptop per learner. Instructor walks the tables, Copilot first |
 | Steps per platform | See section 5 (4 cards with the same 6 core steps and the same debrief rerun). No fast-start card. Stretch: second agent by manual file hand-off on the Claude and ChatGPT cards only, after class, "not yet tested by the course team". Copilot and Gemini: core path only (spec `stretch_scope`). No schedule step |
 | Materials | `kit/lab-4/` (job card, current map, Copilot fallback text, record sheet, README). Case files `m4-evidence-pack.md`, `m4-check-sample.md`. `modules/m3/kit/kit-m4/` to rebuild before the lab. `kit/kit-m5/` for catch-up after. Instructor only: `case/planted-errors.md`, `case/expected-results.md`, saved demo output, saved check sample result from the tuned project |
-| Success criteria | Every map entry shows its source type and links to a deal ID or interview ID. Each "growing" or "fading" label names the two periods and the counts. Each flag has the learner's decision. 3 random entries audited. The hand-off rule fixed. After class: the check sample passes the 5-item pass condition |
+| Success criteria | Every map entry shows its source type and links to a deal ID or interview ID. Each "growing" or "fading" label names the two periods and the counts. Each flag has the learner's decision. 3 entries audited, growing or fading first. The hand-off rule fixed. After class: the check sample passes the 5-item pass condition |
 | Debrief questions | Which alternative must you beat in each segment, and what is your evidence? Which check or audit found the error? Where did the map's answer for each deal come from? What does your fixed hand-off rule stop? |
 | Fallback path | Cannot use own work: case data. Agent lost or behind: rebuild from `kit-m4` (about 5 minutes). Platform blocked: pair with a learner on another platform. Copilot with no license: `copilot-fallback-instructions-m4.txt`, evidence pack uploaded or pasted (split at "## Part 3" if needed). Upload fails: paste the text. No file output: full tables in one message (brief rule 7). Agent does not make the error: debrief uses the saved demo output. Rerun not done: use `kit-m5/alternatives-map.md` and `kit-m5/driver-log.md` for the log save. Behind at the end: load `kit-m5` before module 5 |
 | Learner evidence | The hand-off rule as written (step 2) and as fixed (step 6). Audit findings for 3 traced entries. Flag report decisions. The alternative to beat in one segment, with its evidence. All on `lab-4-record-sheet.md` |
@@ -745,7 +756,7 @@ Character counts measured with `wc -m` on 2026-11-27. Copilot course budget (spe
 | `lab-4/job-card-alternatives-map.md` | Knowledge | 1,497 (budget 1,500) | yes |
 | `lab-4/alternatives-map.md` (copy of `case/m4-alternatives-map.md`, end of Q2 2027) | Knowledge | 2,192 (budget 2,800) | yes |
 | `lab-4/copilot-fallback-instructions-m4.txt` | Copilot Instructions, no license | 7,419 (budget 7,800; limit 8,000) | is a `.txt` |
-| `lab-4/lab-4-record-sheet.md` | Not loaded. Learner keeps it | 1,944 (not loaded) | no |
+| `lab-4/lab-4-record-sheet.md` | Not loaded. Learner keeps it | 2,110 (not loaded) | no |
 | `lab-4/README.md` | Not loaded | not counted | no |
 | `kit-m5/brief-v5.md` (copy of the module 5 draft; rule 4 is the lab 4 rule) | Instructions | 3,491 (budget 3,500) | yes |
 | `kit-m5/job-card-problem-backlog.md` (no change) | Knowledge | 1,194 | yes |
@@ -796,18 +807,20 @@ Knowledge files in the agent after module 4: 10 (4 job cards, code book, driver 
 | The agent does not make the planted error (D-3108 already do nothing) | Good. Ask the learner which line in their rule or the job card kept it out. In the debrief, show the saved demo output |
 | The agent flags D-3108 and D-3102 as "no alternative recorded" and maps neither | Not the planted error. The learner's rule stopped both blanks. Ask the learner to read both interviews and decide. D-3102 is Vantafrost; D-3108 is do nothing |
 | A learner's own CRM export holds buyer names or contact details | Stop. Remove names, contact details and deal values the company has not approved, or use the case data. Data safety slide |
+| The fixed agent also flags D-3103, D-3106, D-3107 (or D-4103): CRM competitor "None", buyer did nothing | Fine, not a failure. "None" and do nothing can read as a difference to a strict agent. The pass items are still met. The PM decides each flag |
+| Claude or ChatGPT stretch: the second project asks for interviews, the CRM export or the backlog | Expected. The file is the only hand-off (card note). Record what it does with rule 4 for the course team |
 | Claude or ChatGPT stretch: the second project shows no driver log file | The first project gave the tables in chat. Copy the driver log table into a text file and upload it. Record it for the course team |
 
 - Case notes (module builder, checked 2026-11-27 against the case files):
   1. OI-19 (owner module builder) covers lab 1 (I-201) and lab 5 (F-1108, F-1214). No lab 4 record is in it. Module 3 section 9 note 1 closes the feedback part. Nothing to add for module 4.
-  2. D-3102 (Beckton Cold Chain, Distribution) is the decoy. Its alternative is blank too, but the CRM (Vantafrost) and WL-3102 ("We went with Vantafrost.") agree. A blank cell alone is not the clue (`planted-errors.md`).
+  2. D-3102 (Beckton Cold Chain, Distribution) is the decoy. Its alternative is blank too, but the CRM (Vantafrost) and WL-3102 (the buyer says they went with Vantafrost) agree. A blank cell alone is not the clue (`planted-errors.md`).
   3. The "CRM and buyer match" column in Part 1 compares the CRM reason with the buyer's primary driver (lab 2). It is not about the competitor field. D-3108 shows "no" because the CRM reason is "Price" and the driver is alert accuracy. Learners may read it as the competitor match. Ask: "Which CRM field does that column compare?"
   4. D-3104 (Ashgrove Freight Cold) is a won deal with CRM competitor "Rimecore" (the buyer also trialed Rimecore). Won deals are not on the map. An agent that counts it for Rimecore is wrong for a different reason.
   5. D-3109 (Duncairn Logistics) is CRM only with competitor "Incumbent loggers". Mapping it to do nothing, CRM only, is correct. A flag for "not in the map" is also fine.
   6. D-3107 (Kittering Research Labs): "We kept our current loggers." Do nothing in Pharmacy and lab. Pharmacy and lab is a tie in Q3 (Rimecore 1, do nothing 1). The case gives no PM decision for the tie.
   7. ALT-03 controller alarms has 1 deal in Q2 and 0 in Q3. "Fading" is the label the case expects, with the low counts stated. The PM judges.
   8. Two Q3 buyers say they may come back: D-3106 ("We will look again in spring.") and D-3108 ("We may try again when the alert problem is fixed."). This links to the 4.3 story. Use it in the reveal only if time allows. Do not use it before the reveal.
-  9. Before the fix, the D-3108 driver log row keeps the Part 1 quote. After the fix, the agent may keep it or take a quote from WL-3108. `kit-m5/driver-log.md` uses the WL-3108 quote "Your trial sent alerts every lunch rush, and my managers gave up on it." (module 5 D7; D10 here).
+  9. Before the fix, the D-3108 driver log row keeps the Part 1 quote. After the fix, the agent may keep it or take a quote from WL-3108. `kit-m5/driver-log.md` uses the WL-3108 quote "Your trial sent alerts every lunch rush, and my managers gave up on it." (module 5 D7; D13 here).
   10. The backlog link in "what changed" (output 4): D3 alert accuracy points to P01 (alert noise); D4 compliance report fit to P02; D6 calibration to P08; D1 price and D7 timing have no backlog problem. A learner may see "do nothing" as a sign of weak willingness to pay. That is the PM's call, not the agent's.
   11. The map file calls its summary table "What moved". The job card, slides and cards say "what changed". Same table (module 3 decision D10).
 - Kept off the slides on purpose: any competitive intelligence figure (N13 has figures; the point is the blind spot). "Buyers choose do nothing more often than teams track" as a claim (no source; recorded gap). Any setup screen for a second agent or a schedule. The client's name, dates, contract or people in the 4.3 story. D-3108 and D-3102 before the debrief.

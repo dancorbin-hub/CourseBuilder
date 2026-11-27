@@ -1,6 +1,6 @@
 # Card test: module 4 (lab 4)
 
-Course: `market-research`. For Dan (Gate 3). Builder draft 2026-11-27.
+Course: `market-research`. For Dan (Gate 3). Builder draft 2026-11-27, revised once 2026-11-27.
 
 Gate 2 proof P3 covers modules 4 and 5 (spec `gate_2_proof_patterns`). This card test records the module 4 part of P3: the hand-off from the win/loss job to the map job, the planted error, the Copilot no-license fallback for module 4 (evidence pack pasted in chat), and the rebuild from kit-m5 in about 5 minutes. It also records your hands-on tests of the second-agent stretch on Claude and ChatGPT (`research/stretch-verification-2026-11.md` section 5, tests 3 and 4). No separate timing check for module 4 (Gate 2 decision 8).
 
@@ -38,7 +38,7 @@ Account or plan: ______ Code execution and file creation on: yes / no Date teste
 | Lab 4, steps 1 to 6 | | | | |
 | Map job run (run minutes) | | | n/a | |
 | Debrief rerun (target 3 minutes) | | | n/a | |
-| Log save card (2 files) | | | n/a | |
+| Log save card (2 files). Record the label to delete a project knowledge file (no Claude doc names it; verifier F11): ______ | | | n/a | |
 | Check sample (after class, target 5 minutes) | | | Items 1 to 5: | |
 | Rebuild from kit-m5 (P3, target 5 minutes) | | | n/a | |
 
@@ -50,7 +50,7 @@ Account or plan: ______ Code execution and file creation on: yes / no Date teste
 | P3-m4-d each "growing" or "fading" label names Q2 2027 vs Q3 2027 and both counts | | |
 | P3-m4-e **planted error**: D-3108 under Rimecore. Rimecore Q2 2, Q3 3, "growing". Do nothing 3 | (expected yes) | (expected no) |
 | P3-m4-f after the fix: D-3108 under do nothing. Rimecore Q2 2, Q3 2, no change. Do nothing Q2 2, Q3 4, growing. The flag report lists the D-3108 mismatch (CRM Rimecore, buyer kept the spreadsheet) | (expected no) | (expected yes) |
-| P3-m4-g flag: do nothing is the top alternative in Food service (Q3: D-3103, D-3106, D-3108 after the fix) | | |
+| P3-m4-g audit pick: the growing or fading entries before the fix are ALT-01 Rimecore, ALT-03 and ALT-04 (so the audit reaches D-3108). Flag: do nothing is the top alternative in Food service (Q3: D-3103, D-3106, D-3108 after the fix) | | |
 | P3-m4-h D-3102 under Vantafrost (decoy). Won deals (D-3104, D-3110) not on the map. No "pattern" or "validated". Match rate table not recounted | | |
 | P3-m4-i next chat reads the saved files: D-3108 shows do nothing; Rimecore Q3 = 2 | n/a | |
 
@@ -60,6 +60,7 @@ Account or plan: ______ Code execution and file creation on: yes / no Date teste
 | The first project gives the Q3 driver log as a downloadable file after "Run the win/loss job on the Q3 deals" | |
 | The second project runs the map job on that file alone. Each map entry links to a deal ID or interview ID | |
 | D-3108 in the second project's map: do nothing, Rimecore, or flagged. Record which | |
+| Does the second project ask for the interviews, CRM export or backlog? Record what it does with rule 4 (file-only hand-off, verifier F12) | |
 | Minutes for the 6 stretch steps | |
 | Your account opens projects as one conversation with a Library (cl-pj-11)? If yes, record the screen names | |
 
@@ -86,9 +87,10 @@ Account or plan: ______ Date tested: ______ Tester: ______
 
 | ChatGPT second-agent stretch (Dan, hands-on; `stretch-verification-2026-11.md` test 4) | Result |
 | --- | --- |
-| **New project**, **•••**, **Project settings** and the project files match the screen | |
+| **+** next to **Projects**, **Create project**, **•••**, **Project settings**, **Instructions**, **+** then **Add photos & files** match the screen (verifier F1) | |
 | The first project gives the driver log as a downloadable file (cg-08, partly verified). If not, the copy-to-text fallback works | |
 | The second project runs the map job on that file alone. Each map entry links to a deal ID or interview ID | |
+| Does the second project ask for the interviews, CRM export or backlog? Record what it does with rule 4 | |
 | Plan used (Go, Plus, other). Minutes for the 6 stretch steps | |
 
 ## Copilot agent builder

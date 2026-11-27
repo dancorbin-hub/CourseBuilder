@@ -1,6 +1,6 @@
 # kit-m5 draft: files built from the case
 
-Module 5 builder, 2026-11-27. Not a learner kit yet. Module 4 is not built, so kit-m5 does not exist. These are the kit-m5 files that follow directly from the case. The full list, and what module 4 still sets, is in `../kit-m5-expected.md`.
+Module 5 builder, 2026-11-27. Status 2026-11-27: delivered by module 4 in `modules/m4/kit/kit-m5/` (same text). Kept as a record. Not a learner kit. When this was written, module 4 was not built. These are the kit-m5 files that follow directly from the case. The full list, and what module 4 still sets, is in `../kit-m5-expected.md`.
 
 Use: (1) the module 4 builder copies them into `modules/m4/kit/kit-m5/` if its lab keeps them; (2) Dan can run the module 5 card test before module 4 is built. For that test, take the other 7 knowledge files from `modules/m3/kit/kit-m4/` and the map job card from `proof/job-card-alternatives-map.md`.
 

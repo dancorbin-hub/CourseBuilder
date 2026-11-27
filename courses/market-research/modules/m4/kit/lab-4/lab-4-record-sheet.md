@@ -23,9 +23,9 @@ My rule text:
 | | | | | |
 | | | | | |
 
-## 3. Audit: 3 map entries, picked at random (step 5)
+## 3. Audit: 3 map entries, the ones that moved first (step 5)
 
-Number the map entries. Pick 3 at random, for example with a random number tool. For each entry, open every evidence row it lists. Check:
+Take every entry labeled growing or fading. If that is fewer than 3, add entries at random up to 3. If it is more than 3, pick 3 of them at random. Changes are what you act on, so audit them first. For each entry, open every evidence row it lists. Check:
 
 - The deal ID is in the CRM export, with the same segment.
 - The interview ID exists for that deal.
@@ -34,6 +34,10 @@ Number the map entries. Pick 3 at random, for example with a random number tool.
 
 | Entry | Evidence row (deal ID, interview ID) | What the interview says the buyer chose | Finding |
 | --- | --- | --- | --- |
+| | | | |
+| | | | |
+| | | | |
+| | | | |
 | | | | |
 | | | | |
 | | | | |

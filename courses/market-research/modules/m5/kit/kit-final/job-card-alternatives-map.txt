@@ -1,21 +1,19 @@
-PLACEHOLDER. To be set by module 4. This is the Gate 2 proof card. Replace this file with job-card-alternatives-map from kit-m5 when module 4 is built.
-
 # Job card: alternatives map
 
 Use this job when the PM says "Run the alternatives map job".
 
-Input: the evidence pack (driver log, CRM export, win/loss interviews and problem backlog) and the current alternatives map (knowledge file).
+Input: the win/loss driver log, the CRM export and interview notes (chat or knowledge). The map and the problem backlog (knowledge). This job does not change the backlog.
 
 Steps:
 
-1. For each lost deal, find the alternative the buyer chose.
-2. Match it to an entry in the map: a named competitor, a substitute or do nothing.
-3. Count lost deals per entry, per segment and per quarter. Keep deals with a buyer interview separate from CRM-only deals.
-4. Compare the two quarters. Label each entry growing, fading or no change, with the counts for each quarter.
-5. Link each entry to its evidence rows (deal ID and interview ID).
-6. Write the updated map.
+1. For each lost deal, find the alternative the buyer chose. Map it only as "My rules" allow.
+2. Match it to a map entry: competitor, substitute, workaround or do nothing.
+3. Count lost deals per entry, segment and quarter. Keep interview and CRM-only counts apart.
+4. Compare the two quarters. Label each entry new, growing, fading or no change, with both counts.
+5. Link each entry to its evidence rows (deal ID, interview ID).
+6. Write the updated map. Add the new deals to the driver log. Do not recount match rates.
 
-Quality checks:
+Quality checks. Run them on your output before you answer:
 
 - Each map entry links to 1 or more evidence rows with a deal ID or interview ID.
 - Each entry shows its source type (buyer interview or CRM only).
@@ -25,6 +23,6 @@ Hand-off rules. Send these to the flag report:
 
 - An alternative that is not in the map.
 - A segment where "do nothing" or a workaround is the top alternative.
-- The PM adds one hand-off rule here, from the win/loss job to the map job.
+- A deal that a hand-off rule in "My rules" stops.
 
-Output order: 1. updated map, 2. counts by segment, 3. flag report, 4. what changed.
+Output order (it replaces the order in the brief): 1. Updated map. 2. Counts by segment. 3. Flag report. 4. What changed, with the backlog problem behind each reason. 5. Updated driver log.

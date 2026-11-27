@@ -1,5 +1,7 @@
 # kit-m5: what it must contain (for the module 4 builder)
 
+**Status 2026-11-27: met.** Module 4 delivered every file in `modules/m4/kit/kit-m5/`. Rows 1 to 13: met as listed, with the counts in the last column. Row 14: met, with the map in chat (module 4 D12). Section 3 answers: (1) rule 4 lives in the brief "My rules"; (2) the text is the `case/planted-errors.md` lab 4 fix; (3) yes, the log save card saves the driver log with the Q3 rows and the map; (4) `modules/m4/kit/kit-m5/job-card-alternatives-map.md`, 1,497, now also in kit-final; (5) no "controller alarms" row in the driver code book; (6) counts in `modules/m4/module.md` section 8.
+
 Module 5 builder, 2026-11-27. Module 4 is not built yet (OI-05 open). Module 5 starts from kit-m5, the state after module 4. This file lists exactly what kit-m5 must hold, so module 4 makes it to match. Decision for Dan: D1 in `modules/m5/module.md`.
 
 Where kit-m5 goes: `modules/m4/kit/kit-m5/` (module 4 builder). Draft files built from the case are in `modules/m5/kit/kit-m5-draft/`. Copy them if module 4 keeps them as they are.
@@ -27,7 +29,7 @@ Status words in the table:
 | 11 | `job-card-alternatives-map.md` | Knowledge | To be set by module 4 | Start: `proof/job-card-alternatives-map.md` | 1,500 or fewer. Name where the lab 4 hand-off rule lives |
 | 12 | `alternatives-map.md` | Knowledge (replaces `m4-alternatives-map`) | From the case | `case/expected-results.md` lab 4 table (after the fix), types and formats from `case/m4-alternatives-map.md` | 3,286 in the draft. Keep the types table and the 2 format tables, so a rerun of job 4 still has them |
 | 13 | `lab-4-fix-rules.md` | Not loaded. Handout | To be set by module 4 | Pattern: `kit-m4/lab-3-fix-rules.md` | none |
-| 14 | `copilot-fallback-instructions-m4-v5.txt` (no `.md`) | Copilot Instructions, no license | To be set by module 4 | Brief v5, map job card, map | 8,000 or fewer (mb-01). Course budget 7,800 |
+| 14 | `copilot-fallback-instructions-m4-v5.txt` (no `.md`) | Copilot Instructions, no license | Met (module 4) | Brief v5 and map job card. Map in chat (module 4 D12: with the map it is 8,681, over 8,000) | 8,000 or fewer (mb-01). Course budget 7,800. Delivered: 5,388 |
 
 Knowledge files after module 4: 10 (files 3 to 12). Lab 5 adds `job-card-stakeholder-answers` and `past-reports`: 12 at the end. Course budget 13.
 

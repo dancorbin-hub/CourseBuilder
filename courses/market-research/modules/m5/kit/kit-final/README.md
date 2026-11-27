@@ -14,7 +14,7 @@ Not loaded into the agent. This file and `monday-plan.md` are for you.
 | `job-card-problem-backlog.md` | Job 1: problem backlog | Knowledge | 1,194 |
 | `job-card-win-loss.md` | Job 2: win/loss | Knowledge | 1,483 |
 | `job-card-weekly-feedback.md` | Job 3: weekly feedback | Knowledge | 1,496 |
-| `job-card-alternatives-map.md` | Job 4: alternatives map. Placeholder: the proof card text, to be set by module 4. Replace it with the `kit-m5` file when module 4 is built | Knowledge | PLACEHOLDER |
+| `job-card-alternatives-map.md` | Job 4: alternatives map | Knowledge | 1,497 |
 | `job-card-stakeholder-answers.md` | Job 5: stakeholder answers | Knowledge | 1,398 |
 | `code-book.md` | Problem codes, segments, personas and formats (case) | Knowledge | 2,791 |
 | `driver-code-book.md` | Drivers, alternatives, deal source labels and formats (case) | Knowledge | 2,284 |

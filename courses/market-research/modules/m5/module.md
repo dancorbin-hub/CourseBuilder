@@ -2,7 +2,7 @@
 
 Course: Advanced AI for Market Research (`market-research`). Stage 3 draft by the module builder, 2026-11-27. Revised once on 2026-11-27 after the consistency and verifier reports (`revision-notes.md`). Last module. It also holds the course close (section 10). Case year is 2027 (`case/year-shift-map.md`). Real source and vendor dates stay 2026. Built from `spec.yaml` (Gate 2, approved 2026-11-26; module 5 entry, `course_close`, `copilot_no_license_fallback`, `stretch_scope`, `gate_2_proof_patterns` P3), `outline/development-brief.md`, `outline/gate-2-decisions.md`, the case files, `research/stretch-verification-2026-11.md`, the approved module 1 and the module 2 and 3 drafts in review (decisions and revision notes).
 
-Module 4 is not built yet (OI-05 open). Module 5 starts from kit-m5, the state after module 4. This draft defines that start state from the spec and the case (section 1, "Start state"). The full list is `kit/kit-m5-expected.md`. The module 4 builder makes kit-m5 match it (decision D1).
+Module 5 starts from kit-m5, the state after module 4: `modules/m4/kit/kit-m5/`. This draft defined that start state from the spec and the case before module 4 was built (`kit/kit-m5-expected.md`). The module 4 builder delivered kit-m5 to match it on 2026-11-27 (module 4 draft, revised once; decision D1). Hand-over edits are recorded in `modules/m4/revision-notes.md`.
 
 ## 1. Summary
 
@@ -19,14 +19,14 @@ Module 4 is not built yet (OI-05 open). Module 5 starts from kit-m5, the state a
 
 ### Start state (the agent after lab 4)
 
-Module 4 is not built. This is the state module 5 assumes. Status words as in `kit/kit-m5-expected.md`.
+This is the state module 5 assumes. Module 4 delivers it in `modules/m4/kit/kit-m5/` (all contract rows met; see `kit/kit-m5-expected.md`).
 
 | Part | State after lab 4 | Status |
 | --- | --- | --- |
-| Instructions | Brief v5: brief v4 (kit-m4) plus "My rules" 4, the lab 4 fix text in `case/planted-errors.md` ("The alternative chosen comes from the buyer's interview..."). 3,491 characters | Rule text from the case. Place to be set by module 4 |
+| Instructions | Brief v5: brief v4 (kit-m4) plus "My rules" 4, the lab 4 fix text in `case/planted-errors.md` ("The alternative chosen comes from the buyer's interview..."). 3,491 characters | Module 4: rule 4 lives in "My rules" (module 4 D1) |
 | Knowledge, unchanged from kit-m4 | `job-card-problem-backlog`, `code-book`, `problem-backlog` (kit-m4 file, same facts as Part 4 of `m4-evidence-pack.md`, 15,194), `job-card-win-loss`, `driver-code-book`, `job-card-weekly-feedback`, `tag-list` (v2, P10) | No change |
-| Knowledge, changed in lab 4 | `driver-log`: Q2 rows plus the 10 Q3 rows of the evidence pack, with D-3102 and D-3108 alternatives read from the interviews (7,616). `alternatives-map`: end of Q3 2027, the lab 4 result after the fix (3,286) | From the case. Drafts in `kit/kit-m5-draft/`. Driver log needs D2 |
-| Knowledge, new in lab 4 | `job-card-alternatives-map` | To be set by module 4 |
+| Knowledge, changed in lab 4 | `driver-log`: Q2 rows plus the 10 Q3 rows of the evidence pack, with D-3102 and D-3108 alternatives read from the interviews (7,616). `alternatives-map`: end of Q3 2027, the lab 4 result after the fix (3,286) | From the case. Delivered in `modules/m4/kit/kit-m5/` (same as the drafts). Module 4 log save card saves both (module 4 D4) |
+| Knowledge, new in lab 4 | `job-card-alternatives-map` (1,497) | Set by module 4 |
 | Count | 10 knowledge files. Lab 5 adds 2. 12 at the end (spec `knowledge_file_budget`) | |
 
 ### Slide minutes check
@@ -76,7 +76,7 @@ Open decisions for the Gate 3 doc, most important first. One line each, with a r
 | D5 | Share stretch: steps on Claude (Team, Enterprise) and ChatGPT, after class, "not yet tested by the course team". Copilot and Gemini: share plan only (`stretch_scope`). B: plan only on all 4. C: add Copilot and Gemini steps (needs a `stretch_scope` change) | A. Needs change 4 |
 | D6 | kit-final is released on the Learning Hub only after slide 5.13, because it holds the lab 5 fix | A |
 | D7 | kit-m5 driver log: D-3108 quote is the WL-3108 quote "Your trial sent alerts every lunch rush, and my managers gave up on it." (matches Q4 expected evidence). Module 4 must match | A |
-| D8 | kit-final holds a placeholder `job-card-alternatives-map` (the proof card text), marked "to be set by module 4" | A. Replace when module 4 is final |
+| D8 | Resolved 2026-11-27: kit-final holds the module 4 `job-card-alternatives-map` (1,497), copied from `modules/m4/kit/kit-m5/` | Closed. No decision needed |
 | D9 | No log save card in module 5; the course close saves the brief, the logs and kit-final | A. Needs change 5 |
 | D10 | Spec order kept: decide (step 4) before the audit (step 5), with a "decision after the audit" column | A. Or swap steps 4 and 5 in the spec |
 | D11 | Demo asks Q3, the optional lab question | A |
@@ -102,6 +102,8 @@ None of these are made. Each waits for your yes.
 | 7 | `research/workflows.yaml`, row mr-wf-09 evidence W13, W20 | checked_on 2026-11-27 (quotes found again). W20 note: "The source says product managers, not stakeholders, do not remember study names" | Verifier proposal |
 
 ### Notes for the module 4 builder
+
+Done 2026-11-27. Module 4 delivered `modules/m4/kit/kit-m5/` and answered the 6 choices (`modules/m4/module.md`, contract check). Kept as a record.
 
 1. Build `modules/m4/kit/kit-m5/` to match `modules/m5/kit/kit-m5-expected.md`. Copy the 3 drafts in `modules/m5/kit/kit-m5-draft/` if your lab keeps them.
 2. Tell module 5 the 6 choices in `kit-m5-expected.md` section 3: where the lab 4 rule lives, its text, the driver log save, the final map job card, the driver code book, and the character counts.
@@ -516,7 +518,7 @@ TRANSITION: That was the last job. Let's close the course.
 
 Platform: Claude (Project). Before class:
 
-1. Have the project "Market Evidence Agent" in its state after module 4: brief v5 in the instructions, 10 files in knowledge. Build it from `kit-m5` (module 4). Until module 4 is built, use `kit/kit-m5-draft/` (brief v5, driver log, map), the other 7 files from `modules/m3/kit/kit-m4/` and `proof/job-card-alternatives-map.md`.
+1. Have the project "Market Evidence Agent" in its state after module 4: brief v5 in the instructions, 10 files in knowledge. Build it from `modules/m4/kit/kit-m5/` (brief v5 and 10 knowledge files).
 2. Check that **Code execution and file creation** (or **Create and edit files**) is on.
 3. Rehearse steps 1 to 9. Time the Q3 run. Save the output and screenshots in your instructor folder.
 4. In the same rehearsal project, in a new chat, send the questions file with "Run the stakeholder answer job for Q2". Save the output. It is the backup for slide 5.13 if no agent in the room makes the error. Do not show it before the debrief.
@@ -735,7 +737,7 @@ Notes: Type **/** (or **@**) in the chat and pick your skill from the list. If a
 | Setup (Zoom) | Breakout rooms by platform (Claude, ChatGPT, Copilot, Gemini), 3 to 5 learners each. Learners keep their own screen. Share only when stuck. Instructor visits rooms in turn, Copilot first |
 | Setup (in person) | Tables by platform, 3 to 5 learners. One laptop per learner. Instructor walks the tables, Copilot first |
 | Steps per platform | See section 5 (4 cards with the same 6 core steps and the same 2 debrief steps). No fast-start card. Stretch: share plan on all 4 cards. Share steps on Claude (Team, Enterprise) and ChatGPT only, after class, "not yet tested by the course team". Copilot and Gemini stay on the core path (spec `stretch_scope`). No second-agent or schedule step (spec) |
-| Materials | `kit/lab-5/` (job card, past reports, Copilot fallback text, record sheet, README). Case file `m5-stakeholder-questions.md`. `kit-m5` to rebuild before the lab (module 4; until then `kit/kit-m5-draft/` with `modules/m3/kit/kit-m4/`). `kit/kit-final/` for the course close: release it on the Learning Hub only after slide 5.13 (it holds the lab 5 fix). Instructor only: `case/planted-errors.md`, `case/expected-results.md`, saved demo output (Q3), saved Q2 rehearsal output, saved Q4 result from the final project |
+| Materials | `kit/lab-5/` (job card, past reports, Copilot fallback text, record sheet, README). Case file `m5-stakeholder-questions.md`. `modules/m4/kit/kit-m5/` to rebuild before the lab. `kit/kit-final/` for the course close: release it on the Learning Hub only after slide 5.13 (it holds the lab 5 fix). Instructor only: `case/planted-errors.md`, `case/expected-results.md`, saved demo output (Q3), saved Q2 rehearsal output, saved Q4 result from the final project |
 | Success criteria | Each answer has the learner's send, change or hold decision. Every citation in one answer opened and recorded. Each segment has the learner's order and validation decisions. Debrief: rule 6 added; Q4 passes the 4-item pass condition |
 | Debrief questions | Which check or audit found the error? Did your audit change a send, change or hold decision? Would you send the fixed Q2 answer? Which problems in each segment go to validation? |
 | Fallback path | Cannot use own work: case data. Agent lost or behind: rebuild from `kit-m5` (about 5 minutes). Platform blocked: pair with a learner on another platform. Copilot with no license: `copilot-fallback-instructions-m5.txt`, then the backlog alone, then the driver log, map and past reports, then the questions. Upload fails: paste the text. No file output: full text in one message (brief rule 7). Agent does not make the error: show the saved Q2 rehearsal output. Q4 not done in 3 minutes: finish after class |
@@ -752,13 +754,14 @@ Character counts measured with `wc -m` on 2026-11-27. Copilot course budget (spe
 | `lab-5/copilot-fallback-instructions-m5.txt` (brief v5 and job card) | Copilot Instructions, no license | 5,293 (limit 8,000) | is a `.txt` |
 | `lab-5/lab-5-record-sheet.md` | Not loaded. Learner keeps it | 2,272 (not loaded) | no |
 | `lab-5/README.md` | Not loaded | not counted | no |
-| `kit-m5-draft/brief-v5.md` (start state; place of rule 4 to be set by module 4) | Instructions | 3,491 (budget 3,500) | yes |
-| `kit-m5-draft/driver-log.md` (Q2 and Q3; D2) | Knowledge | 7,616 (a log) | yes |
-| `kit-m5-draft/alternatives-map.md` (end of Q3 2027) | Knowledge | 3,286 (a case knowledge file, updated in lab 4; Copilot no license pastes it in chat) | yes |
-| `kit-m5-draft/README.md`, `kit-m5-expected.md` | Not loaded. For the module 4 builder and Dan | not counted | no |
+| `modules/m4/kit/kit-m5/brief-v5.md` (start state; rule 4 in "My rules") | Instructions | 3,491 (budget 3,500) | yes |
+| `modules/m4/kit/kit-m5/driver-log.md` (Q2 and Q3; D2) | Knowledge | 7,616 (a log) | yes |
+| `modules/m4/kit/kit-m5/alternatives-map.md` (end of Q3 2027) | Knowledge | 3,286 (a case knowledge file, updated in lab 4; Copilot no license pastes it in chat) | yes |
+| `modules/m4/kit/kit-m5/job-card-alternatives-map.md` | Knowledge | 1,497 (budget 1,500) | yes |
+| `kit-m5-draft/` (same text as the delivered kit-m5 files), `kit-m5-expected.md` | Not loaded. Hand-over record | not counted | no |
 | `kit-final/brief-v6.md` (rules 1 to 6) | Instructions | 4,008 (over the 3,500 budget; D16) | yes |
 | `kit-final/job-card-problem-backlog.md`, `job-card-win-loss.md`, `job-card-weekly-feedback.md` (no change) | Knowledge | 1,194; 1,483; 1,496 | yes |
-| `kit-final/job-card-alternatives-map.md` (PLACEHOLDER: proof card text, to be set by module 4; D8) | Knowledge | 1,450 | yes |
+| `kit-final/job-card-alternatives-map.md` (from module 4 kit-m5; D8 closed) | Knowledge | 1,497 | yes |
 | `kit-final/job-card-stakeholder-answers.md` | Knowledge | 1,398 | yes |
 | `kit-final/code-book.md`, `driver-code-book.md`, `tag-list.md` (no change) | Knowledge | 2,791; 2,284; 2,038 | yes |
 | `kit-final/alternatives-map.md`, `past-reports.md` | Knowledge | 3,286; 2,773 | yes |
@@ -891,7 +894,6 @@ Talk Track:
 The goal of this activity is to download kit-final and know what is in it.
 Download kit-final from the Learning Hub now. It is the folder you got after the lab 5 reveal.
 It holds the complete agent. Brief v6 with all your rules. Five job cards. Five knowledge files and two logs.
-[IF MODULE 4 IS NOT FINAL: THE ALTERNATIVES MAP JOB CARD IN KIT-FINAL IS A PLACEHOLDER. THE README SAYS SO]
 And a rebuild card for your platform. About 5 minutes.
 On your own work, change four things.
 The [EDIT] line: your product, your market, your segments.
