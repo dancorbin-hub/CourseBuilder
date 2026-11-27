@@ -2,7 +2,7 @@
 
 Course: `product-strategy-and-planning`. For Dan (Gate 3). Draft 2026-11-27.
 
-This card test of lab 1 can double as Gate 2 proof pattern P1 (spec `platform_matrix_summary.gate_2_proof_patterns`, open item OI-08; question 3 in `module.md`). Each platform run then records the card test and the P1 checks P1-a to P1-h below.
+This card test of lab 1 can double as Gate 2 proof pattern P1 (spec `platform_matrix_summary.gate_2_proof_patterns`, open item OI-08; question 1 in `module.md`). Each platform run then records the card test and the P1 checks P1-a to P1-h below.
 
 ## How to test
 
@@ -166,7 +166,7 @@ Account: personal / Workspace (test on a Workspace account if you can, gm-03) Da
 
 | Gemini proof item | Result |
 | --- | --- |
-| `.xlsx` accepted as a skill file (question 9). If not, CSV works | |
+| `.xlsx` accepted as a skill file (supported per gm-14). If not, CSV works | |
 | G2-PF-04: one skill run that asks for a Google Sheet with formulas. What came back? | |
 | Log save: **More**, then **Replace file**, then **Save** works (or whole-skill re-upload needed), and minutes taken | |
 | The skill runs with **/** in a new chat after reopen | |

@@ -36,52 +36,45 @@ Debrief split against the spec arc: reveal 2 (1.12), check sample 3 (1.13), fund
 | B1 | The new check goes under "My rules" at the end of the core brief (Instructions), not into the job card file | Editing the Instructions is one action on all 4 platforms. Editing a knowledge file needs a re-upload (Gemini: the whole skill). Same pattern Dan approved in Market Research |
 | B2 | Card steps 2 and 6 run in a new chat | A new chat is the only way to be sure the tuned brief applies on all 4 platforms (Market Research Gate 3 D1). Q4 does not need the Q3 run, so nothing is lost |
 | B3 | Copilot card step 2 and step 6 also send `capacity-sheet.xlsx` in chat | Spec `platform_cards.copilot` and decision f3: code interpreter reads files uploaded in chat (mb-13). Reading knowledge files with code interpreter is not documented |
-| B4 | The optional story slot sits in the debrief (slide 1.14), not in "why this matters" | The spec story topic (two programs counting on one scarce team) is the planted error. Told before the lab, it gives the answer away. See question 5 |
+| B4 | The optional story slot sits in the debrief (slide 1.14), not in "why this matters" | The spec story topic (two programs counting on one scarce team) is the planted error. Told before the lab, it gives the answer away. See question 8 |
 | B5 | The demo runs Q3 on brief v1 and shows the pack before the audit. The talk track does not comment on capacity | The demo shows what learners get. The saved demo output is the debrief fallback if no platform in the room makes the error |
 | B6 | The audit hint on the record sheet: "Pick 2 teams that work on more than one program" | The spec audit is "2 shared teams". The line defines a shared team. It does not name the Firmware team. Lab 1 only (warning: told) |
 | B7 | The build check uploads `capacity-sheet.xlsx` (course open) | It tests the `.xlsx` upload that the lab needs. A Claude learner with code execution off, or a Copilot learner with no license, finds out in the open, not in the lab |
 
 ### Questions for Dan
 
-Most important first. Each has a recommended answer.
+Revised after the consistency and verifier reports (see `revision-notes.md`). Only what you must decide. Each has a recommendation.
 
-| # | Question | Options | Recommended |
-| --- | --- | --- | --- |
-| 1 | **W1, W3 and N21 (OI-10 is open).** No W1 or W3 figure is on a slide. Slide 1.2 states the bottleneck in words. The talk track uses one figure: N21, "72.2% spend 25% or less of their time on product strategy" (fieldwork Q4 2025, nearly 250 product professionals, sponsored by ProductPlan). N21 is "verified" in `rerun-track-3.md`, and the spec `talk_track_slots` names it. W1 is told in words only (vendor reports its own study; W2 not opened) | A: keep N21 in the talk track only, with "fieldwork Q4 2025". B: drop N21 until OI-10 closes | A |
-| 2 | **Trendslop numbers.** The open uses no number from the article. Fortune (S-T3, independent) reports the model count, but it repeats the HBR study, so it counts as the same source. The open says "leading AI models" and "many company scenarios" | A: words only until someone reads the licensed HBR copy (OI-10). B: allow the model count from Fortune now | A |
-| 3 | **OI-08 platform proof is open.** The spec says the proof runs before modules are built. Status says Dan started Stage 3 first. This card test can double as proof P1 (`card-test.md` has the P1 checks). Differences from the P1 draft in `outline/proof-kit-drafts.md`: (a) the brief has a "My rules" section for the new check (B1); (b) the brief adds "How you work", the [EDIT] line, a "Numbers" rule and a file-or-tables "Output" rule; (c) the job card adds the plan quarter, a step that writes asks into the capacity sheet, and a capacity table in the output; (d) steps 2 and 6 run in a new chat (B2); (e) Copilot uploads the sheet in chat each run (B3); (f) "Run Q3 after reopen" is a proof step, not a learner step | A: the card test doubles as P1 with these differences. B: run P1 from the draft first, then the card test | A |
-| 4 | **ChatGPT check sample outside the project (decision f5).** Outside the project the agent has no brief. The card tells the learner to paste brief v2 and attach the job card, the strategy file and the check sample in one message. This may not fit in 3 minutes | A: keep, and record the time in the card test. B: for module 1 only, run it in a new chat inside the project (the check sample is a different quarter, so a memory leak cannot give the answer) | A, then B if the card test shows more than 4 minutes |
-| 5 | **Story slot (slide 1.14).** No story is written, to avoid an invented client story (decision 43). The spec topic is placed after the reveal (B4) | A: you supply one real client or Pragmatic story. B: leave it optional with the skip path | A if you have one, else B |
-| 6 | **Lab brief slide (1.10) is the short version** (your rule: goal, key actions, pass check, then the workbook). The full data safety text is not on 1.10. It is on O.8, on 1.9 (data check card) and on every step card. 1.10 has the planted error line and "Data check card first" | A: accept. B: add the full standard text to 1.10 (spec `placement` lists the lab brief slide) | A |
-| 7 | **Screen names from another course's matrix.** This course's matrix has no screen name rows. The cards use rows cl-ui-09, cl-ui-10, cg-ui-09, mb-ui-12, mb-ui-13 and gm-ui-10 from `courses/market-research/research/platform-matrix.yaml` (checked 2026-11-26), plus cl-cl-03, cg-14 and mb-04 from this course's matrix. The verifier list is below | A: the verifier rechecks them and appends them to this course's matrix. B: new vendor research first | A |
-| 8 | **Gemini log save.** Spec `log_save_card` says re-upload the whole skill (gm-01). The card gives **More**, then **Replace file** first, and the whole-skill upload as the backup (your Market Research Gate 3 D4) | A: keep both on the card. The card test records which works. B: whole-skill upload only | A |
-| 9 | **Gemini and `.xlsx` in a skill.** gm-01 lists legacy `.xls` as not supported and does not name `.xlsx`. The build check and the lab add `capacity-sheet.xlsx` to the skill | A: keep; the card test confirms; the CSV copy is the backup. B: Gemini uses the CSV copy from the start | A |
-| 10 | **Google Sheet template does not exist yet.** Every card offers the Google Sheet option. Someone must make the Google Sheet template of the capacity sheet and its share link | A: Stage 4 (workbook renderer) or you make it before the card test. B: drop the option from module 1 cards | A |
-| 11 | **kit-m2 contents.** (a) `job-card-requests` belongs to the module 2 builder; kit-m2 lists it as "added by the module 2 builder". (b) `kit-m2/capacity-sheet.xlsx` holds Quarter "Q1 2028" and each team ask from `m1-submissions-q4.md`. It is a filled copy of the course sheet, not a change to `case/`. Module 4 reads it as the capacity table | A: accept both. B: the case builder adds a filled capacity sheet to `case/` | A |
-| 12 | **Data safety text has sentences over 20 words** (the second and third sentences). Every card carries it word for word | A: keep it word for word as the standard text (same as Market Research D15). B: ask the planner to shorten it in the spec | A |
-| 13 | **Check sample quarter.** `m1-check-sample.md` is plan quarter Q2 2027 (submitted March 2027), earlier than the Q3 and Q4 runs. The cards call it "a second quarter". No case change needed | A: accept. B: case builder retitles it "earlier quarter" | A |
-| 14 | **Half-day minutes.** The arc minutes need 1 extra minute on slides 1.4, 1.5, 1.8 and 1.9 that the spec note does not name | A: accept | A |
+| # | Question | Recommended |
+| --- | --- | --- |
+| 1 | **Card test as proof P1.** OI-08 (platform proof) is still open. `card-test.md` carries the P1 checks, so one run per platform does both. The cards differ from the P1 draft in small ways: a "My rules" section in the brief, a capacity table in the job card output, new chats for steps 2 and 6, and Copilot sends the sheet in chat each run | Yes: the card test doubles as P1 |
+| 2 | **Google Sheet template.** It does not exist. Cards and the kit README show "[Google Sheet link: added before the card test]". Gemini can check the sums in the `.xlsx` or CSV copy until the link exists | You (or Stage 4) make the template and its share link before the card test |
+| 3 | **Second-sample pass condition on the card.** PRD lab rule 7 puts it on the card and on the lab brief slide (now on 1.10). Spec `planted_error_fade.rule` says "debrief only". The pass condition names the Test lab, not the Firmware error | Keep it on the card (as Market Research D7). The planner updates the spec line |
+| 4 | **ChatGPT check sample outside the project** (decision f5). The learner pastes brief v2 and attaches 3 files. It may not fit in 3 minutes | Keep. If the card test shows more than 4 minutes, run it in a new chat inside the project for module 1 only |
+| 5 | **Trendslop stays in words only.** No figure from the article until someone reads the licensed HBR copy (OI-10). The "differentiation or cost" trade-off is removed: only a third-party copy supports it | Yes: words only. Ask someone with HBR access to read it before Gate 4 |
+| 6 | **N21 in the talk track (slide 1.2).** 72.2% spend 25% or less of their time on product strategy. Verified in the primary PDF. Published 2026 (no exact date; a PLA article cites it on 2026-03-11), fieldwork Q4 2025. Rule 4 is met on publication year. You accepted it with "fieldwork Q4 2025" (Gate 1 decision i). N21 has no row in `evidence-ledger.yaml` | Keep, with "fieldwork Q4 2025" said aloud. Research adds the ledger row |
+| 7 | **Undated or unnamed screen labels.** Gemini **Create**, **Create manually**, **Add**, **images or files**, **Upload**, **Save**, **More**, **Replace file** come from an undated Help page. Claude "delete a knowledge file" and ChatGPT "new chat in a project" have no vendor label, so the cards use plain words. Gemini log save keeps **Replace file** first and the whole-skill upload as the backup | Accept with the 2026-11-27 check date (as Market Research D3, D4). The card test records the real labels |
+| 8 | **Story slot (1.14).** No story is written, to avoid an invented client story. It sits after the reveal, because the spec topic is the planted error | Supply one real story if you have it. Else leave it optional with the skip path |
 
-Information only: OI-09 (workshop overlap for capability 2) is still open and touches this module. OI-14 (names) is open. Neither blocks the draft.
+Information only, no decision:
+- The standard data safety text and data check question 2 have sentences over 20 words. They stay word for word (Market Research D15).
+- Half day: slides 1.4, 1.5, 1.8 and 1.9 get 1 extra minute each to fit the spec arc minutes.
+- `kit-m2/job-card-requests.md` is added by the module 2 builder. `kit-m2/capacity-sheet.xlsx` is a filled copy (Q1 2028 asks from `m1-submissions-q4.md`), not a case change.
+- For the planner: spec `inputs.fallback_case` lacks `m1-status-q4`; spec m1 `data_safety` says "pack log", the module uses the capacity sheet as the log.
+- Gemini `.xlsx` in a skill is supported (skills page, gm-14). The CSV copy stays as the backup.
+- OI-09 (workshop overlap) and OI-14 (names) are open. They do not block this module.
 
-### Screen names for the verifier
+### Screen names (verifier, 2026-11-27)
 
-| Platform | Name on the card | Source row (doc, date) | Status |
-| --- | --- | --- | --- |
-| Claude | **Projects**, **+ New Project**, **Set project instructions**, **Save instructions**, **+** in project knowledge | cl-ui-09 (Claude Help Center 9519177, 2026-11-06, checked 2026-11-26), Market Research matrix | Verified there. Append here |
-| Claude | **Settings**, **Capabilities**, **Code execution and file creation** (also **Create and edit files**); **Organization settings**, **Capabilities** | cl-ui-10 (Help Center 12111783, 2026-11-24, checked 2026-11-26), Market Research matrix | Verified there. Append here |
-| Claude | **Customize**, **Skills** (stretch) | cl-cl-03, this matrix (approx 2026-10-28, checked 2026-11-20) | Verified |
-| Claude | Delete a file from project knowledge (log save card) | None. Written in plain words | Not in any doc |
-| ChatGPT | **New project**, **•••**, **Project settings**, project sources list | cg-ui-09 (Help 10169521, approx 2026-11-23, checked 2026-11-26), Market Research matrix | Verified there. Append here |
-| ChatGPT | Project memory "default" and "project-only" | cg-14, this matrix. Modes named, no control label | Plain words. Check the label |
-| ChatGPT | ChatGPT Work (how to start it in a project) | cg-09, cg-10. No control label | Plain words. Check |
-| ChatGPT | Add files to a project, start a new chat in a project | None | Plain words |
-| Copilot | **New agent**, **Skip to configure**, **Configure**, **Name**, **Instructions**, **Knowledge**, **Upload**, **X** then **Remove** | mb-ui-12 (Learn add-knowledge, 2026-11-16, checked 2026-11-26), Market Research matrix | Verified there. Append here |
-| Copilot | **All agents**, **...**, **Edit**, **Create**, **Update** | mb-ui-13 (Learn share-manage, 2026-11-16, checked 2026-11-26), Market Research matrix | Verified there. Append here |
-| Copilot | **Create documents, charts, and code** toggle | mb-04, this matrix (2026-11-16) | Verified. mb-11 says always on in Agent Builder (conflict) |
-| Copilot | Upload a file in the agent chat | mb-ui-14 (Copilot Chat only, partly verified) | Plain words. Check in the agent chat |
-| Gemini | **Customize**, **Skills**, **Create**, **Create manually**, **Add**, **files**, **Upload**, **Save**, **/**, **More**, **Replace file** | gm-ui-10 (Gemini Apps Help skills page, no date, checked 2026-11-26), Market Research matrix. **/** dated by blog.google 2026-09-30 | Undated page. Dan accepted it with a check date in Market Research (D3) |
-| Gemini | The skill instructions field | None ("No exact Instructions label shown", gm-ui-10) | Plain words |
+The verifier checked every card label on 2026-11-27 and added the rows to `research/platform-matrix.yaml` (`verifier-report.md`, section 3). Status after this revision:
+
+| Platform | Labels | Status |
+| --- | --- | --- |
+| Claude | **Projects**, **+ New Project**, **Set project instructions**, **Save instructions**, **+**, **Settings**, **Capabilities**, **Code execution and file creation** (**Create and edit files**), **Organization settings**, **Customize**, **Skills**. New projects note (cl-pj-11) | Verified. Delete a knowledge file: plain words (question 7) |
+| ChatGPT | **New project**, **•••**, **Project settings**, project sources list, **Default memory**, **Project-only memory** | Verified. New chat in a project and how ChatGPT Work starts: plain words, card test |
+| Copilot | **New agent**, **Skip to configure**, **Configure**, **Name**, **Instructions**, **Knowledge**, **Upload**, **X**, **Remove**, **All agents**, **...**, **Edit**, **Create**, **Update** | Verified. **Create documents, charts, and code**: label verified, but one page says always on, so the card says "If you see it". Upload in the agent chat: partly verified, card test (G2-PF-02) |
+| Gemini | **Customize**, **Skills**, **/** | Verified (dated docs) |
+| Gemini | **Create**, **Create manually**, **Add**, **images or files**, **Upload**, **Save**, **More**, **Replace file** | Undated page (question 7) |
 
 ## 2. Slides and talk track
 
@@ -288,7 +281,7 @@ Here are the three in the template.
 One. A status that differs between the team's submission and the source system. The agent flags it. It does not decide who is right.
 Two. Work with no clear link to a stated objective. The agent lists it. It does not judge it.
 Three. The one that matters most. Any step that would recommend funding, ranking or a strategy change. The agent stops and hands it to you.
-Remember trendslop. A model will happily tell you what to fund. Its answer will sound tailored. This rule keeps that answer out of your pack.
+Remember trendslop. A model will happily pick a strategy for you. Its answer will sound tailored. This rule keeps that answer out of your pack.
 What the agent hands you goes into the flag report. One line per flag: the type, the record, what it found, the evidence with a source and a date, and "PM decides".
 The decision field stays blank. Only you fill it.
 [POINT TO THE BOTTOM LINE]
@@ -324,7 +317,7 @@ TRANSITION: Here is your lab.
 ### Slide 1.10: Lab 1 brief
 - Layout: Activity
 - Minutes: 3 (half day 3)
-- On-slide text: ACTIVITY. Lab 1: The quarterly portfolio pack. Goal: Hand the pack to an agent that totals, links and flags. Manage it by its checks and flags. Key actions: Data check card first. 1. Add the kit. 2. Run Q3. 3. Decide each flag. 4. Audit 2 shared teams and 3 links. 5. Add one check. 6. Run Q4 in a new chat. Pass check: Q4 pack with status, capacity and links. Every flag has your decision. Audit recorded, one check added. No funding or strategy line from the agent. Orange box: "This batch has one planted AI error. Find it in your audit." Footer: "Full steps: your step card in the workbook."
+- On-slide text: ACTIVITY. Lab 1: The quarterly portfolio pack. Goal: Hand the pack to an agent that totals, links and flags. Manage it by its checks and flags. Key actions: Data check card first. 1. Add the kit. 2. Run Q3. 3. Decide each flag. 4. Audit 2 shared teams and 3 links. 5. Add one check. 6. Run Q4 in a new chat. Pass check: Q4 pack with status, capacity and links. Every flag has your decision. Audit recorded, one check added. No funding or strategy line from the agent. Second sample: `m1-check-sample.md`, run in the debrief; pass condition on your card. Orange box: "This batch has one planted AI error. Find it in your audit." Footer: "Full steps: your step card in the workbook."
 - Visual intent: Orange "ACTIVITY" band. Goal at the top. Key actions numbered on the left. Pass check on the right. Planted error line in an orange box at the bottom. Workbook pointer small, bottom right.
 - Sources: none
 
@@ -340,6 +333,7 @@ Start with the data check card. Then add the kit. Run Q3. Decide each flag. Audi
 On your own work: your team plan submissions, a status export and capacity by team for one quarter. Remove names and spend if your tool is not approved.
 Otherwise use the Larkspan files. Both paths use the same steps.
 Record your decisions and audit findings on the lab 1 record sheet in your kit. That is your evidence for this lab.
+In the debrief you test your tuned brief on a second sample, a quarter you have not seen. The pass condition is at the end of your card.
 [POINT TO THE ORANGE BOX]
 This batch has one planted AI error. Find it in your audit.
 The agent's own checks will not find it for you.
@@ -375,7 +369,7 @@ The goal of this activity is to run one full turn of the manager loop on your ow
 TRANSITION: [CLOSE ROOMS AT MINUTE 33, HALF DAY 38] Bring your record sheet. Let's see what you found.
 ```
 
-### Slide 1.12: What did your audit find?
+### Slide 1.12: What did your team totals show?
 - Layout: debrief
 - Minutes: 2 (half day 2)
 - On-slide text: DEBRIEF. Which 2 teams did you total? What did the pack say about their capacity? Which check or audit found the error? (Reveal after answers:) Firmware team, Q3: P-01 100 + P-02 100 = 200 percent. 24 FTE asked, 12 available. Every per-program check passed.
@@ -403,7 +397,7 @@ That is why you audit. Your check tested what the template predicted. Your audit
 TRANSITION: Did your new check fix it? Let's test it on a quarter you have not seen.
 ```
 
-### Slide 1.13: Check sample
+### Slide 1.13: Test the tuned brief on a new quarter
 - Layout: Activity
 - Minutes: 3 (half day 3)
 - On-slide text: ACTIVITY. 3 MIN. New chat on your tuned agent. Send `m1-check-sample.md` with "Run the portfolio pack job". ChatGPT: a new chat outside the project (your card says how). Compare with the pass condition at the end of your step card.
@@ -453,7 +447,7 @@ Your calls can differ. What matters: the agent made none of them, and you can de
 TRANSITION: So what do you do on Monday?
 ```
 
-### Slide 1.15: What you do Monday
+### Slide 1.15: Monday: total your shared teams
 - Layout: Blank
 - Minutes: 1 (half day 1)
 - On-slide text: "Take last quarter's plan. Total each shared team across all programs before the next review."
@@ -471,7 +465,7 @@ Your kit has the template and the record sheet, so you can do this without the c
 TRANSITION: Last step: decide what your agent keeps.
 ```
 
-### Slide 1.16: Save your log
+### Slide 1.16: Decide what the capacity log keeps
 - Layout: Activity
 - Minutes: 1 (half day 1)
 - On-slide text: ACTIVITY. 1 MIN. 1. Decide what the log keeps and delete the rest. 2. Replace the old capacity sheet in your agent's knowledge with the one from your Q4 run. Your card has the steps for your platform.
@@ -533,18 +527,18 @@ All four cards have the same 6 core steps. Saving is in each card header, not a 
 
 Write your choice on your record sheet.
 
-**Google Sheet option (every card):** Work in your copy of the capacity sheet Google Sheet template. Download it as `.xlsx` or CSV. Upload it to your agent or in chat. The agent does not write live into your Sheet.
+**Google Sheet option:** each card has its own Google Sheet line. The template link is a placeholder until it exists: [Google Sheet link: added before the card test].
 
 ### Card: Claude
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the Project "Strategy Evidence Agent" from the opening build check.
 - Saves: **Save instructions** saves the instructions. Files save when you add them. Chats save as you go.
-- Check date and vendor doc: 2026-11-26. Claude Help Center, "How can I create and manage projects?" (https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects, dateModified 2026-11-06, platform matrix cl-pj-01 and cl-ui-09). "Create and edit files with Claude" (https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude, dateModified 2026-11-24, cl-fo-06 and cl-ui-10). "How to create custom skills" (https://support.claude.com/en/articles/12512198-how-to-create-custom-skills, approx 2026-10-28, cl-cl-03) for the stretch.
+- Check date and vendor doc: 2026-11-27 (verifier). Claude Help Center, "How can I create and manage projects?" (https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects, dateModified 2026-11-06, platform matrix cl-pj-01 and cl-ui-09). "Create and edit files with Claude" (https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude, dateModified 2026-11-24, cl-fo-06 and cl-ui-10). "How to create custom skills" (https://support.claude.com/en/articles/12512198-how-to-create-custom-skills, dateModified 2026-10-30, cl-cl-03). "What are projects?" (https://support.claude.com/en/articles/9517075-what-are-projects, dateModified 2026-10-30, cl-pj-11) for the new projects note for the stretch.
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Do not put unreleased roadmaps or release dates, forecasts, pricing, supplier terms or other non-public financial data into a tool your company has not approved. Do not put confidential names in web search queries.
 
 | Step | Do this |
 | --- | --- |
-| 1 | Add the kit: `brief-v1` in **Set project instructions**, the job card and strategy file in project knowledge with **+**. |
+| 1 | Add the kit. Replace the starter instruction with `brief-v1`. Add the job card and strategy file with **+**. |
 | 2 | In a new project chat, send the Q3 submissions and status export with the prompt "Run the portfolio pack job". |
 | 3 | Write your decision for each flag report item on your record sheet. |
 | 4 | Audit capacity for 2 shared teams and 3 linked items against the source files, on your record sheet. |
@@ -552,6 +546,8 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 6 | In a new project chat, send the Q4 submissions and status export with the prompt "Run the portfolio pack job". |
 
 Notes: `capacity-sheet.xlsx` is already in knowledge from the build check. No file in the answer? Check that **Code execution and file creation** (or **Create and edit files**) is on in **Settings**, then **Capabilities**. Team or Enterprise: ask your owner. It is in **Organization settings**, then **Capabilities**. If the `.xlsx` will not upload, use the CSV copy. Your project opens as one conversation with a Library? Tell the instructor. Claude is moving some projects to a new version.
+
+Google Sheet option: [Google Sheet link: added before the card test]. Work in your copy. Download it as `.xlsx` or CSV. Upload it in chat. A live write by the agent into your Sheet is not verified.
 
 **Start here with sample data:** Kit: `brief-v1.md`, `job-card-portfolio-pack.md`, `strategy-okrs-kpis.md`, `capacity-sheet.xlsx`. Q3 (step 2): `m1-submissions-q3.md`, `m1-status-q3.csv`. Q4 (step 6): `m1-submissions-q4.md`, `m1-status-q4.csv`. Own work: replace the strategy file with your strategy, OKRs and KPIs. Put your teams and programs in the capacity sheet rows.
 
@@ -563,14 +559,14 @@ Notes: `capacity-sheet.xlsx` is already in knowledge from the build check. No fi
 
 ### Card: ChatGPT
 Build and save your own agent. Share your screen only when someone is stuck.
-- Your agent: the Project "Strategy Evidence Agent" from the opening build check. Plan: ChatGPT Plus or higher. Project memory: default, not project-only.
+- Your agent: the Project "Strategy Evidence Agent" from the opening build check. Plan: ChatGPT Plus or higher. Project memory: **Default memory**, not **Project-only memory**.
 - Saves: As you go.
-- Check date and vendor doc: 2026-11-26. OpenAI Help Center, "Projects in ChatGPT" (https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt, "Updated: 3 days ago" on 2026-11-26, cg-01, cg-14 and cg-ui-09). "Creating and editing documents, spreadsheets and presentations with ChatGPT Work" (https://help-lb.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt-work, approx 2026-11-22, cg-10).
+- Check date and vendor doc: 2026-11-27 (verifier). OpenAI Help Center, "Projects in ChatGPT" (https://help-lb.openai.com/en/articles/10169521-projects-in-chatgpt, approx 2026-11-27, cg-01, cg-14, cg-ui-09 and cg-ui-15). "Creating and editing documents, spreadsheets and presentations with ChatGPT Work" (https://help-lb.openai.com/en/articles/20001278-creating-and-editing-documents-spreadsheets-and-presentations-with-chatgpt-work, approx 2026-11-22, cg-10).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Do not put unreleased roadmaps or release dates, forecasts, pricing, supplier terms or other non-public financial data into a tool your company has not approved. Do not put confidential names in web search queries.
 
 | Step | Do this |
 | --- | --- |
-| 1 | Add the kit: `brief-v1` in **•••**, then **Project settings**, the job card and strategy file to the project's files. |
+| 1 | Add the kit. Replace the starter instruction with `brief-v1`. Add the job card and strategy file to the project. |
 | 2 | In a new project chat, send the Q3 submissions and status export with the prompt "Run the portfolio pack job". |
 | 3 | Write your decision for each flag report item on your record sheet. |
 | 4 | Audit capacity for 2 shared teams and 3 linked items against the source files, on your record sheet. |
@@ -578,6 +574,8 @@ Build and save your own agent. Share your screen only when someone is stuck.
 | 6 | In a new project chat, send the Q4 submissions and status export with the prompt "Run the portfolio pack job". |
 
 Notes: `capacity-sheet.xlsx` is already in the project from the build check. For a sheet file with formulas, ChatGPT Work must be on your plan. Work does not run in a project with project-only memory (cg-14). No file in the answer? The brief asks for every table in full in one message. That is fine.
+
+Google Sheet option: [Google Sheet link: added before the card test]. Work in your copy. Download it as `.xlsx` or CSV. Upload it in chat. A live write by the agent into your Sheet is not verified.
 
 **Start here with sample data:** Same files as the Claude card.
 
@@ -591,19 +589,21 @@ Notes: `capacity-sheet.xlsx` is already in the project from the build check. For
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the agent "Strategy Evidence Agent" from the opening build check. To open it: **All agents**, then **...** next to it, then **Edit**.
 - Saves: **Create** the first time. **Update** after each change.
-- Check date and vendor doc: 2026-11-26. Microsoft Learn, "Build agents with Agent Builder" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents, last updated 2026-11-16, mb-01, mb-04). "Add knowledge sources" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge, last updated 2026-11-16, mb-02, mb-14, mb-ui-12). "Share and manage agents" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents, last updated 2026-11-16, mb-ui-13). "Code interpreter" (https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter, last updated 2026-11-16, mb-11, mb-13).
+- Check date and vendor doc: 2026-11-27 (verifier). Microsoft Learn, "Build agents with Agent Builder" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents, last updated 2026-11-16, mb-01, mb-04). "Add knowledge sources" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-add-knowledge, last updated 2026-11-16, mb-02, mb-14, mb-ui-12). "Share and manage agents" (https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-share-manage-agents, last updated 2026-11-16, mb-ui-13). "Code interpreter" (https://learn.microsoft.com/microsoft-365-copilot/extensibility/code-interpreter, last updated 2026-11-16, mb-11, mb-13).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Do not put unreleased roadmaps or release dates, forecasts, pricing, supplier terms or other non-public financial data into a tool your company has not approved. Do not put confidential names in web search queries.
 
 | Step | Do this |
 | --- | --- |
-| 1 | On the **Configure** tab, add the kit: `brief-v1.txt` text in **Instructions**, the other `.txt` files with **Upload**. |
-| 2 | In the agent chat, send the Q3 submissions, status export and `capacity-sheet.xlsx` with the prompt "Run the portfolio pack job". |
+| 1 | On **Configure**, replace the starter instruction with `brief-v1.txt`. Upload `job-card-portfolio-pack.txt` and `strategy-okrs-kpis.txt` in **Knowledge**. |
+| 2 | In a new chat, send the Q3 submissions, status export and `capacity-sheet.xlsx` with the prompt "Run the portfolio pack job". |
 | 3 | Write your decision for each flag report item on your record sheet. |
 | 4 | Audit capacity for 2 shared teams and 3 linked items against the source files, on your record sheet. |
 | 5 | Add one quality check for what you found under "My rules" in **Instructions**. |
 | 6 | In a new chat, send the Q4 submissions, status export and `capacity-sheet.xlsx` with the prompt "Run the portfolio pack job". |
 
-Notes: Use the `.txt` copies and the `.xlsx` sheet. Copilot does not take `.md` or CSV as knowledge. Send the `.xlsx` status files (`m1-status-q3.xlsx`, `m1-status-q4.xlsx`). If a chat upload fails, paste the text. Check that **Create documents, charts, and code** is on. Download any file the agent makes in the same session. Copilot keeps it for that session only.
+Notes: Use the `.txt` copies and the `.xlsx` sheet. Copilot does not take `.md` or CSV as knowledge. Send the `.xlsx` status files (`m1-status-q3.xlsx`, `m1-status-q4.xlsx`). If a chat upload fails, paste the text. For the sheet, paste the text of `capacity-sheet.csv`. If you see **Create documents, charts, and code**, check that it is on. Download any file the agent makes in the same session. Copilot keeps it for that session only.
+
+Google Sheet option: [Google Sheet link: added before the card test]. Work in your copy. Download it as `.xlsx` only. Upload it in chat. A live write by the agent into your Sheet is not verified.
 
 **No Copilot license or billing?** Your agent cannot read Knowledge files. Do this instead:
 1. Paste all of `copilot-fallback-instructions-m1.txt` into **Instructions**. Add no Knowledge files.
@@ -624,19 +624,19 @@ The fallback agent does one job at a time.
 Build and save your own agent. Share your screen only when someone is stuck.
 - Your agent: the skill "strategy-evidence-agent" from the opening build check. Find it in **Customize**, then **Skills**. This is a Gemini skill. Gems are now skills.
 - Saves: **Create** the first time. **Save** after each change.
-- Check date and vendor doc: 2026-11-26. Gemini Apps Help, skills page (https://support.google.com/gemini?p=pn_skills, page shows no date, gm-01 and gm-ui-10). Gemini Apps Help, Gems moved to skills (https://support.google.com/gemini/answer/18560919, gm-02, gm-06). Google blog, "Let skills in Gemini tackle your most repetitive tasks" (2026-09-30) for **/**. Google Workspace Updates, skills in the Gemini app (https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html, 2026-09-30, updated 2026-11-09, gm-03).
+- Check date and vendor doc: 2026-11-27 (verifier). Gemini Apps Help, skills page (https://support.google.com/gemini?p=pn_skills, page shows no date, gm-01, gm-ui-10 and gm-14). Google Workspace Updates, "An easier way to customize how Gemini works for you" (https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html, 2026-10-21, gm-ui-11) for **Customize** and **Skills**. Gemini Apps Help, Gems moved to skills (https://support.google.com/gemini/answer/18560919, gm-02, gm-06). Google blog, "Let skills in Gemini tackle your most repetitive tasks" (2026-09-30) for **/**. Google Workspace Updates, skills in the Gemini app (https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html, 2026-09-30, updated 2026-11-09, gm-03).
 - Data safety: Use an approved tool only. Do not put client data, health data protected by HIPAA or personal data (PII) into a tool your company has not approved. Do not put unreleased roadmaps or release dates, forecasts, pricing, supplier terms or other non-public financial data into a tool your company has not approved. Do not put confidential names in web search queries.
 
 | Step | Do this |
 | --- | --- |
-| 1 | Add the kit to your skill: `brief-v1` in the instructions, the job card and strategy file with **Add**, **files**, **Upload**. |
+| 1 | Add the kit. Replace the starter instruction with `brief-v1`. Add the job card and strategy file with **Add**, **images or files**, **Upload**. |
 | 2 | In a new chat, send the Q3 submissions and status export with "/strategy-evidence-agent Run the portfolio pack job". |
 | 3 | Write your decision for each flag report item on your record sheet. |
 | 4 | Audit capacity for 2 shared teams and 3 linked items against the source files, on your record sheet. |
 | 5 | Add one quality check for what you found under "My rules" in the skill instructions. |
 | 6 | In a new chat, send the Q4 submissions and status export with "/strategy-evidence-agent Run the portfolio pack job". |
 
-Notes: Type **/** in the chat and pick your skill from the list. Totals: your skill reports each value. Check the sums in your Google Sheet copy of the capacity sheet. The sheet formulas do the math. A live write by the skill into your Sheet is not verified. Do not turn on Canvas or Deep Research. They do not work in skills (gm-06). If an upload fails, paste the text.
+Notes: Type **/** in the chat and pick your skill from the list. No **Customize**? Select **More** first. Totals: your skill reports each value. Check the sums in your Google Sheet copy of the capacity sheet: [Google Sheet link: added before the card test]. The sheet formulas do the math. No Sheet yet? Open `capacity-sheet.xlsx` or `.csv` in any spreadsheet tool and check the sums there. A live write by the skill into your Sheet is not verified. Do not turn on Canvas or Deep Research. They do not work in skills (gm-06). If an upload fails, paste the text.
 
 **Start here with sample data:** Same files as the Claude card.
 
@@ -655,7 +655,7 @@ For learners new to the builder. One annotated screenshot per card (Stage 4 adds
 | Claude | **Projects**, then your project | **Set project instructions**, then **Save instructions** | Project knowledge, **+** | A new chat in the project |
 | ChatGPT | Your project in the sidebar | **•••**, then **Project settings** | The project's files | A new chat in the project |
 | Copilot | **All agents**, then **...**, then **Edit** | **Configure** tab, **Instructions**. Then **Update** | **Knowledge**, **Upload** (`.txt` and `.xlsx` only) | The agent chat |
-| Gemini | **Customize**, then **Skills**, then your skill | The skill instructions. Then **Save** | **Add**, then **files**, then **Upload** | A new chat. Type **/** and pick the skill |
+| Gemini | **Customize**, then **Skills**, then your skill | The skill instructions. Then **Save** | **Add**, then **images or files**, then **Upload** | A new chat. Type **/** and pick the skill |
 
 ## 6. Debrief
 
@@ -686,7 +686,7 @@ Name the new file `capacity-sheet` before you add it. Use the step 6 run, not th
 | Setup (Zoom) | Breakout rooms by platform (Claude, ChatGPT, Copilot, Gemini), 3 to 5 learners each. Learners keep their own screen. Share only when stuck. Instructor visits rooms in turn, Copilot first |
 | Setup (in person) | Tables by platform, 3 to 5 learners. One laptop per learner. Instructor walks the tables, Copilot first |
 | Steps per platform | See section 5 (4 cards with the same 6 core steps, data check card, fast-start cards, stretch) |
-| Materials | `kit/kit-m1-template/` (brief v1, job card, strategy file, capacity sheet `.xlsx` and CSV, Copilot fallback text, record sheet, README with rebuild card). Case files `m1-submissions-q3.md`, `m1-status-q3.csv` / `.xlsx`, `m1-submissions-q4.md`, `m1-status-q4.csv` / `.xlsx`, `m1-check-sample.md`, `m1-pack-q2.md` (optional format example). Google Sheet template of the capacity sheet (to be made, question 10). `kit/kit-m2/` for catch-up. Instructor only: `case/planted-errors.md`, `case/expected-results.md`, saved demo output |
+| Materials | `kit/kit-m1-template/` (brief v1, job card, strategy file, capacity sheet `.xlsx` and CSV, Copilot fallback text, record sheet, README with rebuild card). Case files `m1-submissions-q3.md`, `m1-status-q3.csv` / `.xlsx`, `m1-submissions-q4.md`, `m1-status-q4.csv` / `.xlsx`, `m1-check-sample.md`, `m1-pack-q2.md` (optional format example). Google Sheet template of the capacity sheet (to be made, question 2). `kit/kit-m2/` for catch-up. Instructor only: `case/planted-errors.md`, `case/expected-results.md`, saved demo output |
 | Success criteria | The Q4 pack shows status, capacity and the link to an objective for each program. Each flag has the learner's decision. Audit findings for 2 shared teams and 3 linked items recorded. A check added to the brief. The agent made no funding or strategy recommendation. Check sample passes the 4-item pass condition |
 | Debrief questions | Which 2 teams did you total? What did the pack say about their capacity? Which check or audit found the error? What are your fund, pause or stop calls, and why? Does the work need to change, or the strategy? |
 | Fallback path | Cannot use own work: case data. Platform blocked: change platform or pair with a learner on another platform. Copilot with no license: fallback instructions text, run files and the sheet uploaded or pasted in chat. No file output: every table in full in one message (brief "Output"). Code execution off: the agent shows each sum in full (brief "Numbers"). Agent does not make the error: debrief uses the saved demo output. Behind at the end: load `kit-m2` before module 2 |
@@ -746,6 +746,8 @@ Knowledge files in the agent after module 1: 4, counting the instructions (spec 
 | After the fix, the agent flags the Test lab in Q4 | Test lab is at exactly 100 percent. Over means more than 100 percent (the Larkspan PM's choice). Ask the learner to read their own check: did they write "over" or "at or over"? |
 | A learner's own plan has no capacity by team | Use the case data for this lab. On Monday, start with team asks per program in the capacity sheet rows |
 | A learner is far behind | Load `kit-m2` at the start of module 2. About 5 minutes |
+| Claude: the project opens as one conversation with a Library (new projects beta, cl-pj-11) | "New chat in the project" does not apply. Send each run as a new message in the project and say "Use only the Q4 files". Or pair the learner with another Claude learner |
+| ChatGPT: the project uses project-only memory | Change it to **Default memory** in **Project settings** only at the build check: a change "may take a few hours". In the lab, accept tables in one message |
 
 - Case notes (rechecked 2026-11-27 against the case files; no `open_items` entry is owned by the module builder in this spec):
   1. Q3 statuses: P-03 is the only mismatch (submission "On track", tracker "At risk"). P-05 reports "At risk" in both, so it is not a flag.

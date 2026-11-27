@@ -24,7 +24,7 @@ Course: `product-strategy-and-planning`. Stage 3 draft by the module builder, 20
 
 ### Questions for Dan
 
-All open questions for the course open and module 1 are in one list: `module.md`, section 1, "Questions for Dan". Items 1, 2 and 9 are about the open.
+All open questions for the course open and module 1 are in one list: `module.md`, section 1, "Questions for Dan". Question 5 (Trendslop) and question 7 (Gemini labels) touch the open.
 
 ### No repeated slide
 
@@ -57,8 +57,8 @@ TRANSITION: It starts with a study from 2026.
 ### Slide O.2: Ask AI for a strategy. Get everyone's strategy
 - Layout: Blank
 - Minutes: 3
-- On-slide text: Headline: "Ask AI for a strategy. Get everyone's strategy." Line 1: "Researchers asked leading AI models for strategic advice across many company scenarios." Line 2: "The models almost always picked the same trendy option, whatever the context." Line 3: "The authors' name for it: trendslop." Source line: Romasanta, Thomas and Levina, Harvard Business Review, March 2026.
-- Visual intent: Headline with "everyone's" in orange. Many different company icons on the left, each with an arrow into one AI icon, and one identical answer card on the right. No numbers on the slide.
+- On-slide text: Headline: "Ask AI for a strategy. Get everyone's strategy." Line 1: "Researchers asked leading AI models for strategic advice across many scenarios." Line 2: "The models almost always picked the same trendy option, whatever the context." Line 3: "The authors' name for it: trendslop." Source line: Romasanta, Thomas and Levina, Harvard Business Review, March 2026.
+- Visual intent: Headline with "everyone's" in orange. Many different scenario cards on the left, each with an arrow into one AI icon, and one identical answer card on the right. No numbers on the slide.
 - Sources: E3 (study, partly verified; finding, authors and date verified). Bond story sources S-T1 (HBR, primary, body paywalled), S-T2 (NYU Stern summary), S-T3 (Fortune, independent). Words only (OI-10)
 
 Notes:
@@ -73,11 +73,10 @@ Yes, Claude. One of the platforms some of you use today. That makes the point st
 They gave the models hard trade-offs. The kind your leadership team argues about.
 Long-term growth or short-term results.
 Automate a job, or help the people who do it.
-Compete on being different, or compete on cost.
-They ran this across many company scenarios.
+They ran this across many scenarios.
 [PAUSE]
-The models almost always picked the same option. The trendy one. Whatever the company. Whatever the context.
-The advice sounded tailored. It was not.
+The models almost always picked the same option. The trendy one. Whatever the context.
+The researchers warn that an answer can sound tailored to your situation and still not fit it.
 The authors gave it a name: trendslop.
 Their advice to leaders: use AI to widen your options. Do not let it make the choice.
 [DO NOT QUOTE PERCENTAGES OR RUN COUNTS FROM THE ARTICLE. IF ASKED FOR NUMBERS:] The full article has the detail. We use the finding, not the figures, until we have read the licensed copy.
@@ -104,7 +103,7 @@ You make the forced choice. That is the job no model can do for you.
 TRANSITION: Before we talk more, let's make sure your platform works. You build right now.
 ```
 
-### Slide O.4: Opening build check
+### Slide O.4: Build, save, reopen
 - Layout: Activity
 - Minutes: 10
 - On-slide text: ACTIVITY. 10 MIN. 1. Create a Project (Claude, ChatGPT), an agent (Copilot) or a skill (Gemini) named "Strategy Evidence Agent". 2. Paste the 3-line starter instruction. 3. Upload `capacity-sheet.xlsx` from kit-m1-template. 4. Ask: "List the columns in the capacity sheet." 5. Save, close and reopen. Ask again. Pass: it answers after reopen. Blocked? Change platform or pair with someone.
@@ -125,7 +124,7 @@ If it answers after you reopen it, you pass.
 [START A 10-MINUTE TIMER. WALK THE ROOM OR VISIT THE BREAKOUT ROOMS. COPILOT FIRST]
 [AT MINUTE 5, ASK: "Hands up if you are blocked." FOR EACH BLOCKED LEARNER: change platform, or pair with a learner on another platform for today]
 [CLAUDE LEARNER WHOSE .XLSX UPLOAD FAILS: "Turn on Code execution and file creation in Settings, then Capabilities. Or upload the CSV copy."]
-[CHATGPT LEARNER: "Did you keep project memory on the default setting? You need it for file output later."]
+[CHATGPT LEARNER: "Did you pick Default memory? You need it for file output later. A memory change can take a few hours, so fix it now, not in the lab."]
 [COPILOT LEARNER WHOSE AGENT CANNOT SEE THE FILE: "You may have no Copilot license or billing. Your lab card has a no-license path. You use it in lab 1."]
 [GEMINI LEARNER WHOSE NAME IS REJECTED: "Skill names use lowercase and hyphens: strategy-evidence-agent."]
 [LOG EVERY BLOCKED BUILD: platform, plan, what failed. It goes to the monthly refresh]
@@ -181,7 +180,7 @@ Module 4. The roadmap. Your agent traces every item to evidence and checks what 
 Module 5. Each month, are the outcomes the business case promised really happening?
 You set how often each job runs. Review too often and your team gets whiplash.
 [POINT TO THE LADDER]
-Each module also gives the agent a little more room. First you run it by hand on one batch. By the end, it runs each month across jobs and you read only the flags.
+Each module also gives the agent a little more room. First you run it by hand on one batch. By the end, it runs each month across jobs. You read the flags and audit a sample.
 Fall behind? Each module has a catch-up kit. You rebuild in about 5 minutes.
 TRANSITION: Before you put a real plan into this agent, know your company's limits.
 ```
@@ -189,7 +188,7 @@ TRANSITION: Before you put a real plan into this agent, know your company's limi
 ### Slide O.7: What may your plan go into?
 - Layout: Blank
 - Minutes: 3
-- On-slide text: Headline: "What may your plan go into?" Left, "Your planning data": spend and headcount, unreleased roadmap and release dates, forecasts, pricing, supplier terms. Right, "Your tool": Approved for this data? Code execution and file creation on? Agent or skill creation allowed (Copilot: license or billing)? Sharing allowed? Connectors: none needed today. Bottom line: "No answer? Use the Larkspan case today. Ask on Monday."
+- On-slide text: Headline: "What may your plan go into?" Left, "Your planning data": spend and headcount, unreleased roadmap and release dates, forecasts, pricing, supplier terms. Right, "Your tool": Approved for this data? Code execution and file creation on? Agent or skill creation allowed? Copilot knowledge files: license or billing? Sharing allowed? Connectors: none needed today. Bottom line: "No answer? Use the Larkspan case today. Ask on Monday."
 - Visual intent: Left column as a stack of document icons, each labeled. Right column as five check boxes. Bottom line in teal.
 - Sources: cl-fo-06, mb-03, cg-09 (platform matrix). Spec `data_access_limits`, `learner_profile.readiness_checklist`
 
@@ -197,7 +196,7 @@ Notes:
 ```
 POINT: Planning data is some of the most sensitive data a PM holds, so check the company limits on your tool before you design the agent.
 Talk Track:
-This check was in your pre-class email. Few people get to it, so we do it now. Two minutes.
+This check was in your pre-class email. Few people get to it, so we do it now. Three minutes.
 [POINT TO THE LEFT COLUMN]
 Look at what a quarterly plan holds.
 Spend and headcount. Release dates that are not public. Forecasts. Pricing. Supplier terms.
@@ -206,7 +205,7 @@ That is more sensitive than most of what a PM handles.
 Now your tool. Answer each one for yourself.
 Is this tool approved by your company for this data?
 Is code execution and file creation on? Your agent needs it to total a sheet. Some admins turn it off.
-Can you create an agent or a skill? On Copilot that needs a Microsoft 365 Copilot license or pay-as-you-go billing. Your card has a path if you have neither.
+Can you create an agent or a skill? On Copilot, the agent reads knowledge files only with a Microsoft 365 Copilot license or pay-as-you-go billing. Your card has a path if you have neither.
 Can you share an agent with your team? Some companies turn this off.
 Connectors: today's labs need none. You upload files.
 If you do not know an answer, use the Larkspan case today. It is fictional. Ask your IT or security team on Monday.
@@ -232,7 +231,7 @@ Is this tool approved for this data?
 Does my file hold anything on that list?
 If yes, and the tool is not approved, use the Larkspan case, or remove names and numbers first.
 It takes two minutes in lab 1 and one minute after that.
-One more thing. An agent keeps files. A one-off prompt forgets your data when you close the chat. This agent keeps a pack, logs and sheets.
+One more thing. An agent keeps files in its knowledge and uses them on every run. This agent keeps a pack, logs and sheets.
 So at the end of each lab you decide what it may keep. We do that together.
 TRANSITION: Let's build the first job. Module 1.
 ```
@@ -274,14 +273,14 @@ Saves: as you go. Plan: ChatGPT Plus or higher.
 
 | Step | Do this |
 | --- | --- |
-| 1 | Select **New project** in the sidebar. Name it "Strategy Evidence Agent". Keep project memory on the default setting, not project-only. |
+| 1 | Select **New project** in the sidebar. Name it "Strategy Evidence Agent". Pick **Default memory**, not **Project-only memory**. |
 | 2 | Paste the starter instruction in **•••**, then **Project settings**. |
 | 3 | Add `capacity-sheet.xlsx` to the project's files. |
 | 4 | In a new chat in the project, ask the question. |
 | 5 | Close the browser tab. |
 | 6 | Open the project again from the sidebar. Ask the question in a new chat. |
 
-Pass: it answers after you reopen it. Why default memory: ChatGPT Work, which makes spreadsheet files, does not run in a project with project-only memory (cg-14).
+Pass: it answers after you reopen it. Why **Default memory**: ChatGPT Work, which makes spreadsheet files, does not run in a project with project-only memory (cg-14).
 
 ### Copilot agent builder
 Saves: **Create** the first time. **Update** after each change.
@@ -304,12 +303,12 @@ Saves: **Create** the first time. **Save** after each change.
 | --- | --- |
 | 1 | Select **Customize**, then **Skills**, then **Create**, then **Create manually**. Name it "strategy-evidence-agent". |
 | 2 | Paste the starter instruction into the skill instructions. |
-| 3 | Add `capacity-sheet.xlsx` with **Add**, then **files**, then **Upload**. Select **Create**. |
+| 3 | Add `capacity-sheet.xlsx` with **Add**, then **images or files**, then **Upload**. Select **Create**. |
 | 4 | In a new chat, type **/**, pick your skill and ask the question. |
 | 5 | Close the browser tab. |
 | 6 | Open Gemini again. Ask the question with your skill in a new chat. |
 
-Pass: it answers after you reopen it. Skill names use lowercase and hyphens. Gems are now skills.
+Pass: it answers after you reopen it. Skill names use lowercase and hyphens. Gems are now skills. No **Customize**? Select **More** first.
 
 Blocked on any platform: change platform, or pair with a learner on another platform for the day. Tell the instructor what failed.
 
